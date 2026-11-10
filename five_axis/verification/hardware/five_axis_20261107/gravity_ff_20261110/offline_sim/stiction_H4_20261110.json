@@ -1,0 +1,25 @@
+{
+  "schema": "slaihand_stiction_estimate/1",
+  "tag": "H4_stiction",
+  "indices": [
+    2,
+    4,
+    6
+  ],
+  "same_pose_window_count": 3,
+  "residual_spread_deg": [
+    0.1114,
+    0.3163,
+    0.0548,
+    0.1047,
+    0.1028
+  ],
+  "implied_friction_nm_equivalent_deg": [
+    0.0557,
+    0.1582,
+    0.0274,
+    0.0524,
+    0.0514
+  ],
+  "note": "residual spread at one pose; half-spread approximates the direction-dependent friction bias (degrees of joint error)."
+}

@@ -1,0 +1,16 @@
+{
+  "schema": "slaihand_offline_pipeline_simulation/2",
+  "entries": [
+    "H1_holdout",
+    "H1_holdout_comp",
+    "H2_repeat",
+    "H3_j5",
+    "H3_j5_comp",
+    "H4_stiction"
+  ],
+  "residual_definition": "mean_fb - original desired",
+  "summary_exit": 0,
+  "stiction_exit": 0,
+  "compare_exit": 0,
+  "ok": true
+}

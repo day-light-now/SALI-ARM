@@ -1,8 +1,9 @@
 """Summarize the hardware test suite once its runs exist.
 
-Reads test_suite_manifest_20261110.json and windows_<name>.json; writes a result
-JSON with per-joint RMS/max sag, the H1 baseline-vs-compensated comparison and
-the H2 repeatability spread; checks the manifest thresholds.
+Residuals are always measured against the ORIGINAL desired pose:
+  - uncompensated run: mean_fb - desired (sag_deg is the same);
+  - model-compensated run: mean_fb - original desired (NOT mean_fb - command).
+H2/H4 same-pose spread uses sag_deg (feedback minus the identical command).
 """
 import json
 import time
@@ -18,20 +19,37 @@ def read(path):
     return json.loads(Path(path).read_text(encoding='utf-8'))
 
 
+def plan_degrees(name):
+    plan = read(HERE / 'plans' / ('%s_20261110.json' % name))
+    return np.array([w['degrees'] for w in plan['waypoints']], dtype=float)
+
+
 def load_windows(name):
     path = HERE / ('windows_%s.json' % name)
     if not path.is_file():
         return None
     data = read(path)
-    rows = sorted(data['windows'], key=lambda w: w['index'])
-    valid = [w for w in rows if 'sag_deg' in w]
-    indices = [w['index'] for w in valid]
-    sag = np.array([w['sag_deg'] for w in valid], dtype=float)
-    return {'indices': indices, 'sag': sag, 'count': len(valid)}
+    rows = sorted([w for w in data['windows'] if 'sag_deg' in w], key=lambda w: w['index'])
+    return {'indices': np.array([w['index'] for w in rows], dtype=int),
+            'desired': np.array([w['desired_deg'] for w in rows], dtype=float),
+            'mean_fb': np.array([w['mean_fb_deg'] for w in rows], dtype=float),
+            'sag': np.array([w['sag_deg'] for w in rows], dtype=float),
+            'count': len(rows)}
+
+
+def residual_vs_original(run_name, original_plan_name):
+    windows = load_windows(run_name)
+    if windows is None:
+        return None
+    original = plan_degrees(original_plan_name)
+    residual = windows['mean_fb'] - original[windows['indices']]
+    total = len(original)
+    keep = [i for i, index in enumerate(windows['indices']) if index not in (0, total - 1)]
+    return residual[keep]
 
 
 def stats(matrix):
-    if not len(matrix):
+    if matrix is None or not len(matrix):
         return None
     return {'rms_deg': np.sqrt(np.mean(matrix ** 2, axis=0)).round(4).tolist(),
             'max_deg': np.max(np.abs(matrix), axis=0).round(4).tolist(),
@@ -40,30 +58,25 @@ def stats(matrix):
             'samples': int(matrix.shape[0])}
 
 
-def interior(sag, indices, total):
-    return np.array([row for row, index in zip(sag, indices) if index not in (0, total - 1)])
-
-
 def main():
     manifest = read(MANIFEST)
     thresholds = manifest['thresholds']
-    entries = {entry['name']: entry for entry in manifest['entries']}
-    result = {'schema': 'slaihand_test_suite_result/1',
+    result = {'schema': 'slaihand_test_suite_result/2',
+              'residual_definition': 'mean_fb_deg - original_desired_deg',
               'created': time.strftime('%Y-%m-%dT%H:%M:%S'),
               'thresholds': thresholds, 'entries': {}}
-    data = {}
     for entry in manifest['entries']:
         windows = load_windows(entry['name'])
         if windows is None:
             result['entries'][entry['name']] = {'present': False}
             continue
-        matrix = interior(windows['sag'], windows['indices'], entry['waypoints'])
-        data[entry['name']] = matrix
-        result['entries'][entry['name']] = {'present': True, 'stats': stats(matrix)}
+        matrix = residual_vs_original(entry['name'], entry['name'].replace('_comp', ''))
+        result['entries'][entry['name']] = {'present': True, 'stats': stats(matrix),
+                                            'sag_stats': stats(windows['sag'])}
 
     checks = []
-    baseline = data.get('H1_holdout')
-    compensated = data.get('H1_holdout_comp')
+    baseline = residual_vs_original('H1_holdout', 'H1_holdout')
+    compensated = residual_vs_original('H1_holdout_comp', 'H1_holdout')
     if baseline is not None and compensated is not None:
         base_rms = float(np.sqrt(np.mean(baseline ** 2)))
         comp_rms = float(np.sqrt(np.mean(compensated ** 2)))
@@ -80,26 +93,24 @@ def main():
                                    'improvement_percent': round(
                                        (1.0 - comp_rms / base_rms) * 100.0, 1)}
 
-    repeat = data.get('H2_repeat')
-    if repeat is not None and len(repeat) >= 2:
+    repeat = load_windows('H2_repeat')
+    if repeat is not None:
         # H2 waypoints: 0 zero, 1 up, 2 pose, 3 down, 4 pose, 5 zero.
-        pose_matrix = repeat[[index for index in range(len(repeat))
-                              if index in (2, 4)]]
-        if len(pose_matrix) == 2:
-            spread = np.max(np.abs(pose_matrix[0] - pose_matrix[1]))
+        positions = [i for i, index in enumerate(repeat['indices']) if index in (2, 4)]
+        if len(positions) >= 2:
+            spread = float(np.max(np.abs(repeat['sag'][positions[0]] - repeat['sag'][positions[1]])))
             checks.append({'name': 'H2 same-pose spread <= threshold',
-                           'value': round(float(spread), 4),
+                           'value': round(spread, 4),
                            'threshold': thresholds['H2_repeat_spread_deg_max'],
-                           'ok': float(spread) <= thresholds['H2_repeat_spread_deg_max']})
-            result['H2_spread_deg'] = round(float(spread), 4)
+                           'ok': spread <= thresholds['H2_repeat_spread_deg_max']})
+            result['H2_spread_deg'] = round(spread, 4)
 
-    stiction = data.get('H4_stiction')
-    if stiction is not None and len(stiction) >= 3:
-        # H4 waypoints: 0 zero, 1 up, 2 pose, 3 down, 4 pose, 5 side, 6 pose, 7 zero.
-        pose_matrix = stiction[[index for index in range(len(stiction))
-                                if index in (2, 4, 6)]]
-        if len(pose_matrix) == 3:
-            spread = float(np.max(np.max(pose_matrix, axis=0) - np.min(pose_matrix, axis=0)))
+    stiction = load_windows('H4_stiction')
+    if stiction is not None:
+        positions = [i for i, index in enumerate(stiction['indices']) if index in (2, 4, 6)]
+        if len(positions) >= 2:
+            matrix = stiction['sag'][positions]
+            spread = float(np.max(np.max(matrix, axis=0) - np.min(matrix, axis=0)))
             checks.append({'name': 'H4 stiction same-pose spread <= threshold',
                            'value': round(spread, 4),
                            'threshold': thresholds['H4_stiction_spread_deg_max'],

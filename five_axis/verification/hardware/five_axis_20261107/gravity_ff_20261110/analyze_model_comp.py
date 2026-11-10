@@ -1,7 +1,10 @@
 """Offline analysis: model-based sag compensation vs measured runs.
 
-Uses existing windows files (V1 baseline, V1subc model-compensated) and the
-fitted sag model. No hardware access.
+Correct residual definition:
+  - uncompensated run: residual vs original = mean_fb - original desired;
+  - compensated run: residual vs original = mean_fb - ORIGINAL desired pose,
+    not mean_fb - compensated command (sag_deg is relative to the command).
+Model validation error is predicted sag vs measured sag on the baseline run.
 """
 import json
 from pathlib import Path
@@ -25,20 +28,19 @@ def features(poses_deg):
     return np.stack(columns, axis=1)
 
 
-def plan_degrees(path):
-    return np.array([w['degrees'] for w in read(path)['waypoints']], dtype=float)
+def plan_degrees(name):
+    return np.array([w['degrees'] for w in read(PLANS / name)['waypoints']], dtype=float)
 
 
 def load_run(tag):
     data = read(HERE / ('windows_%s.json' % tag))
-    windows = {w['index']: w for w in data['windows'] if 'sag_deg' in w}
-    indices = sorted(windows)
-    desired = np.array([data['desired_deg'][i] if isinstance(data.get('desired_deg'), list)
-                        and len(data['desired_deg']) == len(data['windows'])
-                        else windows[i]['desired_deg'] for i in indices], dtype=float)
-    sag = np.array([windows[i]['sag_deg'] for i in indices], dtype=float)
+    rows = [w for w in data['windows'] if 'sag_deg' in w]
+    rows.sort(key=lambda w: w['index'])
+    indices = np.array([w['index'] for w in rows], dtype=int)
+    desired = np.array([w['desired_deg'] for w in rows], dtype=float)
+    mean_fb = np.array([w['mean_fb_deg'] for w in rows], dtype=float)
     return {'tag': tag, 'plan': data.get('plan'), 'indices': indices,
-            'desired': desired, 'sag': sag}
+            'desired': desired, 'mean_fb': mean_fb}
 
 
 def stats(matrix):
@@ -51,32 +53,30 @@ def stats(matrix):
 
 def main():
     model = read(MODEL)['model']
-    original = plan_degrees(PLANS / 'V1_sag_20261110.json')
-    compensated = plan_degrees(PLANS / 'V1c_sag_20261110.json')
-    F = features(original)
-    predicted = np.stack([F @ np.array(model[str(j)]['coef']) for j in range(5)], axis=1)
+    v1 = plan_degrees('V1_sag_20261110.json')
+    predicted_v1 = np.stack([features(v1) @ np.array(model[str(j)]['coef'])
+                             for j in range(5)], axis=1)
 
-    result = {'schema': 'slaihand_model_comp_offline_analysis/1',
-              'model': str(MODEL), 'validation_plan': 'plans/V1_sag_20261110.json',
-              'predicted_sag_deg': predicted.round(4).tolist()}
+    result = {'schema': 'slaihand_model_comp_offline_analysis/2',
+              'residual_definition': 'mean_fb_deg - original_desired_deg',
+              'model': str(MODEL),
+              'validation_plan': 'plans/V1_sag_20261110.json'}
+
     baseline = load_run('V1')
-    d_original = float(np.max(np.abs(baseline['desired'] - original[baseline['indices']])))
-    print('V1 plan=%s matches original (diff %.5f)' % (baseline['plan'], d_original))
-    model_error = predicted[baseline['indices']] - baseline['sag']
+    sag_baseline = baseline['mean_fb'] - v1[baseline['indices']]
+    model_error = predicted_v1[baseline['indices']] - sag_baseline
+    result['baseline_sag'] = stats(sag_baseline)
     result['model_validation_error'] = stats(model_error)
-    result['baseline_sag'] = stats(baseline['sag'])
-    print('model validation error vs baseline sag:', json.dumps(result['model_validation_error']))
+    print('V1 baseline sag:', json.dumps(result['baseline_sag']))
+    print('model validation error:', json.dumps(result['model_validation_error']))
 
-    compensated_run = load_run('V1subc')
-    # Exclude the absolute-zero endpoints (only 0/9 are endpoints for V1sub-like plans).
-    interior = compensated_run['indices']
-    keep = [k for k in range(len(interior)) if interior[k] not in (0, 9)]
-    if keep:
-        result['V1subc_residual'] = stats(compensated_run['sag'][keep])
-        print('V1subc residual after model compensation:',
-              json.dumps(result['V1subc_residual']))
-    print('predicted vs compensated plan max diff %.5f deg' % float(
-        np.max(np.abs(compensated - (original - predicted)))))
+    sub_original = plan_degrees('V1sub_sag_20261110.json')
+    compensated = load_run('V1subc')
+    residual = compensated['mean_fb'] - sub_original[compensated['indices']]
+    keep = [i for i, index in enumerate(compensated['indices'])
+            if index not in (0, len(sub_original) - 1)]
+    result['V1subc_residual'] = stats(residual[keep])
+    print('V1subc residual vs original:', json.dumps(result['V1subc_residual']))
 
     (HERE / 'offline_model_comp_20261110.json').write_text(
         json.dumps(result, ensure_ascii=False, indent=2) + '\n', encoding='utf-8')

@@ -165,9 +165,9 @@ document.
   training-domain/sag-envelope/limit/endpoint guards; Windows offline entry
   `make_comp_plan.cmd` (no hardware). Offline evidence: model sag prediction
   error on V1 RMS 0.23 deg, measured V1subc residual after model compensation
-  0.59 deg, while per-pose iterative correction remains 0.0775 deg; out-of-domain
-  T2/V2/JZ plans are rejected on purpose. Position feedforward only; FF alpha 0,
-  GC13 frozen, hardware validation after box reinstall pending. Details:
+  0.205 deg (vs per-pose iterative 0.0775 deg); out-of-domain T2/V2/JZ plans
+  are rejected on purpose. Position feedforward only; FF alpha 0, GC13 frozen,
+  hardware validation after box reinstall pending. Details:
   `gravity_ff_20261110/README_模型补偿_20261110.md`.
 
 ## Key evidence locations
