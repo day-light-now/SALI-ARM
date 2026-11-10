@@ -10,6 +10,8 @@ echo "=== 1. python compile ==="
 python3 -m py_compile compensate_plan.py verify_comp_plans.py analyze_model_comp.py \
   prep_test_suite.py run_test_suite.py summarize_suite.py analyze_stiction.py \
   compare_plan_runs.py summarize_model_comp.py test_offline_comp.py simulate_suite.py \
+  simulate_hybrid_pipeline.py make_hybrid_iter.py fit_sag_alternatives.py \
+  analyze_serial_faults.py \
   || fail=1
 
 echo "=== 2. unit tests ==="
@@ -20,6 +22,9 @@ bash run_test_suite.sh --dry || fail=1
 
 echo "=== 4. synthetic end-to-end analysis ==="
 python3 simulate_suite.py || fail=1
+
+echo "=== 5. hybrid pipeline synthetic drill ==="
+python3 simulate_hybrid_pipeline.py || fail=1
 
 if [ "$fail" = "0" ]; then
   echo "OFFLINE_CHECKS_OK"

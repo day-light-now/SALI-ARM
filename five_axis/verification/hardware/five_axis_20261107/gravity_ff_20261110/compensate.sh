@@ -169,7 +169,7 @@ if [ "$STRATEGY" != "iter" ]; then
     exit 0
   fi
   reset_between_runs
-  python3 "$HERE/make_iter_comp.py" "${TAG}_model" "$MODEL_NAME" "${TAG}_iter1" \
+  python3 "$HERE/make_hybrid_iter.py" "${TAG}_model" "$MODEL_NAME" "$BASE_NAME" "${TAG}_iter1" \
     > "$LOGDIR/${TAG}_iter1_plan.log" 2>&1 || fail "model+iter1 plan generation failed"
   run_one "$HERE/plans/${TAG}_iter1_20261110.json" "${TAG}_iter1"
   python3 "$HERE/compare_plan_runs.py" "$BASE_NAME" \

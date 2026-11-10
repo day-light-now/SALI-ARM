@@ -1,0 +1,9 @@
+{
+  "schema": "slaihand_hybrid_pipeline_simulation/1",
+  "model_rms_deg": 0.080434,
+  "iter1_rms_deg": 0.007424,
+  "model_max_deg": 0.1913,
+  "iter1_max_deg": 0.0199,
+  "improved": true,
+  "report_exists": true
+}

@@ -31,7 +31,8 @@
 | `compare_plan_runs.py` | 无基线时按原始计划计算残差 |
 | `compare_any.py` / `summarize_comp.py` | 旧 iter 路径的对比与报告 |
 | `summarize_model_comp.py` | hybrid/model 路径报告 |
-| `make_iter_comp.py` | 按实测残差生成修正计划 |
+| `make_hybrid_iter.py` | hybrid 的一次实测修正（以**原始目标**为基准，避免双重补偿） |
+| `make_iter_comp.py` | 旧 iter 路径的按实测残差生成修正计划 |
 | `validate_plan.py` / `plan_duration.py` | 计划校验与录制时长 |
 | `parse_verify.py` / `check_windows.py` | 准入证据解析、静态窗口充足性检查 |
 

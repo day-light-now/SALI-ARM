@@ -1,0 +1,1169 @@
+{
+  "schema": "slaihand_serial_fault_analysis/1",
+  "scanned_roots": [
+    "/mnt/d/CodexData/Projects/机械臂/slaihand_five_axis_ws_gain/verification",
+    "/home/xuyu/.ros/slaihand"
+  ],
+  "counts": {
+    "serial_write_fault": 33,
+    "process_died": 6,
+    "disabled_or_stop": 11,
+    "write_supervision_failure": 19
+  },
+  "per_file": {
+    "/home/xuyu/.ros/slaihand/control_panel/connection/driver_20261105_130908_818637.log": 10,
+    "verification/hardware/five_axis_20261107/gravity_ff_20261110/logs/driver_launch_20261110_101541.log": 9,
+    "verification/hardware/five_axis_20261107/gravity_ff_20261110/logs/driver_launch_20261110_095416.log": 5,
+    "verification/hardware/five_axis_20261107/five_dof_refit_gc05_08_20261109/execution_20261109/logs/driver_launch_session1.log": 4,
+    "verification/hardware/five_axis_20261107/gravity_ff_20261110/logs/driver_launch_20261110_105452.log": 4,
+    "verification/hardware/five_axis_20261107/gravity_ff_20261110/logs/driver_launch_20261110_105653.log": 4,
+    "/home/xuyu/.ros/slaihand/control_panel/connection/driver_20261107_115813_94765.log": 4,
+    "verification/hardware/five_axis_20261107/gravity_ff_20261110/logs/driver_launch_20261110_104907.log": 3,
+    "verification/hardware/five_axis_20261107/gravity_ff_20261110/logs/driver_launch_20261110_105209.log": 3,
+    "/home/xuyu/.ros/slaihand/control_panel/connection/driver_20261105_153629_997996.log": 3,
+    "verification/hardware/five_axis_20261107/gravity_ff_20261110/logs/driver_launch_20261110_122755.log": 2,
+    "/home/xuyu/.ros/slaihand/control_panel/connection/driver_20261107_131252_371877.log": 2,
+    "/home/xuyu/.ros/slaihand/control_panel/connection/driver_20261106_144449_816197.log": 2,
+    "verification/hardware/five_axis_20261107/gravity_ff_20261110/logs/driver_launch_20261110_105002.log": 1,
+    "verification/hardware/five_axis_20261107/gravity_ff_20261110/logs/F4fr_20261110.log": 1,
+    "verification/hardware/five_axis_20261107/gravity_ff_20261110/logs/gravitycal_deploy_driver.log": 1,
+    "verification/hardware/five_axis_20261107/gravity_ff_20261110/logs/J5A_20261110.log": 1,
+    "verification/hardware/five_axis_20261107/gravity_ff_20261110/logs/J5B_20261110.log": 1,
+    "verification/hardware/five_axis_20261107/gravity_ff_20261110/logs/JVc_20261110.log": 1,
+    "verification/hardware/five_axis_20261107/gravity_ff_20261110/logs/smoke1014_iter1_20261110.log": 1
+  },
+  "per_tag": {
+    "driver": 57,
+    "panel": 2,
+    "F4fr": 1,
+    "gravitycal": 1,
+    "J5A": 1,
+    "J5B": 1,
+    "JVc": 1,
+    "smoke1014": 1,
+    "smoke1015": 1,
+    "smoke1016": 1,
+    "T1a": 1,
+    "V1c": 1
+  },
+  "dates": {
+    "2026-11-05": 11,
+    "2026-11-06": 2,
+    "2026-11-07": 7,
+    "2026-11-09": 4,
+    "2026-11-10": 28
+  },
+  "hours": {
+    "09": 3,
+    "10": 23,
+    "11": 1,
+    "12": 5,
+    "13": 3,
+    "14": 12,
+    "15": 5
+  },
+  "hits": [
+    {
+      "kind": "serial_write_fault",
+      "file": "verification/hardware/five_axis_20261107/five_dof_refit_gc05_08_20261109/execution_20261109/logs/driver_launch_session1.log",
+      "line": 80,
+      "timestamp": "2026-11-09 15:35:09",
+      "tag": "driver",
+      "file_date": null,
+      "text": "[ros2_control_node-2] [ERROR] [1794209709.144844738] [canusb_system]: SERIAL_OR_AUDIT_WRITE_FAILURE action=MOTOR: CANUSB incomplete serial packet write",
+      "context": [
+        "[ros2_control_node-2] [WARN] [1794209609.575476620] [slaihand.controller_manager]: Overrun might occur, Total time : 11717.316 us (Expected < 10000.000 us) --> Read time : 92.732 us, Update time : 113.380 us, Write time : 11511.204 us",
+        "[ros2_control_node-2] [WARN] [1794209609.575594206] [slaihand.controller_manager]: Overrun detected! The controller manager missed its desired rate of 100 Hz. The loop took 11.959626 ms (missed cycles : 2).",
+        "[ros2_control_node-2] [ERROR] [1794209709.144844738] [canusb_system]: SERIAL_OR_AUDIT_WRITE_FAILURE action=MOTOR: CANUSB incomplete serial packet write",
+        "[ros2_control_node-2] [WARN] [1794209709.158381581] [slaihand.controller_manager]: Overrun might occur, Total time : 34588.244 us (Expected < 10000.000 us) --> Read time : 82.088 us, Update time : 94.388 us, Write time : 34411.768 us",
+        "[ros2_control_node-2] [WARN] [1794209709.158468665] [slaihand.controller_manager]: Overrun detected! The controller manager missed its desired rate of 100 Hz. The loop took 34.835377 ms (missed cycles : 4)."
+      ]
+    },
+    {
+      "kind": "serial_write_fault",
+      "file": "verification/hardware/five_axis_20261107/five_dof_refit_gc05_08_20261109/execution_20261109/logs/driver_launch_session1.log",
+      "line": 83,
+      "timestamp": "2026-11-09 15:35:09",
+      "tag": "driver",
+      "file_date": null,
+      "text": "[ros2_control_node-2] [ERROR] [1794209709.194594917] [canusb_system]: SERIAL_OR_AUDIT_WRITE_FAILURE action=MOTOR: CANUSB incomplete serial packet write",
+      "context": [
+        "[ros2_control_node-2] [WARN] [1794209709.158381581] [slaihand.controller_manager]: Overrun might occur, Total time : 34588.244 us (Expected < 10000.000 us) --> Read time : 82.088 us, Update time : 94.388 us, Write time : 34411.768 us",
+        "[ros2_control_node-2] [WARN] [1794209709.158468665] [slaihand.controller_manager]: Overrun detected! The controller manager missed its desired rate of 100 Hz. The loop took 34.835377 ms (missed cycles : 4).",
+        "[ros2_control_node-2] [ERROR] [1794209709.194594917] [canusb_system]: SERIAL_OR_AUDIT_WRITE_FAILURE action=MOTOR: CANUSB incomplete serial packet write",
+        "[ros2_control_node-2] [ERROR] [1794209709.215291862] [canusb_system]: DISABLE_AFTER_WRITE_FAILURE failed: CANUSB incomplete serial packet write",
+        "[ros2_control_node-2] [WARN] [1794209709.234176336] [canusb_system]: Control output disabled; host disabled observations=true; reason=SERIAL_OR_AUDIT_WRITE_FAILURE"
+      ]
+    },
+    {
+      "kind": "serial_write_fault",
+      "file": "verification/hardware/five_axis_20261107/five_dof_refit_gc05_08_20261109/execution_20261109/logs/driver_launch_session1.log",
+      "line": 84,
+      "timestamp": "2026-11-09 15:35:09",
+      "tag": "driver",
+      "file_date": null,
+      "text": "[ros2_control_node-2] [ERROR] [1794209709.215291862] [canusb_system]: DISABLE_AFTER_WRITE_FAILURE failed: CANUSB incomplete serial packet write",
+      "context": [
+        "[ros2_control_node-2] [WARN] [1794209709.158468665] [slaihand.controller_manager]: Overrun detected! The controller manager missed its desired rate of 100 Hz. The loop took 34.835377 ms (missed cycles : 4).",
+        "[ros2_control_node-2] [ERROR] [1794209709.194594917] [canusb_system]: SERIAL_OR_AUDIT_WRITE_FAILURE action=MOTOR: CANUSB incomplete serial packet write",
+        "[ros2_control_node-2] [ERROR] [1794209709.215291862] [canusb_system]: DISABLE_AFTER_WRITE_FAILURE failed: CANUSB incomplete serial packet write",
+        "[ros2_control_node-2] [WARN] [1794209709.234176336] [canusb_system]: Control output disabled; host disabled observations=true; reason=SERIAL_OR_AUDIT_WRITE_FAILURE",
+        "[ros2_control_node-2] [INFO] [1794209709.577647681] [slaihand.controller_manager]: Deactivating controllers: [ slaihand_joint_trajectory_controller ]"
+      ]
+    },
+    {
+      "kind": "serial_write_fault",
+      "file": "verification/hardware/five_axis_20261107/five_dof_refit_gc05_08_20261109/execution_20261109/logs/driver_launch_session1.log",
+      "line": 85,
+      "timestamp": "2026-11-09 15:35:09",
+      "tag": "driver",
+      "file_date": null,
+      "text": "[ros2_control_node-2] [WARN] [1794209709.234176336] [canusb_system]: Control output disabled; host disabled observations=true; reason=SERIAL_OR_AUDIT_WRITE_FAILURE",
+      "context": [
+        "[ros2_control_node-2] [ERROR] [1794209709.194594917] [canusb_system]: SERIAL_OR_AUDIT_WRITE_FAILURE action=MOTOR: CANUSB incomplete serial packet write",
+        "[ros2_control_node-2] [ERROR] [1794209709.215291862] [canusb_system]: DISABLE_AFTER_WRITE_FAILURE failed: CANUSB incomplete serial packet write",
+        "[ros2_control_node-2] [WARN] [1794209709.234176336] [canusb_system]: Control output disabled; host disabled observations=true; reason=SERIAL_OR_AUDIT_WRITE_FAILURE",
+        "[ros2_control_node-2] [INFO] [1794209709.577647681] [slaihand.controller_manager]: Deactivating controllers: [ slaihand_joint_trajectory_controller ]",
+        "[ros2_control_node-2] [INFO] [1794209709.583997000] [slaihand.controller_manager]: Successfully switched controllers!"
+      ]
+    },
+    {
+      "kind": "serial_write_fault",
+      "file": "verification/hardware/five_axis_20261107/gravity_ff_20261110/logs/driver_launch_20261110_095416.log",
+      "line": 62,
+      "timestamp": "2026-11-10 09:58:16",
+      "tag": "driver",
+      "file_date": "20261110",
+      "text": "[ros2_control_node-2] [ERROR] [1794275896.698911710] [canusb_system]: SERIAL_OR_AUDIT_WRITE_FAILURE action=MOTOR: CANUSB incomplete serial packet write",
+      "context": [
+        "[ros2_control_node-2] [INFO] [1794275791.363261738] [slaihand.slaihand_joint_trajectory_controller]: Received new action goal",
+        "[ros2_control_node-2] [INFO] [1794275791.363323882] [slaihand.slaihand_joint_trajectory_controller]: Accepted new action goal",
+        "[ros2_control_node-2] [ERROR] [1794275896.698911710] [canusb_system]: SERIAL_OR_AUDIT_WRITE_FAILURE action=MOTOR: CANUSB incomplete serial packet write",
+        "[ros2_control_node-2] [WARN] [1794275896.706753314] [slaihand.controller_manager]: Overrun might occur, Total time : 28336.203 us (Expected < 10000.000 us) --> Read time : 73.217 us, Update time : 116.446 us, Write time : 28146.540 us",
+        "[ros2_control_node-2] [WARN] [1794275896.706810698] [slaihand.controller_manager]: Overrun detected! The controller manager missed its desired rate of 100 Hz. The loop took 28.447297 ms (missed cycles : 3)."
+      ]
+    },
+    {
+      "kind": "serial_write_fault",
+      "file": "verification/hardware/five_axis_20261107/gravity_ff_20261110/logs/driver_launch_20261110_095416.log",
+      "line": 65,
+      "timestamp": "2026-11-10 09:58:16",
+      "tag": "driver",
+      "file_date": "20261110",
+      "text": "[ros2_control_node-2] [ERROR] [1794275896.738860127] [canusb_system]: SERIAL_OR_AUDIT_WRITE_FAILURE action=MOTOR: CANUSB incomplete serial packet write",
+      "context": [
+        "[ros2_control_node-2] [WARN] [1794275896.706753314] [slaihand.controller_manager]: Overrun might occur, Total time : 28336.203 us (Expected < 10000.000 us) --> Read time : 73.217 us, Update time : 116.446 us, Write time : 28146.540 us",
+        "[ros2_control_node-2] [WARN] [1794275896.706810698] [slaihand.controller_manager]: Overrun detected! The controller manager missed its desired rate of 100 Hz. The loop took 28.447297 ms (missed cycles : 3).",
+        "[ros2_control_node-2] [ERROR] [1794275896.738860127] [canusb_system]: SERIAL_OR_AUDIT_WRITE_FAILURE action=MOTOR: CANUSB incomplete serial packet write",
+        "[ros2_control_node-2] [WARN] [1794275896.768878350] [canusb_system]: Control output disabled; host disabled observations=true; reason=SERIAL_OR_AUDIT_WRITE_FAILURE",
+        "[ros2_control_node-2] [INFO] [1794275897.111438811] [slaihand.controller_manager]: Deactivating controllers: [ slaihand_joint_trajectory_controller ]"
+      ]
+    },
+    {
+      "kind": "serial_write_fault",
+      "file": "verification/hardware/five_axis_20261107/gravity_ff_20261110/logs/driver_launch_20261110_095416.log",
+      "line": 66,
+      "timestamp": "2026-11-10 09:58:16",
+      "tag": "driver",
+      "file_date": "20261110",
+      "text": "[ros2_control_node-2] [WARN] [1794275896.768878350] [canusb_system]: Control output disabled; host disabled observations=true; reason=SERIAL_OR_AUDIT_WRITE_FAILURE",
+      "context": [
+        "[ros2_control_node-2] [WARN] [1794275896.706810698] [slaihand.controller_manager]: Overrun detected! The controller manager missed its desired rate of 100 Hz. The loop took 28.447297 ms (missed cycles : 3).",
+        "[ros2_control_node-2] [ERROR] [1794275896.738860127] [canusb_system]: SERIAL_OR_AUDIT_WRITE_FAILURE action=MOTOR: CANUSB incomplete serial packet write",
+        "[ros2_control_node-2] [WARN] [1794275896.768878350] [canusb_system]: Control output disabled; host disabled observations=true; reason=SERIAL_OR_AUDIT_WRITE_FAILURE",
+        "[ros2_control_node-2] [INFO] [1794275897.111438811] [slaihand.controller_manager]: Deactivating controllers: [ slaihand_joint_trajectory_controller ]",
+        "[ros2_control_node-2] [INFO] [1794275897.118622915] [slaihand.controller_manager]: Successfully switched controllers!"
+      ]
+    },
+    {
+      "kind": "serial_write_fault",
+      "file": "verification/hardware/five_axis_20261107/gravity_ff_20261110/logs/driver_launch_20261110_095416.log",
+      "line": 90,
+      "timestamp": "2026-11-10 10:05:31",
+      "tag": "driver",
+      "file_date": "20261110",
+      "text": "[ros2_control_node-2] [ERROR] [1794276331.971595584] [canusb_system]: SERIAL_OR_AUDIT_WRITE_FAILURE action=MOTOR: CANUSB incomplete serial packet write",
+      "context": [
+        "[ros2_control_node-2] [INFO] [1794276318.426788967] [slaihand.slaihand_joint_trajectory_controller]: Received new action goal",
+        "[ros2_control_node-2] [INFO] [1794276318.426842236] [slaihand.slaihand_joint_trajectory_controller]: Accepted new action goal",
+        "[ros2_control_node-2] [ERROR] [1794276331.971595584] [canusb_system]: SERIAL_OR_AUDIT_WRITE_FAILURE action=MOTOR: CANUSB incomplete serial packet write",
+        "[ros2_control_node-2] [WARN] [1794276331.980787566] [slaihand.controller_manager]: Overrun might occur, Total time : 30424.994 us (Expected < 10000.000 us) --> Read time : 72.069 us, Update time : 78.520 us, Write time : 30274.405 us",
+        "[ros2_control_node-2] [WARN] [1794276331.980866701] [slaihand.controller_manager]: Overrun detected! The controller manager missed its desired rate of 100 Hz. The loop took 30.650466 ms (missed cycles : 4)."
+      ]
+    },
+    {
+      "kind": "serial_write_fault",
+      "file": "verification/hardware/five_axis_20261107/gravity_ff_20261110/logs/driver_launch_20261110_095416.log",
+      "line": 93,
+      "timestamp": "2026-11-10 10:05:32",
+      "tag": "driver",
+      "file_date": "20261110",
+      "text": "[ros2_control_node-2] [WARN] [1794276332.000650180] [canusb_system]: Control output disabled; host disabled observations=true; reason=SERIAL_OR_AUDIT_WRITE_FAILURE",
+      "context": [
+        "[ros2_control_node-2] [WARN] [1794276331.980787566] [slaihand.controller_manager]: Overrun might occur, Total time : 30424.994 us (Expected < 10000.000 us) --> Read time : 72.069 us, Update time : 78.520 us, Write time : 30274.405 us",
+        "[ros2_control_node-2] [WARN] [1794276331.980866701] [slaihand.controller_manager]: Overrun detected! The controller manager missed its desired rate of 100 Hz. The loop took 30.650466 ms (missed cycles : 4).",
+        "[ros2_control_node-2] [WARN] [1794276332.000650180] [canusb_system]: Control output disabled; host disabled observations=true; reason=SERIAL_OR_AUDIT_WRITE_FAILURE",
+        "[ros2_control_node-2] [INFO] [1794276332.333073450] [slaihand.controller_manager]: Deactivating controllers: [ slaihand_joint_trajectory_controller ]",
+        "[ros2_control_node-2] [INFO] [1794276332.340570104] [slaihand.controller_manager]: Successfully switched controllers!"
+      ]
+    },
+    {
+      "kind": "serial_write_fault",
+      "file": "verification/hardware/five_axis_20261107/gravity_ff_20261110/logs/driver_launch_20261110_101541.log",
+      "line": 64,
+      "timestamp": "2026-11-10 10:18:32",
+      "tag": "driver",
+      "file_date": "20261110",
+      "text": "[ros2_control_node-2] [ERROR] [1794277112.133155405] [canusb_system]: SERIAL_OR_AUDIT_WRITE_FAILURE action=MOTOR: CANUSB incomplete serial packet write",
+      "context": [
+        "[ros2_control_node-2] [WARN] [1794277015.715472485] [slaihand.controller_manager]: Overrun might occur, Total time : 11161.673 us (Expected < 10000.000 us) --> Read time : 61.149 us, Update time : 79.093 us, Write time : 11021.431 us",
+        "[ros2_control_node-2] [WARN] [1794277015.715646061] [slaihand.controller_manager]: Overrun detected! The controller manager missed its desired rate of 100 Hz. The loop took 11.424063 ms (missed cycles : 2).",
+        "[ros2_control_node-2] [ERROR] [1794277112.133155405] [canusb_system]: SERIAL_OR_AUDIT_WRITE_FAILURE action=MOTOR: CANUSB incomplete serial packet write",
+        "[ros2_control_node-2] [WARN] [1794277112.143106433] [slaihand.controller_manager]: Overrun might occur, Total time : 30219.246 us (Expected < 10000.000 us) --> Read time : 65.129 us, Update time : 79.293 us, Write time : 30074.824 us",
+        "[ros2_control_node-2] [WARN] [1794277112.143157537] [slaihand.controller_manager]: Overrun detected! The controller manager missed its desired rate of 100 Hz. The loop took 30.307410 ms (missed cycles : 4)."
+      ]
+    },
+    {
+      "kind": "serial_write_fault",
+      "file": "verification/hardware/five_axis_20261107/gravity_ff_20261110/logs/driver_launch_20261110_101541.log",
+      "line": 67,
+      "timestamp": "2026-11-10 10:18:32",
+      "tag": "driver",
+      "file_date": "20261110",
+      "text": "[ros2_control_node-2] [WARN] [1794277112.163276057] [canusb_system]: Control output disabled; host disabled observations=true; reason=SERIAL_OR_AUDIT_WRITE_FAILURE",
+      "context": [
+        "[ros2_control_node-2] [WARN] [1794277112.143106433] [slaihand.controller_manager]: Overrun might occur, Total time : 30219.246 us (Expected < 10000.000 us) --> Read time : 65.129 us, Update time : 79.293 us, Write time : 30074.824 us",
+        "[ros2_control_node-2] [WARN] [1794277112.143157537] [slaihand.controller_manager]: Overrun detected! The controller manager missed its desired rate of 100 Hz. The loop took 30.307410 ms (missed cycles : 4).",
+        "[ros2_control_node-2] [WARN] [1794277112.163276057] [canusb_system]: Control output disabled; host disabled observations=true; reason=SERIAL_OR_AUDIT_WRITE_FAILURE",
+        "[ros2_control_node-2] [INFO] [1794277112.496264288] [slaihand.controller_manager]: Deactivating controllers: [ slaihand_joint_trajectory_controller ]",
+        "[ros2_control_node-2] [INFO] [1794277112.503213978] [slaihand.controller_manager]: Successfully switched controllers!"
+      ]
+    },
+    {
+      "kind": "serial_write_fault",
+      "file": "verification/hardware/five_axis_20261107/gravity_ff_20261110/logs/driver_launch_20261110_101541.log",
+      "line": 77,
+      "timestamp": "2026-11-10 10:19:36",
+      "tag": "driver",
+      "file_date": "20261110",
+      "text": "[ros2_control_node-2] [ERROR] [1794277176.390811470] [canusb_system]: SERIAL_OR_AUDIT_WRITE_FAILURE action=MOTOR: CANUSB incomplete serial packet write",
+      "context": [
+        "[ros2_control_node-2] [WARN] [1794277158.341138230] [slaihand.controller_manager]: Overrun might occur, Total time : 11965.301 us (Expected < 10000.000 us) --> Read time : 75.317 us, Update time : 71.025 us, Write time : 11818.959 us",
+        "[ros2_control_node-2] [WARN] [1794277158.341239556] [slaihand.controller_manager]: Overrun detected! The controller manager missed its desired rate of 100 Hz. The loop took 12.147499 ms (missed cycles : 2).",
+        "[ros2_control_node-2] [ERROR] [1794277176.390811470] [canusb_system]: SERIAL_OR_AUDIT_WRITE_FAILURE action=MOTOR: CANUSB incomplete serial packet write",
+        "[ros2_control_node-2] [ERROR] [1794277176.411522528] [canusb_system]: DISABLE_AFTER_WRITE_FAILURE failed: CANUSB incomplete serial packet write",
+        "[ros2_control_node-2] [ERROR] [1794277176.432229840] [canusb_system]: DISABLE_AFTER_WRITE_FAILURE failed: CANUSB incomplete serial packet write"
+      ]
+    },
+    {
+      "kind": "serial_write_fault",
+      "file": "verification/hardware/five_axis_20261107/gravity_ff_20261110/logs/driver_launch_20261110_101541.log",
+      "line": 78,
+      "timestamp": "2026-11-10 10:19:36",
+      "tag": "driver",
+      "file_date": "20261110",
+      "text": "[ros2_control_node-2] [ERROR] [1794277176.411522528] [canusb_system]: DISABLE_AFTER_WRITE_FAILURE failed: CANUSB incomplete serial packet write",
+      "context": [
+        "[ros2_control_node-2] [WARN] [1794277158.341239556] [slaihand.controller_manager]: Overrun detected! The controller manager missed its desired rate of 100 Hz. The loop took 12.147499 ms (missed cycles : 2).",
+        "[ros2_control_node-2] [ERROR] [1794277176.390811470] [canusb_system]: SERIAL_OR_AUDIT_WRITE_FAILURE action=MOTOR: CANUSB incomplete serial packet write",
+        "[ros2_control_node-2] [ERROR] [1794277176.411522528] [canusb_system]: DISABLE_AFTER_WRITE_FAILURE failed: CANUSB incomplete serial packet write",
+        "[ros2_control_node-2] [ERROR] [1794277176.432229840] [canusb_system]: DISABLE_AFTER_WRITE_FAILURE failed: CANUSB incomplete serial packet write",
+        "[ros2_control_node-2] [ERROR] [1794277176.453050903] [canusb_system]: DISABLE_AFTER_WRITE_FAILURE failed: CANUSB incomplete serial packet write"
+      ]
+    },
+    {
+      "kind": "serial_write_fault",
+      "file": "verification/hardware/five_axis_20261107/gravity_ff_20261110/logs/driver_launch_20261110_101541.log",
+      "line": 79,
+      "timestamp": "2026-11-10 10:19:36",
+      "tag": "driver",
+      "file_date": "20261110",
+      "text": "[ros2_control_node-2] [ERROR] [1794277176.432229840] [canusb_system]: DISABLE_AFTER_WRITE_FAILURE failed: CANUSB incomplete serial packet write",
+      "context": [
+        "[ros2_control_node-2] [ERROR] [1794277176.390811470] [canusb_system]: SERIAL_OR_AUDIT_WRITE_FAILURE action=MOTOR: CANUSB incomplete serial packet write",
+        "[ros2_control_node-2] [ERROR] [1794277176.411522528] [canusb_system]: DISABLE_AFTER_WRITE_FAILURE failed: CANUSB incomplete serial packet write",
+        "[ros2_control_node-2] [ERROR] [1794277176.432229840] [canusb_system]: DISABLE_AFTER_WRITE_FAILURE failed: CANUSB incomplete serial packet write",
+        "[ros2_control_node-2] [ERROR] [1794277176.453050903] [canusb_system]: DISABLE_AFTER_WRITE_FAILURE failed: CANUSB incomplete serial packet write",
+        "[ros2_control_node-2] [WARN] [1794277176.460076044] [slaihand.controller_manager]: Overrun might occur, Total time : 90489.351 us (Expected < 10000.000 us) --> Read time : 96.849 us, Update time : 136.375 us, Write time : 90256.127 us"
+      ]
+    },
+    {
+      "kind": "serial_write_fault",
+      "file": "verification/hardware/five_axis_20261107/gravity_ff_20261110/logs/driver_launch_20261110_101541.log",
+      "line": 80,
+      "timestamp": "2026-11-10 10:19:36",
+      "tag": "driver",
+      "file_date": "20261110",
+      "text": "[ros2_control_node-2] [ERROR] [1794277176.453050903] [canusb_system]: DISABLE_AFTER_WRITE_FAILURE failed: CANUSB incomplete serial packet write",
+      "context": [
+        "[ros2_control_node-2] [ERROR] [1794277176.411522528] [canusb_system]: DISABLE_AFTER_WRITE_FAILURE failed: CANUSB incomplete serial packet write",
+        "[ros2_control_node-2] [ERROR] [1794277176.432229840] [canusb_system]: DISABLE_AFTER_WRITE_FAILURE failed: CANUSB incomplete serial packet write",
+        "[ros2_control_node-2] [ERROR] [1794277176.453050903] [canusb_system]: DISABLE_AFTER_WRITE_FAILURE failed: CANUSB incomplete serial packet write",
+        "[ros2_control_node-2] [WARN] [1794277176.460076044] [slaihand.controller_manager]: Overrun might occur, Total time : 90489.351 us (Expected < 10000.000 us) --> Read time : 96.849 us, Update time : 136.375 us, Write time : 90256.127 us",
+        "[ros2_control_node-2] [WARN] [1794277176.460159192] [slaihand.controller_manager]: Overrun detected! The controller manager missed its desired rate of 100 Hz. The loop took 90.671864 ms (missed cycles : 10)."
+      ]
+    },
+    {
+      "kind": "serial_write_fault",
+      "file": "verification/hardware/five_axis_20261107/gravity_ff_20261110/logs/driver_launch_20261110_101541.log",
+      "line": 83,
+      "timestamp": "2026-11-10 10:19:36",
+      "tag": "driver",
+      "file_date": "20261110",
+      "text": "[ros2_control_node-2] [WARN] [1794277176.510014894] [canusb_system]: Control output disabled; host disabled observations=true; reason=SERIAL_OR_AUDIT_WRITE_FAILURE",
+      "context": [
+        "[ros2_control_node-2] [WARN] [1794277176.460076044] [slaihand.controller_manager]: Overrun might occur, Total time : 90489.351 us (Expected < 10000.000 us) --> Read time : 96.849 us, Update time : 136.375 us, Write time : 90256.127 us",
+        "[ros2_control_node-2] [WARN] [1794277176.460159192] [slaihand.controller_manager]: Overrun detected! The controller manager missed its desired rate of 100 Hz. The loop took 90.671864 ms (missed cycles : 10).",
+        "[ros2_control_node-2] [WARN] [1794277176.510014894] [canusb_system]: Control output disabled; host disabled observations=true; reason=SERIAL_OR_AUDIT_WRITE_FAILURE",
+        "[ros2_control_node-2] [INFO] [1794277176.843349249] [slaihand.controller_manager]: Deactivating controllers: [ slaihand_joint_trajectory_controller ]",
+        "[ros2_control_node-2] [INFO] [1794277176.849796261] [slaihand.controller_manager]: Successfully switched controllers!"
+      ]
+    },
+    {
+      "kind": "serial_write_fault",
+      "file": "verification/hardware/five_axis_20261107/gravity_ff_20261110/logs/driver_launch_20261110_101541.log",
+      "line": 99,
+      "timestamp": "2026-11-10 10:23:02",
+      "tag": "driver",
+      "file_date": "20261110",
+      "text": "[ros2_control_node-2] [ERROR] [1794277382.317417102] [canusb_system]: SERIAL_OR_AUDIT_WRITE_FAILURE action=MOTOR: CANUSB incomplete serial packet write",
+      "context": [
+        "[ros2_control_node-2] [INFO] [1794277359.632891212] [slaihand.slaihand_joint_trajectory_controller]: Received new action goal",
+        "[ros2_control_node-2] [INFO] [1794277359.632942052] [slaihand.slaihand_joint_trajectory_controller]: Accepted new action goal",
+        "[ros2_control_node-2] [ERROR] [1794277382.317417102] [canusb_system]: SERIAL_OR_AUDIT_WRITE_FAILURE action=MOTOR: CANUSB incomplete serial packet write",
+        "[ros2_control_node-2] [WARN] [1794277382.331255194] [slaihand.controller_manager]: Overrun might occur, Total time : 34725.811 us (Expected < 10000.000 us) --> Read time : 72.299 us, Update time : 72.466 us, Write time : 34581.046 us",
+        "[ros2_control_node-2] [WARN] [1794277382.331314083] [slaihand.controller_manager]: Overrun detected! The controller manager missed its desired rate of 100 Hz. The loop took 34.874925 ms (missed cycles : 4)."
+      ]
+    },
+    {
+      "kind": "serial_write_fault",
+      "file": "verification/hardware/five_axis_20261107/gravity_ff_20261110/logs/driver_launch_20261110_101541.log",
+      "line": 102,
+      "timestamp": "2026-11-10 10:23:02",
+      "tag": "driver",
+      "file_date": "20261110",
+      "text": "[ros2_control_node-2] [WARN] [1794277382.366786936] [canusb_system]: Control output disabled; host disabled observations=true; reason=SERIAL_OR_AUDIT_WRITE_FAILURE",
+      "context": [
+        "[ros2_control_node-2] [WARN] [1794277382.331255194] [slaihand.controller_manager]: Overrun might occur, Total time : 34725.811 us (Expected < 10000.000 us) --> Read time : 72.299 us, Update time : 72.466 us, Write time : 34581.046 us",
+        "[ros2_control_node-2] [WARN] [1794277382.331314083] [slaihand.controller_manager]: Overrun detected! The controller manager missed its desired rate of 100 Hz. The loop took 34.874925 ms (missed cycles : 4).",
+        "[ros2_control_node-2] [WARN] [1794277382.366786936] [canusb_system]: Control output disabled; host disabled observations=true; reason=SERIAL_OR_AUDIT_WRITE_FAILURE",
+        "[ros2_control_node-2] [INFO] [1794277382.688786696] [slaihand.controller_manager]: Deactivating controllers: [ slaihand_joint_trajectory_controller ]",
+        "[ros2_control_node-2] [INFO] [1794277382.696728966] [slaihand.controller_manager]: Successfully switched controllers!"
+      ]
+    },
+    {
+      "kind": "serial_write_fault",
+      "file": "verification/hardware/five_axis_20261107/gravity_ff_20261110/logs/driver_launch_20261110_104907.log",
+      "line": 29,
+      "timestamp": "2026-11-10 10:49:08",
+      "tag": "driver",
+      "file_date": "20261110",
+      "text": "[ros2_control_node-2] [ERROR] [1794278948.251696202] [canusb_system]: CANUSB incomplete serial packet write",
+      "context": [
+        "[ros2_control_node-2] [INFO] [1794278948.062734053] [canusb_system]: SERIAL_LOW_LATENCY get=0 set=0 readback=false errno=0",
+        "[ros2_control_node-2] [INFO] [1794278948.062752331] [canusb_system]: DISARMED; motion requires explicit arm service. Audit: /home/xuyu/.ros/slaihand/canusb_five_axis_candidate/canusb_motion_zGjemu.jsonl",
+        "[ros2_control_node-2] [ERROR] [1794278948.251696202] [canusb_system]: CANUSB incomplete serial packet write",
+        "[spawner-4] [INFO] [1794278948.547350283] [slaihand.spawner_slaihand_joint_trajectory_controller]: waiting for service /slaihand/controller_manager/list_controllers to become available...",
+        "[ros2_control_node-2] [ERROR] [1794278948.662267743] [resource_manager]: Failed to 'configure' hardware 'SLAICanUsbFiveAxisSystem'"
+      ]
+    },
+    {
+      "kind": "process_died",
+      "file": "verification/hardware/five_axis_20261107/gravity_ff_20261110/logs/driver_launch_20261110_104907.log",
+      "line": 53,
+      "timestamp": null,
+      "tag": "driver",
+      "file_date": "20261110",
+      "text": "[ros2_control_node-2] Aborted (Signal sent by tkill() 94697 1000)",
+      "context": [
+        "[ros2_control_node-2] #1    Object \"/usr/lib/x86_64-linux-gnu/libc.so.6\", at 0x7f3c6ce4527d, in raise",
+        "[ros2_control_node-2] #0    Object \"/usr/lib/x86_64-linux-gnu/libc.so.6\", at 0x7f3c6ce9ec0c, in pthread_kill",
+        "[ros2_control_node-2] Aborted (Signal sent by tkill() 94697 1000)",
+        "[ERROR] [ros2_control_node-2]: process has died [pid 94697, exit code -6, cmd '/opt/ros/jazzy/lib/controller_manager/ros2_control_node --ros-args -r __ns:=/slaihand --params-file /home/xuyu/.cache/dsh_sched/install/slaihand_bringup/share/sl",
+        "[spawner-4] [WARN] [1794278958.554982952] [slaihand.spawner_slaihand_joint_trajectory_controller]: Could not contact service /slaihand/controller_manager/list_controllers"
+      ]
+    },
+    {
+      "kind": "process_died",
+      "file": "verification/hardware/five_axis_20261107/gravity_ff_20261110/logs/driver_launch_20261110_104907.log",
+      "line": 54,
+      "timestamp": null,
+      "tag": "driver",
+      "file_date": "20261110",
+      "text": "[ERROR] [ros2_control_node-2]: process has died [pid 94697, exit code -6, cmd '/opt/ros/jazzy/lib/controller_manager/ros2_control_node --ros-args -r __ns:=/slaihand --params-file /home/xuyu/.cache/dsh_sched/install/slaihand_bringup/share/slaihand_bringup/config/canusb_five_axis_controllers.yaml -r ~",
+      "context": [
+        "[ros2_control_node-2] #0    Object \"/usr/lib/x86_64-linux-gnu/libc.so.6\", at 0x7f3c6ce9ec0c, in pthread_kill",
+        "[ros2_control_node-2] Aborted (Signal sent by tkill() 94697 1000)",
+        "[ERROR] [ros2_control_node-2]: process has died [pid 94697, exit code -6, cmd '/opt/ros/jazzy/lib/controller_manager/ros2_control_node --ros-args -r __ns:=/slaihand --params-file /home/xuyu/.cache/dsh_sched/install/slaihand_bringup/share/sl",
+        "[spawner-4] [WARN] [1794278958.554982952] [slaihand.spawner_slaihand_joint_trajectory_controller]: Could not contact service /slaihand/controller_manager/list_controllers",
+        "[spawner-4] [INFO] [1794278958.555240360] [slaihand.spawner_slaihand_joint_trajectory_controller]: waiting for service /slaihand/controller_manager/list_controllers to become available..."
+      ]
+    },
+    {
+      "kind": "process_died",
+      "file": "verification/hardware/five_axis_20261107/gravity_ff_20261110/logs/driver_launch_20261110_105002.log",
+      "line": 66,
+      "timestamp": null,
+      "tag": "driver",
+      "file_date": "20261110",
+      "text": "[ERROR] [spawner-3]: process has died [pid 94996, exit code 1, cmd '/opt/ros/jazzy/lib/controller_manager/spawner joint_state_broadcaster --controller-manager /slaihand/controller_manager --ros-args -r __ns:=/slaihand'].",
+      "context": [
+        "[ros2_control_node-2] [ERROR] [1794279005.901045652] [slaihand.controller_manager]: Controller 'joint_state_broadcaster' can not be configured from 'active' state.",
+        "[spawner-3] [ERROR] [1794279005.901752969] [slaihand.spawner_joint_state_broadcaster]: Failed to configure controller",
+        "[ERROR] [spawner-3]: process has died [pid 94996, exit code 1, cmd '/opt/ros/jazzy/lib/controller_manager/spawner joint_state_broadcaster --controller-manager /slaihand/controller_manager --ros-args -r __ns:=/slaihand'].",
+        "[ros2_control_node-2] [INFO] [1794279018.030659734] [rclcpp]: signal_handler(SIGINT/SIGTERM)",
+        "[ros2_control_node-2] [INFO] [1794279018.030719450] [slaihand.controller_manager]: Shutdown request received...."
+      ]
+    },
+    {
+      "kind": "serial_write_fault",
+      "file": "verification/hardware/five_axis_20261107/gravity_ff_20261110/logs/driver_launch_20261110_105209.log",
+      "line": 64,
+      "timestamp": "2026-11-10 10:52:41",
+      "tag": "driver",
+      "file_date": "20261110",
+      "text": "[ros2_control_node-2] [ERROR] [1794279161.051514753] [canusb_system]: SERIAL_OR_AUDIT_WRITE_FAILURE action=MOTOR: CANUSB incomplete serial packet write",
+      "context": [
+        "[ros2_control_node-2] [WARN] [1794279160.940495341] [slaihand.controller_manager]: Overrun might occur, Total time : 19570.324 us (Expected < 10000.000 us) --> Read time : 88.595 us, Update time : 96.126 us, Write time : 19385.603 us",
+        "[ros2_control_node-2] [WARN] [1794279160.940595872] [slaihand.controller_manager]: Overrun detected! The controller manager missed its desired rate of 100 Hz. The loop took 19.789677 ms (missed cycles : 2).",
+        "[ros2_control_node-2] [ERROR] [1794279161.051514753] [canusb_system]: SERIAL_OR_AUDIT_WRITE_FAILURE action=MOTOR: CANUSB incomplete serial packet write",
+        "[ros2_control_node-2] [ERROR] [1794279161.071941337] [canusb_system]: DISABLE_AFTER_WRITE_FAILURE failed: CANUSB incomplete serial packet write",
+        "[ros2_control_node-2] [WARN] [1794279161.131391349] [canusb_system]: Control output disabled; host disabled observations=true; reason=SERIAL_OR_AUDIT_WRITE_FAILURE"
+      ]
+    },
+    {
+      "kind": "serial_write_fault",
+      "file": "verification/hardware/five_axis_20261107/gravity_ff_20261110/logs/driver_launch_20261110_105209.log",
+      "line": 65,
+      "timestamp": "2026-11-10 10:52:41",
+      "tag": "driver",
+      "file_date": "20261110",
+      "text": "[ros2_control_node-2] [ERROR] [1794279161.071941337] [canusb_system]: DISABLE_AFTER_WRITE_FAILURE failed: CANUSB incomplete serial packet write",
+      "context": [
+        "[ros2_control_node-2] [WARN] [1794279160.940595872] [slaihand.controller_manager]: Overrun detected! The controller manager missed its desired rate of 100 Hz. The loop took 19.789677 ms (missed cycles : 2).",
+        "[ros2_control_node-2] [ERROR] [1794279161.051514753] [canusb_system]: SERIAL_OR_AUDIT_WRITE_FAILURE action=MOTOR: CANUSB incomplete serial packet write",
+        "[ros2_control_node-2] [ERROR] [1794279161.071941337] [canusb_system]: DISABLE_AFTER_WRITE_FAILURE failed: CANUSB incomplete serial packet write",
+        "[ros2_control_node-2] [WARN] [1794279161.131391349] [canusb_system]: Control output disabled; host disabled observations=true; reason=SERIAL_OR_AUDIT_WRITE_FAILURE",
+        "[ros2_control_node-2] [INFO] [1794279161.463981442] [slaihand.controller_manager]: Deactivating controllers: [ slaihand_joint_trajectory_controller ]"
+      ]
+    },
+    {
+      "kind": "serial_write_fault",
+      "file": "verification/hardware/five_axis_20261107/gravity_ff_20261110/logs/driver_launch_20261110_105209.log",
+      "line": 66,
+      "timestamp": "2026-11-10 10:52:41",
+      "tag": "driver",
+      "file_date": "20261110",
+      "text": "[ros2_control_node-2] [WARN] [1794279161.131391349] [canusb_system]: Control output disabled; host disabled observations=true; reason=SERIAL_OR_AUDIT_WRITE_FAILURE",
+      "context": [
+        "[ros2_control_node-2] [ERROR] [1794279161.051514753] [canusb_system]: SERIAL_OR_AUDIT_WRITE_FAILURE action=MOTOR: CANUSB incomplete serial packet write",
+        "[ros2_control_node-2] [ERROR] [1794279161.071941337] [canusb_system]: DISABLE_AFTER_WRITE_FAILURE failed: CANUSB incomplete serial packet write",
+        "[ros2_control_node-2] [WARN] [1794279161.131391349] [canusb_system]: Control output disabled; host disabled observations=true; reason=SERIAL_OR_AUDIT_WRITE_FAILURE",
+        "[ros2_control_node-2] [INFO] [1794279161.463981442] [slaihand.controller_manager]: Deactivating controllers: [ slaihand_joint_trajectory_controller ]",
+        "[ros2_control_node-2] [INFO] [1794279161.471086445] [slaihand.controller_manager]: Successfully switched controllers!"
+      ]
+    },
+    {
+      "kind": "serial_write_fault",
+      "file": "verification/hardware/five_axis_20261107/gravity_ff_20261110/logs/driver_launch_20261110_105452.log",
+      "line": 65,
+      "timestamp": "2026-11-10 10:56:03",
+      "tag": "driver",
+      "file_date": "20261110",
+      "text": "[ros2_control_node-2] [ERROR] [1794279363.318379442] [canusb_system]: SERIAL_OR_AUDIT_WRITE_FAILURE action=MOTOR: CANUSB incomplete serial packet write",
+      "context": [
+        "[ros2_control_node-2] [WARN] [1794279363.297518475] [slaihand.controller_manager]: Overrun might occur, Total time : 19682.850 us (Expected < 10000.000 us) --> Read time : 93.520 us, Update time : 92.402 us, Write time : 19496.928 us",
+        "[ros2_control_node-2] [WARN] [1794279363.297646244] [slaihand.controller_manager]: Overrun detected! The controller manager missed its desired rate of 100 Hz. The loop took 19.927473 ms (missed cycles : 2).",
+        "[ros2_control_node-2] [ERROR] [1794279363.318379442] [canusb_system]: SERIAL_OR_AUDIT_WRITE_FAILURE action=MOTOR: CANUSB incomplete serial packet write",
+        "[ros2_control_node-2] [ERROR] [1794279363.368551211] [canusb_system]: SERIAL_OR_AUDIT_WRITE_FAILURE action=READ: CANUSB incomplete serial packet write",
+        "[ros2_control_node-2] [ERROR] [1794279363.418409942] [canusb_system]: SERIAL_OR_AUDIT_WRITE_FAILURE action=READ: CANUSB incomplete serial packet write"
+      ]
+    },
+    {
+      "kind": "serial_write_fault",
+      "file": "verification/hardware/five_axis_20261107/gravity_ff_20261110/logs/driver_launch_20261110_105452.log",
+      "line": 66,
+      "timestamp": "2026-11-10 10:56:03",
+      "tag": "driver",
+      "file_date": "20261110",
+      "text": "[ros2_control_node-2] [ERROR] [1794279363.368551211] [canusb_system]: SERIAL_OR_AUDIT_WRITE_FAILURE action=READ: CANUSB incomplete serial packet write",
+      "context": [
+        "[ros2_control_node-2] [WARN] [1794279363.297646244] [slaihand.controller_manager]: Overrun detected! The controller manager missed its desired rate of 100 Hz. The loop took 19.927473 ms (missed cycles : 2).",
+        "[ros2_control_node-2] [ERROR] [1794279363.318379442] [canusb_system]: SERIAL_OR_AUDIT_WRITE_FAILURE action=MOTOR: CANUSB incomplete serial packet write",
+        "[ros2_control_node-2] [ERROR] [1794279363.368551211] [canusb_system]: SERIAL_OR_AUDIT_WRITE_FAILURE action=READ: CANUSB incomplete serial packet write",
+        "[ros2_control_node-2] [ERROR] [1794279363.418409942] [canusb_system]: SERIAL_OR_AUDIT_WRITE_FAILURE action=READ: CANUSB incomplete serial packet write",
+        "[ros2_control_node-2] [WARN] [1794279363.438197906] [canusb_system]: Control output disabled; host disabled observations=true; reason=SERIAL_OR_AUDIT_WRITE_FAILURE"
+      ]
+    },
+    {
+      "kind": "serial_write_fault",
+      "file": "verification/hardware/five_axis_20261107/gravity_ff_20261110/logs/driver_launch_20261110_105452.log",
+      "line": 67,
+      "timestamp": "2026-11-10 10:56:03",
+      "tag": "driver",
+      "file_date": "20261110",
+      "text": "[ros2_control_node-2] [ERROR] [1794279363.418409942] [canusb_system]: SERIAL_OR_AUDIT_WRITE_FAILURE action=READ: CANUSB incomplete serial packet write",
+      "context": [
+        "[ros2_control_node-2] [ERROR] [1794279363.318379442] [canusb_system]: SERIAL_OR_AUDIT_WRITE_FAILURE action=MOTOR: CANUSB incomplete serial packet write",
+        "[ros2_control_node-2] [ERROR] [1794279363.368551211] [canusb_system]: SERIAL_OR_AUDIT_WRITE_FAILURE action=READ: CANUSB incomplete serial packet write",
+        "[ros2_control_node-2] [ERROR] [1794279363.418409942] [canusb_system]: SERIAL_OR_AUDIT_WRITE_FAILURE action=READ: CANUSB incomplete serial packet write",
+        "[ros2_control_node-2] [WARN] [1794279363.438197906] [canusb_system]: Control output disabled; host disabled observations=true; reason=SERIAL_OR_AUDIT_WRITE_FAILURE",
+        "[ros2_control_node-2] [INFO] [1794279363.782554934] [slaihand.controller_manager]: Deactivating controllers: [ slaihand_joint_trajectory_controller ]"
+      ]
+    },
+    {
+      "kind": "serial_write_fault",
+      "file": "verification/hardware/five_axis_20261107/gravity_ff_20261110/logs/driver_launch_20261110_105452.log",
+      "line": 68,
+      "timestamp": "2026-11-10 10:56:03",
+      "tag": "driver",
+      "file_date": "20261110",
+      "text": "[ros2_control_node-2] [WARN] [1794279363.438197906] [canusb_system]: Control output disabled; host disabled observations=true; reason=SERIAL_OR_AUDIT_WRITE_FAILURE",
+      "context": [
+        "[ros2_control_node-2] [ERROR] [1794279363.368551211] [canusb_system]: SERIAL_OR_AUDIT_WRITE_FAILURE action=READ: CANUSB incomplete serial packet write",
+        "[ros2_control_node-2] [ERROR] [1794279363.418409942] [canusb_system]: SERIAL_OR_AUDIT_WRITE_FAILURE action=READ: CANUSB incomplete serial packet write",
+        "[ros2_control_node-2] [WARN] [1794279363.438197906] [canusb_system]: Control output disabled; host disabled observations=true; reason=SERIAL_OR_AUDIT_WRITE_FAILURE",
+        "[ros2_control_node-2] [INFO] [1794279363.782554934] [slaihand.controller_manager]: Deactivating controllers: [ slaihand_joint_trajectory_controller ]",
+        "[ros2_control_node-2] [INFO] [1794279363.788034647] [slaihand.controller_manager]: Successfully switched controllers!"
+      ]
+    },
+    {
+      "kind": "serial_write_fault",
+      "file": "verification/hardware/five_axis_20261107/gravity_ff_20261110/logs/driver_launch_20261110_105653.log",
+      "line": 62,
+      "timestamp": "2026-11-10 10:57:25",
+      "tag": "driver",
+      "file_date": "20261110",
+      "text": "[ros2_control_node-2] [ERROR] [1794279445.939408484] [canusb_system]: SERIAL_OR_AUDIT_WRITE_FAILURE action=MOTOR: CANUSB incomplete serial packet write",
+      "context": [
+        "[ros2_control_node-2] [INFO] [1794279433.440840651] [slaihand.slaihand_joint_trajectory_controller]: Received new action goal",
+        "[ros2_control_node-2] [INFO] [1794279433.440958451] [slaihand.slaihand_joint_trajectory_controller]: Accepted new action goal",
+        "[ros2_control_node-2] [ERROR] [1794279445.939408484] [canusb_system]: SERIAL_OR_AUDIT_WRITE_FAILURE action=MOTOR: CANUSB incomplete serial packet write",
+        "[ros2_control_node-2] [WARN] [1794279445.951709644] [slaihand.controller_manager]: Overrun might occur, Total time : 32745.729 us (Expected < 10000.000 us) --> Read time : 91.837 us, Update time : 135.782 us, Write time : 32518.110 us",
+        "[ros2_control_node-2] [WARN] [1794279445.951812814] [slaihand.controller_manager]: Overrun detected! The controller manager missed its desired rate of 100 Hz. The loop took 32.932906 ms (missed cycles : 4)."
+      ]
+    },
+    {
+      "kind": "serial_write_fault",
+      "file": "verification/hardware/five_axis_20261107/gravity_ff_20261110/logs/driver_launch_20261110_105653.log",
+      "line": 65,
+      "timestamp": "2026-11-10 10:57:25",
+      "tag": "driver",
+      "file_date": "20261110",
+      "text": "[ros2_control_node-2] [ERROR] [1794279445.990279204] [canusb_system]: SERIAL_OR_AUDIT_WRITE_FAILURE action=MOTOR: CANUSB incomplete serial packet write",
+      "context": [
+        "[ros2_control_node-2] [WARN] [1794279445.951709644] [slaihand.controller_manager]: Overrun might occur, Total time : 32745.729 us (Expected < 10000.000 us) --> Read time : 91.837 us, Update time : 135.782 us, Write time : 32518.110 us",
+        "[ros2_control_node-2] [WARN] [1794279445.951812814] [slaihand.controller_manager]: Overrun detected! The controller manager missed its desired rate of 100 Hz. The loop took 32.932906 ms (missed cycles : 4).",
+        "[ros2_control_node-2] [ERROR] [1794279445.990279204] [canusb_system]: SERIAL_OR_AUDIT_WRITE_FAILURE action=MOTOR: CANUSB incomplete serial packet write",
+        "[ros2_control_node-2] [ERROR] [1794279446.010526855] [canusb_system]: DISABLE_AFTER_WRITE_FAILURE failed: CANUSB incomplete serial packet write",
+        "[ros2_control_node-2] [WARN] [1794279446.039505076] [canusb_system]: Control output disabled; host disabled observations=true; reason=SERIAL_OR_AUDIT_WRITE_FAILURE"
+      ]
+    },
+    {
+      "kind": "serial_write_fault",
+      "file": "verification/hardware/five_axis_20261107/gravity_ff_20261110/logs/driver_launch_20261110_105653.log",
+      "line": 66,
+      "timestamp": "2026-11-10 10:57:26",
+      "tag": "driver",
+      "file_date": "20261110",
+      "text": "[ros2_control_node-2] [ERROR] [1794279446.010526855] [canusb_system]: DISABLE_AFTER_WRITE_FAILURE failed: CANUSB incomplete serial packet write",
+      "context": [
+        "[ros2_control_node-2] [WARN] [1794279445.951812814] [slaihand.controller_manager]: Overrun detected! The controller manager missed its desired rate of 100 Hz. The loop took 32.932906 ms (missed cycles : 4).",
+        "[ros2_control_node-2] [ERROR] [1794279445.990279204] [canusb_system]: SERIAL_OR_AUDIT_WRITE_FAILURE action=MOTOR: CANUSB incomplete serial packet write",
+        "[ros2_control_node-2] [ERROR] [1794279446.010526855] [canusb_system]: DISABLE_AFTER_WRITE_FAILURE failed: CANUSB incomplete serial packet write",
+        "[ros2_control_node-2] [WARN] [1794279446.039505076] [canusb_system]: Control output disabled; host disabled observations=true; reason=SERIAL_OR_AUDIT_WRITE_FAILURE",
+        "[ros2_control_node-2] [INFO] [1794279446.362930743] [slaihand.controller_manager]: Deactivating controllers: [ slaihand_joint_trajectory_controller ]"
+      ]
+    },
+    {
+      "kind": "serial_write_fault",
+      "file": "verification/hardware/five_axis_20261107/gravity_ff_20261110/logs/driver_launch_20261110_105653.log",
+      "line": 67,
+      "timestamp": "2026-11-10 10:57:26",
+      "tag": "driver",
+      "file_date": "20261110",
+      "text": "[ros2_control_node-2] [WARN] [1794279446.039505076] [canusb_system]: Control output disabled; host disabled observations=true; reason=SERIAL_OR_AUDIT_WRITE_FAILURE",
+      "context": [
+        "[ros2_control_node-2] [ERROR] [1794279445.990279204] [canusb_system]: SERIAL_OR_AUDIT_WRITE_FAILURE action=MOTOR: CANUSB incomplete serial packet write",
+        "[ros2_control_node-2] [ERROR] [1794279446.010526855] [canusb_system]: DISABLE_AFTER_WRITE_FAILURE failed: CANUSB incomplete serial packet write",
+        "[ros2_control_node-2] [WARN] [1794279446.039505076] [canusb_system]: Control output disabled; host disabled observations=true; reason=SERIAL_OR_AUDIT_WRITE_FAILURE",
+        "[ros2_control_node-2] [INFO] [1794279446.362930743] [slaihand.controller_manager]: Deactivating controllers: [ slaihand_joint_trajectory_controller ]",
+        "[ros2_control_node-2] [INFO] [1794279446.369315194] [slaihand.controller_manager]: Successfully switched controllers!"
+      ]
+    },
+    {
+      "kind": "serial_write_fault",
+      "file": "verification/hardware/five_axis_20261107/gravity_ff_20261110/logs/driver_launch_20261110_122755.log",
+      "line": 88,
+      "timestamp": "2026-11-10 12:36:56",
+      "tag": "driver",
+      "file_date": "20261110",
+      "text": "[ros2_control_node-2] [ERROR] [1794285416.777354197] [canusb_system]: SERIAL_OR_AUDIT_WRITE_FAILURE action=MOTOR: CANUSB incomplete serial packet write",
+      "context": [
+        "[ros2_control_node-2] [WARN] [1794285416.711657065] [slaihand.controller_manager]: Overrun might occur, Total time : 17608.434 us (Expected < 10000.000 us) --> Read time : 70.657 us, Update time : 88.764 us, Write time : 17449.013 us",
+        "[ros2_control_node-2] [WARN] [1794285416.711763160] [slaihand.controller_manager]: Overrun detected! The controller manager missed its desired rate of 100 Hz. The loop took 17.816275 ms (missed cycles : 2).",
+        "[ros2_control_node-2] [ERROR] [1794285416.777354197] [canusb_system]: SERIAL_OR_AUDIT_WRITE_FAILURE action=MOTOR: CANUSB incomplete serial packet write",
+        "[ros2_control_node-2] [WARN] [1794285416.834328310] [canusb_system]: Control output disabled; host disabled observations=true; reason=SERIAL_OR_AUDIT_WRITE_FAILURE",
+        "[ros2_control_node-2] [INFO] [1794285417.157317263] [slaihand.controller_manager]: Deactivating controllers: [ slaihand_joint_trajectory_controller ]"
+      ]
+    },
+    {
+      "kind": "serial_write_fault",
+      "file": "verification/hardware/five_axis_20261107/gravity_ff_20261110/logs/driver_launch_20261110_122755.log",
+      "line": 89,
+      "timestamp": "2026-11-10 12:36:56",
+      "tag": "driver",
+      "file_date": "20261110",
+      "text": "[ros2_control_node-2] [WARN] [1794285416.834328310] [canusb_system]: Control output disabled; host disabled observations=true; reason=SERIAL_OR_AUDIT_WRITE_FAILURE",
+      "context": [
+        "[ros2_control_node-2] [WARN] [1794285416.711763160] [slaihand.controller_manager]: Overrun detected! The controller manager missed its desired rate of 100 Hz. The loop took 17.816275 ms (missed cycles : 2).",
+        "[ros2_control_node-2] [ERROR] [1794285416.777354197] [canusb_system]: SERIAL_OR_AUDIT_WRITE_FAILURE action=MOTOR: CANUSB incomplete serial packet write",
+        "[ros2_control_node-2] [WARN] [1794285416.834328310] [canusb_system]: Control output disabled; host disabled observations=true; reason=SERIAL_OR_AUDIT_WRITE_FAILURE",
+        "[ros2_control_node-2] [INFO] [1794285417.157317263] [slaihand.controller_manager]: Deactivating controllers: [ slaihand_joint_trajectory_controller ]",
+        "[ros2_control_node-2] [INFO] [1794285417.164374891] [slaihand.controller_manager]: Successfully switched controllers!"
+      ]
+    },
+    {
+      "kind": "disabled_or_stop",
+      "file": "verification/hardware/five_axis_20261107/gravity_ff_20261110/logs/F4fr_20261110.log",
+      "line": 8,
+      "timestamp": null,
+      "tag": "F4fr",
+      "file_date": "20261110",
+      "text": "试验结束/中止：控制端已全局停止或UNKNOWN；检查失能反馈，状态未知时保持支撑并现场切电",
+      "context": [
+        "五轴使能、增益斜坡及稳定状态已观测；不是位置精度验收。",
+        "各路点反馈验收：[{\"arrival_s\": 8.0, \"end_s\": 13.0, \"target_rad\": [0.0, 0.0, 0.0, 0.0, 0.0], \"samples\": 30, \"sampled_span_s\": 0.29022701700159814, \"max_error_deg\": [0.08742775541784104, 0.1529985719812218, 0.0, 0.02185693885446026, 0.284140205107983",
+        "试验结束/中止：控制端已全局停止或UNKNOWN；检查失能反馈，状态未知时保持支撑并现场切电",
+        "已观测五轴新反馈失能；不是物理切力矩证明。",
+        "结果：/mnt/d/CodexData/Projects/机械臂/slaihand_five_axis_ws_gain/verification/hardware/five_axis_20261107/gravity_ff_20261110/clients/F4fr/20261110_123657_99c5fb25.json"
+      ]
+    },
+    {
+      "kind": "process_died",
+      "file": "verification/hardware/five_axis_20261107/gravity_ff_20261110/logs/gravitycal_deploy_driver.log",
+      "line": 43,
+      "timestamp": null,
+      "tag": "gravitycal",
+      "file_date": null,
+      "text": "[ERROR] [spawner-3]: process has died [pid 8646, exit code 1, cmd '/opt/ros/jazzy/lib/controller_manager/spawner joint_state_broadcaster --controller-manager /slaihand/controller_manager --ros-args -r __ns:=/slaihand'].",
+      "context": [
+        "[spawner-3] [ERROR] [1794297580.494832324] [slaihand.spawner_joint_state_broadcaster]: Failed to configure controller",
+        "[spawner-4] [INFO] [1794297580.580053000] [slaihand.spawner_slaihand_joint_trajectory_controller]: waiting for service /slaihand/controller_manager/list_controllers to become available...",
+        "[ERROR] [spawner-3]: process has died [pid 8646, exit code 1, cmd '/opt/ros/jazzy/lib/controller_manager/spawner joint_state_broadcaster --controller-manager /slaihand/controller_manager --ros-args -r __ns:=/slaihand'].",
+        "[ros2_control_node-2] [INFO] [1794297580.832301246] [slaihand.controller_manager]: Loading controller : 'slaihand_joint_trajectory_controller' of type 'joint_trajectory_controller/JointTrajectoryController'",
+        "[ros2_control_node-2] [INFO] [1794297580.832367412] [slaihand.controller_manager]: Loading controller 'slaihand_joint_trajectory_controller'"
+      ]
+    },
+    {
+      "kind": "disabled_or_stop",
+      "file": "verification/hardware/five_axis_20261107/gravity_ff_20261110/logs/J5A_20261110.log",
+      "line": 8,
+      "timestamp": null,
+      "tag": "J5A",
+      "file_date": "20261110",
+      "text": "试验结束/中止：控制端已全局停止或UNKNOWN；检查失能反馈，状态未知时保持支撑并现场切电",
+      "context": [
+        "五轴使能、增益斜坡及稳定状态已观测；不是位置精度验收。",
+        "各路点反馈验收：[{\"arrival_s\": 6.0, \"end_s\": 12.0, \"target_rad\": [0.0, 0.0, 0.0, 0.0, 0.0], \"samples\": 30, \"sampled_span_s\": 0.29051258800609503, \"max_error_deg\": [0.08742775541784104, 0.2841402051079833, 0.0, 0.0, 0.2841402051079833], \"passed\": tr",
+        "试验结束/中止：控制端已全局停止或UNKNOWN；检查失能反馈，状态未知时保持支撑并现场切电",
+        "已观测五轴新反馈失能；不是物理切力矩证明。",
+        "结果：/mnt/d/CodexData/Projects/机械臂/slaihand_five_axis_ws_gain/verification/hardware/five_axis_20261107/gravity_ff_20261110/clients/J5A/20261110_101832_ef8ecf55.json"
+      ]
+    },
+    {
+      "kind": "disabled_or_stop",
+      "file": "verification/hardware/five_axis_20261107/gravity_ff_20261110/logs/J5B_20261110.log",
+      "line": 8,
+      "timestamp": null,
+      "tag": "J5B",
+      "file_date": "20261110",
+      "text": "试验结束/中止：控制端已全局停止或UNKNOWN；检查失能反馈，状态未知时保持支撑并现场切电",
+      "context": [
+        "五轴使能、增益斜坡及稳定状态已观测；不是位置精度验收。",
+        "各路点反馈验收：[{\"arrival_s\": 6.0, \"end_s\": 12.0, \"target_rad\": [0.0, 0.0, 0.0, 0.0, 0.0], \"samples\": 30, \"sampled_span_s\": 0.2899713849910768, \"max_error_deg\": [0.02185693885446026, 0.17485551083568207, 0.0, 0.0, 0.2841402051079833], \"passed\": tr",
+        "试验结束/中止：控制端已全局停止或UNKNOWN；检查失能反馈，状态未知时保持支撑并现场切电",
+        "已观测五轴新反馈失能；不是物理切力矩证明。",
+        "结果：/mnt/d/CodexData/Projects/机械臂/slaihand_five_axis_ws_gain/verification/hardware/five_axis_20261107/gravity_ff_20261110/clients/J5B/20261110_101936_3082976f.json"
+      ]
+    },
+    {
+      "kind": "disabled_or_stop",
+      "file": "verification/hardware/five_axis_20261107/gravity_ff_20261110/logs/JVc_20261110.log",
+      "line": 8,
+      "timestamp": null,
+      "tag": "JVc",
+      "file_date": "20261110",
+      "text": "试验结束/中止：控制端已全局停止或UNKNOWN；检查失能反馈，状态未知时保持支撑并现场切电",
+      "context": [
+        "五轴使能、增益斜坡及稳定状态已观测；不是位置精度验收。",
+        "各路点反馈验收：[{\"arrival_s\": 6.0, \"end_s\": 12.0, \"target_rad\": [0.0, 0.0, 0.0, 0.0, 0.0], \"samples\": 30, \"sampled_span_s\": 0.289842972997576, \"max_error_deg\": [0.08742775541784104, 0.2841402051079833, 0.0, 0.4371387770892052, 0.2841402051079833],",
+        "试验结束/中止：控制端已全局停止或UNKNOWN；检查失能反馈，状态未知时保持支撑并现场切电",
+        "已观测五轴新反馈失能；不是物理切力矩证明。",
+        "结果：/mnt/d/CodexData/Projects/机械臂/slaihand_five_axis_ws_gain/verification/hardware/five_axis_20261107/gravity_ff_20261110/clients/JVc/20261110_102302_aac1a8a1.json"
+      ]
+    },
+    {
+      "kind": "disabled_or_stop",
+      "file": "verification/hardware/five_axis_20261107/gravity_ff_20261110/logs/smoke1014_iter1_20261110.log",
+      "line": 8,
+      "timestamp": null,
+      "tag": "smoke1014",
+      "file_date": "20261110",
+      "text": "试验结束/中止：控制端已全局停止或UNKNOWN；检查失能反馈，状态未知时保持支撑并现场切电",
+      "context": [
+        "五轴使能、增益斜坡及稳定状态已观测；不是位置精度验收。",
+        "各路点反馈验收：[{\"arrival_s\": 6.0, \"end_s\": 12.0, \"target_rad\": [0.0, 0.0, 0.0, 0.0, 0.0], \"samples\": 0, \"sampled_span_s\": 0.0, \"max_error_deg\": null, \"passed\": false}, {\"arrival_s\": 18.0, \"end_s\": 24.0, \"target_rad\": [0.10017491774746655, 0.10129",
+        "试验结束/中止：控制端已全局停止或UNKNOWN；检查失能反馈，状态未知时保持支撑并现场切电",
+        "已观测五轴新反馈失能；不是物理切力矩证明。",
+        "结果：/mnt/d/CodexData/Projects/机械臂/slaihand_five_axis_ws_gain/verification/hardware/five_axis_20261107/gravity_ff_20261110/clients/smoke1014_iter1/20261110_105241_3390032c.json"
+      ]
+    },
+    {
+      "kind": "disabled_or_stop",
+      "file": "verification/hardware/five_axis_20261107/gravity_ff_20261110/logs/smoke1015_iter1_20261110.log",
+      "line": 8,
+      "timestamp": null,
+      "tag": "smoke1015",
+      "file_date": "20261110",
+      "text": "试验结束/中止：控制端已全局停止或UNKNOWN；检查失能反馈，状态未知时保持支撑并现场切电",
+      "context": [
+        "五轴使能、增益斜坡及稳定状态已观测；不是位置精度验收。",
+        "各路点反馈验收：[{\"arrival_s\": 6.0, \"end_s\": 12.0, \"target_rad\": [0.0, 0.0, 0.0, 0.0, 0.0], \"samples\": 30, \"sampled_span_s\": 0.28980489500099793, \"max_error_deg\": [0.08742775541784104, 0.2841402051079833, 0.0, 0.4589957159436654, 0.1092846942723013",
+        "试验结束/中止：控制端已全局停止或UNKNOWN；检查失能反馈，状态未知时保持支撑并现场切电",
+        "已观测五轴新反馈失能；不是物理切力矩证明。",
+        "结果：/mnt/d/CodexData/Projects/机械臂/slaihand_five_axis_ws_gain/verification/hardware/five_axis_20261107/gravity_ff_20261110/clients/smoke1015_iter1/20261110_105603_051270b9.json"
+      ]
+    },
+    {
+      "kind": "disabled_or_stop",
+      "file": "verification/hardware/five_axis_20261107/gravity_ff_20261110/logs/smoke1016_base_20261110.log",
+      "line": 8,
+      "timestamp": null,
+      "tag": "smoke1016",
+      "file_date": "20261110",
+      "text": "试验结束/中止：控制端已全局停止或UNKNOWN；检查失能反馈，状态未知时保持支撑并现场切电",
+      "context": [
+        "五轴使能、增益斜坡及稳定状态已观测；不是位置精度验收。",
+        "各路点反馈验收：[{\"arrival_s\": 4.0, \"end_s\": 8.0, \"target_rad\": [0.0, 0.0, 0.0, 0.0, 0.0], \"samples\": 30, \"sampled_span_s\": 0.28986102300405037, \"max_error_deg\": [0.1092846942723013, 0.1529985719812218, 0.0, 0.4371387770892052, 0.1092846942723013],",
+        "试验结束/中止：控制端已全局停止或UNKNOWN；检查失能反馈，状态未知时保持支撑并现场切电",
+        "已观测五轴新反馈失能；不是物理切力矩证明。",
+        "结果：/mnt/d/CodexData/Projects/机械臂/slaihand_five_axis_ws_gain/verification/hardware/five_axis_20261107/gravity_ff_20261110/clients/smoke1016_base/20261110_105726_7165e78a.json"
+      ]
+    },
+    {
+      "kind": "disabled_or_stop",
+      "file": "verification/hardware/five_axis_20261107/gravity_ff_20261110/logs/T1a_20261110.log",
+      "line": 8,
+      "timestamp": null,
+      "tag": "T1a",
+      "file_date": "20261110",
+      "text": "试验结束/中止：控制端已全局停止或UNKNOWN；检查失能反馈，状态未知时保持支撑并现场切电",
+      "context": [
+        "五轴使能、增益斜坡及稳定状态已观测；不是位置精度验收。",
+        "各路点反馈验收：[{\"arrival_s\": 6.0, \"end_s\": 12.0, \"target_rad\": [0.0, 0.0, 0.0, 0.0, 0.0], \"samples\": 30, \"sampled_span_s\": 0.28991486999439076, \"max_error_deg\": [0.3059971439624436, 0.39342489938028463, 0.0, 0.13114163312676155, 0.284140205107983",
+        "试验结束/中止：控制端已全局停止或UNKNOWN；检查失能反馈，状态未知时保持支撑并现场切电",
+        "已观测五轴新反馈失能；不是物理切力矩证明。",
+        "结果：/mnt/d/CodexData/Projects/机械臂/slaihand_five_axis_ws_gain/verification/hardware/five_axis_20261107/gravity_ff_20261110/clients/T1a/20261110_095817_78de8c66.json"
+      ]
+    },
+    {
+      "kind": "disabled_or_stop",
+      "file": "verification/hardware/five_axis_20261107/gravity_ff_20261110/logs/V1c_20261110.log",
+      "line": 8,
+      "timestamp": null,
+      "tag": "V1c",
+      "file_date": "20261110",
+      "text": "试验结束/中止：控制端已全局停止或UNKNOWN；检查失能反馈，状态未知时保持支撑并现场切电",
+      "context": [
+        "五轴使能、增益斜坡及稳定状态已观测；不是位置精度验收。",
+        "各路点反馈验收：[{\"arrival_s\": 6.0, \"end_s\": 12.0, \"target_rad\": [0.0, 0.0, 0.0, 0.0, 0.0], \"samples\": 30, \"sampled_span_s\": 0.2894694080023328, \"max_error_deg\": [0.04371387770892052, 0.1529985719812218, 0.0, 0.4589957159436654, 0.2841402051079833]",
+        "试验结束/中止：控制端已全局停止或UNKNOWN；检查失能反馈，状态未知时保持支撑并现场切电",
+        "已观测五轴新反馈失能；不是物理切力矩证明。",
+        "结果：/mnt/d/CodexData/Projects/机械臂/slaihand_five_axis_ws_gain/verification/hardware/five_axis_20261107/gravity_ff_20261110/clients/V1c/20261110_100532_c30d2f31.json"
+      ]
+    },
+    {
+      "kind": "disabled_or_stop",
+      "file": "/home/xuyu/.ros/slaihand/j5_readonly_20261107/panel_before_54ddb5c_20261107_164242.log",
+      "line": 5,
+      "timestamp": null,
+      "tag": "panel",
+      "file_date": "20261107",
+      "text": "收到退出信号：终止在途客户端并请求停止…",
+      "context": [
+        "四轴统一控制台：http://127.0.0.1:42664/?token=dhYm1b9pFcmgH43LMCEezMUQGxdgzs7T",
+        "ROS_DOMAIN_ID=177  存档=/home/xuyu/.ros/slaihand/j5_readonly_20261107/panel",
+        "收到退出信号：终止在途客户端并请求停止…",
+        "控制台已退出；存档：/home/xuyu/.ros/slaihand/j5_readonly_20261107/panel"
+      ]
+    },
+    {
+      "kind": "disabled_or_stop",
+      "file": "/home/xuyu/.ros/slaihand/j5_readonly_20261107/panel_before_54ddb5c_20261107_163241.log",
+      "line": 5,
+      "timestamp": null,
+      "tag": "panel",
+      "file_date": "20261107",
+      "text": "收到退出信号：终止在途客户端并请求停止…",
+      "context": [
+        "四轴统一控制台：http://127.0.0.1:42664/?token=1Y8WCdOk0f8irNFnVdNjzGeIJfiGDna-",
+        "ROS_DOMAIN_ID=177  存档=/home/xuyu/.ros/slaihand/j5_readonly_20261107/panel",
+        "收到退出信号：终止在途客户端并请求停止…",
+        "控制台已退出；存档：/home/xuyu/.ros/slaihand/j5_readonly_20261107/panel"
+      ]
+    },
+    {
+      "kind": "write_supervision_failure",
+      "file": "/home/xuyu/.ros/slaihand/j5_readonly_20261107/panel/connection/driver_20261107_144712_623454.log",
+      "line": 59,
+      "timestamp": "2026-11-07 14:47:56",
+      "tag": "driver",
+      "file_date": "20261107",
+      "text": "[ros2_control_node-2] [WARN] [1794034076.447236278] [canusb_system]: Control output disabled; host disabled observations=false; reason=WRITE_SUPERVISION_FAILURE",
+      "context": [
+        "[ros2_control_node-2] [INFO] [1794034046.625923170] [slaihand.slaihand_joint_trajectory_controller]: No scaling interface set. This controller will not read speed scaling from the hardware.",
+        "[INFO] [spawner-4]: process has finished cleanly [pid 1259]",
+        "[ros2_control_node-2] [WARN] [1794034076.447236278] [canusb_system]: Control output disabled; host disabled observations=false; reason=WRITE_SUPERVISION_FAILURE",
+        "[WARNING] [launch]: user interrupted with ctrl-c (SIGINT)",
+        "[INFO] [ros2_control_node-2]: sending signal 'SIGINT' to process[ros2_control_node-2]"
+      ]
+    },
+    {
+      "kind": "write_supervision_failure",
+      "file": "/home/xuyu/.ros/slaihand/control_panel/connection/driver_20261107_115813_94765.log",
+      "line": 52,
+      "timestamp": "2026-11-07 11:58:30",
+      "tag": "driver",
+      "file_date": "20261107",
+      "text": "[ros2_control_node-2] [WARN] [1794023910.150349801] [canusb_system]: Control output disabled; host disabled observations=false; reason=WRITE_SUPERVISION_FAILURE",
+      "context": [
+        "[ros2_control_node-2] [INFO] [1794023897.018752575] [slaihand.slaihand_joint_trajectory_controller]: No scaling interface set. This controller will not read speed scaling from the hardware.",
+        "[INFO] [spawner-4]: process has finished cleanly [pid 2157]",
+        "[ros2_control_node-2] [WARN] [1794023910.150349801] [canusb_system]: Control output disabled; host disabled observations=false; reason=WRITE_SUPERVISION_FAILURE",
+        "[ros2_control_node-2] [WARN] [1794024002.953765108] [canusb_system]: Control output disabled; host disabled observations=false; reason=WRITE_SUPERVISION_FAILURE",
+        "[ros2_control_node-2] [WARN] [1794024032.379243233] [canusb_system]: Control output disabled; host disabled observations=false; reason=WRITE_SUPERVISION_FAILURE"
+      ]
+    },
+    {
+      "kind": "write_supervision_failure",
+      "file": "/home/xuyu/.ros/slaihand/control_panel/connection/driver_20261107_115813_94765.log",
+      "line": 53,
+      "timestamp": "2026-11-07 12:00:02",
+      "tag": "driver",
+      "file_date": "20261107",
+      "text": "[ros2_control_node-2] [WARN] [1794024002.953765108] [canusb_system]: Control output disabled; host disabled observations=false; reason=WRITE_SUPERVISION_FAILURE",
+      "context": [
+        "[INFO] [spawner-4]: process has finished cleanly [pid 2157]",
+        "[ros2_control_node-2] [WARN] [1794023910.150349801] [canusb_system]: Control output disabled; host disabled observations=false; reason=WRITE_SUPERVISION_FAILURE",
+        "[ros2_control_node-2] [WARN] [1794024002.953765108] [canusb_system]: Control output disabled; host disabled observations=false; reason=WRITE_SUPERVISION_FAILURE",
+        "[ros2_control_node-2] [WARN] [1794024032.379243233] [canusb_system]: Control output disabled; host disabled observations=false; reason=WRITE_SUPERVISION_FAILURE",
+        "[ros2_control_node-2] [WARN] [1794024034.383638336] [canusb_system]: Control output disabled; host disabled observations=true; reason=OPERATOR_GLOBAL_STOP"
+      ]
+    },
+    {
+      "kind": "write_supervision_failure",
+      "file": "/home/xuyu/.ros/slaihand/control_panel/connection/driver_20261107_115813_94765.log",
+      "line": 54,
+      "timestamp": "2026-11-07 12:00:32",
+      "tag": "driver",
+      "file_date": "20261107",
+      "text": "[ros2_control_node-2] [WARN] [1794024032.379243233] [canusb_system]: Control output disabled; host disabled observations=false; reason=WRITE_SUPERVISION_FAILURE",
+      "context": [
+        "[ros2_control_node-2] [WARN] [1794023910.150349801] [canusb_system]: Control output disabled; host disabled observations=false; reason=WRITE_SUPERVISION_FAILURE",
+        "[ros2_control_node-2] [WARN] [1794024002.953765108] [canusb_system]: Control output disabled; host disabled observations=false; reason=WRITE_SUPERVISION_FAILURE",
+        "[ros2_control_node-2] [WARN] [1794024032.379243233] [canusb_system]: Control output disabled; host disabled observations=false; reason=WRITE_SUPERVISION_FAILURE",
+        "[ros2_control_node-2] [WARN] [1794024034.383638336] [canusb_system]: Control output disabled; host disabled observations=true; reason=OPERATOR_GLOBAL_STOP",
+        "[ros2_control_node-2] [WARN] [1794024099.839743857] [canusb_system]: Control output disabled; host disabled observations=false; reason=WRITE_SUPERVISION_FAILURE"
+      ]
+    },
+    {
+      "kind": "write_supervision_failure",
+      "file": "/home/xuyu/.ros/slaihand/control_panel/connection/driver_20261107_115813_94765.log",
+      "line": 56,
+      "timestamp": "2026-11-07 12:01:39",
+      "tag": "driver",
+      "file_date": "20261107",
+      "text": "[ros2_control_node-2] [WARN] [1794024099.839743857] [canusb_system]: Control output disabled; host disabled observations=false; reason=WRITE_SUPERVISION_FAILURE",
+      "context": [
+        "[ros2_control_node-2] [WARN] [1794024032.379243233] [canusb_system]: Control output disabled; host disabled observations=false; reason=WRITE_SUPERVISION_FAILURE",
+        "[ros2_control_node-2] [WARN] [1794024034.383638336] [canusb_system]: Control output disabled; host disabled observations=true; reason=OPERATOR_GLOBAL_STOP",
+        "[ros2_control_node-2] [WARN] [1794024099.839743857] [canusb_system]: Control output disabled; host disabled observations=false; reason=WRITE_SUPERVISION_FAILURE",
+        "[ros2_control_node-2] [WARN] [1794024105.482562631] [slaihand.controller_manager]: Overrun might occur, Total time : 13010.814 us (Expected < 10000.000 us) --> Read time : 65.726 us, Update time : 119.707 us, Write time : 12825.381 us",
+        "[ros2_control_node-2] [WARN] [1794024105.482910555] [slaihand.controller_manager]: Overrun detected! The controller manager missed its desired rate of 100 Hz. The loop took 13.470949 ms (missed cycles : 2)."
+      ]
+    },
+    {
+      "kind": "write_supervision_failure",
+      "file": "/home/xuyu/.ros/slaihand/control_panel/connection/driver_20261107_131252_371877.log",
+      "line": 51,
+      "timestamp": "2026-11-07 13:13:18",
+      "tag": "driver",
+      "file_date": "20261107",
+      "text": "[ros2_control_node-2] [WARN] [1794028398.783010843] [canusb_system]: Control output disabled; host disabled observations=false; reason=WRITE_SUPERVISION_FAILURE",
+      "context": [
+        "[spawner-3] [INFO] [1794028376.581646175] [slaihand.spawner_joint_state_broadcaster]: Configured and activated joint_state_broadcaster",
+        "[INFO] [spawner-3]: process has finished cleanly [pid 11157]",
+        "[ros2_control_node-2] [WARN] [1794028398.783010843] [canusb_system]: Control output disabled; host disabled observations=false; reason=WRITE_SUPERVISION_FAILURE",
+        "[ros2_control_node-2] [WARN] [1794028400.036610703] [slaihand.controller_manager]: Overrun detected! The controller manager missed its desired rate of 100 Hz. The loop took 10.846035 ms (missed cycles : 2).",
+        "[ros2_control_node-2] [WARN] [1794028529.039012728] [canusb_system]: Control output disabled; host disabled observations=false; reason=WRITE_SUPERVISION_FAILURE"
+      ]
+    },
+    {
+      "kind": "write_supervision_failure",
+      "file": "/home/xuyu/.ros/slaihand/control_panel/connection/driver_20261107_131252_371877.log",
+      "line": 53,
+      "timestamp": "2026-11-07 13:15:29",
+      "tag": "driver",
+      "file_date": "20261107",
+      "text": "[ros2_control_node-2] [WARN] [1794028529.039012728] [canusb_system]: Control output disabled; host disabled observations=false; reason=WRITE_SUPERVISION_FAILURE",
+      "context": [
+        "[ros2_control_node-2] [WARN] [1794028398.783010843] [canusb_system]: Control output disabled; host disabled observations=false; reason=WRITE_SUPERVISION_FAILURE",
+        "[ros2_control_node-2] [WARN] [1794028400.036610703] [slaihand.controller_manager]: Overrun detected! The controller manager missed its desired rate of 100 Hz. The loop took 10.846035 ms (missed cycles : 2).",
+        "[ros2_control_node-2] [WARN] [1794028529.039012728] [canusb_system]: Control output disabled; host disabled observations=false; reason=WRITE_SUPERVISION_FAILURE",
+        "[WARNING] [launch]: user interrupted with ctrl-c (SIGINT)",
+        "[INFO] [ros2_control_node-2]: sending signal 'SIGINT' to process[ros2_control_node-2]"
+      ]
+    },
+    {
+      "kind": "write_supervision_failure",
+      "file": "/home/xuyu/.ros/slaihand/control_panel/connection/driver_20261106_144449_816197.log",
+      "line": 70,
+      "timestamp": "2026-11-06 14:52:05",
+      "tag": "driver",
+      "file_date": "20261106",
+      "text": "[ros2_control_node-2] [WARN] [1793947925.643115757] [canusb_system]: Control output disabled; host disabled observations=true; reason=WRITE_SUPERVISION_FAILURE",
+      "context": [
+        "[ros2_control_node-2] [WARN] [1793947925.636723062] [slaihand.controller_manager]: Overrun might occur, Total time : 13666.253 us (Expected < 10000.000 us) --> Read time : 57.311 us, Update time : 74.443 us, Write time : 13534.499 us",
+        "[ros2_control_node-2] [WARN] [1793947925.636936917] [slaihand.controller_manager]: Overrun detected! The controller manager missed its desired rate of 100 Hz. The loop took 14.122172 ms (missed cycles : 2).",
+        "[ros2_control_node-2] [WARN] [1793947925.643115757] [canusb_system]: Control output disabled; host disabled observations=true; reason=WRITE_SUPERVISION_FAILURE",
+        "[ros2_control_node-2] [WARN] [1793947927.132118148] [slaihand.controller_manager]: Overrun might occur, Total time : 29155.254 us (Expected < 10000.000 us) --> Read time : 82.901 us, Update time : 102.145 us, Write time : 28970.208 us",
+        "[ros2_control_node-2] [WARN] [1793947927.132242327] [slaihand.controller_manager]: Overrun detected! The controller manager missed its desired rate of 100 Hz. The loop took 29.427439 ms (missed cycles : 3)."
+      ]
+    },
+    {
+      "kind": "write_supervision_failure",
+      "file": "/home/xuyu/.ros/slaihand/control_panel/connection/driver_20261106_144449_816197.log",
+      "line": 73,
+      "timestamp": "2026-11-06 14:52:07",
+      "tag": "driver",
+      "file_date": "20261106",
+      "text": "[ros2_control_node-2] [ERROR] [1793947927.413281456] [canusb_system]: UNKNOWN: four-axis disabled observations NOT confirmed; keep physical support and cut motor power locally. Reason: WRITE_SUPERVISION_FAILURE",
+      "context": [
+        "[ros2_control_node-2] [WARN] [1793947927.132118148] [slaihand.controller_manager]: Overrun might occur, Total time : 29155.254 us (Expected < 10000.000 us) --> Read time : 82.901 us, Update time : 102.145 us, Write time : 28970.208 us",
+        "[ros2_control_node-2] [WARN] [1793947927.132242327] [slaihand.controller_manager]: Overrun detected! The controller manager missed its desired rate of 100 Hz. The loop took 29.427439 ms (missed cycles : 3).",
+        "[ros2_control_node-2] [ERROR] [1793947927.413281456] [canusb_system]: UNKNOWN: four-axis disabled observations NOT confirmed; keep physical support and cut motor power locally. Reason: WRITE_SUPERVISION_FAILURE",
+        "[ros2_control_node-2] [WARN] [1793947928.919301508] [slaihand.controller_manager]: Overrun might occur, Total time : 16342.934 us (Expected < 10000.000 us) --> Read time : 16086.861 us, Update time : 156.677 us, Write time : 99.396 us",
+        "[ros2_control_node-2] [WARN] [1793947928.919580725] [slaihand.controller_manager]: Overrun detected! The controller manager missed its desired rate of 100 Hz. The loop took 16.766121 ms (missed cycles : 2)."
+      ]
+    },
+    {
+      "kind": "serial_write_fault",
+      "file": "/home/xuyu/.ros/slaihand/control_panel/connection/driver_20261105_153629_997996.log",
+      "line": 23,
+      "timestamp": "2026-11-05 15:36:30",
+      "tag": "driver",
+      "file_date": "20261105",
+      "text": "[ros2_control_node-2] [ERROR] [1793864190.705803217] [canusb_system]: CANUSB incomplete serial packet write",
+      "context": [
+        "[ros2_control_node-2] [INFO] [1793864190.652663845] [resource_manager]: 'configure' hardware 'SLAICanUsbSystem'",
+        "[ros2_control_node-2] [INFO] [1793864190.685499434] [canusb_system]: DISARMED; motion requires explicit arm service. Audit: /home/xuyu/.ros/slaihand/canusb_motion/canusb_motion_zDEKH1.jsonl",
+        "[ros2_control_node-2] [ERROR] [1793864190.705803217] [canusb_system]: CANUSB incomplete serial packet write",
+        "[ros2_control_node-2] [ERROR] [1793864190.904980424] [resource_manager]: Failed to 'configure' hardware 'SLAICanUsbSystem'",
+        "[ros2_control_node-2] terminate called after throwing an instance of 'std::runtime_error'"
+      ]
+    },
+    {
+      "kind": "process_died",
+      "file": "/home/xuyu/.ros/slaihand/control_panel/connection/driver_20261105_153629_997996.log",
+      "line": 46,
+      "timestamp": null,
+      "tag": "driver",
+      "file_date": "20261105",
+      "text": "[ros2_control_node-2] Aborted (Signal sent by tkill() 337698 1000)",
+      "context": [
+        "[ros2_control_node-2] #1    Object \"/usr/lib/x86_64-linux-gnu/libc.so.6\", at 0x729abdc4527d, in raise",
+        "[ros2_control_node-2] #0    Object \"/usr/lib/x86_64-linux-gnu/libc.so.6\", at 0x729abdc9ec0c, in pthread_kill",
+        "[ros2_control_node-2] Aborted (Signal sent by tkill() 337698 1000)",
+        "[spawner-3] [INFO] [1793864191.215894055] [slaihand.spawner_joint_state_broadcaster]: waiting for service /slaihand/controller_manager/list_controllers to become available...",
+        "[ERROR] [ros2_control_node-2]: process has died [pid 337698, exit code -6, cmd '/opt/ros/jazzy/lib/controller_manager/ros2_control_node --ros-args -r __ns:=/slaihand --params-file /home/xuyu/slaihand_control_panel_ws_identified_trial_202611"
+      ]
+    },
+    {
+      "kind": "process_died",
+      "file": "/home/xuyu/.ros/slaihand/control_panel/connection/driver_20261105_153629_997996.log",
+      "line": 48,
+      "timestamp": null,
+      "tag": "driver",
+      "file_date": "20261105",
+      "text": "[ERROR] [ros2_control_node-2]: process has died [pid 337698, exit code -6, cmd '/opt/ros/jazzy/lib/controller_manager/ros2_control_node --ros-args -r __ns:=/slaihand --params-file /home/xuyu/slaihand_control_panel_ws_identified_trial_20261105/install/slaihand_bringup/share/slaihand_bringup/config/ca",
+      "context": [
+        "[ros2_control_node-2] Aborted (Signal sent by tkill() 337698 1000)",
+        "[spawner-3] [INFO] [1793864191.215894055] [slaihand.spawner_joint_state_broadcaster]: waiting for service /slaihand/controller_manager/list_controllers to become available...",
+        "[ERROR] [ros2_control_node-2]: process has died [pid 337698, exit code -6, cmd '/opt/ros/jazzy/lib/controller_manager/ros2_control_node --ros-args -r __ns:=/slaihand --params-file /home/xuyu/slaihand_control_panel_ws_identified_trial_202611",
+        "[spawner-3] [WARN] [1793864201.223670245] [slaihand.spawner_joint_state_broadcaster]: Could not contact service /slaihand/controller_manager/list_controllers",
+        "[spawner-3] [INFO] [1793864201.223948969] [slaihand.spawner_joint_state_broadcaster]: waiting for service /slaihand/controller_manager/list_controllers to become available..."
+      ]
+    },
+    {
+      "kind": "write_supervision_failure",
+      "file": "/home/xuyu/.ros/slaihand/control_panel/connection/driver_20261105_130908_818637.log",
+      "line": 185,
+      "timestamp": "2026-11-05 13:59:23",
+      "tag": "driver",
+      "file_date": "20261105",
+      "text": "[ros2_control_node-2] [WARN] [1793858363.049310781] [canusb_system]: Control output disabled; host disabled observations=true; reason=WRITE_SUPERVISION_FAILURE",
+      "context": [
+        "[ros2_control_node-2] [WARN] [1793858363.003143114] [slaihand.controller_manager]: Overrun might occur, Total time : 13328.792 us (Expected < 10000.000 us) --> Read time : 107.145 us, Update time : 109.744 us, Write time : 13111.903 us",
+        "[ros2_control_node-2] [WARN] [1793858363.003320520] [slaihand.controller_manager]: Overrun detected! The controller manager missed its desired rate of 100 Hz. The loop took 14.499753 ms (missed cycles : 2).",
+        "[ros2_control_node-2] [WARN] [1793858363.049310781] [canusb_system]: Control output disabled; host disabled observations=true; reason=WRITE_SUPERVISION_FAILURE",
+        "[ros2_control_node-2] [INFO] [1793858407.750501820] [slaihand.controller_manager]: Activating controllers: [ slaihand_joint_trajectory_controller ]",
+        "[ros2_control_node-2] [INFO] [1793858407.759348968] [slaihand.controller_manager]: Successfully switched controllers!"
+      ]
+    },
+    {
+      "kind": "write_supervision_failure",
+      "file": "/home/xuyu/.ros/slaihand/control_panel/connection/driver_20261105_130908_818637.log",
+      "line": 218,
+      "timestamp": "2026-11-05 14:11:24",
+      "tag": "driver",
+      "file_date": "20261105",
+      "text": "[ros2_control_node-2] [WARN] [1793859084.699065785] [canusb_system]: Control output disabled; host disabled observations=true; reason=WRITE_SUPERVISION_FAILURE",
+      "context": [
+        "[ros2_control_node-2] [INFO] [1793858901.660281784] [slaihand.controller_manager]: Deactivating controllers: [ slaihand_joint_trajectory_controller ]",
+        "[ros2_control_node-2] [INFO] [1793858901.669001916] [slaihand.controller_manager]: Successfully switched controllers!",
+        "[ros2_control_node-2] [WARN] [1793859084.699065785] [canusb_system]: Control output disabled; host disabled observations=true; reason=WRITE_SUPERVISION_FAILURE",
+        "[ros2_control_node-2] [INFO] [1793860078.390193690] [slaihand.controller_manager]: Activating controllers: [ slaihand_joint_trajectory_controller ]",
+        "[ros2_control_node-2] [INFO] [1793860078.399311854] [slaihand.controller_manager]: Successfully switched controllers!"
+      ]
+    },
+    {
+      "kind": "write_supervision_failure",
+      "file": "/home/xuyu/.ros/slaihand/control_panel/connection/driver_20261105_130908_818637.log",
+      "line": 229,
+      "timestamp": "2026-11-05 14:31:00",
+      "tag": "driver",
+      "file_date": "20261105",
+      "text": "[ros2_control_node-2] [WARN] [1793860260.309150598] [canusb_system]: Control output disabled; host disabled observations=true; reason=WRITE_SUPERVISION_FAILURE",
+      "context": [
+        "[ros2_control_node-2] [WARN] [1793860260.267654298] [slaihand.controller_manager]: Overrun might occur, Total time : 28650.277 us (Expected < 10000.000 us) --> Read time : 49.895 us, Update time : 57.103 us, Write time : 28543.279 us",
+        "[ros2_control_node-2] [WARN] [1793860260.267781974] [slaihand.controller_manager]: Overrun detected! The controller manager missed its desired rate of 100 Hz. The loop took 28.994199 ms (missed cycles : 3).",
+        "[ros2_control_node-2] [WARN] [1793860260.309150598] [canusb_system]: Control output disabled; host disabled observations=true; reason=WRITE_SUPERVISION_FAILURE",
+        "[ros2_control_node-2] [INFO] [1793860288.130106878] [slaihand.controller_manager]: Activating controllers: [ slaihand_joint_trajectory_controller ]",
+        "[ros2_control_node-2] [INFO] [1793860288.139202982] [slaihand.controller_manager]: Successfully switched controllers!"
+      ]
+    },
+    {
+      "kind": "write_supervision_failure",
+      "file": "/home/xuyu/.ros/slaihand/control_panel/connection/driver_20261105_130908_818637.log",
+      "line": 280,
+      "timestamp": "2026-11-05 14:47:47",
+      "tag": "driver",
+      "file_date": "20261105",
+      "text": "[ros2_control_node-2] [WARN] [1793861267.646160537] [canusb_system]: Control output disabled; host disabled observations=true; reason=WRITE_SUPERVISION_FAILURE",
+      "context": [
+        "[ros2_control_node-2] [WARN] [1793861267.597320504] [slaihand.controller_manager]: Overrun might occur, Total time : 11314.301 us (Expected < 10000.000 us) --> Read time : 85.864 us, Update time : 49.844 us, Write time : 11178.593 us",
+        "[ros2_control_node-2] [WARN] [1793861267.597466436] [slaihand.controller_manager]: Overrun detected! The controller manager missed its desired rate of 100 Hz. The loop took 11.531495 ms (missed cycles : 2).",
+        "[ros2_control_node-2] [WARN] [1793861267.646160537] [canusb_system]: Control output disabled; host disabled observations=true; reason=WRITE_SUPERVISION_FAILURE",
+        "[ros2_control_node-2] [WARN] [1793861267.706134909] [canusb_system]: Control output disabled; host disabled observations=true; reason=WRITE_SUPERVISION_FAILURE",
+        "[ros2_control_node-2] [WARN] [1793861267.876250775] [canusb_system]: Control output disabled; host disabled observations=true; reason=WRITE_SUPERVISION_FAILURE"
+      ]
+    },
+    {
+      "kind": "write_supervision_failure",
+      "file": "/home/xuyu/.ros/slaihand/control_panel/connection/driver_20261105_130908_818637.log",
+      "line": 281,
+      "timestamp": "2026-11-05 14:47:47",
+      "tag": "driver",
+      "file_date": "20261105",
+      "text": "[ros2_control_node-2] [WARN] [1793861267.706134909] [canusb_system]: Control output disabled; host disabled observations=true; reason=WRITE_SUPERVISION_FAILURE",
+      "context": [
+        "[ros2_control_node-2] [WARN] [1793861267.597466436] [slaihand.controller_manager]: Overrun detected! The controller manager missed its desired rate of 100 Hz. The loop took 11.531495 ms (missed cycles : 2).",
+        "[ros2_control_node-2] [WARN] [1793861267.646160537] [canusb_system]: Control output disabled; host disabled observations=true; reason=WRITE_SUPERVISION_FAILURE",
+        "[ros2_control_node-2] [WARN] [1793861267.706134909] [canusb_system]: Control output disabled; host disabled observations=true; reason=WRITE_SUPERVISION_FAILURE",
+        "[ros2_control_node-2] [WARN] [1793861267.876250775] [canusb_system]: Control output disabled; host disabled observations=true; reason=WRITE_SUPERVISION_FAILURE",
+        "[ros2_control_node-2] [WARN] [1793861268.506151664] [canusb_system]: Control output disabled; host disabled observations=true; reason=WRITE_SUPERVISION_FAILURE"
+      ]
+    },
+    {
+      "kind": "write_supervision_failure",
+      "file": "/home/xuyu/.ros/slaihand/control_panel/connection/driver_20261105_130908_818637.log",
+      "line": 282,
+      "timestamp": "2026-11-05 14:47:47",
+      "tag": "driver",
+      "file_date": "20261105",
+      "text": "[ros2_control_node-2] [WARN] [1793861267.876250775] [canusb_system]: Control output disabled; host disabled observations=true; reason=WRITE_SUPERVISION_FAILURE",
+      "context": [
+        "[ros2_control_node-2] [WARN] [1793861267.646160537] [canusb_system]: Control output disabled; host disabled observations=true; reason=WRITE_SUPERVISION_FAILURE",
+        "[ros2_control_node-2] [WARN] [1793861267.706134909] [canusb_system]: Control output disabled; host disabled observations=true; reason=WRITE_SUPERVISION_FAILURE",
+        "[ros2_control_node-2] [WARN] [1793861267.876250775] [canusb_system]: Control output disabled; host disabled observations=true; reason=WRITE_SUPERVISION_FAILURE",
+        "[ros2_control_node-2] [WARN] [1793861268.506151664] [canusb_system]: Control output disabled; host disabled observations=true; reason=WRITE_SUPERVISION_FAILURE",
+        "[ros2_control_node-2] [WARN] [1793861268.623424215] [slaihand.controller_manager]: Overrun might occur, Total time : 27417.220 us (Expected < 10000.000 us) --> Read time : 26.899 us, Update time : 49.805 us, Write time : 27340.516 us"
+      ]
+    },
+    {
+      "kind": "write_supervision_failure",
+      "file": "/home/xuyu/.ros/slaihand/control_panel/connection/driver_20261105_130908_818637.log",
+      "line": 283,
+      "timestamp": "2026-11-05 14:47:48",
+      "tag": "driver",
+      "file_date": "20261105",
+      "text": "[ros2_control_node-2] [WARN] [1793861268.506151664] [canusb_system]: Control output disabled; host disabled observations=true; reason=WRITE_SUPERVISION_FAILURE",
+      "context": [
+        "[ros2_control_node-2] [WARN] [1793861267.706134909] [canusb_system]: Control output disabled; host disabled observations=true; reason=WRITE_SUPERVISION_FAILURE",
+        "[ros2_control_node-2] [WARN] [1793861267.876250775] [canusb_system]: Control output disabled; host disabled observations=true; reason=WRITE_SUPERVISION_FAILURE",
+        "[ros2_control_node-2] [WARN] [1793861268.506151664] [canusb_system]: Control output disabled; host disabled observations=true; reason=WRITE_SUPERVISION_FAILURE",
+        "[ros2_control_node-2] [WARN] [1793861268.623424215] [slaihand.controller_manager]: Overrun might occur, Total time : 27417.220 us (Expected < 10000.000 us) --> Read time : 26.899 us, Update time : 49.805 us, Write time : 27340.516 us",
+        "[ros2_control_node-2] [WARN] [1793861268.623519628] [slaihand.controller_manager]: Overrun detected! The controller manager missed its desired rate of 100 Hz. The loop took 27.586046 ms (missed cycles : 3)."
+      ]
+    },
+    {
+      "kind": "write_supervision_failure",
+      "file": "/home/xuyu/.ros/slaihand/control_panel/connection/driver_20261105_130908_818637.log",
+      "line": 286,
+      "timestamp": "2026-11-05 14:47:48",
+      "tag": "driver",
+      "file_date": "20261105",
+      "text": "[ros2_control_node-2] [WARN] [1793861268.686171449] [canusb_system]: Control output disabled; host disabled observations=true; reason=WRITE_SUPERVISION_FAILURE",
+      "context": [
+        "[ros2_control_node-2] [WARN] [1793861268.623424215] [slaihand.controller_manager]: Overrun might occur, Total time : 27417.220 us (Expected < 10000.000 us) --> Read time : 26.899 us, Update time : 49.805 us, Write time : 27340.516 us",
+        "[ros2_control_node-2] [WARN] [1793861268.623519628] [slaihand.controller_manager]: Overrun detected! The controller manager missed its desired rate of 100 Hz. The loop took 27.586046 ms (missed cycles : 3).",
+        "[ros2_control_node-2] [WARN] [1793861268.686171449] [canusb_system]: Control output disabled; host disabled observations=true; reason=WRITE_SUPERVISION_FAILURE",
+        "[ros2_control_node-2] [WARN] [1793861268.786156764] [canusb_system]: Control output disabled; host disabled observations=true; reason=WRITE_SUPERVISION_FAILURE",
+        "[ros2_control_node-2] [WARN] [1793861270.463654987] [slaihand.controller_manager]: Overrun might occur, Total time : 27663.220 us (Expected < 10000.000 us) --> Read time : 56.866 us, Update time : 73.643 us, Write time : 27532.711 us"
+      ]
+    },
+    {
+      "kind": "write_supervision_failure",
+      "file": "/home/xuyu/.ros/slaihand/control_panel/connection/driver_20261105_130908_818637.log",
+      "line": 287,
+      "timestamp": "2026-11-05 14:47:48",
+      "tag": "driver",
+      "file_date": "20261105",
+      "text": "[ros2_control_node-2] [WARN] [1793861268.786156764] [canusb_system]: Control output disabled; host disabled observations=true; reason=WRITE_SUPERVISION_FAILURE",
+      "context": [
+        "[ros2_control_node-2] [WARN] [1793861268.623519628] [slaihand.controller_manager]: Overrun detected! The controller manager missed its desired rate of 100 Hz. The loop took 27.586046 ms (missed cycles : 3).",
+        "[ros2_control_node-2] [WARN] [1793861268.686171449] [canusb_system]: Control output disabled; host disabled observations=true; reason=WRITE_SUPERVISION_FAILURE",
+        "[ros2_control_node-2] [WARN] [1793861268.786156764] [canusb_system]: Control output disabled; host disabled observations=true; reason=WRITE_SUPERVISION_FAILURE",
+        "[ros2_control_node-2] [WARN] [1793861270.463654987] [slaihand.controller_manager]: Overrun might occur, Total time : 27663.220 us (Expected < 10000.000 us) --> Read time : 56.866 us, Update time : 73.643 us, Write time : 27532.711 us",
+        "[ros2_control_node-2] [WARN] [1793861270.463752721] [slaihand.controller_manager]: Overrun detected! The controller manager missed its desired rate of 100 Hz. The loop took 27.818928 ms (missed cycles : 3)."
+      ]
+    },
+    {
+      "kind": "write_supervision_failure",
+      "file": "/home/xuyu/.ros/slaihand/control_panel/connection/driver_20261105_130908_818637.log",
+      "line": 290,
+      "timestamp": "2026-11-05 14:47:50",
+      "tag": "driver",
+      "file_date": "20261105",
+      "text": "[ros2_control_node-2] [ERROR] [1793861270.766120827] [canusb_system]: UNKNOWN: four-axis disabled observations NOT confirmed; keep physical support and cut motor power locally. Reason: WRITE_SUPERVISION_FAILURE",
+      "context": [
+        "[ros2_control_node-2] [WARN] [1793861270.463654987] [slaihand.controller_manager]: Overrun might occur, Total time : 27663.220 us (Expected < 10000.000 us) --> Read time : 56.866 us, Update time : 73.643 us, Write time : 27532.711 us",
+        "[ros2_control_node-2] [WARN] [1793861270.463752721] [slaihand.controller_manager]: Overrun detected! The controller manager missed its desired rate of 100 Hz. The loop took 27.818928 ms (missed cycles : 3).",
+        "[ros2_control_node-2] [ERROR] [1793861270.766120827] [canusb_system]: UNKNOWN: four-axis disabled observations NOT confirmed; keep physical support and cut motor power locally. Reason: WRITE_SUPERVISION_FAILURE",
+        "[WARNING] [launch]: user interrupted with ctrl-c (SIGINT)",
+        "[INFO] [ros2_control_node-2]: sending signal 'SIGINT' to process[ros2_control_node-2]"
+      ]
+    }
+  ]
+}
