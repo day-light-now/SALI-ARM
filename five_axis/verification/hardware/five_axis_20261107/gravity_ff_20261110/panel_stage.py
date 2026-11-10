@@ -3,7 +3,7 @@ import json
 import sys
 import urllib.request
 
-TOKEN = '<redacted-panel-token>'
+TOKEN = 'RevgJa5FqG3P7xbk3OQVSxGlJ1BxfApo'
 try:
     request = urllib.request.Request('http://127.0.0.1:42664/api/status',
                                      headers={'X-Panel-Token': TOKEN})

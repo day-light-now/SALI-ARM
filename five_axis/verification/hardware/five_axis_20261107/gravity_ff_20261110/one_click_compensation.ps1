@@ -1,6 +1,8 @@
 param(
     [Parameter(Mandatory = $true)][string]$PlanPath,
     [switch]$DryRun,
+    [switch]$PlanOnly,
+    [ValidateSet("hybrid", "model", "iter")][string]$Strategy = "hybrid",
     [string]$Tag = ""
 )
 $ErrorActionPreference = "Stop"
@@ -28,12 +30,13 @@ if (-not $wslPlan.StartsWith("/")) {
     exit 1
 }
 
-if (-not $DryRun) {
+if (-not $DryRun -and -not $PlanOnly) {
     Write-Host ""
     Write-Host "=== SAFETY CONFIRMATION ==="
     Write-Host "Pipeline: read-only TIMEOUT admission -> artifact -> candidate driver ->"
-    Write-Host "baseline run -> iteration 1 -> iteration 2 -> comparison -> stop driver."
-    Write-Host "Motion takes about 8-12 minutes. Gravity FF stays 0; 4 deg guard / STOP /"
+    Write-Host "strategy '$Strategy' (hybrid = model-compensated run + one measured correction;"
+    Write-Host "model = model-compensated run only; iter = legacy baseline+2 iterations) ->"
+    Write-Host "comparison/report -> stop driver. Gravity FF stays 0; 4 deg guard / STOP /"
     Write-Host "limits / admission are unchanged."
     $answer = Read-Host "Confirm supported / clearance / power-cut ready. Type RUN to start"
     if ($answer -ne "RUN") {
@@ -45,9 +48,10 @@ if (-not $DryRun) {
 if ([string]::IsNullOrWhiteSpace($Tag)) {
     $Tag = "drag_" + (Get-Date -Format "yyyyMMdd_HHmmss")
 }
-$mode = if ($DryRun) { "dry" } else { "run" }
+$mode = if ($DryRun) { "dry" } elseif ($PlanOnly) { "plan" } else { "run" }
+Write-Host "mode=$mode strategy=$Strategy"
 
-& wsl.exe -d Ubuntu-24.04 --exec /bin/bash "$wslBase/compensate.sh" $wslPlan $Tag $mode
+& wsl.exe -d Ubuntu-24.04 --exec /bin/bash "$wslBase/compensate.sh" $wslPlan $Tag $mode $Strategy
 $code = $LASTEXITCODE
 Write-Host "compensate.sh exit=$code tag=$Tag"
 exit $code

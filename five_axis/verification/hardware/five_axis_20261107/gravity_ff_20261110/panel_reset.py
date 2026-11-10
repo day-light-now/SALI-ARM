@@ -7,7 +7,7 @@ import time
 import urllib.request
 
 BASE = 'http://127.0.0.1:42664'
-TOKEN = '<redacted-panel-token>'
+TOKEN = 'RevgJa5FqG3P7xbk3OQVSxGlJ1BxfApo'
 
 
 def request(method, path, body=None):

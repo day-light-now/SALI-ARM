@@ -1,22 +1,27 @@
 #!/bin/bash
 # One-click static-compensation pipeline (WSL side).
 #
-# Usage: compensate.sh <plan.json> <TAG> [run|dry]
+# Usage: compensate.sh <plan.json> <TAG> [run|dry|plan] [hybrid|model|iter]
+#   hybrid (default): model-compensated run -> one measured-residual correction
+#   model:            model-compensated run only
+#   iter:             legacy baseline -> iteration 1 -> iteration 2
+#   plan:             offline only: validate + emit the model-compensated plan
 # Runs: read-only TIMEOUT admission -> truthful artifact -> candidate driver ->
-# baseline static run -> measured-residual iteration 1 -> iteration 2 ->
-# comparison/report -> stop driver.  Never enables gravity FF or touches any
-# safety gate; every motion plan starts/ends at absolute zero.
+# selected strategy -> comparison/report -> stop driver.  Never enables gravity FF
+# or touches any safety gate; every motion plan starts/ends at absolute zero.
 set -u
 HERE="$(cd "$(dirname "$0")" && pwd)"
 source "$HERE/env.sh"
 
 if [ "$#" -lt 2 ]; then
-  echo "USAGE: compensate.sh <plan.json> <TAG> [run|dry]"
+  echo "USAGE: compensate.sh <plan.json> <TAG> [run|dry|plan] [hybrid|model|iter]"
   exit 2
 fi
 PLAN_IN="$1"
 TAG="$2"
 MODE="${3:-run}"
+STRATEGY="${4:-hybrid}"
+case "$STRATEGY" in hybrid|model|iter) ;; *) echo "invalid strategy: $STRATEGY"; exit 2 ;; esac
 WORK="$HERE/runs/$TAG"
 mkdir -p "$WORK" "$HERE/plans"
 LOGDIR="$HERE/logs"
@@ -41,7 +46,20 @@ BASE_NAME="${TAG}_base"
 BASE_PLAN="$HERE/plans/${BASE_NAME}_20261110.json"
 cp -f "$PLAN_ABS" "$BASE_PLAN"
 DUR="$(python3 "$HERE/plan_duration.py" "$BASE_PLAN")" || fail "duration"
-echo "plan=$PLAN_ABS tag=$TAG mode=$MODE recorder_duration=$DUR"
+echo "plan=$PLAN_ABS tag=$TAG mode=$MODE strategy=$STRATEGY recorder_duration=$DUR"
+
+# ---- 1b. offline plan-only mode -----------------------------------------
+if [ "$MODE" = "plan" ]; then
+  if [ "$STRATEGY" = "iter" ]; then
+    echo "PLAN_ONLY: iter strategy needs measured residual; no plan generated"
+    exit 0
+  fi
+  python3 "$HERE/compensate_plan.py" "$BASE_PLAN" "${TAG}_modelcomp" \
+    > "$LOGDIR/${TAG}_model_plan.log" 2>&1 \
+    || fail "model compensation rejected: $(tail -3 "$LOGDIR/${TAG}_model_plan.log")"
+  echo "PLAN_ONLY_OK: plans/${TAG}_modelcomp_20261110.json"
+  exit 0
+fi
 
 # ---- 2. read-only TIMEOUT admission, then truthful artifact -------------
 EVI="$HERE/evidence/comp_${TAG}.json"
@@ -132,6 +150,36 @@ run_one() {
   python3 "$HERE/check_windows.py" "$tag" 6 > "$LOGDIR/${tag}_windows.log" 2>&1 || \
     fail "$tag: insufficient windows: $(tail -1 "$LOGDIR/${tag}_windows.log")"
 }
+
+if [ "$STRATEGY" != "iter" ]; then
+  MODEL_NAME="${TAG}_modelcomp"
+  python3 "$HERE/compensate_plan.py" "$BASE_PLAN" "$MODEL_NAME" \
+    > "$LOGDIR/${TAG}_model_plan.log" 2>&1 \
+    || fail "model compensation rejected: $(tail -3 "$LOGDIR/${TAG}_model_plan.log")"
+  MODEL_PLAN="$HERE/plans/${MODEL_NAME}_20261110.json"
+  [ -f "$MODEL_PLAN" ] || fail "model-compensated plan missing"
+  run_one "$MODEL_PLAN" "${TAG}_model"
+  python3 "$HERE/compare_plan_runs.py" "$BASE_NAME" \
+    "$WORK/${TAG}_model_compare.json" "${TAG}_model" \
+    > "$LOGDIR/${TAG}_model_compare.log" 2>&1 || fail "model comparison failed"
+  if [ "$STRATEGY" = "model" ]; then
+    python3 "$HERE/summarize_model_comp.py" "$TAG" || fail "model summary failed"
+    echo "REPORT: $WORK/${TAG}_REPORT.md"
+    echo "DONE tag=$TAG strategy=model"
+    exit 0
+  fi
+  reset_between_runs
+  python3 "$HERE/make_iter_comp.py" "${TAG}_model" "$MODEL_NAME" "${TAG}_iter1" \
+    > "$LOGDIR/${TAG}_iter1_plan.log" 2>&1 || fail "model+iter1 plan generation failed"
+  run_one "$HERE/plans/${TAG}_iter1_20261110.json" "${TAG}_iter1"
+  python3 "$HERE/compare_plan_runs.py" "$BASE_NAME" \
+    "$WORK/${TAG}_iter1_compare.json" "${TAG}_iter1" \
+    > "$LOGDIR/${TAG}_iter1_compare.log" 2>&1 || fail "model+iter1 comparison failed"
+  python3 "$HERE/summarize_model_comp.py" "$TAG" || fail "model+iter1 summary failed"
+  echo "REPORT: $WORK/${TAG}_REPORT.md"
+  echo "DONE tag=$TAG strategy=$STRATEGY"
+  exit 0
+fi
 
 run_one "$BASE_PLAN" "${TAG}_base"
 

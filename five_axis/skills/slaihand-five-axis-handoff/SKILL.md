@@ -159,6 +159,16 @@ document.
   and/or a known torque/force reference; position-feedforward compensation
   remains the usable capability. Details:
   `gravity_ff_20261110/README_摩擦辨识_20261110.md`.
+- Offline model-compensated plan converter (2026-11-10 evening):
+  `gravity_ff_20261110/compensate_plan.py` turns an in-domain plan into
+  `command = desired - predicted_sag` using `sag_model_20261110.json`, with
+  training-domain/sag-envelope/limit/endpoint guards; Windows offline entry
+  `make_comp_plan.cmd` (no hardware). Offline evidence: model sag prediction
+  error on V1 RMS 0.23 deg, measured V1subc residual after model compensation
+  0.59 deg, while per-pose iterative correction remains 0.0775 deg; out-of-domain
+  T2/V2/JZ plans are rejected on purpose. Position feedforward only; FF alpha 0,
+  GC13 frozen, hardware validation after box reinstall pending. Details:
+  `gravity_ff_20261110/README_模型补偿_20261110.md`.
 
 ## Key evidence locations
 

@@ -1,0 +1,97 @@
+{
+  "schema": "slaihand_hardware_test_suite/1",
+  "model": "/mnt/d/CodexData/Projects/机械臂/slaihand_five_axis_ws_gain/verification/hardware/five_axis_20261107/gravity_ff_20261110/sag_model_20261110.json",
+  "training_domain_deg": {
+    "low_deg": [
+      -12.0,
+      -2.0,
+      -2.0,
+      -2.0,
+      -17.0
+    ],
+    "high_deg": [
+      14.0,
+      22.0,
+      12.0,
+      12.0,
+      17.0
+    ],
+    "train_sag_max_deg": 1.5493
+  },
+  "thresholds": {
+    "following_error_deg": 4.0,
+    "H1_baseline_sag_rms_deg_min": 0.3,
+    "H1_comp_residual_rms_deg_max": 0.6,
+    "H2_repeat_spread_deg_max": 0.25,
+    "H4_stiction_spread_deg_max": 0.4,
+    "abort_on_any_following_error": true
+  },
+  "entries": [
+    {
+      "role": "H1 baseline (uncompensated)",
+      "plan": "/mnt/d/CodexData/Projects/机械臂/slaihand_five_axis_ws_gain/verification/hardware/five_axis_20261107/gravity_ff_20261110/plans/H1_holdout_20261110.json",
+      "name": "H1_holdout",
+      "waypoints": 10,
+      "compensated": false,
+      "predicted_sag_max_deg": 1.7158,
+      "recorder_s": 140,
+      "valid": true,
+      "validator": "PLAN_OK: 10 waypoints"
+    },
+    {
+      "role": "H1 model-compensated",
+      "plan": "/mnt/d/CodexData/Projects/机械臂/slaihand_five_axis_ws_gain/verification/hardware/five_axis_20261107/gravity_ff_20261110/plans/H1_holdout_comp_20261110.json",
+      "name": "H1_holdout_comp",
+      "waypoints": 10,
+      "compensated": true,
+      "predicted_sag_max_deg": 1.8461,
+      "recorder_s": 140,
+      "valid": true,
+      "validator": "PLAN_OK: 10 waypoints"
+    },
+    {
+      "role": "H2 repeatability (same pose, two approach sides)",
+      "plan": "/mnt/d/CodexData/Projects/机械臂/slaihand_five_axis_ws_gain/verification/hardware/five_axis_20261107/gravity_ff_20261110/plans/H2_repeat_20261110.json",
+      "name": "H2_repeat",
+      "waypoints": 6,
+      "compensated": false,
+      "predicted_sag_max_deg": 0.6739,
+      "recorder_s": 92,
+      "valid": true,
+      "validator": "PLAN_OK: 6 waypoints"
+    },
+    {
+      "role": "H3 J5 sign sweep (in domain)",
+      "plan": "/mnt/d/CodexData/Projects/机械臂/slaihand_five_axis_ws_gain/verification/hardware/five_axis_20261107/gravity_ff_20261110/plans/H3_j5_20261110.json",
+      "name": "H3_j5",
+      "waypoints": 5,
+      "compensated": false,
+      "predicted_sag_max_deg": 0.8546,
+      "recorder_s": 80,
+      "valid": true,
+      "validator": "PLAN_OK: 5 waypoints"
+    },
+    {
+      "role": "H3 J5 sign sweep compensated",
+      "plan": "/mnt/d/CodexData/Projects/机械臂/slaihand_five_axis_ws_gain/verification/hardware/five_axis_20261107/gravity_ff_20261110/plans/H3_j5_comp_20261110.json",
+      "name": "H3_j5_comp",
+      "waypoints": 5,
+      "compensated": true,
+      "predicted_sag_max_deg": 0.9177,
+      "recorder_s": 80,
+      "valid": true,
+      "validator": "PLAN_OK: 5 waypoints"
+    },
+    {
+      "role": "H4 stiction repeatability (3 approaches)",
+      "plan": "/mnt/d/CodexData/Projects/机械臂/slaihand_five_axis_ws_gain/verification/hardware/five_axis_20261107/gravity_ff_20261110/plans/H4_stiction_20261110.json",
+      "name": "H4_stiction",
+      "waypoints": 8,
+      "compensated": false,
+      "predicted_sag_max_deg": 1.8875,
+      "recorder_s": 116,
+      "valid": true,
+      "validator": "PLAN_OK: 8 waypoints"
+    }
+  ]
+}
