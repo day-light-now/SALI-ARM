@@ -1,0 +1,215 @@
+{
+  "schema": "slaihand_signed_static/1",
+  "window_s": 1.0,
+  "joints": [
+    "slaihand_joint1",
+    "slaihand_joint2",
+    "slaihand_joint3",
+    "slaihand_joint4",
+    "slaihand_joint5"
+  ],
+  "segments": [
+    {
+      "index": 0,
+      "start_t": 5.655815,
+      "end_t": 15.236061,
+      "reference_deg": [
+        -2.3167640699334786,
+        0.24042632739906283,
+        -0.3059971439624436,
+        9.35476982970899,
+        2.6009757236807705
+      ],
+      "relative_deg": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "axes": {
+        "slaihand_joint1": {
+          "signed_error_deg": {
+            "mean": -0.5246942968319207,
+            "median": -0.5441376502842039,
+            "std": 0.08404721732132364,
+            "max_abs": 0.6676937174994851,
+            "count": 101
+          },
+          "implied_holding_torque_nm_at_kp160": {
+            "mean": -1.465222887384555,
+            "median": -1.5195189730439707,
+            "std": 0.23470410710340903,
+            "max_abs": 1.8645526024395032,
+            "count": 101
+          }
+        },
+        "slaihand_joint2": {
+          "signed_error_deg": {
+            "mean": 0.0006492160055780275,
+            "median": 0.0,
+            "std": 0.0037105785418661045,
+            "max_abs": 0.02185693885446026,
+            "count": 101
+          },
+          "implied_holding_torque_nm_at_kp160": {
+            "mean": 0.0018129530966371921,
+            "median": 0.0,
+            "std": 0.010361890033506205,
+            "max_abs": 0.06103608758678547,
+            "count": 101
+          }
+        },
+        "slaihand_joint3": {
+          "signed_error_deg": {
+            "mean": -0.009738240083670411,
+            "median": 0.0,
+            "std": 0.01086346160906518,
+            "max_abs": 0.02185693885446026,
+            "count": 101
+          },
+          "implied_holding_torque_nm_at_kp160": {
+            "mean": -0.027194296449557884,
+            "median": 0.0,
+            "std": 0.030336507718750155,
+            "max_abs": 0.06103608758678547,
+            "count": 101
+          }
+        },
+        "slaihand_joint4": {
+          "signed_error_deg": {
+            "mean": -0.00021640533519267583,
+            "median": 0.0,
+            "std": 0.0021640533519267586,
+            "max_abs": 0.02185693885446026,
+            "count": 101
+          },
+          "implied_holding_torque_nm_at_kp160": {
+            "mean": -0.000604317698879064,
+            "median": 0.0,
+            "std": 0.0060431769887906404,
+            "max_abs": 0.06103608758678547,
+            "count": 101
+          }
+        },
+        "slaihand_joint5": {
+          "signed_error_deg": {
+            "mean": 0.0,
+            "median": 0.0,
+            "std": 0.0,
+            "max_abs": 0.0,
+            "count": 101
+          },
+          "implied_holding_torque_nm_at_kp160": {
+            "mean": 0.0,
+            "median": 0.0,
+            "std": 0.0,
+            "max_abs": 0.0,
+            "count": 101
+          }
+        }
+      }
+    },
+    {
+      "index": 1,
+      "start_t": 19.91582,
+      "end_t": 32.585733,
+      "reference_deg": [
+        6.4810328444318985,
+        0.24042632739906283,
+        -0.3059971439624436,
+        9.35476982970899,
+        2.6009757236807705
+      ],
+      "relative_deg": [
+        8.797796914365376,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "axes": {
+        "slaihand_joint1": {
+          "signed_error_deg": {
+            "mean": -1.279081397070357,
+            "median": -1.279081397070357,
+            "std": 0.0,
+            "max_abs": 1.279081397070357,
+            "count": 101
+          },
+          "implied_holding_torque_nm_at_kp160": {
+            "mean": -3.571869084781869,
+            "median": -3.571869084781869,
+            "std": 0.0,
+            "max_abs": 3.571869084781869,
+            "count": 101
+          }
+        },
+        "slaihand_joint2": {
+          "signed_error_deg": {
+            "mean": 0.0,
+            "median": 0.0,
+            "std": 0.0,
+            "max_abs": 0.0,
+            "count": 101
+          },
+          "implied_holding_torque_nm_at_kp160": {
+            "mean": 0.0,
+            "median": 0.0,
+            "std": 0.0,
+            "max_abs": 0.0,
+            "count": 101
+          }
+        },
+        "slaihand_joint3": {
+          "signed_error_deg": {
+            "mean": -0.00259686402231211,
+            "median": 0.0,
+            "std": 0.007072184627019042,
+            "max_abs": 0.02185693885446026,
+            "count": 101
+          },
+          "implied_holding_torque_nm_at_kp160": {
+            "mean": -0.0072518123865487685,
+            "median": 0.0,
+            "std": 0.019749265128065508,
+            "max_abs": 0.06103608758678547,
+            "count": 101
+          }
+        },
+        "slaihand_joint4": {
+          "signed_error_deg": {
+            "mean": -0.1529985719812218,
+            "median": -0.1529985719812218,
+            "std": 0.0,
+            "max_abs": 0.1529985719812218,
+            "count": 101
+          },
+          "implied_holding_torque_nm_at_kp160": {
+            "mean": -0.4272526131074983,
+            "median": -0.4272526131074983,
+            "std": 0.0,
+            "max_abs": 0.4272526131074983,
+            "count": 101
+          }
+        },
+        "slaihand_joint5": {
+          "signed_error_deg": {
+            "mean": 0.0,
+            "median": 0.0,
+            "std": 0.0,
+            "max_abs": 0.0,
+            "count": 101
+          },
+          "implied_holding_torque_nm_at_kp160": {
+            "mean": 0.0,
+            "median": 0.0,
+            "std": 0.0,
+            "max_abs": 0.0,
+            "count": 101
+          }
+        }
+      }
+    }
+  ]
+}

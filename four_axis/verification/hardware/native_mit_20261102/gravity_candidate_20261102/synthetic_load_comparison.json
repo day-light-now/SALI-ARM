@@ -1,0 +1,19 @@
+{
+  "baseline": {
+    "final_error_deg": 0.6125037523856169,
+    "final_q_deg": 9.387496247614383,
+    "synthetic_only": true,
+    "load_nm": 1.6,
+    "inertia_kg_m2": 0.15,
+    "candidate_fraction": 0.0
+  },
+  "candidate": {
+    "final_error_deg": 0.3325854402606347,
+    "final_q_deg": 9.667414559739365,
+    "synthetic_only": true,
+    "load_nm": 1.6,
+    "inertia_kg_m2": 0.15,
+    "candidate_fraction": 0.5
+  },
+  "note": "Synthetic constant gravity and assumed inertia; not identified hardware. Both use Kp160/Kd5 and the real MIT quantizer."
+}

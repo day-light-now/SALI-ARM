@@ -1,0 +1,179 @@
+{
+  "schema": "slaihand_static_torque_proxy/1",
+  "source": "recorder dynamic effort",
+  "measurement": "DAMIAO MIT torque estimate; NOT measured current",
+  "window_s": 0.3,
+  "joints": [
+    "slaihand_joint1",
+    "slaihand_joint2",
+    "slaihand_joint3",
+    "slaihand_joint4",
+    "slaihand_joint5"
+  ],
+  "segments": [
+    {
+      "index": 0,
+      "relative_deg": [
+        -0.11330532151286904,
+        0.0,
+        0.02185693885446026,
+        0.0,
+        0.0
+      ],
+      "axes": {
+        "slaihand_joint1": {
+          "effort_nm": {
+            "mean": -0.4363044363044348,
+            "std": 0.03974458482941363,
+            "max_abs": 0.5372405372405353,
+            "count": 30
+          },
+          "signed_error_deg": {
+            "mean": 0.08816992911330043,
+            "std": 0.014242469424738584,
+            "max_abs": 0.11330532151286904,
+            "count": 30
+          }
+        },
+        "slaihand_joint2": {
+          "effort_nm": {
+            "mean": -0.15303215303215248,
+            "std": 0.024365697268369086,
+            "max_abs": 0.24420024420024333,
+            "count": 30
+          },
+          "signed_error_deg": {
+            "mean": 0.0,
+            "std": 0.0,
+            "max_abs": 0.0,
+            "count": 30
+          }
+        },
+        "slaihand_joint3": {
+          "effort_nm": {
+            "mean": -0.06857142857142833,
+            "std": 0.007912087912087884,
+            "max_abs": 0.09230769230769198,
+            "count": 30
+          },
+          "signed_error_deg": {
+            "mean": -0.02185693885446026,
+            "std": 0.0,
+            "max_abs": 0.02185693885446026,
+            "count": 30
+          }
+        },
+        "slaihand_joint4": {
+          "effort_nm": {
+            "mean": 0.11428571428571388,
+            "std": 0.00982887023076827,
+            "max_abs": 0.11868131868131826,
+            "count": 30
+          },
+          "signed_error_deg": {
+            "mean": 0.0,
+            "std": 0.0,
+            "max_abs": 0.0,
+            "count": 30
+          }
+        },
+        "slaihand_joint5": {
+          "effort_nm": {
+            "mean": -0.056524216524216325,
+            "std": 0.006590009023271069,
+            "max_abs": 0.06153846153846132,
+            "count": 30
+          },
+          "signed_error_deg": {
+            "mean": 0.0,
+            "std": 0.0,
+            "max_abs": 0.0,
+            "count": 30
+          }
+        }
+      }
+    },
+    {
+      "index": 1,
+      "relative_deg": [
+        -10.0,
+        0.0,
+        0.02185693885446026,
+        0.0,
+        0.0
+      ],
+      "axes": {
+        "slaihand_joint1": {
+          "effort_nm": {
+            "mean": -3.314611314611303,
+            "std": 0.04840396824523713,
+            "max_abs": 3.369963369963358,
+            "count": 30
+          },
+          "signed_error_deg": {
+            "mean": 1.1260828250891353,
+            "std": 0.0,
+            "max_abs": 1.1260828250891353,
+            "count": 30
+          }
+        },
+        "slaihand_joint2": {
+          "effort_nm": {
+            "mean": -0.159544159544159,
+            "std": 0.03320484827736438,
+            "max_abs": 0.24420024420024333,
+            "count": 30
+          },
+          "signed_error_deg": {
+            "mean": 0.0,
+            "std": 0.0,
+            "max_abs": 0.0,
+            "count": 30
+          }
+        },
+        "slaihand_joint3": {
+          "effort_nm": {
+            "mean": -0.06065934065934044,
+            "std": 0.010549450549450511,
+            "max_abs": 0.0659340659340657,
+            "count": 30
+          },
+          "signed_error_deg": {
+            "mean": -0.02185693885446026,
+            "std": 0.0,
+            "max_abs": 0.02185693885446026,
+            "count": 30
+          }
+        },
+        "slaihand_joint4": {
+          "effort_nm": {
+            "mean": -0.432527472527471,
+            "std": 0.010438982054538791,
+            "max_abs": 0.4615384615384599,
+            "count": 30
+          },
+          "signed_error_deg": {
+            "mean": 0.19671244969014232,
+            "std": 0.0,
+            "max_abs": 0.19671244969014232,
+            "count": 30
+          }
+        },
+        "slaihand_joint5": {
+          "effort_nm": {
+            "mean": -0.05424501424501405,
+            "std": 0.006822395235143344,
+            "max_abs": 0.06153846153846132,
+            "count": 30
+          },
+          "signed_error_deg": {
+            "mean": 0.0,
+            "std": 0.0,
+            "max_abs": 0.0,
+            "count": 30
+          }
+        }
+      }
+    }
+  ]
+}

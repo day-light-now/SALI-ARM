@@ -1,0 +1,21 @@
+{
+  "status": "PASS",
+  "physical_port_opened": false,
+  "software_only": true,
+  "no_auto_enable_or_home": true,
+  "official_codec_parity_checked": true,
+  "standard_jtc_round_trip": true,
+  "actual_fake_excursion_deg": [
+    0.9835622484507116,
+    0.9835622484507116,
+    0.9835622484507116,
+    1.0054191873051719
+  ],
+  "fresh_disabled_observed": true,
+  "manual_reset_does_not_enable": true,
+  "single_axis_fault_stops_all": true,
+  "unknown_locked": true,
+  "j5_tx": 0,
+  "parameter_writes": 0,
+  "installed_operator_client_hold_passed": true
+}

@@ -1,0 +1,225 @@
+{
+  "closed_at": 1793775859.3523793,
+  "stop": {
+    "state": "not_requested",
+    "requested_at": null,
+    "requested_wall": null,
+    "reason": null,
+    "generation": 0,
+    "confirmed_at": null,
+    "confirmed_wall": null,
+    "stage_label": "未请求"
+  },
+  "status": {
+    "ok": true,
+    "server": {
+      "version": "control_panel/1.0",
+      "now": 1793775859.3524535,
+      "closing": true,
+      "ros_domain_id": "176",
+      "archive_dir": "/tmp/panel-verify-20261104_150300/stale/archive",
+      "ros_thread_alive": false,
+      "session_budget_seconds": 43.0,
+      "reserve_seconds": 8.0,
+      "heartbeat_timeout_s": 3.0,
+      "preview_ttl_s": 5.0,
+      "pose_drift_tolerance_deg": 0.5,
+      "feedback_fresh_s": 0.5,
+      "confirmations_required": [
+        "supported",
+        "clearance_and_local_power_cut",
+        "native_output_not_hardware_clamp"
+      ],
+      "max_waypoints": 12
+    },
+    "ros": {
+      "connected": true,
+      "dynamic_age_s": 0.01,
+      "joint_age_s": 0.0,
+      "controller_age_s": null,
+      "stage": 0,
+      "stage_label": "未使能",
+      "stage_fresh": true,
+      "consistent": true,
+      "hold_ready": false,
+      "disabled_observed": false,
+      "audit_ok": true,
+      "command_owner": false,
+      "command_id": 0,
+      "feedback_valid_all": true,
+      "limits_deg": [
+        [
+          -80.0,
+          200.0
+        ],
+        [
+          -10.0,
+          190.0
+        ],
+        [
+          -90.0,
+          90.0
+        ],
+        [
+          -90.0,
+          50.0
+        ]
+      ],
+      "limits_source": "/home/xuyu/slaihand_speed05_ws_20261104/install/slaihand_description/share/slaihand_description/urdf/slaihand_four_axis.urdf",
+      "limits_error": null,
+      "client_script": "/home/xuyu/slaihand_speed05_ws_20261104/install/slaihand_bringup/lib/slaihand_bringup/commission_supported_trial.py",
+      "client_sha256": "76ac93a43d20574c51ff5ba72881d9f403077e76c7b4bfb038836b713fa72edf",
+      "client_error": null
+    },
+    "axes": [
+      {
+        "name": "slaihand_joint1",
+        "label": "J1",
+        "actual_deg": 14.994,
+        "target_deg": null,
+        "error_deg": null,
+        "target_source": null,
+        "velocity_deg_s": -0.35,
+        "effort_nm": -0.049,
+        "driver_temperature_c": 30.0,
+        "motor_temperature_c": 25.0,
+        "feedback_age_s": 0.0,
+        "feedback_valid": true,
+        "motor_state": 0,
+        "control_mode": 1,
+        "timeout_count": 2000,
+        "configuration_conflict": 0,
+        "limits_deg": [
+          -80.0,
+          200.0
+        ]
+      },
+      {
+        "name": "slaihand_joint2",
+        "label": "J2",
+        "actual_deg": 25.004,
+        "target_deg": null,
+        "error_deg": null,
+        "target_source": null,
+        "velocity_deg_s": -0.35,
+        "effort_nm": -0.049,
+        "driver_temperature_c": 30.0,
+        "motor_temperature_c": 25.0,
+        "feedback_age_s": 0.0,
+        "feedback_valid": true,
+        "motor_state": 0,
+        "control_mode": 1,
+        "timeout_count": 2000,
+        "configuration_conflict": 0,
+        "limits_deg": [
+          -10.0,
+          190.0
+        ]
+      },
+      {
+        "name": "slaihand_joint3",
+        "label": "J3",
+        "actual_deg": -10.01,
+        "target_deg": null,
+        "error_deg": null,
+        "target_source": null,
+        "velocity_deg_s": -0.63,
+        "effort_nm": -0.013,
+        "driver_temperature_c": 30.0,
+        "motor_temperature_c": 25.0,
+        "feedback_age_s": 0.0,
+        "feedback_valid": true,
+        "motor_state": 0,
+        "control_mode": 1,
+        "timeout_count": 2000,
+        "configuration_conflict": 0,
+        "limits_deg": [
+          -90.0,
+          90.0
+        ]
+      },
+      {
+        "name": "slaihand_joint4",
+        "label": "J4",
+        "actual_deg": 5.005,
+        "target_deg": null,
+        "error_deg": null,
+        "target_source": null,
+        "velocity_deg_s": 0.63,
+        "effort_nm": 0.013,
+        "driver_temperature_c": 30.0,
+        "motor_temperature_c": 25.0,
+        "feedback_age_s": 0.0,
+        "feedback_valid": true,
+        "motor_state": 0,
+        "control_mode": 1,
+        "timeout_count": 2000,
+        "configuration_conflict": 0,
+        "limits_deg": [
+          -90.0,
+          50.0
+        ]
+      }
+    ],
+    "operation": null,
+    "preview": null,
+    "stop": {
+      "state": "not_requested",
+      "reason": null,
+      "requested_at": null,
+      "confirmed_at": null,
+      "disabled_observed": false,
+      "label": "未请求"
+    },
+    "stop_gate": {
+      "locked": false,
+      "reason": null,
+      "locked_at": null,
+      "generation": 0,
+      "reset_requested_at": null,
+      "unlocked_at": null,
+      "requires": "手动复位后、因果上更新的四轴一致 DISARMED 观测"
+    },
+    "lease": {
+      "last_heartbeat_age_s": 0.2,
+      "timeout_s": 3.0,
+      "fresh": true,
+      "enforced_while_running": true
+    },
+    "services": {
+      "stop_all": {},
+      "reset_disabled": {},
+      "switch_controller": {}
+    },
+    "events": [
+      {
+        "at": 1793775854.9037445,
+        "level": "info",
+        "message": "面板启动；只读观察，运动仅经受保护客户端子进程"
+      }
+    ],
+    "stop_generation": 0,
+    "capabilities": {
+      "preview": {
+        "ok": false,
+        "message": "面板正在退出"
+      },
+      "execute": {
+        "ok": false,
+        "message": "面板正在退出"
+      },
+      "hold": {
+        "ok": false,
+        "message": "面板正在退出"
+      },
+      "reset": {
+        "ok": false,
+        "message": "需要先观测到已失能（当前：未使能）"
+      },
+      "stop": {
+        "ok": true,
+        "message": "始终可用；请求全轴停止，不是物理急停"
+      }
+    }
+  }
+}

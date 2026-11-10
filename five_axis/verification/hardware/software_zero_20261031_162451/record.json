@@ -1,0 +1,40 @@
+{
+  "user_confirmed_pose_is_zero": true,
+  "method": "manual pose; no motor-side zero write",
+  "snapshot_sha256": "0995814413ef5eb158e164ffdfe88087d20b7b46ecdafc7f5342a4827d20591c",
+  "joints": {
+    "1": {
+      "old_zero_rad": 1.42195,
+      "new_zero_rad": 1.433012893873503,
+      "sign": -1.0,
+      "raw_payload": "01 8e ac 7f e7 ff 1e 1a",
+      "direction_reverified": false,
+      "precision": "unmeasured_manual_pose_quantized_can_feedback"
+    },
+    "2": {
+      "old_zero_rad": -1.758575439453125,
+      "new_zero_rad": -1.8030441748683916,
+      "sign": 1.0,
+      "raw_payload": "02 6d 89 7f f7 ff 1c 18",
+      "direction_reverified": false,
+      "precision": "unmeasured_manual_pose_quantized_can_feedback"
+    },
+    "3": {
+      "old_zero_rad": -0.4289692530708784,
+      "new_zero_rad": -0.9439612420843826,
+      "sign": 1.0,
+      "raw_payload": "03 76 55 7f f7 ff 1b 19",
+      "direction_reverified": false,
+      "precision": "unmeasured_manual_pose_quantized_can_feedback"
+    },
+    "4": {
+      "old_zero_rad": -0.47665369649805456,
+      "new_zero_rad": -0.5067902647440299,
+      "sign": -1.0,
+      "raw_payload": "04 7a cf 7f f7 fe 1b 1a",
+      "direction_reverified": false,
+      "precision": "unmeasured_manual_pose_quantized_can_feedback"
+    }
+  },
+  "verification": "all four source-pose model angles equal 0; signs unchanged; J5 block unchanged"
+}

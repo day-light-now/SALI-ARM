@@ -1,0 +1,28 @@
+{
+  "passed": true,
+  "physical_port_opened": false,
+  "workspace": "/home/xuyu/slaihand_control_panel_ws_identified_trial_20261105/install/slaihand_bringup/share/slaihand_bringup",
+  "alpha": 0.1,
+  "ramp_s": 2.0,
+  "model": "identified_base",
+  "expected_protocol_nm": [
+    0.09989098051351036,
+    0.21046395726896075,
+    0.012121659444175677,
+    -0.007191193894234286
+  ],
+  "decoded_mit_nm": [
+    0.146520146520146,
+    0.24420024420024333,
+    0.01318681318681314,
+    -0.01318681318681314
+  ],
+  "stop_confirmed": true,
+  "post_stop_applied_nm": [
+    0.0,
+    0.0,
+    0.0,
+    0.0
+  ],
+  "work": "/tmp/identified-trial-yeiv9of2"
+}

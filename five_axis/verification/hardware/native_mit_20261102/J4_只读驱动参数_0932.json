@@ -1,0 +1,32 @@
+{
+  "date": "2026-11-02",
+  "joint": 4,
+  "source": "user_manual_DMMC02_CAN_readonly",
+  "motor_operations_by_codex": 0,
+  "registers": {
+    "1": {
+      "payload": "04 00 33 01 00 00 00 00",
+      "raw_le": "00 00 00 00",
+      "float32": 0.0,
+      "uint32": null
+    },
+    "3": {
+      "payload": "04 00 33 03 cd cc 4c 3f",
+      "raw_le": "cd cc 4c 3f",
+      "float32": 0.800000011920929,
+      "uint32": null
+    },
+    "14": {
+      "payload": "04 00 33 0e 36 34 31 37",
+      "raw_le": "36 34 31 37",
+      "float32": null,
+      "uint32": 925971510
+    }
+  },
+  "interpretation": {
+    "kt_zero": "not a usable torque/current calibration; does not mean zero motor output",
+    "oc_value": "0.8 per-unit protection threshold; not amperes and not proven continuous current clamp",
+    "sw_ver": "retain raw bytes; ASCII display is not a verified semantic version"
+  },
+  "native_drive_effort_boundary_verified": false
+}

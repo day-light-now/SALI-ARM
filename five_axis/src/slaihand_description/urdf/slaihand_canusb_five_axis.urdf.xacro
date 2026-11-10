@@ -1,0 +1,122 @@
+<?xml version="1.0"?>
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro" name="slaihand_five_axis">
+  <!-- Candidate unified five-axis model. J1-J4 retain the canonical four-axis
+       geometry/limits. J5 is the existing placeholder frame; its motion sector,
+       zero and sign are NOT calibrated, so the ros2_control joint marks it
+       calibration_qualified=false. It remains visible for feedback and is
+       covered by stop, but the driver must refuse whole-arm motion. -->
+  <xacro:arg name="port" default=""/>
+  <xacro:arg name="mapping_file" default="$(find slaihand_bringup)/config/hardware_mapping.yaml"/>
+  <xacro:arg name="policy_file" default="$(find slaihand_bringup)/config/canusb_five_axis_motion_policy.yaml"/>
+  <xacro:arg name="log_directory" default="/tmp/slaihand_canusb_five_axis_motion"/>
+  <xacro:arg name="mapping_sha256" default=""/>
+  <xacro:arg name="model_sha256" default=""/>
+  <xacro:arg name="policy_sha256" default=""/>
+  <xacro:arg name="mass_profile_sha256" default=""/>
+  <xacro:arg name="load_id" default=""/>
+  <!-- Test/candidate knobs. Defaults keep J5 feedback-only and unqualified; a
+       qualified simulation must pass an explicit 64-hex calibration artifact
+       and finite limits, and no production launch sets these for real motion. -->
+  <xacro:arg name="j5_qualified" default="false"/>
+  <xacro:arg name="j5_calibration_sha256" default=""/>
+  <xacro:arg name="j5_hardware_sign" default="1"/>
+  <xacro:arg name="j5_zero_offset_rad" default="0.0"/>
+  <xacro:arg name="j5_limit_lower" default="-0.5235987755982988"/>
+  <xacro:arg name="j5_limit_upper" default="0.5235987755982988"/>
+  <!-- One canonical J1-J4 geometry/limit source, shared with the existing
+       four-axis model and panel. J5 below is the existing frame-only placeholder,
+       not CAD-derived geometry; its motion sector is intentionally absent. -->
+  <xacro:include filename="$(find slaihand_description)/urdf/slaihand_four_axis.urdf"/>
+  <link name="link5_virtual"/>
+  <xacro:if value="$(arg j5_qualified)">
+    <joint name="slaihand_joint5" type="revolute">
+      <parent link="link4"/>
+      <child link="link5_virtual"/>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <axis xyz="0 0 1"/>
+      <limit lower="$(arg j5_limit_lower)" upper="$(arg j5_limit_upper)"
+             effort="28.0" velocity="10.0"/>
+    </joint>
+  </xacro:if>
+  <xacro:unless value="$(arg j5_qualified)">
+    <joint name="slaihand_joint5" type="continuous">
+      <parent link="link4"/>
+      <child link="link5_virtual"/>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <axis xyz="0 0 1"/>
+      <limit effort="1" velocity="0.5"/>
+    </joint>
+  </xacro:unless>
+  <xacro:property name="policy" value="${xacro.load_yaml('$(arg policy_file)')}"/>
+  <ros2_control name="SLAICanUsbFiveAxisSystem" type="system">
+    <hardware>
+      <plugin>slaihand_hardware/CanUsbSystem</plugin>
+      <param name="port">$(arg port)</param>
+      <param name="protocol">slai_canusb_tx30_rx16_v1</param>
+      <param name="log_directory">$(arg log_directory)</param>
+      <param name="service_prefix">/slaihand</param>
+      <param name="mapping_sha256">$(arg mapping_sha256)</param>
+      <param name="model_sha256">$(arg model_sha256)</param>
+      <param name="policy_sha256">$(arg policy_sha256)</param>
+      <param name="policy_profile">${policy['profile']}</param>
+      <param name="kp">${policy['kp']}</param><param name="kd">${policy['kd']}</param>
+      <param name="kp_max">${policy.get('kp_max', 160.0)}</param>
+      <!-- Additive five-axis independent gains. Empty when the policy keeps the
+           legacy scalar form; the driver then applies the scalar to every axis.
+           Five-axis only; the four-axis xacro is unchanged. -->
+      <param name="kp_axis">${' '.join(str(v) for v in policy.get('kp_axis', []))}</param>
+      <param name="kd_axis">${' '.join(str(v) for v in policy.get('kd_axis', []))}</param>
+      <param name="kp_schedule">${policy.get('kp_schedule', '')}</param>
+      <param name="kp_schedule_slew_kp_per_s">${policy.get('kp_schedule_slew_kp_per_s', 80.0)}</param>
+      <param name="reference_speed_rad_s">${policy['reference_speed_rad_s']}</param>
+      <param name="feedback_speed_rad_s">${policy['feedback_speed_rad_s']}</param>
+      <param name="following_error_deg">${policy['following_error_deg']}</param>
+      <param name="temperature_c">${policy['temperature_c']}</param>
+      <param name="gain_ramp_s">${policy['gain_ramp_s']}</param>
+      <param name="enable_stagger_s">${policy['enable_stagger_s']}</param>
+      <param name="feedback_max_age_s">${policy['feedback_max_age_s']}</param>
+      <param name="cycle_max_gap_s">${policy['cycle_max_gap_s']}</param>
+      <param name="session_timeout_s">${policy['session_timeout_s']}</param>
+      <param name="gravity_ff_alpha">${policy['gravity_ff_alpha']}</param>
+      <param name="gravity_ff_ramp_s">${policy['gravity_ff_ramp_s']}</param>
+      <param name="gravity_float_enabled">${1 if policy.get('gravity_float_enabled', False) else 0}</param>
+      <param name="mass_profile_sha256">$(arg mass_profile_sha256)</param>
+      <param name="load_id">$(arg load_id)</param>
+      <param name="gravity_base_x">${policy['gravity_base_x']}</param>
+      <param name="gravity_base_y">${policy['gravity_base_y']}</param>
+      <param name="gravity_base_z">${policy['gravity_base_z']}</param>
+      <param name="gravity_j3_offset_rad">${policy['gravity_j3_offset_rad']}</param>
+    </hardware>
+    <xacro:macro name="native_joint5" params="name can_id sign zero qualified guard artifact">
+      <joint name="${name}">
+        <param name="can_id">${can_id}</param>
+        <param name="hardware_sign">${sign}</param>
+        <param name="zero_offset_rad">${zero}</param>
+        <param name="position_branch_mode">fixed</param>
+        <param name="calibration_qualified">${'true' if str(qualified).lower() in ('true','1') else 'false'}</param>
+        <param name="calibration_sha256">${artifact}</param>
+        <param name="estimate_guard_nm">${guard}</param>
+        <command_interface name="position"/>
+        <state_interface name="position"/><state_interface name="velocity"/><state_interface name="effort"/>
+        <state_interface name="driver_temperature"/><state_interface name="motor_temperature"/><state_interface name="motor_state"/>
+        <state_interface name="feedback_age"/><state_interface name="feedback_valid"/><state_interface name="control_mode"/>
+        <state_interface name="timeout_count"/><state_interface name="configuration_conflict"/>
+        <state_interface name="control_state"/><state_interface name="hold_ready"/><state_interface name="audit_ok"/>
+        <state_interface name="disabled_observed"/><state_interface name="command_owner"/>
+        <state_interface name="command_id"/>
+      </joint>
+    </xacro:macro>
+    <xacro:native_joint5 name="slaihand_joint1" can_id="1" sign="1" zero="1.4574273289082171" qualified="true" guard="0.0" artifact=""/>
+    <xacro:native_joint5 name="slaihand_joint2" can_id="2" sign="1" zero="-1.795033188372626" qualified="true" guard="0.0" artifact=""/>
+    <xacro:native_joint5 name="slaihand_joint3" can_id="3" sign="1" zero="-2.5423437857633324" qualified="true" guard="0.0" artifact=""/>
+    <xacro:native_joint5 name="slaihand_joint4" can_id="4" sign="-1" zero="-0.40951400015259054" qualified="true" guard="0.0" artifact=""/>
+    <!-- J5 mapping here is a provisional raw feedback identity only: sign +1,
+         zero 0, and motion_qualified=false. It is not a formal zero, direction,
+         limit, model, or torque profile. The driver/panel preflight must reject
+         J5 motion; the UI must label this axis pending. -->
+    <xacro:native_joint5 name="slaihand_joint5" can_id="5"
+      sign="$(arg j5_hardware_sign)" zero="$(arg j5_zero_offset_rad)"
+      qualified="$(arg j5_qualified)" guard="0.0"
+      artifact="$(arg j5_calibration_sha256)"/>
+  </ros2_control>
+</robot>

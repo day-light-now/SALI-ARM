@@ -1,0 +1,14 @@
+{
+  "stop_before_ack_publication": {
+    "accepted": true,
+    "current_generation": 1,
+    "ack_generation": 0,
+    "cancel_requested": true,
+    "ack_file_exists": true
+  },
+  "identity_change_before_first_ready": {
+    "accepted": true,
+    "preview_identity_retained": false,
+    "captured_boot": "boot-replacement"
+  }
+}

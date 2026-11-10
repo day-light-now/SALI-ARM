@@ -1,0 +1,13 @@
+{
+  "verification/gravity_model.py": "46ce9030fb87f7584d33185e63d864c27ce19ca1799ec2408a53de8e9fd89560",
+  "verification/impedance_demo/model.py": "18b1d00ca8629250b2475387f7430aa2575acbc1ab25367e711e3d257121e087",
+  "src/slaihand_description/urdf/slaihand_four_axis.urdf": "47c2827cba6b386131b9263d7c980000ae02b7aadecb16b376693efb0bd66c72",
+  "verification/gravity_preparation/provisional_gravity.json": "b03bd1fdf51ddf5bf3e9004c5d0c8c1218797f1fcbf085806792618e3e6d145f",
+  "src/slaihand_bringup/config/hardware_mapping.yaml": "6c2ee47ba780235786b12a9c9d0b5f220b8e11a6ab5dff302d67ffa2375cbe7b",
+  "slai_console/gravity_feedforward.py": "241dede44fa23f43e0ead6759bcf3e38fa47e15b4f6b51ecc913c5e030466b1d",
+  "slai_console/gravity_replay.py": "6bd2e7634a8e915b28bbf498b8da92e26ac98cfb91fa88848837ef4be2bcdf94",
+  "slai_console/test_gravity_feedforward.py": "2246782e64a9145cf5c79d1f0189b24561a496935b67c34401a5bda5e9ef7b20",
+  "slai_console/native_actuation.py": "9a765e77a8040634a57c68629497bc0785b1f75562203f7768a759c6f312dc52",
+  "slai_console/native_mit_console.py": "7387d5acbf65d0e9820d9240496d8f6b12c835b331da5ef43337a1ac2c708d0b",
+  "slai_console/openarm_mit.py": "4e3adbc194782ebcee341f6859f60130f3aa86b8b1aa4e1f2273e2be4b99df19"
+}

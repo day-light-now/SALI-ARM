@@ -1,0 +1,110 @@
+{
+  "schema": "slaihand_j5_payload_geometry_probe/2",
+  "status": "OFFLINE_GEOMETRY_PROBE_NOT_A_DEPLOYABLE_MODEL",
+  "convention": {
+    "urdf": "src/slaihand_description/urdf/slaihand_four_axis.urdf",
+    "j3_offset_rad": 3.141592653589793,
+    "j5_origin": "link4 origin (five-axis placeholder)",
+    "j5_axis_link4": [
+      0.0,
+      0.0,
+      1.0
+    ],
+    "gravity_base_m_s2": [
+      0.0,
+      9.80665,
+      0.0
+    ]
+  },
+  "kp_axis_nm_per_rad": [
+    160.81,
+    160.44,
+    159.95,
+    160.81,
+    159.95
+  ],
+  "observed_pre_slip_sag_deg": [
+    0.306,
+    0.131,
+    0.0,
+    0.43700000000000006
+  ],
+  "observed_post_slip_sag_deg": [
+    0.04,
+    0.131,
+    0.0,
+    0.13
+  ],
+  "observed_sag_change_torque_nm_J1_J4": [
+    0.7465726160551336,
+    0.0,
+    0.0,
+    0.861645838830549
+  ],
+  "fitted_com_link5_mm": [
+    18.50801463931812,
+    -3.7130715046633513,
+    -1632918.3642897056
+  ],
+  "slip_fit_residual_nm_J1_J4": [
+    -9.14823772291129e-14,
+    0.4308229684848916,
+    -4.219535636694471e-12,
+    -0.4308229684848917
+  ],
+  "slip_fit_predicted_d_tau5_nm": -0.4308228703456573,
+  "codex_com_link4_mm": [
+    110.0,
+    9.0,
+    -47.0
+  ],
+  "codex_com_link5_mm": [
+    110.26684454833246,
+    4.714126998065358,
+    -47.0
+  ],
+  "codex_predicted_d_tau_nm": [
+    -0.052269965975176844,
+    2.5704160362478707,
+    -0.00838570487188126,
+    2.570415938108889,
+    -2.570415938108889
+  ],
+  "j5_effort_curve": {
+    "q5_deg": [
+      0.284,
+      9.748,
+      19.649,
+      -9.683,
+      -19.693,
+      -0.284
+    ],
+    "observed_nm": [
+      -0.8773,
+      0.6118,
+      0.8959,
+      -0.9882,
+      -0.9515,
+      0.7271
+    ],
+    "codex_payload_predicted_nm": [
+      0.14817388506429977,
+      0.768553318519786,
+      1.3949138499773095,
+      -0.5092124226243306,
+      -1.1539364237334628,
+      0.11064252049136644
+    ],
+    "constant_offset_nm": -0.22355578794916134,
+    "residual_nm": [
+      -0.8019180971151384,
+      0.06680246942937532,
+      -0.27545806202814815,
+      -0.255431789426508,
+      0.42599221168262413,
+      0.8400132674577948
+    ],
+    "rmse_nm": 0.5284804318843371
+  },
+  "caveat": "Sag-change torques assume the post-slip state is a gravity equilibrium; residual friction bias after the slip is not independently measured, so this is a conditional test, not a deployed model."
+}

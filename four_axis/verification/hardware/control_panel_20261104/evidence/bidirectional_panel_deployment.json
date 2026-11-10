@@ -1,0 +1,22 @@
+{
+  "workspace": "/home/xuyu/slaihand_control_panel_ws_bidirectional_20261105",
+  "panel_pid": 327228,
+  "driver_launch_pids": [
+    314447
+  ],
+  "stage": 8,
+  "feedback_valid_all": true,
+  "motor_states": [
+    0,
+    0,
+    0,
+    0
+  ],
+  "groups": {
+    "S01": 12,
+    "S02": 12,
+    "S03": 12,
+    "S04": 12,
+    "V01": 8
+  }
+}

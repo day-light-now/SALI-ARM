@@ -1,0 +1,19 @@
+{
+  "schema": "slaihand_j5_limits_motion_authorization/1",
+  "date": "2026-11-08",
+  "joint": "slaihand_joint5",
+  "operator_instruction": "Directly import the supplied J5 travel limits and authorize J5 motion (current chat).",
+  "zero_offset_rad": 2.5389105058365757,
+  "hardware_sign": 1,
+  "limits_rad": [-1.5707963267948966, 1.5707963267948966],
+  "limits_deg": [-90.0, 90.0],
+  "limit_reference": "model angle relative to the adopted J5 zero",
+  "motion_authorized_by_operator": true,
+  "driver_motion_qualified": false,
+  "timeout_observed": 0,
+  "motion_enabled": false,
+  "blocking_condition": "J5 TIMEOUT is still 0; a nonzero watchdog must be set and read back before the driver can enable",
+  "motor_command_sent": false,
+  "motor_zero_written": false,
+  "motion_performed": false
+}

@@ -1,0 +1,178 @@
+{
+  "status": "ESTIMATE_ONLY_NOT_FOR_HARDWARE",
+  "links": {
+    "base_link": {
+      "mass_kg": 1.7819138782608146,
+      "com_link_m": [
+        -0.0003248995632461394,
+        -0.00023915134830508118,
+        0.02673456071503915
+      ],
+      "inertia_com_link_kg_m2": [
+        [
+          0.007117383373387303,
+          -1.6739896014953938e-05,
+          1.9274033537367143e-05
+        ],
+        [
+          -1.6739896014953938e-05,
+          0.0020661138014660047,
+          1.8553834185599615e-05
+        ],
+        [
+          1.9274033537367143e-05,
+          1.8553834185599615e-05,
+          0.008344293208231678
+        ]
+      ]
+    },
+    "link1": {
+      "mass_kg": 1.7417411456583918,
+      "com_link_m": [
+        0.012179016746953287,
+        0.007067934021878631,
+        0.12814319742199648
+      ],
+      "inertia_com_link_kg_m2": [
+        [
+          0.003649307136509693,
+          1.3372983179271343e-06,
+          -0.00035535084388954927
+        ],
+        [
+          1.3372983179271343e-06,
+          0.002920148955823815,
+          -1.2369502246842697e-05
+        ],
+        [
+          -0.00035535084388954927,
+          -1.2369502246842697e-05,
+          0.002315937949142551
+        ]
+      ]
+    },
+    "link2": {
+      "mass_kg": 0.22786672078481798,
+      "com_link_m": [
+        0.032402280371982936,
+        -0.0005656267363472415,
+        -0.026351675009243614
+      ],
+      "inertia_com_link_kg_m2": [
+        [
+          0.0003999323191484911,
+          -9.160869342545271e-07,
+          3.555923597411214e-05
+        ],
+        [
+          -9.160869342545273e-07,
+          0.0006441389951391117,
+          2.1266410222420287e-06
+        ],
+        [
+          3.555923597411214e-05,
+          2.1266410222420287e-06,
+          0.00034827956775341715
+        ]
+      ]
+    },
+    "link3": {
+      "mass_kg": 2.1051275216764473,
+      "com_link_m": [
+        0.00021817177567062313,
+        -7.056904927922243e-05,
+        0.08600202597559992
+      ],
+      "inertia_com_link_kg_m2": [
+        [
+          0.008093934711294097,
+          -2.2690880491960536e-05,
+          -3.5740534899901004e-05
+        ],
+        [
+          -2.269088049196056e-05,
+          0.00789056922742958,
+          1.1742925610303363e-05
+        ],
+        [
+          -3.5740534899901004e-05,
+          1.1742925610303363e-05,
+          0.002123053292082948
+        ]
+      ]
+    },
+    "link4": {
+      "mass_kg": 0.48579283432839593,
+      "com_link_m": [
+        0.08059076655780156,
+        -0.0025313026081046504,
+        -0.029101161222513817
+      ],
+      "inertia_com_link_kg_m2": [
+        [
+          0.0003358288910103001,
+          7.430873689631724e-06,
+          1.808464643295987e-05
+        ],
+        [
+          7.430873689631724e-06,
+          0.0005745259363049742,
+          -7.922056418810023e-07
+        ],
+        [
+          1.8084646432959867e-05,
+          -7.922056418810023e-07,
+          0.00041707230626659785
+        ]
+      ]
+    }
+  },
+  "motor_corrections": [
+    {
+      "instance": "base-link-1/DAMIAO_DM_J10010L_2EC_Motor-1",
+      "model": "DM-J10010L-2EC",
+      "scale": 3.0437093561165356,
+      "target_mass_kg": 1.375
+    },
+    {
+      "instance": "link3-1/DAMIAO_DM_J8009P_2EC_Motor.stp-2",
+      "model": "DM-J8009P-2EC",
+      "scale": 2.6349972193631017,
+      "target_mass_kg": 0.921
+    },
+    {
+      "instance": "link3-1/DAMIAO_DM_J8009P_2EC_Motor.stp-1",
+      "model": "DM-J8009P-2EC",
+      "scale": 2.6349972193631017,
+      "target_mass_kg": 0.921
+    },
+    {
+      "instance": "link4-1/DM-J4340-2EC-V1.1_3d_20260325_1.stp-1",
+      "model": "DM-J4340-2EC",
+      "scale": 3.194309041379533,
+      "target_mass_kg": 0.362
+    },
+    {
+      "instance": "link1-1/DAMIAO_DM_J10010L_2EC_Motor-1",
+      "model": "DM-J10010L-2EC",
+      "scale": 3.0437093561165356,
+      "target_mass_kg": 1.375
+    }
+  ],
+  "gravity_base_m_s2": [
+    0,
+    9.80665,
+    0
+  ],
+  "gravity_direction": "+y",
+  "gravity_source": "User CAD shoulder-mount screenshot 2026-10-08: base +Y points down; installation not measured.",
+  "assumptions": [
+    "Shoulder mounting: J1 horizontal; base +Y points down per user CAD diagram.",
+    "Vendor assembled motor mass uniformly scales its CAD pieces; COM shape and rotor/stator split are estimates.",
+    "Motor pieces remain in current CAD link grouping; rotor/stator dynamic allocation is not verified.",
+    "Unassigned structural materials keep CAD default density; ABS is treated as solid.",
+    "Zero-volume motor reference part omitted; its contribution is absorbed by total motor mass scaling.",
+    "J4340 mass is included on link4, no J5 motion. No cable or extra payload included.",
+    "Mass factor sensitivity is not a statistical confidence interval."
+  ]
+}

@@ -1,0 +1,39 @@
+# Candidate five-axis native-MIT policy. J5 feedback is included, but J5 motion
+# remains gated until real zero/sign/limits and a non-zero watchdog are recorded.
+profile: candidate_five_axis_native_mit_j5_gated
+hardware_validated: false
+kp: 160.0
+kd: 5.0
+# Explicit experimental ceiling for this branch; production stays 160 unless
+# a separate safety decision changes it. Protocol wire cap 500 is not this value.
+kp_max: 280.0
+# 2026-11-08 experimental per-axis headroom test. The measured 2 degree static
+# deviations were about 0.95/0.67/0.54 degrees on J1/J2/J4; this probe raises
+# only J1/J2/J4 while keeping J3/J5 at the existing 160/5. It is not a 1.5x
+# capability or a formal tuning acceptance.
+kp_axis: [280.0, 240.0, 160.0, 200.0, 160.0]
+kd_axis: [5.0, 5.0, 5.0, 5.0, 5.0]
+# Forward-only angle-schedule probe. Angles are model-frame degrees; Kp is
+# bounded by kp_max=280. J3/J5 stay at 160. No backward motion is authorized.
+kp_schedule: "0:160,20:220,40:280;0:160,20:240,40:280;0:160;0:160,20:200,40:220;0:160"
+kp_schedule_slew_kp_per_s: 80.0
+estimate_guard_nm: [0.0, 0.0, 0.0, 0.0, 0.0]
+reference_speed_rad_s: 1.0
+feedback_speed_rad_s: 1.0
+following_error_deg: 4.0
+temperature_c: 50.0
+gain_ramp_s: 1.0
+enable_stagger_s: 0.03
+feedback_max_age_s: 0.06
+cycle_max_gap_s: 0.05
+session_timeout_s: 180.0
+gravity_ff_alpha: 0.0
+gravity_ff_ramp_s: 1.0
+gravity_base_x: 0.0
+gravity_base_y: 9.80665
+gravity_base_z: 0.0
+gravity_j3_offset_rad: 3.141592653589793
+gravity_float_enabled: false
+# New load declaration only. Geometry/COM are NOT measured; gravity feedforward
+# must stay disabled and five-axis fitting is refused until a qualified profile.
+load_id: new_load_3p5kg_j5_provisional

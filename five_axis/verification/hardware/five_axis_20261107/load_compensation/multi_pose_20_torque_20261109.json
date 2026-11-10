@@ -1,0 +1,589 @@
+{
+  "schema": "slaihand_static_torque_proxy/1",
+  "source": "recorder dynamic effort",
+  "measurement": "DAMIAO MIT torque estimate; NOT measured current",
+  "window_s": 0.3,
+  "joints": [
+    "slaihand_joint1",
+    "slaihand_joint2",
+    "slaihand_joint3",
+    "slaihand_joint4",
+    "slaihand_joint5"
+  ],
+  "segments": [
+    {
+      "index": 0,
+      "relative_deg": [
+        0.10419808216440667,
+        0.10419808216440667,
+        0.10419808216440667,
+        0.10419808216440646,
+        0.10419808216440667
+      ],
+      "axes": {
+        "slaihand_joint1": {
+          "effort_nm": {
+            "mean": -0.34188034188034067,
+            "std": 0.07443230886458024,
+            "max_abs": 0.439560439560438,
+            "count": 31
+          },
+          "signed_error_deg": {
+            "mean": 0.05426935710663178,
+            "std": 0.025081745343518095,
+            "max_abs": 0.0905146991217455,
+            "count": 31
+          }
+        },
+        "slaihand_joint2": {
+          "effort_nm": {
+            "mean": -0.7389026743865428,
+            "std": 0.06989191543682305,
+            "max_abs": 0.8302808302808273,
+            "count": 31
+          },
+          "signed_error_deg": {
+            "mean": 0.19034642803923912,
+            "std": 0.02372641745877187,
+            "max_abs": 0.2312243506024441,
+            "count": 31
+          }
+        },
+        "slaihand_joint3": {
+          "effort_nm": {
+            "mean": -0.022545196738745044,
+            "std": 0.06159658910138948,
+            "max_abs": 0.11868131868131826,
+            "count": 31
+          },
+          "signed_error_deg": {
+            "mean": -0.05360521207828498,
+            "std": 0.02456065506596161,
+            "max_abs": 0.10419808216440667,
+            "count": 31
+          }
+        },
+        "slaihand_joint4": {
+          "effort_nm": {
+            "mean": -1.3786600496277939,
+            "std": 0.06722636091645802,
+            "max_abs": 1.490109890109892,
+            "count": 31
+          },
+          "signed_error_deg": {
+            "mean": 0.5379422620795264,
+            "std": 0.025161133405693613,
+            "max_abs": 0.5713673539198708,
+            "count": 31
+          }
+        },
+        "slaihand_joint5": {
+          "effort_nm": {
+            "mean": -0.9627791563275435,
+            "std": 0.0670265356213589,
+            "max_abs": 1.0735042735042732,
+            "count": 31
+          },
+          "signed_error_deg": {
+            "mean": 0.3172576859038471,
+            "std": 0.025544279464393676,
+            "max_abs": 0.3527979653752686,
+            "count": 31
+          }
+        }
+      }
+    },
+    {
+      "index": 1,
+      "relative_deg": [
+        19.895795259781732,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "axes": {
+        "slaihand_joint1": {
+          "effort_nm": {
+            "mean": 4.825711922486128,
+            "std": 0.09066915322344704,
+            "max_abs": 4.932844932844944,
+            "count": 31
+          },
+          "signed_error_deg": {
+            "mean": -1.4110044001505015,
+            "std": 0.025544154666389735,
+            "max_abs": 1.4465549998966762,
+            "count": 31
+          }
+        },
+        "slaihand_joint2": {
+          "effort_nm": {
+            "mean": -0.16227500098467781,
+            "std": 0.035926595772945255,
+            "max_abs": 0.24420024420024333,
+            "count": 31
+          },
+          "signed_error_deg": {
+            "mean": 0.0,
+            "std": 0.0,
+            "max_abs": 0.0,
+            "count": 31
+          }
+        },
+        "slaihand_joint3": {
+          "effort_nm": {
+            "mean": -0.13995037220843623,
+            "std": 0.010419665690676368,
+            "max_abs": 0.14505494505494454,
+            "count": 31
+          },
+          "signed_error_deg": {
+            "mean": 0.003525312718461332,
+            "std": 0.008038949854758094,
+            "max_abs": 0.02185693885446026,
+            "count": 31
+          }
+        },
+        "slaihand_joint4": {
+          "effort_nm": {
+            "mean": 0.6146756469337092,
+            "std": 0.010419665690676368,
+            "max_abs": 0.6197802197802176,
+            "count": 31
+          },
+          "signed_error_deg": {
+            "mean": -0.17485551083568207,
+            "std": 0.0,
+            "max_abs": 0.17485551083568207,
+            "count": 31
+          }
+        },
+        "slaihand_joint5": {
+          "effort_nm": {
+            "mean": -0.05227460711331661,
+            "std": 0.007275400056231854,
+            "max_abs": 0.06153846153846132,
+            "count": 31
+          },
+          "signed_error_deg": {
+            "mean": 0.0,
+            "std": 0.0,
+            "max_abs": 0.0,
+            "count": 31
+          }
+        }
+      }
+    },
+    {
+      "index": 2,
+      "relative_deg": [
+        0.0,
+        19.895788010522335,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "axes": {
+        "slaihand_joint1": {
+          "effort_nm": {
+            "mean": -1.6214896214896157,
+            "std": 0.0293040293040292,
+            "max_abs": 1.7094017094017033,
+            "count": 30
+          },
+          "signed_error_deg": {
+            "mean": 0.5252950971355282,
+            "std": 0.00392344059702434,
+            "max_abs": 0.5464234713615065,
+            "count": 30
+          }
+        },
+        "slaihand_joint2": {
+          "effort_nm": {
+            "mean": 5.730565730565739,
+            "std": 0.10725059237769993,
+            "max_abs": 5.909645909645917,
+            "count": 30
+          },
+          "signed_error_deg": {
+            "mean": -1.4979794539854374,
+            "std": 0.02424408539260644,
+            "max_abs": 1.5324591262358307,
+            "count": 30
+          }
+        },
+        "slaihand_joint3": {
+          "effort_nm": {
+            "mean": -0.1283516483516479,
+            "std": 0.012709303116308492,
+            "max_abs": 0.14505494505494454,
+            "count": 30
+          },
+          "signed_error_deg": {
+            "mean": 0.0,
+            "std": 0.0,
+            "max_abs": 0.0,
+            "count": 30
+          }
+        },
+        "slaihand_joint4": {
+          "effort_nm": {
+            "mean": 0.13362637362637314,
+            "std": 0.013069071426214024,
+            "max_abs": 0.14505494505494454,
+            "count": 30
+          },
+          "signed_error_deg": {
+            "mean": -0.002185693885446026,
+            "std": 0.006557081656338079,
+            "max_abs": 0.02185693885446026,
+            "count": 30
+          }
+        },
+        "slaihand_joint5": {
+          "effort_nm": {
+            "mean": -0.051509971509971324,
+            "std": 0.006047407025149425,
+            "max_abs": 0.06153846153846132,
+            "count": 30
+          },
+          "signed_error_deg": {
+            "mean": 0.0,
+            "std": 0.0,
+            "max_abs": 0.0,
+            "count": 30
+          }
+        }
+      }
+    },
+    {
+      "index": 3,
+      "relative_deg": [
+        0.0,
+        0.0,
+        19.89574049365904,
+        0.0,
+        0.0
+      ],
+      "axes": {
+        "slaihand_joint1": {
+          "effort_nm": {
+            "mean": -1.6621371460081078,
+            "std": 0.04881463117044267,
+            "max_abs": 1.7094017094017033,
+            "count": 31
+          },
+          "signed_error_deg": {
+            "mean": 0.5386677833808915,
+            "std": 0.010457767539676819,
+            "max_abs": 0.5464234713615065,
+            "count": 31
+          }
+        },
+        "slaihand_joint2": {
+          "effort_nm": {
+            "mean": -0.8554885974240782,
+            "std": 0.04274184872582768,
+            "max_abs": 0.9279609279609247,
+            "count": 31
+          },
+          "signed_error_deg": {
+            "mean": 0.2608731411661386,
+            "std": 0.005369596358203562,
+            "max_abs": 0.2622832662535231,
+            "count": 31
+          }
+        },
+        "slaihand_joint3": {
+          "effort_nm": {
+            "mean": 0.49982275788727226,
+            "std": 0.06206483292962012,
+            "max_abs": 0.5934065934065913,
+            "count": 31
+          },
+          "signed_error_deg": {
+            "mean": -0.22931679648677958,
+            "std": 0.024706441168712463,
+            "max_abs": 0.2662771409432635,
+            "count": 31
+          }
+        },
+        "slaihand_joint4": {
+          "effort_nm": {
+            "mean": 0.11868131868131826,
+            "std": 0.0,
+            "max_abs": 0.11868131868131826,
+            "count": 31
+          },
+          "signed_error_deg": {
+            "mean": 0.0,
+            "std": 0.0,
+            "max_abs": 0.0,
+            "count": 31
+          }
+        },
+        "slaihand_joint5": {
+          "effort_nm": {
+            "mean": -0.05139233526330282,
+            "std": 0.005983858821615876,
+            "max_abs": 0.06153846153846132,
+            "count": 31
+          },
+          "signed_error_deg": {
+            "mean": 0.0,
+            "std": 0.0,
+            "max_abs": 0.0,
+            "count": 31
+          }
+        }
+      }
+    },
+    {
+      "index": 4,
+      "relative_deg": [
+        0.0,
+        0.0,
+        0.0,
+        19.895753102881276,
+        0.0
+      ],
+      "axes": {
+        "slaihand_joint1": {
+          "effort_nm": {
+            "mean": 0.34188034188034067,
+            "std": 0.0,
+            "max_abs": 0.34188034188034067,
+            "count": 30
+          },
+          "signed_error_deg": {
+            "mean": -0.17558407546416407,
+            "std": 0.003923440597024335,
+            "max_abs": 0.19671244969014232,
+            "count": 30
+          }
+        },
+        "slaihand_joint2": {
+          "effort_nm": {
+            "mean": -0.8335368335368306,
+            "std": 0.017534114146144027,
+            "max_abs": 0.9279609279609247,
+            "count": 30
+          },
+          "signed_error_deg": {
+            "mean": 0.24115489202754486,
+            "std": 0.00392344059702434,
+            "max_abs": 0.2622832662535231,
+            "count": 30
+          }
+        },
+        "slaihand_joint3": {
+          "effort_nm": {
+            "mean": -0.5397802197802178,
+            "std": 0.004734210819458888,
+            "max_abs": 0.5406593406593387,
+            "count": 30
+          },
+          "signed_error_deg": {
+            "mean": 0.1529985719812218,
+            "std": 0.0,
+            "max_abs": 0.1529985719812218,
+            "count": 30
+          }
+        },
+        "slaihand_joint4": {
+          "effort_nm": {
+            "mean": 1.603516483516485,
+            "std": 0.07916482296160131,
+            "max_abs": 1.7274725274725284,
+            "count": 30
+          },
+          "signed_error_deg": {
+            "mean": -0.4262538300466891,
+            "std": 0.025113285324013912,
+            "max_abs": 0.46146344519875465,
+            "count": 30
+          }
+        },
+        "slaihand_joint5": {
+          "effort_nm": {
+            "mean": -0.05424501424501405,
+            "std": 0.006822395235143344,
+            "max_abs": 0.06153846153846132,
+            "count": 30
+          },
+          "signed_error_deg": {
+            "mean": 0.0,
+            "std": 0.0,
+            "max_abs": 0.0,
+            "count": 30
+          }
+        }
+      }
+    },
+    {
+      "index": 5,
+      "relative_deg": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        19.89578663003447
+      ],
+      "axes": {
+        "slaihand_joint1": {
+          "effort_nm": {
+            "mean": -0.44932844932844773,
+            "std": 0.0293040293040292,
+            "max_abs": 0.5372405372405353,
+            "count": 30
+          },
+          "signed_error_deg": {
+            "mean": 0.1092846942723013,
+            "std": 0.0,
+            "max_abs": 0.1092846942723013,
+            "count": 30
+          }
+        },
+        "slaihand_joint2": {
+          "effort_nm": {
+            "mean": -0.8367928367928338,
+            "std": 0.02436569726836909,
+            "max_abs": 0.9279609279609247,
+            "count": 30
+          },
+          "signed_error_deg": {
+            "mean": 0.24334058591299088,
+            "std": 0.007429930515086484,
+            "max_abs": 0.2622832662535231,
+            "count": 30
+          }
+        },
+        "slaihand_joint3": {
+          "effort_nm": {
+            "mean": -0.12219780219780177,
+            "std": 0.008965309034888382,
+            "max_abs": 0.14505494505494454,
+            "count": 30
+          },
+          "signed_error_deg": {
+            "mean": 0.0,
+            "std": 0.0,
+            "max_abs": 0.0,
+            "count": 30
+          }
+        },
+        "slaihand_joint4": {
+          "effort_nm": {
+            "mean": -1.5542857142857158,
+            "std": 0.013069071426214024,
+            "max_abs": 1.5692307692307708,
+            "count": 30
+          },
+          "signed_error_deg": {
+            "mean": 0.5923230429558729,
+            "std": 0.006557081656338082,
+            "max_abs": 0.6119942879248872,
+            "count": 30
+          }
+        },
+        "slaihand_joint5": {
+          "effort_nm": {
+            "mean": 0.6564102564102576,
+            "std": 0.06641049474340018,
+            "max_abs": 0.7726495726495735,
+            "count": 30
+          },
+          "signed_error_deg": {
+            "mean": -0.25868937247368456,
+            "std": 0.020313095506462917,
+            "max_abs": 0.2977093525401107,
+            "count": 30
+          }
+        }
+      }
+    },
+    {
+      "index": 6,
+      "relative_deg": [
+        20.0,
+        20.0,
+        20.0,
+        20.0,
+        20.0
+      ],
+      "axes": {
+        "slaihand_joint1": {
+          "effort_nm": {
+            "mean": 6.47997164126197,
+            "std": 0.035926595772945255,
+            "max_abs": 6.495726495726501,
+            "count": 31
+          },
+          "signed_error_deg": {
+            "mean": -1.880597689652446,
+            "std": 0.0,
+            "max_abs": 1.880597689652446,
+            "count": 31
+          }
+        },
+        "slaihand_joint2": {
+          "effort_nm": {
+            "mean": 6.498877466619407,
+            "std": 0.017258578360870115,
+            "max_abs": 6.593406593406598,
+            "count": 31
+          },
+          "signed_error_deg": {
+            "mean": -1.7057421788166622,
+            "std": 0.0,
+            "max_abs": 1.7057421788166622,
+            "count": 31
+          }
+        },
+        "slaihand_joint3": {
+          "effort_nm": {
+            "mean": 0.6189294576391329,
+            "std": 0.004659816157434931,
+            "max_abs": 0.6197802197802176,
+            "count": 31
+          },
+          "signed_error_deg": {
+            "mean": -0.2631842144222852,
+            "std": 0.0,
+            "max_abs": 0.2631842144222852,
+            "count": 31
+          }
+        },
+        "slaihand_joint4": {
+          "effort_nm": {
+            "mean": 4.418433179723501,
+            "std": 0.010557680521225788,
+            "max_abs": 4.443956043956042,
+            "count": 31
+          },
+          "signed_error_deg": {
+            "mean": -1.2467464628730984,
+            "std": 0.0,
+            "max_abs": 1.2467464628730984,
+            "count": 31
+          }
+        },
+        "slaihand_joint5": {
+          "effort_nm": {
+            "mean": 0.2521091811414383,
+            "std": 0.0059512489939815795,
+            "max_abs": 0.2666666666666657,
+            "count": 31
+          },
+          "signed_error_deg": {
+            "mean": -0.11018564244106335,
+            "std": 0.0,
+            "max_abs": 0.11018564244106335,
+            "count": 31
+          }
+        }
+      }
+    }
+  ]
+}

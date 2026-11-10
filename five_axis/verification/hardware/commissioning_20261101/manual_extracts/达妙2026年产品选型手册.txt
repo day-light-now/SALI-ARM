@@ -1,0 +1,1098 @@
+
+PAGE 1
+深圳市达妙科技有限公司
+专业关节模组，智能驱动控制
+2026年产品选型手册
+
+
+PAGE 2
+目录
+关节电机
+DM-J3507 -2EC ……………………………………………………………………………………………………………… 8
+DM-J3507-2EC（48V）………………………………………………………………………………………………………… 9
+DM-J4310-2EC V1.1…………………………………………………………………………………………………………… 10
+DM-J4310-2EC V1.1（48V）…………………………………………………………………………………………………….11
+DM-J4310P-2EC …….……………………………………………………………………………………………………………....12
+DM-J4310 P-2EC（48V）.……………………………………………………………………………………………… ..…13
+DM-J4340 -2EC………………………………………………………………………………………………………………… 14
+DM-J4340-2EC（48V）……………………………………………………………………………………………………… 15
+DM-J4340P-2EC………………………………………………………………………………………………………………… 16
+DM-J4340P-2EC（48V）……………………………………………………………………………………………………… 17
+DM-J6006 -2EC ……………………………………………………………………………………………………………… 18
+DM-J6248 P-2EC …………………………………………………………………………………………………………… 19
+DM-J8006-2EC V1.1…………………………………………………………………………………………………………… 20
+DM-J8009 -2EC………………………………………………………………………………………………………………… 21
+DM-J8009P-2EC………………………………………………………………………………………………………………… 22
+DM-J10010-2EC………………………………………………………………………………………………………………… 23
+DM-J10010 L-2EC……………………………………………………………………………………………………………… 24
+DM-J10422 P-2EC……………………………………………………………………………………………………………… 25
+分立电机
+DM-S3519-1EC……………………………… …………………… ……………… …………………………………………… 26
+DM -S2325 -1EC ……………………………… …………………… ……………… ……………………………………… 27
+轮毂电机
+DM-H6215……………………………………… ………………………………… ……………………………………………… 29
+DM-H3510………………………………………………………………………………………………………………………… 30
+DM-H65………………………………………………………………………………………………………………………… 31
+DM-H55………………………………………………………………………………………………………………………… 33
+中空云台
+DM-G6220 ………………………… …………………… ………………… …………………………………………………… 28
+电机选型表
+ …………………………………………………………………………………………
+4
+产品特色
+ …………………………………………………………………………
+……
+……………
+6
+电机型号命名规则
+ …………………………………………………………………………………
+7
+谐波关节电机
+DM-JH11-51-2EC……………………………………… ………………………………… …………………………………… 35
+DM-JH11-101-2EC ……………………………………………………………………………………………………………… 36
+DM-JH14-51-2EC……………………………………… ………………………………… …………………………………… 37
+DM-JH14-101-2EC ……………………………………………………………………………………………………………… 38
+
+PAGE 3
+开发套件
+电机调试工具 、调试助手 …………………… ………………………………… ……………………………………………… 44
+开发板 ………………………………………………………………………………………………………………………… 45
+NX 载板 ………………………………………………………………………………………………………………………… 46
+IMU 模块 ………………………………………………………………………………………………………………………… 47
+目录
+驱动器 ………………………… …………………………………… ………………………………………………………… 43
+驱动器
+DM-D5730-1EE………………………………………………………………………………………………………………………42
+直驱电机
+DM-D5730-1EC………………………………………………………………………………………………………………………41
+DM-JH17-51-2EC……………………………………… ………………………………… …………………………………… 39
+DM-JH17-101-2EC ……………………………………………………………………………………………………………… 40
+
+PAGE 4
+电机选型表
+达妙科技-电机选型表
+4
+
+PAGE 5
+电机选型表
+5
+
+PAGE 6
+特性描述
+控制模式
+❖ MIT模式
+ ❖ 位置速度模式
+❖ 速度模式 ❖ 力位混控模式
++-p_des
+ PI
+θm
+iqref
+0
+idref
++-v_des
+ PI
+dθm
+产品特色
+6
+❖ 周期同步位置模式（CSP） ❖ 周期同步速度模式（CSV）
+❖ 周期同步转矩模式（CST）
+ ❖ 周期同步转矩模式控制示意框图
+
+PAGE 7
+电机型号命名规则
+7
+
+PAGE 8
+电机参数
+供电电压 Supply Voltage(V) 24
+额定相电流 Rated Phase Current(A) 3
+峰值相电流 Peak Phase Current(A) 8.3
+额定扭矩 Rated Torque(Nm) 0.8
+峰值扭矩 Peak Torque(Nm) 3
+额定转速 Rated Speed(rpm) 150
+空载转速 No-load Speed(rpm) 460
+额定功率 Rated Power(W) 12
+减速比 Reduction Ratio 7
+极对数 Pair of Poles 14
+相间电感 Interphase inductance(uH) 235
+相间电阻 Interphase resistance(Ω) 0.8
+尺寸 直径*高度 Motor Size（mm） 46*37.9
+重量 Weight（g） 150
+编码器 Encoder 磁编/双编
+通信方式 Communication Mode CAN、CANFD
+尺寸图
+性能曲线
+关节电机 DM-J3507-2EC 
+8
+
+
+PAGE 9
+关节电机 DM-J3507-2EC （48V）
+电机参数
+供电电压 Supply Voltage(V) 24-48
+额定相电流 Rated Phase Current(A) 3
+峰值相电流 Peak Phase Current(A) 8.3
+额定扭矩 Rated Torque(Nm) 0.8
+峰值扭矩 Peak Torque(Nm) 3
+额定转速 Rated Speed(rpm) 150
+空载转速 No-load Speed(rpm) 900
+额定功率 Rated Power(W) 12
+减速比 Reduction Ratio 7
+极对数 Pair of Poles 14
+相间电感 Interphase inductance(uH) 235
+相间电阻 Interphase resistance(Ω) 0.8
+尺寸 直径*高度 Motor Size（mm） 46*37.9
+重量 Weight（g） 150
+编码器 Encoder 磁编/双编
+通信方式 Communication Mode CAN、CANFD
+尺寸图
+性能曲线
+9
+
+
+PAGE 10
+电机参数
+供电电压 Supply Voltage(V) 24
+额定相电流 Rated Phase Current(A) 3.7
+峰值相电流 Peak Phase Current(A) 7.2
+额定扭矩 Rated Torque(Nm) 3
+峰值扭矩 Peak Torque(Nm) 7
+额定转速 Rated Speed(rpm) 120
+空载转速 No-load Speed(rpm) 200
+额定功率 Rated Power(W) 37
+减速比 Reduction Ratio 10
+极对数 Pair of Poles 14
+相间电感 Interphase inductance(uH) 345
+相间电阻 Interphase resistance(Ω) 0.85
+尺寸 直径*高度 Motor Size（mm） 57*46
+重量 Weight（g） 300
+编码器 Encoder 磁编/双编
+通信方式 Communication Mode CAN、CANFD
+尺寸图
+性能曲线
+关节电机 DM-J4310-2EC V1.1
+10
+
+
+PAGE 11
+关节电机 DM-J4310-2EC V1.1（48V）
+电机参数
+供电电压 Supply Voltage(V) 24-48
+额定相电流 Rated Phase Current(A) 3.7
+峰值相电流 Peak Phase Current(A) 7.2
+额定扭矩 Rated Torque(Nm) 3
+峰值扭矩 Peak Torque(Nm) 7
+额定转速 Rated Speed(rpm) 120
+空载转速 No-load Speed(rpm) 400
+额定功率 Rated Power(W) 37
+减速比 Reduction Ratio 10
+极对数 Pair of Poles 14
+相间电感 Interphase inductance(uH) 345
+相间电阻 Interphase resistance(Ω) 0.85
+尺寸 直径*高度 Motor Size（mm） 57*46
+重量 Weight（g） 300
+编码器 Encoder 磁编/双编
+通信方式 Communication Mode CAN、CANFD
+尺寸图
+性能曲线
+11
+
+
+PAGE 12
+尺寸图
+性能曲线
+电机参数
+供电电压 Supply Voltage(V) 24
+额定相电流 Rated Phase Current(A) 4.9
+峰值相电流 Peak Phase Current(A) 20
+额定扭矩 Rated Torque(Nm) 3.5
+峰值扭矩 Peak Torque(Nm) 12.5
+额定转速 Rated Speed(rpm) 120
+空载转速 No-load Speed(rpm) 200
+额定功率 Rated Power(W) 43
+减速比 Reduction Ratio 10
+极对数 Pair of Poles 14
+相间电感 Interphase inductance(uH) 320
+相间电阻 Interphase resistance(Ω) 0.58
+尺寸 直径*高度 Motor Size（mm） 57*49.05
+重量 Weight（g） 325
+编码器 Encoder 磁编/双编
+通信方式 Communication Mode CAN、CANFD
+关节电机 DM-J4310P-2EC
+12
+
+
+PAGE 13
+尺寸图
+性能曲线
+关节电机 DM-J4310P-2EC （48V）
+电机参数
+供电电压 Supply Voltage(V) 48
+额定相电流 Rated Phase Current(A) 4.8
+峰值相电流 Peak Phase Current(A) 20
+额定扭矩 Rated Torque(Nm) 3.5
+峰值扭矩 Peak Torque(Nm) 12.5
+额定转速 Rated Speed(rpm) 120
+空载转速 No-load Speed(rpm) 450
+额定功率 Rated Power(W) 43
+减速比 Reduction Ratio 10
+极对数 Pair of Poles 14
+相间电感 Interphase inductance(uH) 320
+相间电阻 Interphase resistance(Ω) 0.58
+尺寸 直径*高度 Motor Size（mm） 57*49.05
+重量 Weight（g） 325
+编码器 Encoder 磁编/双编
+通信方式 Communication Mode CAN、CANFD
+13
+
+
+PAGE 14
+电机参数
+供电电压 Supply Voltage(V) 24
+额定相电流 Rated Phase Current(A) 3
+峰值相电流 Peak Phase Current(A) 8
+额定扭矩 Rated Torque(Nm) 9
+峰值扭矩 Peak Torque(Nm) 27
+额定转速 Rated Speed(rpm) 36
+空载转速 No-load Speed(rpm) 52.5
+额定功率 Rated Power(W) 33
+减速比 Reduction Ratio 40
+极对数 Pair of Poles 14
+相间电感 Interphase inductance(uH) 360
+相间电阻 Interphase resistance(Ω) 0.88
+尺寸 直径*高度 Motor Size（mm） 57*53.3
+重量 Weight（g） 362
+编码器 Encoder 磁编/双编
+通信方式 Communication Mode CAN、CANFD
+尺寸图
+性能曲线
+关节电机 DM-J4340-2EC
+14
+
+
+PAGE 15
+关节电机 DM-J4340-2EC（48V）
+电机参数
+供电电压 Supply Voltage(V) 24-48
+额定相电流 Rated Phase Current(A) 2.5
+峰值相电流 Peak Phase Current(A) 9
+额定扭矩 Rated Torque(Nm) 9
+峰值扭矩 Peak Torque(Nm) 27
+额定转速 Rated Speed(rpm) 36
+空载转速 No-load Speed(rpm) 100
+额定功率 Rated Power(W) 33
+减速比 Reduction Ratio 40
+极对数 Pair of Poles 14
+相间电感 Interphase inductance(uH) 360
+相间电阻 Interphase resistance(Ω) 0.88
+尺寸 直径*高度 Motor Size（mm） 57*53.3
+重量 Weight（g） 362
+编码器 Encoder 磁编/双编
+通信方式 Communication Mode CAN、CANFD
+尺寸图
+性能曲线
+15
+
+
+PAGE 16
+电机参数
+供电电压 Supply Voltage(V) 24
+额定相电流 Rated Phase Current(A) 3
+峰值相电流 Peak Phase Current(A) 8
+额定扭矩 Rated Torque(Nm) 9
+峰值扭矩 Peak Torque(Nm) 27
+额定转速 Rated Speed(rpm) 36
+空载转速 No-load Speed(rpm) 52.5
+额定功率 Rated Power(W) 33
+减速比 Reduction Ratio 40
+极对数 Pair of Poles 14
+相间电感 Interphase inductance(uH) 360
+相间电阻 Interphase resistance(Ω) 0.88
+尺寸 直径*高度 Motor Size（mm） 57*56.5
+重量 Weight（g） 375
+编码器 Encoder 磁编/双编
+通信方式 Communication Mode CAN、CANFD
+尺寸图
+性能曲线
+关节电机 DM-J4340P-2EC
+16
+
+
+PAGE 17
+关节电机 DM-J4340P-2EC（48V）
+电机参数
+供电电压 Supply Voltage(V) 24-48
+额定相电流 Rated Phase Current(A) 2.5
+峰值相电流 Peak Phase Current(A) 9
+额定扭矩 Rated Torque(Nm) 9
+峰值扭矩 Peak Torque(Nm) 27
+额定转速 Rated Speed(rpm) 36
+空载转速 No-load Speed(rpm) 100
+额定功率 Rated Power(W) 33
+减速比 Reduction Ratio 40
+极对数 Pair of Poles 14
+相间电感 Interphase inductance(uH) 360
+相间电阻 Interphase resistance(Ω) 0.88
+尺寸 直径*高度 Motor Size（mm） 57*56.5
+重量 Weight（g） 375
+编码器 Encoder 磁编/双编
+通信方式 Communication Mode CAN、CANFD
+尺寸图
+性能曲线
+17
+
+
+PAGE 18
+电机参数
+供电电压 Supply Voltage(V) 24V（支持24-48V）
+额定相电流 Rated Phase Current(A) 5.96
+峰值相电流 Peak Phase Current(A) 17.6
+额定扭矩 Rated Torque(Nm) 4
+峰值扭矩 Peak Torque(Nm) 11
+额定转速 Rated Speed(rpm) 150
+空载转速 No-load Speed(rpm) 226@24V408@48V
+额定功率 Rated Power(W) 62
+减速比 Reduction Ratio 6
+极对数 Pair of Poles 21
+相间电感 Interphase inductance(uH) 270
+相间电阻 Interphase resistance(Ω) 0.435
+尺寸 直径*高度 Motor Size（mm） 76*36.5
+重量 Weight（g） 335
+编码器 Encoder 磁编/双编
+通信方式 Communication Mode CAN、CANFD
+尺寸图
+性能曲线
+关节电机 DM-J6006-2EC
+18
+
+
+PAGE 19
+关节电机 DM-J6248P-2EC
+电机参数
+供电电压 Supply Voltage(V) 24V（支持24-48V）
+额定相电流 Rated Phase Current(A) 11.3A/7A@24V；11.3A/3.7A@48V；
+峰值相电流 Peak Phase Current(A) 38.7A/16A@24V；38.7A/8A@48V；
+额定扭矩 Rated Torque(Nm) 30
+峰值扭矩 Peak Torque(Nm) 97
+额定转速 Rated Speed(rpm) 40
+空载转速 No-load Speed(rpm) 60
+额定功率 Rated Power(W) 125
+减速比 Reduction Ratio 48
+极对数 Pair of Poles 14
+相间电感 Interphase inductance(uH) 85
+相间电阻 Interphase resistance(Ω) 0.17
+尺寸 直径*高度 Motor Size（mm） 76*62.5
+重量 Weight（g） 628
+编码器 Encoder 磁编/双编
+通信方式 Communication Mode CAN、CANFD
+尺寸图
+性能曲线
+19
+
+
+PAGE 20
+电机参数
+供电电压 Supply Voltage(V) 24V（支持24-48V）
+额定相电流 Rated Phase Current(A) 9
+峰值相电流 Peak Phase Current(A) 21
+额定扭矩 Rated Torque(Nm) 8
+峰值扭矩 Peak Torque(Nm) 20
+额定转速 Rated Speed(rpm) 120
+空载转速 No-load Speed(rpm) 194.2@24V392.8@48V
+额定功率 Rated Power(W) 100
+减速比 Reduction Ratio 6
+极对数 Pair of Poles 21
+相间电感 Interphase inductance(uH) 215
+相间电阻 Interphase resistance(Ω) 0.4
+尺寸 直径*高度 Motor Size（mm） 96*40
+重量 Weight（g） 559
+编码器 Encoder 磁编/双编
+通信方式 Communication Mode CAN、CANFD
+尺寸图
+性能曲线
+关节电机 DM-J8006-2EC V1.1
+20
+
+
+PAGE 21
+关节电机 DM-J8009-2EC
+电机参数
+供电电压 Supply Voltage(V) 24V（支持24-48V）
+额定相电流 Rated Phase Current(A) 18.6
+峰值相电流Peak Phase Current(A) 40
+额定扭矩 Rated Torque(Nm) 20
+峰值扭矩 Peak Torque(Nm) 40
+额定转速 Rated Speed(rpm) 100@24V200@48V
+空载转速 No-load Speed(rpm) 168@24V335@48V
+额定功率Rated Power(W) 209@24V418@48V
+减速比 Reduction Ratio 9
+极对数 Pair of Poles 21
+相间电感 Interphase inductance(uH) 80
+相间电阻 Interphase resistance(Ω) 0.145
+尺寸 直径*高度 Motor Size（mm） 98*61.7
+重量 Weight（g） 896
+编码器 Encoder 磁编/双编
+通信方式 Communication Mode CAN、CANFD
+尺寸图
+性能曲线
+21
+
+PAGE 22
+电机参数
+供电电压 Supply Voltage(V) 24V（支持24-48V）
+额定相电流 Rated Phase Current(A) 18.6
+峰值相电流 Peak Phase Current(A) 40
+额定扭矩 Rated Torque(Nm) 20
+峰值扭矩 Peak Torque(Nm) 40
+额定转速 Rated Speed(rpm) 100@24V200@48V
+空载转速 No-load Speed(rpm) 168@24V335@48V
+额定功率 Rated Power(W) 209@24V418@48V
+减速比 Reduction Ratio 9
+极对数 Pair of Poles 21
+相间电感 Interphase inductance(uH) 80
+相间电阻 Interphase resistance(Ω) 0.145
+尺寸 直径*高度 Motor Size（mm） 98*61.7
+重量 Weight（g） 921
+编码器 Encoder 磁编/双编
+通信方式 Communication Mode CAN、CANFD
+尺寸图
+性能曲线
+关节电机 DM-J8009P-2EC
+22
+
+PAGE 23
+关节电机 DM-J10010-2EC
+电机参数
+供电电压 Supply Voltage(V) 24V（支持24-48V）
+额定相电流 Rated Phase Current(A) 18.4
+峰值相电流Peak Phase Current(A) 80.2
+额定扭矩 Rated Torque(Nm) 40
+峰值扭矩 Peak Torque(Nm) 150
+额定转速 Rated Speed(rpm) 50@24V100@48V
+空载转速 No-load Speed(rpm) 75@24V150@48V
+额定功率Rated Power(W) 209@24V418@48V
+减速比 Reduction Ratio 10
+极对数 Pair of Poles 21
+相间电感 Interphase inductance(uH) 100
+相间电阻 Interphase resistance(Ω) 0.125
+尺寸 直径*高度 Motor Size（mm） 112*62（最大外廓120）
+重量 Weight（g） 1485
+编码器 Encoder 磁编/双编
+通信方式 Communication Mode CAN、CANFD
+尺寸图
+性能曲线
+23
+
+PAGE 24
+电机参数
+供电电压 Supply Voltage(V) 24V（支持24-48V）
+额定相电流 Rated Phase Current(A) 23.5
+峰值相电流 Peak Phase Current(A) 95
+额定扭矩 Rated Torque(Nm) 40
+峰值扭矩 Peak Torque(Nm) 120
+额定转速 Rated Speed(rpm) 70@24V100@48V
+空载转速 No-load Speed(rpm) 100@24V200@48V
+额定功率 Rated Power(W) 293@24V418@48V
+减速比 Reduction Ratio 10
+极对数 Pair of Poles 21
+相间电感 Interphase inductance(uH) 85
+相间电阻 Interphase resistance(Ω) 0.11
+尺寸 直径*高度 Motor Size（mm） 120*53（高度不含定位销）
+重量 Weight（g） 1375
+编码器 Encoder 磁编/双编
+通信方式 Communication Mode CAN、CANFD
+尺寸图
+性能曲线
+关节电机 DM-J10010L-2EC
+24
+
+
+PAGE 25
+电机参数
+供电电压 Supply Voltage(V) 48V
+额定相电流 Rated Phase Current(A) 44.5
+峰值相电流 Peak Phase Current(A) 165
+额定扭矩 Rated Torque(Nm) 100
+峰值扭矩 Peak Torque(Nm) 400
+额定转速 Rated Speed(rpm) 100
+空载转速 No-load Speed(rpm) 120
+额定功率 Rated Power(W) 1047
+减速比 Reduction Ratio 22
+极对数 Pair of Poles 16
+相间电感 Interphase inductance(uH) 38
+相间电阻 Interphase resistance(Ω) 0.081
+尺寸 直径*高度 Motor Size（mm） 110*89.9
+重量 Weight（g） 约2700
+编码器 Encoder 电感，双编
+通信方式 Communication Mode CAN、CANFD
+尺寸图
+性能曲线
+关节电机 DM-J10422P-2EC
+25
+
+
+PAGE 26
+电机参数
+供电电压 Supply Voltage(V) 24
+额定相电流 Rated Phase Current(A) 9.2
+峰值相电流 Peak Phase Current(A) 20.5
+额定扭矩 Rated Torque(Nm) 3.5
+峰值扭矩 Peak Torque(Nm) 7.8
+额定转速 Rated Speed(rpm) 395
+空载转速 No-load Speed(rpm) 435
+额定功率 Rated Power(W) 144
+减速比 Reduction Ratio 19.203
+极对数 Pair of Poles 7
+相间电感 Interphase inductance(uH) 55
+相间电阻 Interphase resistance(Ω) 0.2
+尺寸 直径*高度 Motor Size（mm） 42*91.5
+重量 Weight（g） 396
+编码器 Encoder 霍尔/增量式
+通信方式 Communication Mode CAN、CANFD
+尺寸图
+性能曲线
+分立电机 DM-S3519-1EC
+26
+
+
+PAGE 27
+尺寸图
+性能曲线
+电机参数
+供电电压 Supply Voltage(V) 24
+额定相电流 Rated Phase Current(A) 5
+峰值相电流 Peak Phase Current(A) 13
+额定扭矩 Rated Torque(Nm) 1.35
+峰值扭矩 Peak Torque(Nm) 5
+额定转速 Rated Speed(rpm) 380
+空载转速 No-load Speed(rpm) 560
+额定功率 Rated Power(W) 53
+减速比 Reduction Ratio 25
+极对数 Pair of Poles 7
+相间电感 Interphase inductance(uH) 75
+相间电阻 Interphase resistance(Ω) 0.292
+尺寸 直径*高度 Motor Size（mm） 28*77.6
+重量 Weight（g） 172
+编码器 Encoder 霍尔/增量式
+通信方式 Communication Mode CAN、CANFD
+分立电机 DM-S2325-1EC
+27
+
+
+PAGE 28
+电机参数
+供电电压 Supply Voltage(V) 24
+额定相电流 Rated Phase Current(A) 2.3
+峰值相电流 Peak Phase Current(A) 4.6
+额定扭矩 Rated Torque(Nm) 1.3
+峰值扭矩 Peak Torque(Nm) 2.7
+额定转速 Rated Speed(rpm) 110
+空载转速 No-load Speed(rpm) 300
+额定功率 Rated Power(W) 14
+减速比 Reduction Ratio 1
+极对数 Pair of Poles 14
+相间电感 Interphase inductance(uH) 3000
+相间电阻 Interphase resistance(Ω) 3
+尺寸 直径*高度 Motor Size（mm） 68*41.5
+重量 Weight（g） 493.5
+编码器 Encoder 磁编/绝对值
+通信方式 Communication Mode CAN、CANFD
+尺寸图
+性能曲线
+中空云台电机 DM-G6220
+28
+
+
+PAGE 29
+电机参数
+供电电压 Supply Voltage(V) 24
+额定相电流 Rated Phase Current(A) 2.5
+峰值相电流 Peak Phase Current(A) 4.3
+额定扭矩 Rated Torque(Nm) 1
+峰值扭矩 Peak Torque(Nm) 2
+额定转速 Rated Speed(rpm) 120
+空载转速 No-load Speed(rpm) 320
+额定功率 Rated Power(W) 12
+减速比 Reduction Ratio 1
+极对数 Pair of Poles 14
+相间电感 Interphase inductance(uH) 2000
+相间电阻 Interphase resistance(Ω) 2.5
+尺寸 直径*高度 Motor Size（mm） 68*42.5
+重量 Weight（g） 360
+编码器 Encoder 霍尔/增量式
+通信方式 Communication Mode CAN
+尺寸图
+性能曲线
+轮毂电机 DM-H6215
+29
+
+
+PAGE 30
+电机参数
+供电电压 Supply Voltage(V) 24
+额定相电流 Rated Phase Current(A) 1.1
+峰值相电流 Peak Phase Current(A) 3.2
+额定扭矩 Rated Torque(Nm) 0.18
+峰值扭矩 Peak Torque(Nm) 0.45
+额定转速 Rated Speed(rpm) 500
+空载转速 No-load Speed(rpm) 1800
+额定功率 Rated Power(W) 9
+减速比 Reduction Ratio 1
+极对数 Pair of Poles 7
+相间电感 Interphase inductance(uH) 1100
+相间电阻 Interphase resistance(Ω) 2.08
+尺寸 直径*高度 Motor Size（mm） 42*31.5
+重量 Weight（g） 116
+编码器 Encoder 磁编/绝对值
+通信方式 Communication Mode CAN、CANFD
+尺寸图
+轮毂电机 DM-H3510
+30
+
+
+PAGE 31
+电机参数
+供电电压 Supply Voltage(V) 24-48
+额定相电流 Rated Phase Current(A) 9.4
+峰值相电流 Peak Phase Current(A) 33.6
+额定扭矩 Rated Torque(Nm) 6
+峰值扭矩 Peak Torque(Nm) 21.5
+额定转速 Rated Speed(rpm) 120
+空载转速 No-load Speed(rpm)
+260@24V
+395@36V
+480@48V
+额定功率 Rated Power(W) 250（6nm 400rpm @48V S2工况）
+减速比 Reduction Ratio 1
+极对数 Pair of Poles 15
+相间电感 Interphase inductance(uH) 750
+相间电阻 Interphase resistance(Ω) 0.42
+尺寸 直径*高度 Motor Size（mm） 171*66.3
+重量 Weight（g） 3150
+编码器 Encoder 电感/绝对值
+通信方式 Communication Mode CAN、CANFD
+尺寸图
+轮毂电机 DM-H65
+31
+
+
+PAGE 32
+轮毂电机 DM-H65 性能曲线
+32
+
+PAGE 33
+电机参数
+供电电压 Supply Voltage(V) 24V（支持 24-48V）
+额定相电流 Rated Phase Current(A) 13.05
+峰值相电流 Peak Phase Current(A) 33.55
+额定扭矩 Rated Torque(Nm) 3.5
+峰值扭矩 Peak Torque(Nm) 9
+额定转速 Rated Speed(rpm) 350
+空载转速 No-load Speed(rpm)
+587@24V
+883@36V
+1185@48V
+额定功率 Rated Power(W) 128
+减速比 Reduction Ratio 1
+极对数 Pair of Poles 10
+相间电感 Interphase inductance(uH) 336
+相间电阻 Interphase resistance(Ω) 0.281
+尺寸 直径*高度 Motor Size（mm） 141*66.9
+重量 Weight（g） 2100
+编码器 Encoder 电感/绝对值
+通信方式 Communication Mode CAN、CANFD
+尺寸图
+轮毂电机 DM-H55
+33
+
+
+PAGE 34
+轮毂电机 DM-H55 性能曲线
+34
+
+
+PAGE 35
+尺寸图
+电机参数
+供电电压 Supply Voltage(V) 24V（支持24-48V）
+额定相电流 Rated Phase Current(A) 2.23
+峰值相电流 Peak Phase Current(A) 4.26
+额定扭矩 Rated Torque(Nm) 3.2
+峰值扭矩 Peak Torque(Nm) 7.8
+额定转速 Rated Speed(rpm) 40
+空载转速 No-load Speed(rpm) 60
+额定功率 Rated Power(W) 13
+减速比 Reduction Ratio 51
+极对数 Pair of Poles 7
+相间电感 Interphase inductance(uH) 538
+相间电阻 Interphase resistance(Ω) 1.1
+尺寸 直径*高度 Motor Size（mm） 52*60
+重量 Weight（g） 345
+编码器 Encoder 电感/双编
+通信方式 Communication Mode CAN、CANFD
+谐波关节电机 DM-JH11-51-2EC
+35
+
+
+PAGE 36
+尺寸图
+电机参数
+供电电压 Supply Voltage(V) 24V（支持24-48V）
+额定相电流 Rated Phase Current(A) 2.3
+峰值相电流Peak Phase Current(A) 3.6
+额定扭矩 Rated Torque(Nm) 4.8
+峰值扭矩 Peak Torque(Nm) 10.5
+额定转速 Rated Speed(rpm) 20
+空载转速 No-load Speed(rpm) 30
+额定功率Rated Power(W) 10
+减速比 Reduction Ratio 101
+极对数 Pair of Poles 7
+相间电感 Interphase inductance(uH) 538
+相间电阻 Interphase resistance(Ω) 1.1
+尺寸 直径*高度 Motor Size（mm） 52*60
+重量 Weight（g） 345
+编码器 Encoder 电感/双编
+通信方式 Communication Mode CAN、CANFD
+谐波关节电机 DM-JH11-101-2EC
+36
+
+
+PAGE 37
+尺寸图
+电机参数
+供电电压 Supply Voltage(V) 24V（支持24-48V）
+额定相电流 Rated Phase Current(A) 4.89
+峰值相电流 Peak Phase Current(A) 13.7
+额定扭矩 Rated Torque(Nm) 5.4
+峰值扭矩 Peak Torque(Nm) 18
+额定转速 Rated Speed(rpm) 40
+空载转速 No-load Speed(rpm) 60
+额定功率 Rated Power(W) 22
+减速比 Reduction Ratio 51
+极对数 Pair of Poles 10
+相间电感 Interphase inductance(uH) 170
+相间电阻 Interphase resistance(Ω) 0.243
+尺寸 直径*高度 Motor Size（mm） 70*70
+重量 Weight（g） 775
+编码器 Encoder 电感/双编
+通信方式 Communication Mode CAN、CANFD
+谐波关节电机 DM-JH14-51-2EC
+37
+
+
+PAGE 38
+尺寸图
+电机参数
+供电电压 Supply Voltage(V) 24V（支持24-48V）
+额定相电流 Rated Phase Current(A) 4.12
+峰值相电流 Peak Phase Current(A) 10.97
+额定扭矩 Rated Torque(Nm) 7.8
+峰值扭矩 Peak Torque(Nm) 28
+额定转速 Rated Speed(rpm) 20
+空载转速 No-load Speed(rpm) 30
+额定功率 Rated Power(W) 16
+减速比 Reduction Ratio 101
+极对数 Pair of Poles 10
+相间电感 Interphase inductance(uH) 170
+相间电阻 Interphase resistance(Ω) 0.243
+尺寸 直径*高度 Motor Size（mm） 70*70
+重量 Weight（g） 775
+编码器 Encoder 电感/双编
+通信方式 Communication Mode CAN、CANFD
+谐波关节电机 DM-JH14-101-2EC
+38
+
+
+PAGE 39
+尺寸图
+电机参数
+供电电压 Supply Voltage(V) 24V（支持24-48V）
+额定相电流 Rated Phase Current(A) 4.62
+峰值相电流 Peak Phase Current(A) 12.94
+额定扭矩 Rated Torque(Nm) 16
+峰值扭矩 Peak Torque(Nm) 24
+额定转速 Rated Speed(rpm) 40
+空载转速 No-load Speed(rpm) 60
+额定功率 Rated Power(W) 67
+减速比 Reduction Ratio 51
+极对数 Pair of Poles 10
+相间电感 Interphase inductance(uH) 107
+相间电阻 Interphase resistance(Ω) 0.161
+尺寸 直径*高度 Motor Size（mm） 80*70
+重量 Weight（g） 985
+编码器 Encoder 电感/双编
+通信方式 Communication Mode CAN、CANFD
+谐波关节电机 DM-JH17-51-2EC
+39
+
+
+PAGE 40
+尺寸图
+电机参数
+供电电压 Supply Voltage(V) 24V（支持24-48V）
+额定相电流 Rated Phase Current(A) 6.31
+峰值相电流 Peak Phase Current(A) 16.85
+额定扭矩 Rated Torque(Nm) 24
+峰值扭矩 Peak Torque(Nm) 54
+额定转速 Rated Speed(rpm) 20
+空载转速 No-load Speed(rpm) 30
+额定功率 Rated Power(W) 50
+减速比 Reduction Ratio 101
+极对数 Pair of Poles 10
+相间电感 Interphase inductance(uH) 107
+相间电阻 Interphase resistance(Ω) 0.161
+尺寸 直径*高度 Motor Size（mm） 80*70
+重量 Weight（g） 985
+编码器 Encoder 电感/双编
+通信方式 Communication Mode CAN、CANFD
+谐波关节电机 DM-JH17-101-2EC
+40
+
+
+PAGE 41
+尺寸图
+性能曲线
+电机参数
+供电电压 Supply Voltage(V) 24
+额定相电流 Rated Phase Current(A) 5.4
+峰值相电流 Peak Phase Current(A) 16.2
+额定扭矩 Rated Torque(Nm) 0.65
+峰值扭矩 Peak Torque(Nm) 1.9
+额定转速 Rated Speed(rpm) 1100
+空载转速 No-load Speed(rpm) 1500
+额定功率 Rated Power(W) 74
+减速比 Reduction Ratio 1
+极对数 Pair of Poles 14
+相间电感 Interphase inductance(uH) 85
+相间电阻 Interphase resistance(Ω) 0.17
+尺寸 直径*高度 Motor Size（mm） 57*95.2
+重量 Weight（g） 628
+编码器 Encoder 电感/绝对值
+通信方式 Communication Mode CAN、CANFD
+直驱电机 DM-D5730-1EC
+41
+
+
+PAGE 42
+尺寸图
+性能曲线
+电机参数
+供电电压 Supply Voltage(V) 24
+额定相电流 Rated Phase Current(A) 5.4
+峰值相电流 Peak Phase Current(A) 16.2
+额定扭矩 Rated Torque(Nm) 0.65
+峰值扭矩 Peak Torque(Nm) 1.9
+额定转速 Rated Speed(rpm) 1100
+空载转速 No-load Speed(rpm) 1500
+额定功率 Rated Power(W) 74
+减速比 Reduction Ratio 1
+极对数 Pair of Poles 14
+相间电感 Interphase inductance(uH) 85
+相间电阻 Interphase resistance(Ω) 0.17
+尺寸 直径*高度 Motor Size（mm） 57*95.2
+重量 Weight（g） 628
+编码器 Encoder 电感/绝对值
+通信方式 Communication Mode EtherCATCAN、CANFD
+直驱电机 DM-D5730-1EE
+42
+
+
+PAGE 43
+名称 DM40-2E DM60-2E
+供电电压 24V（4S-6S）绝对最大值不超过32V 24V（4S-12S）绝对最大值不超过85V
+MCU内核 Cortex®-M4 Cortex®-M4
+MCU主频 200MHz 200MHz
+通讯 CAN（UART调参） CAN（UART调参）
+控制方式 FOC FOC
+最大持续电流 4A 10A
+峰值电流 10A 20A
+传感器类型 磁编码器（双磁编、单磁编+霍尔） 磁编码器（双磁编、单磁编+霍尔）
+控制模式 MIT、速度、位置 MIT、速度、位置
+编码器个数 支持双编码器 支持双编码器
+推荐使用电机 35~43电机 60电机
+名称 DM80-2E DM100-2E
+供电电压 24V（4S-12S）绝对最大值不超过85V 24V（4S-12S）绝对最大值不超过85V
+MCU内核 Cortex®-M4 Cortex®-M4
+MCU主频 200MHz 200MHz
+通讯 CAN（UART调参） CAN（UART调参）
+控制方式 FOC FOC
+最大持续电流 20A 40A
+峰值电流 40A 80A
+传感器类型 磁编码器（双磁编、单磁编+霍尔） 磁编码器（双磁编、单磁编+霍尔）
+控制模式 MIT、速度、位置 MIT、速度、位置
+编码器个数 支持双编码器 支持双编码器
+推荐使用电机 80电机 100电机
+DM40-2E
+驱动器
+43
+DM60-2E DM80-2E DM100-2E
+
+PAGE 44
+开发套件 电机调试工具、调试助手
+44
+1、64KB超大缓存，百万帧不丢数据；
+2、带CAN隔离；
+3、具备CAN总线分析仪功能，支持定时发送；
+4、支持5~1000KBPS波特率；
+5、支持MIT电机调试；
+6、支持USB转UART功能；
+7、超小体积，39*18mm。
+USB转CAN
+USB转CANFD
+1、128KB超大缓存，百万帧不丢数据；
+2、带CAN隔离；
+3、具备CAN总线分析仪功能，支持定时发送；
+4、支持5~5000KBPS波特率；
+5、支持MIT电机调试；
+6、支持USB转UART功能；
+7、超小体积，48*18mm。
+USB转双路CANFD
+1、128KB超大缓存，百万帧不丢数据；
+2、带CAN隔离；
+3、具备CAN总线分析仪功能，支持定时发送；
+4、支持5~5000KBPS波特率；
+5、支持MIT电机调试；
+6、支持USB转UART功能；
+7、超小体积，48*22mm；
+8、支持Linux生态。
+调试助手
+可视化校准、实时波形曲线、便捷性调试；固件持续升级，增加测试功能。
+
+
+PAGE 45
+特征参数
+结构参数
+供电电压 12~24V 支持6S供电
+可控电源 每路持续5A
+板载电源 5V@2A 对外
+重量 19.5g
+尺寸 56x40mm
+技术参数
+MCU STM32H723VGT6 Arm Cortex-M7 MCU
+可控电源 x2 PMOS（XT30 2+2）
+CANFD X3 最大5Mbps
+RS485 x2 最大10Mbps
+USB x1
+SBUS x1
+PWM x4
+串口 X3
+SWD x1
+W2812彩灯 X1
+蜂鸣器 x1
+按键 x2 用户按键+复位按键
+IMU x1 BMI088
+LCD扩展口x1 SPI+IIC+ADC
+QSPI Flash 8Mb W25Q64JV
+DCMI接口 x1 24Pin 无需转接
+扩展接口 x1 2串口 1SPI 1IIC
+H7开发板：DM-MC-Board02
+DM-MC-Board02主控芯片是STM32H723VGT6，该
+开发板是一款面向机器人控制的主控 ，具备防反接和
+缓启动等多重防护，并集成了高性能IMU（BMI088）。
+该主控具备三个CANFD接口、两个高速RS485接口、
+一个USB接口、以及SBUS、PWM等丰富接口 。可以
+配合达妙科技出品的关节电机 、直驱电机等产品制作
+AGV轮式机器人 、平衡车、足式机器人 、轮足等DIY
+产品。
+开发套件 开发板
+45
+
+
+PAGE 46
+DM-ORIN NX V2.X
+DM-ORIN NX V2.X载板是达妙科技为轻量化设备打
+造 的 一 款 微 型 载 板， 可 适 配 NVIDIA® JETSON
+ORIN NX
+ 系列模块 ，载板自重仅 39.2g并支持宽压
+输入，支持ORIN SUPER模式。该载板接口丰富 ，可
+满足无人机、手持测绘、足式机器人等对尺寸要求较
+高的场景。
+该载板具备超强的兼容性 ，支持 ORIN NX和ORIN
+nano模组，支持SUPER模式。
+注：Xavier NX仅支持一路USB3.0接口，且不支持扩
+展的网口。
+序号 名称 接口类型 备注
+1 重量 39.2g
+2 供电电压 12~28V 支持6S供电
+3 尺寸 50x86.8x13mm
+4 工作温度 -20℃至50℃
+序号 接口名称 接口类型 数量 备注
+1 USB3.0 TypeC 3 其中一路支持Recovery
+2 USB2.0 SH1.0(5pin) 2
+3 HDMI MicroHDMI 1
+4 网口
+SH1.0(8pin) 1 板载变压器
+SH1.0(8pin) 1 板载变压器(最大2.5G支持PTP)
+5 M.2
+M.2 KeyM 1 2230 SSD
+M.2 KeyE 1 2230 网卡（AW-CB375NF）
+6 CAN GH1.25 2pin 1 最大支持5Mbps 无终端电阻
+7 串口 GH1.25 4pin 2 3.3V电平 5V电源
+8 CIS 0.5mmFPC 22Pin 2 线序与原版一致 支持上下接
+9 GPIO 0.5mmFPC 12Pin 1 SPI1、IIC1*、GPIO07 3.3V电平
+10
+散热风扇
+1.25 4pin 1 与原版一致
+11 GH1.25 2pin 1 仅提供5V电源
+12 按键 小龟按键 3 ReSet、Recovery、PowerON
+13 RTC BAT MY1220 1 CR1220纽扣电池
+开发套件 NX载板
+46
+
+
+PAGE 47
+开发套件 IMU模块
+IMU模块：DM-IMU-L1
+DM-IMU-L1是一款内置 BMI088三轴加速度计 +三轴陀螺仪自带 EKF四
+元数姿态解算 IMU产品。主控频率高达 200MHz，支持USB、RS485、
+CAN协议输出，支持输出加速度、角速度、欧拉角、四元数等数据，数
+据输出频率高达1kHz。传感器芯片底部采用孤岛结构设计 ，提升IMU抗
+震性能。传感器芯片周围带有加热电路 ，可实现恒温控制 ，有效减少陀
+螺仪温漂，无全温标定。
+主要特性：
+1、支持CAN、USB、RS485协议输出；
+2、支持100-1000输出频率可调；
+3、自带加热电路可实现恒温控制；
+4、内部EKF算法姿态解算。
+姿态角度指标
+参数 典型值 (校准后)一小时零漂
+横滚角 量程 ±180° 0.02°
+航向角 量程 ±180° 12.686°
+俯仰角 量程 ±90° 0.064°
+加速度计指标
+参数 典型值
+量程 ±6G
+自由度 3
+非线性度 ±0.5 %FS
+零点偏移 20mg
+带宽 230Hz
+备注：测试条件均为室温25°C
+陀螺仪指标
+参数 典型值
+量程 ±2000 °/s
+自由度 3
+非线性度 ±0.05 %FS
+零点偏移 ±1 °/s
+带宽 116Hz
+物理与电气指标
+参数 典型值
+输入电压 5-28V
+功耗 @24V 温升时2.5W 稳定时0.47W
+通信接口 USB、RS485、CAN
+输出频率 100-1000Hz可调
+尺寸 36x26x9mm
+重量 约11.5g
+*Tips:
+1、加速度角速度指标来自BMI088数据手册,本IMU只做数据校准不做滤波处理 ，直接输出校准后的值，更具体的参
+数请移至MEMS芯片手册。
+2、输入电压为5V时，功耗约为0.34W。
+特征参数
+47
+
+
+PAGE 48
+地址：广东省深圳市南山区桃源街道平山社区丽山路10号大学城创业园409
+电话：13560764159（微信同号）
+邮箱：zhouchengyan@mdmbot.com
+深圳市达妙科技有限公司
+Shenzhen Damiao Technology Co., Ltd. 

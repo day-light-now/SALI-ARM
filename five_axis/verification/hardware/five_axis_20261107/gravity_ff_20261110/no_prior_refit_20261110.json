@@ -1,0 +1,234 @@
+{
+  "schema": "slaihand_no_prior_gravity_refit/1",
+  "windows": 159,
+  "named_sessions": [
+    "A",
+    "A2",
+    "B2",
+    "C",
+    "GC01",
+    "GC02",
+    "GC03",
+    "GC04",
+    "GC05",
+    "GC06",
+    "GC07",
+    "GC08",
+    "GC09",
+    "GC10",
+    "GC11",
+    "GC11_ABORTED",
+    "GC12",
+    "J5"
+  ],
+  "driver_sessions": [
+    "/home/xuyu/.ros/slaihand/canusb_five_axis_candidate/canusb_motion_8TXfxe.jsonl",
+    "/home/xuyu/.ros/slaihand/canusb_five_axis_candidate/canusb_motion_99j9Aa.jsonl",
+    "/home/xuyu/.ros/slaihand/canusb_five_axis_candidate/canusb_motion_IFxgoj.jsonl",
+    "/home/xuyu/.ros/slaihand/canusb_five_axis_candidate/canusb_motion_OwBmJz.jsonl",
+    "/home/xuyu/.ros/slaihand/canusb_five_axis_candidate/canusb_motion_nVYmTq.jsonl",
+    "/home/xuyu/.ros/slaihand/canusb_five_axis_candidate/canusb_motion_qsrQke.jsonl",
+    "/home/xuyu/.ros/slaihand/canusb_five_axis_candidate/canusb_motion_vPEeFe.jsonl"
+  ],
+  "free_train_rmse_per_axis": [
+    0.6794248658525832,
+    0.4226405839640943,
+    0.31566966840967386,
+    0.833396673696807,
+    0.1853221118947957
+  ],
+  "free_train_overall": 0.5419935150889231,
+  "old_prior_rmse_per_axis": [
+    7.627016668849491,
+    2.120511603752996,
+    0.25044222518480125,
+    6.9513013635722425,
+    0.1853221118947957
+  ],
+  "old_prior_overall": 4.713504194738201,
+  "cv_mean_rmse_per_axis": [
+    0.7113239551802688,
+    0.5100741602215071,
+    0.3295134078353707,
+    0.9653362989876749,
+    0.12193000453131682
+  ],
+  "cv_mean_overall": 0.6459390231337491,
+  "cv_folds": [
+    {
+      "session": "A",
+      "overall": 0.8654384374980217
+    },
+    {
+      "session": "A2",
+      "overall": 1.2506755315596054
+    },
+    {
+      "session": "B2",
+      "overall": 1.2286689139098552
+    },
+    {
+      "session": "C",
+      "overall": 0.5578621692659197
+    },
+    {
+      "session": "GC01",
+      "overall": 0.566808485119816
+    },
+    {
+      "session": "GC02",
+      "overall": 0.6765339339421637
+    },
+    {
+      "session": "GC03",
+      "overall": 0.7799790136174289
+    },
+    {
+      "session": "GC04",
+      "overall": 0.9937081490515737
+    },
+    {
+      "session": "GC05",
+      "overall": 0.30869176389858255
+    },
+    {
+      "session": "GC06",
+      "overall": 0.56966859357743
+    },
+    {
+      "session": "GC07",
+      "overall": 0.5988946938728015
+    },
+    {
+      "session": "GC08",
+      "overall": 0.3073610963046231
+    },
+    {
+      "session": "GC09",
+      "overall": 0.49850104163116027
+    },
+    {
+      "session": "GC10",
+      "overall": 0.5922400832528915
+    },
+    {
+      "session": "GC11",
+      "overall": 0.3257721308944239
+    },
+    {
+      "session": "GC11_ABORTED",
+      "overall": 0.5996802094093892
+    },
+    {
+      "session": "GC12",
+      "overall": 0.3513560736683682
+    },
+    {
+      "session": "J5",
+      "overall": 0.555062095933429
+    }
+  ],
+  "beta16": [
+    0.0,
+    -0.3665965820663135,
+    -0.1341719081274443,
+    0.0,
+    -0.015218724443524921,
+    0.8406681763766238,
+    0.12964178263173812,
+    -0.36660678708405264,
+    0.06518026212782317,
+    0.0598295156585541,
+    0.5486981025495035,
+    0.8404942483664761,
+    0.18489721735306455,
+    0.0611412631861513,
+    0.7407628177206518,
+    0.05982816331769796
+  ],
+  "const5": [
+    8.17695841823514,
+    0.24550893880107366,
+    -0.030681567647215607,
+    7.0558920547308,
+    0.03134263939473873
+  ],
+  "dir5": [
+    1.129654647991265,
+    0.6339122238381825,
+    0.4815886763372183,
+    1.5216642591384995,
+    0.7787392125174569
+  ],
+  "session_offsets": {
+    "/home/xuyu/.ros/slaihand/canusb_five_axis_candidate/canusb_motion_8TXfxe.jsonl": [
+      0.3937354290001539,
+      -0.1827556151718909,
+      -0.11365582029777593,
+      0.32799166778485633,
+      0.6654422337838771
+    ],
+    "/home/xuyu/.ros/slaihand/canusb_five_axis_candidate/canusb_motion_99j9Aa.jsonl": [
+      0.2584466134634909,
+      -0.13903173807877056,
+      0.16099297536688936,
+      0.942168326516138,
+      -0.9019863448701616
+    ],
+    "/home/xuyu/.ros/slaihand/canusb_five_axis_candidate/canusb_motion_IFxgoj.jsonl": [
+      -0.5730730688176723,
+      -0.03459153563649286,
+      -0.23557761651081688,
+      0.350490601032685,
+      -0.08881970113893191
+    ],
+    "/home/xuyu/.ros/slaihand/canusb_five_axis_candidate/canusb_motion_OwBmJz.jsonl": [
+      0.3733469882371546,
+      0.2593312861169523,
+      0.1384232078349602,
+      -0.801524897999154,
+      -0.1131664892924387
+    ],
+    "/home/xuyu/.ros/slaihand/canusb_five_axis_candidate/canusb_motion_nVYmTq.jsonl": [
+      0.24108900018635773,
+      0.2482135387785135,
+      0.06524333928088712,
+      -0.07862139140682645,
+      0.6653059918691901
+    ],
+    "/home/xuyu/.ros/slaihand/canusb_five_axis_candidate/canusb_motion_qsrQke.jsonl": [
+      -0.5404499793106297,
+      -0.19213207430608054,
+      -0.08223174208891545,
+      -0.5900904986046344,
+      -0.2458866106629355
+    ],
+    "/home/xuyu/.ros/slaihand/canusb_five_axis_candidate/canusb_motion_vPEeFe.jsonl": [
+      0.2557529381523879,
+      0.053241585236057064,
+      0.06527157803217057,
+      0.20238079541340534,
+      0.020678052281056743
+    ]
+  },
+  "Y16_singular_values": [
+    245.5612148850006,
+    223.1125808585141,
+    93.05205372225255,
+    46.42273131475387,
+    30.124265481385493,
+    23.521729439451963,
+    18.069903600384567,
+    10.6307272472124,
+    1.115543186522353e-13,
+    1.6657666021500428e-14,
+    1.5047583861154387e-14,
+    9.314746551302626e-15,
+    4.444775847457033e-15,
+    1.677006155578753e-15,
+    8.325949329244086e-16,
+    0.0
+  ],
+  "condition": Infinity,
+  "note": "rough pass in effort units; per-axis offset/direction/session terms; J5 gravity zero; no FF/deployment."
+}

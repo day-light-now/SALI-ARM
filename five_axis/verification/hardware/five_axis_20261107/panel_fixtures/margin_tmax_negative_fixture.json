@@ -1,0 +1,60 @@
+{
+  "_note": "SYNTHETIC NEGATIVE FIXTURE. These entries mimic the mistake of treating protocol TMAX 200/54/28 N*m registers as verified capability. The evaluator must return NOT_QUALIFIED and never PASS. Not real hardware evidence.",
+  "schema": "slaihand_five_axis_margin_evidence/1",
+  "axes": [
+    {
+      "axis": 1,
+      "capability": {
+        "allowed_output_nm": 200.0,
+        "source": "protocol TMAX register read-back (J1/J2)",
+        "source_kind": "protocol_tmax",
+        "unit": "Nm",
+        "verified": true,
+        "duration": {"kind": "continuous"},
+        "condition": "synthetic pose A"
+      },
+      "demand": {
+        "demand_nm": 11.1,
+        "source": "synthetic test fixture",
+        "measurement_type": "measured_torque",
+        "condition": "synthetic pose A"
+      }
+    },
+    {
+      "axis": 2,
+      "capability": {
+        "allowed_output_nm": 54.0,
+        "source": "protocol TMAX register read-back (J3/J4)",
+        "source_kind": "protocol_tmax",
+        "unit": "Nm",
+        "verified": true,
+        "duration": {"kind": "continuous"},
+        "condition": "synthetic pose A"
+      },
+      "demand": {
+        "demand_nm": 11.1,
+        "source": "synthetic test fixture",
+        "measurement_type": "measured_torque",
+        "condition": "synthetic pose A"
+      }
+    },
+    {
+      "axis": 5,
+      "capability": {
+        "allowed_output_nm": 28.0,
+        "source": "protocol TMAX register read-back (J5)",
+        "source_kind": "protocol_tmax",
+        "unit": "Nm",
+        "verified": true,
+        "duration": {"kind": "continuous"},
+        "condition": "synthetic pose A"
+      },
+      "demand": {
+        "demand_nm": 11.1,
+        "source": "synthetic test fixture",
+        "measurement_type": "measured_torque",
+        "condition": "synthetic pose A"
+      }
+    }
+  ]
+}

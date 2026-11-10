@@ -1,0 +1,17 @@
+{
+  "coordinates": "absolute_deg",
+  "waypoints": [
+    {"degrees": [0, 15, 0, 0], "move_s": 8, "dwell_s": 2},
+    {"degrees": [-15, 22, -12, -20], "move_s": 6, "dwell_s": 1},
+    {"degrees": [15, 22, 12, 20], "move_s": 7, "dwell_s": 1},
+    {"degrees": [-12, 28, 18, -15], "move_s": 6, "dwell_s": 1},
+    {"degrees": [12, 12, -18, 15], "move_s": 6, "dwell_s": 1},
+    {"degrees": [0, 24, 0, 25], "move_s": 5, "dwell_s": 1},
+    {"degrees": [0, 24, 0, -25], "move_s": 6, "dwell_s": 1},
+    {"degrees": [-15, 18, -15, -12], "move_s": 6, "dwell_s": 1},
+    {"degrees": [15, 18, 15, 12], "move_s": 7, "dwell_s": 1},
+    {"degrees": [0, 28, -10, 20], "move_s": 6, "dwell_s": 1},
+    {"degrees": [0, 12, 10, -20], "move_s": 6, "dwell_s": 1},
+    {"degrees": [0, 15, 0, 0], "move_s": 6, "dwell_s": 3}
+  ]
+}

@@ -1,0 +1,109 @@
+{
+  "schema": 1,
+  "status": "OFFLINE_CONSISTENT",
+  "hardware_motion_authorized": false,
+  "hardware_parameters_written": false,
+  "j5_enabled": false,
+  "sources": {
+    "model": "src\\slaihand_description\\urdf\\slaihand_four_axis.urdf",
+    "mapping": "src\\slaihand_bringup\\config\\hardware_mapping.yaml"
+  },
+  "hashes": {
+    "model": "fe7edfda16165e8532303ec55d6c1ab733ad32fc6d023115f825aae62637e497",
+    "mapping": "300d81eed77ded2c3235be3c2a69d5354a9df5cd74be85884dad05760a46356d"
+  },
+  "formula": "q_model = hardware_sign * (q_motor - zero_offset_rad)",
+  "joints": {
+    "1": {
+      "can_id": 1.0,
+      "hardware_sign": 1.0,
+      "zero_offset_rad": 1.4574273289082171,
+      "outer_limits_deg": [
+        -80.0,
+        200.0
+      ],
+      "default_operating_limits_deg": [
+        -80.0,
+        200.0
+      ],
+      "configured_travel_deg": [
+        -80.0,
+        200.0
+      ]
+    },
+    "2": {
+      "can_id": 2.0,
+      "hardware_sign": 1.0,
+      "zero_offset_rad": -1.795033188372626,
+      "outer_limits_deg": [
+        -10.0,
+        190.0
+      ],
+      "default_operating_limits_deg": [
+        -10.0,
+        190.0
+      ],
+      "configured_travel_deg": [
+        -10.0,
+        190.0
+      ]
+    },
+    "3": {
+      "can_id": 3.0,
+      "hardware_sign": 1.0,
+      "zero_offset_rad": -2.5423437857633324,
+      "outer_limits_deg": [
+        -90.0,
+        90.0
+      ],
+      "default_operating_limits_deg": [
+        -90.0,
+        90.0
+      ],
+      "configured_travel_deg": [
+        -90.0,
+        90.0
+      ]
+    },
+    "4": {
+      "can_id": 4.0,
+      "hardware_sign": -1.0,
+      "zero_offset_rad": -0.40951400015259054,
+      "outer_limits_deg": [
+        -90.0,
+        50.0
+      ],
+      "default_operating_limits_deg": [
+        -90.0,
+        50.0
+      ],
+      "configured_travel_deg": [
+        -90.0,
+        50.0
+      ]
+    }
+  },
+  "acquisition": {
+    "1": {
+      "mechanical_limits_deg": [
+        -80.0,
+        200.0
+      ],
+      "margin_deg": 10.0,
+      "scan_limits_deg": [
+        -70.0,
+        70.0
+      ],
+      "physical_limits_confirmed": true,
+      "measured_limit_override": false,
+      "hardware_sign": 1,
+      "zero_offset_rad": 1.4574273289082171,
+      "target_endpoint_limits_deg": [
+        -69.5,
+        69.5
+      ],
+      "scan_range_source": "user narrowed acquisition to software -70 to +70deg 2026-11-02",
+      "model_limits_source": "src/slaihand_description/urdf/slaihand_four_axis.urdf"
+    }
+  }
+}

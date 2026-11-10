@@ -1,0 +1,18 @@
+{
+  "status": "SIMULATION_ESTIMATE_ONLY_NOT_HARDWARE_FF",
+  "source_pose": "tmp\\watchdog_check\\20261101_131809_aee5b0.jsonl",
+  "model_j3_placement_offset_rad": 3.141592653589793,
+  "model_angles_deg": [
+    1.617413475230059,
+    -1.6392704140845193,
+    8.39306452011274,
+    6.382226145502395
+  ],
+  "estimated_gravity_nm": [
+    0.377808249782562,
+    -0.10498454215383579,
+    0.0008522496352165732,
+    0.04178443481776406
+  ],
+  "limitation": "Provisional CAD mass/COM and incomplete payload; not a basis for real torque limits."
+}

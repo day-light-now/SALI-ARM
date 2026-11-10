@@ -1,0 +1,62 @@
+{
+  "schema": "slaihand_identification_dataset/1",
+  "created_at": "2026-11-09T12:22:00+08:00",
+  "purpose": "raw multi-pose acquisition for Codex gravity/load identification; no model fit here",
+  "robot": {
+    "joints": "J1-J4 gravity DOF; J5 fixed end mass, not a joint",
+    "load_id": "j5_3p5kg_provisional",
+    "power_can": "J1-J3 series group; J4-J5 series group"
+  },
+  "admission": {
+    "artifact": "artifact_f.json",
+    "artifact_sha256": "21795f825a4054e399442e65f9efabbcc74f60f387f5604577e4cd52a072bb0c",
+    "evidence": "evidence_f.json",
+    "evidence_sha256": "e910f0061164273bbfbf47ee3e578403e55049ae19041dec8859e85eec994c5d"
+  },
+  "sessions": [
+    {
+      "name": "A",
+      "plan": "plans/IDENT_A_J1J2.json",
+      "state": "raw/ident_a_20261109.jsonl.gz",
+      "state_sha256": "a14312cbfd2ff2221ed1b9ab1d9cf34da8d65d22722be2924e0d1d833f0a7be5",
+      "client": "clients/ident_a_client_20261109_121229.json",
+      "status": "partial: 9/10 waypoint windows sampled; final waypoint stopped/global-stop; final return not absolute zero",
+      "use": "cautious/filter by client observations"
+    },
+    {
+      "name": "A2",
+      "plan": "plans/IDENT_A2_SHORT.json",
+      "state": "raw/ident_a2_20261109.jsonl.gz",
+      "state_sha256": "0f46e8dad29a900c0937f9876e36d5276f29b5d8f6622bb447e18978224cd020",
+      "client": "clients/ident_a2_client_20261109_121525.json",
+      "status": "complete 6/6 sampled; final relative zero (returns to session start, not absolute zero)",
+      "use": "use with client windows"
+    },
+    {
+      "name": "B2",
+      "plan": "plans/IDENT_B_J3J4.json",
+      "state": "raw/ident_b2_20261109.jsonl.gz",
+      "state_sha256": "3184f30526e193476ba96c903d85f684a3fe4dec2d7a3b06633aec1662d91320",
+      "client": "clients/ident_b2_client_20261109_121946.json",
+      "status": "complete 7/7 sampled; final relative zero (returns to session start, not absolute zero)",
+      "use": "use with client windows"
+    },
+    {
+      "name": "C",
+      "plan": "plans/IDENT_C_MIXED_ZERO.json",
+      "state": "raw/ident_c_20261109.jsonl.gz",
+      "state_sha256": "2ac1899ba5d9ae53236a87656af932a9fdc98e2cee7e0c6f64cdf93d0bf18cf7",
+      "client": "clients/ident_c_client_20261109_122216.json",
+      "status": "complete 8/8 sampled; final waypoint is absolute (0,0,0,0,0) and passed",
+      "use": "preferred complete session with absolute zero return"
+    }
+  ],
+  "notes": [
+    "Raw JSONL contains controller_state and dynamic records at ~100 Hz; t is recorder-relative.",
+    "Use client waypoint_results and initial_model_rad for target/pose association.",
+    "effort is the DAMIAO torque estimate, NOT measured current.",
+    "Total supply current max reported ~0.65 A; no per-axis current.",
+    "No model coefficients, feedforward, or deployment are included.",
+    "No stability/thermal/1.5x claim."
+  ]
+}

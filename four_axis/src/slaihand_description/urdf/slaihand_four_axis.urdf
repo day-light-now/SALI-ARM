@@ -1,0 +1,66 @@
+<?xml version="1.0"?>
+<!--
+  DESIGN LEDGER
+  Coordinate contract frozen 2026-11-04: this URDF is the sole active
+  J1-J4 outer position-limit source, read by Python and ROS 2 Jazzy.
+  Exact degree ranges: J1 [-80,200], J2 [-10,190], J3 [-90,90], J4 [-50,90].
+  User correction 2026-11-05: J4 software coordinates run from -50 to +90 degrees.
+  User-authorised reference velocity 2026-11-05: 1 rad/s for all four joints.
+  J1 range is user-reported in the current sign=+1 coordinates (2026-11-02),
+  not an independently verified physical safety envelope. J2-J4 remain model
+  ranges. Sign/encoder zero have one source: hardware_mapping.yaml; J1 zero
+  remains 1.4574273289082171 rad. A sign correction alone does not establish
+  new limits; use the explicitly confirmed model-coordinate endpoints.
+  Existing origins, local axes and geometry are unchanged in this freeze.
+  Their complete physical frame alignment remains to be independently checked.
+  ros2_control interfaces inherit these limits; no duplicate min/max table.
+  Robot: slaihand_four_axis. Consumer: ROS 2 / RViz / fake ros2_control.
+  Units are metres and radians. Meshes are CAD tessellations exported in the
+  owning link frame. The transforms come from the current SolidWorks assembly
+  `slaihand_four_axis.SLDASM` (2026-10-06), not the obsolete SW2URDF export.
+  Historical geometry review: J1..J4 axes/limits were simulation assumptions;
+  current calibration is held separately in hardware_mapping.yaml. This file
+  does not authorize real-motor control. No collision or inertial data is included:
+  it must be computed from the current CAD before dynamics work.
+  Direction correction (2026-10-07, user confirmed positive J2 was reversed):
+  J2 uses local +Z, not the previous -Z. Its zero-pose origin and meshes are unchanged.
+  Positive J2 now follows the previous negative physical rotation direction.
+  J2 numeric limits remain [-0.17453, 3.3161] radians (-10 to +190 degrees):
+  unlike a pure coordinate relabelling, this intentionally changes the allowed
+  physical sector according to the user's collision report. Full travel and
+  physical safety are not verified. J1/J3/J4 retain local -Z and existing limits.
+  That geometry correction did not change any CAN mapping.
+  J3 CAD correction (2026-10-07): active assembly replaces J3_cs with coordinate
+  system J3. New link3 frame is taken from that coordinate system and its Z line
+  agrees with CAD J3_axis. Link3 mesh is re-exported in the new frame; J3 origin
+  and J4 parent-relative origin are recomputed together, preserving zero-pose
+  geometry. Source capture: verification/cad_j3_corrected/cad_transforms.json.
+  Old-to-new origin in the old link3 frame (m):
+  [-0.000225118940572, 0.0574502330317, 0.135053252781]. Orientation unchanged
+  within CAD numerical precision. J3 retains local -Z and existing limits.
+  J4 CAD correction (2026-10-07): coordinate system 坐标系1 defines link4;
+  its Z line matches CAD J4_axis (axis-line residual below 1e-8 m).
+  J4 origin and link4 mesh are updated together from
+  verification/cad_j4_corrected/cad_transforms.json. Positive local -Z and
+  numeric limits are preserved; J1/J2/J3 frames and meshes are unchanged.
+  Latest CAD also changes link4 zero-pose geometry, maximum bidirectional
+  nearest-vertex difference 0.00385919423 m from the previous assembly.
+  Latest CAD is authoritative; the old model is backed up in
+  verification/before_j4_correction. No full collision safety claim is made.
+-->
+<robot name="slaihand_four_axis">
+  <material name="base_gray"><color rgba="0.55 0.55 0.58 1"/></material>
+  <material name="j1_orange"><color rgba="0.92 0.46 0.10 1"/></material>
+  <material name="j2_yellow"><color rgba="0.93 0.76 0.10 1"/></material>
+  <material name="j3_green"><color rgba="0.16 0.66 0.28 1"/></material>
+  <material name="j4_blue"><color rgba="0.12 0.60 0.82 1"/></material>
+  <link name="base_link"><visual><geometry><mesh filename="package://slaihand_description/meshes/base_link.obj"/></geometry><material name="base_gray"/></visual></link>
+  <link name="link1"><visual><geometry><mesh filename="package://slaihand_description/meshes/link1.obj"/></geometry><material name="j1_orange"/></visual></link>
+  <joint name="slaihand_joint1" type="revolute"><parent link="base_link"/><child link="link1"/><origin xyz="0 0 0" rpy="0 0 0"/><axis xyz="0 0 -1"/><limit lower="-1.3962634015954636" upper="3.4906585039886591" effort="1" velocity="1.0"/></joint>
+  <link name="link2"><visual><geometry><mesh filename="package://slaihand_description/meshes/link2.obj"/></geometry><material name="j2_yellow"/></visual></link>
+  <joint name="slaihand_joint2" type="revolute"><parent link="link1"/><child link="link2"/><origin xyz="0.039 0.0068669849 0.1351999710" rpy="1.5707963268 0 1.5707963268"/><axis xyz="0 0 1"/><limit lower="-0.17453292519943295" upper="3.3161255787892263" effort="1" velocity="1.0"/></joint>
+  <link name="link3"><visual><geometry><mesh filename="package://slaihand_description/meshes/link3.obj"/></geometry><material name="j3_green"/></visual></link>
+  <joint name="slaihand_joint3" type="revolute"><parent link="link2"/><child link="link3"/><origin xyz="0.0797365276843 -0.000108104601912 -0.0365" rpy="3.14023651841 -1.57079632679 0"/><axis xyz="0 0 -1"/><limit lower="-1.5707963267948966" upper="1.5707963267948966" effort="1" velocity="1.0"/></joint>
+  <link name="link4"><visual><geometry><mesh filename="package://slaihand_description/meshes/link4.obj"/></geometry><material name="j4_blue"/></visual></link>
+  <joint name="slaihand_joint4" type="revolute"><parent link="link3"/><child link="link4"/><origin xyz="0.04125 1.25982557719e-13 0.1395" rpy="-3.14159265359 -1.57079632679 0"/><axis xyz="0 0 -1"/><limit lower="-0.8726646259971648" upper="1.5707963267948966" effort="1" velocity="1.0"/></joint>
+</robot>

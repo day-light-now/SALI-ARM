@@ -1,0 +1,201 @@
+{
+  "status": "PASS",
+  "checks": [
+    {
+      "name": "URDF link base is base_link",
+      "ok": true,
+      "detail": "base_link"
+    },
+    {
+      "name": "J3 origin rpy contains a pi rotation",
+      "ok": true,
+      "detail": [
+        3.14023651841,
+        -1.57079632679,
+        0.0
+      ]
+    },
+    {
+      "name": "MuJoCo base_link is the documented base Rx(-pi/2)",
+      "ok": true,
+      "detail": "0.000000 deg"
+    },
+    {
+      "name": "MuJoCo relative placement matches URDF (link1)",
+      "ok": true,
+      "detail": "0.000000 deg"
+    },
+    {
+      "name": "MuJoCo relative placement matches URDF (link2)",
+      "ok": true,
+      "detail": "0.000000 deg"
+    },
+    {
+      "name": "MuJoCo relative placement matches URDF + one J3 pi (link3)",
+      "ok": true,
+      "detail": "0.000000 deg"
+    },
+    {
+      "name": "MuJoCo relative placement matches URDF (link4)",
+      "ok": true,
+      "detail": "0.000000 deg"
+    },
+    {
+      "name": "MuJoCo link3 differs from the plain URDF origin by exactly pi",
+      "ok": true,
+      "detail": "180.000000 deg"
+    },
+    {
+      "name": "extra pi rotates link3 by one half turn",
+      "ok": true,
+      "detail": "180.000000 deg"
+    },
+    {
+      "name": "2*pi would cancel the placement (link3)",
+      "ok": true,
+      "detail": "0.000000 deg"
+    },
+    {
+      "name": "extra pi rotates link4 by one half turn",
+      "ok": true,
+      "detail": "180.000000 deg"
+    },
+    {
+      "name": "2*pi would cancel the placement (link4)",
+      "ok": true,
+      "detail": "0.000000 deg"
+    },
+    {
+      "name": "deployed expanded URDF equals repo URDF chain",
+      "ok": true,
+      "detail": "expanded_motion.urdf"
+    },
+    {
+      "name": "expanded URDF keeps the same J3 origin",
+      "ok": true,
+      "detail": [
+        3.14023651841,
+        -1.57079632679,
+        0.0
+      ]
+    },
+    {
+      "name": "gravity model offset equals the shared placement",
+      "ok": true,
+      "detail": {
+        "slaihand_joint3": 3.141592654
+      }
+    },
+    {
+      "name": "2*pi model equals the plain chain",
+      "ok": true,
+      "detail": null
+    },
+    {
+      "name": "configured base gravity matches the claimed +Y down",
+      "ok": true,
+      "detail": [
+        0.0,
+        9.80665,
+        0.0
+      ]
+    },
+    {
+      "name": "configured J3 offset matches the claimed 180 degree turn",
+      "ok": true,
+      "detail": 3.141592653589793
+    },
+    {
+      "name": "J4 rotation yields sign-discriminating J2 predictions (field test)",
+      "ok": true,
+      "detail": [
+        -30.0,
+        30.0
+      ]
+    }
+  ],
+  "warnings": [],
+  "pose_table": [
+    {
+      "j4_deg": -30.0,
+      "plain_tau_model_nm": [
+        0.3622,
+        0.1752,
+        -0.0001,
+        -0.1811
+      ],
+      "offset_tau_model_nm": [
+        0.2374,
+        -0.1908,
+        0.0001,
+        -0.182
+      ],
+      "delta_nm": [
+        -0.1248,
+        -0.366,
+        0.0002,
+        -0.0009
+      ]
+    },
+    {
+      "j4_deg": 0.0,
+      "plain_tau_model_nm": [
+        0.3622,
+        -0.0184,
+        -0.0001,
+        0.0126
+      ],
+      "offset_tau_model_nm": [
+        0.2374,
+        0.0028,
+        0.0001,
+        0.0115
+      ],
+      "delta_nm": [
+        -0.1248,
+        0.0212,
+        0.0002,
+        -0.001
+      ]
+    },
+    {
+      "j4_deg": 30.0,
+      "plain_tau_model_nm": [
+        0.3622,
+        -0.2087,
+        -0.0001,
+        0.2029
+      ],
+      "offset_tau_model_nm": [
+        0.2374,
+        0.1932,
+        0.0001,
+        0.202
+      ],
+      "delta_nm": [
+        -0.1248,
+        0.4019,
+        0.0002,
+        -0.0009
+      ]
+    }
+  ],
+  "claim": {
+    "base_gravity": [
+      0.0,
+      9.80665,
+      0.0
+    ],
+    "j3_physical_turn_deg": 180.0,
+    "extra_end_load": "none",
+    "source": "user confirmed 2026-11-01"
+  },
+  "configured": {
+    "base_gravity": [
+      0.0,
+      9.80665,
+      0.0
+    ],
+    "j3_offset_rad": 3.141592653589793
+  }
+}

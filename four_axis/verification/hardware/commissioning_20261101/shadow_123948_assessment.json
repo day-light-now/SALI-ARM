@@ -1,0 +1,50 @@
+{
+  "source": "D:\\CodexData\\Projects\\机械臂\\slaihand_ros2_ws\\tmp\\commissioning_shadow\\20261101_123948_4b850c.jsonl",
+  "source_sha256": "f98922604bdd8796e0a2c3020070f72ba9b53cb9f920621829aad3718a5a8594",
+  "summary": {
+    "kind": "summary",
+    "cycles": 2000,
+    "global_latch": null,
+    "actuation_tx": 0,
+    "host_cycle_ms": {
+      "count": 1999,
+      "minimum": 5.1122999993822305,
+      "maximum": 15.045500000269385,
+      "p95": 10.546100000283332
+    },
+    "feedback_update_ms": {
+      "1": {
+        "count": 467,
+        "minimum": 40.11920000084501,
+        "maximum": 49.42750000009255,
+        "p95": 44.456899999204325
+      },
+      "2": {
+        "count": 466,
+        "minimum": 40.05970000071102,
+        "maximum": 46.368199999051285,
+        "p95": 44.64679999910004
+      },
+      "3": {
+        "count": 467,
+        "minimum": 37.53010000036738,
+        "maximum": 49.50279999866325,
+        "p95": 44.732700000167824
+      },
+      "4": {
+        "count": 467,
+        "minimum": 40.27180000048247,
+        "maximum": 48.17130000083125,
+        "p95": 44.70240000046033
+      }
+    },
+    "cycles_exceeding_80ms_feedback_age": 0,
+    "bus_four_axis_control_cycle": "NOT_MEASURED",
+    "motion_permitted": false,
+    "path": "D:\\CodexData\\Projects\\机械臂\\slaihand_ros2_ws\\tmp\\commissioning_shadow\\20261101_123948_4b850c.jsonl",
+    "finished": true
+  },
+  "max_feedback_age_ms": 47.079400001166505,
+  "cycles_exceeding_60ms": 0,
+  "scope": "Read-only traffic plus shadow host computation; no physical control bus or watchdog acceptance"
+}

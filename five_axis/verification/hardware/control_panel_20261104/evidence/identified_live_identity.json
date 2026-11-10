@@ -1,0 +1,47 @@
+{
+  "passed": true,
+  "serial_owner": 344035,
+  "library": "/home/xuyu/slaihand_control_panel_ws_float_20261105/install/slaihand_hardware/lib/libslaihand_hardware.so",
+  "identity": {
+    "schema": "slaihand_runtime_identity/1",
+    "mapping_sha256": "00b0c77f131adb3142617c2c1f1ce2612e4d956f15adf6eac53a8138ae2787b6",
+    "model_sha256": "fe7edfda16165e8532303ec55d6c1ab733ad32fc6d023115f825aae62637e497",
+    "policy_sha256": "a355155dce04df9972937df495da4bf79db723da532ad1a1c3a8b6952417c10b",
+    "mass_profile_sha256": "7c9327214482246233cf9963f867561b82874112f38406469e0159845f8c0a40",
+    "policy_profile": "supported_four_axis_native_mit_b1",
+    "load_id": "no_end_load",
+    "gravity_base_m_s2": [
+      0,
+      9.80665,
+      0
+    ],
+    "j3_offset_rad": 3.141592653589793,
+    "kp": 160,
+    "kd": 5,
+    "gravity_ff_alpha": 0.1,
+    "gravity_ff_ramp_s": 2,
+    "gravity_float_enabled": true,
+    "boot_id": "104771233112-344035",
+    "started_at": 104771.23311117,
+    "position_branch_ready": true,
+    "position_branch_modes": [
+      "fixed",
+      "fixed",
+      "startup_unique_urdf",
+      "fixed"
+    ],
+    "model_turns": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "effective_zero_rad": [
+      1.4574273289082171,
+      -1.795033188372626,
+      -2.5423437857633324,
+      -0.40951400015259054
+    ]
+  },
+  "physical_enable_requested": false
+}

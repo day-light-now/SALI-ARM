@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<package format="3">
+  <name>slaihand_hardware</name>
+  <version>0.1.0</version>
+  <description>OpenArm-compatible fake control and actual CANUSB read-only hardware interfaces.</description>
+  <maintainer email="user@example.com">SLAIHand project</maintainer>
+  <license>Apache-2.0</license>
+  <buildtool_depend>ament_cmake</buildtool_depend>
+  <depend>hardware_interface</depend>
+  <depend>pluginlib</depend>
+  <depend>rclcpp</depend>
+  <depend>rclcpp_lifecycle</depend>
+  <depend>openarm_can</depend>
+  <depend>slaihand_transport</depend>
+  <depend>std_msgs</depend>
+  <depend>std_srvs</depend>
+  <depend>rcl_interfaces</depend>
+  <export><build_type>ament_cmake</build_type></export>
+</package>

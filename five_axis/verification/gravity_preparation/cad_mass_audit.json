@@ -1,0 +1,3586 @@
+{
+  "source": "C:\\Users\\ASUS\\Desktop\\机械臂URDF\\SW源文件\\slaihand_four_axis.SLDASM",
+  "units": "SI: kg, m, kg m^2",
+  "status": "audit_only_not_calibrated",
+  "assumptions": [
+    "Leaf components only; one rigid grouping per top-level link",
+    "Part-level materials queried; body-level materials and mass overrides not independently verified",
+    "No payload, cable mass or vendor motor mass calibration added"
+  ],
+  "links": {
+    "base_link": {
+      "mass_kg": 0.8586652904765855,
+      "com_link_m": [
+        -0.0005213416077489523,
+        -0.0005793858090138335,
+        0.021210614118317542
+      ],
+      "inertia_com_link_kg_m2": [
+        [
+          0.0061015391585283974,
+          -1.6123787997915998e-05,
+          1.5938922861015036e-05
+        ],
+        [
+          -1.6123787997915998e-05,
+          0.0010450986767602127,
+          1.8757247466070734e-05
+        ],
+        [
+          1.5938922861015036e-05,
+          1.8757247466070734e-05,
+          0.006704328538913959
+        ]
+      ],
+      "part_count": 7,
+      "read_count": 7,
+      "missing_material_count": 4,
+      "inertia_eigenvalues": [
+        0.0010449847563227482,
+        0.006101172580944621,
+        0.0067048090369352005
+      ],
+      "tensor_sanity": true,
+      "confidence": "provisional_not_for_hardware"
+    },
+    "link1": {
+      "mass_kg": 0.8184925578741626,
+      "com_link_m": [
+        0.0054189052271304715,
+        0.007168990952157222,
+        0.12031569253633988
+      ],
+      "inertia_com_link_kg_m2": [
+        [
+          0.001914974815842426,
+          6.064289219296146e-06,
+          -0.00027246179496968805
+        ],
+        [
+          6.064289219296146e-06,
+          0.0017896850238818018,
+          -1.473938172491703e-05
+        ],
+        [
+          -0.00027246179496968805,
+          -1.473938172491703e-05,
+          0.0012751850413662354
+        ]
+      ],
+      "part_count": 19,
+      "read_count": 19,
+      "missing_material_count": 14,
+      "inertia_eigenvalues": [
+        0.0011746557493219926,
+        0.0017893944434173522,
+        0.0020157946883511187
+      ],
+      "tensor_sanity": true,
+      "confidence": "provisional_not_for_hardware"
+    },
+    "link2": {
+      "mass_kg": 0.22786672078481798,
+      "com_link_m": [
+        0.032402280371982936,
+        -0.0005656267363472415,
+        -0.026351675009243614
+      ],
+      "inertia_com_link_kg_m2": [
+        [
+          0.0003999323191484911,
+          -9.160869342545271e-07,
+          3.555923597411214e-05
+        ],
+        [
+          -9.160869342545273e-07,
+          0.0006441389951391117,
+          2.1266410222420287e-06
+        ],
+        [
+          3.555923597411214e-05,
+          2.1266410222420287e-06,
+          0.00034827956775341715
+        ]
+      ],
+      "part_count": 7,
+      "read_count": 7,
+      "missing_material_count": 3,
+      "inertia_eigenvalues": [
+        0.00033014054905171206,
+        0.0004180542342765369,
+        0.0006441560987127707
+      ],
+      "tensor_sanity": true,
+      "confidence": "provisional_not_for_hardware"
+    },
+    "link3": {
+      "mass_kg": 0.9621794927617242,
+      "com_link_m": [
+        0.0013991195366698916,
+        -0.00015378186442012163,
+        0.08830400706776209
+      ],
+      "inertia_com_link_kg_m2": [
+        [
+          0.0034815126224391176,
+          -2.2163826097030396e-05,
+          -7.759994756817974e-05
+        ],
+        [
+          -2.216382609703042e-05,
+          0.003482530680134378,
+          1.325502001751359e-05
+        ],
+        [
+          -7.759994756817974e-05,
+          1.3255020017513586e-05,
+          0.0010339422618643914
+        ]
+      ],
+      "part_count": 26,
+      "read_count": 26,
+      "missing_material_count": 13,
+      "inertia_eigenvalues": [
+        0.001031420202653713,
+        0.003460700166499015,
+        0.00350586519528516
+      ],
+      "tensor_sanity": true,
+      "confidence": "provisional_not_for_hardware"
+    },
+    "link4": {
+      "mass_kg": 0.23711937703625566,
+      "com_link_m": [
+        0.07289585049452288,
+        -0.002298639107949952,
+        -0.02892167040332555
+      ],
+      "inertia_com_link_kg_m2": [
+        [
+          0.0002324865696817328,
+          6.7400469231771035e-06,
+          1.6804824090220696e-05
+        ],
+        [
+          6.740046923177105e-06,
+          0.0004497978411249734,
+          -7.782125550834678e-07
+        ],
+        [
+          1.6804824090220696e-05,
+          -7.782125550834678e-07,
+          0.00029281649738875616
+        ]
+      ],
+      "part_count": 31,
+      "read_count": 30,
+      "missing_material_count": 26,
+      "inertia_eigenvalues": [
+        0.0002279179526890834,
+        0.0002971758433303174,
+        0.0004500071121760615
+      ],
+      "tensor_sanity": true,
+      "confidence": "provisional_not_for_hardware"
+    }
+  },
+  "parts": [
+    {
+      "component": "base-link-1/DAMIAO_DM_J10010L_2EC_Motor-1/dm-j10010l-0730_1.stp^DAMIAO_DM_J10010L_2EC_Motor-1/ZHUTI.stp^dm-j10010l-0730_1.stp_DAMIAO_DM_J10010L_2EC_Motor-1",
+      "link": "base_link",
+      "confidence": "unverified_CAD_only",
+      "document": "C:\\Users\\ASUS\\AppData\\Local\\Temp\\swx28864\\VC~~\\2799548188\\ZHUTI.stp^dm-j10010l-0730_1.stp_DAMIAO_DM_J10010L_2EC_Motor.SLDPRT",
+      "configuration": "默认",
+      "material": "",
+      "material_database": "",
+      "mass_kg": 0.4240142243611213,
+      "volume_m3": 0.00042401422436112127,
+      "effective_density_kg_m3": 1000.0,
+      "com_link_m": [
+        -0.00030630675499181245,
+        5.247324740055812e-06,
+        0.03362154696341287
+      ],
+      "inertia_com_link_kg_m2": [
+        [
+          0.00043740427055564545,
+          2.1065524486011687e-07,
+          1.0980625085550506e-06
+        ],
+        [
+          2.1065524486011687e-07,
+          0.0004323379894327908,
+          7.142221730849864e-07
+        ],
+        [
+          1.0980625085550506e-06,
+          7.142221730849864e-07,
+          0.0007682962859403051
+        ]
+      ],
+      "configuration_matches_loaded": true,
+      "issues": [
+        "No explicit part material; default/body/override mass must be checked",
+        "Motor/electronics CAD must be checked against vendor or measured mass"
+      ]
+    },
+    {
+      "component": "base-link-1/DAMIAO_DM_J10010L_2EC_Motor-1/dm-j10010l-0730_1.stp^DAMIAO_DM_J10010L_2EC_Motor-1/PCB_1.stp^dm-j10010l-0730_1.stp_DAMIAO_DM_J10010L_2EC_Motor-1",
+      "link": "base_link",
+      "confidence": "unverified_CAD_only",
+      "document": "C:\\Users\\ASUS\\AppData\\Local\\Temp\\swx28864\\VC~~\\2799548188\\PCB_1.stp^dm-j10010l-0730_1.stp_DAMIAO_DM_J10010L_2EC_Motor.SLDPRT",
+      "configuration": "默认",
+      "material": "",
+      "material_database": "",
+      "mass_kg": 0.0035022222177948504,
+      "volume_m3": 3.5022222177948503e-06,
+      "effective_density_kg_m3": 1000.0,
+      "com_link_m": [
+        0.021028899753157866,
+        0.006225965263645335,
+        0.012774661783961319
+      ],
+      "inertia_com_link_kg_m2": [
+        [
+          6.026923616347566e-07,
+          -4.4579578860486625e-12,
+          3.4416603426898454e-12
+        ],
+        [
+          -4.4579578860486625e-12,
+          4.369283957028251e-08,
+          -4.5249043380630453e-10
+        ],
+        [
+          3.4416603426898454e-12,
+          -4.5249043380630453e-10,
+          6.02634231057708e-07
+        ]
+      ],
+      "configuration_matches_loaded": true,
+      "issues": [
+        "No explicit part material; default/body/override mass must be checked",
+        "Motor/electronics CAD must be checked against vendor or measured mass"
+      ]
+    },
+    {
+      "component": "base-link-1/DAMIAO_DM_J10010L_2EC_Motor-1/dm-j10010l-0730_1.stp^DAMIAO_DM_J10010L_2EC_Motor-1/HOUGAI.stp^dm-j10010l-0730_1.stp_DAMIAO_DM_J10010L_2EC_Motor-1",
+      "link": "base_link",
+      "confidence": "unverified_CAD_only",
+      "document": "C:\\Users\\ASUS\\AppData\\Local\\Temp\\swx28864\\VC~~\\2799548188\\HOUGAI.stp^dm-j10010l-0730_1.stp_DAMIAO_DM_J10010L_2EC_Motor.SLDPRT",
+      "configuration": "默认",
+      "material": "",
+      "material_database": "",
+      "mass_kg": 0.02423496563685485,
+      "volume_m3": 2.4234965636854852e-05,
+      "effective_density_kg_m3": 999.9999999999999,
+      "com_link_m": [
+        -0.00033043550028140074,
+        0.0004490631111063341,
+        0.00402352678027495
+      ],
+      "inertia_com_link_kg_m2": [
+        [
+          1.2705861424346884e-05,
+          1.2979669805249801e-09,
+          3.084806156172513e-09
+        ],
+        [
+          1.2979669805249801e-09,
+          1.947980721162146e-05,
+          -4.844639950379951e-09
+        ],
+        [
+          3.084806156172513e-09,
+          -4.844639950379951e-09,
+          3.170108673044831e-05
+        ]
+      ],
+      "configuration_matches_loaded": true,
+      "issues": [
+        "No explicit part material; default/body/override mass must be checked",
+        "Motor/electronics CAD must be checked against vendor or measured mass"
+      ]
+    },
+    {
+      "component": "base-link-1/J1限位-1",
+      "link": "base_link",
+      "confidence": "unverified_CAD_only",
+      "document": "C:\\Users\\ASUS\\Desktop\\mmhand\\机械臂10010l\\J1限位.SLDPRT",
+      "configuration": "默认",
+      "material": "5052-H38",
+      "material_database": "solidworks materials",
+      "mass_kg": 0.012037283370151074,
+      "volume_m3": 4.491523645578759e-06,
+      "effective_density_kg_m3": 2680.0,
+      "com_link_m": [
+        -0.02395640967969169,
+        -0.032953184306543926,
+        0.05370000000000001
+      ],
+      "inertia_com_link_kg_m2": [
+        [
+          3.917333277782954e-06,
+          -3.884760605664384e-06,
+          -1.5625167815178996e-22
+        ],
+        [
+          -3.884760605664384e-06,
+          6.44002965905896e-06,
+          -9.831774212544205e-23
+        ],
+        [
+          -1.5625167815178999e-22,
+          -9.831774212544206e-23,
+          1.0349338081261812e-05
+        ]
+      ],
+      "configuration_matches_loaded": true,
+      "issues": []
+    },
+    {
+      "component": "base-link-1/J1限位块-2",
+      "link": "base_link",
+      "confidence": "unverified_CAD_only",
+      "document": "C:\\Users\\ASUS\\Desktop\\mmhand\\机械臂10010l\\J1限位块.SLDPRT",
+      "configuration": "默认",
+      "material": "5052-H38",
+      "material_database": "solidworks materials",
+      "mass_kg": 0.0018335403069705315,
+      "volume_m3": 6.841568309591536e-07,
+      "effective_density_kg_m3": 2680.0,
+      "com_link_m": [
+        -0.04318090152721927,
+        -0.024930505120569324,
+        0.056700000000000014
+      ],
+      "inertia_com_link_kg_m2": [
+        [
+          1.7145757267328762e-08,
+          -1.0963021729298242e-08,
+          -1.0485649991927618e-23
+        ],
+        [
+          -1.0963021729298242e-08,
+          7.738706656794557e-08,
+          -6.0102683252694315e-24
+        ],
+        [
+          -1.0485649991927618e-23,
+          -6.0102683252694315e-24,
+          8.964338301668626e-08
+        ]
+      ],
+      "configuration_matches_loaded": true,
+      "issues": []
+    },
+    {
+      "component": "base-link-1/J1限位块-1",
+      "link": "base_link",
+      "confidence": "unverified_CAD_only",
+      "document": "C:\\Users\\ASUS\\Desktop\\mmhand\\机械臂10010l\\J1限位块.SLDPRT",
+      "configuration": "默认",
+      "material": "5052-H38",
+      "material_database": "solidworks materials",
+      "mass_kg": 0.0018335403069705315,
+      "volume_m3": 6.841568309591536e-07,
+      "effective_density_kg_m3": 2680.0,
+      "com_link_m": [
+        -0.008658273565029963,
+        -0.04910350945852337,
+        0.056700000000000014
+      ],
+      "inertia_com_link_kg_m2": [
+        [
+          7.738706656794584e-08,
+          1.0963021729297504e-08,
+          2.1284550276185826e-24
+        ],
+        [
+          1.0963021729297504e-08,
+          1.71457572673285e-08,
+          1.0086190196752986e-23
+        ],
+        [
+          2.1284550276185826e-24,
+          1.0086190196752986e-23,
+          8.964338301668626e-08
+        ]
+      ],
+      "configuration_matches_loaded": true,
+      "issues": []
+    },
+    {
+      "component": "base-link-1/底座-1",
+      "link": "base_link",
+      "confidence": "unverified_CAD_only",
+      "document": "C:\\Users\\ASUS\\Desktop\\mmhand\\机械臂10010l\\底座.SLDPRT",
+      "configuration": "默认",
+      "material": "",
+      "material_database": "",
+      "mass_kg": 0.39120951427672235,
+      "volume_m3": 0.00039120951427672234,
+      "effective_density_kg_m3": 1000.0,
+      "com_link_m": [
+        -2.9486487927710575e-17,
+        -5.225484429555142e-16,
+        0.007566862620100679
+      ],
+      "inertia_com_link_kg_m2": [
+        [
+          0.005465461314087544,
+          3.618691466764222e-18,
+          -2.5148257737191794e-20
+        ],
+        [
+          3.618691466764222e-18,
+          0.0004120115198412721,
+          -4.388329156361152e-19
+        ],
+        [
+          -2.5148257737191794e-20,
+          -4.388329156361152e-19,
+          0.005862893166010855
+        ]
+      ],
+      "configuration_matches_loaded": true,
+      "issues": [
+        "No explicit part material; default/body/override mass must be checked"
+      ]
+    },
+    {
+      "component": "link3-1/M4x15+6_六角对边6_打印放松配合_外Ø3.5_内Ø3.8.step-4",
+      "link": "link3",
+      "confidence": "unverified_CAD_only",
+      "document": "C:\\Users\\ASUS\\AppData\\Local\\Temp\\swx28864\\IC~~\\M4x15+6_六角对边6_打印放松配合_外Ø3.5_内Ø3.8.step.SLDPRT",
+      "configuration": "默认",
+      "material": "",
+      "material_database": "",
+      "mass_kg": 0.00041134040791184834,
+      "volume_m3": 4.1134040791184836e-07,
+      "effective_density_kg_m3": 1000.0,
+      "com_link_m": [
+        1.1629567330392108e-13,
+        -0.04499999999999996,
+        0.055857617287054934
+      ],
+      "inertia_com_link_kg_m2": [
+        [
+          1.2761750080179608e-08,
+          -1.1707958011036502e-22,
+          -5.898256113175966e-25
+        ],
+        [
+          -1.1707958011036777e-22,
+          1.2761750080180041e-08,
+          1.0134321312536017e-24
+        ],
+        [
+          -5.898256113175967e-25,
+          1.0134321312536017e-24,
+          2.220265326939989e-09
+        ]
+      ],
+      "configuration_matches_loaded": true,
+      "issues": [
+        "No explicit part material; default/body/override mass must be checked"
+      ]
+    },
+    {
+      "component": "link3-1/DAMIAO_DM_J8009P_2EC_Motor.stp-2/8009-RAU_5005_000.stp-1",
+      "link": "link3",
+      "confidence": "unverified_CAD_only",
+      "document": "C:\\Users\\ASUS\\AppData\\Local\\Temp\\swx28864\\IC~~\\8009-RAU_5005_000.stp.SLDPRT",
+      "configuration": "默认",
+      "material": "",
+      "material_database": "",
+      "mass_kg": 0.33898903428854976,
+      "volume_m3": 0.00033898903428854975,
+      "effective_density_kg_m3": 1000.0,
+      "com_link_m": [
+        -0.0024564428370859107,
+        1.465540433860031e-14,
+        0.13950000000000137
+      ],
+      "inertia_com_link_kg_m2": [
+        [
+          0.0003880169846206303,
+          3.398496653747254e-16,
+          4.921889801763005e-19
+        ],
+        [
+          3.3984966537472535e-16,
+          0.0002546508661918519,
+          -6.268490602758035e-09
+        ],
+        [
+          4.921889801763006e-19,
+          -6.268490602758035e-09,
+          0.0002546323684943075
+        ]
+      ],
+      "configuration_matches_loaded": true,
+      "issues": [
+        "No explicit part material; default/body/override mass must be checked",
+        "Motor/electronics CAD must be checked against vendor or measured mass"
+      ]
+    },
+    {
+      "component": "link3-1/DAMIAO_DM_J8009P_2EC_Motor.stp-2/DM_8116_0001.stp-1",
+      "link": "link3",
+      "confidence": "unverified_CAD_only",
+      "document": "C:\\Users\\ASUS\\AppData\\Local\\Temp\\swx28864\\IC~~\\DM_8116_0001.stp.SLDPRT",
+      "configuration": "默认",
+      "material": "",
+      "material_database": "",
+      "mass_kg": 0.010536951254088696,
+      "volume_m3": 1.0536951254088695e-05,
+      "effective_density_kg_m3": 1000.0,
+      "com_link_m": [
+        0.028859207569124704,
+        0.001313795699600849,
+        0.14084810585933732
+      ],
+      "inertia_com_link_kg_m2": [
+        [
+          7.502935027350692e-06,
+          -1.149282391558756e-08,
+          -9.729385747146724e-09
+        ],
+        [
+          -1.149282391558756e-08,
+          3.6254916630026396e-06,
+          6.779477913925194e-09
+        ],
+        [
+          -9.729385747146724e-09,
+          6.779477913925194e-09,
+          3.996826719058596e-06
+        ]
+      ],
+      "configuration_matches_loaded": true,
+      "issues": [
+        "No explicit part material; default/body/override mass must be checked",
+        "Motor/electronics CAD must be checked against vendor or measured mass"
+      ]
+    },
+    {
+      "component": "link3-1/J3j4lianjie2-1",
+      "link": "link3",
+      "confidence": "unverified_CAD_only",
+      "document": "C:\\Users\\ASUS\\Desktop\\mmhand\\机械臂10010l\\J3j4lianjie2.SLDPRT",
+      "configuration": "默认",
+      "material": "5052-H38",
+      "material_database": "solidworks materials",
+      "mass_kg": 0.043218620170361294,
+      "volume_m3": 1.6126350809836304e-05,
+      "effective_density_kg_m3": 2680.0,
+      "com_link_m": [
+        0.019365146580112777,
+        7.020078962582943e-14,
+        0.10859388342861973
+      ],
+      "inertia_com_link_kg_m2": [
+        [
+          6.988072693271776e-05,
+          -8.375549456136894e-06,
+          4.1921764978224665e-06
+        ],
+        [
+          -8.375549456136904e-06,
+          8.930668438842338e-05,
+          7.850189742787996e-06
+        ],
+        [
+          4.192176497822466e-06,
+          7.850189742787996e-06,
+          2.9912779918427032e-05
+        ]
+      ],
+      "configuration_matches_loaded": true,
+      "issues": []
+    },
+    {
+      "component": "link3-1/j3限位-1",
+      "link": "link3",
+      "confidence": "unverified_CAD_only",
+      "document": "C:\\Users\\ASUS\\Desktop\\mmhand\\机械臂10010l\\j3限位.SLDPRT",
+      "configuration": "默认",
+      "material": "5052-H38",
+      "material_database": "solidworks materials",
+      "mass_kg": 0.00429157138779923,
+      "volume_m3": 1.6013326073877724e-06,
+      "effective_density_kg_m3": 2680.0000000000005,
+      "com_link_m": [
+        0.04267444027337733,
+        -0.00042242647911965844,
+        0.007700000000000014
+      ],
+      "inertia_com_link_kg_m2": [
+        [
+          2.613822830860417e-07,
+          3.6963772255433395e-07,
+          2.4153590577669962e-23
+        ],
+        [
+          3.6963772255433395e-07,
+          6.924201068610006e-07,
+          -3.5421673430840546e-23
+        ],
+        [
+          2.4153590577669965e-23,
+          -3.542167343084055e-23,
+          9.423581995795779e-07
+        ]
+      ],
+      "configuration_matches_loaded": true,
+      "issues": []
+    },
+    {
+      "component": "link3-1/J4限位2-1",
+      "link": "link3",
+      "confidence": "unverified_CAD_only",
+      "document": "C:\\Users\\ASUS\\Desktop\\mmhand\\机械臂10010l\\J4限位2.SLDPRT",
+      "configuration": "默认",
+      "material": "5052-H38",
+      "material_database": "solidworks materials",
+      "mass_kg": 0.0034996779390080563,
+      "volume_m3": 1.305849977241812e-06,
+      "effective_density_kg_m3": 2680.0,
+      "com_link_m": [
+        -0.025900000000053547,
+        0.02160492941109987,
+        0.10195105569535169
+      ],
+      "inertia_com_link_kg_m2": [
+        [
+          8.289703488146302e-07,
+          1.5933432756553768e-19,
+          3.65621919202001e-19
+        ],
+        [
+          1.5933432756553759e-19,
+          7.668325800405246e-07,
+          -1.4164100735086835e-07
+        ],
+        [
+          3.6562191920200103e-19,
+          -1.4164100735086833e-07,
+          6.738728568261738e-08
+        ]
+      ],
+      "configuration_matches_loaded": true,
+      "issues": []
+    },
+    {
+      "component": "link3-1/J4轴承衬套（3D打印）-1",
+      "link": "link3",
+      "confidence": "unverified_CAD_only",
+      "document": "C:\\Users\\ASUS\\Desktop\\mmhand\\机械臂10010l\\J4轴承衬套（3D打印）.SLDPRT",
+      "configuration": "默认",
+      "material": "ABS",
+      "material_database": "solidworks materials",
+      "mass_kg": 0.04637868828881914,
+      "volume_m3": 4.546930224394034e-05,
+      "effective_density_kg_m3": 1019.9999999999999,
+      "com_link_m": [
+        0.03251333538535481,
+        7.167899613752526e-05,
+        0.14362652933737885
+      ],
+      "inertia_com_link_kg_m2": [
+        [
+          6.296808235418906e-05,
+          -1.093968918091295e-08,
+          -6.19544966367855e-07
+        ],
+        [
+          -1.093968918091295e-08,
+          2.884149348095142e-05,
+          7.26083040136891e-07
+        ],
+        [
+          -6.19544966367855e-07,
+          7.260830401368907e-07,
+          3.713333448743251e-05
+        ]
+      ],
+      "configuration_matches_loaded": true,
+      "issues": []
+    },
+    {
+      "component": "link3-1/j3限位-2",
+      "link": "link3",
+      "confidence": "unverified_CAD_only",
+      "document": "C:\\Users\\ASUS\\Desktop\\mmhand\\机械臂10010l\\j3限位.SLDPRT",
+      "configuration": "默认",
+      "material": "5052-H38",
+      "material_database": "solidworks materials",
+      "mass_kg": 0.00429157138779923,
+      "volume_m3": 1.6013326073877724e-06,
+      "effective_density_kg_m3": 2680.0000000000005,
+      "com_link_m": [
+        -0.04267444027337722,
+        0.0004224264791191559,
+        0.007700000000000014
+      ],
+      "inertia_com_link_kg_m2": [
+        [
+          2.6138228308604166e-07,
+          3.6963772255433395e-07,
+          7.726667333981228e-23
+        ],
+        [
+          3.6963772255433395e-07,
+          6.924201068610009e-07,
+          -3.191374064309969e-23
+        ],
+        [
+          7.726667333981228e-23,
+          -3.191374064309969e-23,
+          9.423581995795779e-07
+        ]
+      ],
+      "configuration_matches_loaded": true,
+      "issues": []
+    },
+    {
+      "component": "link3-1/M4x15+6_六角对边6_打印放松配合_外Ø3.5_内Ø3.8.step-1",
+      "link": "link3",
+      "confidence": "unverified_CAD_only",
+      "document": "C:\\Users\\ASUS\\AppData\\Local\\Temp\\swx28864\\IC~~\\M4x15+6_六角对边6_打印放松配合_外Ø3.5_内Ø3.8.step.SLDPRT",
+      "configuration": "默认",
+      "material": "",
+      "material_database": "",
+      "mass_kg": 0.00041134040791184834,
+      "volume_m3": 4.1134040791184836e-07,
+      "effective_density_kg_m3": 1000.0,
+      "com_link_m": [
+        -0.03897114317035666,
+        0.022499999999901862,
+        0.055857617287054906
+      ],
+      "inertia_com_link_kg_m2": [
+        [
+          1.2761750080179608e-08,
+          -1.1707958011036502e-22,
+          -5.898256113175966e-25
+        ],
+        [
+          -1.1707958011036777e-22,
+          1.2761750080180041e-08,
+          1.0134321312536017e-24
+        ],
+        [
+          -5.898256113175967e-25,
+          1.0134321312536017e-24,
+          2.220265326939989e-09
+        ]
+      ],
+      "configuration_matches_loaded": true,
+      "issues": [
+        "No explicit part material; default/body/override mass must be checked"
+      ]
+    },
+    {
+      "component": "link3-1/M4x15+6_六角对边6_打印放松配合_外Ø3.5_内Ø3.8.step-2",
+      "link": "link3",
+      "confidence": "unverified_CAD_only",
+      "document": "C:\\Users\\ASUS\\AppData\\Local\\Temp\\swx28864\\IC~~\\M4x15+6_六角对边6_打印放松配合_外Ø3.5_内Ø3.8.step.SLDPRT",
+      "configuration": "默认",
+      "material": "",
+      "material_database": "",
+      "mass_kg": 0.00041134040791184834,
+      "volume_m3": 4.1134040791184836e-07,
+      "effective_density_kg_m3": 1000.0,
+      "com_link_m": [
+        -0.038971143170243305,
+        -0.022500000000098108,
+        0.055857617287054906
+      ],
+      "inertia_com_link_kg_m2": [
+        [
+          1.2761750080179608e-08,
+          -1.1707958011036502e-22,
+          -5.898256113175966e-25
+        ],
+        [
+          -1.1707958011036777e-22,
+          1.2761750080180041e-08,
+          1.0134321312536017e-24
+        ],
+        [
+          -5.898256113175967e-25,
+          1.0134321312536017e-24,
+          2.220265326939989e-09
+        ]
+      ],
+      "configuration_matches_loaded": true,
+      "issues": [
+        "No explicit part material; default/body/override mass must be checked"
+      ]
+    },
+    {
+      "component": "link3-1/M4x15+6_六角对边6_打印放松配合_外Ø3.5_内Ø3.8.step-3",
+      "link": "link3",
+      "confidence": "unverified_CAD_only",
+      "document": "C:\\Users\\ASUS\\AppData\\Local\\Temp\\swx28864\\IC~~\\M4x15+6_六角对边6_打印放松配合_外Ø3.5_内Ø3.8.step.SLDPRT",
+      "configuration": "默认",
+      "material": "",
+      "material_database": "",
+      "mass_kg": 0.00041134040791184834,
+      "volume_m3": 4.1134040791184836e-07,
+      "effective_density_kg_m3": 1000.0,
+      "com_link_m": [
+        0.03897114317024336,
+        0.022500000000098122,
+        0.055857617287054934
+      ],
+      "inertia_com_link_kg_m2": [
+        [
+          1.2761750080179608e-08,
+          -1.1707958011036502e-22,
+          -5.898256113175966e-25
+        ],
+        [
+          -1.1707958011036777e-22,
+          1.2761750080180041e-08,
+          1.0134321312536017e-24
+        ],
+        [
+          -5.898256113175967e-25,
+          1.0134321312536017e-24,
+          2.220265326939989e-09
+        ]
+      ],
+      "configuration_matches_loaded": true,
+      "issues": [
+        "No explicit part material; default/body/override mass must be checked"
+      ]
+    },
+    {
+      "component": "link3-1/zhuanjiepan -1",
+      "link": "link3",
+      "confidence": "unverified_CAD_only",
+      "document": "C:\\Users\\ASUS\\Desktop\\mmhand\\机械臂10010l\\zhuanjiepan .SLDPRT",
+      "configuration": "默认",
+      "material": "5052-H38",
+      "material_database": "solidworks materials",
+      "mass_kg": 0.08602305485475797,
+      "volume_m3": 3.209815479655148e-05,
+      "effective_density_kg_m3": 2680.0,
+      "com_link_m": [
+        1.8318679906315083e-15,
+        2.091729567332834e-14,
+        0.06750000000000006
+      ],
+      "inertia_com_link_kg_m2": [
+        [
+          5.59992845836341e-05,
+          -6.5872356954589815e-09,
+          9.001348460618288e-23
+        ],
+        [
+          -6.5872356954589385e-09,
+          5.598154473208609e-05,
+          -7.184264304235821e-21
+        ],
+        [
+          9.001348460618288e-23,
+          -7.18426430423582e-21,
+          0.00011175143450277414
+        ]
+      ],
+      "configuration_matches_loaded": true,
+      "issues": []
+    },
+    {
+      "component": "link3-1/J4轴承盖板（3D打印）-1",
+      "link": "link3",
+      "confidence": "unverified_CAD_only",
+      "document": "C:\\Users\\ASUS\\Desktop\\mmhand\\机械臂10010l\\J4轴承盖板（3D打印）.SLDPRT",
+      "configuration": "默认",
+      "material": "ABS",
+      "material_database": "solidworks materials",
+      "mass_kg": 0.003754388835485927,
+      "volume_m3": 3.680773368123458e-06,
+      "effective_density_kg_m3": 1020.0,
+      "com_link_m": [
+        0.0485000000000019,
+        1.4632739464559563e-13,
+        0.13950000000000168
+      ],
+      "inertia_com_link_kg_m2": [
+        [
+          1.4017821694713167e-06,
+          1.782715765913716e-18,
+          -2.4339084387041797e-21
+        ],
+        [
+          1.7827157659137162e-18,
+          7.021425476808203e-07,
+          -1.590570456070965e-22
+        ],
+        [
+          -2.4339084387041823e-21,
+          -1.5963624124091423e-22,
+          7.021425476808205e-07
+        ]
+      ],
+      "configuration_matches_loaded": true,
+      "issues": []
+    },
+    {
+      "component": "link3-1/QJ203MA_17x40x12_圆环安装包络示意.step-1",
+      "link": "link3",
+      "confidence": "unverified_CAD_only",
+      "document": "C:\\Users\\ASUS\\AppData\\Local\\Temp\\swx28864\\IC~~\\QJ203MA_17x40x12_圆环安装包络示意.step.SLDPRT",
+      "configuration": "默认",
+      "material": "",
+      "material_database": "",
+      "mass_kg": 0.012355883906568657,
+      "volume_m3": 1.2355883906568657e-05,
+      "effective_density_kg_m3": 1000.0,
+      "com_link_m": [
+        0.04100000000000186,
+        1.2520562868399166e-13,
+        0.1395000000000013
+      ],
+      "inertia_com_link_kg_m2": [
+        [
+          2.9175330874385245e-06,
+          3.3392072678346458e-18,
+          -4.5610873350324676e-21
+        ],
+        [
+          3.3392072678346458e-18,
+          1.6070371505980865e-06,
+          3.488103747290939e-25
+        ],
+        [
+          -4.5610873350324676e-21,
+          3.488103747296268e-25,
+          1.6070371505980863e-06
+        ]
+      ],
+      "configuration_matches_loaded": true,
+      "issues": [
+        "No explicit part material; default/body/override mass must be checked"
+      ]
+    },
+    {
+      "component": "link3-1/M4x15+6_六角对边6_打印放松配合_外Ø3.5_内Ø3.8.step-5",
+      "link": "link3",
+      "confidence": "unverified_CAD_only",
+      "document": "C:\\Users\\ASUS\\AppData\\Local\\Temp\\swx28864\\IC~~\\M4x15+6_六角对边6_打印放松配合_外Ø3.5_内Ø3.8.step.SLDPRT",
+      "configuration": "默认",
+      "material": "",
+      "material_database": "",
+      "mass_kg": 0.00041134040791184834,
+      "volume_m3": 4.1134040791184836e-07,
+      "effective_density_kg_m3": 1000.0,
+      "com_link_m": [
+        0.038971143170356715,
+        -0.02249999999990185,
+        0.055857617287054934
+      ],
+      "inertia_com_link_kg_m2": [
+        [
+          1.2761750080179608e-08,
+          -1.1707958011036502e-22,
+          -5.898256113175966e-25
+        ],
+        [
+          -1.1707958011036777e-22,
+          1.2761750080180041e-08,
+          1.0134321312536017e-24
+        ],
+        [
+          -5.898256113175967e-25,
+          1.0134321312536017e-24,
+          2.220265326939989e-09
+        ]
+      ],
+      "configuration_matches_loaded": true,
+      "issues": [
+        "No explicit part material; default/body/override mass must be checked"
+      ]
+    },
+    {
+      "component": "link3-1/DAMIAO_DM_J8009P_2EC_Motor.stp-1/8009-RAU_5005_000.stp-1",
+      "link": "link3",
+      "confidence": "unverified_CAD_only",
+      "document": "C:\\Users\\ASUS\\AppData\\Local\\Temp\\swx28864\\IC~~\\8009-RAU_5005_000.stp.SLDPRT",
+      "configuration": "默认",
+      "material": "",
+      "material_database": "",
+      "mass_kg": 0.33898903428854976,
+      "volume_m3": 0.00033898903428854975,
+      "effective_density_kg_m3": 1000.0,
+      "com_link_m": [
+        -2.4694214125728944e-18,
+        -4.7040458005622625e-18,
+        0.027643557162912245
+      ],
+      "inertia_com_link_kg_m2": [
+        [
+          0.000254650866191852,
+          -6.268490602711502e-09,
+          -4.511178950164058e-21
+        ],
+        [
+          -6.268490602711502e-09,
+          0.00025463236849430763,
+          -2.199163817748988e-20
+        ],
+        [
+          -4.511178950164058e-21,
+          -2.199163817748988e-20,
+          0.0003880169846206303
+        ]
+      ],
+      "configuration_matches_loaded": true,
+      "issues": [
+        "No explicit part material; default/body/override mass must be checked",
+        "Motor/electronics CAD must be checked against vendor or measured mass"
+      ]
+    },
+    {
+      "component": "link3-1/DAMIAO_DM_J8009P_2EC_Motor.stp-1/DM_8116_0001.stp-1",
+      "link": "link3",
+      "confidence": "unverified_CAD_only",
+      "document": "C:\\Users\\ASUS\\AppData\\Local\\Temp\\swx28864\\IC~~\\DM_8116_0001.stp.SLDPRT",
+      "configuration": "默认",
+      "material": "",
+      "material_database": "",
+      "mass_kg": 0.010536951254088696,
+      "volume_m3": 1.0536951254088695e-05,
+      "effective_density_kg_m3": 1000.0,
+      "com_link_m": [
+        -0.0013137956995029924,
+        -0.0013481058593391652,
+        0.05895920756912624
+      ],
+      "inertia_com_link_kg_m2": [
+        [
+          3.625491663002665e-06,
+          6.779477913015055e-09,
+          1.1492823925443592e-08
+        ],
+        [
+          6.779477913015055e-09,
+          3.996826719058631e-06,
+          9.729385747170326e-09
+        ],
+        [
+          1.1492823925443592e-08,
+          9.729385747170326e-09,
+          7.5029350273506326e-06
+        ]
+      ],
+      "configuration_matches_loaded": true,
+      "issues": [
+        "No explicit part material; default/body/override mass must be checked",
+        "Motor/electronics CAD must be checked against vendor or measured mass"
+      ]
+    },
+    {
+      "component": "link3-1/J3j4lianjie2-2",
+      "link": "link3",
+      "confidence": "unverified_CAD_only",
+      "document": "C:\\Users\\ASUS\\Desktop\\mmhand\\机械臂10010l\\J3j4lianjie2.SLDPRT",
+      "configuration": "默认",
+      "material": "5052-H38",
+      "material_database": "solidworks materials",
+      "mass_kg": 0.043218620170361294,
+      "volume_m3": 1.6126350809836304e-05,
+      "effective_density_kg_m3": 2680.0,
+      "com_link_m": [
+        -0.019365146580109384,
+        -2.8397423301740332e-14,
+        0.10859388342861973
+      ],
+      "inertia_com_link_kg_m2": [
+        [
+          6.988072693271774e-05,
+          -8.375549456136883e-06,
+          -4.192176497822467e-06
+        ],
+        [
+          -8.375549456136897e-06,
+          8.930668438842338e-05,
+          -7.850189742787979e-06
+        ],
+        [
+          -4.192176497822467e-06,
+          -7.85018974278798e-06,
+          2.9912779918427025e-05
+        ]
+      ],
+      "configuration_matches_loaded": true,
+      "issues": []
+    },
+    {
+      "component": "link3-1/M4x15+6_六角对边6_打印放松配合_外Ø3.5_内Ø3.8.step-6",
+      "link": "link3",
+      "confidence": "unverified_CAD_only",
+      "document": "C:\\Users\\ASUS\\AppData\\Local\\Temp\\swx28864\\IC~~\\M4x15+6_六角对边6_打印放松配合_外Ø3.5_内Ø3.8.step.SLDPRT",
+      "configuration": "默认",
+      "material": "",
+      "material_database": "",
+      "mass_kg": 0.00041134040791184834,
+      "volume_m3": 4.1134040791184836e-07,
+      "effective_density_kg_m3": 1000.0,
+      "com_link_m": [
+        -1.1296538128117375e-13,
+        0.045000000000000026,
+        0.055857617287054906
+      ],
+      "inertia_com_link_kg_m2": [
+        [
+          1.2761750080179608e-08,
+          -1.1707958011036502e-22,
+          -5.898256113175966e-25
+        ],
+        [
+          -1.1707958011036777e-22,
+          1.2761750080180041e-08,
+          1.0134321312536017e-24
+        ],
+        [
+          -5.898256113175967e-25,
+          1.0134321312536017e-24,
+          2.220265326939989e-09
+        ]
+      ],
+      "configuration_matches_loaded": true,
+      "issues": [
+        "No explicit part material; default/body/override mass must be checked"
+      ]
+    },
+    {
+      "component": "link3-1/J3限位1挡块-1",
+      "link": "link3",
+      "confidence": "unverified_CAD_only",
+      "document": "C:\\Users\\ASUS\\Desktop\\mmhand\\机械臂10010l\\J3限位1挡块.SLDPRT",
+      "configuration": "默认",
+      "material": "5052-H38",
+      "material_database": "solidworks materials",
+      "mass_kg": 0.0011313660543732975,
+      "volume_m3": 4.2215151282585727e-07,
+      "effective_density_kg_m3": 2680.0,
+      "com_link_m": [
+        0.04156418985477582,
+        0.0172080407853321,
+        0.0032000000000000353
+      ],
+      "inertia_com_link_kg_m2": [
+        [
+          1.3861876897629179e-08,
+          4.0938908619102255e-09,
+          -1.0739555252549657e-24
+        ],
+        [
+          4.0938908619102255e-09,
+          1.1598257566487932e-08,
+          -1.2183173981064501e-24
+        ],
+        [
+          -1.0739555252549655e-24,
+          -1.2183173981064505e-24,
+          2.0746109237561704e-08
+        ]
+      ],
+      "configuration_matches_loaded": true,
+      "issues": []
+    },
+    {
+      "component": "link3-1/J3限位1挡块-2",
+      "link": "link3",
+      "confidence": "unverified_CAD_only",
+      "document": "C:\\Users\\ASUS\\Desktop\\mmhand\\机械臂10010l\\J3限位1挡块.SLDPRT",
+      "configuration": "默认",
+      "material": "5052-H38",
+      "material_database": "solidworks materials",
+      "mass_kg": 0.0011313660543732975,
+      "volume_m3": 4.2215151282585727e-07,
+      "effective_density_kg_m3": 2680.0,
+      "com_link_m": [
+        -0.041578359820151505,
+        -0.017172457190171134,
+        0.0032000000000000036
+      ],
+      "inertia_com_link_kg_m2": [
+        [
+          1.4020930734936724e-08,
+          4.046554945289665e-09,
+          2.1080139928468273e-24
+        ],
+        [
+          4.046554945289664e-09,
+          1.1439203729180387e-08,
+          -1.1473975721950513e-24
+        ],
+        [
+          2.108013992846827e-24,
+          -1.1473975721950517e-24,
+          2.074610923756171e-08
+        ]
+      ],
+      "configuration_matches_loaded": true,
+      "issues": []
+    },
+    {
+      "component": "link3-1/J4限位1-1",
+      "link": "link3",
+      "confidence": "unverified_CAD_only",
+      "document": "C:\\Users\\ASUS\\Desktop\\mmhand\\机械臂10010l\\J4限位1.SLDPRT",
+      "configuration": "默认",
+      "material": "5052-H38",
+      "material_database": "solidworks materials",
+      "mass_kg": 0.006786541873324994,
+      "volume_m3": 2.532291743777983e-06,
+      "effective_density_kg_m3": 2680.0,
+      "com_link_m": [
+        -0.02589999999991724,
+        -0.032109878142891596,
+        0.1579967674674757
+      ],
+      "inertia_com_link_kg_m2": [
+        [
+          5.016675765273315e-06,
+          5.631353625520489e-18,
+          5.261307750448669e-18
+        ],
+        [
+          5.6313536255204884e-18,
+          2.809413774432652e-06,
+          -2.0610106230349985e-06
+        ],
+        [
+          5.261307750448669e-18,
+          -2.0610106230349985e-06,
+          2.2174418036506508e-06
+        ]
+      ],
+      "configuration_matches_loaded": true,
+      "issues": []
+    },
+    {
+      "component": "link3-1/J4挡块-1",
+      "link": "link3",
+      "confidence": "unverified_CAD_only",
+      "document": "C:\\Users\\ASUS\\Desktop\\mmhand\\机械臂10010l\\J4挡块.SLDPRT",
+      "configuration": "默认",
+      "material": "5052-H38",
+      "material_database": "solidworks materials",
+      "mass_kg": 0.000739597669498735,
+      "volume_m3": 2.759692796637071e-07,
+      "effective_density_kg_m3": 2680.0,
+      "com_link_m": [
+        -0.028900000000061103,
+        0.024581865588824636,
+        0.10091420012577033
+      ],
+      "inertia_com_link_kg_m2": [
+        [
+          1.431515365664749e-08,
+          1.0801757345659574e-20,
+          3.0590729200759303e-21
+        ],
+        [
+          1.0801757345659578e-20,
+          1.0083325045970641e-08,
+          -1.1779563348689052e-09
+        ],
+        [
+          3.0590729200759296e-21,
+          -1.1779563348689056e-09,
+          5.341225114924891e-09
+        ]
+      ],
+      "configuration_matches_loaded": true,
+      "issues": []
+    },
+    {
+      "component": "link3-1/J4挡块-2",
+      "link": "link3",
+      "confidence": "unverified_CAD_only",
+      "document": "C:\\Users\\ASUS\\Desktop\\mmhand\\机械臂10010l\\J4挡块.SLDPRT",
+      "configuration": "默认",
+      "material": "5052-H38",
+      "material_database": "solidworks materials",
+      "mass_kg": 0.000739597669498735,
+      "volume_m3": 2.759692796637071e-07,
+      "effective_density_kg_m3": 2680.0,
+      "com_link_m": [
+        -0.028899999999906577,
+        -0.03629651850242843,
+        0.1673512982166155
+      ],
+      "inertia_com_link_kg_m2": [
+        [
+          1.4315153656647493e-08,
+          2.3294525638530086e-20,
+          1.9227893392236707e-21
+        ],
+        [
+          2.329452563853009e-20,
+          5.172696720700416e-09,
+          -7.483320256188272e-10
+        ],
+        [
+          1.922789339223672e-21,
+          -7.48332025618828e-10,
+          1.0251853440195117e-08
+        ]
+      ],
+      "configuration_matches_loaded": true,
+      "issues": []
+    },
+    {
+      "component": "link3-1/M4_双通内螺纹_Ø8x40_打印放松配合_内Ø3p8.step-2",
+      "link": "link3",
+      "confidence": "unverified_CAD_only",
+      "document": "C:\\Users\\ASUS\\AppData\\Local\\Temp\\swx28864\\IC~~\\M4_双通内螺纹_Ø8x40_打印放松配合_内Ø3p8.step.SLDPRT",
+      "configuration": "默认",
+      "material": "",
+      "material_database": "",
+      "mass_kg": 0.001549466483473156,
+      "volume_m3": 1.549466483473156e-06,
+      "effective_density_kg_m3": 1000.0,
+      "com_link_m": [
+        0.00039999999996346083,
+        0.015000000000021886,
+        0.08350000000000006
+      ],
+      "inertia_com_link_kg_m2": [
+        [
+          1.5182300190432303e-08,
+          -5.020862033109268e-19,
+          6.858091874306182e-22
+        ],
+        [
+          -5.020862033109267e-19,
+          2.122296460442549e-07,
+          7.095871515501603e-24
+        ],
+        [
+          6.858091874306149e-22,
+          -7.899945567159434e-24,
+          2.122296460442549e-07
+        ]
+      ],
+      "configuration_matches_loaded": true,
+      "issues": [
+        "No explicit part material; default/body/override mass must be checked"
+      ]
+    },
+    {
+      "component": "link3-1/M4_双通内螺纹_Ø8x40_打印放松配合_内Ø3p8.step-1",
+      "link": "link3",
+      "confidence": "unverified_CAD_only",
+      "document": "C:\\Users\\ASUS\\AppData\\Local\\Temp\\swx28864\\IC~~\\M4_双通内螺纹_Ø8x40_打印放松配合_内Ø3p8.step.SLDPRT",
+      "configuration": "默认",
+      "material": "",
+      "material_database": "",
+      "mass_kg": 0.001549466483473156,
+      "volume_m3": 1.549466483473156e-06,
+      "effective_density_kg_m3": 1000.0,
+      "com_link_m": [
+        0.0004000000000398442,
+        -0.01499999999997814,
+        0.0835000000000002
+      ],
+      "inertia_com_link_kg_m2": [
+        [
+          1.5182300190432303e-08,
+          -5.020862033109268e-19,
+          6.858091874306182e-22
+        ],
+        [
+          -5.020862033109267e-19,
+          2.122296460442549e-07,
+          7.095871515501603e-24
+        ],
+        [
+          6.858091874306149e-22,
+          -7.899945567159434e-24,
+          2.122296460442549e-07
+        ]
+      ],
+      "configuration_matches_loaded": true,
+      "issues": [
+        "No explicit part material; default/body/override mass must be checked"
+      ]
+    },
+    {
+      "component": "link4-1/DM-J4340-2EC-V1.1_3d_20260325_1.stp-1/DM_4340_3D_1_1_1_1_4.stp-1",
+      "link": "link4",
+      "confidence": "unverified_CAD_only",
+      "document": "C:\\Users\\ASUS\\AppData\\Local\\Temp\\swx28864\\IC~~\\DM_4340_3D_1_1_1_1_4.stp.SLDPRT",
+      "configuration": "默认",
+      "material": "",
+      "material_database": "",
+      "mass_kg": 0.09645721487230051,
+      "volume_m3": 9.645721487230051e-05,
+      "effective_density_kg_m3": 1000.0,
+      "com_link_m": [
+        0.08929362705072648,
+        -0.002809218560265762,
+        -0.02936339999999896
+      ],
+      "inertia_com_link_kg_m2": [
+        [
+          3.8089563711616205e-05,
+          -2.291917637659348e-07,
+          7.508512259886553e-20
+        ],
+        [
+          -2.2919176376593504e-07,
+          3.099733848488722e-05,
+          -1.5854582882881342e-20
+        ],
+        [
+          7.508512259886558e-20,
+          -1.585458288288134e-20,
+          3.098994262303581e-05
+        ]
+      ],
+      "configuration_matches_loaded": true,
+      "issues": [
+        "No explicit part material; default/body/override mass must be checked",
+        "Motor/electronics CAD must be checked against vendor or measured mass"
+      ]
+    },
+    {
+      "component": "link4-1/DM-J4340-2EC-V1.1_3d_20260325_1.stp-1/4340__3D_20240814_1_2_4.stp-1",
+      "link": "link4",
+      "confidence": "unverified_CAD_only",
+      "document": "C:\\Users\\ASUS\\AppData\\Local\\Temp\\swx28864\\IC~~\\4340__3D_20240814_1_2_4.stp.SLDPRT",
+      "configuration": "默认",
+      "material": "",
+      "material_database": "",
+      "mass_kg": 0.005708415156186767,
+      "volume_m3": 5.708415156186767e-06,
+      "effective_density_kg_m3": 1000.0,
+      "com_link_m": [
+        0.10811316501701801,
+        -0.003405819058848098,
+        -0.02936338509110538
+      ],
+      "inertia_com_link_kg_m2": [
+        [
+          3.581723455315619e-06,
+          -5.5223076758876625e-08,
+          3.4831001436690587e-10
+        ],
+        [
+          -5.522307675887662e-08,
+          1.830477769226743e-06,
+          1.1055149922644073e-08
+        ],
+        [
+          3.4831001436690587e-10,
+          1.1055149922644073e-08,
+          1.790435062017261e-06
+        ]
+      ],
+      "configuration_matches_loaded": true,
+      "issues": [
+        "No explicit part material; default/body/override mass must be checked",
+        "Motor/electronics CAD must be checked against vendor or measured mass"
+      ]
+    },
+    {
+      "component": "link4-1/DM-J4340-2EC-V1.1_3d_20260325_1.stp-1/M2_5-L4.stp-2",
+      "link": "link4",
+      "confidence": "unverified_CAD_only",
+      "document": "C:\\Users\\ASUS\\AppData\\Local\\Temp\\swx28864\\IC~~\\M2_5-L4.stp.SLDPRT",
+      "configuration": "默认",
+      "material": "",
+      "material_database": "",
+      "mass_kg": 3.7479453362618475e-05,
+      "volume_m3": 3.7479453362618474e-08,
+      "effective_density_kg_m3": 1000.0,
+      "com_link_m": [
+        0.06548379658150139,
+        -0.015504561853424262,
+        -0.042798428790820325
+      ],
+      "inertia_com_link_kg_m2": [
+        [
+          6.01966883161191e-11,
+          1.8763909404405834e-12,
+          2.0691803528674056e-17
+        ],
+        [
+          1.8763909404405822e-12,
+          1.1970098120291258e-10,
+          7.585666289195788e-16
+        ],
+        [
+          2.0691803528674056e-17,
+          7.585666289195788e-16,
+          1.197447248070365e-10
+        ]
+      ],
+      "configuration_matches_loaded": true,
+      "issues": [
+        "No explicit part material; default/body/override mass must be checked",
+        "Motor/electronics CAD must be checked against vendor or measured mass"
+      ]
+    },
+    {
+      "component": "link4-1/DM-J4340-2EC-V1.1_3d_20260325_1.stp-1/M2_5-L4.stp-4",
+      "link": "link4",
+      "confidence": "unverified_CAD_only",
+      "document": "C:\\Users\\ASUS\\AppData\\Local\\Temp\\swx28864\\IC~~\\M2_5-L4.stp.SLDPRT",
+      "configuration": "默认",
+      "material": "",
+      "material_database": "",
+      "mass_kg": 3.7479453362618475e-05,
+      "volume_m3": 3.7479453362618474e-08,
+      "effective_density_kg_m3": 1000.0,
+      "com_link_m": [
+        0.0663298464809214,
+        0.011352115168582323,
+        -0.015928428894257985
+      ],
+      "inertia_com_link_kg_m2": [
+        [
+          6.019668825180798e-11,
+          1.8763899207200223e-12,
+          2.7095186274969657e-17
+        ],
+        [
+          1.8763899207200235e-12,
+          1.1970098126722372e-10,
+          7.583649069670077e-16
+        ],
+        [
+          2.7095186274969657e-17,
+          7.583649069670077e-16,
+          1.197447248070365e-10
+        ]
+      ],
+      "configuration_matches_loaded": true,
+      "issues": [
+        "No explicit part material; default/body/override mass must be checked",
+        "Motor/electronics CAD must be checked against vendor or measured mass"
+      ]
+    },
+    {
+      "component": "link4-1/DM-J4340-2EC-V1.1_3d_20260325_1.stp-1/4310_202409130001.stp-1",
+      "link": "link4",
+      "confidence": "unverified_CAD_only",
+      "document": "C:\\Users\\ASUS\\AppData\\Local\\Temp\\swx28864\\IC~~\\4310_202409130001.stp.SLDPRT",
+      "configuration": "默认",
+      "material": "",
+      "material_database": "",
+      "mass_kg": 0.004894099141043572,
+      "volume_m3": 4.894099141043572e-06,
+      "effective_density_kg_m3": 1000.0,
+      "com_link_m": [
+        0.06851144272928383,
+        -0.0016595114268008484,
+        -0.02934853323620531
+      ],
+      "inertia_com_link_kg_m2": [
+        [
+          2.3895763532775922e-06,
+          -3.9998761325025646e-08,
+          -1.4057504363576081e-09
+        ],
+        [
+          -3.9998761325025646e-08,
+          1.1878708885304857e-06,
+          7.538515217913313e-12
+        ],
+        [
+          -1.405750436357608e-09,
+          7.53851521791331e-12,
+          1.218851060358412e-06
+        ]
+      ],
+      "configuration_matches_loaded": true,
+      "issues": [
+        "No explicit part material; default/body/override mass must be checked",
+        "Motor/electronics CAD must be checked against vendor or measured mass"
+      ]
+    },
+    {
+      "component": "link4-1/DM-J4340-2EC-V1.1_3d_20260325_1.stp-1/M2_5-L4.stp-1",
+      "link": "link4",
+      "confidence": "unverified_CAD_only",
+      "document": "C:\\Users\\ASUS\\AppData\\Local\\Temp\\swx28864\\IC~~\\M2_5-L4.stp.SLDPRT",
+      "configuration": "默认",
+      "material": "",
+      "material_database": "",
+      "mass_kg": 3.7479453362618475e-05,
+      "volume_m3": 3.7479453362618474e-08,
+      "effective_density_kg_m3": 1000.0,
+      "com_link_m": [
+        0.06632984647897178,
+        0.011352115106690559,
+        -0.04279842885274274
+      ],
+      "inertia_com_link_kg_m2": [
+        [
+          6.019667325023518e-11,
+          1.875910002509324e-12,
+          -2.3382875782978016e-17
+        ],
+        [
+          1.875910002509324e-12,
+          1.1968562903067602e-10,
+          -7.58481853673251e-16
+        ],
+        [
+          -2.3382875782978016e-17,
+          -7.58481853673251e-16,
+          1.19760092045157e-10
+        ]
+      ],
+      "configuration_matches_loaded": true,
+      "issues": [
+        "No explicit part material; default/body/override mass must be checked",
+        "Motor/electronics CAD must be checked against vendor or measured mass"
+      ]
+    },
+    {
+      "component": "link4-1/DM-J4340-2EC-V1.1_3d_20260325_1.stp-1/4040V300.stp-1",
+      "link": "link4",
+      "confidence": "unverified_CAD_only",
+      "document": "C:\\Users\\ASUS\\AppData\\Local\\Temp\\swx28864\\IC~~\\4040V300.stp.SLDPRT",
+      "configuration": "默认",
+      "material": "",
+      "material_database": "",
+      "mass_kg": 0.00525938932526678,
+      "volume_m3": 5.25938932526678e-06,
+      "effective_density_kg_m3": 1000.0000000000001,
+      "com_link_m": [
+        0.060622195478838944,
+        -0.001909485359921355,
+        -0.02741454064710931
+      ],
+      "inertia_com_link_kg_m2": [
+        [
+          2.347455703328305e-06,
+          -3.340380192914757e-08,
+          1.1445806335358494e-08
+        ],
+        [
+          -3.340380192914756e-08,
+          1.2880558546003682e-06,
+          1.0309427397148588e-10
+        ],
+        [
+          1.1445806335358494e-08,
+          1.0309427397148591e-10,
+          1.0922471958805986e-06
+        ]
+      ],
+      "configuration_matches_loaded": true,
+      "issues": [
+        "No explicit part material; default/body/override mass must be checked",
+        "Motor/electronics CAD must be checked against vendor or measured mass"
+      ]
+    },
+    {
+      "component": "link4-1/DM-J4340-2EC-V1.1_3d_20260325_1.stp-1/M2_5-800.stp-1",
+      "link": "link4",
+      "confidence": "unverified_CAD_only",
+      "document": "C:\\Users\\ASUS\\AppData\\Local\\Temp\\swx28864\\IC~~\\M2_5-800.stp.SLDPRT",
+      "configuration": "默认",
+      "material": "",
+      "material_database": "",
+      "mass_kg": 5.448562864841278e-05,
+      "volume_m3": 5.448562864841278e-08,
+      "effective_density_kg_m3": 1000.0,
+      "com_link_m": [
+        0.1061322268706041,
+        -0.0033439342569878804,
+        -0.05586255268050961
+      ],
+      "inertia_com_link_kg_m2": [
+        [
+          6.618517532138419e-11,
+          1.5359518289834725e-11,
+          -4.439999481937617e-15
+        ],
+        [
+          1.5359518289834725e-11,
+          5.621691776097754e-10,
+          -3.617787513778654e-15
+        ],
+        [
+          -4.439999481937617e-15,
+          -3.617787513778654e-15,
+          5.626333679807322e-10
+        ]
+      ],
+      "configuration_matches_loaded": true,
+      "issues": [
+        "No explicit part material; default/body/override mass must be checked",
+        "Motor/electronics CAD must be checked against vendor or measured mass"
+      ]
+    },
+    {
+      "component": "link4-1/DM-J4340-2EC-V1.1_3d_20260325_1.stp-1/M2_5-800.stp-2",
+      "link": "link4",
+      "confidence": "unverified_CAD_only",
+      "document": "C:\\Users\\ASUS\\AppData\\Local\\Temp\\swx28864\\IC~~\\M2_5-800.stp.SLDPRT",
+      "configuration": "默认",
+      "material": "",
+      "material_database": "",
+      "mass_kg": 5.448562864841278e-05,
+      "volume_m3": 5.448562864841278e-08,
+      "effective_density_kg_m3": 1000.0,
+      "com_link_m": [
+        0.10540964664882732,
+        -0.026281238134746737,
+        -0.04261253148462158
+      ],
+      "inertia_com_link_kg_m2": [
+        [
+          6.619374451842924e-11,
+          1.549521256787628e-11,
+          2.4023420704328997e-13
+        ],
+        [
+          1.5495212567876283e-11,
+          5.621492209572053e-10,
+          -1.0388108960307937e-14
+        ],
+        [
+          2.4023420704329083e-13,
+          -1.0388108960336118e-14,
+          5.626447554362579e-10
+        ]
+      ],
+      "configuration_matches_loaded": true,
+      "issues": [
+        "No explicit part material; default/body/override mass must be checked",
+        "Motor/electronics CAD must be checked against vendor or measured mass"
+      ]
+    },
+    {
+      "component": "link4-1/DM-J4340-2EC-V1.1_3d_20260325_1.stp-1/G43_V1_1_3-230824_4.stp-1",
+      "link": "link4",
+      "confidence": "unverified_CAD_only",
+      "document": "C:\\Users\\ASUS\\AppData\\Local\\Temp\\swx28864\\IC~~\\G43_V1_1_3-230824_4.stp.SLDPRT",
+      "configuration": "默认",
+      "material": "",
+      "material_database": "",
+      "mass_kg": 0.0,
+      "volume_m3": 0.0,
+      "effective_density_kg_m3": null,
+      "com_link_m": [
+        0.06516765719811274,
+        -0.0020529378887082506,
+        -0.02936342884254317
+      ],
+      "inertia_com_link_kg_m2": [
+        [
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0
+        ]
+      ],
+      "configuration_matches_loaded": true,
+      "issues": [
+        "No explicit part material; default/body/override mass must be checked",
+        "Non-positive mass or volume",
+        "Motor/electronics CAD must be checked against vendor or measured mass"
+      ]
+    },
+    {
+      "component": "link4-1/DM-J4340-2EC-V1.1_3d_20260325_1.stp-1/M2_5-800.stp-3",
+      "link": "link4",
+      "confidence": "unverified_CAD_only",
+      "document": "C:\\Users\\ASUS\\AppData\\Local\\Temp\\swx28864\\IC~~\\M2_5-800.stp.SLDPRT",
+      "configuration": "默认",
+      "material": "",
+      "material_database": "",
+      "mass_kg": 5.448562864841278e-05,
+      "volume_m3": 5.448562864841278e-08,
+      "effective_density_kg_m3": 1000.0,
+      "com_link_m": [
+        0.10540966282280238,
+        -0.02628072471440464,
+        -0.016113378804110873
+      ],
+      "inertia_com_link_kg_m2": [
+        [
+          6.621138332850174e-11,
+          1.5774996943780935e-11,
+          2.4485171361597685e-13
+        ],
+        [
+          1.5774996943780938e-11,
+          5.621380873749072e-10,
+          -1.1356056906933138e-15
+        ],
+        [
+          2.4485171361597746e-13,
+          -1.1356056906121118e-15,
+          5.626382502084833e-10
+        ]
+      ],
+      "configuration_matches_loaded": true,
+      "issues": [
+        "No explicit part material; default/body/override mass must be checked",
+        "Motor/electronics CAD must be checked against vendor or measured mass"
+      ]
+    },
+    {
+      "component": "link4-1/DM-J4340-2EC-V1.1_3d_20260325_1.stp-1/M2_5-800.stp-4",
+      "link": "link4",
+      "confidence": "unverified_CAD_only",
+      "document": "C:\\Users\\ASUS\\AppData\\Local\\Temp\\swx28864\\IC~~\\M2_5-800.stp.SLDPRT",
+      "configuration": "默认",
+      "material": "",
+      "material_database": "",
+      "mass_kg": 5.448562864841278e-05,
+      "volume_m3": 5.448562864841278e-08,
+      "effective_density_kg_m3": 1000.0,
+      "com_link_m": [
+        0.10613225921855415,
+        -0.0033429074163056284,
+        -0.0028642473194881424
+      ],
+      "inertia_com_link_kg_m2": [
+        [
+          6.622044004273463e-11,
+          1.5918677587355408e-11,
+          4.203483659207051e-15
+        ],
+        [
+          1.5918677587355408e-11,
+          5.621339128884251e-10,
+          -3.890078014800352e-15
+        ],
+        [
+          4.203483659207051e-15,
+          -3.890078014800352e-15,
+          5.626333679807322e-10
+        ]
+      ],
+      "configuration_matches_loaded": true,
+      "issues": [
+        "No explicit part material; default/body/override mass must be checked",
+        "Motor/electronics CAD must be checked against vendor or measured mass"
+      ]
+    },
+    {
+      "component": "link4-1/DM-J4340-2EC-V1.1_3d_20260325_1.stp-1/M2_5-800.stp-5",
+      "link": "link4",
+      "confidence": "unverified_CAD_only",
+      "document": "C:\\Users\\ASUS\\AppData\\Local\\Temp\\swx28864\\IC~~\\M2_5-800.stp.SLDPRT",
+      "configuration": "默认",
+      "material": "",
+      "material_database": "",
+      "mass_kg": 5.448562864841278e-05,
+      "volume_m3": 5.448562864841278e-08,
+      "effective_density_kg_m3": 1000.0,
+      "com_link_m": [
+        0.10685483944033099,
+        0.01959439646145323,
+        -0.016114268515376118
+      ],
+      "inertia_com_link_kg_m2": [
+        [
+          6.621184826624202e-11,
+          1.5782266556163485e-11,
+          -2.404117141444344e-13
+        ],
+        [
+          1.5782266556163482e-11,
+          5.621311172093925e-10,
+          4.7533932048188964e-15
+        ],
+        [
+          -2.404117141444351e-13,
+          4.7533932048187276e-15,
+          5.626447554362579e-10
+        ]
+      ],
+      "configuration_matches_loaded": true,
+      "issues": [
+        "No explicit part material; default/body/override mass must be checked",
+        "Motor/electronics CAD must be checked against vendor or measured mass"
+      ]
+    },
+    {
+      "component": "link4-1/DM-J4340-2EC-V1.1_3d_20260325_1.stp-1/M2_5-800.stp-6",
+      "link": "link4",
+      "confidence": "unverified_CAD_only",
+      "document": "C:\\Users\\ASUS\\AppData\\Local\\Temp\\swx28864\\IC~~\\M2_5-800.stp.SLDPRT",
+      "configuration": "默认",
+      "material": "",
+      "material_database": "",
+      "mass_kg": 5.448562864841278e-05,
+      "volume_m3": 5.448562864841278e-08,
+      "effective_density_kg_m3": 1000.0,
+      "com_link_m": [
+        0.10685482326635594,
+        0.019593883041111117,
+        -0.04261342119588688
+      ],
+      "inertia_com_link_kg_m2": [
+        [
+          6.619422235496409e-11,
+          1.550289163454744e-11,
+          -2.4443769071289324e-13
+        ],
+        [
+          1.550289163454744e-11,
+          5.621552483484448e-10,
+          1.4278186975558074e-14
+        ],
+        [
+          -2.4443769071289324e-13,
+          1.4278186975568345e-14,
+          5.626382502084833e-10
+        ]
+      ],
+      "configuration_matches_loaded": true,
+      "issues": [
+        "No explicit part material; default/body/override mass must be checked",
+        "Motor/electronics CAD must be checked against vendor or measured mass"
+      ]
+    },
+    {
+      "component": "link4-1/DM-J4340-2EC-V1.1_3d_20260325_1.stp-1/M2_5-L4.stp-3",
+      "link": "link4",
+      "confidence": "unverified_CAD_only",
+      "document": "C:\\Users\\ASUS\\AppData\\Local\\Temp\\swx28864\\IC~~\\M2_5-L4.stp.SLDPRT",
+      "configuration": "默认",
+      "material": "",
+      "material_database": "",
+      "mass_kg": 3.7479453362618475e-05,
+      "volume_m3": 3.7479453362618474e-08,
+      "effective_density_kg_m3": 1000.0,
+      "com_link_m": [
+        0.06548379658345096,
+        -0.015504561791532498,
+        -0.01592842883233557
+      ],
+      "inertia_com_link_kg_m2": [
+        [
+          6.019667284699132e-11,
+          1.875903608653154e-12,
+          -2.4404115683896332e-17
+        ],
+        [
+          1.875903608653154e-12,
+          1.196856294339199e-10,
+          -7.584496821609397e-16
+        ],
+        [
+          -2.4404115683896332e-17,
+          -7.584496821609397e-16,
+          1.19760092045157e-10
+        ]
+      ],
+      "configuration_matches_loaded": true,
+      "issues": [
+        "No explicit part material; default/body/override mass must be checked",
+        "Motor/electronics CAD must be checked against vendor or measured mass"
+      ]
+    },
+    {
+      "component": "link4-1/DM-J4340-2EC-V1.1_3d_20260325_1.stp-1/M2_5-L6.stp-1",
+      "link": "link4",
+      "confidence": "unverified_CAD_only",
+      "document": "C:\\Users\\ASUS\\AppData\\Local\\Temp\\swx28864\\IC~~\\M2_5-L6.stp.SLDPRT",
+      "configuration": "默认",
+      "material": "",
+      "material_database": "",
+      "mass_kg": 4.729576713735668e-05,
+      "volume_m3": 4.729576713735668e-08,
+      "effective_density_kg_m3": 1000.0,
+      "com_link_m": [
+        0.06942045480109507,
+        -0.024714741692507675,
+        -0.016363399997696697
+      ],
+      "inertia_com_link_kg_m2": [
+        [
+          6.799806368822348e-11,
+          6.207335829038553e-12,
+          -2.9446854332578674e-17
+        ],
+        [
+          6.207335829038553e-12,
+          2.6484593153045653e-10,
+          -8.832001703244447e-16
+        ],
+        [
+          -2.944685433257868e-17,
+          -8.832001703244445e-16,
+          2.6505937400186175e-10
+        ]
+      ],
+      "configuration_matches_loaded": true,
+      "issues": [
+        "No explicit part material; default/body/override mass must be checked",
+        "Motor/electronics CAD must be checked against vendor or measured mass"
+      ]
+    },
+    {
+      "component": "link4-1/DM-J4340-2EC-V1.1_3d_20260325_1.stp-1/M2_5-L6.stp-2",
+      "link": "link4",
+      "confidence": "unverified_CAD_only",
+      "document": "C:\\Users\\ASUS\\AppData\\Local\\Temp\\swx28864\\IC~~\\M2_5-L6.stp.SLDPRT",
+      "configuration": "默认",
+      "material": "",
+      "material_database": "",
+      "mass_kg": 4.729576713735668e-05,
+      "volume_m3": 4.729576713735668e-08,
+      "effective_density_kg_m3": 1000.0,
+      "com_link_m": [
+        0.06972010383910657,
+        -0.015202799856277508,
+        -0.006846739499296699
+      ],
+      "inertia_com_link_kg_m2": [
+        [
+          6.799806368822348e-11,
+          6.207335829038553e-12,
+          -2.9446854332578674e-17
+        ],
+        [
+          6.207335829038553e-12,
+          2.6484593153045653e-10,
+          -8.832001703244447e-16
+        ],
+        [
+          -2.944685433257868e-17,
+          -8.832001703244445e-16,
+          2.6505937400186175e-10
+        ]
+      ],
+      "configuration_matches_loaded": true,
+      "issues": [
+        "No explicit part material; default/body/override mass must be checked",
+        "Motor/electronics CAD must be checked against vendor or measured mass"
+      ]
+    },
+    {
+      "component": "link4-1/DM-J4340-2EC-V1.1_3d_20260325_1.stp-1/M2_5-L6.stp-3",
+      "link": "link4",
+      "confidence": "unverified_CAD_only",
+      "document": "C:\\Users\\ASUS\\AppData\\Local\\Temp\\swx28864\\IC~~\\M2_5-L6.stp.SLDPRT",
+      "configuration": "默认",
+      "material": "",
+      "material_database": "",
+      "mass_kg": 4.729576713735668e-05,
+      "volume_m3": 4.729576713735668e-08,
+      "effective_density_kg_m3": 1000.0,
+      "com_link_m": [
+        0.07053876023539304,
+        0.01078430851893074,
+        -0.006846739499296643
+      ],
+      "inertia_com_link_kg_m2": [
+        [
+          6.799806368822348e-11,
+          6.207335829038553e-12,
+          -2.9446854332578674e-17
+        ],
+        [
+          6.207335829038553e-12,
+          2.6484593153045653e-10,
+          -8.832001703244447e-16
+        ],
+        [
+          -2.944685433257868e-17,
+          -8.832001703244445e-16,
+          2.6505937400186175e-10
+        ]
+      ],
+      "configuration_matches_loaded": true,
+      "issues": [
+        "No explicit part material; default/body/override mass must be checked",
+        "Motor/electronics CAD must be checked against vendor or measured mass"
+      ]
+    },
+    {
+      "component": "link4-1/DM-J4340-2EC-V1.1_3d_20260325_1.stp-1/M2_5-L6.stp-7",
+      "link": "link4",
+      "confidence": "unverified_CAD_only",
+      "document": "C:\\Users\\ASUS\\AppData\\Local\\Temp\\swx28864\\IC~~\\M2_5-L6.stp.SLDPRT",
+      "configuration": "默认",
+      "material": "",
+      "material_database": "",
+      "mass_kg": 4.729576713735668e-05,
+      "volume_m3": 4.729576713735668e-08,
+      "effective_density_kg_m3": 1000.0,
+      "com_link_m": [
+        0.07094808843353648,
+        0.023777862706534883,
+        -0.029363399997696653
+      ],
+      "inertia_com_link_kg_m2": [
+        [
+          6.799806368822348e-11,
+          6.207335829038553e-12,
+          -2.9446854332578674e-17
+        ],
+        [
+          6.207335829038553e-12,
+          2.6484593153045653e-10,
+          -8.832001703244447e-16
+        ],
+        [
+          -2.944685433257868e-17,
+          -8.832001703244445e-16,
+          2.6505937400186175e-10
+        ]
+      ],
+      "configuration_matches_loaded": true,
+      "issues": [
+        "No explicit part material; default/body/override mass must be checked",
+        "Motor/electronics CAD must be checked against vendor or measured mass"
+      ]
+    },
+    {
+      "component": "link4-1/DM-J4340-2EC-V1.1_3d_20260325_1.stp-1/_M2_5-100001.stp-2",
+      "link": "link4",
+      "confidence": "unverified_CAD_only",
+      "document": "C:\\Users\\ASUS\\AppData\\Local\\Temp\\swx28864\\IC~~\\_M2_5-100001.stp.SLDPRT",
+      "configuration": "默认",
+      "material": "",
+      "material_database": "",
+      "mass_kg": 4.988056443989886e-05,
+      "volume_m3": 4.988056443989886e-08,
+      "effective_density_kg_m3": 1000.0,
+      "com_link_m": [
+        0.062185882884475185,
+        -0.019997961583789615,
+        -0.047395158280933214
+      ],
+      "inertia_com_link_kg_m2": [
+        [
+          6.370479124264454e-11,
+          1.44380130767672e-11,
+          -2.0044225712030608e-13
+        ],
+        [
+          1.4438013076767203e-11,
+          5.284640101713006e-10,
+          1.9388908047115e-14
+        ],
+        [
+          -2.0044225712030605e-13,
+          1.9388908047115e-14,
+          5.289031968996439e-10
+        ]
+      ],
+      "configuration_matches_loaded": true,
+      "issues": [
+        "No explicit part material; default/body/override mass must be checked",
+        "Motor/electronics CAD must be checked against vendor or measured mass"
+      ]
+    },
+    {
+      "component": "link4-1/DM-J4340-2EC-V1.1_3d_20260325_1.stp-1/_M2_5-100001.stp-3",
+      "link": "link4",
+      "confidence": "unverified_CAD_only",
+      "document": "C:\\Users\\ASUS\\AppData\\Local\\Temp\\swx28864\\IC~~\\_M2_5-100001.stp.SLDPRT",
+      "configuration": "默认",
+      "material": "",
+      "material_database": "",
+      "mass_kg": 4.988056443989886e-05,
+      "volume_m3": 4.988056443989886e-08,
+      "effective_density_kg_m3": 1000.0,
+      "com_link_m": [
+        0.06218582882260531,
+        -0.019999677702628383,
+        -0.011333416374312196
+      ],
+      "inertia_com_link_kg_m2": [
+        [
+          6.370580087148502e-11,
+          1.445388311289477e-11,
+          2.1661346174535398e-13
+        ],
+        [
+          1.4453883112894772e-11,
+          5.284541953433814e-10,
+          -1.989833987426889e-14
+        ],
+        [
+          2.16613461745354e-13,
+          -1.989833987426889e-14,
+          5.289120020987227e-10
+        ]
+      ],
+      "configuration_matches_loaded": true,
+      "issues": [
+        "No explicit part material; default/body/override mass must be checked",
+        "Motor/electronics CAD must be checked against vendor or measured mass"
+      ]
+    },
+    {
+      "component": "link4-1/DM-J4340-2EC-V1.1_3d_20260325_1.stp-1/_M2_5-100001.stp-4",
+      "link": "link4",
+      "confidence": "unverified_CAD_only",
+      "document": "C:\\Users\\ASUS\\AppData\\Local\\Temp\\swx28864\\IC~~\\_M2_5-100001.stp.SLDPRT",
+      "configuration": "默认",
+      "material": "",
+      "material_database": "",
+      "mass_kg": 4.988056443989886e-05,
+      "volume_m3": 4.988056443989886e-08,
+      "effective_density_kg_m3": 1000.0,
+      "com_link_m": [
+        0.063321297117724,
+        0.016044183648377314,
+        -0.011331699404145131
+      ],
+      "inertia_com_link_kg_m2": [
+        [
+          6.37321249116095e-11,
+          1.4871417185798068e-11,
+          2.0126519648498574e-13
+        ],
+        [
+          1.4871417185798068e-11,
+          5.284366765023356e-10,
+          6.734157407618192e-15
+        ],
+        [
+          2.0126519648498574e-13,
+          6.7341574076181885e-15,
+          5.289031968996439e-10
+        ]
+      ],
+      "configuration_matches_loaded": true,
+      "issues": [
+        "No explicit part material; default/body/override mass must be checked",
+        "Motor/electronics CAD must be checked against vendor or measured mass"
+      ]
+    },
+    {
+      "component": "link4-1/DM-J4340-2EC-V1.1_3d_20260325_1.stp-1/M2_5-L6.stp-6",
+      "link": "link4",
+      "confidence": "unverified_CAD_only",
+      "document": "C:\\Users\\ASUS\\AppData\\Local\\Temp\\swx28864\\IC~~\\M2_5-L6.stp.SLDPRT",
+      "configuration": "默认",
+      "material": "",
+      "material_database": "",
+      "mass_kg": 4.729576713735668e-05,
+      "volume_m3": 4.729576713735668e-08,
+      "effective_density_kg_m3": 1000.0,
+      "com_link_m": [
+        0.06942045480109524,
+        -0.024714741692507675,
+        -0.042363399997696664
+      ],
+      "inertia_com_link_kg_m2": [
+        [
+          6.799806368822348e-11,
+          6.207335829038553e-12,
+          -2.9446854332578674e-17
+        ],
+        [
+          6.207335829038553e-12,
+          2.6484593153045653e-10,
+          -8.832001703244447e-16
+        ],
+        [
+          -2.944685433257868e-17,
+          -8.832001703244445e-16,
+          2.6505937400186175e-10
+        ]
+      ],
+      "configuration_matches_loaded": true,
+      "issues": [
+        "No explicit part material; default/body/override mass must be checked",
+        "Motor/electronics CAD must be checked against vendor or measured mass"
+      ]
+    },
+    {
+      "component": "link4-1/DM-J4340-2EC-V1.1_3d_20260325_1.stp-1/M2_5-L6.stp-4",
+      "link": "link4",
+      "confidence": "unverified_CAD_only",
+      "document": "C:\\Users\\ASUS\\AppData\\Local\\Temp\\swx28864\\IC~~\\M2_5-L6.stp.SLDPRT",
+      "configuration": "默认",
+      "material": "",
+      "material_database": "",
+      "mass_kg": 4.729576713735668e-05,
+      "volume_m3": 4.729576713735668e-08,
+      "effective_density_kg_m3": 1000.0,
+      "com_link_m": [
+        0.07053876023539338,
+        0.010784308518930768,
+        -0.05188006049609666
+      ],
+      "inertia_com_link_kg_m2": [
+        [
+          6.799806368822348e-11,
+          6.207335829038553e-12,
+          -2.9446854332578674e-17
+        ],
+        [
+          6.207335829038553e-12,
+          2.6484593153045653e-10,
+          -8.832001703244447e-16
+        ],
+        [
+          -2.944685433257868e-17,
+          -8.832001703244445e-16,
+          2.6505937400186175e-10
+        ]
+      ],
+      "configuration_matches_loaded": true,
+      "issues": [
+        "No explicit part material; default/body/override mass must be checked",
+        "Motor/electronics CAD must be checked against vendor or measured mass"
+      ]
+    },
+    {
+      "component": "link4-1/DM-J4340-2EC-V1.1_3d_20260325_1.stp-1/M2_5-L6.stp-5",
+      "link": "link4",
+      "confidence": "unverified_CAD_only",
+      "document": "C:\\Users\\ASUS\\AppData\\Local\\Temp\\swx28864\\IC~~\\M2_5-L6.stp.SLDPRT",
+      "configuration": "默认",
+      "material": "",
+      "material_database": "",
+      "mass_kg": 4.729576713735668e-05,
+      "volume_m3": 4.729576713735668e-08,
+      "effective_density_kg_m3": 1000.0,
+      "com_link_m": [
+        0.0697201038391069,
+        -0.015202799856277508,
+        -0.05188006049609672
+      ],
+      "inertia_com_link_kg_m2": [
+        [
+          6.799806368822348e-11,
+          6.207335829038553e-12,
+          -2.9446854332578674e-17
+        ],
+        [
+          6.207335829038553e-12,
+          2.6484593153045653e-10,
+          -8.832001703244447e-16
+        ],
+        [
+          -2.944685433257868e-17,
+          -8.832001703244445e-16,
+          2.6505937400186175e-10
+        ]
+      ],
+      "configuration_matches_loaded": true,
+      "issues": [
+        "No explicit part material; default/body/override mass must be checked",
+        "Motor/electronics CAD must be checked against vendor or measured mass"
+      ]
+    },
+    {
+      "component": "link4-1/DM-J4340-2EC-V1.1_3d_20260325_1.stp-1/_M2_5-100001.stp-1",
+      "link": "link4",
+      "confidence": "unverified_CAD_only",
+      "document": "C:\\Users\\ASUS\\AppData\\Local\\Temp\\swx28864\\IC~~\\_M2_5-100001.stp.SLDPRT",
+      "configuration": "默认",
+      "material": "",
+      "material_database": "",
+      "mass_kg": 4.988056443989886e-05,
+      "volume_m3": 4.988056443989886e-08,
+      "effective_density_kg_m3": 1000.0,
+      "com_link_m": [
+        0.06332135117959393,
+        0.016045899767216123,
+        -0.04739344131077609
+      ],
+      "inertia_com_link_kg_m2": [
+        [
+          6.37310978235104e-11,
+          1.4854992929795358e-11,
+          -2.174364011230251e-13
+        ],
+        [
+          1.4854992929795355e-11,
+          5.28428898391356e-10,
+          -6.224725580055037e-15
+        ],
+        [
+          -2.1743640112302513e-13,
+          -6.224725580055036e-15,
+          5.289120020987227e-10
+        ]
+      ],
+      "configuration_matches_loaded": true,
+      "issues": [
+        "No explicit part material; default/body/override mass must be checked",
+        "Motor/electronics CAD must be checked against vendor or measured mass"
+      ]
+    },
+    {
+      "component": "link4-1/J4挡块-1",
+      "link": "link4",
+      "confidence": "unverified_CAD_only",
+      "document": "C:\\Users\\ASUS\\Desktop\\mmhand\\机械臂10010l\\J4挡块.SLDPRT",
+      "configuration": "默认",
+      "material": "5052-H38",
+      "material_database": "solidworks materials",
+      "mass_kg": 0.000739597669498735,
+      "volume_m3": 2.759692796637071e-07,
+      "effective_density_kg_m3": 2680.0,
+      "com_link_m": [
+        0.045182516877401824,
+        -0.007398216001475097,
+        -0.0698499999999995
+      ],
+      "inertia_com_link_kg_m2": [
+        [
+          6.929810739836064e-09,
+          -2.529270373355707e-09,
+          -7.541637449985655e-23
+        ],
+        [
+          -2.529270373355707e-09,
+          8.494739421059476e-09,
+          -2.6036310942025164e-23
+        ],
+        [
+          -7.541637449985653e-23,
+          -2.603631094202517e-23,
+          1.431515365664749e-08
+        ]
+      ],
+      "configuration_matches_loaded": true,
+      "issues": []
+    },
+    {
+      "component": "link4-1/J4J5横向加强-1",
+      "link": "link4",
+      "confidence": "unverified_CAD_only",
+      "document": "C:\\Users\\ASUS\\Desktop\\mmhand\\机械臂10010l\\J4J5横向加强.SLDPRT",
+      "configuration": "默认",
+      "material": "普通碳钢",
+      "material_database": "solidworks materials",
+      "mass_kg": 0.012267223478831447,
+      "volume_m3": 1.5727209588245444e-06,
+      "effective_density_kg_m3": 7800.000000000001,
+      "com_link_m": [
+        0.05455136232882822,
+        0.008286461702049885,
+        -0.02936339999999856
+      ],
+      "inertia_com_link_kg_m2": [
+        [
+          6.712216236612543e-06,
+          7.419798444460177e-23,
+          2.8813421215667243e-20
+        ],
+        [
+          5.0747121222669805e-23,
+          6.7122162366125445e-06,
+          8.113194678074371e-20
+        ],
+        [
+          2.881342121566724e-20,
+          8.113194678074371e-20,
+          3.9732065915397604e-08
+        ]
+      ],
+      "configuration_matches_loaded": true,
+      "issues": []
+    },
+    {
+      "component": "link4-1/J4J5支架（钣金）-1",
+      "link": "link4",
+      "confidence": "unverified_CAD_only",
+      "document": "C:\\Users\\ASUS\\Desktop\\mmhand\\机械臂10010l\\J4J5支架（钣金）.SLDPRT",
+      "configuration": "默认",
+      "material": "7075-T6，板材(SS)",
+      "material_database": "solidworks materials",
+      "mass_kg": 0.09321650987385804,
+      "volume_m3": 3.3173134466297806e-05,
+      "effective_density_kg_m3": 2810.000061,
+      "com_link_m": [
+        0.06389796822135455,
+        -0.0019916586242059086,
+        -0.030005042926356668
+      ],
+      "inertia_com_link_kg_m2": [
+        [
+          0.0001615106490311767,
+          4.797066800863767e-06,
+          4.610707766833327e-06
+        ],
+        [
+          4.797066800863768e-06,
+          0.0003136582397738192,
+          -2.2765048458854307e-07
+        ],
+        [
+          4.6107077668333264e-06,
+          -2.2765048458854302e-07,
+          0.00017529413882422893
+        ]
+      ],
+      "configuration_matches_loaded": true,
+      "issues": []
+    },
+    {
+      "component": "link4-1/J4轴承轴3D打印）-1",
+      "link": "link4",
+      "confidence": "unverified_CAD_only",
+      "document": "C:\\Users\\ASUS\\Desktop\\mmhand\\机械臂10010l\\J4轴承轴3D打印）.SLDPRT",
+      "configuration": "默认",
+      "material": "ABS",
+      "material_database": "solidworks materials",
+      "mass_kg": 0.0053022798273762994,
+      "volume_m3": 5.198313556251274e-06,
+      "effective_density_kg_m3": 1019.9999999999999,
+      "com_link_m": [
+        1.6653345369377348e-16,
+        2.8033131371785203e-15,
+        0.005371754960301319
+      ],
+      "inertia_com_link_kg_m2": [
+        [
+          3.254398622534558e-07,
+          -3.261134068429672e-23,
+          9.465778100503254e-21
+        ],
+        [
+          -1.4239263722663144e-24,
+          3.2543986225345546e-07,
+          8.565197184478357e-20
+        ],
+        [
+          9.465778100503251e-21,
+          8.565197184478356e-20,
+          3.309410499399232e-07
+        ]
+      ],
+      "configuration_matches_loaded": true,
+      "issues": []
+    },
+    {
+      "component": "link4-1/J4J5横向加强-2",
+      "link": "link4",
+      "confidence": "unverified_CAD_only",
+      "document": "C:\\Users\\ASUS\\Desktop\\mmhand\\机械臂10010l\\J4J5横向加强.SLDPRT",
+      "configuration": "默认",
+      "material": "普通碳钢",
+      "material_database": "solidworks materials",
+      "mass_kg": 0.012267223478831447,
+      "volume_m3": 1.5727209588245444e-06,
+      "effective_density_kg_m3": 7800.000000000001,
+      "com_link_m": [
+        0.05392162663937676,
+        -0.011703621663500668,
+        -0.029363399999999117
+      ],
+      "inertia_com_link_kg_m2": [
+        [
+          6.712216236612543e-06,
+          7.419798444460177e-23,
+          2.8813421215667243e-20
+        ],
+        [
+          5.0747121222669805e-23,
+          6.7122162366125445e-06,
+          8.113194678074371e-20
+        ],
+        [
+          2.881342121566724e-20,
+          8.113194678074371e-20,
+          3.9732065915397604e-08
+        ]
+      ],
+      "configuration_matches_loaded": true,
+      "issues": []
+    },
+    {
+      "component": "link1-1/J2挡块-1",
+      "link": "link1",
+      "confidence": "unverified_CAD_only",
+      "document": "C:\\Users\\ASUS\\Desktop\\mmhand\\机械臂10010l\\J2挡块.SLDPRT",
+      "configuration": "默认",
+      "material": "5052-H38",
+      "material_database": "solidworks materials",
+      "mass_kg": 0.0033595602273624866,
+      "volume_m3": 1.2535672490158533e-06,
+      "effective_density_kg_m3": 2679.9999999999995,
+      "com_link_m": [
+        0.04500000000000067,
+        -0.00045206977804094876,
+        0.11506775286042614
+      ],
+      "inertia_com_link_kg_m2": [
+        [
+          7.226511827502959e-06,
+          -6.814585151863644e-21,
+          -2.939738904970704e-21
+        ],
+        [
+          -6.814585151863644e-21,
+          8.788221899463872e-07,
+          -2.2949741684481668e-06
+        ],
+        [
+          -2.939738904970707e-21,
+          -2.2949741684481668e-06,
+          6.356648464829536e-06
+        ]
+      ],
+      "configuration_matches_loaded": true,
+      "issues": []
+    },
+    {
+      "component": "link1-1/M4x36+6_双头异螺纹六角隔离柱_横向加强参考模型.step-1",
+      "link": "link1",
+      "confidence": "unverified_CAD_only",
+      "document": "C:\\Users\\ASUS\\AppData\\Local\\Temp\\swx28864\\IC~~\\M4x36+6_双头异螺纹六角隔离柱_横向加强参考模型.step.SLDPRT",
+      "configuration": "默认",
+      "material": "",
+      "material_database": "",
+      "mass_kg": 0.0008872314167989888,
+      "volume_m3": 8.872314167989888e-07,
+      "effective_density_kg_m3": 1000.0,
+      "com_link_m": [
+        -0.01619653215537192,
+        -0.024285632509507837,
+        0.09232209929811254
+      ],
+      "inertia_com_link_kg_m2": [
+        [
+          5.327450531505345e-09,
+          5.848791784102808e-23,
+          -3.7062794562154953e-22
+        ],
+        [
+          5.848791784102806e-23,
+          1.2019452542729193e-07,
+          -5.4615305608092015e-22
+        ],
+        [
+          -3.7062794562154953e-22,
+          -5.434876330548747e-22,
+          1.2019452542729193e-07
+        ]
+      ],
+      "configuration_matches_loaded": true,
+      "issues": [
+        "No explicit part material; default/body/override mass must be checked"
+      ]
+    },
+    {
+      "component": "link1-1/J1J2lianjie-1",
+      "link": "link1",
+      "confidence": "unverified_CAD_only",
+      "document": "C:\\Users\\ASUS\\Desktop\\mmhand\\机械臂10010l\\J1J2lianjie.SLDPRT",
+      "configuration": "默认",
+      "material": "5052-H38",
+      "material_database": "solidworks materials",
+      "mass_kg": 0.2610130558620668,
+      "volume_m3": 9.739293129181597e-05,
+      "effective_density_kg_m3": 2680.0,
+      "com_link_m": [
+        -0.009553269134100121,
+        0.008016307147764494,
+        0.1034092814897716
+      ],
+      "inertia_com_link_kg_m2": [
+        [
+          0.0006566561798420919,
+          2.2848385342282995e-06,
+          -0.00012628414892681272
+        ],
+        [
+          2.2848385342282995e-06,
+          0.0007080278269233645,
+          -1.1959252966769502e-05
+        ],
+        [
+          -0.00012628414892681272,
+          -1.1959252966769502e-05,
+          0.0005455847044662793
+        ]
+      ],
+      "configuration_matches_loaded": true,
+      "issues": []
+    },
+    {
+      "component": "link1-1/垫片-1",
+      "link": "link1",
+      "confidence": "unverified_CAD_only",
+      "document": "C:\\Users\\ASUS\\Desktop\\mmhand\\机械臂10010l\\垫片.SLDPRT",
+      "configuration": "默认",
+      "material": "5052-H38",
+      "material_database": "solidworks materials",
+      "mass_kg": 0.04243563579486418,
+      "volume_m3": 1.5834192460770216e-05,
+      "effective_density_kg_m3": 2680.0,
+      "com_link_m": [
+        -3.6267597990647876e-06,
+        2.0939107461266193e-06,
+        0.0562
+      ],
+      "inertia_com_link_kg_m2": [
+        [
+          9.83021677040777e-06,
+          -7.142841926289385e-12,
+          -2.7883703568186854e-22
+        ],
+        [
+          -7.142841925836233e-12,
+          9.830208522564352e-06,
+          -2.7593250481904325e-25
+        ],
+        [
+          -2.7883703568186844e-22,
+          -2.7593250481909564e-25,
+          1.9405811478202937e-05
+        ]
+      ],
+      "configuration_matches_loaded": true,
+      "issues": []
+    },
+    {
+      "component": "link1-1/DAMIAO_DM_J10010L_2EC_Motor-1/dm-j10010l-0730_1.stp^DAMIAO_DM_J10010L_2EC_Motor-1/ZHUTI.stp^dm-j10010l-0730_1.stp_DAMIAO_DM_J10010L_2EC_Motor-1",
+      "link": "link1",
+      "confidence": "unverified_CAD_only",
+      "document": "C:\\Users\\ASUS\\AppData\\Local\\Temp\\swx28864\\VC~~\\2799548188\\ZHUTI.stp^dm-j10010l-0730_1.stp_DAMIAO_DM_J10010L_2EC_Motor.SLDPRT",
+      "configuration": "默认",
+      "material": "",
+      "material_database": "",
+      "mass_kg": 0.4240142243611213,
+      "volume_m3": 0.00042401422436112127,
+      "effective_density_kg_m3": 1000.0,
+      "com_link_m": [
+        0.019921546963413618,
+        0.007156679384780506,
+        0.13510035550482163
+      ],
+      "inertia_com_link_kg_m2": [
+        [
+          0.0007682962859403051,
+          -1.26502629330327e-06,
+          -3.399456757668887e-07
+        ],
+        [
+          -1.26502629330327e-06,
+          0.0004370443038038005,
+          -1.318518990943957e-06
+        ],
+        [
+          -3.3994567576688886e-07,
+          -1.3185189909439553e-06,
+          0.00043269795618463533
+        ]
+      ],
+      "configuration_matches_loaded": true,
+      "issues": [
+        "No explicit part material; default/body/override mass must be checked",
+        "Motor/electronics CAD must be checked against vendor or measured mass"
+      ]
+    },
+    {
+      "component": "link1-1/DAMIAO_DM_J10010L_2EC_Motor-1/dm-j10010l-0730_1.stp^DAMIAO_DM_J10010L_2EC_Motor-1/PCB_1.stp^dm-j10010l-0730_1.stp_DAMIAO_DM_J10010L_2EC_Motor-1",
+      "link": "link1",
+      "confidence": "unverified_CAD_only",
+      "document": "C:\\Users\\ASUS\\AppData\\Local\\Temp\\swx28864\\VC~~\\2799548188\\PCB_1.stp^dm-j10010l-0730_1.stp_DAMIAO_DM_J10010L_2EC_Motor.SLDPRT",
+      "configuration": "默认",
+      "material": "",
+      "material_database": "",
+      "mass_kg": 0.0035022222177948504,
+      "volume_m3": 3.5022222177948503e-06,
+      "effective_density_kg_m3": 1000.0,
+      "com_link_m": [
+        -0.000925338216037931,
+        -0.015056615351632954,
+        0.13577704256250425
+      ],
+      "inertia_com_link_kg_m2": [
+        [
+          6.02634231057708e-07,
+          1.3655402034181533e-10,
+          4.314075071657675e-10
+        ],
+        [
+          1.3655402034181533e-10,
+          5.493100368795038e-07,
+          -1.6428944411761454e-07
+        ],
+        [
+          4.3140750716576757e-10,
+          -1.6428944411761451e-07,
+          9.707516432553492e-08
+        ]
+      ],
+      "configuration_matches_loaded": true,
+      "issues": [
+        "No explicit part material; default/body/override mass must be checked",
+        "Motor/electronics CAD must be checked against vendor or measured mass"
+      ]
+    },
+    {
+      "component": "link1-1/DAMIAO_DM_J10010L_2EC_Motor-1/dm-j10010l-0730_1.stp^DAMIAO_DM_J10010L_2EC_Motor-1/HOUGAI.stp^dm-j10010l-0730_1.stp_DAMIAO_DM_J10010L_2EC_Motor-1",
+      "link": "link1",
+      "confidence": "unverified_CAD_only",
+      "document": "C:\\Users\\ASUS\\AppData\\Local\\Temp\\swx28864\\VC~~\\2799548188\\HOUGAI.stp^dm-j10010l-0730_1.stp_DAMIAO_DM_J10010L_2EC_Motor.SLDPRT",
+      "configuration": "默认",
+      "material": "",
+      "material_database": "",
+      "mass_kg": 0.02423496563685485,
+      "volume_m3": 2.4234965636854852e-05,
+      "effective_density_kg_m3": 999.9999999999999,
+      "com_link_m": [
+        -0.009676473219724303,
+        0.007042480564859223,
+        0.13467080541681598
+      ],
+      "inertia_com_link_kg_m2": [
+        [
+          3.170108673044831e-05,
+          -1.4367489200339684e-09,
+          5.560783920477601e-09
+        ],
+        [
+          -1.4367489200339684e-09,
+          1.3353478613392592e-05,
+          1.9918627941385927e-06
+        ],
+        [
+          5.560783920477601e-09,
+          1.9918627941385922e-06,
+          1.883219002257574e-05
+        ]
+      ],
+      "configuration_matches_loaded": true,
+      "issues": [
+        "No explicit part material; default/body/override mass must be checked",
+        "Motor/electronics CAD must be checked against vendor or measured mass"
+      ]
+    },
+    {
+      "component": "link1-1/M4x36+6_双头异螺纹六角隔离柱_横向加强参考模型.step-4",
+      "link": "link1",
+      "confidence": "unverified_CAD_only",
+      "document": "C:\\Users\\ASUS\\AppData\\Local\\Temp\\swx28864\\IC~~\\M4x36+6_双头异螺纹六角隔离柱_横向加强参考模型.step.SLDPRT",
+      "configuration": "默认",
+      "material": "",
+      "material_database": "",
+      "mass_kg": 0.0008872314167989888,
+      "volume_m3": 8.872314167989888e-07,
+      "effective_density_kg_m3": 1000.0,
+      "com_link_m": [
+        -0.016196532155372197,
+        0.057272981225625956,
+        0.15157790070187466
+      ],
+      "inertia_com_link_kg_m2": [
+        [
+          5.327450531505345e-09,
+          5.848791784102808e-23,
+          -3.7062794562154953e-22
+        ],
+        [
+          5.848791784102806e-23,
+          1.2019452542729193e-07,
+          -5.4615305608092015e-22
+        ],
+        [
+          -3.7062794562154953e-22,
+          -5.434876330548747e-22,
+          1.2019452542729193e-07
+        ]
+      ],
+      "configuration_matches_loaded": true,
+      "issues": [
+        "No explicit part material; default/body/override mass must be checked"
+      ]
+    },
+    {
+      "component": "link1-1/M4x36+6_双头异螺纹六角隔离柱_横向加强参考模型.step-5",
+      "link": "link1",
+      "confidence": "unverified_CAD_only",
+      "document": "C:\\Users\\ASUS\\AppData\\Local\\Temp\\swx28864\\IC~~\\M4x36+6_双头异螺纹六角隔离柱_横向加强参考模型.step.SLDPRT",
+      "configuration": "默认",
+      "material": "",
+      "material_database": "",
+      "mass_kg": 0.0008872314167989888,
+      "volume_m3": 8.872314167989888e-07,
+      "effective_density_kg_m3": 1000.0,
+      "com_link_m": [
+        -0.016196532155372142,
+        -0.04353900950165573,
+        0.11882209929810914
+      ],
+      "inertia_com_link_kg_m2": [
+        [
+          5.327450531505345e-09,
+          5.848791784102808e-23,
+          -3.7062794562154953e-22
+        ],
+        [
+          5.848791784102806e-23,
+          1.2019452542729193e-07,
+          -5.4615305608092015e-22
+        ],
+        [
+          -3.7062794562154953e-22,
+          -5.434876330548747e-22,
+          1.2019452542729193e-07
+        ]
+      ],
+      "configuration_matches_loaded": true,
+      "issues": [
+        "No explicit part material; default/body/override mass must be checked"
+      ]
+    },
+    {
+      "component": "link1-1/M4x36+6_双头异螺纹六角隔离柱_横向加强参考模型.step-7",
+      "link": "link1",
+      "confidence": "unverified_CAD_only",
+      "document": "C:\\Users\\ASUS\\AppData\\Local\\Temp\\swx28864\\IC~~\\M4x36+6_双头异螺纹六角隔离柱_横向加强参考模型.step.SLDPRT",
+      "configuration": "默认",
+      "material": "",
+      "material_database": "",
+      "mass_kg": 0.0008872314167989888,
+      "volume_m3": 8.872314167989888e-07,
+      "effective_density_kg_m3": 1000.0,
+      "com_link_m": [
+        -0.016196532155372364,
+        0.006866985861974374,
+        0.18819999999999293
+      ],
+      "inertia_com_link_kg_m2": [
+        [
+          5.327450531505345e-09,
+          5.848791784102808e-23,
+          -3.7062794562154953e-22
+        ],
+        [
+          5.848791784102806e-23,
+          1.2019452542729193e-07,
+          -5.4615305608092015e-22
+        ],
+        [
+          -3.7062794562154953e-22,
+          -5.434876330548747e-22,
+          1.2019452542729193e-07
+        ]
+      ],
+      "configuration_matches_loaded": true,
+      "issues": [
+        "No explicit part material; default/body/override mass must be checked"
+      ]
+    },
+    {
+      "component": "link1-1/M4x36+6_双头异螺纹六角隔离柱_横向加强参考模型.step-8",
+      "link": "link1",
+      "confidence": "unverified_CAD_only",
+      "document": "C:\\Users\\ASUS\\AppData\\Local\\Temp\\swx28864\\IC~~\\M4x36+6_双头异螺纹六角隔离柱_横向加强参考模型.step.SLDPRT",
+      "configuration": "默认",
+      "material": "",
+      "material_database": "",
+      "mass_kg": 0.0008872314167989888,
+      "volume_m3": 8.872314167989888e-07,
+      "effective_density_kg_m3": 1000.0,
+      "com_link_m": [
+        -0.016196532155372364,
+        -0.02428563250952529,
+        0.17807790070185858
+      ],
+      "inertia_com_link_kg_m2": [
+        [
+          5.327450531505345e-09,
+          5.848791784102808e-23,
+          -3.7062794562154953e-22
+        ],
+        [
+          5.848791784102806e-23,
+          1.2019452542729193e-07,
+          -5.4615305608092015e-22
+        ],
+        [
+          -3.7062794562154953e-22,
+          -5.434876330548747e-22,
+          1.2019452542729193e-07
+        ]
+      ],
+      "configuration_matches_loaded": true,
+      "issues": [
+        "No explicit part material; default/body/override mass must be checked"
+      ]
+    },
+    {
+      "component": "link1-1/M4x36+6_双头异螺纹六角隔离柱_横向加强参考模型.step-6",
+      "link": "link1",
+      "confidence": "unverified_CAD_only",
+      "document": "C:\\Users\\ASUS\\AppData\\Local\\Temp\\swx28864\\IC~~\\M4x36+6_双头异螺纹六角隔离柱_横向加强参考模型.step.SLDPRT",
+      "configuration": "默认",
+      "material": "",
+      "material_database": "",
+      "mass_kg": 0.0008872314167989888,
+      "volume_m3": 8.872314167989888e-07,
+      "effective_density_kg_m3": 1000.0,
+      "com_link_m": [
+        -0.016196532155372253,
+        -0.043539009501662354,
+        0.15157790070185417
+      ],
+      "inertia_com_link_kg_m2": [
+        [
+          5.327450531505345e-09,
+          5.848791784102808e-23,
+          -3.7062794562154953e-22
+        ],
+        [
+          5.848791784102806e-23,
+          1.2019452542729193e-07,
+          -5.4615305608092015e-22
+        ],
+        [
+          -3.7062794562154953e-22,
+          -5.434876330548747e-22,
+          1.2019452542729193e-07
+        ]
+      ],
+      "configuration_matches_loaded": true,
+      "issues": [
+        "No explicit part material; default/body/override mass must be checked"
+      ]
+    },
+    {
+      "component": "link1-1/M4x36+6_双头异螺纹六角隔离柱_横向加强参考模型.step-9",
+      "link": "link1",
+      "confidence": "unverified_CAD_only",
+      "document": "C:\\Users\\ASUS\\AppData\\Local\\Temp\\swx28864\\IC~~\\M4x36+6_双头异螺纹六角隔离柱_横向加强参考模型.step.SLDPRT",
+      "configuration": "默认",
+      "material": "",
+      "material_database": "",
+      "mass_kg": 0.0008872314167989888,
+      "volume_m3": 8.872314167989888e-07,
+      "effective_density_kg_m3": 1000.0,
+      "com_link_m": [
+        -0.01619653215537203,
+        0.038019604233495506,
+        0.09232209929812514
+      ],
+      "inertia_com_link_kg_m2": [
+        [
+          5.327450531505345e-09,
+          5.848791784102808e-23,
+          -3.7062794562154953e-22
+        ],
+        [
+          5.848791784102806e-23,
+          1.2019452542729193e-07,
+          -5.4615305608092015e-22
+        ],
+        [
+          -3.7062794562154953e-22,
+          -5.434876330548747e-22,
+          1.2019452542729193e-07
+        ]
+      ],
+      "configuration_matches_loaded": true,
+      "issues": [
+        "No explicit part material; default/body/override mass must be checked"
+      ]
+    },
+    {
+      "component": "link1-1/J2轴承衬套-1",
+      "link": "link1",
+      "confidence": "unverified_CAD_only",
+      "document": "C:\\Users\\ASUS\\Documents\\机械臂\\五轴仿真\\source\\J2轴承衬套.SLDPRT",
+      "configuration": "默认",
+      "material": "ABS",
+      "material_database": "solidworks materials",
+      "mass_kg": 0.033425249384808356,
+      "volume_m3": 3.276985233804741e-05,
+      "effective_density_kg_m3": 1020.0,
+      "com_link_m": [
+        -0.025969023258507536,
+        0.006866985861948158,
+        0.1352000000000127
+      ],
+      "inertia_com_link_kg_m2": [
+        [
+          1.8951934153661633e-05,
+          -1.2288262906080802e-21,
+          3.011730525403403e-20
+        ],
+        [
+          -1.2288262906080783e-21,
+          1.0380413269735003e-05,
+          -3.267560962479689e-21
+        ],
+        [
+          3.011730525403404e-20,
+          -2.488466174134969e-21,
+          1.0380413269734996e-05
+        ]
+      ],
+      "configuration_matches_loaded": true,
+      "issues": []
+    },
+    {
+      "component": "link1-1/QJ203MA_17x40x12_圆环安装包络示意.step-1",
+      "link": "link1",
+      "confidence": "unverified_CAD_only",
+      "document": "C:\\Users\\ASUS\\AppData\\Local\\Temp\\swx28864\\IC~~\\QJ203MA_17x40x12_圆环安装包络示意.step.SLDPRT",
+      "configuration": "默认",
+      "material": "",
+      "material_database": "",
+      "mass_kg": 0.012355883906568657,
+      "volume_m3": 1.2355883906568657e-05,
+      "effective_density_kg_m3": 1000.0,
+      "com_link_m": [
+        -0.029499999999999686,
+        0.006866985861995911,
+        0.13519999999999077
+      ],
+      "inertia_com_link_kg_m2": [
+        [
+          2.9175330874385236e-06,
+          -3.678140398573378e-22,
+          4.611129210616558e-21
+        ],
+        [
+          -3.6781403985733796e-22,
+          1.607037150598086e-06,
+          2.2406612520505723e-22
+        ],
+        [
+          4.611129210616559e-21,
+          1.4637182915129363e-22,
+          1.6070371505980858e-06
+        ]
+      ],
+      "configuration_matches_loaded": true,
+      "issues": [
+        "No explicit part material; default/body/override mass must be checked"
+      ]
+    },
+    {
+      "component": "link1-1/M4x36+6_双头异螺纹六角隔离柱_横向加强参考模型.step-2",
+      "link": "link1",
+      "confidence": "unverified_CAD_only",
+      "document": "C:\\Users\\ASUS\\AppData\\Local\\Temp\\swx28864\\IC~~\\M4x36+6_双头异螺纹六角隔离柱_横向加强参考模型.step.SLDPRT",
+      "configuration": "默认",
+      "material": "",
+      "material_database": "",
+      "mass_kg": 0.0008872314167989888,
+      "volume_m3": 8.872314167989888e-07,
+      "effective_density_kg_m3": 1000.0,
+      "com_link_m": [
+        -0.016196532155372086,
+        0.05727298122563259,
+        0.11882209929812959
+      ],
+      "inertia_com_link_kg_m2": [
+        [
+          5.327450531505345e-09,
+          5.848791784102808e-23,
+          -3.7062794562154953e-22
+        ],
+        [
+          5.848791784102806e-23,
+          1.2019452542729193e-07,
+          -5.4615305608092015e-22
+        ],
+        [
+          -3.7062794562154953e-22,
+          -5.434876330548747e-22,
+          1.2019452542729193e-07
+        ]
+      ],
+      "configuration_matches_loaded": true,
+      "issues": [
+        "No explicit part material; default/body/override mass must be checked"
+      ]
+    },
+    {
+      "component": "link1-1/M4x36+6_双头异螺纹六角隔离柱_横向加强参考模型.step-10",
+      "link": "link1",
+      "confidence": "unverified_CAD_only",
+      "document": "C:\\Users\\ASUS\\AppData\\Local\\Temp\\swx28864\\IC~~\\M4x36+6_双头异螺纹六角隔离柱_横向加强参考模型.step.SLDPRT",
+      "configuration": "默认",
+      "material": "",
+      "material_database": "",
+      "mass_kg": 0.0008872314167989888,
+      "volume_m3": 8.872314167989888e-07,
+      "effective_density_kg_m3": 1000.0,
+      "com_link_m": [
+        -0.016196532155371975,
+        0.0068669858619958704,
+        0.08219999999999084
+      ],
+      "inertia_com_link_kg_m2": [
+        [
+          5.327450531505345e-09,
+          5.848791784102808e-23,
+          -3.7062794562154953e-22
+        ],
+        [
+          5.848791784102806e-23,
+          1.2019452542729193e-07,
+          -5.4615305608092015e-22
+        ],
+        [
+          -3.7062794562154953e-22,
+          -5.434876330548747e-22,
+          1.2019452542729193e-07
+        ]
+      ],
+      "configuration_matches_loaded": true,
+      "issues": [
+        "No explicit part material; default/body/override mass must be checked"
+      ]
+    },
+    {
+      "component": "link1-1/J1限位（终）-1",
+      "link": "link1",
+      "confidence": "unverified_CAD_only",
+      "document": "C:\\Users\\ASUS\\Desktop\\mmhand\\机械臂10010l\\J1限位（终）.SLDPRT",
+      "configuration": "默认",
+      "material": "5052-H38",
+      "material_database": "solidworks materials",
+      "mass_kg": 0.00527944631473133,
+      "volume_m3": 1.969942654750496e-06,
+      "effective_density_kg_m3": 2680.0,
+      "com_link_m": [
+        -0.010458276260906523,
+        0.047174235663719734,
+        0.0572
+      ],
+      "inertia_com_link_kg_m2": [
+        [
+          2.732590927390016e-07,
+          -1.3594022842888883e-08,
+          1.6357142371080262e-23
+        ],
+        [
+          -1.3594022842888883e-08,
+          2.1495414061072297e-07,
+          2.3285988222991158e-23
+        ],
+        [
+          1.6357142371080265e-23,
+          2.3285988222991158e-23,
+          4.7413470984377474e-07
+        ]
+      ],
+      "configuration_matches_loaded": true,
+      "issues": []
+    },
+    {
+      "component": "link1-1/M4x36+6_双头异螺纹六角隔离柱_横向加强参考模型.step-3",
+      "link": "link1",
+      "confidence": "unverified_CAD_only",
+      "document": "C:\\Users\\ASUS\\AppData\\Local\\Temp\\swx28864\\IC~~\\M4x36+6_双头异螺纹六角隔离柱_横向加强参考模型.step.SLDPRT",
+      "configuration": "默认",
+      "material": "",
+      "material_database": "",
+      "mass_kg": 0.0008872314167989888,
+      "volume_m3": 8.872314167989888e-07,
+      "effective_density_kg_m3": 1000.0,
+      "com_link_m": [
+        -0.01619653215537231,
+        0.038019604233478145,
+        0.1780779007018713
+      ],
+      "inertia_com_link_kg_m2": [
+        [
+          5.327450531505345e-09,
+          5.848791784102808e-23,
+          -3.7062794562154953e-22
+        ],
+        [
+          5.848791784102806e-23,
+          1.2019452542729193e-07,
+          -5.4615305608092015e-22
+        ],
+        [
+          -3.7062794562154953e-22,
+          -5.434876330548747e-22,
+          1.2019452542729193e-07
+        ]
+      ],
+      "configuration_matches_loaded": true,
+      "issues": [
+        "No explicit part material; default/body/override mass must be checked"
+      ]
+    },
+    {
+      "component": "link2-1/J2-J3法兰（钣金）-1",
+      "link": "link2",
+      "confidence": "unverified_CAD_only",
+      "document": "C:\\Users\\ASUS\\Desktop\\mmhand\\机械臂10010l\\J2-J3法兰（钣金）.SLDPRT",
+      "configuration": "默认",
+      "material": "5052-H36",
+      "material_database": "solidworks materials",
+      "mass_kg": 0.14798883503914648,
+      "volume_m3": 5.5219714566845705e-05,
+      "effective_density_kg_m3": 2680.0,
+      "com_link_m": [
+        0.04460045714519336,
+        -0.0004200831096999591,
+        -0.03413512888605785
+      ],
+      "inertia_com_link_kg_m2": [
+        [
+          0.0002772755809250196,
+          -3.3271300360706857e-06,
+          -1.7434266877313617e-05
+        ],
+        [
+          -3.327130036070686e-06,
+          0.00041729465493384383,
+          1.2373399523218783e-06
+        ],
+        [
+          -1.7434266877313617e-05,
+          1.2373399523218783e-06,
+          0.00021130833298014327
+        ]
+      ],
+      "configuration_matches_loaded": true,
+      "issues": []
+    },
+    {
+      "component": "link2-1/J2J3转动限位-1",
+      "link": "link2",
+      "confidence": "unverified_CAD_only",
+      "document": "C:\\Users\\ASUS\\Desktop\\mmhand\\机械臂10010l\\J2J3转动限位.SLDPRT",
+      "configuration": "默认",
+      "material": "5052-H38",
+      "material_database": "solidworks materials",
+      "mass_kg": 0.0030622046710283694,
+      "volume_m3": 1.1426136832195408e-06,
+      "effective_density_kg_m3": 2680.0,
+      "com_link_m": [
+        0.04635145265348013,
+        -0.014695674647567714,
+        0.0065000000000001185
+      ],
+      "inertia_com_link_kg_m2": [
+        [
+          5.8947964614961307e-08,
+          -3.3897370779513405e-08,
+          -9.770568223646692e-24
+        ],
+        [
+          -3.3897370779513405e-08,
+          1.5518770997723414e-07,
+          -2.0483792471969324e-24
+        ],
+        [
+          -9.770568223646693e-24,
+          -2.0483792471969327e-24,
+          2.0596979546945298e-07
+        ]
+      ],
+      "configuration_matches_loaded": true,
+      "issues": []
+    },
+    {
+      "component": "link2-1/zhouchengneizhou1-1",
+      "link": "link2",
+      "confidence": "unverified_CAD_only",
+      "document": "C:\\Users\\ASUS\\Desktop\\mmhand\\机械臂10010l\\zhouchengneizhou1.SLDPRT",
+      "configuration": "默认",
+      "material": "ABS",
+      "material_database": "solidworks materials",
+      "mass_kg": 0.011087549124887196,
+      "volume_m3": 1.08701462008698e-05,
+      "effective_density_kg_m3": 1020.0000000000001,
+      "com_link_m": [
+        1.0061574681058394e-09,
+        2.897325211692614e-08,
+        -0.08065383120308135
+      ],
+      "inertia_com_link_kg_m2": [
+        [
+          1.7136794252392074e-06,
+          -8.58912750256475e-23,
+          -6.4671780714426115e-22
+        ],
+        [
+          -9.889384831489045e-23,
+          1.7136794252392068e-06,
+          -1.050101559643702e-21
+        ],
+        [
+          -6.467178071442613e-22,
+          -1.0501015596437014e-21,
+          1.9865010673134912e-06
+        ]
+      ],
+      "configuration_matches_loaded": true,
+      "issues": []
+    },
+    {
+      "component": "link2-1/J3限位^link2-1",
+      "link": "link2",
+      "confidence": "unverified_CAD_only",
+      "document": "C:\\Users\\ASUS\\AppData\\Local\\Temp\\swx28864\\VC~~\\link2\\J3限位^link2.SLDPRT",
+      "configuration": "默认",
+      "material": "",
+      "material_database": "",
+      "mass_kg": 0.0004946594712709894,
+      "volume_m3": 4.946594712709894e-07,
+      "effective_density_kg_m3": 1000.0,
+      "com_link_m": [
+        0.08167936028212523,
+        -0.042264083662932175,
+        -0.030973006923067356
+      ],
+      "inertia_com_link_kg_m2": [
+        [
+          1.3454624362486444e-08,
+          -9.618083568243465e-12,
+          -3.6776361406127044e-13
+        ],
+        [
+          -9.618083568243464e-12,
+          6.3623667963634126e-09,
+          -2.7118490423624436e-10
+        ],
+        [
+          -3.6776361406127044e-13,
+          -2.7118490423624436e-10,
+          8.411375576371287e-09
+        ]
+      ],
+      "configuration_matches_loaded": true,
+      "issues": [
+        "No explicit part material; default/body/override mass must be checked"
+      ]
+    },
+    {
+      "component": "link2-1/dianpian2-1",
+      "link": "link2",
+      "confidence": "unverified_CAD_only",
+      "document": "C:\\Users\\ASUS\\Desktop\\mmhand\\机械臂10010l\\dianpian2.SLDPRT",
+      "configuration": "默认",
+      "material": "5052-H38",
+      "material_database": "solidworks materials",
+      "mass_kg": 0.05652780507612228,
+      "volume_m3": 2.1092464580642644e-05,
+      "effective_density_kg_m3": 2680.0,
+      "com_link_m": [
+        1.0061627914132182e-09,
+        2.8973257871802123e-08,
+        0.004500000000000063
+      ],
+      "inertia_com_link_kg_m2": [
+        [
+          1.3232708387145261e-05,
+          -2.3589015360793128e-20,
+          -5.623151747026387e-23
+        ],
+        [
+          -2.367956264316874e-20,
+          1.323270838714516e-05,
+          -1.1446526413432429e-24
+        ],
+        [
+          -5.623151747026388e-23,
+          -1.1446526413432409e-24,
+          2.5862453520145108e-05
+        ]
+      ],
+      "configuration_matches_loaded": true,
+      "issues": []
+    },
+    {
+      "component": "link2-1/M4_双头内螺纹_Ø8x90_两端深10_支撑柱参考模型.step-1",
+      "link": "link2",
+      "confidence": "unverified_CAD_only",
+      "document": "C:\\Users\\ASUS\\AppData\\Local\\Temp\\swx28864\\IC~~\\M4_双头内螺纹_Ø8x90_两端深10_支撑柱参考模型.step.SLDPRT",
+      "configuration": "默认",
+      "material": "",
+      "material_database": "",
+      "mass_kg": 0.004352833701181338,
+      "volume_m3": 4.352833701181338e-06,
+      "effective_density_kg_m3": 1000.0,
+      "com_link_m": [
+        0.06898637620949491,
+        -0.010093535129900993,
+        -0.036500000000000095
+      ],
+      "inertia_com_link_kg_m2": [
+        [
+          2.796486155804729e-06,
+          -8.206939395757913e-24,
+          1.9166676437257612e-20
+        ],
+        [
+          -4.549883996739358e-25,
+          2.796486155804729e-06,
+          -2.597677490166958e-23
+        ],
+        [
+          1.9166676437257612e-20,
+          -2.597677490166978e-23,
+          3.595829232552079e-08
+        ]
+      ],
+      "configuration_matches_loaded": true,
+      "issues": [
+        "No explicit part material; default/body/override mass must be checked"
+      ]
+    },
+    {
+      "component": "link2-1/M4_双头内螺纹_Ø8x90_两端深10_支撑柱参考模型.step-2",
+      "link": "link2",
+      "confidence": "unverified_CAD_only",
+      "document": "C:\\Users\\ASUS\\AppData\\Local\\Temp\\swx28864\\IC~~\\M4_双头内螺纹_Ø8x90_两端深10_支撑柱参考模型.step.SLDPRT",
+      "configuration": "默认",
+      "material": "",
+      "material_database": "",
+      "mass_kg": 0.004352833701181338,
+      "volume_m3": 4.352833701181338e-06,
+      "effective_density_kg_m3": 1000.0,
+      "com_link_m": [
+        0.06901349890475972,
+        0.00990644647907557,
+        -0.03649999999999993
+      ],
+      "inertia_com_link_kg_m2": [
+        [
+          2.796486155804729e-06,
+          -8.206939395757913e-24,
+          1.9166676437257612e-20
+        ],
+        [
+          -4.549883996739358e-25,
+          2.796486155804729e-06,
+          -2.597677490166958e-23
+        ],
+        [
+          1.9166676437257612e-20,
+          -2.597677490166978e-23,
+          3.595829232552079e-08
+        ]
+      ],
+      "configuration_matches_loaded": true,
+      "issues": [
+        "No explicit part material; default/body/override mass must be checked"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,576 @@
+{
+  "request_id": "2141251efcf343208333eb9c7a107cb6",
+  "mode": "waypoints",
+  "joint_count": 5,
+  "physical_torque_off_verified": false,
+  "driver_current_clamp_verified": false,
+  "hardware_motion_accepted": false,
+  "stop_observations_confirmed": true,
+  "phase": "trajectory",
+  "arm_requested": true,
+  "trajectory_requested": true,
+  "trajectory_started": true,
+  "stop_requested": true,
+  "unknown_observed": false,
+  "prearm_timeout": false,
+  "prearm_reasons": [],
+  "prearm_observations": {},
+  "load_id": "j5_3p5kg_provisional",
+  "calibration_group": null,
+  "expected_identity": {
+    "load_id": "j5_3p5kg_provisional"
+  },
+  "operator_acknowledgements": {
+    "supported": true,
+    "clearance_and_local_power_cut": true,
+    "native_output_not_hardware_clamp": true
+  },
+  "trial_parameters": {
+    "hold_seconds": 1.0,
+    "round_trip": false,
+    "delta_deg": 1.0,
+    "leg_seconds": 4.0
+  },
+  "initial_model_rad": [
+    0.01907377737087046,
+    0.005340657663843729,
+    -0.005340657663843729,
+    0.008392462043183002,
+    0.03852903028915833
+  ],
+  "plan": {
+    "schema": "slaihand_joint_plan/2",
+    "coordinates": "relative_start_deg",
+    "waypoints": [
+      {
+        "degrees": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "move_s": 0.5,
+        "dwell_s": 5.0
+      },
+      {
+        "degrees": [
+          10.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "move_s": 4.0,
+        "dwell_s": 5.0
+      },
+      {
+        "degrees": [
+          -10.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "move_s": 4.0,
+        "dwell_s": 5.0
+      },
+      {
+        "degrees": [
+          0.0,
+          10.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "move_s": 4.0,
+        "dwell_s": 5.0
+      },
+      {
+        "degrees": [
+          0.0,
+          -10.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "move_s": 4.0,
+        "dwell_s": 5.0
+      },
+      {
+        "degrees": [
+          0.0,
+          0.0,
+          10.0,
+          0.0,
+          0.0
+        ],
+        "move_s": 4.0,
+        "dwell_s": 5.0
+      },
+      {
+        "degrees": [
+          0.0,
+          0.0,
+          -10.0,
+          0.0,
+          0.0
+        ],
+        "move_s": 4.0,
+        "dwell_s": 5.0
+      },
+      {
+        "degrees": [
+          0.0,
+          0.0,
+          0.0,
+          10.0,
+          0.0
+        ],
+        "move_s": 4.0,
+        "dwell_s": 5.0
+      },
+      {
+        "degrees": [
+          0.0,
+          0.0,
+          0.0,
+          -10.0,
+          0.0
+        ],
+        "move_s": 4.0,
+        "dwell_s": 5.0
+      },
+      {
+        "degrees": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          10.0
+        ],
+        "move_s": 4.0,
+        "dwell_s": 5.0
+      },
+      {
+        "degrees": [
+          10.0,
+          10.0,
+          0.0,
+          -10.0,
+          10.0
+        ],
+        "move_s": 5.0,
+        "dwell_s": 5.0
+      },
+      {
+        "degrees": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "move_s": 5.0,
+        "dwell_s": 5.0
+      }
+    ]
+  },
+  "plan_sha256": "49afdfa1cb7a83302cf433d91f67bcfe8157efac521501963226a6e7c5ae379d",
+  "backend_arm_receipt": "Arm request accepted only; fresh preflight, enable and ramp are not yet confirmed; audit_file=/home/xuyu/.ros/slaihand/canusb_five_axis_candidate/canusb_motion_2zcoVU.jsonl",
+  "command_id": 1,
+  "trajectory_start_reference_rad": [
+    0.01907377737087046,
+    0.005340657663843729,
+    -0.005340657663843729,
+    0.008392462043183002,
+    0.03852903028915833
+  ],
+  "waypoint_results": [
+    {
+      "arrival_s": 0.5,
+      "end_s": 5.5,
+      "target_rad": [
+        0.01907377737087046,
+        0.005340657663843729,
+        -0.005340657663843729,
+        0.008392462043183002,
+        0.03852903028915833
+      ],
+      "samples": 30,
+      "sampled_span_s": 0.29003791000013734,
+      "max_error_deg": [
+        0.0,
+        0.02185693885446026,
+        0.0,
+        0.02185693885446026,
+        0.0
+      ],
+      "passed": true
+    },
+    {
+      "arrival_s": 9.5,
+      "end_s": 14.5,
+      "target_rad": [
+        0.1936067025703034,
+        0.005340657663843729,
+        -0.005340657663843729,
+        0.008392462043183002,
+        0.03852903028915833
+      ],
+      "samples": 30,
+      "sampled_span_s": 0.2902208289999635,
+      "max_error_deg": [
+        1.3883660913426583,
+        0.02185693885446026,
+        0.0,
+        0.02185693885446026,
+        0.02185693885446026
+      ],
+      "passed": false
+    },
+    {
+      "arrival_s": 18.5,
+      "end_s": 23.5,
+      "target_rad": [
+        -0.1554591478285625,
+        0.005340657663843729,
+        -0.005340657663843729,
+        0.008392462043183002,
+        0.03852903028915833
+      ],
+      "samples": 30,
+      "sampled_span_s": 0.2901783479999267,
+      "max_error_deg": [
+        0.7326579257088506,
+        0.02185693885446026,
+        0.02185693885446026,
+        0.04371387770892052,
+        0.0
+      ],
+      "passed": false
+    },
+    {
+      "arrival_s": 27.5,
+      "end_s": 32.5,
+      "target_rad": [
+        0.01907377737087046,
+        0.17987358286327668,
+        -0.005340657663843729,
+        0.008392462043183002,
+        0.03852903028915833
+      ],
+      "samples": 30,
+      "sampled_span_s": 0.28950454000005266,
+      "max_error_deg": [
+        0.4152818382347449,
+        1.257224458215795,
+        0.0,
+        0.1529985719812218,
+        0.02185693885446026
+      ],
+      "passed": false
+    },
+    {
+      "arrival_s": 36.5,
+      "end_s": 41.5,
+      "target_rad": [
+        0.01907377737087046,
+        -0.16919226753558922,
+        -0.005340657663843729,
+        0.008392462043183002,
+        0.03852903028915833
+      ],
+      "samples": 30,
+      "sampled_span_s": 0.2904482299998108,
+      "max_error_deg": [
+        0.4152818382347449,
+        1.4539369079060391,
+        0.02185693885446026,
+        0.17485551083568207,
+        0.0
+      ],
+      "passed": false
+    },
+    {
+      "arrival_s": 45.5,
+      "end_s": 50.5,
+      "target_rad": [
+        0.01907377737087046,
+        0.005340657663843729,
+        0.16919226753558922,
+        0.008392462043183002,
+        0.03852903028915833
+      ],
+      "samples": 30,
+      "sampled_span_s": 0.290256478999936,
+      "max_error_deg": [
+        0.4152818382347449,
+        0.2622832662535231,
+        0.16437751549288385,
+        0.1529985719812218,
+        0.0
+      ],
+      "passed": true
+    },
+    {
+      "arrival_s": 54.5,
+      "end_s": 59.5,
+      "target_rad": [
+        0.01907377737087046,
+        0.005340657663843729,
+        -0.17987358286327668,
+        0.008392462043183002,
+        0.03852903028915833
+      ],
+      "samples": 30,
+      "sampled_span_s": 0.29014228599999115,
+      "max_error_deg": [
+        0.4152818382347449,
+        0.2622832662535231,
+        0.09880669892950308,
+        0.1529985719812218,
+        0.0
+      ],
+      "passed": true
+    },
+    {
+      "arrival_s": 63.5,
+      "end_s": 68.5,
+      "target_rad": [
+        0.01907377737087046,
+        0.005340657663843729,
+        -0.005340657663843729,
+        0.18292538724261595,
+        0.03852903028915833
+      ],
+      "samples": 30,
+      "sampled_span_s": 0.29020124299995587,
+      "max_error_deg": [
+        0.4371387770892052,
+        0.2622832662535231,
+        0.1529985719812218,
+        0.7545148645633108,
+        0.0
+      ],
+      "passed": false
+    },
+    {
+      "arrival_s": 72.5,
+      "end_s": 77.5,
+      "target_rad": [
+        0.01907377737087046,
+        0.005340657663843729,
+        -0.005340657663843729,
+        -0.16614046315624995,
+        0.03852903028915833
+      ],
+      "samples": 30,
+      "sampled_span_s": 0.2899860190000254,
+      "max_error_deg": [
+        0.24042632739906283,
+        0.2622832662535231,
+        0.1529985719812218,
+        0.6233732314365492,
+        0.0
+      ],
+      "passed": false
+    },
+    {
+      "arrival_s": 81.5,
+      "end_s": 86.5,
+      "target_rad": [
+        0.01907377737087046,
+        0.005340657663843729,
+        -0.005340657663843729,
+        0.008392462043183002,
+        0.21306195548859128
+      ],
+      "samples": 30,
+      "sampled_span_s": 0.28951527699996404,
+      "max_error_deg": [
+        0.2622832662535231,
+        0.2622832662535231,
+        0.1529985719812218,
+        0.3059971439624436,
+        0.3173760874741057
+      ],
+      "passed": true
+    },
+    {
+      "arrival_s": 91.5,
+      "end_s": 96.5,
+      "target_rad": [
+        0.1936067025703034,
+        0.17987358286327668,
+        -0.005340657663843729,
+        -0.16614046315624995,
+        0.21306195548859128
+      ],
+      "samples": 30,
+      "sampled_span_s": 0.2899933799999417,
+      "max_error_deg": [
+        1.2572244582158967,
+        1.3665091524880963,
+        0.0,
+        0.29551914861954365,
+        0.20809139320180436
+      ],
+      "passed": false
+    },
+    {
+      "arrival_s": 101.5,
+      "end_s": 106.5,
+      "target_rad": [
+        0.01907377737087046,
+        0.005340657663843729,
+        -0.005340657663843729,
+        0.008392462043183002,
+        0.03852903028915833
+      ],
+      "samples": 30,
+      "sampled_span_s": 0.29008591900014835,
+      "max_error_deg": [
+        0.13114163312676155,
+        0.0,
+        0.02185693885446026,
+        0.32785408281690387,
+        0.32785408281690387
+      ],
+      "passed": true
+    }
+  ],
+  "waypoints_observed": false,
+  "trajectory_error_code": 0,
+  "trajectory_error_string": "Goal successfully reached!",
+  "standard_jtc_action_succeeded": true,
+  "observed_delta_range_deg": [
+    [
+      -9.289199013145609,
+      8.742775541784104
+    ],
+    [
+      -8.546063092093961,
+      8.764632480638666
+    ],
+    [
+      -9.901193301070498,
+      9.835622484507116
+    ],
+    [
+      -9.704480851380456,
+      9.267342074291149
+    ],
+    [
+      0.0,
+      9.791908606798195
+    ]
+  ],
+  "final_delta_from_start_deg": [
+    0.13114163312676155,
+    0.0,
+    0.0,
+    -0.3059971439624436,
+    0.32785408281690387
+  ],
+  "reason": "WAYPOINT_FEEDBACK_CRITERION_NOT_MET",
+  "last_observed_status": {
+    "slaihand_joint1": {
+      "position": 0.021362630655374915,
+      "velocity": 0.01831501831501825,
+      "driver_temperature": 28.0,
+      "command_id": 1.0,
+      "feedback_valid": 1.0,
+      "command_owner": 0.0,
+      "effort": -0.24420024420024333,
+      "motor_temperature": 25.0,
+      "disabled_observed": 1.0,
+      "timeout_count": 2000.0,
+      "audit_ok": 1.0,
+      "hold_ready": 0.0,
+      "motor_state": 0.0,
+      "control_state": 8.0,
+      "configuration_conflict": 0.0,
+      "control_mode": 1.0,
+      "feedback_age": 0.029719020999891654
+    },
+    "slaihand_joint2": {
+      "position": 0.005340657663843729,
+      "velocity": -0.006105006105006083,
+      "driver_temperature": 27.0,
+      "command_id": 1.0,
+      "feedback_valid": 1.0,
+      "command_owner": 0.0,
+      "effort": -0.04884004884004867,
+      "motor_temperature": 24.0,
+      "disabled_observed": 1.0,
+      "timeout_count": 2000.0,
+      "audit_ok": 1.0,
+      "hold_ready": 0.0,
+      "motor_state": 0.0,
+      "control_state": 8.0,
+      "configuration_conflict": 0.0,
+      "control_mode": 1.0,
+      "feedback_age": 0.009966127999859964
+    },
+    "slaihand_joint4": {
+      "position": 0.002288853284504455,
+      "velocity": -0.0549450549450583,
+      "driver_temperature": 26.0,
+      "command_id": 1.0,
+      "feedback_valid": 1.0,
+      "command_owner": 0.0,
+      "effort": 0.22417582417582338,
+      "motor_temperature": 26.0,
+      "disabled_observed": 1.0,
+      "timeout_count": 2000.0,
+      "audit_ok": 1.0,
+      "hold_ready": 0.0,
+      "motor_state": 0.0,
+      "control_state": 8.0,
+      "configuration_conflict": 0.0,
+      "control_mode": 1.0,
+      "feedback_age": 0.029719020999891654
+    },
+    "slaihand_joint3": {
+      "position": -0.005340657663843729,
+      "velocity": -0.010989010989014503,
+      "driver_temperature": 26.0,
+      "command_id": 1.0,
+      "feedback_valid": 1.0,
+      "command_owner": 0.0,
+      "effort": 0.01318681318681314,
+      "motor_temperature": 24.0,
+      "disabled_observed": 1.0,
+      "timeout_count": 2000.0,
+      "audit_ok": 1.0,
+      "hold_ready": 0.0,
+      "motor_state": 0.0,
+      "control_state": 8.0,
+      "configuration_conflict": 0.0,
+      "control_mode": 1.0,
+      "feedback_age": 3.8260999872363755e-05
+    },
+    "slaihand_joint5": {
+      "position": 0.044632639047836875,
+      "velocity": 0.017094017094017033,
+      "driver_temperature": 27.0,
+      "command_id": 1.0,
+      "feedback_valid": 1.0,
+      "command_owner": 0.0,
+      "effort": -0.1982905982905976,
+      "motor_temperature": 25.0,
+      "disabled_observed": 1.0,
+      "timeout_count": 2000.0,
+      "audit_ok": 1.0,
+      "hold_ready": 0.0,
+      "motor_state": 0.0,
+      "control_state": 8.0,
+      "configuration_conflict": 0.0,
+      "control_mode": 1.0,
+      "feedback_age": 0.029719020999891654
+    }
+  },
+  "phase_result": "已开始轨迹",
+  "stop_result": "已确认新失能"
+}

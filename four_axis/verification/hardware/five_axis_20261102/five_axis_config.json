@@ -1,0 +1,50 @@
+{
+  "user_confirmed": true,
+  "j5_enabled": false,
+  "note": "2026-11-04 user confirmed full canonical URDF travel, no extra inward margin. Null J1-J4 endpoints inherit that single source. J5 disabled. Gains and observed-state estimate guards unchanged. Historical note (superseded for travel): J4 local upper raised 48->50 (model hard limit) because J4 reached 49.976deg after the previous stop/coast. Positive J4 targets are forbidden at this pose; first command a negative J4 recovery (~47deg) with J1/J2/J3 holding. Local 50 is still a configured envelope, not a physical limit verification. J1 sign +1, J1/J2 10Nm, J3/J4 2Nm, arrival 1.0, J5 disabled. 2026-11-04: J1 travel corrected to [-78,198], narrowed from canonical URDF [-80,200]; no hardware acceptance implied.",
+  "axes": {
+    "1": {
+      "travel_min_deg": null,
+      "travel_max_deg": null,
+      "estimate_guard_nm": 10.0,
+      "kp": 160.0,
+      "kd": 5.0,
+      "arrival_error_deg": 1.0,
+      "feedback_speed_rad_s": 1.0
+    },
+    "2": {
+      "travel_min_deg": null,
+      "travel_max_deg": null,
+      "estimate_guard_nm": 10.0,
+      "kp": 160.0,
+      "kd": 5.0,
+      "arrival_error_deg": 1.0,
+      "feedback_speed_rad_s": 1.0
+    },
+    "3": {
+      "travel_min_deg": null,
+      "travel_max_deg": null,
+      "estimate_guard_nm": 2.0,
+      "kp": 160.0,
+      "kd": 5.0,
+      "arrival_error_deg": 1.0,
+      "feedback_speed_rad_s": 1.0
+    },
+    "4": {
+      "travel_min_deg": null,
+      "travel_max_deg": null,
+      "estimate_guard_nm": 2.0,
+      "kp": 160.0,
+      "kd": 5.0,
+      "feedback_speed_rad_s": 1.0,
+      "arrival_error_deg": 1.0
+    },
+    "5": {
+      "travel_min_deg": null,
+      "travel_max_deg": null,
+      "estimate_guard_nm": 1.0,
+      "kp": 32.0,
+      "kd": 2.0
+    }
+  }
+}

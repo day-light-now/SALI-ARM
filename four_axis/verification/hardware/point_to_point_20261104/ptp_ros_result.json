@@ -1,0 +1,403 @@
+{
+  "cases": [
+    {
+      "name": "ideal",
+      "result": {
+        "request_id": "d1ab2d69f129454683e7ae1daf4a5fcb",
+        "mode": "point_to_point",
+        "reason": "finite_trial_complete",
+        "command_id": 1,
+        "trajectory_error_code": 0,
+        "trajectory_error_string": "Goal successfully reached!",
+        "concurrent_control_error": null,
+        "point_to_point": {
+          "minimum_scaling": 1.0,
+          "scaled_samples": 0,
+          "extra_time_limit_s": 6.0,
+          "endpoint_timeout_s": 3.0,
+          "terminal_tolerance_deg": 0.5,
+          "stable_seconds": 0.5,
+          "official_jtc_scaling": true
+        },
+        "stop_error": null,
+        "backend_arm_receipt": "Arm request accepted only; four-axis fresh preflight, enable and ramp are not yet confirmed; audit_file=/tmp/slai-ptp-ideal-tg98ehvd/audit/canusb_motion_ropQ0y.jsonl",
+        "standard_jtc_action_succeeded": true,
+        "action_passed": true,
+        "waypoints_observed": true,
+        "waypoint_results": [
+          {
+            "arrival_s": 2.0,
+            "end_s": 3.0,
+            "target_deg": [
+              24.994,
+              30.004,
+              -10.01,
+              5.005
+            ],
+            "samples": 51,
+            "sampled_span_s": 0.5001100629997381,
+            "max_error_deg": [
+              0.011378943511565045,
+              0.016617941183061948,
+              0.0,
+              0.0
+            ],
+            "passed": true
+          },
+          {
+            "arrival_s": 5.0,
+            "end_s": 6.0,
+            "target_deg": [
+              14.994,
+              25.004,
+              -10.01,
+              5.005
+            ],
+            "samples": 52,
+            "sampled_span_s": 0.5100676590009243,
+            "max_error_deg": [
+              0.0,
+              0.02185693885446026,
+              0.0,
+              0.0
+            ],
+            "passed": true
+          }
+        ],
+        "accuracy_passed": true,
+        "stop_observations_confirmed": true,
+        "observed_delta_range_deg": [
+          [
+            0.0,
+            9.988621056488439
+          ],
+          [
+            -0.02185693885446026,
+            4.983382058816939
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ]
+        ],
+        "final_delta_from_start_deg": [
+          0.0,
+          -0.02185693885446026,
+          0.0,
+          0.0
+        ],
+        "actual_excursion_deg": null,
+        "return_error_deg": null,
+        "requested_excursion_observed": null,
+        "initial_deg": [
+          14.994,
+          25.004,
+          -10.01,
+          5.005
+        ],
+        "plan_sha256": "5204dd98ad00ae870873316337e1c8f7c9531544046124cb0452932ec1cc4958",
+        "operator_acknowledgements": {
+          "supported": true,
+          "clearance_and_local_power_cut": true,
+          "native_output_not_hardware_clamp": true
+        },
+        "trial_parameters": {
+          "hold_seconds": 1.0,
+          "round_trip": false,
+          "delta_deg": 1.0,
+          "leg_seconds": 4.0
+        },
+        "overall_ok": true
+      }
+    },
+    {
+      "name": "slow",
+      "result": {
+        "request_id": "ecbe01795e094e77abbed7bb1e2d4644",
+        "mode": "point_to_point",
+        "reason": "finite_trial_complete",
+        "command_id": 1,
+        "trajectory_error_code": 0,
+        "trajectory_error_string": "Goal successfully reached!",
+        "concurrent_control_error": null,
+        "point_to_point": {
+          "minimum_scaling": 0.34007207249034915,
+          "scaled_samples": 1718,
+          "extra_time_limit_s": 6.0,
+          "endpoint_timeout_s": 3.0,
+          "terminal_tolerance_deg": 0.5,
+          "stable_seconds": 0.5,
+          "official_jtc_scaling": true
+        },
+        "stop_error": null,
+        "backend_arm_receipt": "Arm request accepted only; four-axis fresh preflight, enable and ramp are not yet confirmed; audit_file=/tmp/slai-ptp-slow-bjoz3pgz/audit/canusb_motion_PdOnCF.jsonl",
+        "standard_jtc_action_succeeded": true,
+        "action_passed": true,
+        "waypoints_observed": true,
+        "waypoint_results": [
+          {
+            "arrival_s": 2.0,
+            "end_s": 3.0,
+            "target_deg": [
+              24.994,
+              30.004,
+              -10.01,
+              5.005
+            ],
+            "samples": 52,
+            "sampled_span_s": 0.5100783169982606,
+            "max_error_deg": [
+              0.011378943511565045,
+              0.016617941183061948,
+              0.0,
+              0.0
+            ],
+            "passed": true
+          },
+          {
+            "arrival_s": 5.0,
+            "end_s": 6.0,
+            "target_deg": [
+              14.994,
+              25.004,
+              -10.01,
+              5.005
+            ],
+            "samples": 51,
+            "sampled_span_s": 0.5000423469973612,
+            "max_error_deg": [
+              0.0,
+              0.02185693885446026,
+              0.0,
+              0.0
+            ],
+            "passed": true
+          }
+        ],
+        "accuracy_passed": true,
+        "stop_observations_confirmed": true,
+        "observed_delta_range_deg": [
+          [
+            0.0,
+            9.988621056488439
+          ],
+          [
+            -0.02185693885446026,
+            4.983382058816939
+          ],
+          [
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0
+          ]
+        ],
+        "final_delta_from_start_deg": [
+          0.0,
+          -0.02185693885446026,
+          0.0,
+          0.0
+        ],
+        "actual_excursion_deg": null,
+        "return_error_deg": null,
+        "requested_excursion_observed": null,
+        "initial_deg": [
+          14.994,
+          25.004,
+          -10.01,
+          5.005
+        ],
+        "plan_sha256": "5204dd98ad00ae870873316337e1c8f7c9531544046124cb0452932ec1cc4958",
+        "operator_acknowledgements": {
+          "supported": true,
+          "clearance_and_local_power_cut": true,
+          "native_output_not_hardware_clamp": true
+        },
+        "trial_parameters": {
+          "hold_seconds": 1.0,
+          "round_trip": false,
+          "delta_deg": 1.0,
+          "leg_seconds": 4.0
+        },
+        "overall_ok": true
+      }
+    },
+    {
+      "name": "biased",
+      "result": {
+        "request_id": "2a5cd1a5741a4e4b91bc5742d9b03591",
+        "mode": "point_to_point",
+        "reason": "ENDPOINT_NOT_SETTLED:1",
+        "command_id": 1,
+        "trajectory_error_code": null,
+        "trajectory_error_string": null,
+        "concurrent_control_error": "ENDPOINT_NOT_SETTLED:1",
+        "point_to_point": {
+          "minimum_scaling": 0.0,
+          "scaled_samples": 669,
+          "extra_time_limit_s": 6.0,
+          "endpoint_timeout_s": 3.0,
+          "terminal_tolerance_deg": 0.5,
+          "stable_seconds": 0.5,
+          "official_jtc_scaling": true
+        },
+        "stop_error": null,
+        "backend_arm_receipt": "Arm request accepted only; four-axis fresh preflight, enable and ramp are not yet confirmed; audit_file=/tmp/slai-ptp-biased-_o41t90p/audit/canusb_motion_AZqs0t.jsonl",
+        "standard_jtc_action_succeeded": false,
+        "action_passed": false,
+        "waypoints_observed": false,
+        "waypoint_results": [
+          {
+            "arrival_s": 2.0,
+            "end_s": 3.0,
+            "target_deg": [
+              24.994,
+              30.004,
+              -10.01,
+              5.005
+            ],
+            "samples": 302,
+            "sampled_span_s": 0.0,
+            "max_error_deg": [
+              0.5787584055588619,
+              0.573519407887365,
+              0.5901373490704269,
+              0.5901373490704269
+            ],
+            "passed": false
+          },
+          {
+            "arrival_s": 5.0,
+            "end_s": 6.0,
+            "target_deg": [
+              14.994,
+              25.004,
+              -10.01,
+              5.005
+            ],
+            "samples": 0,
+            "sampled_span_s": 0.0,
+            "max_error_deg": [],
+            "passed": false
+          }
+        ],
+        "accuracy_passed": false,
+        "stop_observations_confirmed": true,
+        "observed_delta_range_deg": null,
+        "final_delta_from_start_deg": null,
+        "actual_excursion_deg": null,
+        "return_error_deg": null,
+        "requested_excursion_observed": null,
+        "initial_deg": [
+          14.994,
+          25.004,
+          -10.01,
+          5.005
+        ],
+        "plan_sha256": "5204dd98ad00ae870873316337e1c8f7c9531544046124cb0452932ec1cc4958",
+        "operator_acknowledgements": {
+          "supported": true,
+          "clearance_and_local_power_cut": true,
+          "native_output_not_hardware_clamp": true
+        },
+        "trial_parameters": {
+          "hold_seconds": 1.0,
+          "round_trip": false,
+          "delta_deg": 1.0,
+          "leg_seconds": 4.0
+        },
+        "overall_ok": false
+      }
+    },
+    {
+      "name": "stalled",
+      "result": {
+        "request_id": "6409ceeaa7c54176bfcb47122bfd419a",
+        "mode": "point_to_point",
+        "reason": "PTP_RETIMING_BUDGET_EXHAUSTED",
+        "command_id": 1,
+        "trajectory_error_code": null,
+        "trajectory_error_string": null,
+        "concurrent_control_error": "PTP_RETIMING_BUDGET_EXHAUSTED",
+        "point_to_point": {
+          "minimum_scaling": 0.0,
+          "scaled_samples": 3701,
+          "extra_time_limit_s": 6.0,
+          "endpoint_timeout_s": 3.0,
+          "terminal_tolerance_deg": 0.5,
+          "stable_seconds": 0.5,
+          "official_jtc_scaling": true
+        },
+        "stop_error": null,
+        "backend_arm_receipt": "Arm request accepted only; four-axis fresh preflight, enable and ramp are not yet confirmed; audit_file=/tmp/slai-ptp-stalled-49n3djlh/audit/canusb_motion_8YcD5R.jsonl",
+        "standard_jtc_action_succeeded": false,
+        "action_passed": false,
+        "waypoints_observed": false,
+        "waypoint_results": [
+          {
+            "arrival_s": 2.0,
+            "end_s": 3.0,
+            "target_deg": [
+              24.994,
+              30.004,
+              -10.01,
+              5.005
+            ],
+            "samples": 0,
+            "sampled_span_s": 0.0,
+            "max_error_deg": [],
+            "passed": false
+          },
+          {
+            "arrival_s": 5.0,
+            "end_s": 6.0,
+            "target_deg": [
+              14.994,
+              25.004,
+              -10.01,
+              5.005
+            ],
+            "samples": 0,
+            "sampled_span_s": 0.0,
+            "max_error_deg": [],
+            "passed": false
+          }
+        ],
+        "accuracy_passed": false,
+        "stop_observations_confirmed": true,
+        "observed_delta_range_deg": null,
+        "final_delta_from_start_deg": null,
+        "actual_excursion_deg": null,
+        "return_error_deg": null,
+        "requested_excursion_observed": null,
+        "initial_deg": [
+          14.994,
+          25.004,
+          -10.01,
+          5.005
+        ],
+        "plan_sha256": "5204dd98ad00ae870873316337e1c8f7c9531544046124cb0452932ec1cc4958",
+        "operator_acknowledgements": {
+          "supported": true,
+          "clearance_and_local_power_cut": true,
+          "native_output_not_hardware_clamp": true
+        },
+        "trial_parameters": {
+          "hold_seconds": 1.0,
+          "round_trip": false,
+          "delta_deg": 1.0,
+          "leg_seconds": 4.0
+        },
+        "overall_ok": false
+      }
+    }
+  ],
+  "software_only": true,
+  "physical_port_opened": false
+}

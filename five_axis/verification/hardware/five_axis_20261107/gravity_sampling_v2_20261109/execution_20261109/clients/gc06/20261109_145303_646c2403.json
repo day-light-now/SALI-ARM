@@ -1,0 +1,271 @@
+{
+  "request_id": "646c240341f54efdb0710476a3aa5f9c",
+  "mode": "preview",
+  "joint_count": 5,
+  "physical_torque_off_verified": false,
+  "driver_current_clamp_verified": false,
+  "hardware_motion_accepted": false,
+  "stop_observations_confirmed": false,
+  "phase": "pre_arm",
+  "arm_requested": false,
+  "trajectory_requested": false,
+  "trajectory_started": false,
+  "stop_requested": false,
+  "unknown_observed": false,
+  "prearm_timeout": false,
+  "prearm_reasons": [
+    "需要B驱动DISARMED；不能从停止/UNKNOWN状态直接使能"
+  ],
+  "prearm_observations": {},
+  "load_id": "j5_3p5kg_provisional",
+  "calibration_group": null,
+  "expected_identity": {
+    "load_id": "j5_3p5kg_provisional"
+  },
+  "operator_acknowledgements": {
+    "supported": true,
+    "clearance_and_local_power_cut": true,
+    "native_output_not_hardware_clamp": true
+  },
+  "trial_parameters": {
+    "hold_seconds": 1.0,
+    "round_trip": false,
+    "delta_deg": 1.0,
+    "leg_seconds": 4.0
+  },
+  "initial_model_rad": [
+    0.0007629510948348184,
+    0.002288853284504455,
+    0.0,
+    0.002288853284504455,
+    -0.0049591821164263195
+  ],
+  "plan": {
+    "schema": "slaihand_joint_plan/2",
+    "coordinates": "absolute_deg",
+    "waypoints": [
+      {
+        "degrees": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "move_s": 8.0,
+        "dwell_s": 5.0
+      },
+      {
+        "degrees": [
+          0.0,
+          20.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "move_s": 8.0,
+        "dwell_s": 5.0
+      },
+      {
+        "degrees": [
+          0.0,
+          20.0,
+          0.0,
+          0.0,
+          10.0
+        ],
+        "move_s": 8.0,
+        "dwell_s": 5.0
+      },
+      {
+        "degrees": [
+          0.0,
+          20.0,
+          0.0,
+          0.0,
+          20.0
+        ],
+        "move_s": 8.0,
+        "dwell_s": 5.0
+      },
+      {
+        "degrees": [
+          0.0,
+          20.0,
+          0.0,
+          0.0,
+          10.0
+        ],
+        "move_s": 8.0,
+        "dwell_s": 5.0
+      },
+      {
+        "degrees": [
+          0.0,
+          20.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "move_s": 8.0,
+        "dwell_s": 5.0
+      },
+      {
+        "degrees": [
+          0.0,
+          20.0,
+          0.0,
+          0.0,
+          -10.0
+        ],
+        "move_s": 8.0,
+        "dwell_s": 5.0
+      },
+      {
+        "degrees": [
+          0.0,
+          20.0,
+          0.0,
+          0.0,
+          -20.0
+        ],
+        "move_s": 8.0,
+        "dwell_s": 5.0
+      },
+      {
+        "degrees": [
+          0.0,
+          20.0,
+          0.0,
+          0.0,
+          -10.0
+        ],
+        "move_s": 8.0,
+        "dwell_s": 5.0
+      },
+      {
+        "degrees": [
+          0.0,
+          20.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "move_s": 8.0,
+        "dwell_s": 5.0
+      },
+      {
+        "degrees": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "move_s": 8.0,
+        "dwell_s": 8.0
+      }
+    ]
+  },
+  "plan_sha256": "c15bdc450c86c1c917589567382cc7317cc1d3228ddf5d426d96f9bd2eeea7b0",
+  "reason": "需要B驱动DISARMED；不能从停止/UNKNOWN状态直接使能",
+  "last_observed_status": {
+    "slaihand_joint1": {
+      "position": 0.0007629510948348184,
+      "velocity": -0.01831501831501825,
+      "driver_temperature": 31.0,
+      "command_id": 1.0,
+      "feedback_valid": 1.0,
+      "command_owner": 0.0,
+      "effort": -0.04884004884004867,
+      "motor_temperature": 27.0,
+      "disabled_observed": 1.0,
+      "timeout_count": 2000.0,
+      "audit_ok": 1.0,
+      "hold_ready": 0.0,
+      "motor_state": 0.0,
+      "control_state": 8.0,
+      "configuration_conflict": 0.0,
+      "control_mode": 1.0,
+      "feedback_age": 0.030054578999624937
+    },
+    "slaihand_joint2": {
+      "position": 0.002288853284504455,
+      "velocity": 0.006105006105006083,
+      "driver_temperature": 30.0,
+      "command_id": 1.0,
+      "feedback_valid": 1.0,
+      "command_owner": 0.0,
+      "effort": -0.04884004884004867,
+      "motor_temperature": 27.0,
+      "disabled_observed": 1.0,
+      "timeout_count": 2000.0,
+      "audit_ok": 1.0,
+      "hold_ready": 0.0,
+      "motor_state": 0.0,
+      "control_state": 8.0,
+      "configuration_conflict": 0.0,
+      "control_mode": 1.0,
+      "feedback_age": 0.020077365999895846
+    },
+    "slaihand_joint4": {
+      "position": 0.002288853284504455,
+      "velocity": 0.010989010989014503,
+      "driver_temperature": 29.0,
+      "command_id": 1.0,
+      "feedback_valid": 1.0,
+      "command_owner": 0.0,
+      "effort": 0.03956043956043942,
+      "motor_temperature": 28.0,
+      "disabled_observed": 1.0,
+      "timeout_count": 2000.0,
+      "audit_ok": 1.0,
+      "hold_ready": 0.0,
+      "motor_state": 0.0,
+      "control_state": 8.0,
+      "configuration_conflict": 0.0,
+      "control_mode": 1.0,
+      "feedback_age": 4.165199970884714e-05
+    },
+    "slaihand_joint3": {
+      "position": 0.0,
+      "velocity": -0.010989010989014503,
+      "driver_temperature": 29.0,
+      "command_id": 1.0,
+      "feedback_valid": 1.0,
+      "command_owner": 0.0,
+      "effort": -0.01318681318681314,
+      "motor_temperature": 27.0,
+      "disabled_observed": 1.0,
+      "timeout_count": 2000.0,
+      "audit_ok": 1.0,
+      "hold_ready": 0.0,
+      "motor_state": 0.0,
+      "control_state": 8.0,
+      "configuration_conflict": 0.0,
+      "control_mode": 1.0,
+      "feedback_age": 0.010104940000019269
+    },
+    "slaihand_joint5": {
+      "position": -0.0049591821164263195,
+      "velocity": -0.0024420024420024333,
+      "driver_temperature": 29.0,
+      "command_id": 1.0,
+      "feedback_valid": 1.0,
+      "command_owner": 0.0,
+      "effort": -0.03418803418803407,
+      "motor_temperature": 27.0,
+      "disabled_observed": 1.0,
+      "timeout_count": 2000.0,
+      "audit_ok": 1.0,
+      "hold_ready": 0.0,
+      "motor_state": 0.0,
+      "control_state": 8.0,
+      "configuration_conflict": 0.0,
+      "control_mode": 1.0,
+      "feedback_age": 0.040034726000158116
+    }
+  },
+  "phase_result": "未请求使能",
+  "stop_result": "未请求停止"
+}

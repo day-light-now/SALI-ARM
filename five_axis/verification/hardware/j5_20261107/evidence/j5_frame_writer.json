@@ -1,0 +1,12 @@
+{
+  "passed": true,
+  "cases": [
+    "complete_30_of_30_returns_without_post_write_select",
+    "short_write_reports_partial",
+    "positive_partial_progress_obeys_total_deadline",
+    "eagain_zero_bytes_returns_within_5ms",
+    "ready_but_eagain_bounded_until_deadline"
+  ],
+  "deadline_s": 0.005,
+  "pyserial_write_not_used": true
+}

@@ -1,0 +1,23 @@
+{
+  "schema": "slaihand_40deg_abort_evidence/1",
+  "observed_at": "2026-11-09T09:14:46+08:00",
+  "plan": "INDEPENDENT_5AXIS_40DEG.json",
+  "client_result": "independent_40deg_client_result_20261109_091446.json",
+  "client_request_id": "b02f10f45d16456eb2db289c807dc4a1",
+  "client_reason": "轨迹未通过：Aborted due to path tolerance violation",
+  "first_hold_signed_mean_deg": {
+    "J1": -3.422,
+    "J4": -0.960
+  },
+  "first_hold_max_abs_deg": {
+    "J1": 3.455,
+    "J4": 0.962
+  },
+  "outcome": "incomplete_path_tolerance_abort",
+  "notes": [
+    "The 40-degree plan was accepted and armed.",
+    "J1 +40 held and was sampled; the following J1 -40 transition aborted on path tolerance.",
+    "No retry; the driver was stopped and no further motion is active.",
+    "This was not the earlier SERIAL_OR_AUDIT_WRITE_FAILURE."
+  ]
+}

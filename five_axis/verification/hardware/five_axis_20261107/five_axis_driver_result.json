@@ -1,0 +1,31 @@
+{
+  "status": "PASS",
+  "physical_port_opened": false,
+  "single_owner": true,
+  "axes": 5,
+  "j5_feedback": 0.0001907377737087046,
+  "j5_timeout_count": 0.0,
+  "j5_arm_refused": "Motion refused: an active axis is calibration-pending (J5 sign/zero/limits/TIMEOUT); feedback and stop remain available",
+  "five_axis_stop_fd": {
+    "1": 2,
+    "2": 2,
+    "3": 2,
+    "4": 2,
+    "5": 2
+  },
+  "fc_frames": {
+    "1": 0,
+    "2": 0,
+    "3": 0,
+    "4": 0,
+    "5": 0
+  },
+  "mit_frames": {
+    "1": 0,
+    "2": 0,
+    "3": 0,
+    "4": 0,
+    "5": 0
+  },
+  "software_only": true
+}

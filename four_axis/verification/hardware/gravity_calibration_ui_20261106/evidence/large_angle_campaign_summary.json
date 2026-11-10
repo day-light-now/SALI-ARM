@@ -1,0 +1,65 @@
+{
+  "campaign": "large_angle_20261106",
+  "groups": {
+    "L01": {
+      "operation_id": "180d6b74b7d24dc0",
+      "group": "L01",
+      "campaign_complete": true,
+      "qualified_points": 12,
+      "requested_points": 12,
+      "raw_file": "/home/xuyu/.ros/slaihand/control_panel/operations/180d6b74b7d24dc0/client/calibration/raw/20261106_125614_web_static_974193302.jsonl",
+      "reason": "finite_trial_complete",
+      "stop_confirmed": true,
+      "alpha_changed": false,
+      "trajectory_error_code": 0
+    },
+    "L02": {
+      "operation_id": "9830153ec4964beb",
+      "group": "L02",
+      "campaign_complete": true,
+      "qualified_points": 12,
+      "requested_points": 12,
+      "raw_file": "/home/xuyu/.ros/slaihand/control_panel/operations/9830153ec4964beb/client/calibration/raw/20261106_125903_web_static_143672641.jsonl",
+      "reason": "finite_trial_complete",
+      "stop_confirmed": true,
+      "alpha_changed": false,
+      "trajectory_error_code": 0
+    },
+    "L03": {
+      "operation_id": "69902a2c700546cc",
+      "group": "L03",
+      "campaign_complete": true,
+      "qualified_points": 12,
+      "requested_points": 12,
+      "raw_file": "/home/xuyu/.ros/slaihand/control_panel/operations/69902a2c700546cc/client/calibration/raw/20261106_130153_web_static_313153312.jsonl",
+      "reason": "finite_trial_complete",
+      "stop_confirmed": true,
+      "alpha_changed": false,
+      "trajectory_error_code": 0
+    },
+    "L04": {
+      "operation_id": "ff6b9c57cdb145b0",
+      "group": "L04",
+      "campaign_complete": true,
+      "qualified_points": 12,
+      "requested_points": 12,
+      "raw_file": "/home/xuyu/.ros/slaihand/control_panel/operations/ff6b9c57cdb145b0/client/calibration/raw/20261106_130442_web_static_482663944.jsonl",
+      "reason": "finite_trial_complete",
+      "stop_confirmed": true,
+      "alpha_changed": false,
+      "trajectory_error_code": 0
+    },
+    "V02": {
+      "operation_id": "4ce01f5f9ef844c6",
+      "group": "V02",
+      "campaign_complete": true,
+      "qualified_points": 8,
+      "requested_points": 8,
+      "raw_file": "/home/xuyu/.ros/slaihand/control_panel/operations/4ce01f5f9ef844c6/client/calibration/raw/20261106_130732_web_static_652163476.jsonl",
+      "reason": "finite_trial_complete",
+      "stop_confirmed": true,
+      "alpha_changed": false,
+      "trajectory_error_code": 0
+    }
+  }
+}

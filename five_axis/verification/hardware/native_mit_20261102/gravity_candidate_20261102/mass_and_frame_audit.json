@@ -1,0 +1,72 @@
+{
+  "status": "ESTIMATE_ONLY_NOT_FOR_HARDWARE",
+  "gravity_source": "User CAD shoulder-mount screenshot 2026-10-08: base +Y points down; installation not measured.",
+  "links": [
+    {
+      "link": "base_link",
+      "mass_kg": 1.7819138782608146,
+      "com_link_m": [
+        -0.0003248995632461394,
+        -0.00023915134830508118,
+        0.02673456071503915
+      ],
+      "physical_mass_and_com_measured": false
+    },
+    {
+      "link": "link1",
+      "mass_kg": 1.7417411456583918,
+      "com_link_m": [
+        0.012179016746953287,
+        0.007067934021878631,
+        0.12814319742199648
+      ],
+      "physical_mass_and_com_measured": false
+    },
+    {
+      "link": "link2",
+      "mass_kg": 0.22786672078481798,
+      "com_link_m": [
+        0.032402280371982936,
+        -0.0005656267363472415,
+        -0.026351675009243614
+      ],
+      "physical_mass_and_com_measured": false
+    },
+    {
+      "link": "link3",
+      "mass_kg": 2.1051275216764473,
+      "com_link_m": [
+        0.00021817177567062313,
+        -7.056904927922243e-05,
+        0.08600202597559992
+      ],
+      "physical_mass_and_com_measured": false
+    },
+    {
+      "link": "link4",
+      "mass_kg": 0.48579283432839593,
+      "com_link_m": [
+        0.08059076655780156,
+        -0.0025313026081046504,
+        -0.029101161222513817
+      ],
+      "physical_mass_and_com_measured": false
+    }
+  ],
+  "total_mass_kg": 6.342442100708868,
+  "motor_source": "vendor assembled motor mass verified; CAD split and COM unverified",
+  "payload": "J4340 included on link4 as fixed mass; no cable or extra payload",
+  "frame_ledger": {
+    "canonical_joint_positions": "URDF coordinates and limits unchanged",
+    "fixed_j3_placement_rad": 3.141592653589793,
+    "gravity_base_m_s2": [
+      0,
+      9.80665,
+      0
+    ],
+    "j2_motor_tau": "hardware_sign * model tau; J2 sign +1",
+    "hardware_installation_confirmed": true,
+    "confirmation_scope": "User confirmed +Y-down, fixed J3 +180deg and no added payload only; mass/COM remain unmeasured"
+  },
+  "hardware_use_forbidden_by_user": true
+}

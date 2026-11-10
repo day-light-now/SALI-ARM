@@ -1,0 +1,35 @@
+{
+  "schema": "slaihand_angle_schedule_live_result/1",
+  "observed_at": "2026-11-09T10:09:41+08:00",
+  "plan": "FORWARD_J1_10.json (forward-only; no negative/backward segment)",
+  "policy": {
+    "kp_max": 280,
+    "slew_kp_per_s": 80,
+    "schedule": "J1 0:160,20:220,40:280; J2 0:160,20:240,40:280; J4 0:160,20:200,40:220; J3/J5 160"
+  },
+  "runtime_identity_verified": "kp_schedule_source=angle_schedule",
+  "driver_effective_kp_observed": [175.60585434208463, 160.96170530959625,
+                                   160.0, 178.40354251545554, 160.0],
+  "result": {
+    "j1_signed_mean_deg": -1.2791,
+    "j1_max_abs_deg": 1.2791,
+    "j4_signed_mean_deg": -0.1530,
+    "waypoint_precision": "failed (0.5 degree criterion)",
+    "trajectory_error_code": null,
+    "client_reason": "Aborted due to goal_time_tolerance exceeding by 2.002 s"
+  },
+  "outcome": "partial_forward_probe_not_a_pass",
+  "retry": false,
+  "driver_stopped": true,
+  "notes": [
+    "This is the first live schedule probe with valid controller-state samples.",
+    "The effective Kp in the audit is not 160; the scheduler was active and rate-limited.",
+    "J1 static signed error was about -1.279 deg and the JTC goal-time check aborted.",
+    "Previous forward baseline +10 (160/5) had a different start/target pose, so these are not a clean A/B result.",
+    "No backward motion was commanded; no performance, stability, or 1.5x claim."
+  ],
+  "earlier_attempts": [
+    "CONTROL_CYCLE_GAP after USB-IP serial read overrun; no samples",
+    "REQUIRE_MIT_TIMEOUT2000_IDS after a USB reattach reset the J5 timeout; fixed with fresh setup"
+  ]
+}

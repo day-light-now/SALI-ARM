@@ -1,0 +1,45 @@
+{
+  "schema": "slaihand_gravity_calibration_ui_verification/1",
+  "date": "2026-11-06",
+  "branch": "feature/gravity-calibration-ui-20261106",
+  "baseline": "c7c819d",
+  "task_book": "6f7ebae",
+  "commits": {
+    "float_readiness": "d903fce",
+    "float_speed_gate": "801d3d0",
+    "supported_capture_feature": "2c5d394"
+  },
+  "isolation": {
+    "ros_domain": 176,
+    "pty_fake_plant": true,
+    "real_serial_touched": false,
+    "domain_0_touched": false,
+    "parameters_applied": false,
+    "deployment_performed": false
+  },
+  "results": {
+    "cpp_supervisor_tests": {"passed": 5, "total": 5},
+    "pure_protocol_tests": {"passed": 6, "total": 6},
+    "panel_gating_tests": {"passed": 6, "total": 6},
+    "pty_ros_jtc_e2e": {"passed": 38, "total": 38},
+    "windows_browser": {"passed": 19, "total": 19},
+    "baseline_panel_regression": {"passed": 121, "total": 121}
+  },
+  "key_measurements": {
+    "alpha0_preview_start_deg": [14.994, 25.004, -10.01, 5.005],
+    "capture_static_window_span_s": 1.63,
+    "capture_max_speed_rad_s": 0.011,
+    "capture_max_position_delta_rad": 0.0,
+    "holdout_raw_sample_rmse_nm": 0.9594,
+    "holdout_paired_midpoint_rmse_nm": 0.1576,
+    "existing_training_coverage_deg": {
+      "J1": [-17.4, 16.79], "J2": [-2.75, 31.45],
+      "J3": [-22.88, 22.86], "J4": [-32.54, 32.57]
+    }
+  },
+  "not_committed_due_to_gitignore": [
+    "evidence/ctest.log", "evidence/pure_tests.log", "evidence/panel_tests.log",
+    "evidence/e2e_final.log", "evidence/baseline.log", "evidence/capture_card.png"
+  ],
+  "recommendation": "就绪修复可直接复核合并；速度门限修改作为独立安全策略项由 Codex/用户决定；大角度新参数需要现场 L01-L04/V02 静态样本，本轮无新参数。"
+}

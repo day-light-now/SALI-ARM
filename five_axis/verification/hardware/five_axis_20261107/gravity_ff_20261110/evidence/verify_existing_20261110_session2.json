@@ -1,0 +1,65 @@
+{
+  "schema": "slaihand_j5_timeout_setup/1",
+  "ok": false,
+  "exit_code": 1,
+  "error": "PORT_OPEN_FAILED: /dev/ttyACM0: [Errno 16] could not open port /dev/ttyACM0: [Errno 16] Device or resource busy: '/dev/ttyACM0'",
+  "device": null,
+  "port_argument": "/dev/ttyACM0",
+  "baud": 921600,
+  "exclusive": {
+    "flock": "LOCK_EX|LOCK_NB",
+    "tiocm": "TIOCEXCL",
+    "locked": false,
+    "released": false
+  },
+  "observed_at": "2026-11-10T02:25:15.768+00:00",
+  "started_at": "2026-11-10T02:25:15.748+00:00",
+  "completed_at": "2026-11-10T02:25:15.768+00:00",
+  "session_id": "8b8fb82afdeb4c0186c922bace94999b",
+  "host_boot_id": "ae7a07f6-7ffb-48dc-bdf8-e5e0ed3eeb15",
+  "tool": {
+    "name": "j5_timeout_setup.py",
+    "sha256": "380b6619732c8df61edfac9e518f2ede2c73554513b717a99070c443bb286ce7"
+  },
+  "timeout_before": null,
+  "timeout_after": null,
+  "j5_id": 5,
+  "master_id": null,
+  "control_mode": null,
+  "profile": null,
+  "motor_state_all_zero": null,
+  "all_motor_state_zero": null,
+  "axes": [],
+  "readback": {
+    "rid": 9,
+    "expected": 2000,
+    "observed": null,
+    "attempts": 0,
+    "matched": false
+  },
+  "readback_hex": null,
+  "write_outcome": null,
+  "write_frame_hex": null,
+  "write_data_hex": "05 00 55 09 d0 07 00 00",
+  "write_attempts": 0,
+  "parameter_writes": 0,
+  "read_only_requests": 0,
+  "motor_zero_written": false,
+  "flash_written": false,
+  "enabled": false,
+  "mit_sent": false,
+  "audit_path": "/mnt/d/CodexData/Projects/机械臂/slaihand_five_axis_ws_gain/verification/hardware/five_axis_20261107/gravity_ff_20261110/evidence/verify_existing_20261110_session2.json",
+  "preflight": {
+    "completed": false,
+    "conflicts": [],
+    "missing_registers": []
+  },
+  "postflight": {
+    "completed": false,
+    "profile": null,
+    "axes": []
+  },
+  "warnings": [],
+  "trace": [],
+  "trace_dropped": 0
+}

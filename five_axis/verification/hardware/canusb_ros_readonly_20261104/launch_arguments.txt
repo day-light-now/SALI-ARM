@@ -1,0 +1,9 @@
+Arguments (pass arguments as '<name>:=<value>'):
+
+    'port':
+        Explicit Linux/WSL serial device for the existing CANUSB
+        (default: '')
+
+    'log_directory':
+        no description given
+        (default: '/home/xuyu/.ros/slaihand/canusb_readonly')

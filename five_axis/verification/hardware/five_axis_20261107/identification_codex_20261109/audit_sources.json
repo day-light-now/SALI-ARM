@@ -1,0 +1,24 @@
+[
+  {
+    "source": "/home/xuyu/.ros/slaihand/canusb_five_axis_candidate/canusb_motion_OwBmJz.jsonl",
+    "source_sha256": "65a770a6a9d63623bc265dea5f79fe1cc85345f5e1dfc3a844612c8903c30f2e",
+    "commands": [
+      1
+    ],
+    "archive": "canusb_motion_OwBmJz_cycles.jsonl.gz",
+    "archive_sha256": "e171ca54f4e22856781e4ff6a5242f80d8ae5501bf267668017f1dd7a63e0e31",
+    "records": 16114
+  },
+  {
+    "source": "/home/xuyu/.ros/slaihand/canusb_five_axis_candidate/canusb_motion_IFxgoj.jsonl",
+    "source_sha256": "6679faf33a9aafe83563b2aa003e1eb66a8b08e57afacd9cbf17889b3c0ccb00",
+    "commands": [
+      1,
+      3,
+      4
+    ],
+    "archive": "canusb_motion_IFxgoj_cycles.jsonl.gz",
+    "archive_sha256": "b5d764ddc9146f01a4ecd0d88826ddda6bfdc3fe0b432932c88e2688d6c24f68",
+    "records": 39045
+  }
+]

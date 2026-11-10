@@ -1,0 +1,83 @@
+[
+  {
+    "case": "enabled_motor_calibration",
+    "axis": "slaihand_joint1",
+    "accepted": false,
+    "code": "NOT_DISARMED",
+    "message": "标定流程要求全部五轴轴未使能：NOT_DISARMED: J1 驱动 motor_state=1，不能把 host DISARMED 当作实际失能"
+  },
+  {
+    "case": "enabled_motor_calibration",
+    "axis": "slaihand_joint5",
+    "accepted": false,
+    "code": "NOT_DISARMED",
+    "message": "标定流程要求全部五轴轴未使能：NOT_DISARMED: J5 驱动 motor_state=1，不能把 host DISARMED 当作实际失能"
+  },
+  {
+    "case": "abort_before_upper_commit",
+    "accepted": false,
+    "code": "CAL_INVALIDATED",
+    "message": "采样期间会话已作废/完成，迟到读数不能写入",
+    "state": "aborted",
+    "transitions": [
+      "start",
+      "capture",
+      "capture",
+      "capture",
+      "aborted"
+    ]
+  },
+  {
+    "case": "identity_changed_after_preview",
+    "accepted": false,
+    "code": "IDENTITY_CHANGED",
+    "message": "预览后驱动运行身份已变化（boot/policy/mapping/model），请重新预览",
+    "launch_calls": 0
+  },
+  {
+    "case": "five_axis_valid_float_config",
+    "length": 43,
+    "joint_count": 5,
+    "accepted": true,
+    "error": null,
+    "expected_error": null
+  },
+  {
+    "case": "wrong_axis_float_config",
+    "length": 43,
+    "joint_count": 4,
+    "accepted": false,
+    "error": {
+      "code": "FF_AXIS_MISMATCH",
+      "axes": 5,
+      "expected": 4
+    },
+    "expected_error": null
+  },
+  {
+    "case": "malformed_explicit_ff_version",
+    "accepted": false,
+    "error": {
+      "code": "FF_SCHEMA",
+      "reason": "前馈状态显式 schema=slaihand_gravity_ff_state/banana 非法；拒绝按长度回退",
+      "length": 43,
+      "axes": null
+    }
+  },
+  {
+    "case": "malformed_explicit_float_dimension",
+    "accepted": false,
+    "error": {
+      "code": "FF_PROTOCOL_LAYOUT",
+      "reason": "前馈状态 float 维度 size=2 非法；只接受 0/1",
+      "length": 43,
+      "axes": null
+    }
+  },
+  {
+    "case": "unmarked_v2_payload",
+    "accepted": true,
+    "error": null,
+    "axes": 5
+  }
+]

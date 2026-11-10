@@ -1,0 +1,10 @@
+{
+  "schema": "slaihand_pointmass_gravity_feasibility/1",
+  "source": "multi_pose_20/40 torque estimates",
+  "assumption": "point masses at J1-J4 link origins; J5 is a fixed end mass, not a gravity joint",
+  "sample_count": 14,
+  "singular": true,
+  "error": "singular",
+  "deployable": false,
+  "note": "The four-origin point-mass regressor is rank deficient. URDF has no inertial blocks; J5 is a fixed payload on J4 and cannot make the missing link COM parameters identifiable."
+}

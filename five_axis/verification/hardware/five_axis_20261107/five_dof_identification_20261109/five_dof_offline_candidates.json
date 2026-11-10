@@ -1,0 +1,303 @@
+{
+  "schema": "slaihand_five_dof_offline_potential_candidates/1",
+  "deployable": false,
+  "selected_for_deployment": null,
+  "physical_J5_axis_measured": false,
+  "physical_J5_pivot_measured": false,
+  "coordinates": {
+    "gravity_base_m_s2": [
+      0.0,
+      9.80665,
+      0.0
+    ],
+    "fixed_J3_offset_rad": 3.141592653589793,
+    "box_mass_kg": 3.5,
+    "mass_excludes_motor": true,
+    "q5_input": "measured calibrated model joint angle",
+    "box_COM_orbit_frame": "link4",
+    "physical_J5_pivot_link4_m": null,
+    "physical_J5_axis_link4": null
+  },
+  "models": [
+    {
+      "name": "rigid_circle_gravity_only",
+      "mass_assumed_kg": 3.5,
+      "training_cost": 104.7970272528833,
+      "optimizer_success": true,
+      "jacobian_condition_number": 1233.4731225548198,
+      "near_best_multistart_count": 18,
+      "orbit_moment_b_u_v_kg_m": [
+        [
+          0.025715902845289462,
+          0.17500389567769462,
+          -0.13338034877403243
+        ],
+        [
+          0.3432902792770361,
+          -0.14510988818255496,
+          0.020481880521669216
+        ],
+        [
+          0.013917855766123102,
+          -0.019649391757805886,
+          -0.372484627358747
+        ]
+      ],
+      "COM_at_J5_zero_in_link4_m": [
+        0.10543033774923587,
+        0.00854114499861133,
+        -0.03225670521496092
+      ],
+      "COM_orbit_radius_m": 0.10664631720505428,
+      "fitted_axis_direction_link4_unverified": [
+        0.3908402247497913,
+        0.9198333454505804,
+        -0.03391954178236833
+      ],
+      "nuisance_coefficients_nm": [],
+      "upstream_heldout_total_with_nuisance": {
+        "rmse_nm": 1.6973659714361002,
+        "per_axis_rmse_nm": [
+          2.4120433253511044,
+          0.8905353209829658,
+          0.8014586037315592,
+          2.0666066169381327
+        ],
+        "per_axis_max_abs_nm": [
+          5.708845551877872,
+          1.922837766981342,
+          2.0295649906327276,
+          5.024026186288355
+        ]
+      },
+      "upstream_heldout_gravity_only_vs_effort": {
+        "rmse_nm": 1.6973659714361002,
+        "per_axis_rmse_nm": [
+          2.4120433253511044,
+          0.8905353209829658,
+          0.8014586037315592,
+          2.0666066169381327
+        ],
+        "per_axis_max_abs_nm": [
+          5.708845551877872,
+          1.922837766981342,
+          2.0295649906327276,
+          5.024026186288355
+        ]
+      },
+      "J5_pm20_heldout_rmse_total_nm": 0.23404887240245867,
+      "J5_pm20_heldout_prediction_total_nm": [
+        1.019659474229792,
+        -1.2584940758899286
+      ],
+      "J5_all_gravity_component_nm": [
+        -0.09865383490032371,
+        0.4544545420175629,
+        -0.6779791783016449,
+        1.019659474229792,
+        -1.2584940758899286,
+        -0.14996761619098978
+      ],
+      "J5_all_prediction_with_nuisance_nm": [
+        -0.09865383490032371,
+        0.4544545420175629,
+        -0.6779791783016449,
+        1.019659474229792,
+        -1.2584940758899286,
+        -0.14996761619098978
+      ],
+      "deployable": false,
+      "scope": "mathematically rigid orbit; spatial axis/pivot and nuisance law are unmeasured. Nuisance term is not gravity FF."
+    },
+    {
+      "name": "rigid_circle_J5_approach_nuisance",
+      "mass_assumed_kg": 3.5,
+      "training_cost": 103.97706011391848,
+      "optimizer_success": true,
+      "jacobian_condition_number": 867.8172507291639,
+      "near_best_multistart_count": 18,
+      "orbit_moment_b_u_v_kg_m": [
+        [
+          0.370964340573357,
+          0.339137441773662,
+          -0.12573897067614526
+        ],
+        [
+          -0.002027625975323696,
+          -0.3095665103043086,
+          0.01146818802946357
+        ],
+        [
+          0.014028207264013942,
+          -0.011548425790075301,
+          -0.3092521595211447
+        ]
+      ],
+      "COM_at_J5_zero_in_link4_m": [
+        0.10541048988515236,
+        0.008448837562672404,
+        -0.032648795041909054
+      ],
+      "COM_orbit_radius_m": 0.08851014234781003,
+      "fitted_axis_direction_link4_unverified": [
+        0.9989527285126732,
+        -0.004857600281761168,
+        0.04549560326655635
+      ],
+      "nuisance_coefficients_nm": [
+        0.8084926420407862
+      ],
+      "upstream_heldout_total_with_nuisance": {
+        "rmse_nm": 1.696529679838166,
+        "per_axis_rmse_nm": [
+          2.4103255226166267,
+          0.890636892615831,
+          0.8010194396884577,
+          2.0659904346494073
+        ],
+        "per_axis_max_abs_nm": [
+          5.704477306197201,
+          1.927762969709665,
+          2.0281133696140867,
+          5.0232384436542565
+        ]
+      },
+      "upstream_heldout_gravity_only_vs_effort": {
+        "rmse_nm": 1.696529679838166,
+        "per_axis_rmse_nm": [
+          2.4103255226166267,
+          0.890636892615831,
+          0.8010194396884577,
+          2.0659904346494073
+        ],
+        "per_axis_max_abs_nm": [
+          5.704477306197201,
+          1.927762969709665,
+          2.0281133696140867,
+          5.0232384436542565
+        ]
+      },
+      "J5_pm20_heldout_rmse_total_nm": 0.15379445572141892,
+      "J5_pm20_heldout_prediction_total_nm": [
+        0.679899367914214,
+        -0.9257323819140673
+      ],
+      "J5_all_gravity_component_nm": [
+        -0.12059627144145929,
+        -0.1263182029769374,
+        -0.11104941254231158,
+        -0.12859327412657218,
+        -0.11723973987328104,
+        -0.1349219816554758
+      ],
+      "J5_all_prediction_with_nuisance_nm": [
+        -0.9290889134822455,
+        0.6821744390638488,
+        -0.9195420545830978,
+        0.679899367914214,
+        -0.9257323819140673,
+        0.6735706603853104
+      ],
+      "deployable": false,
+      "scope": "mathematically rigid orbit; spatial axis/pivot and nuisance law are unmeasured. Nuisance term is not gravity FF."
+    },
+    {
+      "name": "rigid_circle_all_axes_approach_nuisance",
+      "mass_assumed_kg": 3.5,
+      "training_cost": 81.38008333186605,
+      "optimizer_success": true,
+      "jacobian_condition_number": 861.6389016774597,
+      "near_best_multistart_count": 18,
+      "orbit_moment_b_u_v_kg_m": [
+        [
+          0.22815614040617485,
+          0.3306727005247071,
+          -0.17366118764942326
+        ],
+        [
+          0.008822185026170448,
+          -0.31218371743014867,
+          0.014257389643926489
+        ],
+        [
+          0.011452637916135757,
+          0.014576461846720647,
+          0.312083548719561
+        ]
+      ],
+      "COM_at_J5_zero_in_link4_m": [
+        0.06770809298067008,
+        0.005282566598445266,
+        -0.0455439422872848
+      ],
+      "COM_orbit_radius_m": 0.08932389014102926,
+      "fitted_axis_direction_link4_unverified": [
+        -0.9989302937351326,
+        -0.026498669778911643,
+        0.0378957617444174
+      ],
+      "nuisance_coefficients_nm": [
+        0.9555863498817039,
+        0.5633326473406299,
+        0.19519080612411324,
+        0.7211568132437565,
+        0.7923614955236044
+      ],
+      "upstream_heldout_total_with_nuisance": {
+        "rmse_nm": 1.4762870738362583,
+        "per_axis_rmse_nm": [
+          1.7800493973272853,
+          0.6514244677383005,
+          0.5637784144723402,
+          2.192468540888508
+        ],
+        "per_axis_max_abs_nm": [
+          4.2259974769366195,
+          2.020675169454611,
+          1.2986680547307081,
+          5.111067697510223
+        ]
+      },
+      "upstream_heldout_gravity_only_vs_effort": {
+        "rmse_nm": 1.7777985880917586,
+        "per_axis_rmse_nm": [
+          2.2853780930690806,
+          1.0511484508740077,
+          0.7000783346235594,
+          2.4133577253735115
+        ],
+        "per_axis_max_abs_nm": [
+          5.181583826818323,
+          2.584007816795241,
+          1.4938588608548211,
+          5.83222451075398
+        ]
+      },
+      "J5_pm20_heldout_rmse_total_nm": 0.14625268357163393,
+      "J5_pm20_heldout_prediction_total_nm": [
+        0.6905605465452305,
+        -0.9264116933830358
+      ],
+      "J5_all_gravity_component_nm": [
+        -0.1295941784228301,
+        -0.11766944609238111,
+        -0.13830978943159825,
+        -0.10180094897837383,
+        -0.13405019785943134,
+        -0.11530443548159908
+      ],
+      "J5_all_prediction_with_nuisance_nm": [
+        -0.9219556739464345,
+        0.6746920494312232,
+        -0.9306712849552026,
+        0.6905605465452305,
+        -0.9264116933830358,
+        0.6770570600420053
+      ],
+      "deployable": false,
+      "scope": "mathematically rigid orbit; spatial axis/pivot and nuisance law are unmeasured. Nuisance term is not gravity FF."
+    }
+  ],
+  "reason": "independent upstream error remains large; fitted axis changes strongly with nuisance assumption",
+  "source_result_sha256": "f3477d0c2abfd3279c144b02eff618a4402b13caaab6783b16917a7ce13e3063"
+}

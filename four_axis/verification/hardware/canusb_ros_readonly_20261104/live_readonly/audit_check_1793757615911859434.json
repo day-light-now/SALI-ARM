@@ -1,0 +1,65 @@
+{
+  "audit_file": "/home/xuyu/.ros/slaihand/canusb_readonly/canusb_vgTAJ3.jsonl",
+  "bytes_examined": 1420792,
+  "prefix_sha256": "56e4b9d5957dead8aedc683242f3a64bbe4231b79936ae16e409c773d397d79e",
+  "rows": 8309,
+  "incomplete_lines": 0,
+  "read_tx": 4154,
+  "non_read_tx": 0,
+  "j5_tx": 0,
+  "sources": {
+    "mapping_sha256": "300d81eed77ded2c3235be3c2a69d5354a9df5cd74be85884dad05760a46356d",
+    "model_sha256": "fe7edfda16165e8532303ec55d6c1ab733ad32fc6d023115f825aae62637e497"
+  },
+  "axes": {
+    "1": {
+      "complete": true,
+      "state": 0,
+      "mode": 1,
+      "timeout": 2000,
+      "model_deg": -5.02709593652586,
+      "velocity_model_rad_s": -0.01831501831501825,
+      "effort_estimate_model_nm": 0.04884004884004867,
+      "driver_temp_c": 30,
+      "motor_temp_c": 26,
+      "host_receipt_age_s": 0.051146692999964216
+    },
+    "2": {
+      "complete": true,
+      "state": 0,
+      "mode": 1,
+      "timeout": 2000,
+      "model_deg": -6.972363494572822,
+      "velocity_model_rad_s": -0.006105006105006083,
+      "effort_estimate_model_nm": -0.146520146520146,
+      "driver_temp_c": 28,
+      "motor_temp_c": 24,
+      "host_receipt_age_s": 0.04122344199998906
+    },
+    "3": {
+      "complete": true,
+      "state": 0,
+      "mode": 1,
+      "timeout": 2000,
+      "model_deg": 4.589957159436654,
+      "velocity_model_rad_s": -0.010989010989014503,
+      "effort_estimate_model_nm": -0.03956043956043942,
+      "driver_temp_c": 27,
+      "motor_temp_c": 25,
+      "host_receipt_age_s": 0.08121902299996009
+    },
+    "4": {
+      "complete": true,
+      "state": 0,
+      "mode": 1,
+      "timeout": 2000,
+      "model_deg": 15.846280669483686,
+      "velocity_model_rad_s": 0.010989010989014503,
+      "effort_estimate_model_nm": 0.01318681318681314,
+      "driver_temp_c": 27,
+      "motor_temp_c": 26,
+      "host_receipt_age_s": 0.06119508299997278
+    }
+  },
+  "motion_accepted": false
+}

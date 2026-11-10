@@ -1,0 +1,639 @@
+{
+  "id": "8fffd9ce29b64e1e",
+  "kind": "execute",
+  "phase": "failed",
+  "created_at": 1793939974.2157733,
+  "started_at": 1793939974.2165465,
+  "finished_at": 1793940064.7856119,
+  "pid": 400430,
+  "exit_code": 1,
+  "stop_reason": null,
+  "lease_expired": false,
+  "cancel_requested": false,
+  "source_sha256": "0d19190a7b82dbac1de64f524e0ce6584af058a7cb7cf4d458f046fac5fdd3dd",
+  "plan_sha256": "41eb6f01b52bfc630d99d5f0548db4dae9e10db56bfe76b905f987259bcf8bbf",
+  "ticket": "22e5d76490f101756edeae491282133b",
+  "final_target_deg": [
+    12.000000000000002,
+    6.000000000000001,
+    0.0,
+    0.0
+  ],
+  "recording_id": null,
+  "capture": {
+    "command_id": null,
+    "boot_id": null,
+    "ready": false,
+    "ack_sent_at": null,
+    "ack_nonce": null,
+    "state": null
+  },
+  "float_settings": null,
+  "result_available": true,
+  "result_error": null,
+  "result": {
+    "request_id": "50d606c3ae1d488b960f3d611c7076de",
+    "mode": "calibration",
+    "reason": "轨迹未通过：Aborted due to path tolerance violation",
+    "command_id": 2,
+    "trajectory_error_code": -4,
+    "trajectory_error_string": "Aborted due to path tolerance violation",
+    "concurrent_control_error": "控制端已全局停止或UNKNOWN；检查失能反馈，状态未知时保持支撑并现场切电",
+    "point_to_point": null,
+    "calibration": {
+      "status": "INCOMPLETE",
+      "campaign_complete": false,
+      "qualified_points": 6,
+      "requested_points": 12,
+      "group": "L01",
+      "role": "training",
+      "paired_targets": [
+        {
+          "pair_id": "L01_01",
+          "target_deg": [
+            50.0,
+            14.999999999999998,
+            0.0,
+            0.0
+          ],
+          "positive_actual_deg": [
+            47.99783772439493,
+            14.25072413310819,
+            -0.1529985719812218,
+            -0.2622832662535231
+          ],
+          "negative_actual_deg": [
+            48.65354589002874,
+            14.801310830918165,
+            0.0,
+            0.0
+          ],
+          "midpoint_nm": [
+            4.4886330600616295,
+            1.1233211233211193,
+            0.09042386185243295,
+            0.4772370486656184
+          ],
+          "half_difference_nm": [
+            0.9279609279609389,
+            0.7767893482179169,
+            0.21287284144426927,
+            0.3623233908948182
+          ],
+          "pose_difference_deg": [
+            -0.6557081656338113,
+            -0.550586697809976,
+            -0.1529985719812218,
+            -0.2622832662535231
+          ]
+        }
+      ],
+      "raw_file": "/home/xuyu/.ros/slaihand/control_panel/operations/8fffd9ce29b64e1e/client/calibration/raw/20261106_123940_web_static_980561000.jsonl",
+      "points": [
+        {
+          "index": 1,
+          "target_deg": [
+            47.0,
+            12.000000000000002,
+            -3.0000000000000004,
+            -3.0000000000000004
+          ],
+          "qualified": true,
+          "reason": null,
+          "calibration_group": "L01",
+          "pair_id": "L01_01",
+          "approach": "conditioning",
+          "samples": 22,
+          "span_s": 2.0995,
+          "actual_deg": [
+            45.12861775113659,
+            11.821623428601129,
+            -3.0162575619155154,
+            -2.8632589899342937
+          ],
+          "effort_estimate_nm": [
+            5.034965034965046,
+            0.3463203463203451,
+            -0.09710289710289675,
+            -0.24695304695304607
+          ]
+        },
+        {
+          "index": 2,
+          "target_deg": [
+            50.0,
+            14.999999999999998,
+            0.0,
+            0.0
+          ],
+          "qualified": true,
+          "reason": null,
+          "calibration_group": "L01",
+          "pair_id": "L01_01",
+          "approach": "positive",
+          "samples": 21,
+          "span_s": 2.0001,
+          "actual_deg": [
+            47.99783772439493,
+            14.25072413310819,
+            -0.1529985719812218,
+            -0.2622832662535231
+          ],
+          "effort_estimate_nm": [
+            5.416593988022568,
+            1.9001104715390362,
+            0.3032967032967022,
+            0.8395604395604366
+          ]
+        },
+        {
+          "index": 3,
+          "target_deg": [
+            53.0,
+            18.0,
+            3.0000000000000004,
+            3.0000000000000004
+          ],
+          "qualified": true,
+          "reason": null,
+          "calibration_group": "L01",
+          "pair_id": "L01_01",
+          "approach": "conditioning",
+          "samples": 22,
+          "span_s": 2.0999,
+          "actual_deg": [
+            50.970381408601526,
+            17.245124756169243,
+            2.843389045521148,
+            2.732117356807532
+          ],
+          "effort_estimate_nm": [
+            5.425685425685435,
+            1.904761904761898,
+            0.2925074925074915,
+            0.9110889110889079
+          ]
+        },
+        {
+          "index": 4,
+          "target_deg": [
+            50.0,
+            14.999999999999998,
+            0.0,
+            0.0
+          ],
+          "qualified": true,
+          "reason": null,
+          "calibration_group": "L01",
+          "pair_id": "L01_01",
+          "approach": "negative",
+          "samples": 21,
+          "span_s": 2.0004,
+          "actual_deg": [
+            48.65354589002874,
+            14.801310830918165,
+            0.0,
+            0.0
+          ],
+          "effort_estimate_nm": [
+            3.5606721321006907,
+            0.34653177510320243,
+            -0.1224489795918363,
+            0.11491365777080022
+          ]
+        },
+        {
+          "index": 5,
+          "target_deg": [
+            62.0,
+            7.0,
+            -3.0000000000000004,
+            -3.0000000000000004
+          ],
+          "qualified": true,
+          "reason": null,
+          "calibration_group": "L01",
+          "pair_id": "L01_02",
+          "approach": "conditioning",
+          "samples": 22,
+          "span_s": 2.1001,
+          "actual_deg": [
+            59.95358327778469,
+            7.091583161051798,
+            -2.86822647603758,
+            -2.8652459843756084
+          ],
+          "effort_estimate_nm": [
+            5.518925518925528,
+            -0.4351204351204336,
+            -0.5142857142857125,
+            -0.23496503496503413
+          ]
+        },
+        {
+          "index": 6,
+          "target_deg": [
+            65.0,
+            10.0,
+            0.0,
+            0.0
+          ],
+          "qualified": true,
+          "reason": null,
+          "calibration_group": "L01",
+          "pair_id": "L01_02",
+          "approach": "positive",
+          "samples": 21,
+          "span_s": 2.0001,
+          "actual_deg": [
+            62.94798390084575,
+            9.57542083147793,
+            -0.1529985719812218,
+            -0.2622832662535231
+          ],
+          "effort_estimate_nm": [
+            5.518925518925528,
+            0.9744752601895424,
+            0.3032967032967022,
+            0.8571428571428541
+          ]
+        },
+        {
+          "index": 7,
+          "target_deg": [
+            68.0,
+            13.0,
+            3.0000000000000004,
+            3.0000000000000004
+          ],
+          "qualified": false,
+          "reason": "尚未取得持续静态窗口",
+          "calibration_group": "L01",
+          "pair_id": "L01_02",
+          "approach": "conditioning"
+        },
+        {
+          "index": 8,
+          "target_deg": [
+            65.0,
+            10.0,
+            0.0,
+            0.0
+          ],
+          "qualified": false,
+          "reason": "尚未取得持续静态窗口",
+          "calibration_group": "L01",
+          "pair_id": "L01_02",
+          "approach": "negative"
+        },
+        {
+          "index": 9,
+          "target_deg": [
+            9.0,
+            3.0000000000000004,
+            -3.0000000000000004,
+            -3.0000000000000004
+          ],
+          "qualified": false,
+          "reason": "尚未取得持续静态窗口",
+          "calibration_group": "L01",
+          "pair_id": "L01_03",
+          "approach": "conditioning"
+        },
+        {
+          "index": 10,
+          "target_deg": [
+            12.000000000000002,
+            6.000000000000001,
+            0.0,
+            0.0
+          ],
+          "qualified": false,
+          "reason": "尚未取得持续静态窗口",
+          "calibration_group": "L01",
+          "pair_id": "L01_03",
+          "approach": "positive"
+        },
+        {
+          "index": 11,
+          "target_deg": [
+            14.999999999999998,
+            9.0,
+            3.0000000000000004,
+            3.0000000000000004
+          ],
+          "qualified": false,
+          "reason": "尚未取得持续静态窗口",
+          "calibration_group": "L01",
+          "pair_id": "L01_03",
+          "approach": "conditioning"
+        },
+        {
+          "index": 12,
+          "target_deg": [
+            12.000000000000002,
+            6.000000000000001,
+            0.0,
+            0.0
+          ],
+          "qualified": false,
+          "reason": "尚未取得持续静态窗口",
+          "calibration_group": "L01",
+          "pair_id": "L01_03",
+          "approach": "negative"
+        }
+      ],
+      "calibrated": false,
+      "alpha_changed": false
+    },
+    "calibration_error": null,
+    "teaching_playback": null,
+    "playback_tracking": null,
+    "speed_factor": null,
+    "runtime_identity_sha256": null,
+    "supported_capture": null,
+    "capture_sample_ok": false,
+    "capture_alpha": null,
+    "capture_fit_eligible": null,
+    "capture_raw_file": null,
+    "float_settings": null,
+    "stop_error": null,
+    "backend_arm_receipt": "Arm request accepted only; four-axis fresh preflight, enable and ramp are not yet confirmed; audit_file=/tmp/gravitycal_deploy_audit/canusb_motion_tXeLOa.jsonl",
+    "standard_jtc_action_succeeded": false,
+    "action_passed": false,
+    "waypoints_observed": false,
+    "waypoint_results": [
+      {
+        "arrival_s": 7.5,
+        "end_s": 13.5,
+        "target_deg": [
+          47.0,
+          12.0,
+          -3.0,
+          -3.0
+        ],
+        "samples": 30,
+        "sampled_span_s": 0.2900789029954467,
+        "max_error_deg": [
+          1.8872782043939291,
+          0.1972530185913617,
+          0.0162575619155149,
+          0.1367410100657069
+        ],
+        "passed": false,
+        "max_velocity_rad_s": null
+      },
+      {
+        "arrival_s": 21.0,
+        "end_s": 27.0,
+        "target_deg": [
+          50.0,
+          15.0,
+          0.0,
+          0.0
+        ],
+        "samples": 30,
+        "sampled_span_s": 0.28950267800246365,
+        "max_error_deg": [
+          2.0021622756050714,
+          0.7492758668918091,
+          0.1529985719812218,
+          0.2622832662535231
+        ],
+        "passed": false,
+        "max_velocity_rad_s": null
+      },
+      {
+        "arrival_s": 34.5,
+        "end_s": 40.5,
+        "target_deg": [
+          53.0,
+          18.0,
+          3.0,
+          3.0
+        ],
+        "samples": 30,
+        "sampled_span_s": 0.2895941309980117,
+        "max_error_deg": [
+          2.029618591398474,
+          0.7548752438307549,
+          0.15859794892016715,
+          0.26788264319246846
+        ],
+        "passed": false,
+        "max_velocity_rad_s": null
+      },
+      {
+        "arrival_s": 48.0,
+        "end_s": 54.0,
+        "target_deg": [
+          50.0,
+          15.0,
+          0.0,
+          0.0
+        ],
+        "samples": 30,
+        "sampled_span_s": 0.2896523170056753,
+        "max_error_deg": [
+          1.3464541099712635,
+          0.20285239553030268,
+          0.0,
+          0.0
+        ],
+        "passed": false,
+        "max_velocity_rad_s": null
+      },
+      {
+        "arrival_s": 61.5,
+        "end_s": 67.5,
+        "target_deg": [
+          62.0,
+          7.0,
+          -3.0,
+          -3.0
+        ],
+        "samples": 30,
+        "sampled_span_s": 0.28954731600242667,
+        "max_error_deg": [
+          2.0464167222153082,
+          0.10350512769968517,
+          0.1367410100657069,
+          0.1367410100657069
+        ],
+        "passed": false,
+        "max_velocity_rad_s": null
+      },
+      {
+        "arrival_s": 75.0,
+        "end_s": 81.0,
+        "target_deg": [
+          65.0,
+          10.0,
+          0.0,
+          0.0
+        ],
+        "samples": 30,
+        "sampled_span_s": 0.28874237701529637,
+        "max_error_deg": [
+          2.052016099154257,
+          0.4266607817463052,
+          0.1529985719812218,
+          0.2622832662535231
+        ],
+        "passed": false,
+        "max_velocity_rad_s": null
+      },
+      {
+        "arrival_s": 88.5,
+        "end_s": 94.5,
+        "target_deg": [
+          68.0,
+          13.0,
+          3.0,
+          3.0
+        ],
+        "samples": 0,
+        "sampled_span_s": 0.0,
+        "max_error_deg": [],
+        "passed": false,
+        "max_velocity_rad_s": null
+      },
+      {
+        "arrival_s": 102.0,
+        "end_s": 108.0,
+        "target_deg": [
+          65.0,
+          10.0,
+          0.0,
+          0.0
+        ],
+        "samples": 0,
+        "sampled_span_s": 0.0,
+        "max_error_deg": [],
+        "passed": false,
+        "max_velocity_rad_s": null
+      },
+      {
+        "arrival_s": 115.5,
+        "end_s": 121.5,
+        "target_deg": [
+          9.0,
+          3.0,
+          -3.0,
+          -3.0
+        ],
+        "samples": 0,
+        "sampled_span_s": 0.0,
+        "max_error_deg": [],
+        "passed": false,
+        "max_velocity_rad_s": null
+      },
+      {
+        "arrival_s": 129.0,
+        "end_s": 135.0,
+        "target_deg": [
+          12.0,
+          6.0,
+          0.0,
+          0.0
+        ],
+        "samples": 0,
+        "sampled_span_s": 0.0,
+        "max_error_deg": [],
+        "passed": false,
+        "max_velocity_rad_s": null
+      },
+      {
+        "arrival_s": 142.5,
+        "end_s": 148.5,
+        "target_deg": [
+          15.0,
+          9.0,
+          3.0,
+          3.0
+        ],
+        "samples": 0,
+        "sampled_span_s": 0.0,
+        "max_error_deg": [],
+        "passed": false,
+        "max_velocity_rad_s": null
+      },
+      {
+        "arrival_s": 156.0,
+        "end_s": 162.0,
+        "target_deg": [
+          12.0,
+          6.0,
+          0.0,
+          0.0
+        ],
+        "samples": 0,
+        "sampled_span_s": 0.0,
+        "max_error_deg": [],
+        "passed": false,
+        "max_velocity_rad_s": null
+      }
+    ],
+    "accuracy_passed": false,
+    "stop_observations_confirmed": true,
+    "observed_delta_range_deg": null,
+    "final_delta_from_start_deg": null,
+    "actual_excursion_deg": null,
+    "return_error_deg": null,
+    "requested_excursion_observed": null,
+    "initial_deg": [
+      22.622,
+      11.803,
+      -3.016,
+      -2.863
+    ],
+    "plan_sha256": "0c1cb70db1c880e40a7bc9c3de56b41d02e697447f07335b6d8a1d6f6bf21a65",
+    "operator_acknowledgements": {
+      "supported": true,
+      "clearance_and_local_power_cut": true,
+      "native_output_not_hardware_clamp": true
+    },
+    "trial_parameters": {
+      "hold_seconds": 1.0,
+      "round_trip": false,
+      "delta_deg": 1.0,
+      "leg_seconds": 4.0
+    },
+    "overall_ok": false
+  },
+  "stdout_tail": [
+    "当前角度°：[22.622, 11.803, -3.016, -2.863]",
+    "完整URDF范围°：[[-80.0, 200.0], [-10.0, 190.0], [-90.0, 90.0], [-50.0, 90.0]]",
+    "路点预览（软件绝对角度°）：[{\"at_s\": 0.0, \"degrees\": [22.622, 11.803, -3.016, -2.863]}, {\"at_s\": 7.5, \"degrees\": [47.0, 12.0, -3.0, -3.0]}, {\"at_s\": 13.5, \"degrees\": [47.0, 12.0, -3.0, -3.0]}, {\"at_s\": 21.0, \"degrees\": [50.0, 15.0, 0.0, 0.0]}, {\"at_s\": 27.0, \"degrees\": [50.0, 15.0, 0.0, 0.0]}, {\"at_s\": 34.5, \"degrees\": [53.0, 18.0, 3.0, 3.0]}, {\"at_s\": 40.5, \"degrees\": [53.0, 18.0, 3.0, 3.0]}, {\"at_s\": 48.0, \"degrees\": [50.0, 15.0, 0.0, 0.0]}, {\"at_s\": 54.0, \"degrees\": [50.0, 15.0, 0.0, 0.0]}, {\"at_s\": 61.5,",
+    "Arm request accepted only; four-axis fresh preflight, enable and ramp are not yet confirmed; audit_file=/tmp/gravitycal_deploy_audit/canusb_motion_tXeLOa.jsonl",
+    "四轴使能、增益斜坡及稳定状态已观测；不是位置精度验收。",
+    "标定点1/12：合格，已写入原始记录（实际姿态 [45.129, 11.822, -3.016, -2.863]）",
+    "标定点2/12：合格，已写入原始记录（实际姿态 [47.998, 14.251, -0.153, -0.262]）",
+    "标定点3/12：合格，已写入原始记录（实际姿态 [50.97, 17.245, 2.843, 2.732]）",
+    "标定点4/12：合格，已写入原始记录（实际姿态 [48.654, 14.801, 0.0, 0.0]）",
+    "标定点5/12：合格，已写入原始记录（实际姿态 [59.954, 7.092, -2.868, -2.865]）",
+    "标定点6/12：合格，已写入原始记录（实际姿态 [62.948, 9.575, -0.153, -0.262]）",
+    "各路点反馈验收：[{\"arrival_s\": 7.5, \"end_s\": 13.5, \"target_rad\": [0.8203047484373349, 0.2094395102393196, -0.0523598775598299, -0.0523598775598299], \"samples\": 30, \"sampled_span_s\": 0.2900789029954467, \"max_error_deg\": [1.8872782043939291, 0.1972530185913617, 0.0162575619155149, 0.1367410100657069], \"passed\": false}, {\"arrival_s\": 21.0, \"end_s\": 27.0, \"target_rad\": [0.8726646259971648, 0.2617993877991494, 0.0, 0.0], \"samples\": 30, \"sampled_span_s\": 0.28950267800246365, \"max_error_deg\": [2.00216227560507",
+    "试验结束/中止：轨迹未通过：Aborted due to path tolerance violation",
+    "已观测四轴新反馈失能；不是物理切力矩证明。",
+    "结果：/home/xuyu/.ros/slaihand/control_panel/operations/8fffd9ce29b64e1e/client/20261106_124104_50d606c3.json"
+  ],
+  "directory": "/home/xuyu/.ros/slaihand/control_panel/operations/8fffd9ce29b64e1e",
+  "running": false,
+  "argv": [
+    "/usr/bin/python3",
+    "/home/xuyu/slaihand_control_panel_ws_gravitycal_deploy_20261106/install/slaihand_bringup/lib/slaihand_bringup/commission_supported_trial.py",
+    "--execute",
+    "--ack-supported",
+    "--ack-clearance",
+    "--ack-native-output",
+    "--plan",
+    "/home/xuyu/.ros/slaihand/control_panel/operations/8fffd9ce29b64e1e/plan.json",
+    "--hold-seconds",
+    "1.0",
+    "--calibrate",
+    "--ack-free-static",
+    "--output-directory",
+    "/home/xuyu/.ros/slaihand/control_panel/operations/8fffd9ce29b64e1e/client"
+  ]
+}

@@ -1,0 +1,56 @@
+{
+  "schema": "slaihand_identified_gravity_base_plan/1",
+  "status": "PLANNED_NOT_FITTED",
+  "created_at": "2026-11-06",
+  "candidate_output": "gravity_large_angle_candidate.json",
+  "target_status_after_fit": "LOCAL_OFFLINE_CANDIDATE",
+  "parameters": null,
+  "parameter_slots": [
+    "link1:mass", "link1:hx", "link1:hy", "link1:hz",
+    "link2:mass", "link2:hx", "link2:hy", "link2:hz",
+    "link3:mass", "link3:hx", "link3:hy", "link3:hz",
+    "link4:mass", "link4:hx", "link4:hy", "link4:hz"
+  ],
+  "effective_coefficients": null,
+  "identifiable_rank": null,
+  "provenance": {
+    "base_candidate": "src/slaihand_bringup/config/gravity_identified_candidate.json",
+    "base_candidate_sha256": "REQUIRES_FIELD_DATA",
+    "urdf": "src/slaihand_description/urdf/slaihand_four_axis.urdf",
+    "mapping": "src/slaihand_bringup/config/hardware_mapping.yaml",
+    "capture_plan": "verification/hardware/gravity_calibration_ui_20261106/large_angle_capture_plan.json",
+    "capture_groups": ["L01", "L02", "L03", "L04"],
+    "validation_group": "V02"
+  },
+  "training": {
+    "groups": ["L01", "L02", "L03", "L04"],
+    "targets": 12,
+    "samples_expected": 48,
+    "pairs_expected": 12,
+    "method": "bidirectional_document ±3° 路点，去程/回程同 pair_id；配对中点做最小二乘，半差留作诊断"
+  },
+  "validation": {
+    "group": "V02",
+    "targets": 2,
+    "samples_expected": 8,
+    "pairs_expected": 2,
+    "gate": "配对中点留出 RMSE ≤ 0.1576 N·m，逐轴最大绝对误差不劣于现有候选"
+  },
+  "fit_gates": [
+    "全部样本 schema/v2 有效且 exclusion_reason 为空（alpha=0、无接触、自由、静态窗口合格）",
+    "运行身份 verified 且与部署资源哈希一致；原始文件 sha256 写入候选档案",
+    "V02 独立留出达标；否则 state=FIT_REJECTED，不生成参数",
+    "秩/条件数报告：秩仍为 8 时必须说明有效基未扩展，不能宣称全部连杆参数可辨识",
+    "新候选只写独立档案，状态 LOCAL_OFFLINE_CANDIDATE；不自动部署、不覆盖现有候选"
+  ],
+  "fit_tool": {
+    "reuse": "verification/hardware/control_panel_20261104/fit_bidirectional_campaign.py",
+    "required_extension": "把 OPERATIONS 的 S01–S04/V01 映射替换为现场 L01–L04/V02 的操作 ID/raw 路径；其余几何回归、配对中点、留出计算保持不变",
+    "run": "python3 fit_bidirectional_campaign.py（离线，只读原始文件）"
+  },
+  "notes": [
+    "本轮没有现场大角度数据，因此没有 effective_coefficients，也没有新候选可部署。",
+    "禁止用自由拖动含人手力矩的 25 s 记录补充训练样本。",
+    "外推预测见大角度残差报告；它只用于选点，不是测量。"
+  ]
+}

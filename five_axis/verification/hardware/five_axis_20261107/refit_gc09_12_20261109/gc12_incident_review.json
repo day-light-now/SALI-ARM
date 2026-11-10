@@ -1,0 +1,81 @@
+{
+  "schema": "slaihand_gc12_archived_evidence_review/1",
+  "no_hardware_access": true,
+  "process_crash_reproduced": false,
+  "root_cause_determined": false,
+  "source_sha256": {
+    "verification/hardware/five_axis_20261107/five_dof_refit_gc05_08_20261109/execution_20261109/audit/canusb_motion_waNPuU_crash_20261109.jsonl.gz": "eba59ffb4ce2ee83f8148089a87e2bc74c4d40aab31752674bb10d1d36d14045",
+    "verification/hardware/five_axis_20261107/five_dof_refit_gc05_08_20261109/execution_20261109/evidence/j5_timeout_safetycheck_20261109.json": "8274fc056b5ed389c6a0b4dbcde77fb6f3555c669272a947df4eee5ce8b38195",
+    "verification/hardware/five_axis_20261107/five_dof_refit_gc05_08_20261109/execution_20261109/evidence/j5_timeout_safetycheck_after_cut_20261109.json": "e1cb5fbd5d924976d4be85197a5ff3652ae9ab1e3fe996d2fc973dfc8fd5b0dd",
+    "verification/hardware/five_axis_20261107/five_dof_refit_gc05_08_20261109/execution_20261109/clients/gc12/20261109_153833_9ed1f207.json": "0b254fb9fde52276d2432a3237060588b1f561f4f62839e97690853b2073e816",
+    "verification/hardware/commissioning_20261101/manual_extracts/J10010L_manual.txt": "f2ccfb6031af5b65e64561eee40fafe6727e829f6145c3b6bd44ddfd13ed8c0e"
+  },
+  "audit_record_counts": {
+    "SESSION": 1,
+    "TX_SUBMITTED": 11983,
+    "TX_WRITTEN": 11983,
+    "RX": 11977,
+    "STAGE": 7,
+    "CONTROL_CYCLE": 10541
+  },
+  "invalid_json_lines": 0,
+  "last_stage": {
+    "cycle_id": 10389,
+    "steady_s": 12673.174034874,
+    "control_state": 5,
+    "reason": "RAMP_COMPLETE_NOT_POSITION_ACCURACY_ACCEPTANCE"
+  },
+  "last_control_cycle": {
+    "cycle_id": 10541,
+    "steady_s": 12674.693995268,
+    "command_id": 1,
+    "control_state": 5
+  },
+  "last_cycle_all_written_can_ids": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    2047
+  ],
+  "last_cycle_written_can_ids": [
+    1,
+    2,
+    3,
+    4,
+    5
+  ],
+  "last_record_kind": "TX_WRITTEN",
+  "serial_write_is_not_drive_ack": true,
+  "client_last_published_motor_states": {
+    "slaihand_joint1": 1.0,
+    "slaihand_joint2": 1.0,
+    "slaihand_joint4": 1.0,
+    "slaihand_joint3": 1.0,
+    "slaihand_joint5": 1.0
+  },
+  "client_confirmed_fresh_disable": false,
+  "later_readback_observed_at_utc": "2026-11-09T07:40:07.299+00:00",
+  "later_readback_states": {
+    "J1": 13,
+    "J2": 13,
+    "J3": 13,
+    "J4": 13,
+    "J5": 13
+  },
+  "later_readback_payload_decoded_states": {
+    "J1": 13,
+    "J2": 13,
+    "J3": 13,
+    "J4": 13,
+    "J5": 13
+  },
+  "later_readback_feedback_valid": true,
+  "later_readback_state_meaning": "13 / 0xD = communication lost per local DAMIAO ERR tables; not state 1 enabled or state 0 disabled",
+  "physical_torque_off_proven_by_state_code": false,
+  "after_cut_observed_at_utc": "2026-11-09T07:41:49.170+00:00",
+  "after_cut_no_feedback": true,
+  "conclusion": "Earlier client state 1 and later fresh state 13 must be distinguished. Process disappearance is unresolved. No observation here certifies physical zero torque.",
+  "reproduction_limit": "No exit code/signal/stack/core or deterministic exit reproducer is archived; this script verifies evidence interpretation only."
+}

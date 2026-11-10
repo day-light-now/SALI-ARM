@@ -1,0 +1,664 @@
+{
+  "schema": "slaihand_five_axis_2deg_diagnostic_results/1",
+  "executed_on": "2026-11-08",
+  "domain_id": 183,
+  "source": "real hardware, 10 sequential local relative +/-2 degree plans, arm all five axes",
+  "notes": [
+    "Raw client result files are copied unchanged.",
+    "Client waypoint precision threshold is 0.5 degree; a JTC action success is not a precision pass.",
+    "No gravity feedforward, no capability/1.5x margin claim, no formal calibration.",
+    "The driver process at execution time was the pre-optimization binary; first_fault/axis-gain fields are not part of these result files."
+  ],
+  "plans": [
+    {
+      "plan": "J1_POS",
+      "result_file": "J1_POS.json",
+      "reason": "WAYPOINT_FEEDBACK_CRITERION_NOT_MET",
+      "trajectory_error_code": 0,
+      "waypoints": [
+        {
+          "arrival_s": 0.5,
+          "samples": 30,
+          "max_error_deg": [
+            0.0,
+            0.02185693885446026,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "passed": true
+        },
+        {
+          "arrival_s": 11.5,
+          "samples": 30,
+          "max_error_deg": [
+            0.9508669349859072,
+            0.02185693885446026,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "passed": false
+        },
+        {
+          "arrival_s": 23.5,
+          "samples": 30,
+          "max_error_deg": [
+            0.0,
+            0.02185693885446026,
+            0.0,
+            0.02185693885446026,
+            0.0
+          ],
+          "passed": true
+        }
+      ],
+      "final_position_rad": {
+        "slaihand_joint1": 0.14343480582894585,
+        "slaihand_joint2": 0.0671396963454658,
+        "slaihand_joint4": -0.12169069962615353,
+        "slaihand_joint3": 0.18806744487678273,
+        "slaihand_joint5": 0.18081940947585196
+      },
+      "final_effort_nm": {
+        "slaihand_joint1": 0.04884004884004867,
+        "slaihand_joint2": -0.04884004884004867,
+        "slaihand_joint4": 0.01318681318681314,
+        "slaihand_joint3": 0.01318681318681314,
+        "slaihand_joint5": -0.06153846153846132
+      },
+      "final_motor_state": {
+        "slaihand_joint1": 0.0,
+        "slaihand_joint2": 0.0,
+        "slaihand_joint4": 0.0,
+        "slaihand_joint3": 0.0,
+        "slaihand_joint5": 0.0
+      }
+    },
+    {
+      "plan": "J1_NEG",
+      "result_file": "J1_NEG.json",
+      "reason": "轨迹未通过：Aborted due to goal_time_tolerance exceeding by 2.005049 seconds",
+      "trajectory_error_code": -5,
+      "waypoints": [
+        {
+          "arrival_s": 0.5,
+          "samples": 30,
+          "max_error_deg": [
+            0.0,
+            0.02185693885446026,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "passed": true
+        },
+        {
+          "arrival_s": 11.5,
+          "samples": 30,
+          "max_error_deg": [
+            0.011018564244116196,
+            0.02185693885446026,
+            0.0,
+            0.13114163312676155,
+            0.0
+          ],
+          "passed": true
+        },
+        {
+          "arrival_s": 23.5,
+          "samples": 30,
+          "max_error_deg": [
+            0.677565104488268,
+            0.02185693885446026,
+            0.0,
+            0.13114163312676155,
+            0.0
+          ],
+          "passed": false
+        }
+      ],
+      "final_position_rad": {
+        "slaihand_joint1": 0.13122758831158876,
+        "slaihand_joint2": 0.06675822079804838,
+        "slaihand_joint4": -0.11940184634164908,
+        "slaihand_joint3": 0.18806744487678273,
+        "slaihand_joint5": 0.18081940947585196
+      },
+      "final_effort_nm": {
+        "slaihand_joint1": 0.34188034188034067,
+        "slaihand_joint2": -0.04884004884004867,
+        "slaihand_joint4": -0.01318681318681314,
+        "slaihand_joint3": 0.01318681318681314,
+        "slaihand_joint5": -0.06153846153846132
+      },
+      "final_motor_state": {
+        "slaihand_joint1": 0.0,
+        "slaihand_joint2": 0.0,
+        "slaihand_joint4": 0.0,
+        "slaihand_joint3": 0.0,
+        "slaihand_joint5": 0.0
+      }
+    },
+    {
+      "plan": "J2_POS",
+      "result_file": "J2_POS.json",
+      "reason": "WAYPOINT_FEEDBACK_CRITERION_NOT_MET",
+      "trajectory_error_code": 0,
+      "waypoints": [
+        {
+          "arrival_s": 0.5,
+          "samples": 30,
+          "max_error_deg": [
+            0.0,
+            0.02185693885446026,
+            0.0,
+            0.02185693885446026,
+            0.0
+          ],
+          "passed": true
+        },
+        {
+          "arrival_s": 11.5,
+          "samples": 30,
+          "max_error_deg": [
+            0.0,
+            0.6667267298779239,
+            0.0,
+            0.02185693885446026,
+            0.0
+          ],
+          "passed": false
+        },
+        {
+          "arrival_s": 23.5,
+          "samples": 30,
+          "max_error_deg": [
+            0.0,
+            0.02185693885446026,
+            0.0,
+            0.02185693885446026,
+            0.0
+          ],
+          "passed": true
+        }
+      ],
+      "final_position_rad": {
+        "slaihand_joint1": 0.13084611276417135,
+        "slaihand_joint2": 0.06675822079804838,
+        "slaihand_joint4": -0.11902037079423167,
+        "slaihand_joint3": 0.18806744487678273,
+        "slaihand_joint5": 0.18081940947585196
+      },
+      "final_effort_nm": {
+        "slaihand_joint1": -0.04884004884004867,
+        "slaihand_joint2": 0.04884004884004867,
+        "slaihand_joint4": -0.01318681318681314,
+        "slaihand_joint3": 0.01318681318681314,
+        "slaihand_joint5": -0.07521367521367495
+      },
+      "final_motor_state": {
+        "slaihand_joint1": 0.0,
+        "slaihand_joint2": 0.0,
+        "slaihand_joint4": 0.0,
+        "slaihand_joint3": 0.0,
+        "slaihand_joint5": 0.0
+      }
+    },
+    {
+      "plan": "J2_NEG",
+      "result_file": "J2_NEG.json",
+      "reason": "轨迹未通过：Aborted due to goal_time_tolerance exceeding by 2.005589 seconds",
+      "trajectory_error_code": -5,
+      "waypoints": [
+        {
+          "arrival_s": 0.5,
+          "samples": 30,
+          "max_error_deg": [
+            0.0,
+            0.02185693885446026,
+            0.0,
+            0.0,
+            0.02185693885446026
+          ],
+          "passed": true
+        },
+        {
+          "arrival_s": 11.5,
+          "samples": 30,
+          "max_error_deg": [
+            0.0,
+            0.011018564244014815,
+            0.0,
+            0.0,
+            0.02185693885446026
+          ],
+          "passed": true
+        },
+        {
+          "arrival_s": 23.5,
+          "samples": 30,
+          "max_error_deg": [
+            0.0,
+            0.6994220433427283,
+            0.0,
+            0.0,
+            0.02185693885446026
+          ],
+          "passed": false
+        }
+      ],
+      "final_position_rad": {
+        "slaihand_joint1": 0.12626840619516244,
+        "slaihand_joint2": 0.05455100328069129,
+        "slaihand_joint4": -0.11902037079423167,
+        "slaihand_joint3": 0.18806744487678273,
+        "slaihand_joint5": 0.17929350728618232
+      },
+      "final_effort_nm": {
+        "slaihand_joint1": -0.146520146520146,
+        "slaihand_joint2": -0.04884004884004867,
+        "slaihand_joint4": -0.01318681318681314,
+        "slaihand_joint3": 0.03956043956043942,
+        "slaihand_joint5": -0.03418803418803407
+      },
+      "final_motor_state": {
+        "slaihand_joint1": 0.0,
+        "slaihand_joint2": 0.0,
+        "slaihand_joint4": 0.0,
+        "slaihand_joint3": 0.0,
+        "slaihand_joint5": 0.0
+      }
+    },
+    {
+      "plan": "J3_POS",
+      "result_file": "J3_POS.json",
+      "reason": "finite_trial_complete",
+      "trajectory_error_code": 0,
+      "waypoints": [
+        {
+          "arrival_s": 0.5,
+          "samples": 30,
+          "max_error_deg": [
+            0.0,
+            0.02185693885446026,
+            0.0,
+            0.02185693885446026,
+            0.0
+          ],
+          "passed": true
+        },
+        {
+          "arrival_s": 11.5,
+          "samples": 30,
+          "max_error_deg": [
+            0.0,
+            0.0,
+            0.22958795278871877,
+            0.02185693885446026,
+            0.0
+          ],
+          "passed": true
+        },
+        {
+          "arrival_s": 23.5,
+          "samples": 30,
+          "max_error_deg": [
+            0.0,
+            0.02185693885446026,
+            0.3059971439624436,
+            0.02185693885446026,
+            0.0
+          ],
+          "passed": true
+        }
+      ],
+      "final_position_rad": {
+        "slaihand_joint1": 0.13084611276417135,
+        "slaihand_joint2": 0.0671396963454658,
+        "slaihand_joint4": -0.11902037079423167,
+        "slaihand_joint3": 0.19417105363546128,
+        "slaihand_joint5": 0.18081940947585196
+      },
+      "final_effort_nm": {
+        "slaihand_joint1": -0.146520146520146,
+        "slaihand_joint2": -0.04884004884004867,
+        "slaihand_joint4": 0.01318681318681314,
+        "slaihand_joint3": -0.14505494505494454,
+        "slaihand_joint5": -0.07521367521367495
+      },
+      "final_motor_state": {
+        "slaihand_joint1": 0.0,
+        "slaihand_joint2": 0.0,
+        "slaihand_joint4": 0.0,
+        "slaihand_joint3": 0.0,
+        "slaihand_joint5": 0.0
+      }
+    },
+    {
+      "plan": "J3_NEG",
+      "result_file": "J3_NEG.json",
+      "reason": "finite_trial_complete",
+      "trajectory_error_code": 0,
+      "waypoints": [
+        {
+          "arrival_s": 0.5,
+          "samples": 30,
+          "max_error_deg": [
+            0.0,
+            0.02185693885446026,
+            0.0,
+            0.02185693885446026,
+            0.0
+          ],
+          "passed": true
+        },
+        {
+          "arrival_s": 11.5,
+          "samples": 30,
+          "max_error_deg": [
+            0.0,
+            0.02185693885446026,
+            0.22958795278871877,
+            0.02185693885446026,
+            0.0
+          ],
+          "passed": true
+        },
+        {
+          "arrival_s": 23.5,
+          "samples": 30,
+          "max_error_deg": [
+            0.0,
+            0.02185693885446026,
+            0.3059971439624436,
+            0.02185693885446026,
+            0.0
+          ],
+          "passed": true
+        }
+      ],
+      "final_position_rad": {
+        "slaihand_joint1": 0.13084611276417135,
+        "slaihand_joint2": 0.0671396963454658,
+        "slaihand_joint4": -0.11902037079423167,
+        "slaihand_joint3": 0.18806744487678273,
+        "slaihand_joint5": 0.18081940947585196
+      },
+      "final_effort_nm": {
+        "slaihand_joint1": -0.146520146520146,
+        "slaihand_joint2": 0.04884004884004867,
+        "slaihand_joint4": 0.01318681318681314,
+        "slaihand_joint3": 0.01318681318681314,
+        "slaihand_joint5": -0.08888888888888857
+      },
+      "final_motor_state": {
+        "slaihand_joint1": 0.0,
+        "slaihand_joint2": 0.0,
+        "slaihand_joint4": 0.0,
+        "slaihand_joint3": 0.0,
+        "slaihand_joint5": 0.0
+      }
+    },
+    {
+      "plan": "J4_POS",
+      "result_file": "J4_POS.json",
+      "reason": "finite_trial_complete",
+      "trajectory_error_code": 0,
+      "waypoints": [
+        {
+          "arrival_s": 0.5,
+          "samples": 30,
+          "max_error_deg": [
+            0.0,
+            0.02185693885446026,
+            0.0,
+            0.02185693885446026,
+            0.0
+          ],
+          "passed": true
+        },
+        {
+          "arrival_s": 11.5,
+          "samples": 30,
+          "max_error_deg": [
+            0.2622832662535231,
+            0.02185693885446026,
+            0.0,
+            0.20773101393425852,
+            0.0
+          ],
+          "passed": true
+        },
+        {
+          "arrival_s": 23.5,
+          "samples": 30,
+          "max_error_deg": [
+            0.2622832662535231,
+            0.02185693885446026,
+            0.0,
+            0.17485551083568207,
+            0.0
+          ],
+          "passed": true
+        }
+      ],
+      "final_position_rad": {
+        "slaihand_joint1": 0.12626840619516244,
+        "slaihand_joint2": 0.0671396963454658,
+        "slaihand_joint4": -0.1163500419623098,
+        "slaihand_joint3": 0.18806744487678273,
+        "slaihand_joint5": 0.18081940947585196
+      },
+      "final_effort_nm": {
+        "slaihand_joint1": 0.146520146520146,
+        "slaihand_joint2": -0.04884004884004867,
+        "slaihand_joint4": -0.03956043956043942,
+        "slaihand_joint3": 0.01318681318681314,
+        "slaihand_joint5": -0.07521367521367495
+      },
+      "final_motor_state": {
+        "slaihand_joint1": 0.0,
+        "slaihand_joint2": 0.0,
+        "slaihand_joint4": 0.0,
+        "slaihand_joint3": 0.0,
+        "slaihand_joint5": 0.0
+      }
+    },
+    {
+      "plan": "J4_NEG",
+      "result_file": "J4_NEG.json",
+      "reason": "WAYPOINT_FEEDBACK_CRITERION_NOT_MET",
+      "trajectory_error_code": 0,
+      "waypoints": [
+        {
+          "arrival_s": 0.5,
+          "samples": 30,
+          "max_error_deg": [
+            0.0,
+            0.02185693885446026,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "passed": true
+        },
+        {
+          "arrival_s": 11.5,
+          "samples": 30,
+          "max_error_deg": [
+            0.0,
+            0.02185693885446026,
+            0.0,
+            0.5355850967511624,
+            0.0
+          ],
+          "passed": false
+        },
+        {
+          "arrival_s": 23.5,
+          "samples": 30,
+          "max_error_deg": [
+            0.02185693885446026,
+            0.02185693885446026,
+            0.0,
+            0.1529985719812218,
+            0.0
+          ],
+          "passed": true
+        }
+      ],
+      "final_position_rad": {
+        "slaihand_joint1": 0.12626840619516244,
+        "slaihand_joint2": 0.06675822079804838,
+        "slaihand_joint4": -0.11902037079423167,
+        "slaihand_joint3": 0.18806744487678273,
+        "slaihand_joint5": 0.18081940947585196
+      },
+      "final_effort_nm": {
+        "slaihand_joint1": -0.146520146520146,
+        "slaihand_joint2": -0.04884004884004867,
+        "slaihand_joint4": -0.01318681318681314,
+        "slaihand_joint3": 0.01318681318681314,
+        "slaihand_joint5": -0.07521367521367495
+      },
+      "final_motor_state": {
+        "slaihand_joint1": 0.0,
+        "slaihand_joint2": 0.0,
+        "slaihand_joint4": 0.0,
+        "slaihand_joint3": 0.0,
+        "slaihand_joint5": 0.0
+      }
+    },
+    {
+      "plan": "J5_POS",
+      "result_file": "J5_POS.json",
+      "reason": "finite_trial_complete",
+      "trajectory_error_code": 0,
+      "waypoints": [
+        {
+          "arrival_s": 0.5,
+          "samples": 30,
+          "max_error_deg": [
+            0.0,
+            0.02185693885446026,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "passed": true
+        },
+        {
+          "arrival_s": 11.5,
+          "samples": 30,
+          "max_error_deg": [
+            0.0,
+            0.02185693885446026,
+            0.0,
+            0.0,
+            0.2733018304976393
+          ],
+          "passed": true
+        },
+        {
+          "arrival_s": 23.5,
+          "samples": 30,
+          "max_error_deg": [
+            0.0,
+            0.02185693885446026,
+            0.0,
+            0.0,
+            0.19671244969014232
+          ],
+          "passed": true
+        }
+      ],
+      "final_position_rad": {
+        "slaihand_joint1": 0.12626840619516244,
+        "slaihand_joint2": 0.06675822079804838,
+        "slaihand_joint4": -0.11902037079423167,
+        "slaihand_joint3": 0.18806744487678273,
+        "slaihand_joint5": 0.18463416495002605
+      },
+      "final_effort_nm": {
+        "slaihand_joint1": -0.04884004884004867,
+        "slaihand_joint2": -0.04884004884004867,
+        "slaihand_joint4": 0.01318681318681314,
+        "slaihand_joint3": 0.01318681318681314,
+        "slaihand_joint5": -0.03418803418803407
+      },
+      "final_motor_state": {
+        "slaihand_joint1": 0.0,
+        "slaihand_joint2": 0.0,
+        "slaihand_joint4": 0.0,
+        "slaihand_joint3": 0.0,
+        "slaihand_joint5": 0.0
+      }
+    },
+    {
+      "plan": "J5_NEG",
+      "result_file": "J5_NEG.json",
+      "reason": "finite_trial_complete",
+      "trajectory_error_code": 0,
+      "waypoints": [
+        {
+          "arrival_s": 0.5,
+          "samples": 30,
+          "max_error_deg": [
+            0.0,
+            0.02185693885446026,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "passed": true
+        },
+        {
+          "arrival_s": 11.5,
+          "samples": 30,
+          "max_error_deg": [
+            0.0,
+            0.02185693885446026,
+            0.0,
+            0.0,
+            0.12030325851641749
+          ],
+          "passed": true
+        },
+        {
+          "arrival_s": 23.5,
+          "samples": 30,
+          "max_error_deg": [
+            0.0,
+            0.02185693885446026,
+            0.0,
+            0.0,
+            0.3059971439624436
+          ],
+          "passed": true
+        }
+      ],
+      "final_position_rad": {
+        "slaihand_joint1": 0.12626840619516244,
+        "slaihand_joint2": 0.0671396963454658,
+        "slaihand_joint4": -0.11902037079423167,
+        "slaihand_joint3": 0.18806744487678273,
+        "slaihand_joint5": 0.1789120317387649
+      },
+      "final_effort_nm": {
+        "slaihand_joint1": -0.04884004884004867,
+        "slaihand_joint2": -0.04884004884004867,
+        "slaihand_joint4": 0.01318681318681314,
+        "slaihand_joint3": -0.01318681318681314,
+        "slaihand_joint5": 0.07521367521367495
+      },
+      "final_motor_state": {
+        "slaihand_joint1": 0.0,
+        "slaihand_joint2": 0.0,
+        "slaihand_joint4": 0.0,
+        "slaihand_joint3": 0.0,
+        "slaihand_joint5": 0.0
+      }
+    }
+  ]
+}

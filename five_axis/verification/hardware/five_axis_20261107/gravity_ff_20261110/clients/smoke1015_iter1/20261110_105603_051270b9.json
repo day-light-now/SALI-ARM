@@ -1,0 +1,367 @@
+{
+  "request_id": "051270b9601b4592bb40a7a76da19f0b",
+  "mode": "waypoints",
+  "joint_count": 5,
+  "physical_torque_off_verified": false,
+  "driver_current_clamp_verified": false,
+  "hardware_motion_accepted": false,
+  "stop_observations_confirmed": true,
+  "phase": "trajectory",
+  "arm_requested": true,
+  "trajectory_requested": true,
+  "trajectory_started": true,
+  "stop_requested": true,
+  "unknown_observed": false,
+  "prearm_timeout": false,
+  "prearm_reasons": [],
+  "prearm_observations": {},
+  "load_id": "j5_3p5kg_provisional",
+  "calibration_group": null,
+  "expected_identity": {
+    "load_id": "j5_3p5kg_provisional"
+  },
+  "operator_acknowledgements": {
+    "supported": true,
+    "clearance_and_local_power_cut": true,
+    "native_output_not_hardware_clamp": true
+  },
+  "trial_parameters": {
+    "hold_seconds": 1.0,
+    "round_trip": false,
+    "delta_deg": 1.0,
+    "leg_seconds": 4.0
+  },
+  "initial_model_rad": [
+    0.0015259021896696368,
+    0.0049591821164263195,
+    0.0,
+    0.008392462043183002,
+    -0.001907377737087046
+  ],
+  "plan": {
+    "schema": "slaihand_joint_plan/2",
+    "coordinates": "absolute_deg",
+    "waypoints": [
+      {
+        "degrees": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "move_s": 6.0,
+        "dwell_s": 6.0
+      },
+      {
+        "degrees": [
+          5.8669,
+          5.8027,
+          0.0,
+          0.0,
+          0.1093
+        ],
+        "move_s": 6.0,
+        "dwell_s": 6.0
+      },
+      {
+        "degrees": [
+          0.0263,
+          -0.2653,
+          5.2352,
+          5.3549,
+          0.1093
+        ],
+        "move_s": 6.0,
+        "dwell_s": 6.0
+      },
+      {
+        "degrees": [
+          6.0003,
+          -0.2623,
+          0.0,
+          5.3568,
+          0.1093
+        ],
+        "move_s": 6.0,
+        "dwell_s": 6.0
+      },
+      {
+        "degrees": [
+          -0.0882,
+          5.6733,
+          5.2352,
+          -0.4371,
+          0.1093
+        ],
+        "move_s": 6.0,
+        "dwell_s": 6.0
+      },
+      {
+        "degrees": [
+          5.8909,
+          5.673,
+          5.2237,
+          5.5003,
+          0.1093
+        ],
+        "move_s": 6.0,
+        "dwell_s": 6.0
+      },
+      {
+        "degrees": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "move_s": 6.0,
+        "dwell_s": 6.0
+      }
+    ]
+  },
+  "plan_sha256": "aa2e8ff41e6a3eb8c066341a098f08cff76b186090a60e0e8b05429e4facfe71",
+  "backend_arm_receipt": "Arm request accepted only; fresh preflight, enable and ramp are not yet confirmed; audit_file=/home/xuyu/.ros/slaihand/canusb_five_axis_candidate/canusb_motion_Wmac4B.jsonl",
+  "command_id": 1,
+  "trajectory_start_reference_rad": [
+    0.0015259021896696368,
+    0.005340657663843729,
+    0.0,
+    0.008392462043183002,
+    -0.001907377737087046
+  ],
+  "concurrent_control_error": "控制端已全局停止或UNKNOWN；检查失能反馈，状态未知时保持支撑并现场切电",
+  "waypoint_results": [
+    {
+      "arrival_s": 6.0,
+      "end_s": 12.0,
+      "target_rad": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "samples": 30,
+      "sampled_span_s": 0.28980489500099793,
+      "max_error_deg": [
+        0.08742775541784104,
+        0.2841402051079833,
+        0.0,
+        0.4589957159436654,
+        0.1092846942723013
+      ],
+      "passed": true
+    },
+    {
+      "arrival_s": 18.0,
+      "end_s": 24.0,
+      "target_rad": [
+        0.10239672188525532,
+        0.10127622050547495,
+        0.0,
+        0.0,
+        0.001907644872429802
+      ],
+      "samples": 30,
+      "sampled_span_s": 0.29025095999531914,
+      "max_error_deg": [
+        0.8835179411830616,
+        0.6226054914928169,
+        0.0,
+        0.02185693885446026,
+        0.2185846942723013
+      ],
+      "passed": false
+    },
+    {
+      "arrival_s": 30.0,
+      "end_s": 36.0,
+      "target_rad": [
+        0.00045902159327450867,
+        -0.004630358505540956,
+        0.09137147700040714,
+        0.09346063611504435,
+        0.001907644872429802
+      ],
+      "samples": 30,
+      "sampled_span_s": 0.2900011259916937,
+      "max_error_deg": [
+        0.07001387770892052,
+        0.4182985719812218,
+        0.31738875774644204,
+        0.41523181889198163,
+        0.2185846942723013
+      ],
+      "passed": true
+    },
+    {
+      "arrival_s": 42.0,
+      "end_s": 48.0,
+      "target_rad": [
+        0.10472499110741576,
+        -0.004577998627981126,
+        0.0,
+        0.09349379737083224,
+        0.001907644872429802
+      ],
+      "samples": 30,
+      "sampled_span_s": 0.2899469340045471,
+      "max_error_deg": [
+        1.0169179411830616,
+        0.4152985719812218,
+        0.08742775541784104,
+        0.41713181889198175,
+        0.2185846942723013
+      ],
+      "passed": false
+    },
+    {
+      "arrival_s": 54.0,
+      "end_s": 60.0,
+      "target_rad": [
+        -0.0015393804002589986,
+        0.0990177644533943,
+        0.09137147700040714,
+        -0.007628834160467214,
+        0.001907644872429802
+      ],
+      "samples": 0,
+      "sampled_span_s": 0.0,
+      "max_error_deg": null,
+      "passed": false
+    },
+    {
+      "arrival_s": 66.0,
+      "end_s": 72.0,
+      "target_rad": [
+        0.10281560090573397,
+        0.09901252846563832,
+        0.09117076413642779,
+        0.09599834484744411,
+        0.001907644872429802
+      ],
+      "samples": 0,
+      "sampled_span_s": 0.0,
+      "max_error_deg": null,
+      "passed": false
+    },
+    {
+      "arrival_s": 78.0,
+      "end_s": 84.0,
+      "target_rad": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "samples": 0,
+      "sampled_span_s": 0.0,
+      "max_error_deg": null,
+      "passed": false
+    }
+  ],
+  "waypoints_observed": false,
+  "reason": "控制端已全局停止或UNKNOWN；检查失能反馈，状态未知时保持支撑并现场切电",
+  "last_observed_status": {
+    "slaihand_joint1": {
+      "position": 0.06103608758678547,
+      "velocity": -0.006105006105006083,
+      "driver_temperature": 29.0,
+      "command_id": 1.0,
+      "feedback_valid": 1.0,
+      "command_owner": 1.0,
+      "effort": 0.146520146520146,
+      "motor_temperature": 25.0,
+      "disabled_observed": 0.0,
+      "timeout_count": 2000.0,
+      "audit_ok": 1.0,
+      "hold_ready": 0.0,
+      "motor_state": 0.0,
+      "control_state": 7.0,
+      "configuration_conflict": 0.0,
+      "control_mode": 1.0,
+      "feedback_age": 4.012499994132668e-05
+    },
+    "slaihand_joint2": {
+      "position": 0.0026703288319218643,
+      "velocity": -0.030525030525030417,
+      "driver_temperature": 28.0,
+      "command_id": 1.0,
+      "feedback_valid": 1.0,
+      "command_owner": 1.0,
+      "effort": -0.146520146520146,
+      "motor_temperature": 24.0,
+      "disabled_observed": 0.0,
+      "timeout_count": 2000.0,
+      "audit_ok": 1.0,
+      "hold_ready": 0.0,
+      "motor_state": 0.0,
+      "control_state": 7.0,
+      "configuration_conflict": 0.0,
+      "control_mode": 1.0,
+      "feedback_age": 4.012499994132668e-05
+    },
+    "slaihand_joint4": {
+      "position": 0.07782101167315147,
+      "velocity": 0.010989010989014503,
+      "driver_temperature": 27.0,
+      "command_id": 1.0,
+      "feedback_valid": 1.0,
+      "command_owner": 1.0,
+      "effort": 0.01318681318681314,
+      "motor_temperature": 26.0,
+      "disabled_observed": 0.0,
+      "timeout_count": 2000.0,
+      "audit_ok": 1.0,
+      "hold_ready": 0.0,
+      "motor_state": 0.0,
+      "control_state": 7.0,
+      "configuration_conflict": 0.0,
+      "control_mode": 1.0,
+      "feedback_age": 4.012499994132668e-05
+    },
+    "slaihand_joint3": {
+      "position": 0.002288853284504455,
+      "velocity": -0.0329670329670364,
+      "driver_temperature": 27.0,
+      "command_id": 1.0,
+      "feedback_valid": 1.0,
+      "command_owner": 1.0,
+      "effort": -0.01318681318681314,
+      "motor_temperature": 25.0,
+      "disabled_observed": 0.0,
+      "timeout_count": 2000.0,
+      "audit_ok": 1.0,
+      "hold_ready": 0.0,
+      "motor_state": 0.0,
+      "control_state": 7.0,
+      "configuration_conflict": 0.0,
+      "control_mode": 1.0,
+      "feedback_age": 4.012499994132668e-05
+    },
+    "slaihand_joint5": {
+      "position": -0.001907377737087046,
+      "velocity": -0.0024420024420024333,
+      "driver_temperature": 27.0,
+      "command_id": 1.0,
+      "feedback_valid": 1.0,
+      "command_owner": 1.0,
+      "effort": 0.02051282051282044,
+      "motor_temperature": 26.0,
+      "disabled_observed": 0.0,
+      "timeout_count": 2000.0,
+      "audit_ok": 1.0,
+      "hold_ready": 0.0,
+      "motor_state": 0.0,
+      "control_state": 7.0,
+      "configuration_conflict": 0.0,
+      "control_mode": 1.0,
+      "feedback_age": 4.012499994132668e-05
+    }
+  },
+  "phase_result": "已开始轨迹",
+  "stop_result": "已确认新失能"
+}

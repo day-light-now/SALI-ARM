@@ -1,0 +1,16 @@
+{
+  "slai_console/robot_contract.py": "7d05205126d224afaf28cdf37e59d15820fea00326c736b3acce58f6dd161fea",
+  "slai_console/core.py": "87ca13fd4232a435a03806dbe8aa40850b75dee28a11615f4b71e4011decfd52",
+  "slai_console/five_axis_config.py": "aaf7b2a75c801e2ae9e31a39a42bc291309c25eccd5079544d98522ec2a2d78d",
+  "slai_console/five_axis_monitor.py": "f55b1d1392a9a187481dd021bab1b7b0557cdf4309c5538dd89680ae04958524",
+  "slai_console/auto_load_acquisition.py": "e1ebe9d6c8958235a16c6a6f318a7ad0040a2e573d00fcd6c654b56ed8e9b8e1",
+  "verification/hardware/four_axis_monitor.py": "3cab569a47784e41c8a2b2f641501afbdf697c69990cff3e60dea094bebe732e",
+  "src/slaihand_description/urdf/slaihand_four_axis.urdf": "fe7edfda16165e8532303ec55d6c1ab733ad32fc6d023115f825aae62637e497",
+  "src/slaihand_description/urdf/slaihand_four_axis.urdf.xacro": "c94f821adb2ca50a971773987bd0ee7c6f8aa703aaa49d087c93267f007666d3",
+  "src/slaihand_description/urdf/slaihand_five_axis.urdf.xacro": "82d7d967fa3e30778f2acf32affa31dc05654a6bff262b65a3d6d04287e72d69",
+  "src/slaihand_description/urdf/offline_joint.xacro": "f7b0ef346ae8e1ddfa5150dbe83145c43c5b41f66e190b0a78fee94bd5dfbb3a",
+  "src/slaihand_hardware/src/openarm_joint_fake.cpp": "a8b7f8b72a1c74c7a54d9cedbffa64054e50f29b08ba94fe52951881e03e8d7c",
+  "src/slaihand_hardware/test/urdf_limits_test.cpp": "199f32cc70a17adf2fdf8726c796fdf5aa109974fd730905f424468efb3f452f",
+  "verification/hardware/five_axis_20261102/five_axis_config.json": "a95ca3c2e09247d94adca1748906262f9ceb6c694b8f1071ccf5dabfa8862bf4",
+  "verification/hardware/load_calibration/measured_limits_20261102.json": "bf3e25c381fa757a3e9952720dac1423880a415eb18a219e96651ac3d13ce7a0"
+}

@@ -1,0 +1,39 @@
+{
+    "schema":  "slaihand_joint_plan/2",
+    "coordinates":  "relative_start_deg",
+    "waypoints":  [
+                      {
+                          "degrees":  [
+                                          0,
+                                          0,
+                                          0,
+                                          0,
+                                          0
+                                      ],
+                          "move_s":  0.5,
+                          "dwell_s":  3
+                      },
+                      {
+                          "degrees":  [
+                                          0,
+                                          2,
+                                          0,
+                                          0,
+                                          0
+                                      ],
+                          "move_s":  8,
+                          "dwell_s":  4
+                      },
+                      {
+                          "degrees":  [
+                                          0,
+                                          0,
+                                          0,
+                                          0,
+                                          0
+                                      ],
+                          "move_s":  8,
+                          "dwell_s":  4
+                      }
+                  ]
+}

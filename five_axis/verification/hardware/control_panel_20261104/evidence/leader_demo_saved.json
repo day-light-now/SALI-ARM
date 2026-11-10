@@ -1,0 +1,15 @@
+{
+  "saved": true,
+  "id": "ecd3ed6859a440d6",
+  "name": "D01 四轴联动巡游展示（12点·90秒）",
+  "waypoints": 12,
+  "duration_s": 90.0,
+  "nominal_peak_rad_s": 0.27270769562411395,
+  "start_end_deg": [
+    0,
+    15,
+    0,
+    0
+  ],
+  "physical_execution_requested": false
+}

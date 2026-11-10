@@ -1,0 +1,28 @@
+{
+  "schema": "slaihand_offline_derived_hashes/1",
+  "files": {
+    "audit_sources.json": "4e2dec90af4c52fb4c010777ed6a40bbeb3767910a10b35100f88fcf49f8d94c",
+    "canusb_motion_99j9Aa_cycles.jsonl.gz": "cd4539c3c531586282bb41a88d53568b9f1ed35d29b5ebbd8d2d3a1a867da462",
+    "canusb_motion_IFxgoj_cycles.jsonl.gz": "b5d764ddc9146f01a4ecd0d88826ddda6bfdc3fe0b432932c88e2688d6c24f68",
+    "canusb_motion_OwBmJz_cycles.jsonl.gz": "e171ca54f4e22856781e4ff6a5242f80d8ae5501bf267668017f1dd7a63e0e31",
+    "canusb_motion_qsrQke_cycles.jsonl.gz": "81a38f380f47c2251fac787c9686a9f485f0bd1022716d13de260f865877ae22",
+    "canusb_motion_vPEeFe_cycles_20261109.jsonl.gz": "5efdaf45a41ff050fb86bc94b449eded7fd11580283be894ea16d5bdaf77f5bd",
+    "extraction_crosscheck.json": "b17556426f39e61a5705dd1dd0187f1ef4b12f38b8ff5c90ca487f14b6ad6ff3",
+    "make_next_plans.py": "eaee156d270ce650dbf2ef7e4b45a2c676b7e286217d9279e1b80109572b1e0e",
+    "next_sampling_candidates/GC09_J1_PAIRED_REPEAT_ZERO.json": "e850f47b39e4f20ea2ac72240b1292dbad3b81c4b82a9958d187f1495c0317af",
+    "next_sampling_candidates/GC10_J4_PAIRED_REPEAT_ZERO.json": "c41989b3dc945679db8c4f4bdbd84f6804e90a8bb0c3d0873f2d6662a8daff36",
+    "next_sampling_candidates/GC11_J2_PAIRED_REPEAT_ZERO.json": "ed49709840cf4031bbc0a9bfd1c26dec2aa50b4e53bf2aff5e4e269962131e30",
+    "next_sampling_candidates/GC12_J3_PAIRED_REPEAT_ZERO.json": "5a65f357a1fc4435163defe106d0de76d921d5fe8ded6b9a90eac3b4d77bc2f7",
+    "next_sampling_candidates/GC13_NEW_MIXED_J5_HOLDOUT_ZERO.json": "be72b4c1a613e2baa0820b7dcdfc4aa2f92461de6ea95cb45d01cecb7073a7bd",
+    "next_sampling_candidates/PLAN_MANIFEST.json": "87cf56b561c6622476a3f16671914be9abdf27e6d4559540353f4553f6ee78f7",
+    "offline_candidates.json": "aeb01bd26575579c62567c587e43cfb1787c3a952ff63a3e55b9bf3772ae76dd",
+    "README_\u540e\u7eed\u91cd\u529b\u8865\u507f\u65b9\u6848.md": "a3db7064c20282d499a25e35b3424318feea1806b380e3497538704365fa34e8",
+    "refit.py": "b181ca6e6d1946dd65a927da3f1ae6bc165fbdd25d2cd3bca01976197633597b",
+    "refit_diagnostics.png": "0eaac0219ac0a4a87335e7884ab8c7667e677168629a95fcb8d9b7d0ce87d5dd",
+    "refit_result.json": "97a50f81bab9926069ed70499ecf17d5523be0f1a91bc82be60b214eaab2a2d1",
+    "SOURCE_MANIFEST.json": "7659bd353aa82931fde17becf83e898f4d84fb87c8d6ab0f41c4354f3d3146b9",
+    "static_windows.csv": "0b48a9349c96fb80fabf0c0b294e419354d76a88f8ec557284ee6fae8fdd66c1",
+    "static_windows.json": "6602589f2efe4b4f75efb2c5a193a35ffae4b930dde9cb8111fedaa7841145ce",
+    "test_refit.py": "980cd1b2919a80f04ec846cb2974d6ad3248d9d0a471b73b80735ab0284ad875"
+  }
+}

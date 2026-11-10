@@ -1,0 +1,94 @@
+{
+  "schema": "slaihand_panel_sampling_import/3",
+  "imported_at": "2026-11-09T15:26:56+0800",
+  "panel_origin": "http://127.0.0.1:42664",
+  "plans": [
+    {
+      "name": "GC09_J1_PAIRED_REPEAT_ZERO",
+      "display_name": "GC09 后续采集 J1双向重复 · 绝对零终点",
+      "file": "GC09_J1_PAIRED_REPEAT_ZERO.json",
+      "file_sha256": "e850f47b39e4f20ea2ac72240b1292dbad3b81c4b82a9958d187f1495c0317af",
+      "manifest_sha_match": true,
+      "panel_id": "b87fb8c8b65a4fc5",
+      "waypoints": 9,
+      "readback_document_matches": true,
+      "final_absolute_deg": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "name": "GC10_J4_PAIRED_REPEAT_ZERO",
+      "display_name": "GC10 后续采集 J4双向重复 · 绝对零终点",
+      "file": "GC10_J4_PAIRED_REPEAT_ZERO.json",
+      "file_sha256": "c41989b3dc945679db8c4f4bdbd84f6804e90a8bb0c3d0873f2d6662a8daff36",
+      "manifest_sha_match": true,
+      "panel_id": "b79600cf544f4d71",
+      "waypoints": 9,
+      "readback_document_matches": true,
+      "final_absolute_deg": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "name": "GC11_J2_PAIRED_REPEAT_ZERO",
+      "display_name": "GC11 后续采集 J2双向重复 · 绝对零终点",
+      "file": "GC11_J2_PAIRED_REPEAT_ZERO.json",
+      "file_sha256": "ed49709840cf4031bbc0a9bfd1c26dec2aa50b4e53bf2aff5e4e269962131e30",
+      "manifest_sha_match": true,
+      "panel_id": "526f7b4ad44b4074",
+      "waypoints": 9,
+      "readback_document_matches": true,
+      "final_absolute_deg": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "name": "GC12_J3_PAIRED_REPEAT_ZERO",
+      "display_name": "GC12 后续采集 J3双向重复 · 绝对零终点",
+      "file": "GC12_J3_PAIRED_REPEAT_ZERO.json",
+      "file_sha256": "5a65f357a1fc4435163defe106d0de76d921d5fe8ded6b9a90eac3b4d77bc2f7",
+      "manifest_sha_match": true,
+      "panel_id": "f5d805d1c027403a",
+      "waypoints": 9,
+      "readback_document_matches": true,
+      "final_absolute_deg": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "name": "GC13_NEW_MIXED_J5_HOLDOUT_ZERO",
+      "display_name": "GC13 后续采集 混合姿态J5新留出 · 绝对零终点",
+      "file": "GC13_NEW_MIXED_J5_HOLDOUT_ZERO.json",
+      "file_sha256": "be72b4c1a613e2baa0820b7dcdfc4aa2f92461de6ea95cb45d01cecb7073a7bd",
+      "manifest_sha_match": true,
+      "panel_id": "c8714830b16f4837",
+      "waypoints": 11,
+      "readback_document_matches": true,
+      "final_absolute_deg": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    }
+  ],
+  "hardware_executed": false,
+  "ff_enabled": false
+}

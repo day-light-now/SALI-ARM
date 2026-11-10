@@ -1,0 +1,16 @@
+{
+  "ticket": "6b107dc189f94c0d1388f195598e04d6",
+  "source_sha256": "345e72dcafcc03013723cf9b2a827f3bfc98a9aedd2283a28d6bccbd85da4872",
+  "frozen_sha256": "277a5ceb8bee494d77095a65ff19fe3e5bbfe68365df15b0ff6ba850eed4dc2d",
+  "start_rad": [
+    0.2616922255283427,
+    0.4364080262455179,
+    -0.1747158007171734,
+    0.0873579003585867
+  ],
+  "confirmations": {
+    "supported": true,
+    "clearance_and_local_power_cut": true,
+    "native_output_not_hardware_clamp": true
+  }
+}

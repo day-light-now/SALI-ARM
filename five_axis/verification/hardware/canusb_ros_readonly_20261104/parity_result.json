@@ -1,0 +1,9 @@
+{
+  "status": "PASS",
+  "read_packets_byte_identical": 32,
+  "real_rx_frames_replayed": 200,
+  "axes_decoder_parity": 4,
+  "fake_bus_audit_tx_checked": 132,
+  "real_hardware_opened": false,
+  "source_sha256": "9eee36bee0ccddd6a6df19170b5a75c419493bcba38d64101c4d1daf9894d82e"
+}

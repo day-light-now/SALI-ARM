@@ -1,0 +1,325 @@
+{
+  "name": "同姿态双向对照_4点",
+  "plan_id": "bb0c370b35c64d5a",
+  "document": {
+    "coordinates": "absolute_deg",
+    "waypoints": [
+      {
+        "degrees": [
+          -3,
+          17,
+          -3,
+          -3
+        ],
+        "move_s": 10.0,
+        "dwell_s": 6.0
+      },
+      {
+        "degrees": [
+          0,
+          20,
+          0,
+          0
+        ],
+        "move_s": 10.0,
+        "dwell_s": 6.0
+      },
+      {
+        "degrees": [
+          3,
+          23,
+          3,
+          3
+        ],
+        "move_s": 10.0,
+        "dwell_s": 6.0
+      },
+      {
+        "degrees": [
+          0,
+          20,
+          0,
+          0
+        ],
+        "move_s": 10.0,
+        "dwell_s": 6.0
+      }
+    ]
+  },
+  "preview": {
+    "mode": "absolute_deg",
+    "execution_mode": "calibration",
+    "source_mode": "absolute_deg",
+    "start_deg": [
+      -12.371,
+      14.928,
+      -19.999,
+      19.846
+    ],
+    "limits_deg": [
+      [
+        -80.0,
+        200.0
+      ],
+      [
+        -10.0,
+        190.0
+      ],
+      [
+        -90.0,
+        90.0
+      ],
+      [
+        -90.0,
+        50.0
+      ]
+    ],
+    "limits_source": null,
+    "frozen": {
+      "coordinates": "absolute_deg",
+      "waypoints": [
+        {
+          "degrees": [
+            -3.0000000000000004,
+            17.0,
+            -3.0000000000000004,
+            -3.0000000000000004
+          ],
+          "move_s": 10.0,
+          "dwell_s": 6.0
+        },
+        {
+          "degrees": [
+            0.0,
+            20.0,
+            0.0,
+            0.0
+          ],
+          "move_s": 10.0,
+          "dwell_s": 6.0
+        },
+        {
+          "degrees": [
+            3.0000000000000004,
+            23.0,
+            3.0000000000000004,
+            3.0000000000000004
+          ],
+          "move_s": 10.0,
+          "dwell_s": 6.0
+        },
+        {
+          "degrees": [
+            0.0,
+            20.0,
+            0.0,
+            0.0
+          ],
+          "move_s": 10.0,
+          "dwell_s": 6.0
+        }
+      ]
+    },
+    "frozen_sha256": "939960b84da24ae596be825ce1e962909672c01412af823f290a7cdd49ad51c5",
+    "source_sha256": "287e1555c9670c7a9d772c0838b70228806460da57969a8f339f3334ea1a6032",
+    "source": {
+      "coordinates": "absolute_deg",
+      "waypoints": [
+        {
+          "degrees": [
+            -3.0,
+            17.0,
+            -3.0,
+            -3.0
+          ],
+          "move_s": 10.0,
+          "dwell_s": 6.0
+        },
+        {
+          "degrees": [
+            0.0,
+            20.0,
+            0.0,
+            0.0
+          ],
+          "move_s": 10.0,
+          "dwell_s": 6.0
+        },
+        {
+          "degrees": [
+            3.0,
+            23.0,
+            3.0,
+            3.0
+          ],
+          "move_s": 10.0,
+          "dwell_s": 6.0
+        },
+        {
+          "degrees": [
+            0.0,
+            20.0,
+            0.0,
+            0.0
+          ],
+          "move_s": 10.0,
+          "dwell_s": 6.0
+        }
+      ]
+    },
+    "waypoints": [
+      {
+        "index": 1,
+        "arrival_s": 10.0,
+        "end_s": 16.0,
+        "move_s": 10.0,
+        "dwell_s": 6.0,
+        "target_deg": [
+          -3.0,
+          17.0,
+          -3.0,
+          -3.0
+        ]
+      },
+      {
+        "index": 2,
+        "arrival_s": 26.0,
+        "end_s": 32.0,
+        "move_s": 10.0,
+        "dwell_s": 6.0,
+        "target_deg": [
+          0.0,
+          20.0,
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "index": 3,
+        "arrival_s": 42.0,
+        "end_s": 48.0,
+        "move_s": 10.0,
+        "dwell_s": 6.0,
+        "target_deg": [
+          3.0,
+          23.0,
+          3.0,
+          3.0
+        ]
+      },
+      {
+        "index": 4,
+        "arrival_s": 58.0,
+        "end_s": 64.0,
+        "move_s": 10.0,
+        "dwell_s": 6.0,
+        "target_deg": [
+          0.0,
+          20.0,
+          0.0,
+          0.0
+        ]
+      }
+    ],
+    "trajectory": [
+      {
+        "at_s": 0.0,
+        "degrees": [
+          -12.371,
+          14.928,
+          -19.999,
+          19.846
+        ]
+      },
+      {
+        "at_s": 10.0,
+        "degrees": [
+          -3.0,
+          17.0,
+          -3.0,
+          -3.0
+        ]
+      },
+      {
+        "at_s": 16.0,
+        "degrees": [
+          -3.0,
+          17.0,
+          -3.0,
+          -3.0
+        ]
+      },
+      {
+        "at_s": 26.0,
+        "degrees": [
+          0.0,
+          20.0,
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "at_s": 32.0,
+        "degrees": [
+          0.0,
+          20.0,
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "at_s": 42.0,
+        "degrees": [
+          3.0,
+          23.0,
+          3.0,
+          3.0
+        ]
+      },
+      {
+        "at_s": 48.0,
+        "degrees": [
+          3.0,
+          23.0,
+          3.0,
+          3.0
+        ]
+      },
+      {
+        "at_s": 58.0,
+        "degrees": [
+          0.0,
+          20.0,
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "at_s": 64.0,
+        "degrees": [
+          0.0,
+          20.0,
+          0.0,
+          0.0
+        ]
+      }
+    ],
+    "total_s": 64.0,
+    "budget": {
+      "plan_seconds": 64.0,
+      "hold_seconds": 1.0,
+      "reserve_seconds": 8.0,
+      "session_budget_seconds": 178.0,
+      "plan_limit_seconds": 169.0,
+      "ok": true,
+      "retiming_allowance_s": 0,
+      "nominal_plan_seconds": 64.0
+    },
+    "returns_to_start": false,
+    "warnings": [
+      "重力采样：每段移动至少7.5秒、停留至少6秒；逐点采集至少2秒自由静态窗口，按实际角度记录。α必须为0；0.5°精度另行评分，不修改质量档案。",
+      "计划终点没有回到本次起点：动作完成即失能，不会在终点持续保持。"
+    ]
+  },
+  "executed": false
+}

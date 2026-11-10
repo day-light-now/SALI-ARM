@@ -1,0 +1,1360 @@
+{
+  "source": "/home/xuyu/.ros/slaihand/control_panel/operations/8fffd9ce29b64e1e/client/calibration/raw/20261106_123940_web_static_980561000.jsonl",
+  "header": {
+    "schema": "slaihand_calibration_capture/2",
+    "tool": "web_calibration",
+    "recorded_at": 1793939980.5610468,
+    "model": {
+      "urdf_sha256": "b58042be2191e8aa2223ff867d101e1d072f579936759f2d09c7f075ce16721f",
+      "mass_profile_sha256": "a4f39aaf044b95761f63a1526eb986f902e77c3bc03a9092a92124da6e1a0173",
+      "mass_profile_status": "LOCAL_OFFLINE_CANDIDATE",
+      "mapping_sha256": "00b0c77f131adb3142617c2c1f1ce2612e4d956f15adf6eac53a8138ae2787b6",
+      "policy_sha256": "a9a9361bfc0da68bd6ca8e8c8b8636d1afbca48cf7a933c02b10dc726d7cc951",
+      "gravity_base_m_s2": [
+        0.0,
+        9.80665,
+        0.0
+      ],
+      "j3_offset_rad": 3.141592653589793,
+      "load_id": "no_end_load",
+      "units": {
+        "position": "rad",
+        "velocity": "rad/s",
+        "torque": "N*m"
+      }
+    },
+    "runtime": {
+      "verified": true,
+      "source": "driver_runtime_identity",
+      "age_s": 0.745,
+      "identity": {
+        "schema": "slaihand_runtime_identity/1",
+        "mapping_sha256": "00b0c77f131adb3142617c2c1f1ce2612e4d956f15adf6eac53a8138ae2787b6",
+        "model_sha256": "b58042be2191e8aa2223ff867d101e1d072f579936759f2d09c7f075ce16721f",
+        "policy_sha256": "a9a9361bfc0da68bd6ca8e8c8b8636d1afbca48cf7a933c02b10dc726d7cc951",
+        "mass_profile_sha256": "a4f39aaf044b95761f63a1526eb986f902e77c3bc03a9092a92124da6e1a0173",
+        "policy_profile": "supported_four_axis_native_mit_b1",
+        "load_id": "no_end_load",
+        "gravity_base_m_s2": [
+          0,
+          9.80665,
+          0
+        ],
+        "j3_offset_rad": 3.141592653589793,
+        "kp": 160,
+        "kd": 5,
+        "reference_speed_rad_s": 1,
+        "gravity_ff_alpha": 0,
+        "gravity_ff_ramp_s": 2,
+        "gravity_float_enabled": true,
+        "boot_id": "153127995061-399139",
+        "started_at": 153127.995059722,
+        "position_branch_ready": true,
+        "position_branch_modes": [
+          "fixed",
+          "fixed",
+          "startup_unique_urdf",
+          "fixed"
+        ],
+        "model_turns": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "effective_zero_rad": [
+          1.4574273289082171,
+          -1.795033188372626,
+          -2.5423437857633324,
+          -0.40951400015259054
+        ]
+      },
+      "mismatches": [],
+      "reason": null
+    },
+    "load_id": "no_end_load",
+    "command_id": 2,
+    "plan_sha256": "0c1cb70db1c880e40a7bc9c3de56b41d02e697447f07335b6d8a1d6f6bf21a65",
+    "requested_count": 12
+  },
+  "samples": [
+    {
+      "positions_rad": [
+        0.7876429666312924,
+        0.2063262517599905,
+        -0.05264362554360247,
+        -0.049973296711680604
+      ],
+      "velocities_rad_s": [
+        -0.009435009435009401,
+        -0.006660006660006637,
+        -0.009990009990013184,
+        0.00899100899101122
+      ],
+      "effort_estimate_nm": [
+        5.034965034965046,
+        0.3463203463203451,
+        -0.09710289710289675,
+        -0.24695304695304607
+      ],
+      "driver_temperature_c": [
+        32.0,
+        31.0,
+        29.0,
+        29.0
+      ],
+      "motor_temperature_c": [
+        28.0,
+        27.0,
+        27.0,
+        28.0
+      ],
+      "feedback_age_s": [
+        2.69619922619313e-05,
+        2.69619922619313e-05,
+        2.69619922619313e-05,
+        2.69619922619313e-05
+      ],
+      "local_receipt_age_s": 0.007097,
+      "total_age_s": [
+        0.007124,
+        0.007124,
+        0.007124,
+        0.007124
+      ],
+      "capture_age_s": 0.007124,
+      "feedback_valid": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "motor_state": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "stage": 6,
+      "dynamic_sequence": 1468,
+      "command_id": 2.0,
+      "joint_delta_rad": 0.0,
+      "controller_reference_rad": [
+        0.8203047484373349,
+        0.2094395102393196,
+        -0.0523598775598299,
+        -0.0523598775598299
+      ],
+      "controller_reference_age_s": 0.007,
+      "driver_ff": {
+        "alpha": 0.0,
+        "ramp": 2.0,
+        "active": false,
+        "stage": 6,
+        "command_id": 2,
+        "applied": [
+          -0.04884004884004867,
+          -0.04884004884004867,
+          -0.01318681318681314,
+          -0.01318681318681314
+        ],
+        "age_s": 0.7669
+      },
+      "runtime": {
+        "verified": true,
+        "source": "driver_runtime_identity",
+        "age_s": 1.627,
+        "identity": {
+          "schema": "slaihand_runtime_identity/1",
+          "mapping_sha256": "00b0c77f131adb3142617c2c1f1ce2612e4d956f15adf6eac53a8138ae2787b6",
+          "model_sha256": "b58042be2191e8aa2223ff867d101e1d072f579936759f2d09c7f075ce16721f",
+          "policy_sha256": "a9a9361bfc0da68bd6ca8e8c8b8636d1afbca48cf7a933c02b10dc726d7cc951",
+          "mass_profile_sha256": "a4f39aaf044b95761f63a1526eb986f902e77c3bc03a9092a92124da6e1a0173",
+          "policy_profile": "supported_four_axis_native_mit_b1",
+          "load_id": "no_end_load",
+          "gravity_base_m_s2": [
+            0,
+            9.80665,
+            0
+          ],
+          "j3_offset_rad": 3.141592653589793,
+          "kp": 160,
+          "kd": 5,
+          "reference_speed_rad_s": 1,
+          "gravity_ff_alpha": 0,
+          "gravity_ff_ramp_s": 2,
+          "gravity_float_enabled": true,
+          "boot_id": "153127995061-399139",
+          "started_at": 153127.995059722,
+          "position_branch_ready": true,
+          "position_branch_modes": [
+            "fixed",
+            "fixed",
+            "startup_unique_urdf",
+            "fixed"
+          ],
+          "model_turns": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "effective_zero_rad": [
+            1.4574273289082171,
+            -1.795033188372626,
+            -2.5423437857633324,
+            -0.40951400015259054
+          ]
+        },
+        "mismatches": [],
+        "reason": null
+      },
+      "schema": "slaihand_calibration_sample/2",
+      "recorded_at": 1793939991.4627645,
+      "support": "free",
+      "contact": "none",
+      "motion": "static",
+      "load_id": "no_end_load",
+      "model": {
+        "urdf_sha256": "b58042be2191e8aa2223ff867d101e1d072f579936759f2d09c7f075ce16721f",
+        "mass_profile_sha256": "a4f39aaf044b95761f63a1526eb986f902e77c3bc03a9092a92124da6e1a0173",
+        "mass_profile_status": "LOCAL_OFFLINE_CANDIDATE",
+        "mapping_sha256": "00b0c77f131adb3142617c2c1f1ce2612e4d956f15adf6eac53a8138ae2787b6",
+        "policy_sha256": "a9a9361bfc0da68bd6ca8e8c8b8636d1afbca48cf7a933c02b10dc726d7cc951",
+        "gravity_base_m_s2": [
+          0.0,
+          9.80665,
+          0.0
+        ],
+        "j3_offset_rad": 3.141592653589793,
+        "load_id": "no_end_load",
+        "units": {
+          "position": "rad",
+          "velocity": "rad/s",
+          "torque": "N*m"
+        }
+      },
+      "note": "网页显式确认自由承重无接触；按实际姿态拟合，不使用目标姿态代替反馈",
+      "static_window": {
+        "samples": 22,
+        "span_s": 2.0995,
+        "max_gap_s": 0.1006,
+        "max_speed_rad_s": 0.03297,
+        "max_position_delta_rad": 0.00033,
+        "stage": 6,
+        "motor_state": [
+          1,
+          1,
+          1,
+          1
+        ],
+        "all_enabled": true,
+        "fresh_all": true,
+        "ff_all_zero": true,
+        "ff_all_fresh": true,
+        "command_ids": [
+          2
+        ],
+        "valid": true,
+        "reasons": [],
+        "mean_positions_rad": [
+          0.7876429666312924,
+          0.2063262517599905,
+          -0.05264362554360247,
+          -0.049973296711680604
+        ],
+        "mean_velocity_rad_s": [
+          -0.009435009435009401,
+          -0.006660006660006637,
+          -0.009990009990013184,
+          0.00899100899101122
+        ],
+        "mean_effort_estimate_nm": [
+          5.034965034965046,
+          0.3463203463203451,
+          -0.09710289710289675,
+          -0.24695304695304607
+        ]
+      },
+      "target_rad": [
+        0.8203047484373349,
+        0.2094395102393196,
+        -0.0523598775598299,
+        -0.0523598775598299
+      ],
+      "waypoint_index": 1,
+      "role": "training",
+      "calibration_group": "L01",
+      "pair_id": "L01_01",
+      "approach": "conditioning"
+    },
+    {
+      "positions_rad": [
+        0.8377203021286341,
+        0.24872205691615257,
+        -0.0026703288319218643,
+        -0.00457770656900891
+      ],
+      "velocities_rad_s": [
+        -0.004942147799290639,
+        -0.00784929356357925,
+        -0.010989010989014164,
+        0.013082155939302302
+      ],
+      "effort_estimate_nm": [
+        5.416593988022568,
+        1.9001104715390362,
+        0.3032967032967022,
+        0.8395604395604366
+      ],
+      "driver_temperature_c": [
+        32.0,
+        31.0,
+        29.0,
+        29.0
+      ],
+      "motor_temperature_c": [
+        28.0,
+        27.0,
+        27.0,
+        28.0
+      ],
+      "feedback_age_s": [
+        2.538601984269917e-05,
+        2.538601984269917e-05,
+        2.538601984269917e-05,
+        2.538601984269917e-05
+      ],
+      "local_receipt_age_s": 0.006955,
+      "total_age_s": [
+        0.00698,
+        0.00698,
+        0.00698,
+        0.00698
+      ],
+      "capture_age_s": 0.00698,
+      "feedback_valid": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "motor_state": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "stage": 6,
+      "dynamic_sequence": 2808,
+      "command_id": 2.0,
+      "joint_delta_rad": 0.0,
+      "controller_reference_rad": [
+        0.8726646259971648,
+        0.2617993877991494,
+        0.0,
+        0.0
+      ],
+      "controller_reference_age_s": 0.007,
+      "driver_ff": {
+        "alpha": 0.0,
+        "ramp": 2.0,
+        "active": false,
+        "stage": 6,
+        "command_id": 2,
+        "applied": [
+          -0.04884004884004867,
+          -0.04884004884004867,
+          -0.01318681318681314,
+          -0.01318681318681314
+        ],
+        "age_s": 0.1173
+      },
+      "runtime": {
+        "verified": true,
+        "source": "driver_runtime_identity",
+        "age_s": 0.987,
+        "identity": {
+          "schema": "slaihand_runtime_identity/1",
+          "mapping_sha256": "00b0c77f131adb3142617c2c1f1ce2612e4d956f15adf6eac53a8138ae2787b6",
+          "model_sha256": "b58042be2191e8aa2223ff867d101e1d072f579936759f2d09c7f075ce16721f",
+          "policy_sha256": "a9a9361bfc0da68bd6ca8e8c8b8636d1afbca48cf7a933c02b10dc726d7cc951",
+          "mass_profile_sha256": "a4f39aaf044b95761f63a1526eb986f902e77c3bc03a9092a92124da6e1a0173",
+          "policy_profile": "supported_four_axis_native_mit_b1",
+          "load_id": "no_end_load",
+          "gravity_base_m_s2": [
+            0,
+            9.80665,
+            0
+          ],
+          "j3_offset_rad": 3.141592653589793,
+          "kp": 160,
+          "kd": 5,
+          "reference_speed_rad_s": 1,
+          "gravity_ff_alpha": 0,
+          "gravity_ff_ramp_s": 2,
+          "gravity_float_enabled": true,
+          "boot_id": "153127995061-399139",
+          "started_at": 153127.995059722,
+          "position_branch_ready": true,
+          "position_branch_modes": [
+            "fixed",
+            "fixed",
+            "startup_unique_urdf",
+            "fixed"
+          ],
+          "model_turns": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "effective_zero_rad": [
+            1.4574273289082171,
+            -1.795033188372626,
+            -2.5423437857633324,
+            -0.40951400015259054
+          ]
+        },
+        "mismatches": [],
+        "reason": null
+      },
+      "schema": "slaihand_calibration_sample/2",
+      "recorded_at": 1793940004.8633096,
+      "support": "free",
+      "contact": "none",
+      "motion": "static",
+      "load_id": "no_end_load",
+      "model": {
+        "urdf_sha256": "b58042be2191e8aa2223ff867d101e1d072f579936759f2d09c7f075ce16721f",
+        "mass_profile_sha256": "a4f39aaf044b95761f63a1526eb986f902e77c3bc03a9092a92124da6e1a0173",
+        "mass_profile_status": "LOCAL_OFFLINE_CANDIDATE",
+        "mapping_sha256": "00b0c77f131adb3142617c2c1f1ce2612e4d956f15adf6eac53a8138ae2787b6",
+        "policy_sha256": "a9a9361bfc0da68bd6ca8e8c8b8636d1afbca48cf7a933c02b10dc726d7cc951",
+        "gravity_base_m_s2": [
+          0.0,
+          9.80665,
+          0.0
+        ],
+        "j3_offset_rad": 3.141592653589793,
+        "load_id": "no_end_load",
+        "units": {
+          "position": "rad",
+          "velocity": "rad/s",
+          "torque": "N*m"
+        }
+      },
+      "note": "网页显式确认自由承重无接触；按实际姿态拟合，不使用目标姿态代替反馈",
+      "static_window": {
+        "samples": 21,
+        "span_s": 2.0001,
+        "max_gap_s": 0.1003,
+        "max_speed_rad_s": 0.03297,
+        "max_position_delta_rad": 0.0,
+        "stage": 6,
+        "motor_state": [
+          1,
+          1,
+          1,
+          1
+        ],
+        "all_enabled": true,
+        "fresh_all": true,
+        "ff_all_zero": true,
+        "ff_all_fresh": true,
+        "command_ids": [
+          2
+        ],
+        "valid": true,
+        "reasons": [],
+        "mean_positions_rad": [
+          0.8377203021286341,
+          0.24872205691615257,
+          -0.0026703288319218643,
+          -0.00457770656900891
+        ],
+        "mean_velocity_rad_s": [
+          -0.004942147799290639,
+          -0.00784929356357925,
+          -0.010989010989014164,
+          0.013082155939302302
+        ],
+        "mean_effort_estimate_nm": [
+          5.416593988022568,
+          1.9001104715390362,
+          0.3032967032967022,
+          0.8395604395604366
+        ]
+      },
+      "target_rad": [
+        0.8726646259971648,
+        0.2617993877991494,
+        0.0,
+        0.0
+      ],
+      "waypoint_index": 2,
+      "role": "training",
+      "calibration_group": "L01",
+      "pair_id": "L01_01",
+      "approach": "positive",
+      "approach_displacement_deg": [
+        2.869219973258339,
+        2.4291007045070607,
+        2.8632589899342937,
+        2.6009757236807705
+      ]
+    },
+    {
+      "positions_rad": [
+        0.8896009765774018,
+        0.3009842069123376,
+        0.04962650075948296,
+        0.04768444342717615
+      ],
+      "velocities_rad_s": [
+        -0.007215007215007189,
+        -0.008325008325008295,
+        -0.009990009990012861,
+        0.008991008991011544
+      ],
+      "effort_estimate_nm": [
+        5.425685425685435,
+        1.904761904761898,
+        0.2925074925074915,
+        0.9110889110889079
+      ],
+      "driver_temperature_c": [
+        32.0,
+        31.0,
+        29.0,
+        29.0
+      ],
+      "motor_temperature_c": [
+        28.0,
+        27.0,
+        27.0,
+        28.0
+      ],
+      "feedback_age_s": [
+        2.882798435166478e-05,
+        2.882798435166478e-05,
+        2.882798435166478e-05,
+        2.882798435166478e-05
+      ],
+      "local_receipt_age_s": 0.00678,
+      "total_age_s": [
+        0.006809,
+        0.006809,
+        0.006809,
+        0.006809
+      ],
+      "capture_age_s": 0.006809,
+      "feedback_valid": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "motor_state": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "stage": 6,
+      "dynamic_sequence": 4168,
+      "command_id": 2.0,
+      "joint_delta_rad": 0.0,
+      "controller_reference_rad": [
+        0.9250245035569946,
+        0.3141592653589793,
+        0.0523598775598299,
+        0.0523598775598299
+      ],
+      "controller_reference_age_s": 0.007,
+      "driver_ff": {
+        "alpha": 0.0,
+        "ramp": 2.0,
+        "active": false,
+        "stage": 6,
+        "command_id": 2,
+        "applied": [
+          -0.04884004884004867,
+          -0.04884004884004867,
+          -0.01318681318681314,
+          -0.01318681318681314
+        ],
+        "age_s": 0.677
+      },
+      "runtime": {
+        "verified": true,
+        "source": "driver_runtime_identity",
+        "age_s": 0.557,
+        "identity": {
+          "schema": "slaihand_runtime_identity/1",
+          "mapping_sha256": "00b0c77f131adb3142617c2c1f1ce2612e4d956f15adf6eac53a8138ae2787b6",
+          "model_sha256": "b58042be2191e8aa2223ff867d101e1d072f579936759f2d09c7f075ce16721f",
+          "policy_sha256": "a9a9361bfc0da68bd6ca8e8c8b8636d1afbca48cf7a933c02b10dc726d7cc951",
+          "mass_profile_sha256": "a4f39aaf044b95761f63a1526eb986f902e77c3bc03a9092a92124da6e1a0173",
+          "policy_profile": "supported_four_axis_native_mit_b1",
+          "load_id": "no_end_load",
+          "gravity_base_m_s2": [
+            0,
+            9.80665,
+            0
+          ],
+          "j3_offset_rad": 3.141592653589793,
+          "kp": 160,
+          "kd": 5,
+          "reference_speed_rad_s": 1,
+          "gravity_ff_alpha": 0,
+          "gravity_ff_ramp_s": 2,
+          "gravity_float_enabled": true,
+          "boot_id": "153127995061-399139",
+          "started_at": 153127.995059722,
+          "position_branch_ready": true,
+          "position_branch_modes": [
+            "fixed",
+            "fixed",
+            "startup_unique_urdf",
+            "fixed"
+          ],
+          "model_turns": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "effective_zero_rad": [
+            1.4574273289082171,
+            -1.795033188372626,
+            -2.5423437857633324,
+            -0.40951400015259054
+          ]
+        },
+        "mismatches": [],
+        "reason": null
+      },
+      "schema": "slaihand_calibration_sample/2",
+      "recorded_at": 1793940018.4630668,
+      "support": "free",
+      "contact": "none",
+      "motion": "static",
+      "load_id": "no_end_load",
+      "model": {
+        "urdf_sha256": "b58042be2191e8aa2223ff867d101e1d072f579936759f2d09c7f075ce16721f",
+        "mass_profile_sha256": "a4f39aaf044b95761f63a1526eb986f902e77c3bc03a9092a92124da6e1a0173",
+        "mass_profile_status": "LOCAL_OFFLINE_CANDIDATE",
+        "mapping_sha256": "00b0c77f131adb3142617c2c1f1ce2612e4d956f15adf6eac53a8138ae2787b6",
+        "policy_sha256": "a9a9361bfc0da68bd6ca8e8c8b8636d1afbca48cf7a933c02b10dc726d7cc951",
+        "gravity_base_m_s2": [
+          0.0,
+          9.80665,
+          0.0
+        ],
+        "j3_offset_rad": 3.141592653589793,
+        "load_id": "no_end_load",
+        "units": {
+          "position": "rad",
+          "velocity": "rad/s",
+          "torque": "N*m"
+        }
+      },
+      "note": "网页显式确认自由承重无接触；按实际姿态拟合，不使用目标姿态代替反馈",
+      "static_window": {
+        "samples": 22,
+        "span_s": 2.0999,
+        "max_gap_s": 0.1008,
+        "max_speed_rad_s": 0.03297,
+        "max_position_delta_rad": 0.00035,
+        "stage": 6,
+        "motor_state": [
+          1,
+          1,
+          1,
+          1
+        ],
+        "all_enabled": true,
+        "fresh_all": true,
+        "ff_all_zero": true,
+        "ff_all_fresh": true,
+        "command_ids": [
+          2
+        ],
+        "valid": true,
+        "reasons": [],
+        "mean_positions_rad": [
+          0.8896009765774018,
+          0.3009842069123376,
+          0.04962650075948296,
+          0.04768444342717615
+        ],
+        "mean_velocity_rad_s": [
+          -0.007215007215007189,
+          -0.008325008325008295,
+          -0.009990009990012861,
+          0.008991008991011544
+        ],
+        "mean_effort_estimate_nm": [
+          5.425685425685435,
+          1.904761904761898,
+          0.2925074925074915,
+          0.9110889110889079
+        ]
+      },
+      "target_rad": [
+        0.9250245035569946,
+        0.3141592653589793,
+        0.0523598775598299,
+        0.0523598775598299
+      ],
+      "waypoint_index": 3,
+      "role": "training",
+      "calibration_group": "L01",
+      "pair_id": "L01_01",
+      "approach": "conditioning"
+    },
+    {
+      "positions_rad": [
+        0.8491645685511564,
+        0.2583316076106197,
+        0.0,
+        0.0
+      ],
+      "velocities_rad_s": [
+        -0.006686435257863806,
+        -0.00784929356357925,
+        -0.008895866038725688,
+        0.014128728414445865
+      ],
+      "effort_estimate_nm": [
+        3.5606721321006907,
+        0.34653177510320243,
+        -0.1224489795918363,
+        0.11491365777080022
+      ],
+      "driver_temperature_c": [
+        32.0,
+        31.0,
+        29.0,
+        29.0
+      ],
+      "motor_temperature_c": [
+        28.0,
+        27.0,
+        27.0,
+        28.0
+      ],
+      "feedback_age_s": [
+        2.338699414394796e-05,
+        2.338699414394796e-05,
+        2.338699414394796e-05,
+        2.338699414394796e-05
+      ],
+      "local_receipt_age_s": 0.00727,
+      "total_age_s": [
+        0.007293,
+        0.007293,
+        0.007293,
+        0.007293
+      ],
+      "capture_age_s": 0.007293,
+      "feedback_valid": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "motor_state": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "stage": 6,
+      "dynamic_sequence": 5508,
+      "command_id": 2.0,
+      "joint_delta_rad": 0.0,
+      "controller_reference_rad": [
+        0.8726646259971648,
+        0.2617993877991494,
+        0.0,
+        0.0
+      ],
+      "controller_reference_age_s": 0.008,
+      "driver_ff": {
+        "alpha": 0.0,
+        "ramp": 2.0,
+        "active": false,
+        "stage": 6,
+        "command_id": 2,
+        "applied": [
+          -0.04884004884004867,
+          -0.04884004884004867,
+          -0.01318681318681314,
+          -0.01318681318681314
+        ],
+        "age_s": 0.0274
+      },
+      "runtime": {
+        "verified": true,
+        "source": "driver_runtime_identity",
+        "age_s": 1.918,
+        "identity": {
+          "schema": "slaihand_runtime_identity/1",
+          "mapping_sha256": "00b0c77f131adb3142617c2c1f1ce2612e4d956f15adf6eac53a8138ae2787b6",
+          "model_sha256": "b58042be2191e8aa2223ff867d101e1d072f579936759f2d09c7f075ce16721f",
+          "policy_sha256": "a9a9361bfc0da68bd6ca8e8c8b8636d1afbca48cf7a933c02b10dc726d7cc951",
+          "mass_profile_sha256": "a4f39aaf044b95761f63a1526eb986f902e77c3bc03a9092a92124da6e1a0173",
+          "policy_profile": "supported_four_axis_native_mit_b1",
+          "load_id": "no_end_load",
+          "gravity_base_m_s2": [
+            0,
+            9.80665,
+            0
+          ],
+          "j3_offset_rad": 3.141592653589793,
+          "kp": 160,
+          "kd": 5,
+          "reference_speed_rad_s": 1,
+          "gravity_ff_alpha": 0,
+          "gravity_ff_ramp_s": 2,
+          "gravity_float_enabled": true,
+          "boot_id": "153127995061-399139",
+          "started_at": 153127.995059722,
+          "position_branch_ready": true,
+          "position_branch_modes": [
+            "fixed",
+            "fixed",
+            "startup_unique_urdf",
+            "fixed"
+          ],
+          "model_turns": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "effective_zero_rad": [
+            1.4574273289082171,
+            -1.795033188372626,
+            -2.5423437857633324,
+            -0.40951400015259054
+          ]
+        },
+        "mismatches": [],
+        "reason": null
+      },
+      "schema": "slaihand_calibration_sample/2",
+      "recorded_at": 1793940031.8634808,
+      "support": "free",
+      "contact": "none",
+      "motion": "static",
+      "load_id": "no_end_load",
+      "model": {
+        "urdf_sha256": "b58042be2191e8aa2223ff867d101e1d072f579936759f2d09c7f075ce16721f",
+        "mass_profile_sha256": "a4f39aaf044b95761f63a1526eb986f902e77c3bc03a9092a92124da6e1a0173",
+        "mass_profile_status": "LOCAL_OFFLINE_CANDIDATE",
+        "mapping_sha256": "00b0c77f131adb3142617c2c1f1ce2612e4d956f15adf6eac53a8138ae2787b6",
+        "policy_sha256": "a9a9361bfc0da68bd6ca8e8c8b8636d1afbca48cf7a933c02b10dc726d7cc951",
+        "gravity_base_m_s2": [
+          0.0,
+          9.80665,
+          0.0
+        ],
+        "j3_offset_rad": 3.141592653589793,
+        "load_id": "no_end_load",
+        "units": {
+          "position": "rad",
+          "velocity": "rad/s",
+          "torque": "N*m"
+        }
+      },
+      "note": "网页显式确认自由承重无接触；按实际姿态拟合，不使用目标姿态代替反馈",
+      "static_window": {
+        "samples": 21,
+        "span_s": 2.0004,
+        "max_gap_s": 0.1005,
+        "max_speed_rad_s": 0.03297,
+        "max_position_delta_rad": 0.00031,
+        "stage": 6,
+        "motor_state": [
+          1,
+          1,
+          1,
+          1
+        ],
+        "all_enabled": true,
+        "fresh_all": true,
+        "ff_all_zero": true,
+        "ff_all_fresh": true,
+        "command_ids": [
+          2
+        ],
+        "valid": true,
+        "reasons": [],
+        "mean_positions_rad": [
+          0.8491645685511564,
+          0.2583316076106197,
+          0.0,
+          0.0
+        ],
+        "mean_velocity_rad_s": [
+          -0.006686435257863806,
+          -0.00784929356357925,
+          -0.008895866038725688,
+          0.014128728414445865
+        ],
+        "mean_effort_estimate_nm": [
+          3.5606721321006907,
+          0.34653177510320243,
+          -0.1224489795918363,
+          0.11491365777080022
+        ]
+      },
+      "target_rad": [
+        0.8726646259971648,
+        0.2617993877991494,
+        0.0,
+        0.0
+      ],
+      "waypoint_index": 4,
+      "role": "training",
+      "calibration_group": "L01",
+      "pair_id": "L01_01",
+      "approach": "negative",
+      "approach_displacement_deg": [
+        -2.3168355185727876,
+        -2.443813925251078,
+        -2.843389045521148,
+        -2.732117356807532
+      ]
+    },
+    {
+      "positions_rad": [
+        1.046387426565957,
+        0.12377147533934117,
+        -0.05005999569973001,
+        -0.05000797630690037
+      ],
+      "velocities_rad_s": [
+        -0.00555000555000553,
+        -0.00555000555000553,
+        -0.012987012987016494,
+        0.013986013986017488
+      ],
+      "effort_estimate_nm": [
+        5.518925518925528,
+        -0.4351204351204336,
+        -0.5142857142857125,
+        -0.23496503496503413
+      ],
+      "driver_temperature_c": [
+        32.0,
+        31.0,
+        29.0,
+        29.0
+      ],
+      "motor_temperature_c": [
+        28.0,
+        27.0,
+        27.0,
+        28.0
+      ],
+      "feedback_age_s": [
+        3.434901009313762e-05,
+        3.434901009313762e-05,
+        3.434901009313762e-05,
+        3.434901009313762e-05
+      ],
+      "local_receipt_age_s": 0.007464,
+      "total_age_s": [
+        0.007498,
+        0.007498,
+        0.007498,
+        0.007498
+      ],
+      "capture_age_s": 0.007498,
+      "feedback_valid": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "motor_state": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "stage": 6,
+      "dynamic_sequence": 6868,
+      "command_id": 2.0,
+      "joint_delta_rad": 0.0,
+      "controller_reference_rad": [
+        1.0821041362364843,
+        0.12217304763960307,
+        -0.0523598775598299,
+        -0.0523598775598299
+      ],
+      "controller_reference_age_s": 0.007,
+      "driver_ff": {
+        "alpha": 0.0,
+        "ramp": 2.0,
+        "active": false,
+        "stage": 6,
+        "command_id": 2,
+        "applied": [
+          -0.04884004884004867,
+          -0.04884004884004867,
+          -0.01318681318681314,
+          -0.01318681318681314
+        ],
+        "age_s": 0.5958
+      },
+      "runtime": {
+        "verified": true,
+        "source": "driver_runtime_identity",
+        "age_s": 1.468,
+        "identity": {
+          "schema": "slaihand_runtime_identity/1",
+          "mapping_sha256": "00b0c77f131adb3142617c2c1f1ce2612e4d956f15adf6eac53a8138ae2787b6",
+          "model_sha256": "b58042be2191e8aa2223ff867d101e1d072f579936759f2d09c7f075ce16721f",
+          "policy_sha256": "a9a9361bfc0da68bd6ca8e8c8b8636d1afbca48cf7a933c02b10dc726d7cc951",
+          "mass_profile_sha256": "a4f39aaf044b95761f63a1526eb986f902e77c3bc03a9092a92124da6e1a0173",
+          "policy_profile": "supported_four_axis_native_mit_b1",
+          "load_id": "no_end_load",
+          "gravity_base_m_s2": [
+            0,
+            9.80665,
+            0
+          ],
+          "j3_offset_rad": 3.141592653589793,
+          "kp": 160,
+          "kd": 5,
+          "reference_speed_rad_s": 1,
+          "gravity_ff_alpha": 0,
+          "gravity_ff_ramp_s": 2,
+          "gravity_float_enabled": true,
+          "boot_id": "153127995061-399139",
+          "started_at": 153127.995059722,
+          "position_branch_ready": true,
+          "position_branch_modes": [
+            "fixed",
+            "fixed",
+            "startup_unique_urdf",
+            "fixed"
+          ],
+          "model_turns": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "effective_zero_rad": [
+            1.4574273289082171,
+            -1.795033188372626,
+            -2.5423437857633324,
+            -0.40951400015259054
+          ]
+        },
+        "mismatches": [],
+        "reason": null
+      },
+      "schema": "slaihand_calibration_sample/2",
+      "recorded_at": 1793940045.4631786,
+      "support": "free",
+      "contact": "none",
+      "motion": "static",
+      "load_id": "no_end_load",
+      "model": {
+        "urdf_sha256": "b58042be2191e8aa2223ff867d101e1d072f579936759f2d09c7f075ce16721f",
+        "mass_profile_sha256": "a4f39aaf044b95761f63a1526eb986f902e77c3bc03a9092a92124da6e1a0173",
+        "mass_profile_status": "LOCAL_OFFLINE_CANDIDATE",
+        "mapping_sha256": "00b0c77f131adb3142617c2c1f1ce2612e4d956f15adf6eac53a8138ae2787b6",
+        "policy_sha256": "a9a9361bfc0da68bd6ca8e8c8b8636d1afbca48cf7a933c02b10dc726d7cc951",
+        "gravity_base_m_s2": [
+          0.0,
+          9.80665,
+          0.0
+        ],
+        "j3_offset_rad": 3.141592653589793,
+        "load_id": "no_end_load",
+        "units": {
+          "position": "rad",
+          "velocity": "rad/s",
+          "torque": "N*m"
+        }
+      },
+      "note": "网页显式确认自由承重无接触；按实际姿态拟合，不使用目标姿态代替反馈",
+      "static_window": {
+        "samples": 22,
+        "span_s": 2.1001,
+        "max_gap_s": 0.1004,
+        "max_speed_rad_s": 0.03297,
+        "max_position_delta_rad": 0.00035,
+        "stage": 6,
+        "motor_state": [
+          1,
+          1,
+          1,
+          1
+        ],
+        "all_enabled": true,
+        "fresh_all": true,
+        "ff_all_zero": true,
+        "ff_all_fresh": true,
+        "command_ids": [
+          2
+        ],
+        "valid": true,
+        "reasons": [],
+        "mean_positions_rad": [
+          1.046387426565957,
+          0.12377147533934117,
+          -0.05005999569973001,
+          -0.05000797630690037
+        ],
+        "mean_velocity_rad_s": [
+          -0.00555000555000553,
+          -0.00555000555000553,
+          -0.012987012987016494,
+          0.013986013986017488
+        ],
+        "mean_effort_estimate_nm": [
+          5.518925518925528,
+          -0.4351204351204336,
+          -0.5142857142857125,
+          -0.23496503496503413
+        ]
+      },
+      "target_rad": [
+        1.0821041362364843,
+        0.12217304763960307,
+        -0.0523598775598299,
+        -0.0523598775598299
+      ],
+      "waypoint_index": 5,
+      "role": "training",
+      "calibration_group": "L01",
+      "pair_id": "L01_02",
+      "approach": "conditioning"
+    },
+    {
+      "positions_rad": [
+        1.098649576562142,
+        0.16712262077334294,
+        -0.0026703288319218643,
+        -0.00457770656900891
+      ],
+      "velocities_rad_s": [
+        -0.004942147799290639,
+        -0.009593581022152417,
+        -0.012035583464158065,
+        0.012035583464158065
+      ],
+      "effort_estimate_nm": [
+        5.518925518925528,
+        0.9744752601895424,
+        0.3032967032967022,
+        0.8571428571428541
+      ],
+      "driver_temperature_c": [
+        32.0,
+        31.0,
+        29.0,
+        29.0
+      ],
+      "motor_temperature_c": [
+        28.0,
+        27.0,
+        27.0,
+        28.0
+      ],
+      "feedback_age_s": [
+        4.141501267440617e-05,
+        4.141501267440617e-05,
+        4.141501267440617e-05,
+        4.141501267440617e-05
+      ],
+      "local_receipt_age_s": 0.007681,
+      "total_age_s": [
+        0.007722,
+        0.007722,
+        0.007722,
+        0.007722
+      ],
+      "capture_age_s": 0.007722,
+      "feedback_valid": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "motor_state": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "stage": 6,
+      "dynamic_sequence": 8208,
+      "command_id": 2.0,
+      "joint_delta_rad": 0.0,
+      "controller_reference_rad": [
+        1.1344640137963142,
+        0.17453292519943295,
+        0.0,
+        0.0
+      ],
+      "controller_reference_age_s": 0.007,
+      "driver_ff": {
+        "alpha": 0.0,
+        "ramp": 2.0,
+        "active": false,
+        "stage": 6,
+        "command_id": 2,
+        "applied": [
+          -0.04884004884004867,
+          -0.04884004884004867,
+          -0.01318681318681314,
+          -0.01318681318681314
+        ],
+        "age_s": 0.9573
+      },
+      "runtime": {
+        "verified": true,
+        "source": "driver_runtime_identity",
+        "age_s": 0.827,
+        "identity": {
+          "schema": "slaihand_runtime_identity/1",
+          "mapping_sha256": "00b0c77f131adb3142617c2c1f1ce2612e4d956f15adf6eac53a8138ae2787b6",
+          "model_sha256": "b58042be2191e8aa2223ff867d101e1d072f579936759f2d09c7f075ce16721f",
+          "policy_sha256": "a9a9361bfc0da68bd6ca8e8c8b8636d1afbca48cf7a933c02b10dc726d7cc951",
+          "mass_profile_sha256": "a4f39aaf044b95761f63a1526eb986f902e77c3bc03a9092a92124da6e1a0173",
+          "policy_profile": "supported_four_axis_native_mit_b1",
+          "load_id": "no_end_load",
+          "gravity_base_m_s2": [
+            0,
+            9.80665,
+            0
+          ],
+          "j3_offset_rad": 3.141592653589793,
+          "kp": 160,
+          "kd": 5,
+          "reference_speed_rad_s": 1,
+          "gravity_ff_alpha": 0,
+          "gravity_ff_ramp_s": 2,
+          "gravity_float_enabled": true,
+          "boot_id": "153127995061-399139",
+          "started_at": 153127.995059722,
+          "position_branch_ready": true,
+          "position_branch_modes": [
+            "fixed",
+            "fixed",
+            "startup_unique_urdf",
+            "fixed"
+          ],
+          "model_turns": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "effective_zero_rad": [
+            1.4574273289082171,
+            -1.795033188372626,
+            -2.5423437857633324,
+            -0.40951400015259054
+          ]
+        },
+        "mismatches": [],
+        "reason": null
+      },
+      "schema": "slaihand_calibration_sample/2",
+      "recorded_at": 1793940058.8631687,
+      "support": "free",
+      "contact": "none",
+      "motion": "static",
+      "load_id": "no_end_load",
+      "model": {
+        "urdf_sha256": "b58042be2191e8aa2223ff867d101e1d072f579936759f2d09c7f075ce16721f",
+        "mass_profile_sha256": "a4f39aaf044b95761f63a1526eb986f902e77c3bc03a9092a92124da6e1a0173",
+        "mass_profile_status": "LOCAL_OFFLINE_CANDIDATE",
+        "mapping_sha256": "00b0c77f131adb3142617c2c1f1ce2612e4d956f15adf6eac53a8138ae2787b6",
+        "policy_sha256": "a9a9361bfc0da68bd6ca8e8c8b8636d1afbca48cf7a933c02b10dc726d7cc951",
+        "gravity_base_m_s2": [
+          0.0,
+          9.80665,
+          0.0
+        ],
+        "j3_offset_rad": 3.141592653589793,
+        "load_id": "no_end_load",
+        "units": {
+          "position": "rad",
+          "velocity": "rad/s",
+          "torque": "N*m"
+        }
+      },
+      "note": "网页显式确认自由承重无接触；按实际姿态拟合，不使用目标姿态代替反馈",
+      "static_window": {
+        "samples": 21,
+        "span_s": 2.0001,
+        "max_gap_s": 0.1005,
+        "max_speed_rad_s": 0.03297,
+        "max_position_delta_rad": 0.00035,
+        "stage": 6,
+        "motor_state": [
+          1,
+          1,
+          1,
+          1
+        ],
+        "all_enabled": true,
+        "fresh_all": true,
+        "ff_all_zero": true,
+        "ff_all_fresh": true,
+        "command_ids": [
+          2
+        ],
+        "valid": true,
+        "reasons": [],
+        "mean_positions_rad": [
+          1.098649576562142,
+          0.16712262077334294,
+          -0.0026703288319218643,
+          -0.00457770656900891
+        ],
+        "mean_velocity_rad_s": [
+          -0.004942147799290639,
+          -0.009593581022152417,
+          -0.012035583464158065,
+          0.012035583464158065
+        ],
+        "mean_effort_estimate_nm": [
+          5.518925518925528,
+          0.9744752601895424,
+          0.3032967032967022,
+          0.8571428571428541
+        ]
+      },
+      "target_rad": [
+        1.1344640137963142,
+        0.17453292519943295,
+        0.0,
+        0.0
+      ],
+      "waypoint_index": 6,
+      "role": "training",
+      "calibration_group": "L01",
+      "pair_id": "L01_02",
+      "approach": "positive",
+      "approach_displacement_deg": [
+        2.994400623061061,
+        2.483837670426132,
+        2.7152279040563583,
+        2.602962718122085
+      ]
+    }
+  ]
+}

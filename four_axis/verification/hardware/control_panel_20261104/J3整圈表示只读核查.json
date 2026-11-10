@@ -1,0 +1,19 @@
+{
+  "source": "/home/xuyu/.ros/slaihand/canusb_motion/canusb_motion_u1q7Cv.jsonl",
+  "readonly": true,
+  "hardware_parameter_writes": 0,
+  "raw_j3_rad": 3.3834973678187232,
+  "configured_zero_rad": -2.5423437857633324,
+  "reported_model_deg": 339.52568816518686,
+  "last_100_raw_span_deg": 0.0,
+  "equivalent_candidates_inside_limit": [
+    {
+      "turns": 1,
+      "model_deg": -20.474311834813136,
+      "effective_zero_rad": 3.740841521416254,
+      "inverse_raw_rad": 3.3834973678187232
+    }
+  ],
+  "physical_pose_confirmation_pending": true,
+  "applied": false
+}

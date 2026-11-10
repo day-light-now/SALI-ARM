@@ -1,0 +1,16 @@
+{
+  "at": "2026-11-01T17:24:31.680970+08:00",
+  "files": {
+    "slai_console/actuation.py": "869440a2613bc674934028e2329d3b56fd77a8a685b591371e1ad0073e2ff7a2",
+    "slai_console/j4_control.py": "5cb804ada286c1740e191373a6a95eae870530484eadf50f61629d27ae9d640d",
+    "slai_console/live_trial.py": "5e4e83215e96d8e8e2fc36e32e03037c01f2b87672b6c6961503093980884dc2",
+    "slai_console/test_actuation.py": "17cafe43d54453765028ae6adab6473bf910f66f912250f2486eab4c0878da07",
+    "slai_console/test_round_trip.py": "f05c2906190d7b546c7bc6a0de733efda15f4d80dbbf9e2f3c81ff78d2d5154d",
+    "slai_console/test_live_trial.py": "ecd48e9c93812780057ed8f669bcee925a06d6ba027f3e538653f2d24fcb9565",
+    "slai_console/test_j4_control.py": "f8089ab51bdb320a62bc1c454874f183318f2ce7f982be7bc3447d32394e0ad6",
+    "slai_console/test_reader_fixture.py": "0d6ab5f33ebc73df051004a35e8fd3bddbebd7befb24713e4599a14632020514",
+    "slai_console/actuation_io.py": "0a4ca178b3b9b5f6caa35031208b73f05d576ca2e5287af4a7e2d1d83f90e5e3",
+    "verification/hardware/four_axis_monitor.py": "eae4be6e622cd2702510f3c37df3e253648c72b59ee54447e4dce16ab2c96894",
+    "src/slaihand_bringup/config/hardware_mapping.yaml": "6c2ee47ba780235786b12a9c9d0b5f220b8e11a6ab5dff302d67ffa2375cbe7b"
+  }
+}

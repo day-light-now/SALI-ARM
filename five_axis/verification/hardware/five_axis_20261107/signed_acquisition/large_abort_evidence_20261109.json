@@ -1,0 +1,23 @@
+{
+  "schema": "slaihand_large_abort_evidence/1",
+  "observed_at": "2026-11-09T09:07:49+08:00",
+  "plan": "INDEPENDENT_5AXIS_LARGE.json",
+  "plan_waypoints": 12,
+  "client_result": "independent_large_client_result_20261109_090749.json",
+  "client_request_id": "b611059e70244ea0b409566436218a73",
+  "client_reason": "控制端已全局停止或UNKNOWN；检查失能反馈，状态未知时保持支撑并现场切电",
+  "driver_reason": "SERIAL_OR_AUDIT_WRITE_FAILURE",
+  "driver_steady_s": 1615.138,
+  "driver_audit_path": "/home/xuyu/.ros/slaihand/canusb_five_axis_candidate/canusb_motion_2zcoVU.jsonl",
+  "first_hold_partial_signed_mean_deg": {
+    "J1": -2.521,
+    "J4": -0.318
+  },
+  "not_a_gain_conclusion": true,
+  "notes": [
+    "The corrected large-angle plan was accepted and armed; the first +20 deg J1 hold completed.",
+    "The run then stopped during the -20 deg J1 transition with SERIAL_OR_AUDIT_WRITE_FAILURE, not a following-error or angle-limit rejection.",
+    "No retry was performed; the driver was stopped and no further motion is active.",
+    "This file preserves the reason; root cause of the serial/audit failure is not yet established."
+  ]
+}

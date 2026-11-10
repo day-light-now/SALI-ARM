@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro" name="slaihand_four_axis">
+  <!-- Geometry ledger in slaihand_four_axis.urdf. Offline codec profiles and
+       simulation speeds are not calibrated physical motor specifications. -->
+  <xacro:arg name="backend" default="openarm"/>
+  <xacro:include filename="$(find slaihand_description)/urdf/slaihand_four_axis.urdf"/>
+  <xacro:include filename="$(find slaihand_description)/urdf/offline_joint.xacro"/>
+  <ros2_control name="SLAIHandFourAxisFakeSystem" type="system">
+    <hardware>
+      <xacro:if value="${'$(arg backend)' == 'openarm'}">
+        <plugin>slaihand_hardware/OpenArmJointFake</plugin><param name="transport">fake</param>
+      </xacro:if>
+      <xacro:if value="${'$(arg backend)' == 'generic'}">
+        <plugin>mock_components/GenericSystem</plugin>
+      </xacro:if>
+    </hardware>
+    <xacro:offline_joint name="slaihand_joint1" profile="DM10010L"/>
+    <xacro:offline_joint name="slaihand_joint2" profile="DM10010L"/>
+    <xacro:offline_joint name="slaihand_joint3" profile="DM8009"/>
+    <xacro:offline_joint name="slaihand_joint4" profile="DM8009"/>
+  </ros2_control>
+</robot>

@@ -1,0 +1,10 @@
+{
+  "passed": true,
+  "physical_port_opened": false,
+  "real_cpp_driver_over_pty": true,
+  "panel_live": true,
+  "axes_rows": 5,
+  "j5_card_absent": true,
+  "plan_schema": "slaihand_joint_plan/2",
+  "screenshot": "five_axis_live_driver.png"
+}

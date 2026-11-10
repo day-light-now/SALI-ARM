@@ -1,0 +1,6 @@
+{
+  "slai_console/robot_contract.py": "cc53fb8b254102ac9ffcea6ef868489707307fdfea305dee1bc29eb42a455038",
+  "slai_console/five_axis_config.py": "aaf7b2a75c801e2ae9e31a39a42bc291309c25eccd5079544d98522ec2a2d78d",
+  "slai_console/test_robot_contract.py": "25af5229eddc77fd85542826385dbd45ee698998bb10d0844a304511c5f89415",
+  "verification/hardware/five_axis_20261102/five_axis_config.json": "c6c192f51ba77f3679896d9d555b5b5a62d5181387e32d197190a2a6eacbccbb"
+}

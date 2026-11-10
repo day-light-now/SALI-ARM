@@ -1,0 +1,21 @@
+{
+  "passed": true,
+  "physical_port_opened": false,
+  "cases": [
+    "long_normal_10s_150plus_frames",
+    "4005_request_pressure",
+    "nonconsecutive_eagain_keeps_rid7_discovery",
+    "feedback_age_250ms_stale",
+    "eagain_backpressure",
+    "partial_write_7_of_30",
+    "read_disconnect_and_reconnect"
+  ],
+  "assertions": [
+    "connected_false_after_fault",
+    "feedback_none_after_fault",
+    "port_reopen_after_fault",
+    "reconnect_read_only",
+    "calibration_invalidated_rezero_required"
+  ],
+  "no_motion_or_parameter_write": true
+}

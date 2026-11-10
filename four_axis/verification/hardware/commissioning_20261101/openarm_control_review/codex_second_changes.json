@@ -1,0 +1,28 @@
+{
+  "tool": "ctod-han-manifest",
+  "kind": "comparison",
+  "baseline": "D:\\CodexData\\Projects\\机械臂\\slaihand_ros2_ws\\verification\\hardware\\commissioning_20261101\\openarm_control_review\\before_complete.json",
+  "root": "D:\\CodexData\\Projects\\机械臂\\slaihand_ros2_ws",
+  "scopes": [
+    "slai_console",
+    "src/slaihand_bringup/config/hardware_mapping.yaml",
+    "verification/hardware/four_axis_monitor.py"
+  ],
+  "added": [
+    "slai_console/j4_control.py",
+    "slai_console/test_j4_control.py",
+    "slai_console/test_reader_fixture.py"
+  ],
+  "changed": [
+    "slai_console/actuation.py",
+    "slai_console/live_trial.py",
+    "slai_console/test_actuation.py",
+    "slai_console/test_actuation_io.py",
+    "slai_console/test_live_trial.py",
+    "slai_console/test_round_trip.py",
+    "slai_console/test_watchdog_check.py"
+  ],
+  "deleted": [],
+  "outside_allowed": [],
+  "note": "Only declared scopes inspected; hashes do not prove content correctness."
+}

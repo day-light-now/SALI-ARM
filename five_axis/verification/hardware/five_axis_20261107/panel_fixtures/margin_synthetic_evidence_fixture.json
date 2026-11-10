@@ -1,0 +1,96 @@
+{
+  "_note": "SYNTHETIC TEST FIXTURE - NOT MEASURED CAPABILITY AND NOT A PHYSICAL 1.5x QUALIFICATION. The numbers below only exercise the evaluator arithmetic and file loader. Never copy this file into config/five_axis_margin_evidence.json or cite it as allowed output.",
+  "schema": "slaihand_five_axis_margin_evidence/1",
+  "axes": [
+    {
+      "axis": 1,
+      "capability": {
+        "allowed_output_nm": 16.65,
+        "source": "synthetic test fixture",
+        "source_kind": "verified_measurement",
+        "unit": "Nm",
+        "verified": true,
+        "duration": {"kind": "continuous"},
+        "condition": "synthetic pose A, synthetic load, 25C"
+      },
+      "demand": {
+        "demand_nm": 11.1,
+        "source": "synthetic test fixture",
+        "measurement_type": "measured_torque",
+        "condition": "synthetic pose A, synthetic load, 25C"
+      }
+    },
+    {
+      "axis": 2,
+      "capability": {
+        "allowed_output_nm": 20.0,
+        "source": "synthetic test fixture",
+        "source_kind": "verified_measurement",
+        "unit": "Nm",
+        "verified": true,
+        "duration": {"kind": "continuous"},
+        "condition": "synthetic pose A, synthetic load, 25C"
+      },
+      "demand": {
+        "demand_nm": 11.1,
+        "source": "synthetic test fixture",
+        "measurement_type": "measured_torque",
+        "condition": "synthetic pose A, synthetic load, 25C"
+      }
+    },
+    {
+      "axis": 3,
+      "capability": {
+        "allowed_output_nm": 4.0,
+        "source": "synthetic test fixture",
+        "source_kind": "verified_measurement",
+        "unit": "Nm",
+        "verified": true,
+        "duration": {"kind": "continuous"},
+        "condition": "synthetic pose A, synthetic load, 25C"
+      },
+      "demand": {
+        "demand_nm": 4.0,
+        "source": "synthetic test fixture",
+        "measurement_type": "measured_torque",
+        "condition": "synthetic pose A, synthetic load, 25C"
+      }
+    },
+    {
+      "axis": 4,
+      "capability": {
+        "allowed_output_nm": 8.0,
+        "source": "synthetic test fixture",
+        "source_kind": "verified_measurement",
+        "unit": "Nm",
+        "verified": true,
+        "duration": {"kind": "continuous"},
+        "condition": "synthetic pose A, synthetic load, 25C"
+      },
+      "demand": {
+        "demand_nm": 2.0,
+        "source": "synthetic test fixture",
+        "measurement_type": "measured_torque",
+        "condition": "synthetic pose A, synthetic load, 25C"
+      }
+    },
+    {
+      "axis": 5,
+      "capability": {
+        "allowed_output_nm": 2.0,
+        "source": "synthetic test fixture",
+        "source_kind": "verified_measurement",
+        "unit": "Nm",
+        "verified": true,
+        "duration": {"kind": "potential_peak"},
+        "condition": "synthetic pose A, synthetic load, 25C"
+      },
+      "demand": {
+        "demand_nm": 1.0,
+        "source": "synthetic test fixture",
+        "measurement_type": "request_estimate",
+        "condition": "synthetic pose A, synthetic load, 25C"
+      }
+    }
+  ]
+}

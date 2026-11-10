@@ -1,0 +1,12 @@
+{
+  "schema": "slaihand_friction_corrected_gravity_refit/1",
+  "windows": 159,
+  "friction_scales": [
+    0.5818000194622013,
+    0.7984960703475444,
+    -0.044400558902981994,
+    -1.2764622697837413,
+    0.12349931994135682
+  ],
+  "note": "offline rough model; q-dependent friction columns from F1-F5 sweeps."
+}

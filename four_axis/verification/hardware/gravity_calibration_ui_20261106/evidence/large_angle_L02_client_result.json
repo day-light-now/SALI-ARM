@@ -1,0 +1,964 @@
+{
+  "request_id": "97f14edb4071476784fccbbf44973dd7",
+  "mode": "calibration",
+  "physical_torque_off_verified": false,
+  "driver_current_clamp_verified": false,
+  "hardware_motion_accepted": false,
+  "stop_observations_confirmed": true,
+  "operator_acknowledgements": {
+    "supported": true,
+    "clearance_and_local_power_cut": true,
+    "native_output_not_hardware_clamp": true
+  },
+  "trial_parameters": {
+    "hold_seconds": 1.0,
+    "round_trip": false,
+    "delta_deg": 1.0,
+    "leg_seconds": 4.0
+  },
+  "initial_model_rad": [
+    0.21095597772182728,
+    0.10376134889753708,
+    0.0,
+    0.001907377737087046
+  ],
+  "plan": {
+    "coordinates": "absolute_deg",
+    "waypoints": [
+      {
+        "degrees": [
+          32.0,
+          37.0,
+          -3.0000000000000004,
+          -3.0000000000000004
+        ],
+        "move_s": 7.5,
+        "dwell_s": 6.0
+      },
+      {
+        "degrees": [
+          35.0,
+          40.0,
+          0.0,
+          0.0
+        ],
+        "move_s": 7.5,
+        "dwell_s": 6.0
+      },
+      {
+        "degrees": [
+          38.0,
+          43.0,
+          3.0000000000000004,
+          3.0000000000000004
+        ],
+        "move_s": 7.5,
+        "dwell_s": 6.0
+      },
+      {
+        "degrees": [
+          35.0,
+          40.0,
+          0.0,
+          0.0
+        ],
+        "move_s": 7.5,
+        "dwell_s": 6.0
+      },
+      {
+        "degrees": [
+          42.0,
+          42.0,
+          7.0,
+          -3.0000000000000004
+        ],
+        "move_s": 7.5,
+        "dwell_s": 6.0
+      },
+      {
+        "degrees": [
+          45.0,
+          45.0,
+          10.0,
+          0.0
+        ],
+        "move_s": 7.5,
+        "dwell_s": 6.0
+      },
+      {
+        "degrees": [
+          48.00000000000001,
+          48.00000000000001,
+          13.0,
+          3.0000000000000004
+        ],
+        "move_s": 7.5,
+        "dwell_s": 6.0
+      },
+      {
+        "degrees": [
+          45.0,
+          45.0,
+          10.0,
+          0.0
+        ],
+        "move_s": 7.5,
+        "dwell_s": 6.0
+      },
+      {
+        "degrees": [
+          9.0,
+          3.0000000000000004,
+          -3.0000000000000004,
+          -3.0000000000000004
+        ],
+        "move_s": 7.5,
+        "dwell_s": 6.0
+      },
+      {
+        "degrees": [
+          12.000000000000002,
+          6.000000000000001,
+          0.0,
+          0.0
+        ],
+        "move_s": 7.5,
+        "dwell_s": 6.0
+      },
+      {
+        "degrees": [
+          14.999999999999998,
+          9.0,
+          3.0000000000000004,
+          3.0000000000000004
+        ],
+        "move_s": 7.5,
+        "dwell_s": 6.0
+      },
+      {
+        "degrees": [
+          12.000000000000002,
+          6.000000000000001,
+          0.0,
+          0.0
+        ],
+        "move_s": 7.5,
+        "dwell_s": 6.0
+      }
+    ]
+  },
+  "plan_sha256": "952e6d1ee186a12e35a6adab89127bd1bce137f87f9215d33114a6323b6c4b74",
+  "backend_arm_receipt": "Arm request accepted only; four-axis fresh preflight, enable and ramp are not yet confirmed; audit_file=/tmp/gravitycal_deploy_audit/canusb_motion_W0qkZS.jsonl",
+  "command_id": 2,
+  "trajectory_start_reference_rad": [
+    0.21095597772182728,
+    0.10376134889753708,
+    0.0,
+    0.001907377737087046
+  ],
+  "waypoint_results": [
+    {
+      "arrival_s": 7.5,
+      "end_s": 13.5,
+      "target_rad": [
+        0.5585053606381855,
+        0.6457718232379019,
+        -0.0523598775598299,
+        -0.0523598775598299
+      ],
+      "samples": 30,
+      "sampled_span_s": 0.2899083800148219,
+      "max_error_deg": [
+        1.2910009094832369,
+        1.2857619118117367,
+        0.1367410100657069,
+        0.1367410100657069
+      ],
+      "passed": false
+    },
+    {
+      "arrival_s": 21.0,
+      "end_s": 27.0,
+      "target_rad": [
+        0.6108652381980153,
+        0.6981317007977318,
+        0.0,
+        0.0
+      ],
+      "samples": 30,
+      "sampled_span_s": 0.28970067799673416,
+      "max_error_deg": [
+        1.2966002864221795,
+        1.2913612887506793,
+        0.1529985719812218,
+        0.1529985719812218
+      ],
+      "passed": false
+    },
+    {
+      "arrival_s": 34.5,
+      "end_s": 40.5,
+      "target_rad": [
+        0.6632251157578453,
+        0.7504915783575618,
+        0.0523598775598299,
+        0.0523598775598299
+      ],
+      "samples": 30,
+      "sampled_span_s": 0.28980859302100725,
+      "max_error_deg": [
+        1.3240566022155886,
+        1.4281022988163898,
+        0.15859794892016715,
+        0.26788264319246846
+      ],
+      "passed": false
+    },
+    {
+      "arrival_s": 48.0,
+      "end_s": 54.0,
+      "target_rad": [
+        0.6108652381980153,
+        0.6981317007977318,
+        0.0,
+        0.0
+      ],
+      "samples": 30,
+      "sampled_span_s": 0.29046636598650366,
+      "max_error_deg": [
+        0.35675191568038833,
+        0.8979363893703947,
+        0.0,
+        0.1092846942723013
+      ],
+      "passed": false
+    },
+    {
+      "arrival_s": 61.5,
+      "end_s": 67.5,
+      "target_rad": [
+        0.7330382858376184,
+        0.7330382858376184,
+        0.12217304763960307,
+        -0.0523598775598299
+      ],
+      "samples": 30,
+      "sampled_span_s": 0.2898824779840652,
+      "max_error_deg": [
+        1.3242367918493607,
+        1.1712382198680371,
+        0.3117767105351615,
+        0.1367410100657069
+      ],
+      "passed": false
+    },
+    {
+      "arrival_s": 75.0,
+      "end_s": 81.0,
+      "target_rad": [
+        0.7853981633974483,
+        0.7853981633974483,
+        0.17453292519943295,
+        0.0
+      ],
+      "samples": 30,
+      "sampled_span_s": 0.29038340598344803,
+      "max_error_deg": [
+        1.3298361687883034,
+        1.286122291079281,
+        0.3173760874741057,
+        0.2622832662535231
+      ],
+      "passed": false
+    },
+    {
+      "arrival_s": 88.5,
+      "end_s": 94.5,
+      "target_rad": [
+        0.8377580409572783,
+        0.8377580409572783,
+        0.22689280275926285,
+        0.0523598775598299
+      ],
+      "samples": 30,
+      "sampled_span_s": 0.2901140280009713,
+      "max_error_deg": [
+        1.3135786068726967,
+        1.4228633011449978,
+        0.14811995357736935,
+        0.26788264319246846
+      ],
+      "passed": false
+    },
+    {
+      "arrival_s": 102.0,
+      "end_s": 108.0,
+      "target_rad": [
+        0.7853981633974483,
+        0.7853981633974483,
+        0.17453292519943295,
+        0.0
+      ],
+      "samples": 30,
+      "sampled_span_s": 0.2902026840019971,
+      "max_error_deg": [
+        0.9364112694080187,
+        0.7615557585722348,
+        0.2946182004507816,
+        0.0
+      ],
+      "passed": false
+    },
+    {
+      "arrival_s": 115.5,
+      "end_s": 121.5,
+      "target_rad": [
+        0.15707963267948966,
+        0.0523598775598299,
+        -0.0523598775598299,
+        -0.0523598775598299
+      ],
+      "samples": 30,
+      "sampled_span_s": 0.2899797599820886,
+      "max_error_deg": [
+        0.0605120085257546,
+        0.1036853173334577,
+        0.1367410100657069,
+        0.15859794892016715
+      ],
+      "passed": true
+    },
+    {
+      "arrival_s": 129.0,
+      "end_s": 135.0,
+      "target_rad": [
+        0.2094395102393196,
+        0.1047197551196598,
+        0.0,
+        0.0
+      ],
+      "samples": 30,
+      "sampled_span_s": 0.2898102340113837,
+      "max_error_deg": [
+        1.0278166950609533,
+        0.7106207972205172,
+        0.1529985719812218,
+        0.1529985719812218
+      ],
+      "passed": false
+    },
+    {
+      "arrival_s": 142.5,
+      "end_s": 148.5,
+      "target_rad": [
+        0.2617993877991494,
+        0.15707963267948966,
+        0.0523598775598299,
+        0.0523598775598299
+      ],
+      "samples": 30,
+      "sampled_span_s": 0.2901022139994893,
+      "max_error_deg": [
+        1.0552730108543544,
+        0.7162201741594606,
+        0.15859794892016715,
+        0.26788264319246846
+      ],
+      "passed": false
+    },
+    {
+      "arrival_s": 156.0,
+      "end_s": 162.0,
+      "target_rad": [
+        0.2094395102393196,
+        0.1047197551196598,
+        0.0,
+        0.0
+      ],
+      "samples": 30,
+      "sampled_span_s": 0.29046698298770934,
+      "max_error_deg": [
+        0.08688718651651986,
+        0.05491263158670945,
+        0.0,
+        0.13114163312676155
+      ],
+      "passed": true
+    }
+  ],
+  "waypoints_observed": false,
+  "trajectory_error_code": 0,
+  "trajectory_error_string": "Goal successfully reached!",
+  "standard_jtc_action_succeeded": true,
+  "observed_delta_range_deg": [
+    [
+      -3.147399195042277,
+      34.59953420661079
+    ],
+    [
+      -2.8632589899342937,
+      40.65390626929618
+    ],
+    [
+      -2.8851159287887542,
+      12.873736985277091
+    ],
+    [
+      -2.972543684206595,
+      2.622832662535231
+    ]
+  ],
+  "final_delta_from_start_deg": [
+    -0.02185693885446026,
+    0.0,
+    0.0,
+    0.02185693885446026
+  ],
+  "reason": "finite_trial_complete",
+  "calibration": {
+    "status": "QUALIFIED_SAMPLES",
+    "campaign_complete": true,
+    "qualified_points": 12,
+    "requested_points": 12,
+    "group": "L02",
+    "role": "training",
+    "paired_targets": [
+      {
+        "pair_id": "L02_01",
+        "target_deg": [
+          35.0,
+          40.0,
+          0.0,
+          0.0
+        ],
+        "positive_actual_deg": [
+          33.70339971357782,
+          38.70863871124932,
+          -0.1529985719812218,
+          -0.15399206920187908
+        ],
+        "negative_actual_deg": [
+          34.64324808431961,
+          39.10206361062961,
+          0.0010408066121171552,
+          0.1092846942723013
+        ],
+        "midpoint_nm": [
+          2.1351135636849845,
+          2.895728610014314,
+          0.09042386185243295,
+          0.18732695875552952
+        ],
+        "half_difference_nm": [
+          1.3280898995184662,
+          0.5630348487491326,
+          0.21287284144426927,
+          0.37131439988582715
+        ],
+        "pose_difference_deg": [
+          -0.9398483707417924,
+          -0.39342489938028535,
+          -0.15403937859333897,
+          -0.2632767634741804
+        ]
+      },
+      {
+        "pair_id": "L02_02",
+        "target_deg": [
+          45.0,
+          45.0,
+          10.0,
+          0.0
+        ],
+        "positive_actual_deg": [
+          43.673286251048054,
+          43.71491851553284,
+          9.682623912525894,
+          -0.2622832662535231
+        ],
+        "negative_actual_deg": [
+          44.06358873059198,
+          44.238444241427764,
+          10.293624703230124,
+          0.0
+        ],
+        "midpoint_nm": [
+          2.9348429348429246,
+          2.6418026418026326,
+          -0.09467675181960866,
+          0.4754388468674166
+        ],
+        "half_difference_nm": [
+          0.532800532800531,
+          0.7281607281607255,
+          0.8475809904381303,
+          0.3603539317825019
+        ],
+        "pose_difference_deg": [
+          -0.3903024795439265,
+          -0.5235257258949275,
+          -0.6110007907042299,
+          -0.2622832662535231
+        ]
+      },
+      {
+        "pair_id": "L02_03",
+        "target_deg": [
+          12.000000000000002,
+          6.000000000000001,
+          0.0,
+          0.0
+        ],
+        "positive_actual_deg": [
+          10.97218330493905,
+          5.289379202779484,
+          -0.1529985719812218,
+          -0.1529985719812218
+        ],
+        "negative_actual_deg": [
+          12.074965219868636,
+          5.945087368413292,
+          0.0,
+          0.11127168871361585
+        ],
+        "midpoint_nm": [
+          1.1743811743811703,
+          0.8702408702408672,
+          0.09470529470529436,
+          0.14745254745254693
+        ],
+        "half_difference_nm": [
+          1.538461538461533,
+          0.9146409146409115,
+          0.2145854145854138,
+          0.36803196803196675
+        ],
+        "pose_difference_deg": [
+          -1.1027819149295865,
+          -0.6557081656338077,
+          -0.1529985719812218,
+          -0.26427026069483767
+        ]
+      }
+    ],
+    "raw_file": "/home/xuyu/.ros/slaihand/control_panel/operations/9830153ec4964beb/client/calibration/raw/20261106_125903_web_static_143672641.jsonl",
+    "points": [
+      {
+        "index": 1,
+        "target_deg": [
+          32.0,
+          37.0,
+          -3.0000000000000004,
+          -3.0000000000000004
+        ],
+        "qualified": true,
+        "reason": null,
+        "calibration_group": "L02",
+        "pair_id": "L02_01",
+        "approach": "conditioning",
+        "samples": 22,
+        "span_s": 2.093,
+        "actual_deg": [
+          30.708999090516762,
+          35.71423808818827,
+          -2.86822647603758,
+          -2.8632589899342937
+        ],
+        "effort_estimate_nm": [
+          3.4676434676434553,
+          3.3744033744033626,
+          -0.5130869130869112,
+          -0.25054945054944966
+        ]
+      },
+      {
+        "index": 2,
+        "target_deg": [
+          35.0,
+          40.0,
+          0.0,
+          0.0
+        ],
+        "qualified": true,
+        "reason": null,
+        "calibration_group": "L02",
+        "pair_id": "L02_01",
+        "approach": "positive",
+        "samples": 22,
+        "span_s": 2.1002,
+        "actual_deg": [
+          33.70339971357782,
+          38.70863871124932,
+          -0.1529985719812218,
+          -0.15399206920187908
+        ],
+        "effort_estimate_nm": [
+          3.4632034632034507,
+          3.4587634587634466,
+          0.3032967032967022,
+          0.5586413586413567
+        ]
+      },
+      {
+        "index": 3,
+        "target_deg": [
+          38.0,
+          43.0,
+          3.0000000000000004,
+          3.0000000000000004
+        ],
+        "qualified": true,
+        "reason": null,
+        "calibration_group": "L02",
+        "pair_id": "L02_01",
+        "approach": "conditioning",
+        "samples": 21,
+        "span_s": 2.0003,
+        "actual_deg": [
+          36.675943397784415,
+          41.5771017342442,
+          2.846606084140419,
+          2.732117356807532
+        ],
+        "effort_estimate_nm": [
+          3.4676434676434553,
+          3.769986627129471,
+          0.28194662480376664,
+          0.904866562009416
+        ]
+      },
+      {
+        "index": 4,
+        "target_deg": [
+          35.0,
+          40.0,
+          0.0,
+          0.0
+        ],
+        "qualified": true,
+        "reason": null,
+        "calibration_group": "L02",
+        "pair_id": "L02_01",
+        "approach": "negative",
+        "samples": 21,
+        "span_s": 2.0,
+        "actual_deg": [
+          34.64324808431961,
+          39.10206361062961,
+          0.0010408066121171552,
+          0.1092846942723013
+        ],
+        "effort_estimate_nm": [
+          0.8070236641665185,
+          2.3326937612651815,
+          -0.1224489795918363,
+          -0.1839874411302976
+        ]
+      },
+      {
+        "index": 5,
+        "target_deg": [
+          42.0,
+          42.0,
+          7.0,
+          -3.0000000000000004
+        ],
+        "qualified": true,
+        "reason": null,
+        "calibration_group": "L02",
+        "pair_id": "L02_02",
+        "approach": "conditioning",
+        "samples": 22,
+        "span_s": 2.1,
+        "actual_deg": [
+          40.67576320815064,
+          40.83571626067657,
+          6.688223289464839,
+          -2.8632589899342937
+        ],
+        "effort_estimate_nm": [
+          3.494283494283482,
+          3.0680430680430573,
+          0.7324675324675298,
+          -0.24815184815184727
+        ]
+      },
+      {
+        "index": 6,
+        "target_deg": [
+          45.0,
+          45.0,
+          10.0,
+          0.0
+        ],
+        "qualified": true,
+        "reason": null,
+        "calibration_group": "L02",
+        "pair_id": "L02_02",
+        "approach": "positive",
+        "samples": 21,
+        "span_s": 2.0001,
+        "actual_deg": [
+          43.673286251048054,
+          43.71491851553284,
+          9.682623912525894,
+          -0.2622832662535231
+        ],
+        "effort_estimate_nm": [
+          3.4676434676434553,
+          3.369963369963358,
+          0.7529042386185216,
+          0.8357927786499185
+        ]
+      },
+      {
+        "index": 7,
+        "target_deg": [
+          48.00000000000001,
+          48.00000000000001,
+          13.0,
+          3.0000000000000004
+        ],
+        "qualified": true,
+        "reason": null,
+        "calibration_group": "L02",
+        "pair_id": "L02_02",
+        "approach": "conditioning",
+        "samples": 22,
+        "span_s": 2.1,
+        "actual_deg": [
+          46.68642139312731,
+          46.59402615160619,
+          12.873736985277091,
+          2.732117356807532
+        ],
+        "effort_estimate_nm": [
+          3.4898434898434774,
+          3.769563769563756,
+          0.21698301698301622,
+          0.9098901098901067
+        ]
+      },
+      {
+        "index": 8,
+        "target_deg": [
+          45.0,
+          45.0,
+          10.0,
+          0.0
+        ],
+        "qualified": true,
+        "reason": null,
+        "calibration_group": "L02",
+        "pair_id": "L02_02",
+        "approach": "negative",
+        "samples": 22,
+        "span_s": 2.0999,
+        "actual_deg": [
+          44.06358873059198,
+          44.238444241427764,
+          10.293624703230124,
+          0.0
+        ],
+        "effort_estimate_nm": [
+          2.4020424020423934,
+          1.913641913641907,
+          -0.942257742257739,
+          0.11508491508491468
+        ]
+      },
+      {
+        "index": 9,
+        "target_deg": [
+          9.0,
+          3.0000000000000004,
+          -3.0000000000000004,
+          -3.0000000000000004
+        ],
+        "qualified": true,
+        "reason": null,
+        "calibration_group": "L02",
+        "pair_id": "L02_03",
+        "approach": "conditioning",
+        "samples": 22,
+        "span_s": 2.0932,
+        "actual_deg": [
+          8.939487991474245,
+          3.0848088701409697,
+          -2.8731939621408666,
+          -2.862265492713637
+        ],
+        "effort_estimate_nm": [
+          -0.05328005328005309,
+          -0.4440004440004424,
+          -0.5118881118881101,
+          -0.27692307692307594
+        ]
+      },
+      {
+        "index": 10,
+        "target_deg": [
+          12.000000000000002,
+          6.000000000000001,
+          0.0,
+          0.0
+        ],
+        "qualified": true,
+        "reason": null,
+        "calibration_group": "L02",
+        "pair_id": "L02_03",
+        "approach": "positive",
+        "samples": 22,
+        "span_s": 2.093,
+        "actual_deg": [
+          10.97218330493905,
+          5.289379202779484,
+          -0.1529985719812218,
+          -0.1529985719812218
+        ],
+        "effort_estimate_nm": [
+          2.7128427128427033,
+          1.7848817848817786,
+          0.3092907092907082,
+          0.5154845154845137
+        ]
+      },
+      {
+        "index": 11,
+        "target_deg": [
+          14.999999999999998,
+          9.0,
+          3.0000000000000004,
+          3.0000000000000004
+        ],
+        "qualified": true,
+        "reason": null,
+        "calibration_group": "L02",
+        "pair_id": "L02_03",
+        "approach": "conditioning",
+        "samples": 22,
+        "span_s": 2.1001,
+        "actual_deg": [
+          13.963603436338133,
+          8.28377982584054,
+          2.8414020510798337,
+          2.732117356807532
+        ],
+        "effort_estimate_nm": [
+          2.721722721722712,
+          1.8026418026417963,
+          0.29970029970029866,
+          0.8847152847152816
+        ]
+      },
+      {
+        "index": 12,
+        "target_deg": [
+          12.000000000000002,
+          6.000000000000001,
+          0.0,
+          0.0
+        ],
+        "qualified": true,
+        "reason": null,
+        "calibration_group": "L02",
+        "pair_id": "L02_03",
+        "approach": "negative",
+        "samples": 22,
+        "span_s": 2.1001,
+        "actual_deg": [
+          12.074965219868636,
+          5.945087368413292,
+          0.0,
+          0.11127168871361585
+        ],
+        "effort_estimate_nm": [
+          -0.36408036408036276,
+          -0.04440004440004424,
+          -0.11988011988011946,
+          -0.2205794205794198
+        ]
+      }
+    ],
+    "calibrated": false,
+    "alpha_changed": false
+  },
+  "last_observed_status": {
+    "slaihand_joint1": {
+      "position": 0.21095597772182728,
+      "velocity": 0.006105006105006083,
+      "driver_temperature": 32.0,
+      "command_id": 2.0,
+      "feedback_valid": 1.0,
+      "command_owner": 0.0,
+      "effort": -0.04884004884004867,
+      "motor_temperature": 29.0,
+      "disabled_observed": 1.0,
+      "timeout_count": 2000.0,
+      "audit_ok": 1.0,
+      "hold_ready": 0.0,
+      "motor_state": 0.0,
+      "control_state": 8.0,
+      "configuration_conflict": 0.0,
+      "control_mode": 1.0,
+      "feedback_age": 2.7083995519205928e-05
+    },
+    "slaihand_joint2": {
+      "position": 0.10414282444495448,
+      "velocity": 0.006105006105006083,
+      "driver_temperature": 31.0,
+      "command_id": 2.0,
+      "feedback_valid": 1.0,
+      "command_owner": 0.0,
+      "effort": -0.04884004884004867,
+      "motor_temperature": 28.0,
+      "disabled_observed": 1.0,
+      "timeout_count": 2000.0,
+      "audit_ok": 1.0,
+      "hold_ready": 0.0,
+      "motor_state": 0.0,
+      "control_state": 8.0,
+      "configuration_conflict": 0.0,
+      "control_mode": 1.0,
+      "feedback_age": 2.7083995519205928e-05
+    },
+    "slaihand_joint3": {
+      "position": 0.0,
+      "velocity": -0.010989010989014503,
+      "driver_temperature": 30.0,
+      "command_id": 2.0,
+      "feedback_valid": 1.0,
+      "command_owner": 0.0,
+      "effort": -0.01318681318681314,
+      "motor_temperature": 28.0,
+      "disabled_observed": 1.0,
+      "timeout_count": 2000.0,
+      "audit_ok": 1.0,
+      "hold_ready": 0.0,
+      "motor_state": 0.0,
+      "control_state": 8.0,
+      "configuration_conflict": 0.0,
+      "control_mode": 1.0,
+      "feedback_age": 2.7083995519205928e-05
+    },
+    "slaihand_joint4": {
+      "position": 0.002288853284504455,
+      "velocity": 0.010989010989014503,
+      "driver_temperature": 30.0,
+      "command_id": 2.0,
+      "feedback_valid": 1.0,
+      "command_owner": 0.0,
+      "effort": 0.01318681318681314,
+      "motor_temperature": 29.0,
+      "disabled_observed": 1.0,
+      "timeout_count": 2000.0,
+      "audit_ok": 1.0,
+      "hold_ready": 0.0,
+      "motor_state": 0.0,
+      "control_state": 8.0,
+      "configuration_conflict": 0.0,
+      "control_mode": 1.0,
+      "feedback_age": 2.7083995519205928e-05
+    }
+  }
+}

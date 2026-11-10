@@ -1,0 +1,39 @@
+{
+  "status": "PASS",
+  "physical_port_opened": false,
+  "software_only": true,
+  "joint_count": 5,
+  "client_axes": 5,
+  "j5_qualified_simulation": true,
+  "j5_hold": "finite_trial_complete",
+  "j5_execute": "finite_trial_complete",
+  "j5_teaching_schema": "slaihand_drag_teaching_playback/2",
+  "j5_teaching_playback": "finite_trial_complete",
+  "j5_fc": 3,
+  "j5_fd": 6,
+  "j5_mit_frames": 1796,
+  "final_delta_deg": [
+    1.0054191873051719,
+    1.0054191873051719,
+    1.0054191873051719,
+    1.0054191873051719,
+    1.9889814357558835
+  ],
+  "teaching_tracking": {
+    "max_tracking_error_deg": [
+      0.1,
+      0.133,
+      0.102,
+      0.228,
+      0.082
+    ],
+    "final_tracking_error_deg": [
+      0.003,
+      0.006,
+      0.0,
+      0.009,
+      0.016
+    ],
+    "samples": 395
+  }
+}

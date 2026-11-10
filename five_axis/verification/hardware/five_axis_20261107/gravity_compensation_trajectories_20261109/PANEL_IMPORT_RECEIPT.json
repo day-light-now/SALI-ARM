@@ -1,0 +1,73 @@
+{
+  "schema": "slaihand_panel_plan_import_receipt/1",
+  "imported_at": "2026-11-09T12:55:31.798947+08:00",
+  "panel_origin": "http://127.0.0.1:42664",
+  "plans": [
+    {
+      "name": "GC01 重力验证 J1/J2配对 · 终点绝对零 · 128秒",
+      "id": "7f1bfff77c054987",
+      "source_file": "GC01_J1_J2_PAIRED_ZERO.json",
+      "source_sha256": "539d9dfafa431d7ef36341e03e0f00d7027f409cc3a3b8b87fec1465fc2ac1d1",
+      "coordinates": "absolute_deg",
+      "final_target_deg": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "readback_verified": true
+    },
+    {
+      "name": "GC02 重力验证 J3/J4配对 · 终点绝对零 · 128秒",
+      "id": "1ad66885ea704829",
+      "source_file": "GC02_J3_J4_PAIRED_ZERO.json",
+      "source_sha256": "e2a95af979b353039ac6c7c719c802d272d2e3e67f4f7f62f392889186b8b2eb",
+      "coordinates": "absolute_deg",
+      "final_target_deg": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "readback_verified": true
+    },
+    {
+      "name": "GC03 重力验证 混合独立验证 · 终点绝对零 · 142秒",
+      "id": "2889c39de0d34dea",
+      "source_file": "GC03_MIXED_HOLDOUT_ZERO.json",
+      "source_sha256": "d3afa86f282c2bd51ecde1b7a88449281ff0e92724dbad8e8680b65052577024",
+      "coordinates": "absolute_deg",
+      "final_target_deg": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "readback_verified": true
+    },
+    {
+      "name": "GC04 重力验证 分阶段40度 · 终点绝对零 · 128秒",
+      "id": "f59c7cf72f024174",
+      "source_file": "GC04_STAGED_40_ZERO.json",
+      "source_sha256": "cf5076b6728217e5c4ef185edada15e29fc1fef29f82143c6dd8184a254333c6",
+      "coordinates": "absolute_deg",
+      "final_target_deg": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "readback_verified": true
+    }
+  ],
+  "list_readback_verified": true,
+  "driver_stage_after": 0,
+  "operation_after": null,
+  "only_write_endpoint": "/api/plans/save",
+  "driver_or_panel_restarted": false,
+  "preview_execute_enable_or_motion_requested": false
+}

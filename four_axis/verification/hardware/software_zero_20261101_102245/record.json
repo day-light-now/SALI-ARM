@@ -1,0 +1,44 @@
+{
+  "date": "2026-11-01",
+  "user_confirmed_pose_is_zero": true,
+  "direction_status": "user_confirmed_J1_J4_positive_directions_match_model",
+  "simulation_J3_fixed_offset_deg": 180,
+  "joints": {
+    "1": {
+      "old_zero_rad": 1.433012893873503,
+      "new_zero_rad": 1.4574273289082171,
+      "sign": -1.0,
+      "raw_payload": "01 8e ec 80 07 ff 1b 18"
+    },
+    "2": {
+      "old_zero_rad": -1.8030441748683916,
+      "new_zero_rad": -1.795033188372626,
+      "sign": 1.0,
+      "raw_payload": "02 6d 9e 7f e7 ff 19 17"
+    },
+    "3": {
+      "old_zero_rad": -0.9439612420843826,
+      "new_zero_rad": -2.5423437857633324,
+      "sign": 1.0,
+      "raw_payload": "03 65 f7 80 07 ff 19 17"
+    },
+    "4": {
+      "old_zero_rad": -0.5067902647440299,
+      "new_zero_rad": -0.40951400015259054,
+      "sign": -1.0,
+      "raw_payload": "04 7b ce 7f f7 ff 18 18"
+    }
+  },
+  "direction_confirmation": {
+    "date_local": "2026-11-01",
+    "user_statement": "方向全对",
+    "evidence_type": "user_manual_observation",
+    "scope": "J1-J4 software positive direction; no automated motion or full-range verification",
+    "signs": {
+      "1": -1,
+      "2": 1,
+      "3": 1,
+      "4": -1
+    }
+  }
+}

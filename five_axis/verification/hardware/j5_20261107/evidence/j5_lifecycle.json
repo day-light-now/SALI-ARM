@@ -1,0 +1,16 @@
+{
+  "passed": true,
+  "physical_port_opened": false,
+  "cases": [
+    "close_during_blocked_reconnect_no_reopen",
+    "two_concurrent_reconnects_one_new_reader",
+    "close_then_reconnect_refused"
+  ],
+  "assertions": [
+    "close_wins_lifecycle",
+    "no_thread_after_close",
+    "serial_closed_after_close",
+    "second_reconnect_does_not_stop_first",
+    "no_reopen_after_close"
+  ]
+}

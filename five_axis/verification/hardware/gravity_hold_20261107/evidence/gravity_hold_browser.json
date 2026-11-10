@@ -1,0 +1,25 @@
+{
+  "passed": true,
+  "fixture": "http://127.0.0.1:18888",
+  "checks": [],
+  "operation_id": "17eaeef8cd8043b3",
+  "command_id": 1,
+  "locked_target_deg": [
+    14.994,
+    25.004,
+    -10.01,
+    5.005
+  ],
+  "locked_phase": "locked",
+  "resume_phase": "float",
+  "resume_kp": 0.0,
+  "alpha": 1,
+  "actual_clicks": [
+    "btn-gravity-float",
+    "btn-gravity-lock",
+    "btn-gravity-resume",
+    "btn-stop"
+  ],
+  "fixture_port": 18888,
+  "stop_confirmed": true
+}

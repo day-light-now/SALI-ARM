@@ -1,0 +1,25 @@
+controller_manager:
+  ros__parameters:
+    update_rate: 100
+    enforce_command_limits: true
+    joint_state_broadcaster:
+      type: joint_state_broadcaster/JointStateBroadcaster
+    slaihand_joint_trajectory_controller:
+      type: joint_trajectory_controller/JointTrajectoryController
+
+slaihand_joint_trajectory_controller:
+  ros__parameters:
+    joints:
+      - slaihand_joint1
+      - slaihand_joint2
+      - slaihand_joint3
+      - slaihand_joint4
+    command_interfaces: [position]
+    state_interfaces: [position, velocity]
+    state_publish_rate: 50.0
+    action_monitor_rate: 20.0
+    allow_partial_joints_goal: false
+    open_loop_control: false
+    constraints:
+      stopped_velocity_tolerance: 0.02
+      goal_time: 1.0

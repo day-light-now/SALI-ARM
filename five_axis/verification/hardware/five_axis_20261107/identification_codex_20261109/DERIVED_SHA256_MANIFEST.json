@@ -1,0 +1,18 @@
+{
+  "schema": "slaihand_derived_artifacts_sha256/1",
+  "files": {
+    "audit_sources.json": "653ea40c526dc2f0ac311fa93c2fbbfa8f49cefea6f8fb982f20f1bb47e902d4",
+    "canusb_motion_IFxgoj_cycles.jsonl.gz": "b5d764ddc9146f01a4ecd0d88826ddda6bfdc3fe0b432932c88e2688d6c24f68",
+    "canusb_motion_OwBmJz_cycles.jsonl.gz": "e171ca54f4e22856781e4ff6a5242f80d8ae5501bf267668017f1dd7a63e0e31",
+    "evaluate_offline_ff.py": "c931bb387e009084b9f6227ea09b463f25add89d28b82d5df62499514e207a63",
+    "extract_audit.py": "bc5359cd560d6ba53abbdc13939b5db3964c8d792e33f539679a0f03865d8b1b",
+    "identification_diagnostics.png": "86f323c971f7d1c0f3bbfc6dcc79deb24aefa1866c13d56c56062b2f71abac7a",
+    "identification_result.json": "a121057407b8567d3c26b01fb4fbcc6cb7f95f5edc38662ab9acddecba9744ad",
+    "identify_payload.py": "fcc4209d25af21086646e49b842fd6f3b1f1df995d5a0ba902e153f0cb624a14",
+    "offline_ff_candidate.json": "7f56fde1766b50b7473dc9dbd8df329d7c726ab58ce70602e9a2f7ee91d6450c",
+    "README_质心辨识结果.md": "8986c3f54c944c82b8980923d964c4ce78a50eda3cb83a5f655036ad08d68ef0",
+    "static_windows.csv": "4f0156ddea4f16be6b7f7f8f8b5564e0e169607e4770601720a4939cc0aaecd2",
+    "static_windows.json": "30aa8a3c18e13632e8c57c6189a544088ac1da7837e99b143524e83e30b934a5",
+    "test_identification.py": "ea1b05ef20411552d5a1cef0ca47029c7805076a462f6949502981706bdb8396"
+  }
+}

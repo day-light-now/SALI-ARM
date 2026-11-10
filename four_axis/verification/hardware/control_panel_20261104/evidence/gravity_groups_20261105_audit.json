@@ -1,0 +1,2684 @@
+{
+  "status": "DIAGNOSTIC_ONLY",
+  "qualified_calibration_samples_created": 0,
+  "reason": "No synchronized calibration capture/identity/window records were created by the webpage operations; retrospective decoding is diagnostic only.",
+  "audit_file": "/home/xuyu/.ros/slaihand/canusb_motion/canusb_motion_KHKK0A.jsonl",
+  "bytes_read": 752458487,
+  "session": {
+    "kind": "SESSION",
+    "backend": "openarm_drive_mit",
+    "starts_disarmed": true,
+    "hardware_motion_accepted": false,
+    "driver_current_clamp_verified": false,
+    "host_total_torque_clamp": false,
+    "physical_torque_off_verified": false,
+    "j5_queried": false,
+    "parameter_writes": 0,
+    "mapping_sha256": "00b0c77f131adb3142617c2c1f1ce2612e4d956f15adf6eac53a8138ae2787b6",
+    "model_sha256": "fe7edfda16165e8532303ec55d6c1ab733ad32fc6d023115f825aae62637e497",
+    "policy_sha256": "fbb008c0ab72e0f597bf0874c1a9e6a3e3fae2683c84f05d19bc8c8ae03bc183",
+    "kp": 160,
+    "kd": 5,
+    "gravity_ff_alpha": 0,
+    "gravity_ff_ramp_s": 1,
+    "gravity_model_present": true,
+    "joint_policy": [
+      {
+        "axis": 1,
+        "sign": 1,
+        "zero": 1.4574273289082171,
+        "lower": -1.3962634015954636,
+        "upper": 3.490658503988659,
+        "observed_state_estimate_guard_nm": 0
+      },
+      {
+        "axis": 2,
+        "sign": 1,
+        "zero": -1.795033188372626,
+        "lower": -0.17453292519943295,
+        "upper": 3.3161255787892263,
+        "observed_state_estimate_guard_nm": 0
+      },
+      {
+        "axis": 3,
+        "sign": 1,
+        "zero": -2.5423437857633324,
+        "lower": -1.5707963267948966,
+        "upper": 1.5707963267948966,
+        "observed_state_estimate_guard_nm": 0
+      },
+      {
+        "axis": 4,
+        "sign": -1,
+        "zero": -0.40951400015259054,
+        "lower": -1.5707963267948966,
+        "upper": 0.8726646259971648,
+        "observed_state_estimate_guard_nm": 0
+      }
+    ]
+  },
+  "operations": [
+    {
+      "file": "/home/xuyu/.ros/slaihand/control_panel/operations/6692d2ecb10f409a/client/20261105_113335_cba0e26a.json",
+      "command_id": 1,
+      "plan": {
+        "coordinates": "absolute_deg",
+        "waypoints": [
+          {
+            "degrees": [
+              0.0,
+              0.0,
+              0.0,
+              -29.999999999999996
+            ],
+            "move_s": 10.0,
+            "dwell_s": 6.0
+          }
+        ]
+      },
+      "reason": "finite_trial_complete",
+      "waypoints_observed": true,
+      "waypoint_results": [
+        {
+          "arrival_s": 10.0,
+          "end_s": 16.0,
+          "target_rad": [
+            0.0,
+            0.0,
+            0.0,
+            -0.5235987755982988
+          ],
+          "samples": 30,
+          "sampled_span_s": 0.29037965400493704,
+          "max_error_deg": [
+            0.3059971439624436,
+            0.2185693885446026,
+            0.1529985719812218,
+            0.44941866876962766
+          ],
+          "passed": true
+        }
+      ],
+      "stop_confirmed": true,
+      "diagnostic_snapshots": 187,
+      "pose_diagnostics": [
+        {
+          "requested_deg": [
+            0.0,
+            0.0,
+            0.0,
+            -29.999999999999996
+          ],
+          "stable_window_found": false
+        }
+      ]
+    },
+    {
+      "file": "/home/xuyu/.ros/slaihand/control_panel/operations/d738951240e843e9/client/20261105_113724_4a80c3cc.json",
+      "command_id": 2,
+      "plan": {
+        "coordinates": "absolute_deg",
+        "waypoints": [
+          {
+            "degrees": [
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "move_s": 10.0,
+            "dwell_s": 0.5
+          }
+        ]
+      },
+      "reason": "finite_trial_complete",
+      "waypoints_observed": true,
+      "waypoint_results": [
+        {
+          "arrival_s": 10.0,
+          "end_s": 10.5,
+          "target_rad": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "samples": 30,
+          "sampled_span_s": 0.29058489498856943,
+          "max_error_deg": [
+            0.3059971439624436,
+            0.2185693885446026,
+            0.1529985719812218,
+            0.1529985719812218
+          ],
+          "passed": true
+        }
+      ],
+      "stop_confirmed": true,
+      "diagnostic_snapshots": 129,
+      "pose_diagnostics": [
+        {
+          "requested_deg": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "stable_window_found": false
+        }
+      ]
+    },
+    {
+      "file": "/home/xuyu/.ros/slaihand/control_panel/operations/2322fc60a67e4019/client/20261105_113810_ca4b4208.json",
+      "command_id": 3,
+      "plan": {
+        "coordinates": "absolute_deg",
+        "waypoints": [
+          {
+            "degrees": [
+              0.0,
+              0.0,
+              0.0,
+              -29.999999999999996
+            ],
+            "move_s": 10.0,
+            "dwell_s": 6.0
+          },
+          {
+            "degrees": [
+              0.0,
+              0.0,
+              0.0,
+              29.999999999999996
+            ],
+            "move_s": 10.0,
+            "dwell_s": 6.0
+          }
+        ]
+      },
+      "reason": "finite_trial_complete",
+      "waypoints_observed": true,
+      "waypoint_results": [
+        {
+          "arrival_s": 10.0,
+          "end_s": 16.0,
+          "target_rad": [
+            0.0,
+            0.0,
+            0.0,
+            -0.5235987755982988
+          ],
+          "samples": 30,
+          "sampled_span_s": 0.29052929500176106,
+          "max_error_deg": [
+            0.3059971439624436,
+            0.2185693885446026,
+            0.1529985719812218,
+            0.44941866876962766
+          ],
+          "passed": true
+        },
+        {
+          "arrival_s": 26.0,
+          "end_s": 32.0,
+          "target_rad": [
+            0.0,
+            0.0,
+            0.0,
+            0.5235987755982988
+          ],
+          "samples": 30,
+          "sampled_span_s": 0.2900347449904075,
+          "max_error_deg": [
+            0.04371387770892052,
+            0.2185693885446026,
+            0.1529985719812218,
+            0.29642009678840586
+          ],
+          "passed": true
+        }
+      ],
+      "stop_confirmed": true,
+      "diagnostic_snapshots": 353,
+      "pose_diagnostics": [
+        {
+          "requested_deg": [
+            0.0,
+            0.0,
+            0.0,
+            -29.999999999999996
+          ],
+          "stable_window_found": true,
+          "nearest_static_error_deg": 0.44941866876962766,
+          "span_s": 2.0198974200029625,
+          "samples": 22,
+          "actual_deg": [
+            0.3059971439624436,
+            0.21260840522065885,
+            -0.1529985719812218,
+            -29.549587834009714
+          ],
+          "effort_estimate_nm": [
+            -1.0212010212010176,
+            -0.73260073260073,
+            0.30209790209790105,
+            -1.1196803196803229
+          ]
+        },
+        {
+          "requested_deg": [
+            0.0,
+            0.0,
+            0.0,
+            29.999999999999996
+          ],
+          "stable_window_found": true,
+          "nearest_static_error_deg": 59.55058133123036,
+          "span_s": 2.0198974200029625,
+          "samples": 22,
+          "actual_deg": [
+            0.3059971439624436,
+            0.21260840522065885,
+            -0.1529985719812218,
+            -29.549587834009714
+          ],
+          "effort_estimate_nm": [
+            -1.0212010212010176,
+            -0.73260073260073,
+            0.30209790209790105,
+            -1.1196803196803229
+          ]
+        }
+      ]
+    },
+    {
+      "file": "/home/xuyu/.ros/slaihand/control_panel/operations/0da8d31cfc9e4910/client/20261105_113948_41b76d35.json",
+      "command_id": 4,
+      "plan": {
+        "coordinates": "absolute_deg",
+        "waypoints": [
+          {
+            "degrees": [
+              -14.999999999999998,
+              14.999999999999998,
+              0.0,
+              0.0
+            ],
+            "move_s": 10.0,
+            "dwell_s": 6.0
+          },
+          {
+            "degrees": [
+              14.999999999999998,
+              14.999999999999998,
+              0.0,
+              0.0
+            ],
+            "move_s": 10.0,
+            "dwell_s": 6.0
+          }
+        ]
+      },
+      "reason": "signal 15",
+      "waypoints_observed": null,
+      "waypoint_results": null,
+      "stop_confirmed": true,
+      "diagnostic_snapshots": 46,
+      "pose_diagnostics": [
+        {
+          "requested_deg": [
+            -14.999999999999998,
+            14.999999999999998,
+            0.0,
+            0.0
+          ],
+          "stable_window_found": false
+        },
+        {
+          "requested_deg": [
+            14.999999999999998,
+            14.999999999999998,
+            0.0,
+            0.0
+          ],
+          "stable_window_found": false
+        }
+      ]
+    },
+    {
+      "file": "/home/xuyu/.ros/slaihand/control_panel/operations/301742fc0dd44ad4/client/20261105_114011_d3f718d1.json",
+      "command_id": 5,
+      "plan": {
+        "coordinates": "absolute_deg",
+        "waypoints": [
+          {
+            "degrees": [
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "move_s": 10.0,
+            "dwell_s": 0.5
+          }
+        ]
+      },
+      "reason": "finite_trial_complete",
+      "waypoints_observed": true,
+      "waypoint_results": [
+        {
+          "arrival_s": 10.0,
+          "end_s": 10.5,
+          "target_rad": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "samples": 30,
+          "sampled_span_s": 0.28991296800086275,
+          "max_error_deg": [
+            0.34971102167136414,
+            0.2185693885446026,
+            0.1529985719812218,
+            0.4152818382347449
+          ],
+          "passed": true
+        }
+      ],
+      "stop_confirmed": true,
+      "diagnostic_snapshots": 130,
+      "pose_diagnostics": [
+        {
+          "requested_deg": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "stable_window_found": false
+        }
+      ]
+    },
+    {
+      "file": "/home/xuyu/.ros/slaihand/control_panel/operations/3bcf152fcf0f48b5/client/20261105_114034_691ac8ff.json",
+      "command_id": 6,
+      "plan": {
+        "coordinates": "absolute_deg",
+        "waypoints": [
+          {
+            "degrees": [
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "move_s": 10.0,
+            "dwell_s": 0.5
+          }
+        ]
+      },
+      "reason": "finite_trial_complete",
+      "waypoints_observed": true,
+      "waypoint_results": [
+        {
+          "arrival_s": 10.0,
+          "end_s": 10.5,
+          "target_rad": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "samples": 30,
+          "sampled_span_s": 0.2900819790083915,
+          "max_error_deg": [
+            0.34971102167136414,
+            0.2185693885446026,
+            0.1529985719812218,
+            0.13114163312676155
+          ],
+          "passed": true
+        }
+      ],
+      "stop_confirmed": true,
+      "diagnostic_snapshots": 131,
+      "pose_diagnostics": [
+        {
+          "requested_deg": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "stable_window_found": true,
+          "nearest_static_error_deg": 0.37156796052582436,
+          "span_s": 0.8399197770049796,
+          "samples": 10,
+          "actual_deg": [
+            -0.37156796052582436,
+            0.2185693885446026,
+            -0.16392704140845193,
+            0.13114163312676155
+          ],
+          "effort_estimate_nm": [
+            -0.146520146520146,
+            -0.146520146520146,
+            -0.08175824175824147,
+            0.11868131868131826
+          ]
+        }
+      ]
+    },
+    {
+      "file": "/home/xuyu/.ros/slaihand/control_panel/operations/e73d780d8a844829/client/20261105_114126_517db58b.json",
+      "command_id": 7,
+      "plan": {
+        "coordinates": "absolute_deg",
+        "waypoints": [
+          {
+            "degrees": [
+              -14.999999999999998,
+              14.999999999999998,
+              0.0,
+              0.0
+            ],
+            "move_s": 10.0,
+            "dwell_s": 6.0
+          },
+          {
+            "degrees": [
+              14.999999999999998,
+              14.999999999999998,
+              0.0,
+              0.0
+            ],
+            "move_s": 10.0,
+            "dwell_s": 6.0
+          }
+        ]
+      },
+      "reason": "轨迹未通过：Aborted due to goal_time_tolerance exceeding by 2.005144 seconds",
+      "waypoints_observed": false,
+      "waypoint_results": [
+        {
+          "arrival_s": 10.0,
+          "end_s": 16.0,
+          "target_rad": [
+            -0.2617993877991494,
+            0.2617993877991494,
+            0.0,
+            0.0
+          ],
+          "samples": 30,
+          "sampled_span_s": 0.29008551899460144,
+          "max_error_deg": [
+            0.8585605611641104,
+            0.9022744388730309,
+            0.1529985719812218,
+            0.13114163312676155
+          ],
+          "passed": false
+        },
+        {
+          "arrival_s": 26.0,
+          "end_s": 32.0,
+          "target_rad": [
+            0.2617993877991494,
+            0.2617993877991494,
+            0.0,
+            0.0
+          ],
+          "samples": 30,
+          "sampled_span_s": 0.289743750996422,
+          "max_error_deg": [
+            1.0771299497088147,
+            0.9022744388730309,
+            0.1529985719812218,
+            0.1092846942723013
+          ],
+          "passed": false
+        }
+      ],
+      "stop_confirmed": true,
+      "diagnostic_snapshots": 375,
+      "pose_diagnostics": [
+        {
+          "requested_deg": [
+            -14.999999999999998,
+            14.999999999999998,
+            0.0,
+            0.0
+          ],
+          "stable_window_found": true,
+          "nearest_static_error_deg": 0.9022744388730309,
+          "span_s": 2.0098998739995295,
+          "samples": 22,
+          "actual_deg": [
+            -14.141439438835889,
+            14.097725561126968,
+            -0.1529985719812218,
+            0.12418715258216055
+          ],
+          "effort_estimate_nm": [
+            -2.5885225885225793,
+            2.38872238872238,
+            0.31888111888111775,
+            -0.22657342657342577
+          ]
+        },
+        {
+          "requested_deg": [
+            14.999999999999998,
+            14.999999999999998,
+            0.0,
+            0.0
+          ],
+          "stable_window_found": true,
+          "nearest_static_error_deg": 29.141439438835885,
+          "span_s": 2.0098998739995295,
+          "samples": 22,
+          "actual_deg": [
+            -14.141439438835889,
+            14.097725561126968,
+            -0.1529985719812218,
+            0.12418715258216055
+          ],
+          "effort_estimate_nm": [
+            -2.5885225885225793,
+            2.38872238872238,
+            0.31888111888111775,
+            -0.22657342657342577
+          ]
+        }
+      ]
+    },
+    {
+      "file": "/home/xuyu/.ros/slaihand/control_panel/operations/e5d28d2beb07406e/client/20261105_114204_44aef7f2.json",
+      "command_id": 8,
+      "plan": {
+        "coordinates": "absolute_deg",
+        "waypoints": [
+          {
+            "degrees": [
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "move_s": 10.0,
+            "dwell_s": 0.5
+          }
+        ]
+      },
+      "reason": "finite_trial_complete",
+      "waypoints_observed": true,
+      "waypoint_results": [
+        {
+          "arrival_s": 10.0,
+          "end_s": 10.5,
+          "target_rad": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "samples": 30,
+          "sampled_span_s": 0.2905517570034135,
+          "max_error_deg": [
+            0.3059971439624436,
+            0.2185693885446026,
+            0.1529985719812218,
+            0.13114163312676155
+          ],
+          "passed": true
+        }
+      ],
+      "stop_confirmed": true,
+      "diagnostic_snapshots": 129,
+      "pose_diagnostics": [
+        {
+          "requested_deg": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "stable_window_found": false
+        }
+      ]
+    },
+    {
+      "file": "/home/xuyu/.ros/slaihand/control_panel/operations/7316b1162e4e407f/client/20261105_120801_f2124313.json",
+      "command_id": 9,
+      "plan": {
+        "coordinates": "absolute_deg",
+        "waypoints": [
+          {
+            "degrees": [
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "move_s": 10.0,
+            "dwell_s": 0.5
+          }
+        ]
+      },
+      "reason": "finite_trial_complete",
+      "waypoints_observed": true,
+      "waypoint_results": [
+        {
+          "arrival_s": 10.0,
+          "end_s": 10.5,
+          "target_rad": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "samples": 30,
+          "sampled_span_s": 0.29050394300429616,
+          "max_error_deg": [
+            0.3059971439624436,
+            0.2185693885446026,
+            0.1529985719812218,
+            0.13114163312676155
+          ],
+          "passed": true
+        }
+      ],
+      "stop_confirmed": true,
+      "diagnostic_snapshots": 130,
+      "pose_diagnostics": [
+        {
+          "requested_deg": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "stable_window_found": false
+        }
+      ]
+    },
+    {
+      "file": "/home/xuyu/.ros/slaihand/control_panel/operations/d5952f440c0f4266/client/20261105_120823_a2c52af9.json",
+      "command_id": 10,
+      "plan": {
+        "coordinates": "absolute_deg",
+        "waypoints": [
+          {
+            "degrees": [
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "move_s": 10.0,
+            "dwell_s": 0.5
+          }
+        ]
+      },
+      "reason": "finite_trial_complete",
+      "waypoints_observed": true,
+      "waypoint_results": [
+        {
+          "arrival_s": 10.0,
+          "end_s": 10.5,
+          "target_rad": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "samples": 30,
+          "sampled_span_s": 0.29048567000427283,
+          "max_error_deg": [
+            0.3059971439624436,
+            0.2185693885446026,
+            0.1529985719812218,
+            0.13114163312676155
+          ],
+          "passed": true
+        }
+      ],
+      "stop_confirmed": true,
+      "diagnostic_snapshots": 130,
+      "pose_diagnostics": [
+        {
+          "requested_deg": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "stable_window_found": false
+        }
+      ]
+    },
+    {
+      "file": "/home/xuyu/.ros/slaihand/control_panel/operations/8ecb491bed804255/client/20261105_120912_509aa514.json",
+      "command_id": 11,
+      "plan": {
+        "coordinates": "absolute_deg",
+        "waypoints": [
+          {
+            "degrees": [
+              0.0,
+              10.0,
+              0.0,
+              0.0
+            ],
+            "move_s": 10.0,
+            "dwell_s": 6.0
+          },
+          {
+            "degrees": [
+              0.0,
+              29.999999999999996,
+              0.0,
+              0.0
+            ],
+            "move_s": 10.0,
+            "dwell_s": 6.0
+          }
+        ]
+      },
+      "reason": "轨迹未通过：Aborted due to goal_time_tolerance exceeding by 2.005636 seconds",
+      "waypoints_observed": false,
+      "waypoint_results": [
+        {
+          "arrival_s": 10.0,
+          "end_s": 16.0,
+          "target_rad": [
+            0.0,
+            0.17453292519943295,
+            0.0,
+            0.0
+          ],
+          "samples": 30,
+          "sampled_span_s": 0.28974505900987424,
+          "max_error_deg": [
+            0.3059971439624436,
+            0.754514864563209,
+            0.1529985719812218,
+            0.13114163312676155
+          ],
+          "passed": false
+        },
+        {
+          "arrival_s": 26.0,
+          "end_s": 32.0,
+          "target_rad": [
+            0.0,
+            0.5235987755982988,
+            0.0,
+            0.0
+          ],
+          "samples": 30,
+          "sampled_span_s": 0.2903310010005953,
+          "max_error_deg": [
+            0.3059971439624436,
+            1.4329809172203394,
+            0.1529985719812218,
+            0.13114163312676155
+          ],
+          "passed": false
+        }
+      ],
+      "stop_confirmed": true,
+      "diagnostic_snapshots": 375,
+      "pose_diagnostics": [
+        {
+          "requested_deg": [
+            0.0,
+            10.0,
+            0.0,
+            0.0
+          ],
+          "stable_window_found": false
+        },
+        {
+          "requested_deg": [
+            0.0,
+            29.999999999999996,
+            0.0,
+            0.0
+          ],
+          "stable_window_found": false
+        }
+      ]
+    },
+    {
+      "file": "/home/xuyu/.ros/slaihand/control_panel/operations/b0a48117893b4fb1/client/20261105_121017_b3395f87.json",
+      "command_id": 12,
+      "plan": {
+        "coordinates": "absolute_deg",
+        "waypoints": [
+          {
+            "degrees": [
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "move_s": 10.0,
+            "dwell_s": 0.5
+          }
+        ]
+      },
+      "reason": "finite_trial_complete",
+      "waypoints_observed": true,
+      "waypoint_results": [
+        {
+          "arrival_s": 10.0,
+          "end_s": 10.5,
+          "target_rad": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "samples": 30,
+          "sampled_span_s": 0.2901823520078324,
+          "max_error_deg": [
+            0.3059971439624436,
+            0.2185693885446026,
+            0.1529985719812218,
+            0.13114163312676155
+          ],
+          "passed": true
+        }
+      ],
+      "stop_confirmed": true,
+      "diagnostic_snapshots": 129,
+      "pose_diagnostics": [
+        {
+          "requested_deg": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "stable_window_found": false
+        }
+      ]
+    },
+    {
+      "file": "/home/xuyu/.ros/slaihand/control_panel/operations/1deea554383e4ee4/client/20261105_121116_3147c1c2.json",
+      "command_id": 13,
+      "plan": {
+        "coordinates": "absolute_deg",
+        "waypoints": [
+          {
+            "degrees": [
+              0.0,
+              20.0,
+              -20.0,
+              0.0
+            ],
+            "move_s": 10.0,
+            "dwell_s": 0.5
+          },
+          {
+            "degrees": [
+              0.0,
+              20.0,
+              20.0,
+              0.0
+            ],
+            "move_s": 4.0,
+            "dwell_s": 1.0
+          }
+        ]
+      },
+      "reason": "轨迹未通过：Aborted due to goal_time_tolerance exceeding by 2.005605 seconds",
+      "waypoints_observed": false,
+      "waypoint_results": [
+        {
+          "arrival_s": 10.0,
+          "end_s": 10.5,
+          "target_rad": [
+            0.0,
+            0.3490658503988659,
+            -0.3490658503988659,
+            0.0
+          ],
+          "samples": 30,
+          "sampled_span_s": 0.28928375900432,
+          "max_error_deg": [
+            0.3059971439624436,
+            0.9188923800560929,
+            0.0009009481687620663,
+            0.13114163312676155
+          ],
+          "passed": false
+        },
+        {
+          "arrival_s": 14.5,
+          "end_s": 15.5,
+          "target_rad": [
+            0.0,
+            0.3490658503988659,
+            0.3490658503988659,
+            0.0
+          ],
+          "samples": 30,
+          "sampled_span_s": 0.2905758079868974,
+          "max_error_deg": [
+            0.3059971439624436,
+            0.9188923800560929,
+            0.15389952014998387,
+            0.1092846942723013
+          ],
+          "passed": false
+        }
+      ],
+      "stop_confirmed": true,
+      "diagnostic_snapshots": 202,
+      "pose_diagnostics": [
+        {
+          "requested_deg": [
+            0.0,
+            20.0,
+            -20.0,
+            0.0
+          ],
+          "stable_window_found": false
+        },
+        {
+          "requested_deg": [
+            0.0,
+            20.0,
+            20.0,
+            0.0
+          ],
+          "stable_window_found": false
+        }
+      ]
+    },
+    {
+      "file": "/home/xuyu/.ros/slaihand/control_panel/operations/3ca129c32ecd4028/client/20261105_121142_9d5807e8.json",
+      "command_id": 14,
+      "plan": {
+        "coordinates": "absolute_deg",
+        "waypoints": [
+          {
+            "degrees": [
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "move_s": 10.0,
+            "dwell_s": 0.5
+          }
+        ]
+      },
+      "reason": "finite_trial_complete",
+      "waypoints_observed": true,
+      "waypoint_results": [
+        {
+          "arrival_s": 10.0,
+          "end_s": 10.5,
+          "target_rad": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "samples": 30,
+          "sampled_span_s": 0.28987620600673836,
+          "max_error_deg": [
+            0.3059971439624436,
+            0.2185693885446026,
+            0.0,
+            0.13114163312676155
+          ],
+          "passed": true
+        }
+      ],
+      "stop_confirmed": true,
+      "diagnostic_snapshots": 129,
+      "pose_diagnostics": [
+        {
+          "requested_deg": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "stable_window_found": false
+        }
+      ]
+    },
+    {
+      "file": "/home/xuyu/.ros/slaihand/control_panel/operations/108b8a617be04c58/client/20261105_121241_9c5aecd4.json",
+      "command_id": 15,
+      "plan": {
+        "coordinates": "absolute_deg",
+        "waypoints": [
+          {
+            "degrees": [
+              0.0,
+              20.0,
+              0.0,
+              -20.0
+            ],
+            "move_s": 10.0,
+            "dwell_s": 0.5
+          },
+          {
+            "degrees": [
+              0.0,
+              20.0,
+              0.0,
+              20.0
+            ],
+            "move_s": 4.0,
+            "dwell_s": 1.0
+          }
+        ]
+      },
+      "reason": "轨迹未通过：Aborted due to goal_time_tolerance exceeding by 2.005586 seconds",
+      "waypoints_observed": false,
+      "waypoint_results": [
+        {
+          "arrival_s": 10.0,
+          "end_s": 10.5,
+          "target_rad": [
+            0.0,
+            0.3490658503988659,
+            0.0,
+            -0.3490658503988659
+          ],
+          "samples": 30,
+          "sampled_span_s": 0.29010633600410074,
+          "max_error_deg": [
+            0.3059971439624436,
+            0.9188923800560929,
+            0.0,
+            0.4380397252579672
+          ],
+          "passed": false
+        },
+        {
+          "arrival_s": 14.5,
+          "end_s": 15.5,
+          "target_rad": [
+            0.0,
+            0.3490658503988659,
+            0.0,
+            0.3490658503988659
+          ],
+          "samples": 30,
+          "sampled_span_s": 0.290005047005252,
+          "max_error_deg": [
+            0.3059971439624436,
+            0.9188923800560929,
+            0.0,
+            0.15389952014998387
+          ],
+          "passed": false
+        }
+      ],
+      "stop_confirmed": true,
+      "diagnostic_snapshots": 203,
+      "pose_diagnostics": [
+        {
+          "requested_deg": [
+            0.0,
+            20.0,
+            0.0,
+            -20.0
+          ],
+          "stable_window_found": false
+        },
+        {
+          "requested_deg": [
+            0.0,
+            20.0,
+            0.0,
+            20.0
+          ],
+          "stable_window_found": false
+        }
+      ]
+    },
+    {
+      "file": "/home/xuyu/.ros/slaihand/control_panel/operations/8bf04017d1b44cba/client/20261105_121337_96377cd2.json",
+      "command_id": 16,
+      "plan": {
+        "coordinates": "absolute_deg",
+        "waypoints": [
+          {
+            "degrees": [
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "move_s": 10.0,
+            "dwell_s": 0.5
+          }
+        ]
+      },
+      "reason": "finite_trial_complete",
+      "waypoints_observed": true,
+      "waypoint_results": [
+        {
+          "arrival_s": 10.0,
+          "end_s": 10.5,
+          "target_rad": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "samples": 30,
+          "sampled_span_s": 0.289826249005273,
+          "max_error_deg": [
+            0.3059971439624436,
+            0.2185693885446026,
+            0.0,
+            0.13114163312676155
+          ],
+          "passed": true
+        }
+      ],
+      "stop_confirmed": true,
+      "diagnostic_snapshots": 129,
+      "pose_diagnostics": [
+        {
+          "requested_deg": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "stable_window_found": false
+        }
+      ]
+    },
+    {
+      "file": "/home/xuyu/.ros/slaihand/control_panel/operations/c96ef3b14eaa4ffa/client/20261105_121505_f4924d65.json",
+      "command_id": 17,
+      "plan": {
+        "coordinates": "absolute_deg",
+        "waypoints": [
+          {
+            "degrees": [
+              14.999999999999998,
+              29.999999999999996,
+              20.0,
+              -20.0
+            ],
+            "move_s": 10.0,
+            "dwell_s": 0.5
+          },
+          {
+            "degrees": [
+              -14.999999999999998,
+              14.999999999999998,
+              -20.0,
+              20.0
+            ],
+            "move_s": 4.0,
+            "dwell_s": 1.0
+          }
+        ]
+      },
+      "reason": "轨迹未通过：Aborted due to goal_time_tolerance exceeding by 2.004901 seconds",
+      "waypoints_observed": false,
+      "waypoint_results": [
+        {
+          "arrival_s": 10.0,
+          "end_s": 10.5,
+          "target_rad": [
+            0.2617993877991494,
+            0.5235987755982988,
+            0.3490658503988659,
+            -0.3490658503988659
+          ],
+          "samples": 30,
+          "sampled_span_s": 0.2894469220045721,
+          "max_error_deg": [
+            1.0771299497088147,
+            1.170697650966816,
+            0.15389952014998387,
+            0.11018564244106335
+          ],
+          "passed": false
+        },
+        {
+          "arrival_s": 14.5,
+          "end_s": 15.5,
+          "target_rad": [
+            -0.2617993877991494,
+            0.2617993877991494,
+            -0.3490658503988659,
+            0.3490658503988659
+          ],
+          "samples": 30,
+          "sampled_span_s": 0.29039597800874617,
+          "max_error_deg": [
+            0.8367036223096501,
+            0.22470933438476295,
+            0.0009009481687620663,
+            0.13204258129552363
+          ],
+          "passed": false
+        }
+      ],
+      "stop_confirmed": true,
+      "diagnostic_snapshots": 202,
+      "pose_diagnostics": [
+        {
+          "requested_deg": [
+            14.999999999999998,
+            29.999999999999996,
+            20.0,
+            -20.0
+          ],
+          "stable_window_found": false
+        },
+        {
+          "requested_deg": [
+            -14.999999999999998,
+            14.999999999999998,
+            -20.0,
+            20.0
+          ],
+          "stable_window_found": false
+        }
+      ]
+    },
+    {
+      "file": "/home/xuyu/.ros/slaihand/control_panel/operations/e03d9122eb8d4b09/client/20261105_121529_29afe6d1.json",
+      "command_id": 18,
+      "plan": {
+        "coordinates": "absolute_deg",
+        "waypoints": [
+          {
+            "degrees": [
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "move_s": 10.0,
+            "dwell_s": 0.5
+          }
+        ]
+      },
+      "reason": "finite_trial_complete",
+      "waypoints_observed": true,
+      "waypoint_results": [
+        {
+          "arrival_s": 10.0,
+          "end_s": 10.5,
+          "target_rad": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "samples": 30,
+          "sampled_span_s": 0.2904041730071185,
+          "max_error_deg": [
+            0.34971102167136414,
+            0.2185693885446026,
+            0.1529985719812218,
+            0.13114163312676155
+          ],
+          "passed": true
+        }
+      ],
+      "stop_confirmed": true,
+      "diagnostic_snapshots": 129,
+      "pose_diagnostics": [
+        {
+          "requested_deg": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "stable_window_found": false
+        }
+      ]
+    },
+    {
+      "file": "/home/xuyu/.ros/slaihand/control_panel/operations/2d9382a8bf254f32/client/20261105_121742_fe662cc6.json",
+      "command_id": 19,
+      "plan": {
+        "coordinates": "absolute_deg",
+        "waypoints": [
+          {
+            "degrees": [
+              10.0,
+              25.0,
+              -10.0,
+              -14.999999999999998
+            ],
+            "move_s": 10.0,
+            "dwell_s": 6.0
+          },
+          {
+            "degrees": [
+              -10.0,
+              10.0,
+              10.0,
+              14.999999999999998
+            ],
+            "move_s": 10.0,
+            "dwell_s": 6.0
+          }
+        ]
+      },
+      "reason": "轨迹未通过：Aborted due to goal_time_tolerance exceeding by 2.004934 seconds",
+      "waypoints_observed": false,
+      "waypoint_results": [
+        {
+          "arrival_s": 10.0,
+          "end_s": 16.0,
+          "target_rad": [
+            0.17453292519943295,
+            0.4363323129985824,
+            -0.17453292519943295,
+            -0.2617993877991494
+          ],
+          "samples": 30,
+          "sampled_span_s": 0.2900799400085816,
+          "max_error_deg": [
+            0.9075134365445326,
+            1.1540797097837574,
+            0.2955191486196454,
+            0.399564845220445
+          ],
+          "passed": false
+        },
+        {
+          "arrival_s": 26.0,
+          "end_s": 32.0,
+          "target_rad": [
+            -0.17453292519943295,
+            0.17453292519943295,
+            0.17453292519943295,
+            0.2617993877991494
+          ],
+          "samples": 30,
+          "sampled_span_s": 0.2903997020039242,
+          "max_error_deg": [
+            0.601516292582089,
+            0.0541918730518205,
+            0.3392330263285659,
+            0.07171076240364292
+          ],
+          "passed": false
+        }
+      ],
+      "stop_confirmed": true,
+      "diagnostic_snapshots": 373,
+      "pose_diagnostics": [
+        {
+          "requested_deg": [
+            10.0,
+            25.0,
+            -10.0,
+            -14.999999999999998
+          ],
+          "stable_window_found": false
+        },
+        {
+          "requested_deg": [
+            -10.0,
+            10.0,
+            10.0,
+            14.999999999999998
+          ],
+          "stable_window_found": false
+        }
+      ]
+    },
+    {
+      "file": "/home/xuyu/.ros/slaihand/control_panel/operations/95fb14f2e5774daf/client/20261105_121800_f4aecc38.json",
+      "command_id": 20,
+      "plan": {
+        "coordinates": "absolute_deg",
+        "waypoints": [
+          {
+            "degrees": [
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "move_s": 10.0,
+            "dwell_s": 0.5
+          }
+        ]
+      },
+      "reason": "控制端已全局停止或UNKNOWN；检查失能反馈，状态未知时保持支撑并现场切电",
+      "waypoints_observed": false,
+      "waypoint_results": [
+        {
+          "arrival_s": 10.0,
+          "end_s": 10.5,
+          "target_rad": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "samples": 0,
+          "sampled_span_s": 0.0,
+          "max_error_deg": null,
+          "passed": false
+        }
+      ],
+      "stop_confirmed": true,
+      "diagnostic_snapshots": 20,
+      "pose_diagnostics": [
+        {
+          "requested_deg": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "stable_window_found": true,
+          "nearest_static_error_deg": 14.928289237596356,
+          "span_s": 0.8599754760070937,
+          "samples": 10,
+          "actual_deg": [
+            -9.072815318486454,
+            10.060748954708158,
+            9.638910034816973,
+            14.928289237596356
+          ],
+          "effort_estimate_nm": [
+            -0.13675213675213627,
+            -0.146520146520146,
+            -0.10021978021977987,
+            0.10813186813186774
+          ]
+        }
+      ]
+    }
+  ],
+  "stage_transitions": [
+    {
+      "steady_s": 88467.18278941,
+      "command_id": 0,
+      "control_state": 0,
+      "reason": "STARTUP_POSITION_BRANCH_SELECTED"
+    },
+    {
+      "steady_s": 88467.200859932,
+      "command_id": 0,
+      "control_state": 0,
+      "reason": "NOT_ARMED"
+    },
+    {
+      "steady_s": 88569.66161918,
+      "command_id": 1,
+      "control_state": 1,
+      "reason": "ARM_ACCEPTED_NOT_ENABLED"
+    },
+    {
+      "steady_s": 88569.741670593,
+      "command_id": 1,
+      "control_state": 2,
+      "reason": "ARM_ACCEPTED_NOT_ENABLED"
+    },
+    {
+      "steady_s": 88569.741719727,
+      "command_id": 1,
+      "control_state": 3,
+      "reason": "ARM_ACCEPTED_NOT_ENABLED"
+    },
+    {
+      "steady_s": 88569.87160442,
+      "command_id": 1,
+      "control_state": 4,
+      "reason": "ARM_ACCEPTED_NOT_ENABLED"
+    },
+    {
+      "steady_s": 88570.871645994,
+      "command_id": 1,
+      "control_state": 5,
+      "reason": "RAMP_COMPLETE_NOT_POSITION_ACCURACY_ACCEPTANCE"
+    },
+    {
+      "steady_s": 88572.401909012,
+      "command_id": 1,
+      "control_state": 6,
+      "reason": "RAMP_COMPLETE_NOT_POSITION_ACCURACY_ACCEPTANCE"
+    },
+    {
+      "steady_s": 88588.741601748,
+      "command_id": 1,
+      "control_state": 7,
+      "reason": "OPERATOR_GLOBAL_STOP"
+    },
+    {
+      "steady_s": 88588.761789231,
+      "command_id": 1,
+      "control_state": 8,
+      "reason": "OPERATOR_GLOBAL_STOP"
+    },
+    {
+      "steady_s": 88801.431561438,
+      "command_id": 1,
+      "control_state": 0,
+      "reason": "MANUAL_RESET_DISABLED_ONLY"
+    },
+    {
+      "steady_s": 88804.62156427,
+      "command_id": 2,
+      "control_state": 1,
+      "reason": "ARM_ACCEPTED_NOT_ENABLED"
+    },
+    {
+      "steady_s": 88804.701576244,
+      "command_id": 2,
+      "control_state": 2,
+      "reason": "ARM_ACCEPTED_NOT_ENABLED"
+    },
+    {
+      "steady_s": 88804.701599313,
+      "command_id": 2,
+      "control_state": 3,
+      "reason": "ARM_ACCEPTED_NOT_ENABLED"
+    },
+    {
+      "steady_s": 88804.831679119,
+      "command_id": 2,
+      "control_state": 4,
+      "reason": "ARM_ACCEPTED_NOT_ENABLED"
+    },
+    {
+      "steady_s": 88805.841604599,
+      "command_id": 2,
+      "control_state": 5,
+      "reason": "RAMP_COMPLETE_NOT_POSITION_ACCURACY_ACCEPTANCE"
+    },
+    {
+      "steady_s": 88807.36182039,
+      "command_id": 2,
+      "control_state": 6,
+      "reason": "RAMP_COMPLETE_NOT_POSITION_ACCURACY_ACCEPTANCE"
+    },
+    {
+      "steady_s": 88818.192399819,
+      "command_id": 2,
+      "control_state": 7,
+      "reason": "OPERATOR_GLOBAL_STOP"
+    },
+    {
+      "steady_s": 88818.21220021,
+      "command_id": 2,
+      "control_state": 8,
+      "reason": "OPERATOR_GLOBAL_STOP"
+    },
+    {
+      "steady_s": 88825.241552443,
+      "command_id": 2,
+      "control_state": 0,
+      "reason": "MANUAL_RESET_DISABLED_ONLY"
+    },
+    {
+      "steady_s": 88828.571638677,
+      "command_id": 3,
+      "control_state": 1,
+      "reason": "ARM_ACCEPTED_NOT_ENABLED"
+    },
+    {
+      "steady_s": 88828.65164382,
+      "command_id": 3,
+      "control_state": 2,
+      "reason": "ARM_ACCEPTED_NOT_ENABLED"
+    },
+    {
+      "steady_s": 88828.651675588,
+      "command_id": 3,
+      "control_state": 3,
+      "reason": "ARM_ACCEPTED_NOT_ENABLED"
+    },
+    {
+      "steady_s": 88828.791606167,
+      "command_id": 3,
+      "control_state": 4,
+      "reason": "ARM_ACCEPTED_NOT_ENABLED"
+    },
+    {
+      "steady_s": 88829.791708328,
+      "command_id": 3,
+      "control_state": 5,
+      "reason": "RAMP_COMPLETE_NOT_POSITION_ACCURACY_ACCEPTANCE"
+    },
+    {
+      "steady_s": 88831.331723229,
+      "command_id": 3,
+      "control_state": 6,
+      "reason": "RAMP_COMPLETE_NOT_POSITION_ACCURACY_ACCEPTANCE"
+    },
+    {
+      "steady_s": 88863.661603054,
+      "command_id": 3,
+      "control_state": 7,
+      "reason": "OPERATOR_GLOBAL_STOP"
+    },
+    {
+      "steady_s": 88863.681609609,
+      "command_id": 3,
+      "control_state": 8,
+      "reason": "OPERATOR_GLOBAL_STOP"
+    },
+    {
+      "steady_s": 88896.591547339,
+      "command_id": 3,
+      "control_state": 0,
+      "reason": "MANUAL_RESET_DISABLED_ONLY"
+    },
+    {
+      "steady_s": 88956.411689646,
+      "command_id": 4,
+      "control_state": 1,
+      "reason": "ARM_ACCEPTED_NOT_ENABLED"
+    },
+    {
+      "steady_s": 88956.491623723,
+      "command_id": 4,
+      "control_state": 2,
+      "reason": "ARM_ACCEPTED_NOT_ENABLED"
+    },
+    {
+      "steady_s": 88956.491659627,
+      "command_id": 4,
+      "control_state": 3,
+      "reason": "ARM_ACCEPTED_NOT_ENABLED"
+    },
+    {
+      "steady_s": 88956.621723145,
+      "command_id": 4,
+      "control_state": 4,
+      "reason": "ARM_ACCEPTED_NOT_ENABLED"
+    },
+    {
+      "steady_s": 88957.631684072,
+      "command_id": 4,
+      "control_state": 5,
+      "reason": "RAMP_COMPLETE_NOT_POSITION_ACCURACY_ACCEPTANCE"
+    },
+    {
+      "steady_s": 88959.151752626,
+      "command_id": 4,
+      "control_state": 6,
+      "reason": "RAMP_COMPLETE_NOT_POSITION_ACCURACY_ACCEPTANCE"
+    },
+    {
+      "steady_s": 88961.991632654,
+      "command_id": 4,
+      "control_state": 7,
+      "reason": "OPERATOR_GLOBAL_STOP"
+    },
+    {
+      "steady_s": 88962.011671002,
+      "command_id": 4,
+      "control_state": 8,
+      "reason": "OPERATOR_GLOBAL_STOP"
+    },
+    {
+      "steady_s": 88968.761586346,
+      "command_id": 4,
+      "control_state": 0,
+      "reason": "MANUAL_RESET_DISABLED_ONLY"
+    },
+    {
+      "steady_s": 88971.591514524,
+      "command_id": 5,
+      "control_state": 1,
+      "reason": "ARM_ACCEPTED_NOT_ENABLED"
+    },
+    {
+      "steady_s": 88971.671662224,
+      "command_id": 5,
+      "control_state": 2,
+      "reason": "ARM_ACCEPTED_NOT_ENABLED"
+    },
+    {
+      "steady_s": 88971.671691809,
+      "command_id": 5,
+      "control_state": 3,
+      "reason": "ARM_ACCEPTED_NOT_ENABLED"
+    },
+    {
+      "steady_s": 88971.811554808,
+      "command_id": 5,
+      "control_state": 4,
+      "reason": "ARM_ACCEPTED_NOT_ENABLED"
+    },
+    {
+      "steady_s": 88972.811630351,
+      "command_id": 5,
+      "control_state": 5,
+      "reason": "RAMP_COMPLETE_NOT_POSITION_ACCURACY_ACCEPTANCE"
+    },
+    {
+      "steady_s": 88974.341768625,
+      "command_id": 5,
+      "control_state": 6,
+      "reason": "RAMP_COMPLETE_NOT_POSITION_ACCURACY_ACCEPTANCE"
+    },
+    {
+      "steady_s": 88985.171574041,
+      "command_id": 5,
+      "control_state": 7,
+      "reason": "OPERATOR_GLOBAL_STOP"
+    },
+    {
+      "steady_s": 88985.191626606,
+      "command_id": 5,
+      "control_state": 8,
+      "reason": "OPERATOR_GLOBAL_STOP"
+    },
+    {
+      "steady_s": 88990.281567467,
+      "command_id": 5,
+      "control_state": 0,
+      "reason": "MANUAL_RESET_DISABLED_ONLY"
+    },
+    {
+      "steady_s": 88994.541568236,
+      "command_id": 6,
+      "control_state": 1,
+      "reason": "ARM_ACCEPTED_NOT_ENABLED"
+    },
+    {
+      "steady_s": 88994.621552976,
+      "command_id": 6,
+      "control_state": 2,
+      "reason": "ARM_ACCEPTED_NOT_ENABLED"
+    },
+    {
+      "steady_s": 88994.621580776,
+      "command_id": 6,
+      "control_state": 3,
+      "reason": "ARM_ACCEPTED_NOT_ENABLED"
+    },
+    {
+      "steady_s": 88994.75164691,
+      "command_id": 6,
+      "control_state": 4,
+      "reason": "ARM_ACCEPTED_NOT_ENABLED"
+    },
+    {
+      "steady_s": 88995.761713505,
+      "command_id": 6,
+      "control_state": 5,
+      "reason": "RAMP_COMPLETE_NOT_POSITION_ACCURACY_ACCEPTANCE"
+    },
+    {
+      "steady_s": 88997.301687545,
+      "command_id": 6,
+      "control_state": 6,
+      "reason": "RAMP_COMPLETE_NOT_POSITION_ACCURACY_ACCEPTANCE"
+    },
+    {
+      "steady_s": 89008.131664734,
+      "command_id": 6,
+      "control_state": 7,
+      "reason": "OPERATOR_GLOBAL_STOP"
+    },
+    {
+      "steady_s": 89008.151673491,
+      "command_id": 6,
+      "control_state": 8,
+      "reason": "OPERATOR_GLOBAL_STOP"
+    },
+    {
+      "steady_s": 89011.401608231,
+      "command_id": 6,
+      "control_state": 0,
+      "reason": "MANUAL_RESET_DISABLED_ONLY"
+    },
+    {
+      "steady_s": 89022.881650013,
+      "command_id": 7,
+      "control_state": 1,
+      "reason": "ARM_ACCEPTED_NOT_ENABLED"
+    },
+    {
+      "steady_s": 89022.961667361,
+      "command_id": 7,
+      "control_state": 2,
+      "reason": "ARM_ACCEPTED_NOT_ENABLED"
+    },
+    {
+      "steady_s": 89022.961687483,
+      "command_id": 7,
+      "control_state": 3,
+      "reason": "ARM_ACCEPTED_NOT_ENABLED"
+    },
+    {
+      "steady_s": 89023.091631585,
+      "command_id": 7,
+      "control_state": 4,
+      "reason": "ARM_ACCEPTED_NOT_ENABLED"
+    },
+    {
+      "steady_s": 89024.091680679,
+      "command_id": 7,
+      "control_state": 5,
+      "reason": "RAMP_COMPLETE_NOT_POSITION_ACCURACY_ACCEPTANCE"
+    },
+    {
+      "steady_s": 89025.621830842,
+      "command_id": 7,
+      "control_state": 6,
+      "reason": "RAMP_COMPLETE_NOT_POSITION_ACCURACY_ACCEPTANCE"
+    },
+    {
+      "steady_s": 89059.9718256,
+      "command_id": 7,
+      "control_state": 7,
+      "reason": "REFERENCE_SPEED"
+    },
+    {
+      "steady_s": 89059.991574609,
+      "command_id": 7,
+      "control_state": 8,
+      "reason": "REFERENCE_SPEED"
+    },
+    {
+      "steady_s": 89060.01168657,
+      "command_id": 7,
+      "control_state": 7,
+      "reason": "OPERATOR_GLOBAL_STOP"
+    },
+    {
+      "steady_s": 89060.031678387,
+      "command_id": 7,
+      "control_state": 8,
+      "reason": "OPERATOR_GLOBAL_STOP"
+    },
+    {
+      "steady_s": 89080.791540789,
+      "command_id": 7,
+      "control_state": 0,
+      "reason": "MANUAL_RESET_DISABLED_ONLY"
+    },
+    {
+      "steady_s": 89083.91157361,
+      "command_id": 8,
+      "control_state": 1,
+      "reason": "ARM_ACCEPTED_NOT_ENABLED"
+    },
+    {
+      "steady_s": 89083.991727374,
+      "command_id": 8,
+      "control_state": 2,
+      "reason": "ARM_ACCEPTED_NOT_ENABLED"
+    },
+    {
+      "steady_s": 89083.991763426,
+      "command_id": 8,
+      "control_state": 3,
+      "reason": "ARM_ACCEPTED_NOT_ENABLED"
+    },
+    {
+      "steady_s": 89084.121741622,
+      "command_id": 8,
+      "control_state": 4,
+      "reason": "ARM_ACCEPTED_NOT_ENABLED"
+    },
+    {
+      "steady_s": 89085.121821747,
+      "command_id": 8,
+      "control_state": 5,
+      "reason": "RAMP_COMPLETE_NOT_POSITION_ACCURACY_ACCEPTANCE"
+    },
+    {
+      "steady_s": 89086.661924885,
+      "command_id": 8,
+      "control_state": 6,
+      "reason": "RAMP_COMPLETE_NOT_POSITION_ACCURACY_ACCEPTANCE"
+    },
+    {
+      "steady_s": 89097.49163248,
+      "command_id": 8,
+      "control_state": 7,
+      "reason": "OPERATOR_GLOBAL_STOP"
+    },
+    {
+      "steady_s": 89097.511669556,
+      "command_id": 8,
+      "control_state": 8,
+      "reason": "OPERATOR_GLOBAL_STOP"
+    },
+    {
+      "steady_s": 90638.671618361,
+      "command_id": 8,
+      "control_state": 0,
+      "reason": "MANUAL_RESET_DISABLED_ONLY"
+    },
+    {
+      "steady_s": 90641.141551854,
+      "command_id": 9,
+      "control_state": 1,
+      "reason": "ARM_ACCEPTED_NOT_ENABLED"
+    },
+    {
+      "steady_s": 90641.231595173,
+      "command_id": 9,
+      "control_state": 2,
+      "reason": "ARM_ACCEPTED_NOT_ENABLED"
+    },
+    {
+      "steady_s": 90641.231621829,
+      "command_id": 9,
+      "control_state": 3,
+      "reason": "ARM_ACCEPTED_NOT_ENABLED"
+    },
+    {
+      "steady_s": 90641.351536613,
+      "command_id": 9,
+      "control_state": 4,
+      "reason": "ARM_ACCEPTED_NOT_ENABLED"
+    },
+    {
+      "steady_s": 90642.361545817,
+      "command_id": 9,
+      "control_state": 5,
+      "reason": "RAMP_COMPLETE_NOT_POSITION_ACCURACY_ACCEPTANCE"
+    },
+    {
+      "steady_s": 90643.881705544,
+      "command_id": 9,
+      "control_state": 6,
+      "reason": "RAMP_COMPLETE_NOT_POSITION_ACCURACY_ACCEPTANCE"
+    },
+    {
+      "steady_s": 90654.71158812,
+      "command_id": 9,
+      "control_state": 7,
+      "reason": "OPERATOR_GLOBAL_STOP"
+    },
+    {
+      "steady_s": 90654.731709029,
+      "command_id": 9,
+      "control_state": 8,
+      "reason": "OPERATOR_GLOBAL_STOP"
+    },
+    {
+      "steady_s": 90660.401615074,
+      "command_id": 9,
+      "control_state": 0,
+      "reason": "MANUAL_RESET_DISABLED_ONLY"
+    },
+    {
+      "steady_s": 90663.381700021,
+      "command_id": 10,
+      "control_state": 1,
+      "reason": "ARM_ACCEPTED_NOT_ENABLED"
+    },
+    {
+      "steady_s": 90663.46152601,
+      "command_id": 10,
+      "control_state": 2,
+      "reason": "ARM_ACCEPTED_NOT_ENABLED"
+    },
+    {
+      "steady_s": 90663.461557488,
+      "command_id": 10,
+      "control_state": 3,
+      "reason": "ARM_ACCEPTED_NOT_ENABLED"
+    },
+    {
+      "steady_s": 90663.601522512,
+      "command_id": 10,
+      "control_state": 4,
+      "reason": "ARM_ACCEPTED_NOT_ENABLED"
+    },
+    {
+      "steady_s": 90664.611554269,
+      "command_id": 10,
+      "control_state": 5,
+      "reason": "RAMP_COMPLETE_NOT_POSITION_ACCURACY_ACCEPTANCE"
+    },
+    {
+      "steady_s": 90666.151878638,
+      "command_id": 10,
+      "control_state": 6,
+      "reason": "RAMP_COMPLETE_NOT_POSITION_ACCURACY_ACCEPTANCE"
+    },
+    {
+      "steady_s": 90676.98166078,
+      "command_id": 10,
+      "control_state": 7,
+      "reason": "OPERATOR_GLOBAL_STOP"
+    },
+    {
+      "steady_s": 90677.011566425,
+      "command_id": 10,
+      "control_state": 8,
+      "reason": "OPERATOR_GLOBAL_STOP"
+    },
+    {
+      "steady_s": 90686.201677556,
+      "command_id": 10,
+      "control_state": 0,
+      "reason": "MANUAL_RESET_DISABLED_ONLY"
+    },
+    {
+      "steady_s": 90688.731562628,
+      "command_id": 11,
+      "control_state": 1,
+      "reason": "ARM_ACCEPTED_NOT_ENABLED"
+    },
+    {
+      "steady_s": 90688.811539296,
+      "command_id": 11,
+      "control_state": 2,
+      "reason": "ARM_ACCEPTED_NOT_ENABLED"
+    },
+    {
+      "steady_s": 90688.811575132,
+      "command_id": 11,
+      "control_state": 3,
+      "reason": "ARM_ACCEPTED_NOT_ENABLED"
+    },
+    {
+      "steady_s": 90688.931761026,
+      "command_id": 11,
+      "control_state": 4,
+      "reason": "ARM_ACCEPTED_NOT_ENABLED"
+    },
+    {
+      "steady_s": 90689.941575575,
+      "command_id": 11,
+      "control_state": 5,
+      "reason": "RAMP_COMPLETE_NOT_POSITION_ACCURACY_ACCEPTANCE"
+    },
+    {
+      "steady_s": 90691.471714335,
+      "command_id": 11,
+      "control_state": 6,
+      "reason": "RAMP_COMPLETE_NOT_POSITION_ACCURACY_ACCEPTANCE"
+    },
+    {
+      "steady_s": 90725.821686473,
+      "command_id": 11,
+      "control_state": 7,
+      "reason": "REFERENCE_SPEED"
+    },
+    {
+      "steady_s": 90725.841619822,
+      "command_id": 11,
+      "control_state": 8,
+      "reason": "REFERENCE_SPEED"
+    },
+    {
+      "steady_s": 90725.851632771,
+      "command_id": 11,
+      "control_state": 7,
+      "reason": "OPERATOR_GLOBAL_STOP"
+    },
+    {
+      "steady_s": 90725.871593867,
+      "command_id": 11,
+      "control_state": 8,
+      "reason": "OPERATOR_GLOBAL_STOP"
+    },
+    {
+      "steady_s": 90774.431574584,
+      "command_id": 11,
+      "control_state": 0,
+      "reason": "MANUAL_RESET_DISABLED_ONLY"
+    },
+    {
+      "steady_s": 90777.411494582,
+      "command_id": 12,
+      "control_state": 1,
+      "reason": "ARM_ACCEPTED_NOT_ENABLED"
+    },
+    {
+      "steady_s": 90777.491539811,
+      "command_id": 12,
+      "control_state": 2,
+      "reason": "ARM_ACCEPTED_NOT_ENABLED"
+    },
+    {
+      "steady_s": 90777.491587053,
+      "command_id": 12,
+      "control_state": 3,
+      "reason": "ARM_ACCEPTED_NOT_ENABLED"
+    },
+    {
+      "steady_s": 90777.611507642,
+      "command_id": 12,
+      "control_state": 4,
+      "reason": "ARM_ACCEPTED_NOT_ENABLED"
+    },
+    {
+      "steady_s": 90778.611508871,
+      "command_id": 12,
+      "control_state": 5,
+      "reason": "RAMP_COMPLETE_NOT_POSITION_ACCURACY_ACCEPTANCE"
+    },
+    {
+      "steady_s": 90780.141705833,
+      "command_id": 12,
+      "control_state": 6,
+      "reason": "RAMP_COMPLETE_NOT_POSITION_ACCURACY_ACCEPTANCE"
+    },
+    {
+      "steady_s": 90790.971570677,
+      "command_id": 12,
+      "control_state": 7,
+      "reason": "OPERATOR_GLOBAL_STOP"
+    },
+    {
+      "steady_s": 90790.991559573,
+      "command_id": 12,
+      "control_state": 8,
+      "reason": "OPERATOR_GLOBAL_STOP"
+    },
+    {
+      "steady_s": 90820.96156305,
+      "command_id": 12,
+      "control_state": 0,
+      "reason": "MANUAL_RESET_DISABLED_ONLY"
+    },
+    {
+      "steady_s": 90829.201535244,
+      "command_id": 13,
+      "control_state": 1,
+      "reason": "ARM_ACCEPTED_NOT_ENABLED"
+    },
+    {
+      "steady_s": 90829.281543188,
+      "command_id": 13,
+      "control_state": 2,
+      "reason": "ARM_ACCEPTED_NOT_ENABLED"
+    },
+    {
+      "steady_s": 90829.281577616,
+      "command_id": 13,
+      "control_state": 3,
+      "reason": "ARM_ACCEPTED_NOT_ENABLED"
+    },
+    {
+      "steady_s": 90829.411491264,
+      "command_id": 13,
+      "control_state": 4,
+      "reason": "ARM_ACCEPTED_NOT_ENABLED"
+    },
+    {
+      "steady_s": 90830.41155176,
+      "command_id": 13,
+      "control_state": 5,
+      "reason": "RAMP_COMPLETE_NOT_POSITION_ACCURACY_ACCEPTANCE"
+    },
+    {
+      "steady_s": 90831.951716888,
+      "command_id": 13,
+      "control_state": 6,
+      "reason": "RAMP_COMPLETE_NOT_POSITION_ACCURACY_ACCEPTANCE"
+    },
+    {
+      "steady_s": 90849.801797797,
+      "command_id": 13,
+      "control_state": 7,
+      "reason": "REFERENCE_SPEED"
+    },
+    {
+      "steady_s": 90849.821762237,
+      "command_id": 13,
+      "control_state": 8,
+      "reason": "REFERENCE_SPEED"
+    },
+    {
+      "steady_s": 90849.831645901,
+      "command_id": 13,
+      "control_state": 7,
+      "reason": "OPERATOR_GLOBAL_STOP"
+    },
+    {
+      "steady_s": 90849.861570329,
+      "command_id": 13,
+      "control_state": 8,
+      "reason": "OPERATOR_GLOBAL_STOP"
+    },
+    {
+      "steady_s": 90859.831567168,
+      "command_id": 13,
+      "control_state": 0,
+      "reason": "MANUAL_RESET_DISABLED_ONLY"
+    },
+    {
+      "steady_s": 90862.291552783,
+      "command_id": 14,
+      "control_state": 1,
+      "reason": "ARM_ACCEPTED_NOT_ENABLED"
+    },
+    {
+      "steady_s": 90862.371586512,
+      "command_id": 14,
+      "control_state": 2,
+      "reason": "ARM_ACCEPTED_NOT_ENABLED"
+    },
+    {
+      "steady_s": 90862.371621646,
+      "command_id": 14,
+      "control_state": 3,
+      "reason": "ARM_ACCEPTED_NOT_ENABLED"
+    },
+    {
+      "steady_s": 90862.501566783,
+      "command_id": 14,
+      "control_state": 4,
+      "reason": "ARM_ACCEPTED_NOT_ENABLED"
+    },
+    {
+      "steady_s": 90863.511541458,
+      "command_id": 14,
+      "control_state": 5,
+      "reason": "RAMP_COMPLETE_NOT_POSITION_ACCURACY_ACCEPTANCE"
+    },
+    {
+      "steady_s": 90865.041752654,
+      "command_id": 14,
+      "control_state": 6,
+      "reason": "RAMP_COMPLETE_NOT_POSITION_ACCURACY_ACCEPTANCE"
+    },
+    {
+      "steady_s": 90875.871535325,
+      "command_id": 14,
+      "control_state": 7,
+      "reason": "OPERATOR_GLOBAL_STOP"
+    },
+    {
+      "steady_s": 90875.891629873,
+      "command_id": 14,
+      "control_state": 8,
+      "reason": "OPERATOR_GLOBAL_STOP"
+    },
+    {
+      "steady_s": 90911.491631964,
+      "command_id": 14,
+      "control_state": 0,
+      "reason": "MANUAL_RESET_DISABLED_ONLY"
+    },
+    {
+      "steady_s": 90914.241561136,
+      "command_id": 15,
+      "control_state": 1,
+      "reason": "ARM_ACCEPTED_NOT_ENABLED"
+    },
+    {
+      "steady_s": 90914.321525483,
+      "command_id": 15,
+      "control_state": 2,
+      "reason": "ARM_ACCEPTED_NOT_ENABLED"
+    },
+    {
+      "steady_s": 90914.321555029,
+      "command_id": 15,
+      "control_state": 3,
+      "reason": "ARM_ACCEPTED_NOT_ENABLED"
+    },
+    {
+      "steady_s": 90914.451536648,
+      "command_id": 15,
+      "control_state": 4,
+      "reason": "ARM_ACCEPTED_NOT_ENABLED"
+    },
+    {
+      "steady_s": 90915.451574569,
+      "command_id": 15,
+      "control_state": 5,
+      "reason": "RAMP_COMPLETE_NOT_POSITION_ACCURACY_ACCEPTANCE"
+    },
+    {
+      "steady_s": 90916.991722493,
+      "command_id": 15,
+      "control_state": 6,
+      "reason": "RAMP_COMPLETE_NOT_POSITION_ACCURACY_ACCEPTANCE"
+    },
+    {
+      "steady_s": 90934.841631552,
+      "command_id": 15,
+      "control_state": 7,
+      "reason": "REFERENCE_SPEED"
+    },
+    {
+      "steady_s": 90934.861511242,
+      "command_id": 15,
+      "control_state": 8,
+      "reason": "REFERENCE_SPEED"
+    },
+    {
+      "steady_s": 90934.871585633,
+      "command_id": 15,
+      "control_state": 7,
+      "reason": "OPERATOR_GLOBAL_STOP"
+    },
+    {
+      "steady_s": 90934.891462243,
+      "command_id": 15,
+      "control_state": 8,
+      "reason": "OPERATOR_GLOBAL_STOP"
+    },
+    {
+      "steady_s": 90973.911605853,
+      "command_id": 15,
+      "control_state": 0,
+      "reason": "MANUAL_RESET_DISABLED_ONLY"
+    },
+    {
+      "steady_s": 90977.251613423,
+      "command_id": 16,
+      "control_state": 1,
+      "reason": "ARM_ACCEPTED_NOT_ENABLED"
+    },
+    {
+      "steady_s": 90977.34192719,
+      "command_id": 16,
+      "control_state": 2,
+      "reason": "ARM_ACCEPTED_NOT_ENABLED"
+    },
+    {
+      "steady_s": 90977.341965755,
+      "command_id": 16,
+      "control_state": 3,
+      "reason": "ARM_ACCEPTED_NOT_ENABLED"
+    },
+    {
+      "steady_s": 90977.461686692,
+      "command_id": 16,
+      "control_state": 4,
+      "reason": "ARM_ACCEPTED_NOT_ENABLED"
+    },
+    {
+      "steady_s": 90978.471649905,
+      "command_id": 16,
+      "control_state": 5,
+      "reason": "RAMP_COMPLETE_NOT_POSITION_ACCURACY_ACCEPTANCE"
+    },
+    {
+      "steady_s": 90980.011816185,
+      "command_id": 16,
+      "control_state": 6,
+      "reason": "RAMP_COMPLETE_NOT_POSITION_ACCURACY_ACCEPTANCE"
+    },
+    {
+      "steady_s": 90990.841646646,
+      "command_id": 16,
+      "control_state": 7,
+      "reason": "OPERATOR_GLOBAL_STOP"
+    },
+    {
+      "steady_s": 90990.861618227,
+      "command_id": 16,
+      "control_state": 8,
+      "reason": "OPERATOR_GLOBAL_STOP"
+    },
+    {
+      "steady_s": 91055.021590248,
+      "command_id": 16,
+      "control_state": 0,
+      "reason": "MANUAL_RESET_DISABLED_ONLY"
+    },
+    {
+      "steady_s": 91058.251523472,
+      "command_id": 17,
+      "control_state": 1,
+      "reason": "ARM_ACCEPTED_NOT_ENABLED"
+    },
+    {
+      "steady_s": 91058.351532467,
+      "command_id": 17,
+      "control_state": 2,
+      "reason": "ARM_ACCEPTED_NOT_ENABLED"
+    },
+    {
+      "steady_s": 91058.351555089,
+      "command_id": 17,
+      "control_state": 3,
+      "reason": "ARM_ACCEPTED_NOT_ENABLED"
+    },
+    {
+      "steady_s": 91058.471704379,
+      "command_id": 17,
+      "control_state": 4,
+      "reason": "ARM_ACCEPTED_NOT_ENABLED"
+    },
+    {
+      "steady_s": 91059.481486523,
+      "command_id": 17,
+      "control_state": 5,
+      "reason": "RAMP_COMPLETE_NOT_POSITION_ACCURACY_ACCEPTANCE"
+    },
+    {
+      "steady_s": 91061.011899247,
+      "command_id": 17,
+      "control_state": 6,
+      "reason": "RAMP_COMPLETE_NOT_POSITION_ACCURACY_ACCEPTANCE"
+    },
+    {
+      "steady_s": 91078.86169689,
+      "command_id": 17,
+      "control_state": 7,
+      "reason": "REFERENCE_SPEED"
+    },
+    {
+      "steady_s": 91078.881582871,
+      "command_id": 17,
+      "control_state": 8,
+      "reason": "REFERENCE_SPEED"
+    },
+    {
+      "steady_s": 91078.901551809,
+      "command_id": 17,
+      "control_state": 7,
+      "reason": "OPERATOR_GLOBAL_STOP"
+    },
+    {
+      "steady_s": 91078.921571044,
+      "command_id": 17,
+      "control_state": 8,
+      "reason": "OPERATOR_GLOBAL_STOP"
+    },
+    {
+      "steady_s": 91086.831573813,
+      "command_id": 17,
+      "control_state": 0,
+      "reason": "MANUAL_RESET_DISABLED_ONLY"
+    },
+    {
+      "steady_s": 91089.731522001,
+      "command_id": 18,
+      "control_state": 1,
+      "reason": "ARM_ACCEPTED_NOT_ENABLED"
+    },
+    {
+      "steady_s": 91089.811478634,
+      "command_id": 18,
+      "control_state": 2,
+      "reason": "ARM_ACCEPTED_NOT_ENABLED"
+    },
+    {
+      "steady_s": 91089.811514751,
+      "command_id": 18,
+      "control_state": 3,
+      "reason": "ARM_ACCEPTED_NOT_ENABLED"
+    },
+    {
+      "steady_s": 91089.951654953,
+      "command_id": 18,
+      "control_state": 4,
+      "reason": "ARM_ACCEPTED_NOT_ENABLED"
+    },
+    {
+      "steady_s": 91090.961759234,
+      "command_id": 18,
+      "control_state": 5,
+      "reason": "RAMP_COMPLETE_NOT_POSITION_ACCURACY_ACCEPTANCE"
+    },
+    {
+      "steady_s": 91092.501665556,
+      "command_id": 18,
+      "control_state": 6,
+      "reason": "RAMP_COMPLETE_NOT_POSITION_ACCURACY_ACCEPTANCE"
+    },
+    {
+      "steady_s": 91103.331542505,
+      "command_id": 18,
+      "control_state": 7,
+      "reason": "OPERATOR_GLOBAL_STOP"
+    },
+    {
+      "steady_s": 91103.35151282,
+      "command_id": 18,
+      "control_state": 8,
+      "reason": "OPERATOR_GLOBAL_STOP"
+    },
+    {
+      "steady_s": 91194.971577402,
+      "command_id": 18,
+      "control_state": 0,
+      "reason": "MANUAL_RESET_DISABLED_ONLY"
+    },
+    {
+      "steady_s": 91198.66152007,
+      "command_id": 19,
+      "control_state": 1,
+      "reason": "ARM_ACCEPTED_NOT_ENABLED"
+    },
+    {
+      "steady_s": 91198.741578073,
+      "command_id": 19,
+      "control_state": 2,
+      "reason": "ARM_ACCEPTED_NOT_ENABLED"
+    },
+    {
+      "steady_s": 91198.74160864,
+      "command_id": 19,
+      "control_state": 3,
+      "reason": "ARM_ACCEPTED_NOT_ENABLED"
+    },
+    {
+      "steady_s": 91198.881527038,
+      "command_id": 19,
+      "control_state": 4,
+      "reason": "ARM_ACCEPTED_NOT_ENABLED"
+    },
+    {
+      "steady_s": 91199.891521575,
+      "command_id": 19,
+      "control_state": 5,
+      "reason": "RAMP_COMPLETE_NOT_POSITION_ACCURACY_ACCEPTANCE"
+    },
+    {
+      "steady_s": 91201.411721251,
+      "command_id": 19,
+      "control_state": 6,
+      "reason": "RAMP_COMPLETE_NOT_POSITION_ACCURACY_ACCEPTANCE"
+    },
+    {
+      "steady_s": 91235.751765772,
+      "command_id": 19,
+      "control_state": 7,
+      "reason": "REFERENCE_SPEED"
+    },
+    {
+      "steady_s": 91235.771619271,
+      "command_id": 19,
+      "control_state": 8,
+      "reason": "REFERENCE_SPEED"
+    },
+    {
+      "steady_s": 91235.791625848,
+      "command_id": 19,
+      "control_state": 7,
+      "reason": "OPERATOR_GLOBAL_STOP"
+    },
+    {
+      "steady_s": 91235.821542863,
+      "command_id": 19,
+      "control_state": 8,
+      "reason": "OPERATOR_GLOBAL_STOP"
+    },
+    {
+      "steady_s": 91248.461620181,
+      "command_id": 19,
+      "control_state": 0,
+      "reason": "MANUAL_RESET_DISABLED_ONLY"
+    },
+    {
+      "steady_s": 91250.951530814,
+      "command_id": 20,
+      "control_state": 1,
+      "reason": "ARM_ACCEPTED_NOT_ENABLED"
+    },
+    {
+      "steady_s": 91251.031556123,
+      "command_id": 20,
+      "control_state": 2,
+      "reason": "ARM_ACCEPTED_NOT_ENABLED"
+    },
+    {
+      "steady_s": 91251.031588494,
+      "command_id": 20,
+      "control_state": 3,
+      "reason": "ARM_ACCEPTED_NOT_ENABLED"
+    },
+    {
+      "steady_s": 91251.17149683,
+      "command_id": 20,
+      "control_state": 4,
+      "reason": "ARM_ACCEPTED_NOT_ENABLED"
+    },
+    {
+      "steady_s": 91252.171601256,
+      "command_id": 20,
+      "control_state": 5,
+      "reason": "RAMP_COMPLETE_NOT_POSITION_ACCURACY_ACCEPTANCE"
+    },
+    {
+      "steady_s": 91253.701796995,
+      "command_id": 20,
+      "control_state": 6,
+      "reason": "RAMP_COMPLETE_NOT_POSITION_ACCURACY_ACCEPTANCE"
+    },
+    {
+      "steady_s": 91254.06023469,
+      "command_id": 20,
+      "control_state": 7,
+      "reason": "SERIAL_OR_AUDIT_WRITE_FAILURE"
+    },
+    {
+      "steady_s": 91254.091657747,
+      "command_id": 20,
+      "control_state": 8,
+      "reason": "SERIAL_OR_AUDIT_WRITE_FAILURE"
+    },
+    {
+      "steady_s": 91254.421525325,
+      "command_id": 20,
+      "control_state": 7,
+      "reason": "OPERATOR_GLOBAL_STOP"
+    },
+    {
+      "steady_s": 91254.44149484,
+      "command_id": 20,
+      "control_state": 8,
+      "reason": "OPERATOR_GLOBAL_STOP"
+    }
+  ]
+}

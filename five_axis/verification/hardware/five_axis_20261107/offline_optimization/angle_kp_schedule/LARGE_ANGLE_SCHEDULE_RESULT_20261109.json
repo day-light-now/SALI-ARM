@@ -1,0 +1,38 @@
+{
+  "schema": "slaihand_large_angle_schedule_result/2",
+  "observed_at": "2026-11-09T10:26:49+08:00",
+  "plan": "FORWARD_J1_40_STAGED.json (forward-only; no negative/backward segment)",
+  "evidence_correction": "Recomputed with client target list and whole-window static checks; supersedes the earlier 1.8506/2.1916/2.5119 values for +10/+20/+30.",
+  "window_rule": "0.3 s ending at client target; whole-window reference span <= 0.0015 rad; feedback speed <= 0.05 rad/s",
+  "policy": {
+    "kp_max": 280,
+    "schedule": "J1 0:160,20:220,40:280; J2 0:160,20:240,40:280; J4 0:160,20:200,40:220; J3/J5 160"
+  },
+  "result": {
+    "segments": [
+      {"relative_deg": [0.114, 0.022, 0.022, 0.0, 0.0], "ref_span_deg": 0.0479,
+       "j1_mean_deg": -0.0974, "j1_max_abs_deg": 0.1358, "j1_kp": 169.48, "j1_pd_request_nm": 0.288},
+      {"relative_deg": [10.114, 0.022, 0.022, 0.0, 0.0], "ref_span_deg": 0.0479,
+       "j1_mean_deg": -1.6082, "j1_max_abs_deg": 1.6334, "j1_kp": 194.95, "j1_pd_request_nm": 5.472},
+      {"relative_deg": [20.114, 0.022, 0.022, 0.0, 0.0], "ref_span_deg": 0.0492,
+       "j1_mean_deg": -2.0461, "j1_max_abs_deg": 2.0671, "j1_kp": 223.63, "j1_pd_request_nm": 7.986},
+      {"relative_deg": [30.114, 0.022, 0.022, 0.0, 0.0], "ref_span_deg": 0.0479,
+       "j1_mean_deg": -2.1934, "j1_max_abs_deg": 2.2245, "j1_kp": 253.19, "j1_pd_request_nm": 9.693},
+      {"relative_deg": [40.0, 0.022, 0.022, 0.0, 0.0], "ref_span_deg": 0.0,
+       "j1_mean_deg": -2.4279, "j1_max_abs_deg": 2.4279, "j1_kp": 280.0, "j1_pd_request_nm": 11.865}
+    ],
+    "client_reason": "Aborted due to goal_time_tolerance exceeding by 2.009 s",
+    "precision_criterion": "0.5 degree not met"
+  },
+  "outcome": "large_angle_data_complete_precision_fail",
+  "retry": false,
+  "driver_stopped": true,
+  "notes": [
+    "Forward-only motion; no backward segment.",
+    "All five target windows are sampled and the whole-window reference spans are reported.",
+    "The +40 window is fixed and matches the client max 2.4279 degrees.",
+    "PD request is an estimate using the scheduled effective Kp; it is not measured current/torque.",
+    "No clean A/B against constant high gain because start/other joint poses differ.",
+    "No current, thermal, dynamic-stability, or 1.5x margin conclusion."
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "passed": true,
+  "url": "http://127.0.0.1:18889/?token=<redacted>",
+  "raw_shown": true,
+  "zero": "captured",
+  "direction": "+1",
+  "limits": "recorded",
+  "saved": true,
+  "physical_port_opened": false,
+  "clicked": [
+    "btn-j5-zero",
+    "btn-j5-direction",
+    "btn-j5-min",
+    "btn-j5-max",
+    "btn-j5-save"
+  ]
+}

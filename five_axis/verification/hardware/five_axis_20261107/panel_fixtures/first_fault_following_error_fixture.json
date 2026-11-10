@@ -1,0 +1,86 @@
+{
+  "_note": "FIXTURE derived from the 2026-11-08 audit reconstruction (CODEX_WIDE_FOLLOWING_ANALYSIS_20261108.md), re-shaped into the provisional C++ runtime-identity first_fault contract. Not a live capture and not a new hardware result. J2 driver FOLLOWING_ERROR at cycle 253166 is the first cause; request_estimate_nm is the last completed control cycle and must display as last-active/stale.",
+  "schema": "slaihand_runtime_identity/1",
+  "boot_id": "fixture-boot-first-fault",
+  "started_at": 1000.0,
+  "mapping_sha256": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+  "model_sha256": "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb",
+  "policy_sha256": "cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc",
+  "mass_profile_sha256": "dddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd",
+  "policy_profile": "fixture_five_axis_native_mit",
+  "load_id": "fixture_load_contract_only",
+  "kp": 160.0,
+  "kd": 5.0,
+  "following_error_deg": 4.0,
+  "active_axes": 5,
+  "request_estimate_state": "LAST_ACTIVE_STALE",
+  "first_fault": {
+    "schema": "slaihand_first_fault/1",
+    "layer": "DRIVER",
+    "axis": 2,
+    "joint": "slaihand_joint2",
+    "code": "FOLLOWING_ERROR",
+    "detected_at": 15324.007779907,
+    "error_rad": 0.0698951040050188,
+    "limit_rad": 0.06981317007977318,
+    "error_deg": 4.0047,
+    "limit_deg": 4.0,
+    "target_rad": 0.7016194940321686,
+    "actual_rad": 0.631724688339157,
+    "target_deg": 40.1998,
+    "actual_deg": 36.1951,
+    "feedback_age_s": 0.012,
+    "feedback_valid": true,
+    "encoded_kp": [
+      159.9512,
+      159.9512,
+      159.9512,
+      159.9512,
+      159.9512
+    ],
+    "encoded_kd": [
+      5.0,
+      5.0,
+      5.0,
+      5.0,
+      5.0
+    ],
+    "encoded_tau_ff_nm": [
+      -0.04884,
+      -0.04884,
+      -0.01319,
+      -0.01319,
+      -0.00684
+    ],
+    "request_estimate_nm": [
+      6.724,
+      11.117,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "request_estimate_at": 15324.0075,
+    "request_estimate_state": "LAST_ACTIVE",
+    "command_id": 14,
+    "cycle_id": 253166,
+    "boot_id": "fixture-boot-first-fault",
+    "last_complete_write_at": 15324.0075,
+    "frozen": true
+  },
+  "kp_axis": [
+    160.0,
+    160.0,
+    160.0,
+    160.0,
+    160.0
+  ],
+  "kd_axis": [
+    5.0,
+    5.0,
+    5.0,
+    5.0,
+    5.0
+  ],
+  "kp_axis_source": "scalar_legacy",
+  "kd_axis_source": "scalar_legacy"
+}

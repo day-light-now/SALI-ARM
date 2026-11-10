@@ -1,0 +1,37 @@
+# B1: finite supported four-axis native-MIT commissioning, not hardware acceptance.
+# Gains and observed-state estimate guards reuse existing native bench settings.
+profile: supported_four_axis_native_mit_b1
+hardware_validated: false
+kp: 160.0
+kd: 5.0
+# User explicitly removed all four host torque thresholds, 2026-11-05.
+# 0 = disabled threshold, NOT a zero torque command or physical current clamp.
+# Estimates/feedback remain recorded; protocol ranges and other guards remain.
+estimate_guard_nm: [0.0, 0.0, 0.0, 0.0]
+# User confirmed 2026-11-04: use full canonical URDF position limits.
+# No inward margin and no anchor-relative position window.
+# User authorised 2026-11-05: peak reference speed 1 rad/s.
+reference_speed_rad_s: 1.0
+feedback_speed_rad_s: 1.0
+following_error_deg: 4.0
+temperature_c: 50.0
+gain_ramp_s: 1.0
+enable_stagger_s: 0.03
+feedback_max_age_s: 0.06
+cycle_max_gap_s: 0.05
+# User requested removal of the short commissioning budget, 2026-11-04.
+# Keep a finite three-minute session watchdog, independent of feedback/lease guards.
+session_timeout_s: 180.0
+# Gravity feedforward (2026-11-05). alpha=0 keeps the previous command path
+# bit-identical; the model text and coefficients are explicit, logged values.
+gravity_ff_alpha: 0.0
+gravity_ff_ramp_s: 1.0
+# Base-frame gravity vector (documented default: shoulder installation, +Y down;
+# still pending field confirmation) and the fixed J3 placement offset used by the
+# existing MuJoCo model. Applied once, only by the model, never by feedback mapping.
+gravity_base_x: 0.0
+gravity_base_y: 9.80665
+gravity_base_z: 0.0
+gravity_j3_offset_rad: 3.141592653589793
+# Declared payload identity (user-provided declaration, not a measurement).
+load_id: no_end_load

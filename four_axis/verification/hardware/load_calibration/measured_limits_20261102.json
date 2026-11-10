@@ -1,0 +1,28 @@
+{
+  "schema": 1,
+  "source": "user current-console measured mechanical endpoints confirmed 2026-11-02 in this chat",
+  "mapping_sha256": "300d81eed77ded2c3235be3c2a69d5354a9df5cd74be85884dad05760a46356d",
+  "joints": {
+    "1": {
+      "mechanical_limits_deg": [
+        -80.0,
+        200.0
+      ],
+      "margin_deg": 10.0,
+      "scan_limits_deg": [
+        -70.0,
+        70.0
+      ],
+      "physical_limits_confirmed": true,
+      "measured_limit_override": false,
+      "hardware_sign": 1,
+      "zero_offset_rad": 1.4574273289082171,
+      "target_endpoint_limits_deg": [
+        -69.5,
+        69.5
+      ],
+      "scan_range_source": "user narrowed acquisition to software -70 to +70deg 2026-11-02",
+      "model_limits_source": "src/slaihand_description/urdf/slaihand_four_axis.urdf"
+    }
+  }
+}

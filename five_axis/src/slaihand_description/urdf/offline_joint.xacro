@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro">
+  <!-- Fake interfaces only. Position limits are inherited from URDF joints. -->
+  <xacro:macro name="offline_joint" params="name profile virtual:=false">
+    <joint name="${name}">
+      <param name="codec_profile">${profile}</param>
+      <param name="sim_max_velocity">0.5</param>
+      <param name="virtual_placeholder">${str(virtual).lower()}</param>
+      <command_interface name="position"/>
+      <state_interface name="position"><param name="initial_value">0.0</param></state_interface>
+      <state_interface name="velocity"/>
+    </joint>
+  </xacro:macro>
+</robot>

@@ -1,0 +1,494 @@
+{
+  "schema": "slaihand_offline_control_study/2",
+  "data_kind": "UNSIGNED_MAGNITUDE_ONLY_PATH_LOCAL",
+  "signed_static_data_available": false,
+  "signed_time_series_available": false,
+  "validity_domain": "one synchronized path q_start + s*[1,1,1,1,1], positive 5..40 deg",
+  "deployable_gravity_feedforward": false,
+  "note": "max_error_deg is max(abs(actual-target)) over the last ~0.3 s; direction is unavailable. This is not a signed gravity model, not a dynamic stability result, and not hardware evidence.",
+  "baseline_kp": 160.0,
+  "baseline_kd": 5.0,
+  "protocol_kp_max_not_capability": 500.0,
+  "axes": {
+    "J1": {
+      "max_positive_angle_deg": 40.0,
+      "unsigned_path_magnitude_fit_degree2": [
+        -0.215291,
+        0.56519,
+        -0.007783
+      ],
+      "unsigned_path_loo_max_torque_error_nm": 0.2898,
+      "schedule_kp_at_max_deg": 500.0,
+      "rows": [
+        {
+          "angle_deg": 5.0,
+          "pose_deg": [
+            5.0,
+            5.0,
+            5.0,
+            5.0,
+            5.0
+          ],
+          "measured_baseline_error_magnitude_deg": 0.869,
+          "unsigned_implied_torque_magnitude_nm": 2.427,
+          "constant_high_gain_predicted_magnitude_deg": 0.497,
+          "angle_schedule_predicted_magnitude_deg": 0.439
+        },
+        {
+          "angle_deg": 10.0,
+          "pose_deg": [
+            10.0,
+            10.0,
+            10.0,
+            10.0,
+            10.0
+          ],
+          "measured_baseline_error_magnitude_deg": 1.673,
+          "unsigned_implied_torque_magnitude_nm": 4.671,
+          "constant_high_gain_predicted_magnitude_deg": 0.956,
+          "angle_schedule_predicted_magnitude_deg": 0.757
+        },
+        {
+          "angle_deg": 20.0,
+          "pose_deg": [
+            20.0,
+            20.0,
+            20.0,
+            20.0,
+            20.0
+          ],
+          "measured_baseline_error_magnitude_deg": 2.82,
+          "unsigned_implied_torque_magnitude_nm": 7.876,
+          "constant_high_gain_predicted_magnitude_deg": 1.612,
+          "angle_schedule_predicted_magnitude_deg": 1.058
+        },
+        {
+          "angle_deg": 30.0,
+          "pose_deg": [
+            30.0,
+            30.0,
+            30.0,
+            30.0,
+            30.0
+          ],
+          "measured_baseline_error_magnitude_deg": 3.553,
+          "unsigned_implied_torque_magnitude_nm": 9.922,
+          "constant_high_gain_predicted_magnitude_deg": 2.03,
+          "angle_schedule_predicted_magnitude_deg": 1.137
+        },
+        {
+          "angle_deg": 35.0,
+          "pose_deg": [
+            35.0,
+            35.0,
+            35.0,
+            35.0,
+            35.0
+          ],
+          "measured_baseline_error_magnitude_deg": 3.548,
+          "unsigned_implied_torque_magnitude_nm": 9.908,
+          "constant_high_gain_predicted_magnitude_deg": 2.027,
+          "angle_schedule_predicted_magnitude_deg": 1.135
+        },
+        {
+          "angle_deg": 40.0,
+          "pose_deg": [
+            40.0,
+            40.0,
+            40.0,
+            40.0,
+            40.0
+          ],
+          "measured_baseline_error_magnitude_deg": 3.564,
+          "unsigned_implied_torque_magnitude_nm": 9.954,
+          "constant_high_gain_predicted_magnitude_deg": 2.037,
+          "angle_schedule_predicted_magnitude_deg": 1.141
+        }
+      ]
+    },
+    "J2": {
+      "max_positive_angle_deg": 40.0,
+      "unsigned_path_magnitude_fit_degree2": [
+        1.804297,
+        0.220473,
+        1.7e-05
+      ],
+      "unsigned_path_loo_max_torque_error_nm": 0.5034,
+      "schedule_kp_at_max_deg": 500.0,
+      "rows": [
+        {
+          "angle_deg": 5.0,
+          "pose_deg": [
+            5.0,
+            5.0,
+            5.0,
+            5.0,
+            5.0
+          ],
+          "measured_baseline_error_magnitude_deg": 1.088,
+          "unsigned_implied_torque_magnitude_nm": 3.037,
+          "constant_high_gain_predicted_magnitude_deg": 0.725,
+          "angle_schedule_predicted_magnitude_deg": 0.55
+        },
+        {
+          "angle_deg": 10.0,
+          "pose_deg": [
+            10.0,
+            10.0,
+            10.0,
+            10.0,
+            10.0
+          ],
+          "measured_baseline_error_magnitude_deg": 1.367,
+          "unsigned_implied_torque_magnitude_nm": 3.816,
+          "constant_high_gain_predicted_magnitude_deg": 0.911,
+          "angle_schedule_predicted_magnitude_deg": 0.619
+        },
+        {
+          "angle_deg": 20.0,
+          "pose_deg": [
+            20.0,
+            20.0,
+            20.0,
+            20.0,
+            20.0
+          ],
+          "measured_baseline_error_magnitude_deg": 2.23,
+          "unsigned_implied_torque_magnitude_nm": 6.228,
+          "constant_high_gain_predicted_magnitude_deg": 1.487,
+          "angle_schedule_predicted_magnitude_deg": 0.836
+        },
+        {
+          "angle_deg": 30.0,
+          "pose_deg": [
+            30.0,
+            30.0,
+            30.0,
+            30.0,
+            30.0
+          ],
+          "measured_baseline_error_magnitude_deg": 3.072,
+          "unsigned_implied_torque_magnitude_nm": 8.579,
+          "constant_high_gain_predicted_magnitude_deg": 2.048,
+          "angle_schedule_predicted_magnitude_deg": 0.983
+        },
+        {
+          "angle_deg": 35.0,
+          "pose_deg": [
+            35.0,
+            35.0,
+            35.0,
+            35.0,
+            35.0
+          ],
+          "measured_baseline_error_magnitude_deg": 3.395,
+          "unsigned_implied_torque_magnitude_nm": 9.48,
+          "constant_high_gain_predicted_magnitude_deg": 2.263,
+          "angle_schedule_predicted_magnitude_deg": 1.086
+        },
+        {
+          "angle_deg": 40.0,
+          "pose_deg": [
+            40.0,
+            40.0,
+            40.0,
+            40.0,
+            40.0
+          ],
+          "measured_baseline_error_magnitude_deg": 3.805,
+          "unsigned_implied_torque_magnitude_nm": 10.625,
+          "constant_high_gain_predicted_magnitude_deg": 2.537,
+          "angle_schedule_predicted_magnitude_deg": 1.218
+        }
+      ]
+    },
+    "J3": {
+      "max_positive_angle_deg": 40.0,
+      "unsigned_path_magnitude_fit_degree2": [
+        0.556736,
+        0.029891,
+        -0.001031
+      ],
+      "unsigned_path_loo_max_torque_error_nm": 0.637,
+      "schedule_kp_at_max_deg": 160.0,
+      "rows": [
+        {
+          "angle_deg": 5.0,
+          "pose_deg": [
+            5.0,
+            5.0,
+            5.0,
+            5.0,
+            5.0
+          ],
+          "measured_baseline_error_magnitude_deg": 0.235,
+          "unsigned_implied_torque_magnitude_nm": 0.657,
+          "constant_high_gain_predicted_magnitude_deg": 0.235,
+          "angle_schedule_predicted_magnitude_deg": 0.235
+        },
+        {
+          "angle_deg": 10.0,
+          "pose_deg": [
+            10.0,
+            10.0,
+            10.0,
+            10.0,
+            10.0
+          ],
+          "measured_baseline_error_magnitude_deg": 0.317,
+          "unsigned_implied_torque_magnitude_nm": 0.886,
+          "constant_high_gain_predicted_magnitude_deg": 0.317,
+          "angle_schedule_predicted_magnitude_deg": 0.317
+        },
+        {
+          "angle_deg": 20.0,
+          "pose_deg": [
+            20.0,
+            20.0,
+            20.0,
+            20.0,
+            20.0
+          ],
+          "measured_baseline_error_magnitude_deg": 0.154,
+          "unsigned_implied_torque_magnitude_nm": 0.43,
+          "constant_high_gain_predicted_magnitude_deg": 0.154,
+          "angle_schedule_predicted_magnitude_deg": 0.154
+        },
+        {
+          "angle_deg": 30.0,
+          "pose_deg": [
+            30.0,
+            30.0,
+            30.0,
+            30.0,
+            30.0
+          ],
+          "measured_baseline_error_magnitude_deg": 0.318,
+          "unsigned_implied_torque_magnitude_nm": 0.889,
+          "constant_high_gain_predicted_magnitude_deg": 0.318,
+          "angle_schedule_predicted_magnitude_deg": 0.318
+        },
+        {
+          "angle_deg": 35.0,
+          "pose_deg": [
+            35.0,
+            35.0,
+            35.0,
+            35.0,
+            35.0
+          ],
+          "measured_baseline_error_magnitude_deg": 0.08,
+          "unsigned_implied_torque_magnitude_nm": 0.224,
+          "constant_high_gain_predicted_magnitude_deg": 0.08,
+          "angle_schedule_predicted_magnitude_deg": 0.08
+        },
+        {
+          "angle_deg": 40.0,
+          "pose_deg": [
+            40.0,
+            40.0,
+            40.0,
+            40.0,
+            40.0
+          ],
+          "measured_baseline_error_magnitude_deg": 0.02,
+          "unsigned_implied_torque_magnitude_nm": 0.056,
+          "constant_high_gain_predicted_magnitude_deg": 0.02,
+          "angle_schedule_predicted_magnitude_deg": 0.02
+        }
+      ]
+    },
+    "J4": {
+      "max_positive_angle_deg": 40.0,
+      "unsigned_path_magnitude_fit_degree2": [
+        0.259479,
+        0.272732,
+        -0.002051
+      ],
+      "unsigned_path_loo_max_torque_error_nm": 0.4707,
+      "schedule_kp_at_max_deg": 500.0,
+      "rows": [
+        {
+          "angle_deg": 5.0,
+          "pose_deg": [
+            5.0,
+            5.0,
+            5.0,
+            5.0,
+            5.0
+          ],
+          "measured_baseline_error_magnitude_deg": 0.519,
+          "unsigned_implied_torque_magnitude_nm": 1.45,
+          "constant_high_gain_predicted_magnitude_deg": 0.415,
+          "angle_schedule_predicted_magnitude_deg": 0.262
+        },
+        {
+          "angle_deg": 10.0,
+          "pose_deg": [
+            10.0,
+            10.0,
+            10.0,
+            10.0,
+            10.0
+          ],
+          "measured_baseline_error_magnitude_deg": 1.061,
+          "unsigned_implied_torque_magnitude_nm": 2.962,
+          "constant_high_gain_predicted_magnitude_deg": 0.848,
+          "angle_schedule_predicted_magnitude_deg": 0.48
+        },
+        {
+          "angle_deg": 20.0,
+          "pose_deg": [
+            20.0,
+            20.0,
+            20.0,
+            20.0,
+            20.0
+          ],
+          "measured_baseline_error_magnitude_deg": 1.749,
+          "unsigned_implied_torque_magnitude_nm": 4.885,
+          "constant_high_gain_predicted_magnitude_deg": 1.4,
+          "angle_schedule_predicted_magnitude_deg": 0.656
+        },
+        {
+          "angle_deg": 30.0,
+          "pose_deg": [
+            30.0,
+            30.0,
+            30.0,
+            30.0,
+            30.0
+          ],
+          "measured_baseline_error_magnitude_deg": 2.329,
+          "unsigned_implied_torque_magnitude_nm": 6.504,
+          "constant_high_gain_predicted_magnitude_deg": 1.863,
+          "angle_schedule_predicted_magnitude_deg": 0.745
+        },
+        {
+          "angle_deg": 35.0,
+          "pose_deg": [
+            35.0,
+            35.0,
+            35.0,
+            35.0,
+            35.0
+          ],
+          "measured_baseline_error_magnitude_deg": 2.608,
+          "unsigned_implied_torque_magnitude_nm": 7.283,
+          "constant_high_gain_predicted_magnitude_deg": 2.086,
+          "angle_schedule_predicted_magnitude_deg": 0.835
+        },
+        {
+          "angle_deg": 40.0,
+          "pose_deg": [
+            40.0,
+            40.0,
+            40.0,
+            40.0,
+            40.0
+          ],
+          "measured_baseline_error_magnitude_deg": 2.843,
+          "unsigned_implied_torque_magnitude_nm": 7.94,
+          "constant_high_gain_predicted_magnitude_deg": 2.275,
+          "angle_schedule_predicted_magnitude_deg": 0.91
+        }
+      ]
+    },
+    "J5": {
+      "max_positive_angle_deg": 40.0,
+      "unsigned_path_magnitude_fit_degree2": [
+        1.231668,
+        -0.075941,
+        0.001327
+      ],
+      "unsigned_path_loo_max_torque_error_nm": 0.5334,
+      "schedule_kp_at_max_deg": 160.0,
+      "rows": [
+        {
+          "angle_deg": 5.0,
+          "pose_deg": [
+            5.0,
+            5.0,
+            5.0,
+            5.0,
+            5.0
+          ],
+          "measured_baseline_error_magnitude_deg": 0.366,
+          "unsigned_implied_torque_magnitude_nm": 1.023,
+          "constant_high_gain_predicted_magnitude_deg": 0.366,
+          "angle_schedule_predicted_magnitude_deg": 0.366
+        },
+        {
+          "angle_deg": 10.0,
+          "pose_deg": [
+            10.0,
+            10.0,
+            10.0,
+            10.0,
+            10.0
+          ],
+          "measured_baseline_error_magnitude_deg": 0.143,
+          "unsigned_implied_torque_magnitude_nm": 0.398,
+          "constant_high_gain_predicted_magnitude_deg": 0.143,
+          "angle_schedule_predicted_magnitude_deg": 0.143
+        },
+        {
+          "angle_deg": 20.0,
+          "pose_deg": [
+            20.0,
+            20.0,
+            20.0,
+            20.0,
+            20.0
+          ],
+          "measured_baseline_error_magnitude_deg": 0.088,
+          "unsigned_implied_torque_magnitude_nm": 0.247,
+          "constant_high_gain_predicted_magnitude_deg": 0.088,
+          "angle_schedule_predicted_magnitude_deg": 0.088
+        },
+        {
+          "angle_deg": 30.0,
+          "pose_deg": [
+            30.0,
+            30.0,
+            30.0,
+            30.0,
+            30.0
+          ],
+          "measured_baseline_error_magnitude_deg": 0.122,
+          "unsigned_implied_torque_magnitude_nm": 0.339,
+          "constant_high_gain_predicted_magnitude_deg": 0.122,
+          "angle_schedule_predicted_magnitude_deg": 0.122
+        },
+        {
+          "angle_deg": 35.0,
+          "pose_deg": [
+            35.0,
+            35.0,
+            35.0,
+            35.0,
+            35.0
+          ],
+          "measured_baseline_error_magnitude_deg": 0.029,
+          "unsigned_implied_torque_magnitude_nm": 0.081,
+          "constant_high_gain_predicted_magnitude_deg": 0.029,
+          "angle_schedule_predicted_magnitude_deg": 0.029
+        },
+        {
+          "angle_deg": 40.0,
+          "pose_deg": [
+            40.0,
+            40.0,
+            40.0,
+            40.0,
+            40.0
+          ],
+          "measured_baseline_error_magnitude_deg": 0.111,
+          "unsigned_implied_torque_magnitude_nm": 0.31,
+          "constant_high_gain_predicted_magnitude_deg": 0.111,
+          "angle_schedule_predicted_magnitude_deg": 0.111
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,264 @@
+{
+  "schema": "slaihand_offline_gravity_trial_trajectory_library/1",
+  "generated_for_date": "2026-11-09",
+  "source_head": "99b28e9",
+  "coordinates": "absolute_deg",
+  "identity": {
+    "urdf_sha256": "b58042be2191e8aa2223ff867d101e1d072f579936759f2d09c7f075ce16721f",
+    "j5_historical_calibration_artifact_sha256": "21795f825a4054e399442e65f9efabbcc74f60f387f5604577e4cd52a072bb0c"
+  },
+  "all_final_targets_absolute_zero": true,
+  "zero_final_dwell_s": 8.0,
+  "entry_feedback_max_abs_deg": 2.0,
+  "j5_excitation": false,
+  "minimum_operational_checks": [
+    "fresh five-axis feedback and active identity",
+    "actual entry within +/-2 deg of absolute zero; otherwise replan",
+    "current artifact/evidence and TIMEOUT readback, not archived admission",
+    "local clearance, operating limits and complete path preview",
+    "FF model must be separately validated before enabling compensation"
+  ],
+  "gravity_candidate_deployable": false,
+  "ff_enable_or_deployment_performed": false,
+  "collision_checked": false,
+  "hardware_executed": false,
+  "on_fault": "existing STOP/UNKNOWN takes priority; no forced zero-return after fault",
+  "plans": [
+    {
+      "name": "GC01_J1_J2_PAIRED_ZERO",
+      "label": "J1/J2 10°正反接近配对，20°转向，绝对零点结束",
+      "role": "paired_diagnostic",
+      "file": "GC01_J1_J2_PAIRED_ZERO.json",
+      "sha256": "539d9dfafa431d7ef36341e03e0f00d7027f409cc3a3b8b87fec1465fc2ac1d1",
+      "waypoint_count": 9,
+      "total_s": 128.0,
+      "peak_reference_rad_s": 0.0409061543436171,
+      "session_reserve_s": 52.0,
+      "paired_waypoint_indices_zero_based": [
+        [
+          1,
+          3
+        ],
+        [
+          5,
+          7
+        ]
+      ],
+      "final_absolute_deg": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "final_dwell_s": 8.0,
+      "compiled_final_absolute_rad": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "validated_start_examples_deg": [
+        [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          1,
+          -1,
+          0.5,
+          1,
+          1
+        ],
+        [
+          -2,
+          2,
+          -2,
+          2,
+          -2
+        ]
+      ]
+    },
+    {
+      "name": "GC02_J3_J4_PAIRED_ZERO",
+      "label": "J3/J4 10°正反接近配对，20°转向，绝对零点结束",
+      "role": "paired_diagnostic",
+      "file": "GC02_J3_J4_PAIRED_ZERO.json",
+      "sha256": "e2a95af979b353039ac6c7c719c802d272d2e3e67f4f7f62f392889186b8b2eb",
+      "waypoint_count": 9,
+      "total_s": 128.0,
+      "peak_reference_rad_s": 0.0409061543436171,
+      "session_reserve_s": 52.0,
+      "paired_waypoint_indices_zero_based": [
+        [
+          1,
+          3
+        ],
+        [
+          5,
+          7
+        ]
+      ],
+      "final_absolute_deg": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "final_dwell_s": 8.0,
+      "compiled_final_absolute_rad": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "validated_start_examples_deg": [
+        [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          1,
+          -1,
+          0.5,
+          1,
+          1
+        ],
+        [
+          -2,
+          2,
+          -2,
+          2,
+          -2
+        ]
+      ]
+    },
+    {
+      "name": "GC03_MIXED_HOLDOUT_ZERO",
+      "label": "混合姿态独立验证，10–30°，绝对零点结束",
+      "role": "independent_holdout_do_not_train_on",
+      "file": "GC03_MIXED_HOLDOUT_ZERO.json",
+      "sha256": "d3afa86f282c2bd51ecde1b7a88449281ff0e92724dbad8e8680b65052577024",
+      "waypoint_count": 10,
+      "total_s": 142.0,
+      "peak_reference_rad_s": 0.12271846303085128,
+      "session_reserve_s": 38.0,
+      "paired_waypoint_indices_zero_based": [
+        [
+          1,
+          3
+        ]
+      ],
+      "final_absolute_deg": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "final_dwell_s": 8.0,
+      "compiled_final_absolute_rad": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "validated_start_examples_deg": [
+        [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          1,
+          -1,
+          0.5,
+          1,
+          1
+        ],
+        [
+          -2,
+          2,
+          -2,
+          2,
+          -2
+        ]
+      ]
+    },
+    {
+      "name": "GC04_STAGED_40_ZERO",
+      "label": "分阶段10/20/30/40°及回程，J1不超过20°，绝对零点结束",
+      "role": "later_stage_large_angle_validation",
+      "file": "GC04_STAGED_40_ZERO.json",
+      "sha256": "cf5076b6728217e5c4ef185edada15e29fc1fef29f82143c6dd8184a254333c6",
+      "waypoint_count": 9,
+      "total_s": 128.0,
+      "peak_reference_rad_s": 0.04090615434361711,
+      "session_reserve_s": 52.0,
+      "paired_waypoint_indices_zero_based": [
+        [
+          1,
+          7
+        ],
+        [
+          2,
+          6
+        ],
+        [
+          3,
+          5
+        ]
+      ],
+      "final_absolute_deg": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "final_dwell_s": 8.0,
+      "compiled_final_absolute_rad": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "validated_start_examples_deg": [
+        [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          1,
+          -1,
+          0.5,
+          1,
+          1
+        ],
+        [
+          -2,
+          2,
+          -2,
+          2,
+          -2
+        ]
+      ]
+    }
+  ]
+}

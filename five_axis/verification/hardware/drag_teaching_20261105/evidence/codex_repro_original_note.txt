@@ -1,0 +1,6 @@
+# 原始 Codex 反例脚本运行结果
+
+命令：python3 tmp/drag_teaching_codex_review/codex_drag_teaching_repro.py
+结果：脚本在 execute_teaching 处抛出
+PanelError(409, "IDENTITY_CHANGED", "预览后驱动运行身份已变化（配置/连接指纹不一致），请重新预览")
+即运行身份变化后请求未到达启动入口；_launch 未被调用。

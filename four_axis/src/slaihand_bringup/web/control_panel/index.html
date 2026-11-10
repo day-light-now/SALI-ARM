@@ -1,0 +1,299 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="panel-token" content="__PANEL_TOKEN__">
+<title>四轴 ROS 统一控制台</title>
+<link rel="stylesheet" href="/panel.css">
+</head>
+<body>
+<header class="top">
+  <div class="brand">
+    <h1>四轴 ROS 统一控制台</h1>
+    <p class="sub">SLAIHand · 只在本机 127.0.0.1 监听 · 不是物理急停</p>
+  </div>
+  <div class="top-right">
+    <div class="chips">
+      <span id="chip-ros" class="chip chip-wait">反馈：等待</span>
+      <span id="chip-stage" class="chip chip-wait">阶段：—</span>
+      <span id="chip-lease" class="chip chip-wait">心跳：—</span>
+    </div>
+    <button id="btn-stop" class="stop" type="button">全轴停止</button>
+  </div>
+</header>
+
+<div id="banner" class="banner hidden"></div>
+<p id="message" class="message">正在连接面板服务…</p>
+
+<main>
+  <section class="card" id="section-status">
+    <div class="card-head">
+      <h2>四轴状态</h2>
+      <span class="note">实际角度只来自反馈；无反馈显示“—”或“失联”，不以 0 填充。</span>
+    </div>
+    <div class="table-wrap">
+      <table class="grid">
+        <thead>
+          <tr><th>轴</th><th>实际 °</th><th>目标 °</th><th>误差 °</th><th>速度 °/s</th><th>反馈估计力矩 N·m</th>
+            <th>驱动温度 °C</th><th>电机温度 °C</th><th>反馈时效 s</th><th>反馈</th></tr>
+        </thead>
+        <tbody id="axes-body"></tbody>
+      </table>
+    </div>
+    <p class="note scroll-hint">表格较宽：可左右滑动查看速度、力矩、温度与反馈时效列。</p>
+    <dl id="motion-flags" class="flags"></dl>
+    <div class="row wrap">
+      <button id="btn-connection-check" type="button">检查连接</button>
+      <button id="btn-reconnect" type="button">尝试重连</button>
+      <span id="connection-status" class="note">正在检查驱动状态…</span>
+    </div>
+    <label class="check"><input id="ack-power-cycle" type="checkbox">
+      故障恢复：已保持支撑并完成断电检查（恢复电机供电后再重连）
+    </label>
+    <p class="note">重连只恢复通信，完成后保持未使能；点击软件复位确认新连接，再重新预览。不会自动续跑动作。</p>
+  </section>
+
+  <section class="card" id="section-gravity">
+    <div class="card-head">
+      <h2>重力补偿（shadow 估算）</h2>
+      <span class="note">按实测姿态估算重力矩与门禁余量；本阶段只显示，<strong>不写入任何命令</strong>，不改变现有轨迹。</span>
+    </div>
+    <div class="table-wrap">
+      <table class="grid">
+        <thead>
+          <tr><th>轴</th><th>实际 °</th><th>模型重力矩 N·m</th><th>电机侧 N·m</th><th>P 项 N·m</th>
+            <th>D 项 N·m</th><th>已写入前馈 N·m</th><th>已应用余量 N·m</th><th>假设补偿预测 N·m</th>
+            <th>预测余量 N·m</th><th>门禁 N·m</th></tr>
+        </thead>
+        <tbody id="gravity-body"></tbody>
+      </table>
+    </div>
+    <p class="note" id="gravity-reason"></p>
+    <dl id="gravity-flags" class="flags"></dl>
+  </section>
+
+  <section class="card" id="section-teaching">
+    <div class="card-head">
+      <h2>拖动示教（自由拖动记录 · 低速回放）</h2>
+      <span class="note">记录跟随渐入完成后的有效窗口，回放使用正常位置控制。</span>
+    </div>
+    <p class="note" id="teaching-hint">开始后托住机械臂等待 3 秒渐入；持续时间从渐入完成后计时。停止后确认失能再落盘。回放默认速度比例 0.5，峰值参考速度上限 1 rad/s，长记录降速回放仍需满足会话时间预算。</p>
+    <div class="row wrap">
+      <label class="inline"><span>自由拖动 Kd</span><input id="float-kd" type="range" min="0" max="5" step="0.1" value="5"><output id="float-kd-value">5.0</output></label>
+      <label class="inline"><span>持续时间（秒）</span><input id="float-seconds" type="number" min="1" max="120" step="1" value="5"></label>
+    </div>
+    <p class="note">这两项用于自由拖动与示教记录，下次启动时固定本次设置。Kd 越小阻尼越轻，0 表示零阻尼。启动后以驱动回执为准，结束时承接重量。</p>
+    <label class="check"><input id="ack-drag-teaching" type="checkbox"> 我已托住机械臂，并在渐入与结束失能时承接重量；理解记录只跟随自由拖动有效窗口</label>
+    <div class="row wrap">
+      <button id="btn-teaching-start" type="button">开始记录</button>
+      <button id="btn-teaching-stop" type="button">停止记录</button>
+      <label class="inline"><span>名称</span><input id="teaching-name" type="text" maxlength="40" value="拖动示教"></label>
+      <button id="btn-teaching-save" type="button">命名保存</button>
+    </div>
+    <dl id="teaching-flags" class="flags"></dl>
+    <p id="teaching-reason" class="note"></p>
+    <div class="row wrap">
+      <select id="teaching-select" aria-label="已保存拖动示教"></select>
+      <button id="btn-teaching-load" type="button">载入</button>
+      <label class="inline"><span>回放速度比例</span>
+        <select id="teaching-speed">
+          <option value="0.25">0.25</option>
+          <option value="0.5" selected>0.5（默认）</option>
+          <option value="0.75">0.75</option>
+          <option value="1.0">1.0（硬上限 1 rad/s）</option>
+        </select></label>
+      <button id="btn-teaching-preview" type="button" class="primary">预览回放</button>
+      <button id="btn-teaching-execute" type="button">执行回放</button>
+    </div>
+    <p id="cap-teaching" class="note"></p>
+    <div id="teaching-preview" class="hidden">
+      <dl id="teaching-preview-meta" class="flags"></dl>
+      <ul id="teaching-warnings" class="warnings"></ul>
+    </div>
+  </section>
+
+  <section class="card" id="section-capture">
+    <div class="card-head">
+      <h2>当前位置静态采样（重力标定）</h2>
+      <span class="note">单一所有者有限操作：位置保持 → 撤手确认 → 静态窗口 → 停止并保存；不修改参数、不写质量档案。</span>
+    </div>
+    <ol class="steps" id="capture-steps">
+      <li>结束自由拖动/示教，等待新失能确认，再用“软件复位”进入未使能。</li>
+      <li>预览冻结当前实际姿态，核对角度、运行身份、Kp/Kd、α 基线与有限时间。</li>
+      <li>确认后启动普通位置保持；页面显示“保持已就绪”后托稳并缓慢撤手。</li>
+      <li>防坠支撑不承重后勾选并点击“已撤手，开始采样”；客户端采集静态窗口。</li>
+      <li>停止优先：先全轴停止并确认新失能，再保存原始数据与只读残差。</li>
+    </ol>
+    <label class="check"><input id="ack-capture-start" type="checkbox"> 我已托住机械臂，理解位置保持与采样结束都会失能</label>
+    <div class="row wrap">
+      <button id="btn-capture-preview" type="button">预览当前姿态（不运动）</button>
+      <button id="btn-capture-start" type="button" class="primary">开始位置保持</button>
+    </div>
+    <div id="capture-preview" class="hidden">
+      <dl id="capture-preview-meta" class="flags"></dl>
+      <ul id="capture-warnings" class="warnings"></ul>
+    </div>
+    <dl id="capture-flags" class="flags"></dl>
+    <p id="capture-reason" class="note"></p>
+    <label class="check"><input id="ack-operator-disengaged" type="checkbox"> 我已缓慢撤手，防坠支撑不承重；确认开始采样</label>
+    <div class="row wrap">
+      <button id="btn-capture-ack" type="button" class="primary">已撤手，开始采样</button>
+    </div>
+    <p id="cap-capture" class="note"></p>
+    <div id="capture-result" class="hidden">
+      <dl id="capture-result-meta" class="flags"></dl>
+      <p id="capture-result-note" class="note"></p>
+    </div>
+  </section>
+
+  <section class="card" id="section-editor">
+    <div class="card-head">
+      <h2>目标与路点计划</h2>
+      <span class="note">编辑、拖动、打开页面都不会使能或运动；必须先在服务器预览，再显式执行。</span>
+    </div>
+    <div class="row wrap">
+      <label>执行方式 <select id="execution-mode"><option value="trajectory">轨迹跟随</option><option value="point_to_point">点到点到位</option><option value="calibration">重力采样（α=0）</option></select></label>
+      <span class="note">点到点：跟不上时减速；终点≤0.5°且连续稳定0.5秒。保留途中保护，超时停止，完成后失能。</span>
+      <label class="radio"><input type="radio" name="coords" id="mode-absolute" value="absolute_deg"> 软件绝对角度</label>
+      <label class="radio"><input type="radio" name="coords" id="mode-relative" value="relative_start_deg"> 相对本次起点（每点都相对预览起点，不逐点累加）</label>
+    </div>
+    <div class="row wrap">
+      <button id="btn-read" type="button">读取当前位置填入目标</button>
+      <select id="calibration-group" aria-label="重力采样组">
+        <option value="S01">S01 双向标定 1/4（162秒）</option>
+        <option value="S02">S02 双向标定 2/4（162秒）</option>
+        <option value="S03">S03 双向标定 3/4（162秒）</option>
+        <option value="S04">S04 双向标定 4/4（162秒）</option>
+        <option value="V01">V01 双向独立验证（108秒）</option>
+        <option value="L01">L01 大角度 J1 组（12 点 / 162 秒）</option>
+        <option value="L02">L02 大角度 J2 组（12 点 / 162 秒）</option>
+        <option value="L03">L03 大角度 J1/J2+J3/J4 组合（12 点 / 162 秒）</option>
+        <option value="L04">L04 大角度四轴组合（12 点 / 162 秒）</option>
+        <option value="V02">V02 大角度独立验证组（8 点 / 108 秒）</option>
+        <option value="G01-G06">自动采集 G01～G06（12姿态）</option>
+        <option value="G01">G01 腕部方向</option><option value="G02">G02 肩轴变化</option>
+        <option value="G03">G03 大臂变化</option><option value="G04">G04 肘轴变化</option>
+        <option value="G05">G05 腕轴变化</option><option value="G06">G06 组合姿态</option>
+        <option value="G07">G07 独立验证</option>
+      </select>
+      <button id="btn-calibration-group" type="button">载入自动采集计划（不运动）</button>
+      <button id="btn-add" type="button">添加路点</button>
+      <button id="btn-remove-last" type="button">删除末点</button>
+      <button id="btn-export" type="button">导出 JSON</button>
+      <button id="btn-import" type="button">导入 JSON</button>
+      <input id="file-import" type="file" accept="application/json,.json" class="hidden">
+      <span class="spacer"></span>
+      <label class="inline"><span>存档名</span><input id="plan-name" type="text" maxlength="40" value="未命名计划"></label>
+      <button id="btn-save" type="button">保存到存档</button>
+      <select id="saved-select" aria-label="已保存计划"></select>
+      <button id="btn-load" type="button">载入</button>
+    </div>
+    <p id="editor-hint" class="note"></p>
+    <div class="table-wrap">
+      <table class="grid plan-grid">
+        <thead>
+          <tr><th>#</th><th>J1 °</th><th>J2 °</th><th>J3 °</th><th>J4 °</th><th>移动 s</th><th>停留 s</th><th></th></tr>
+        </thead>
+        <tbody id="waypoints-body"></tbody>
+      </table>
+    </div>
+    <p class="note">限位来自已安装 URDF 的 J1～J4 完整范围；峰值参考速度上限 <span id="speed-limit">—</span> rad/s；1～12 个路点；停留至少 0.5 秒；不自动裁剪。</p>
+  </section>
+
+  <section class="card" id="section-preview">
+    <div class="card-head">
+      <h2>服务器预览</h2>
+      <span class="note">预览会冻结为绝对计划并绑定起点与内容；编辑、过期、反馈失效或姿态明显变化后失效。</span>
+    </div>
+    <div class="row wrap">
+      <button id="btn-preview" type="button" class="primary">服务器预览</button>
+      <span id="cap-preview" class="note"></span>
+    </div>
+    <div id="preview-panel" class="hidden">
+      <dl id="preview-meta" class="flags"></dl>
+      <ul id="preview-warnings" class="warnings"></ul>
+      <div class="table-wrap">
+        <table class="grid">
+          <thead>
+            <tr><th>点</th><th>移动 s</th><th>到达 s</th><th>结束 s</th><th>J1 目标 °</th><th>J2 目标 °</th><th>J3 目标 °</th><th>J4 目标 °</th></tr>
+          </thead>
+          <tbody id="preview-body"></tbody>
+        </table>
+      </div>
+      <p class="note">这是服务器校验后的实际绝对目标与时间；尚未请求使能或轨迹。</p>
+    </div>
+    <p id="preview-empty" class="note">尚未预览。</p>
+  </section>
+
+  <section class="card" id="section-execute">
+    <div class="card-head">
+      <h2>执行与保持</h2>
+      <span class="note">服务端强制校验确认项；按钮禁用只是界面提示。</span>
+    </div>
+    <div class="checks">
+      <label><input type="checkbox" id="ack-supported"> 机械臂已可靠支撑，人员与线缆处于安全位置</label>
+      <label><input type="checkbox" id="ack-clearance"> 已确认整条路径净空，现场可随时切断电机电源</label>
+      <label><input type="checkbox" id="ack-native"> 我理解原生 MIT 反馈门禁不是硬件电流限流</label>
+      <label><input type="checkbox" id="ack-free-static"> 重力采样时自由承重、无手扶或外部接触；防坠支撑不承担重量</label>
+      <label><input type="checkbox" id="ack-gravity-float"> 自由拖动时我会托住机械臂等待3秒渐入，并在所设时间结束失能时承接重量；自由拖动越过 URDF 软限位不会自动停止，我会自行在机械限位前主动停止</label>
+    </div>
+    <div class="row wrap">
+      <button id="btn-execute" type="button" class="primary">执行已预览计划</button>
+      <button id="btn-hold" type="button">当前位置保持 5 秒（有限）</button>
+      <button id="btn-gravity-float" type="button">按设置开始重力补偿自由拖动</button>
+      <button id="btn-reset" type="button">软件复位</button>
+    </div>
+    <p id="cap-execute" class="note"></p>
+    <p id="cap-hold" class="note"></p>
+    <p class="note">自由拖动使用 Kp=0、Kd=5、辨识重力前馈 α=1，3秒渐入后体验5秒。模型误差可能导致漂移。托住后再启动，结束会失能。</p>
+    <p id="cap-reset" class="note"></p>
+    <p class="note">使能后先在当前位置保持再接管，不会立即前往输入目标或零位。计划完成或失败即失能；每次重放都要重新预览、手动复位、再次确认。</p>
+  </section>
+
+  <section class="card" id="section-operation">
+    <div class="card-head">
+      <h2>操作结果</h2>
+      <span class="note">标准轨迹动作成功不等于精度通过；原始错误码与逐点判据分别显示。</span>
+    </div>
+    <p id="operation-empty" class="note">尚未执行操作。</p>
+    <div id="operation-panel" class="hidden">
+      <dl id="operation-summary" class="flags"></dl>
+      <h3>动作结果（原始）</h3>
+      <dl id="operation-action" class="flags"></dl>
+      <div id="calibration-results" aria-live="polite"></div>
+      <h3>逐点精度判据</h3>
+      <div class="table-wrap">
+        <table class="grid">
+          <thead>
+            <tr><th>点</th><th>到达 s</th><th>结束 s</th><th>样本</th><th>采样跨度 s</th>
+              <th>J1 最大误差 °</th><th>J2 °</th><th>J3 °</th><th>J4 °</th><th>通过</th></tr>
+          </thead>
+          <tbody id="accuracy-body"></tbody>
+        </table>
+      </div>
+      <h3>停止确认</h3>
+      <dl id="operation-stop" class="flags"></dl>
+      <h3>客户端原始输出</h3>
+      <pre id="operation-stdout" class="log"></pre>
+    </div>
+  </section>
+
+  <section class="card" id="section-log">
+    <div class="card-head">
+      <h2>面板事件</h2>
+      <span class="note">按时间倒序；不显示私人文件内容。</span>
+    </div>
+    <ul id="event-list" class="events"></ul>
+    <h3>ROS / 服务</h3>
+    <dl id="ros-detail" class="flags"></dl>
+  </section>
+</main>
+
+<footer class="foot">
+  <p>停止入口是 ROS <code>/slaihand/stop_all</code>，不是物理急停；请求接受不等于新失能已确认。UNKNOWN 时保持支撑并现场切电，不重试使能。</p>
+  <p>后台有限会话上限 180 秒；面板不打开串口/CAN，不写电机参数、零位、增益或限位。</p>
+</footer>
+<script src="/panel.js"></script>
+</body>
+</html>

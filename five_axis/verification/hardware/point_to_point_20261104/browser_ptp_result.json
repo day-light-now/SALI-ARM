@@ -1,0 +1,128 @@
+{
+  "status": "PASS",
+  "software_only": true,
+  "physical_port_opened": false,
+  "result": {
+    "request_id": "e0f416fe8f5c489ea61118941ba2d694",
+    "mode": "point_to_point",
+    "reason": "finite_trial_complete",
+    "command_id": 1,
+    "trajectory_error_code": 0,
+    "trajectory_error_string": "Goal successfully reached!",
+    "concurrent_control_error": null,
+    "point_to_point": {
+      "minimum_scaling": 1.0,
+      "scaled_samples": 0,
+      "extra_time_limit_s": 6.0,
+      "endpoint_timeout_s": 3.0,
+      "terminal_tolerance_deg": 0.5,
+      "stable_seconds": 0.5,
+      "official_jtc_scaling": true
+    },
+    "stop_error": null,
+    "backend_arm_receipt": "Arm request accepted only; four-axis fresh preflight, enable and ramp are not yet confirmed; audit_file=/tmp/panel-browser-fixture/audit/canusb_motion_AFOpmz.jsonl",
+    "standard_jtc_action_succeeded": true,
+    "action_passed": true,
+    "waypoints_observed": true,
+    "waypoint_results": [
+      {
+        "arrival_s": 2.0,
+        "end_s": 3.0,
+        "target_deg": [
+          24.994,
+          30.004,
+          -10.01,
+          5.005
+        ],
+        "samples": 52,
+        "sampled_span_s": 0.5096087099991564,
+        "max_error_deg": [
+          0.011378943511565045,
+          0.016617941183061948,
+          0.0,
+          0.0
+        ],
+        "passed": true,
+        "max_velocity_rad_s": [
+          0.006105006105006083,
+          0.006105006105006083,
+          0.010989010989014503,
+          0.010989010989014503
+        ]
+      },
+      {
+        "arrival_s": 5.0,
+        "end_s": 6.0,
+        "target_deg": [
+          14.994,
+          25.004,
+          -10.01,
+          5.005
+        ],
+        "samples": 51,
+        "sampled_span_s": 0.5001198970021505,
+        "max_error_deg": [
+          0.0,
+          0.02185693885446026,
+          0.0,
+          0.0
+        ],
+        "passed": true,
+        "max_velocity_rad_s": [
+          0.006105006105006083,
+          0.006105006105006083,
+          0.010989010989014503,
+          0.010989010989014503
+        ]
+      }
+    ],
+    "accuracy_passed": true,
+    "stop_observations_confirmed": true,
+    "observed_delta_range_deg": [
+      [
+        0.0,
+        9.988621056488439
+      ],
+      [
+        -0.02185693885446026,
+        4.983382058816939
+      ],
+      [
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0
+      ]
+    ],
+    "final_delta_from_start_deg": [
+      0.0,
+      -0.02185693885446026,
+      0.0,
+      0.0
+    ],
+    "actual_excursion_deg": null,
+    "return_error_deg": null,
+    "requested_excursion_observed": null,
+    "initial_deg": [
+      14.994,
+      25.004,
+      -10.01,
+      5.005
+    ],
+    "plan_sha256": "5204dd98ad00ae870873316337e1c8f7c9531544046124cb0452932ec1cc4958",
+    "operator_acknowledgements": {
+      "supported": true,
+      "clearance_and_local_power_cut": true,
+      "native_output_not_hardware_clamp": true
+    },
+    "trial_parameters": {
+      "hold_seconds": 1.0,
+      "round_trip": false,
+      "delta_deg": 1.0,
+      "leg_seconds": 4.0
+    },
+    "overall_ok": true
+  }
+}

@@ -1,0 +1,53 @@
+{
+  "schema": 1,
+  "tool": "ctod-han-manifest",
+  "kind": "baseline",
+  "root": "D:\\CodexData\\Projects\\机械臂\\slaihand_ros2_ws",
+  "scopes": [
+    "slai_console",
+    "src/slaihand_bringup/config/hardware_mapping.yaml"
+  ],
+  "excludes": [
+    "verification/hardware/commissioning_20261101/openarm_control_review/before.json"
+  ],
+  "files": {
+    "slai_console/J4保护试验_说明.md": "e45e0cf6d505dcd5174979ba429f019694af0b053bb22dcb34db17d07cb465cf",
+    "slai_console/README.md": "6d9e4f324f081c043f1608879b711f5c8b590b527838d713c185bc3392df8d77",
+    "slai_console/REVIEW_CLOSURE_20261030.md": "caed3dc3cff221d5ad3b7500936615f94226bf2f434a2c4a0a0de2cf045f73ef",
+    "slai_console/REVIEW_RESOLUTION.md": "0903274e250a07b86acbb89c6286c58f3aafe0e1f712506de1edc1db44e07131",
+    "slai_console/__init__.py": "fca1d143aeb2bc395f5707980e9e46082c3e0500dd5b72a44df4e2b33deb866d",
+    "slai_console/actuation.py": "801a2996012c1fec518cb25f20b22ce4231427b1c816f32063d044b46e6ea80c",
+    "slai_console/actuation_io.py": "0a4ca178b3b9b5f6caa35031208b73f05d576ca2e5287af4a7e2d1d83f90e5e3",
+    "slai_console/adapters.py": "9843b1f848dda0de40ec182a2d7cf80177314ccdee986bc90c76525420b64614",
+    "slai_console/app.py": "8f0d37260b965b38044643a8296748f323b1c6c1d3ee818ffaf409d67d0d0032",
+    "slai_console/capture_offline.py": "a6bc9093dc7a5cd841bca97454577b81596ad4fe7db8d80320f14868264d3424",
+    "slai_console/clock.py": "32e68810d544b61fec9715889a211b78351e138765cd555e2d089a435b52b300",
+    "slai_console/commissioning.py": "bcc7f1fcf118f0438921b2a5fd807f3868708657b1ceb8eb999be498e02a7abb",
+    "slai_console/core.py": "d9464fae83ad1ffb25b8c1817188b9cec71f81cca7c605863577e4163ca1e0eb",
+    "slai_console/launch.py": "c3268a3d217d6c02c94cf5a6006c8c5fca3e7941b292bdd66278e172c62e7003",
+    "slai_console/live_trial.py": "de38b1954193ebda157ab4d0e8f1260131fd81e70ed13e4580075dceb309db75",
+    "slai_console/provenance.py": "79b10f2e6a2106c2f9d89438c3b1713da871554b88a31e4d08157fe5ba9ddca9",
+    "slai_console/regression.py": "c1b9e5d9b0db5144b41496df28b62323136757f15ec8c473c250ccc9290dbae4",
+    "slai_console/shadow_worker.py": "aee5c963dd73ff130ce75c50b056dd6e0b58ca8b533c7fccf9f10cdffa9461d0",
+    "slai_console/test_actuation.py": "3c665f1aee7fcbade48fef2c1c3538534e60232ad78b615b8ff8e44e7fc885bd",
+    "slai_console/test_actuation_io.py": "0f06509c4ef581b8cc451787a009a0f04d3a85d1919f78fe79f4957b9712f395",
+    "slai_console/test_commissioning.py": "b9876eb1105366ea8bea980e99cde157ad4ac3e4253d4f0acc3822637f51efbf",
+    "slai_console/test_console.py": "7e31121fe79e26f55794d8f971d88b00b78779dd4875dd7f1d1b01de3aea78d6",
+    "slai_console/test_live_trial.py": "0ab1982a633f203f86551ae54b822c276f00bd910f98dd8959922360daa79f5b",
+    "slai_console/test_round_trip.py": "1edcbd2615c1adcb8e0bf53571cda00bd808f5c89c81461204d70852d96607c4",
+    "slai_console/test_timing.py": "a430c32b93e3402c6bbaddc80c067f29d2bf9e1d31df6c106aa4b7c03b9b7a61",
+    "slai_console/test_watchdog_check.py": "2903155ffe38993a6184621e92ca7fd8b0f3f0e239d449240f1ce08c117fe239",
+    "slai_console/timing_probe.py": "321ba80bf362616012b4cbc2e487890c344255edac06079a883623419ab025d0",
+    "slai_console/verify_release.py": "fb6c4201a0d0686a6c797aa3d91e0a5ef7d90eee88ee005227fdc9d0df96d40e",
+    "slai_console/watchdog_check.py": "61b72d85b0a50a9aaef54830be0104fff5a87e25a2f915248e378fd77f28abf6",
+    "slai_console/交付包一致性检查_2026-10-31.md": "608a036c9b218701a1e8aa0f1f413c33dba21339481ae84f81b722eeea6223eb",
+    "slai_console/交付记录_2026-10-30.md": "dab304dbd52cd8b6a050ee6d5c535a5afba15a2db733091a23e556be1366c052",
+    "slai_console/保护与影子阶段_交付记录.md": "0753da5a297f24680108ee985062ac5a97cddf3e4b88cab5b45512cd959cc73c",
+    "slai_console/受限实机接管_使用说明.md": "4a9b1903f61139735378fdb9c0ad8c94842e4af695dee01019bb828654ec8ca3",
+    "slai_console/回归基线.md": "d890381092b020465e9ba7c7d7ec379a7f336531c21a079369f5457f4892a0d0",
+    "slai_console/实机后端_2026-11-01.md": "e75bf7eedd8a084c3982d39ad83eb54f7f3bc3dd11ccc3d7b63045b52db19cd7",
+    "slai_console/实机控制规格与验收表_2026-10-31.md": "0b7f618aed01d60802fdbe74f35ef57c42c120d28341920e752f0916126967d0",
+    "slai_console/计时与快速只读_交付记录.md": "6b34bcf9b943723aba7dac570770f3c6087c3d4d5b6f9827e1b56b43ed8eaacf",
+    "src/slaihand_bringup/config/hardware_mapping.yaml": "6c2ee47ba780235786b12a9c9d0b5f220b8e11a6ab5dff302d67ffa2375cbe7b"
+  }
+}

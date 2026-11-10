@@ -1,0 +1,78 @@
+{
+  "schema": "slaihand_panel_sampling_import/2",
+  "imported_at": "2026-11-09T14:36:33.949546+08:00",
+  "panel_origin": "http://127.0.0.1:42664",
+  "plans": [
+    {
+      "name": "GC05_J5_ZERO_PAIRED_ZERO",
+      "display_name": "GC05 新采集 J5双向配对 基座零姿态 · 绝对零终点",
+      "id": "f3f0e99769a54cc4",
+      "file": "GC05_J5_ZERO_PAIRED_ZERO.json",
+      "sha256": "76505ceed8ca4c7adf8e8fb8b458a85e89b7c50f8bd6a0446b08eeed99317142",
+      "coordinates": "absolute_deg",
+      "final_absolute_deg": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "readback_verified": true
+    },
+    {
+      "name": "GC06_J5_J2_20_PAIRED_ZERO",
+      "display_name": "GC06 新采集 J5双向配对 J2=20度 · 绝对零终点",
+      "id": "01700debbda244ad",
+      "file": "GC06_J5_J2_20_PAIRED_ZERO.json",
+      "sha256": "c15bdc450c86c1c917589567382cc7317cc1d3228ddf5d426d96f9bd2eeea7b0",
+      "coordinates": "absolute_deg",
+      "final_absolute_deg": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "readback_verified": true
+    },
+    {
+      "name": "GC07_J5_J3_J4_20_PAIRED_ZERO",
+      "display_name": "GC07 新采集 J5双向配对 J3/J4=20度 · 绝对零终点",
+      "id": "c08d36ca20e54a5f",
+      "file": "GC07_J5_J3_J4_20_PAIRED_ZERO.json",
+      "sha256": "5936da639535716ad428fcdf7c4478ca668142563628ab1971d62b9f3450e759",
+      "coordinates": "absolute_deg",
+      "final_absolute_deg": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "readback_verified": true
+    },
+    {
+      "name": "GC08_J5_MIXED_HOLDOUT_ZERO",
+      "display_name": "GC08 新采集 J5混合姿态独立验证 · 绝对零终点",
+      "id": "af01bca700bb4198",
+      "file": "GC08_J5_MIXED_HOLDOUT_ZERO.json",
+      "sha256": "c56eb3cf3da5b4e763d74d659b958d4a3d68f7bc5c1df766cae16056d57d4b39",
+      "coordinates": "absolute_deg",
+      "final_absolute_deg": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "readback_verified": true
+    }
+  ],
+  "served_js_sha256": "e791afb234a3673f687b87d6bd0fda0b0eb76893a37eedadfd242a2b43b36911",
+  "absolute_zero_guard_GC01_GC08_live": true,
+  "existing_plans_preserved": true,
+  "write_endpoint": "/api/plans/save",
+  "driver_or_panel_restarted": false,
+  "hardware_executed": false,
+  "ff_enabled": false
+}

@@ -1,0 +1,178 @@
+{
+  "schema": "slaihand_five_dof_analysis_sources/1",
+  "source_commit": "75807e2",
+  "scope": "local offline analysis only",
+  "admission": {
+    "artifact": "acquisition_20261109/artifacts/artifact_l.json",
+    "artifact_sha256": "22faa38808192d96436234e231aae1cbd9f974f2057ee03caf2a998492842965",
+    "evidence": "acquisition_20261109/artifacts/evidence_l_verify_existing.json",
+    "evidence_sha256": "fee30124eb102effac1dc871dc2d20a036e93228dde8f31ab916c7f0aa5a67a9"
+  },
+  "sessions": [
+    {
+      "name": "A",
+      "plan": "acquisition_20261109/plans/IDENT_A_J1J2.json",
+      "state": "acquisition_20261109/raw/ident_a_20261109.jsonl.gz",
+      "state_sha256": "a14312cbfd2ff2221ed1b9ab1d9cf34da8d65d22722be2924e0d1d833f0a7be5",
+      "client": "acquisition_20261109/clients/ident_a_client_20261109_121229.json",
+      "status": "partial: 9/10 waypoint windows sampled; final waypoint stopped/global-stop; final return not absolute zero",
+      "use": "cautious/filter by client observations"
+    },
+    {
+      "name": "A2",
+      "plan": "acquisition_20261109/plans/IDENT_A2_SHORT.json",
+      "state": "acquisition_20261109/raw/ident_a2_20261109.jsonl.gz",
+      "state_sha256": "0f46e8dad29a900c0937f9876e36d5276f29b5d8f6622bb447e18978224cd020",
+      "client": "acquisition_20261109/clients/ident_a2_client_20261109_121525.json",
+      "status": "complete 6/6 sampled; final relative zero (returns to session start, not absolute zero)",
+      "use": "use with client windows"
+    },
+    {
+      "name": "B2",
+      "plan": "acquisition_20261109/plans/IDENT_B_J3J4.json",
+      "state": "acquisition_20261109/raw/ident_b2_20261109.jsonl.gz",
+      "state_sha256": "3184f30526e193476ba96c903d85f684a3fe4dec2d7a3b06633aec1662d91320",
+      "client": "acquisition_20261109/clients/ident_b2_client_20261109_121946.json",
+      "status": "complete 7/7 sampled; final relative zero (returns to session start, not absolute zero)",
+      "use": "use with client windows"
+    },
+    {
+      "name": "C",
+      "plan": "acquisition_20261109/plans/IDENT_C_MIXED_ZERO.json",
+      "state": "acquisition_20261109/raw/ident_c_20261109.jsonl.gz",
+      "state_sha256": "2ac1899ba5d9ae53236a87656af932a9fdc98e2cee7e0c6f64cdf93d0bf18cf7",
+      "client": "acquisition_20261109/clients/ident_c_client_20261109_122216.json",
+      "status": "complete 8/8 sampled; final waypoint is absolute (0,0,0,0,0) and passed",
+      "use": "preferred complete session with absolute zero return"
+    },
+    {
+      "name": "GC01",
+      "state": "gravity_compensation_trajectories_20261109/execution_20261109/raw/gc01_success_20261109.jsonl.gz",
+      "state_sha256": "b7cb820ecce7e3d2401f18d5d428a211a0328ae014ba263cb3a11fa635c617bb",
+      "client": "gravity_compensation_trajectories_20261109/execution_20261109/clients/gc01f/20261109_133627_2d97c20e.json",
+      "plan": "five_dof_identification_20261109/GC01_executed_plan.json",
+      "status": "completed run; check each active static window independently"
+    },
+    {
+      "name": "GC02",
+      "state": "gravity_compensation_trajectories_20261109/execution_20261109/raw/gc02_20261109.jsonl.gz",
+      "state_sha256": "5997be2027f30ead7584fcbc06f267c36235942874191eb4e497626e7569a597",
+      "client": "gravity_compensation_trajectories_20261109/execution_20261109/clients/gc02/20261109_133915_2361e5fa.json",
+      "plan": "five_dof_identification_20261109/GC02_executed_plan.json",
+      "status": "completed run; check each active static window independently"
+    },
+    {
+      "name": "GC03",
+      "state": "gravity_compensation_trajectories_20261109/execution_20261109/raw/gc03_20261109.jsonl.gz",
+      "state_sha256": "e5f40c5689e3cd2c06bb6222a11bbfc0aa15c4ef0c48feec09387925689f45b8",
+      "client": "gravity_compensation_trajectories_20261109/execution_20261109/clients/gc03/20261109_134157_adcb6df9.json",
+      "plan": "five_dof_identification_20261109/GC03_executed_plan.json",
+      "status": "completed run; check each active static window independently"
+    },
+    {
+      "name": "GC04",
+      "state": "gravity_compensation_trajectories_20261109/execution_20261109/raw/gc04_20261109.jsonl.gz",
+      "state_sha256": "53ee531159280ea17c17903bd6cea82730351cb0bd5a2ebc13e54088dcbcef8b",
+      "client": "gravity_compensation_trajectories_20261109/execution_20261109/clients/gc04/20261109_134444_3322dcce.json",
+      "plan": "five_dof_identification_20261109/GC04_executed_plan.json",
+      "status": "completed run; check each active static window independently"
+    },
+    {
+      "name": "J5",
+      "state": "acquisition_20261109/raw/j5_excitation_20261109.jsonl.gz",
+      "state_sha256": "38f89e0718165b623e2694bec0fa13f0b18a3b7f94e5f0ef658969034303811c",
+      "client": "acquisition_20261109/clients/j5_excitation/20261109_141027_321d3798.json",
+      "plan": "five_dof_identification_20261109/J5_executed_plan.json",
+      "status": "completed run; check each active static window independently"
+    },
+    {
+      "name": "GC05",
+      "state": "gravity_sampling_v2_20261109/execution_20261109/raw/gc05_20261109.jsonl.gz",
+      "state_sha256": "708cd53f2b6f2e7be54f97d8d6c5f9c1982feaf82b26f3f406aa0732073b670b",
+      "plan": "gravity_sampling_v2_20261109/GC05_J5_ZERO_PAIRED_ZERO.json",
+      "client": "gravity_sampling_v2_20261109/execution_20261109/clients/gc05/20261109_145236_e7fea24e.json"
+    },
+    {
+      "name": "GC06",
+      "state": "gravity_sampling_v2_20261109/execution_20261109/raw/gc06_20261109.jsonl.gz",
+      "state_sha256": "773f970051f071cda5613376000f7f65102d994af6525487817ae3c155e982ba",
+      "plan": "gravity_sampling_v2_20261109/GC06_J5_J2_20_PAIRED_ZERO.json",
+      "client": "gravity_sampling_v2_20261109/execution_20261109/clients/gc06/20261109_145703_89366537.json"
+    },
+    {
+      "name": "GC07",
+      "state": "gravity_sampling_v2_20261109/execution_20261109/raw/gc07_20261109.jsonl.gz",
+      "state_sha256": "00d4aaccfa9ed7df7c8c8d71c5356c516074a2452f0623bc4d2193b8c440da23",
+      "plan": "gravity_sampling_v2_20261109/GC07_J5_J3_J4_20_PAIRED_ZERO.json",
+      "client": "gravity_sampling_v2_20261109/execution_20261109/clients/gc07/20261109_150056_6805529a.json"
+    },
+    {
+      "name": "GC08",
+      "state": "gravity_sampling_v2_20261109/execution_20261109/raw/gc08_20261109.jsonl.gz",
+      "state_sha256": "0f9347790f41d945cb410f79314b564070454849002ed951a23eda34f25e2139",
+      "plan": "gravity_sampling_v2_20261109/GC08_J5_MIXED_HOLDOUT_ZERO.json",
+      "client": "gravity_sampling_v2_20261109/execution_20261109/clients/gc08/20261109_150350_1f496d34.json"
+    },
+    {
+      "name": "GC09",
+      "state": "five_dof_refit_gc05_08_20261109/execution_20261109/raw/gc09_20261109.jsonl.gz",
+      "state_sha256": "6f9aa16c142c5020c853f5ff6447a6bbb7e93ec932ad9ca6e91551675da6929b",
+      "plan": "five_dof_refit_gc05_08_20261109/next_sampling_candidates/GC09_J1_PAIRED_REPEAT_ZERO.json",
+      "client": "five_dof_refit_gc05_08_20261109/execution_20261109/clients/gc09/20261109_153028_a8ed658e.json"
+    },
+    {
+      "name": "GC10",
+      "state": "five_dof_refit_gc05_08_20261109/execution_20261109/raw/gc10_20261109.jsonl.gz",
+      "state_sha256": "97114594a5b0f83d9bd0e40cd7d90f7dd39cb36f226e92f5db7420b2d9753386",
+      "plan": "five_dof_refit_gc05_08_20261109/next_sampling_candidates/GC10_J4_PAIRED_REPEAT_ZERO.json",
+      "client": "five_dof_refit_gc05_08_20261109/execution_20261109/clients/gc10/20261109_153256_26a02dc6.json"
+    },
+    {
+      "name": "GC11",
+      "state": "five_dof_refit_gc05_08_20261109/execution_20261109/raw/gc11_20261109.jsonl.gz",
+      "state_sha256": "c02cd42de67cfbb90f6b333e706fcceb5b22bec3b60c06e9845c367d094f4c95",
+      "plan": "five_dof_refit_gc05_08_20261109/next_sampling_candidates/GC11_J2_PAIRED_REPEAT_ZERO.json",
+      "client": "five_dof_refit_gc05_08_20261109/execution_20261109/clients/gc11/20261109_155127_69af3b7a.json"
+    },
+    {
+      "name": "GC12",
+      "state": "five_dof_refit_gc05_08_20261109/execution_20261109/raw/gc12_20261109.jsonl.gz",
+      "state_sha256": "0c9703fbc604ec49561e6322f55c28f9d6a53798cad1e6392563281352ab9d36",
+      "plan": "five_dof_refit_gc05_08_20261109/next_sampling_candidates/GC12_J3_PAIRED_REPEAT_ZERO.json",
+      "client": "five_dof_refit_gc05_08_20261109/execution_20261109/clients/gc12/20261109_154853_fce20510.json"
+    },
+    {
+      "name": "GC11_ABORTED",
+      "state": "five_dof_refit_gc05_08_20261109/execution_20261109/raw/gc11_aborted_20261109.jsonl.gz",
+      "state_sha256": "0e3a0d9d9b7d3e461d47380e9953304687d84471b3194c9241bdf5f16ae551fe",
+      "client": "five_dof_refit_gc05_08_20261109/execution_20261109/clients/gc11/20261109_153509_f74da167.json",
+      "plan": "five_dof_refit_gc05_08_20261109/next_sampling_candidates/GC11_J2_PAIRED_REPEAT_ZERO.json",
+      "use": "pre-fault windows only, diagnostic, not training",
+      "raw_hash_provenance": "computed from archived aborted raw; original manifest has no bound aborted-raw SHA"
+    }
+  ],
+  "mass_box_kg": 3.5,
+  "motor_mass_added_again": false,
+  "box_placement": "downstream of rotating J5 output; motor housing remains on link4",
+  "j5_spatial_axis_measured": false,
+  "additional_admission": {
+    "evidence": "/mnt/d/CodexData/Projects/机械臂/slaihand_five_axis_ws_gain/verification/hardware/five_axis_20261107/gravity_sampling_v2_20261109/execution_20261109/evidence/j5_timeout_verify_existing_20261109_session2.json",
+    "evidence_sha256": "a42e7b797f9bb78571621a23bb6db53b7be955748fe971636d20c208a96290a0",
+    "artifact": "/mnt/d/CodexData/Projects/机械臂/slaihand_five_axis_ws_gain/verification/hardware/five_axis_20261107/gravity_sampling_v2_20261109/execution_20261109/artifacts/j5_motion_calibration_artifact_20261109_session2.json",
+    "artifact_sha256": "b3a406a6af687f708f92c370beaf15f041eb857614d08b75a1f40d26268a0225",
+    "artifact_note": "j5_motion_artifact.py build normalizes the timeout block to timeout_before=0/write_outcome=complete even for readback-only verified_existing evidence; the real evidence file is bound by SHA-256 and records timeout_before=timeout_after=2000, write_attempts=0, parameter_writes=0. The launch validates the evidence file hash, timeout_after, session_id, boot_id, device. This is a known truthful-metadata defect to fix later."
+  },
+  "upstream_manifests_sha256": {
+    "old": "ff7d067c86fb0ef4a64a16e6dd160770f0f56295df107fa82cabcc4ef7022d8f",
+    "new": "7cb7df15d9719a56c336a0e4344bd74c95aa499b1e9a227b16ee878f08f08b24"
+  },
+  "followup_admission": {
+    "evidence": "/mnt/d/CodexData/Projects/机械臂/slaihand_five_axis_ws_gain/verification/hardware/five_axis_20261107/five_dof_refit_gc05_08_20261109/execution_20261109/evidence/j5_timeout_verify_existing_20261109_session3.json",
+    "evidence_sha256": "53853a4b0f884d1733c7380d020b67f59a33f3194821e7b3f6ceb38621b16f62",
+    "artifact": "/mnt/d/CodexData/Projects/机械臂/slaihand_five_axis_ws_gain/verification/hardware/five_axis_20261107/five_dof_refit_gc05_08_20261109/execution_20261109/artifacts/j5_motion_calibration_artifact_20261109_session3.json",
+    "artifact_sha256": "ffbf5904c09cc847f1029f4e990694f2a32082e0b23d8fa156205e5f832a28c0",
+    "artifact_fix_deployed": "j5_motion_artifact.py from src (fix 7000420b...) copied to the installed lib before this session; builder and validator are identical. The artifact now records timeout_before=2000, write_outcome=verified_existing, write_attempts=0, parameter_writes=0."
+  },
+  "parent_manifest_sha256": "7659bd353aa82931fde17becf83e898f4d84fb87c8d6ab0f41c4354f3d3146b9",
+  "execution_manifest_sha256": "1a6f549048e52932f3f3d254c478cdb3d7af034ad9ac4b4a5120196c53cc56ce"
+}

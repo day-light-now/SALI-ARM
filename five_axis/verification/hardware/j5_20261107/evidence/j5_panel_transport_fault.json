@@ -1,0 +1,23 @@
+{
+  "passed": true,
+  "physical_port_opened": false,
+  "fault": {
+    "error": "J5TransportError: WRITE_BACKPRESSURE: no bytes accepted; port closed, reconnect required; port released; reconnect and re-zero required",
+    "connected": false,
+    "fresh": false,
+    "feedback_is_none": true,
+    "calibration_zero": false
+  },
+  "failed_reconnect_http": {
+    "status": 409,
+    "ok": false,
+    "error": "J5 \u53ea\u8bfb\u91cd\u8fde\u5931\u8d25\uff1aOSError: injected reconnect open failure; reconnect failed"
+  },
+  "reconnected": true,
+  "rezero_required": true,
+  "http": [
+    "GET /api/j5/status",
+    "POST /api/j5/calibration/zero",
+    "POST /api/j5/reconnect"
+  ]
+}

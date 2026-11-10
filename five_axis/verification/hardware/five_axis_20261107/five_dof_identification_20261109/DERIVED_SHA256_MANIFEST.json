@@ -1,0 +1,25 @@
+{
+  "schema": "slaihand_derived_artifacts_sha256/1",
+  "files": {
+    "audit_sources.json": "e870b7b0c7afecac6add29268260cad8601a03ae83a19922530e17ff01535e39",
+    "canusb_motion_99j9Aa_cycles.jsonl.gz": "cd4539c3c531586282bb41a88d53568b9f1ed35d29b5ebbd8d2d3a1a867da462",
+    "canusb_motion_IFxgoj_cycles.jsonl.gz": "b5d764ddc9146f01a4ecd0d88826ddda6bfdc3fe0b432932c88e2688d6c24f68",
+    "canusb_motion_OwBmJz_cycles.jsonl.gz": "e171ca54f4e22856781e4ff6a5242f80d8ae5501bf267668017f1dd7a63e0e31",
+    "canusb_motion_qsrQke_cycles.jsonl.gz": "81a38f380f47c2251fac787c9686a9f485f0bd1022716d13de260f865877ae22",
+    "fit_five_dof.py": "b81ed4cc26dd80ecbda23c8f61dbba9e2de4238e48d9a861c1e4876f4f2b898b",
+    "five_dof_offline_candidates.json": "fa144e7cf3803cdc5e6fb4e81d722bb97bbad0a837f70a0b8acc7c854537e091",
+    "five_dof_result.json": "f3477d0c2abfd3279c144b02eff618a4402b13caaab6783b16917a7ce13e3063",
+    "GC01_executed_plan.json": "539d9dfafa431d7ef36341e03e0f00d7027f409cc3a3b8b87fec1465fc2ac1d1",
+    "GC02_executed_plan.json": "e2a95af979b353039ac6c7c719c802d272d2e3e67f4f7f62f392889186b8b2eb",
+    "GC03_executed_plan.json": "d3afa86f282c2bd51ecde1b7a88449281ff0e92724dbad8e8680b65052577024",
+    "GC04_executed_plan.json": "cf5076b6728217e5c4ef185edada15e29fc1fef29f82143c6dd8184a254333c6",
+    "J5_executed_plan.json": "4d46025f72767a546a9d9e2e7a34a797bb5caebad2d6c2d1a1085c65a38710cf",
+    "J5_identification_diagnostics.png": "e4cdf9584f9b639dfa58657f92c567291f8e27df1d71d4273a8b9be2caa621e1",
+    "prepare_sources.py": "f4967e6747bda7197ed2e6cedef5f2edb54a992d1de5d33c8c49e0a692a3fc53",
+    "README_五轴模型修正.md": "0a94b7866eb5aa3e7d2cd0e81fe18824417e693a75ef62abee348a742b78a34d",
+    "SOURCE_MANIFEST.json": "ff7d067c86fb0ef4a64a16e6dd160770f0f56295df107fa82cabcc4ef7022d8f",
+    "static_windows.csv": "65f2243959c4c3584dee4066ed8a32a5ced44e7e6dbd5a9d54264c0102c94d92",
+    "static_windows.json": "b568b3e627c4c5441cfd7c1edd7c2e8a902d86cfa9ba8edbbf68609e3c3be373",
+    "test_five_dof.py": "dcc5f3e6c7b991a4f76a9110f90f299017e6587c7a613176078f9345f352a462"
+  }
+}

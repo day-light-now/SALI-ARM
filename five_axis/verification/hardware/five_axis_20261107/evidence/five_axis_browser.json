@@ -1,0 +1,9 @@
+{
+  "passed": true,
+  "physical_port_opened": false,
+  "axes_rows": 5,
+  "single_table": true,
+  "j5_card_absent": true,
+  "plan_inputs": 5,
+  "screenshot": "five_axis_single_table.png"
+}

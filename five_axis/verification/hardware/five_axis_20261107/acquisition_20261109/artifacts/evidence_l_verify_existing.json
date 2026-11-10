@@ -1,0 +1,810 @@
+{
+  "schema": "slaihand_j5_timeout_setup/1",
+  "ok": true,
+  "exit_code": 0,
+  "error": null,
+  "device": "/dev/ttyACM0",
+  "port_argument": "/dev/serial/by-id/usb-HDSC_CDC_Device_00000000050C-if00",
+  "baud": 921600,
+  "exclusive": {
+    "flock": "LOCK_EX|LOCK_NB",
+    "tiocm": "TIOCEXCL",
+    "locked": true,
+    "released": true
+  },
+  "observed_at": "2026-11-09T06:08:07.950+00:00",
+  "started_at": "2026-11-09T06:08:07.738+00:00",
+  "completed_at": "2026-11-09T06:08:07.953+00:00",
+  "session_id": "594e8210dcb64d0f8ba5a8a4ca2b1655",
+  "host_boot_id": "ae7a07f6-7ffb-48dc-bdf8-e5e0ed3eeb15",
+  "tool": {
+    "name": "j5_timeout_setup.py",
+    "sha256": "380b6619732c8df61edfac9e518f2ede2c73554513b717a99070c443bb286ce7"
+  },
+  "timeout_before": 2000,
+  "timeout_after": 2000,
+  "j5_id": 5,
+  "master_id": 0,
+  "control_mode": 1,
+  "profile": {
+    "pmax_rad": 12.5,
+    "vmax_rad_s": 10.0,
+    "tmax_nm": 28.0
+  },
+  "motor_state_all_zero": true,
+  "all_motor_state_zero": true,
+  "axes": [
+    {
+      "axis": "J1",
+      "can_id": 1,
+      "motor_state": 0,
+      "feedback_age": 0.0568,
+      "valid": true,
+      "feedback_payload": "01 8e fb 7f f7 ff 1f 1c"
+    },
+    {
+      "axis": "J2",
+      "can_id": 2,
+      "motor_state": 0,
+      "feedback_age": 0.0535,
+      "valid": true,
+      "feedback_payload": "02 6d a4 80 07 ff 1e 1b"
+    },
+    {
+      "axis": "J3",
+      "can_id": 3,
+      "motor_state": 0,
+      "feedback_age": 0.05,
+      "valid": true,
+      "feedback_payload": "03 65 f7 7f f7 ff 1d 1b"
+    },
+    {
+      "axis": "J4",
+      "can_id": 4,
+      "motor_state": 0,
+      "feedback_age": 0.0453,
+      "valid": true,
+      "feedback_payload": "04 7b b8 7f f7 fe 1d 1c"
+    },
+    {
+      "axis": "J5",
+      "can_id": 5,
+      "motor_state": 0,
+      "feedback_age": 0.0602,
+      "valid": true,
+      "feedback_payload": "05 9a 0d 7f f7 fe 1d 1b"
+    }
+  ],
+  "readback": {
+    "rid": 9,
+    "expected": 2000,
+    "observed": 2000,
+    "attempts": 1,
+    "matched": true
+  },
+  "readback_hex": "05 00 33 09 d0 07 00 00",
+  "write_outcome": "verified_existing",
+  "write_frame_hex": null,
+  "write_data_hex": "05 00 55 09 d0 07 00 00",
+  "write_attempts": 0,
+  "parameter_writes": 0,
+  "read_only_requests": 36,
+  "motor_zero_written": false,
+  "flash_written": false,
+  "enabled": false,
+  "mit_sent": false,
+  "audit_path": "/mnt/d/CodexData/Projects/机械臂/slaihand_five_axis_ws/verification/hardware/five_axis_20261107/evidence/j5_timeout_verify_evidence_20261109_l.json",
+  "preflight": {
+    "completed": true,
+    "fresh_limit_s": 0.25,
+    "all_feedback_fresh": true,
+    "conflicts": [],
+    "missing_registers": [],
+    "registers": {
+      "master_id": 0,
+      "can_id": 5,
+      "timeout": 2000,
+      "control_mode": 1,
+      "pmax_rad": 12.5,
+      "vmax_rad_s": 10.0,
+      "tmax_nm": 28.0
+    },
+    "register_payloads": {
+      "7": "05 00 33 07 00 00 00 00",
+      "8": "05 00 33 08 05 00 00 00",
+      "9": "05 00 33 09 d0 07 00 00",
+      "10": "05 00 33 0a 01 00 00 00",
+      "21": "05 00 33 15 00 00 48 41",
+      "22": "05 00 33 16 00 00 20 41",
+      "23": "05 00 33 17 00 00 e0 41"
+    },
+    "register_read_counts": {
+      "7": 2,
+      "8": 2,
+      "9": 2,
+      "10": 2,
+      "21": 2,
+      "22": 2,
+      "23": 2
+    },
+    "j5_feedback": {
+      "payload": "05 9a 0d 7f f7 fe 1d 1b",
+      "motor_id": 5,
+      "state": 0,
+      "raw_position_rad": 2.5442511635004195,
+      "raw_position_deg": 145.7748536898232,
+      "raw_velocity_rad_s": -0.0024420024420024333,
+      "raw_torque_nm": -0.02051282051282044,
+      "driver_temperature_c": 29,
+      "motor_temperature_c": 27
+    }
+  },
+  "postflight": {
+    "completed": true,
+    "fresh_limit_s": 0.25,
+    "all_feedback_fresh": true,
+    "all_motor_state_zero": true,
+    "profile": {
+      "pmax_rad": 12.5,
+      "vmax_rad_s": 10.0,
+      "tmax_nm": 28.0
+    },
+    "registers": {
+      "master_id": 0,
+      "can_id": 5,
+      "timeout": 2000,
+      "control_mode": 1,
+      "pmax_rad": 12.5,
+      "vmax_rad_s": 10.0,
+      "tmax_nm": 28.0
+    },
+    "register_payloads": {
+      "7": "05 00 33 07 00 00 00 00",
+      "8": "05 00 33 08 05 00 00 00",
+      "9": "05 00 33 09 d0 07 00 00",
+      "10": "05 00 33 0a 01 00 00 00",
+      "21": "05 00 33 15 00 00 48 41",
+      "22": "05 00 33 16 00 00 20 41",
+      "23": "05 00 33 17 00 00 e0 41"
+    },
+    "axes": [
+      {
+        "axis": "J1",
+        "can_id": 1,
+        "motor_state": 0,
+        "feedback_age": 0.0551,
+        "valid": true,
+        "feedback_payload": "01 8e fb 7f d7 ff 1f 1c"
+      },
+      {
+        "axis": "J2",
+        "can_id": 2,
+        "motor_state": 0,
+        "feedback_age": 0.0528,
+        "valid": true,
+        "feedback_payload": "02 6d a4 7f f7 ff 1e 1b"
+      },
+      {
+        "axis": "J3",
+        "can_id": 3,
+        "motor_state": 0,
+        "feedback_age": 0.0494,
+        "valid": true,
+        "feedback_payload": "03 65 f7 7f f7 ff 1d 1b"
+      },
+      {
+        "axis": "J4",
+        "can_id": 4,
+        "motor_state": 0,
+        "feedback_age": 0.0461,
+        "valid": true,
+        "feedback_payload": "04 7b b8 7f f7 ff 1d 1c"
+      },
+      {
+        "axis": "J5",
+        "can_id": 5,
+        "motor_state": 0,
+        "feedback_age": 0.0596,
+        "valid": true,
+        "feedback_payload": "05 9a 0d 7f f7 fe 1d 1b"
+      }
+    ]
+  },
+  "warnings": [],
+  "trace": [
+    {
+      "seq": 1,
+      "at": 7257.471796,
+      "wall": 1794204487.757378,
+      "direction": "open",
+      "path": "/dev/ttyACM0",
+      "baud": 921600,
+      "flock": "LOCK_EX|LOCK_NB",
+      "tiocm": "TIOCEXCL"
+    },
+    {
+      "seq": 2,
+      "at": 7257.471862,
+      "wall": 1794204487.757439,
+      "direction": "tx",
+      "can_id": 2047,
+      "payload": "05 00 cc 00 00 00 00 00"
+    },
+    {
+      "seq": 3,
+      "at": 7257.472982,
+      "wall": 1794204487.75856,
+      "direction": "rx",
+      "can_id": 0,
+      "payload": "05 9a 0d 7f f7 fe 1d 1b"
+    },
+    {
+      "seq": 4,
+      "at": 7257.475396,
+      "wall": 1794204487.760973,
+      "direction": "tx",
+      "can_id": 2047,
+      "payload": "01 00 cc 00 00 00 00 00"
+    },
+    {
+      "seq": 5,
+      "at": 7257.476507,
+      "wall": 1794204487.762085,
+      "direction": "rx",
+      "can_id": 0,
+      "payload": "01 8e fb 80 07 ff 1f 1c"
+    },
+    {
+      "seq": 6,
+      "at": 7257.47868,
+      "wall": 1794204487.764257,
+      "direction": "tx",
+      "can_id": 2047,
+      "payload": "02 00 cc 00 00 00 00 00"
+    },
+    {
+      "seq": 7,
+      "at": 7257.47978,
+      "wall": 1794204487.765358,
+      "direction": "rx",
+      "can_id": 0,
+      "payload": "02 6d a4 80 07 ff 1e 1b"
+    },
+    {
+      "seq": 8,
+      "at": 7257.481948,
+      "wall": 1794204487.767526,
+      "direction": "tx",
+      "can_id": 2047,
+      "payload": "03 00 cc 00 00 00 00 00"
+    },
+    {
+      "seq": 9,
+      "at": 7257.483098,
+      "wall": 1794204487.768677,
+      "direction": "rx",
+      "can_id": 0,
+      "payload": "03 65 f7 7f f7 ff 1d 1b"
+    },
+    {
+      "seq": 10,
+      "at": 7257.48532,
+      "wall": 1794204487.770897,
+      "direction": "tx",
+      "can_id": 2047,
+      "payload": "04 00 cc 00 00 00 00 00"
+    },
+    {
+      "seq": 11,
+      "at": 7257.486465,
+      "wall": 1794204487.772043,
+      "direction": "rx",
+      "can_id": 0,
+      "payload": "04 7b b8 7f f7 ff 1d 1c"
+    },
+    {
+      "seq": 12,
+      "at": 7257.488789,
+      "wall": 1794204487.774366,
+      "direction": "tx",
+      "can_id": 2047,
+      "payload": "05 00 33 07 00 00 00 00"
+    },
+    {
+      "seq": 13,
+      "at": 7257.489907,
+      "wall": 1794204487.775486,
+      "direction": "rx",
+      "can_id": 0,
+      "payload": "05 00 33 07 00 00 00 00"
+    },
+    {
+      "seq": 14,
+      "at": 7257.492185,
+      "wall": 1794204487.777763,
+      "direction": "tx",
+      "can_id": 2047,
+      "payload": "05 00 33 08 00 00 00 00"
+    },
+    {
+      "seq": 15,
+      "at": 7257.493308,
+      "wall": 1794204487.778887,
+      "direction": "rx",
+      "can_id": 0,
+      "payload": "05 00 33 08 05 00 00 00"
+    },
+    {
+      "seq": 16,
+      "at": 7257.495528,
+      "wall": 1794204487.781105,
+      "direction": "tx",
+      "can_id": 2047,
+      "payload": "05 00 33 09 00 00 00 00"
+    },
+    {
+      "seq": 17,
+      "at": 7257.496637,
+      "wall": 1794204487.782216,
+      "direction": "rx",
+      "can_id": 0,
+      "payload": "05 00 33 09 d0 07 00 00"
+    },
+    {
+      "seq": 18,
+      "at": 7257.498887,
+      "wall": 1794204487.784464,
+      "direction": "tx",
+      "can_id": 2047,
+      "payload": "05 00 33 0a 00 00 00 00"
+    },
+    {
+      "seq": 19,
+      "at": 7257.500057,
+      "wall": 1794204487.785635,
+      "direction": "rx",
+      "can_id": 0,
+      "payload": "05 00 33 0a 01 00 00 00"
+    },
+    {
+      "seq": 20,
+      "at": 7257.50232,
+      "wall": 1794204487.787897,
+      "direction": "tx",
+      "can_id": 2047,
+      "payload": "05 00 33 15 00 00 00 00"
+    },
+    {
+      "seq": 21,
+      "at": 7257.503424,
+      "wall": 1794204487.789003,
+      "direction": "rx",
+      "can_id": 0,
+      "payload": "05 00 33 15 00 00 48 41"
+    },
+    {
+      "seq": 22,
+      "at": 7257.505644,
+      "wall": 1794204487.791221,
+      "direction": "tx",
+      "can_id": 2047,
+      "payload": "05 00 33 16 00 00 00 00"
+    },
+    {
+      "seq": 23,
+      "at": 7257.506818,
+      "wall": 1794204487.792396,
+      "direction": "rx",
+      "can_id": 0,
+      "payload": "05 00 33 16 00 00 20 41"
+    },
+    {
+      "seq": 24,
+      "at": 7257.509063,
+      "wall": 1794204487.79464,
+      "direction": "tx",
+      "can_id": 2047,
+      "payload": "05 00 33 17 00 00 00 00"
+    },
+    {
+      "seq": 25,
+      "at": 7257.510159,
+      "wall": 1794204487.795738,
+      "direction": "rx",
+      "can_id": 0,
+      "payload": "05 00 33 17 00 00 e0 41"
+    },
+    {
+      "seq": 26,
+      "at": 7257.542967,
+      "wall": 1794204487.828545,
+      "direction": "tx",
+      "can_id": 2047,
+      "payload": "05 00 cc 00 00 00 00 00"
+    },
+    {
+      "seq": 27,
+      "at": 7257.544101,
+      "wall": 1794204487.82968,
+      "direction": "rx",
+      "can_id": 0,
+      "payload": "05 9a 0d 7f f7 fe 1d 1b"
+    },
+    {
+      "seq": 28,
+      "at": 7257.546365,
+      "wall": 1794204487.831943,
+      "direction": "tx",
+      "can_id": 2047,
+      "payload": "01 00 cc 00 00 00 00 00"
+    },
+    {
+      "seq": 29,
+      "at": 7257.547501,
+      "wall": 1794204487.833079,
+      "direction": "rx",
+      "can_id": 0,
+      "payload": "01 8e fb 7f f7 ff 1f 1c"
+    },
+    {
+      "seq": 30,
+      "at": 7257.549765,
+      "wall": 1794204487.835343,
+      "direction": "tx",
+      "can_id": 2047,
+      "payload": "02 00 cc 00 00 00 00 00"
+    },
+    {
+      "seq": 31,
+      "at": 7257.550871,
+      "wall": 1794204487.83645,
+      "direction": "rx",
+      "can_id": 0,
+      "payload": "02 6d a4 80 07 ff 1e 1b"
+    },
+    {
+      "seq": 32,
+      "at": 7257.553182,
+      "wall": 1794204487.838759,
+      "direction": "tx",
+      "can_id": 2047,
+      "payload": "03 00 cc 00 00 00 00 00"
+    },
+    {
+      "seq": 33,
+      "at": 7257.554311,
+      "wall": 1794204487.839889,
+      "direction": "rx",
+      "can_id": 0,
+      "payload": "03 65 f7 7f f7 ff 1d 1b"
+    },
+    {
+      "seq": 34,
+      "at": 7257.556552,
+      "wall": 1794204487.84213,
+      "direction": "tx",
+      "can_id": 2047,
+      "payload": "04 00 cc 00 00 00 00 00"
+    },
+    {
+      "seq": 35,
+      "at": 7257.559026,
+      "wall": 1794204487.844606,
+      "direction": "rx",
+      "can_id": 0,
+      "payload": "04 7b b8 7f f7 fe 1d 1c"
+    },
+    {
+      "seq": 36,
+      "at": 7257.560114,
+      "wall": 1794204487.845691,
+      "direction": "tx",
+      "can_id": 2047,
+      "payload": "05 00 33 07 00 00 00 00"
+    },
+    {
+      "seq": 37,
+      "at": 7257.561283,
+      "wall": 1794204487.846862,
+      "direction": "rx",
+      "can_id": 0,
+      "payload": "05 00 33 07 00 00 00 00"
+    },
+    {
+      "seq": 38,
+      "at": 7257.563485,
+      "wall": 1794204487.849062,
+      "direction": "tx",
+      "can_id": 2047,
+      "payload": "05 00 33 08 00 00 00 00"
+    },
+    {
+      "seq": 39,
+      "at": 7257.565685,
+      "wall": 1794204487.851264,
+      "direction": "rx",
+      "can_id": 0,
+      "payload": "05 00 33 08 05 00 00 00"
+    },
+    {
+      "seq": 40,
+      "at": 7257.566879,
+      "wall": 1794204487.852456,
+      "direction": "tx",
+      "can_id": 2047,
+      "payload": "05 00 33 09 00 00 00 00"
+    },
+    {
+      "seq": 41,
+      "at": 7257.567978,
+      "wall": 1794204487.853556,
+      "direction": "rx",
+      "can_id": 0,
+      "payload": "05 00 33 09 d0 07 00 00"
+    },
+    {
+      "seq": 42,
+      "at": 7257.570262,
+      "wall": 1794204487.855839,
+      "direction": "tx",
+      "can_id": 2047,
+      "payload": "05 00 33 0a 00 00 00 00"
+    },
+    {
+      "seq": 43,
+      "at": 7257.571365,
+      "wall": 1794204487.856944,
+      "direction": "rx",
+      "can_id": 0,
+      "payload": "05 00 33 0a 01 00 00 00"
+    },
+    {
+      "seq": 44,
+      "at": 7257.573665,
+      "wall": 1794204487.859242,
+      "direction": "tx",
+      "can_id": 2047,
+      "payload": "05 00 33 15 00 00 00 00"
+    },
+    {
+      "seq": 45,
+      "at": 7257.57476,
+      "wall": 1794204487.860338,
+      "direction": "rx",
+      "can_id": 0,
+      "payload": "05 00 33 15 00 00 48 41"
+    },
+    {
+      "seq": 46,
+      "at": 7257.577353,
+      "wall": 1794204487.86293,
+      "direction": "tx",
+      "can_id": 2047,
+      "payload": "05 00 33 16 00 00 00 00"
+    },
+    {
+      "seq": 47,
+      "at": 7257.578459,
+      "wall": 1794204487.864037,
+      "direction": "rx",
+      "can_id": 0,
+      "payload": "05 00 33 16 00 00 20 41"
+    },
+    {
+      "seq": 48,
+      "at": 7257.580709,
+      "wall": 1794204487.866286,
+      "direction": "tx",
+      "can_id": 2047,
+      "payload": "05 00 33 17 00 00 00 00"
+    },
+    {
+      "seq": 49,
+      "at": 7257.58181,
+      "wall": 1794204487.867388,
+      "direction": "rx",
+      "can_id": 0,
+      "payload": "05 00 33 17 00 00 e0 41"
+    },
+    {
+      "seq": 50,
+      "at": 7257.604479,
+      "wall": 1794204487.890057,
+      "direction": "tx",
+      "can_id": 2047,
+      "payload": "05 00 cc 00 00 00 00 00"
+    },
+    {
+      "seq": 51,
+      "at": 7257.605593,
+      "wall": 1794204487.891173,
+      "direction": "rx",
+      "can_id": 0,
+      "payload": "05 9a 0d 7f f7 fe 1d 1b"
+    },
+    {
+      "seq": 52,
+      "at": 7257.607849,
+      "wall": 1794204487.893427,
+      "direction": "tx",
+      "can_id": 2047,
+      "payload": "01 00 cc 00 00 00 00 00"
+    },
+    {
+      "seq": 53,
+      "at": 7257.610075,
+      "wall": 1794204487.895654,
+      "direction": "rx",
+      "can_id": 0,
+      "payload": "01 8e fb 7f d7 ff 1f 1c"
+    },
+    {
+      "seq": 54,
+      "at": 7257.611228,
+      "wall": 1794204487.896806,
+      "direction": "tx",
+      "can_id": 2047,
+      "payload": "02 00 cc 00 00 00 00 00"
+    },
+    {
+      "seq": 55,
+      "at": 7257.612346,
+      "wall": 1794204487.897925,
+      "direction": "rx",
+      "can_id": 0,
+      "payload": "02 6d a4 7f f7 ff 1e 1b"
+    },
+    {
+      "seq": 56,
+      "at": 7257.614623,
+      "wall": 1794204487.9002,
+      "direction": "tx",
+      "can_id": 2047,
+      "payload": "03 00 cc 00 00 00 00 00"
+    },
+    {
+      "seq": 57,
+      "at": 7257.615727,
+      "wall": 1794204487.901305,
+      "direction": "rx",
+      "can_id": 0,
+      "payload": "03 65 f7 7f f7 ff 1d 1b"
+    },
+    {
+      "seq": 58,
+      "at": 7257.61798,
+      "wall": 1794204487.903558,
+      "direction": "tx",
+      "can_id": 2047,
+      "payload": "04 00 cc 00 00 00 00 00"
+    },
+    {
+      "seq": 59,
+      "at": 7257.619071,
+      "wall": 1794204487.90465,
+      "direction": "rx",
+      "can_id": 0,
+      "payload": "04 7b b8 7f f7 ff 1d 1c"
+    },
+    {
+      "seq": 60,
+      "at": 7257.621358,
+      "wall": 1794204487.906935,
+      "direction": "tx",
+      "can_id": 2047,
+      "payload": "05 00 33 07 00 00 00 00"
+    },
+    {
+      "seq": 61,
+      "at": 7257.622509,
+      "wall": 1794204487.908087,
+      "direction": "rx",
+      "can_id": 0,
+      "payload": "05 00 33 07 00 00 00 00"
+    },
+    {
+      "seq": 62,
+      "at": 7257.624769,
+      "wall": 1794204487.910347,
+      "direction": "tx",
+      "can_id": 2047,
+      "payload": "05 00 33 08 00 00 00 00"
+    },
+    {
+      "seq": 63,
+      "at": 7257.628273,
+      "wall": 1794204487.913851,
+      "direction": "tx",
+      "can_id": 2047,
+      "payload": "05 00 33 09 00 00 00 00"
+    },
+    {
+      "seq": 64,
+      "at": 7257.630614,
+      "wall": 1794204487.916193,
+      "direction": "rx",
+      "can_id": 0,
+      "payload": "05 00 33 08 05 00 00 00"
+    },
+    {
+      "seq": 65,
+      "at": 7257.630625,
+      "wall": 1794204487.916203,
+      "direction": "rx",
+      "can_id": 0,
+      "payload": "05 00 33 09 d0 07 00 00"
+    },
+    {
+      "seq": 66,
+      "at": 7257.631742,
+      "wall": 1794204487.917319,
+      "direction": "tx",
+      "can_id": 2047,
+      "payload": "05 00 33 0a 00 00 00 00"
+    },
+    {
+      "seq": 67,
+      "at": 7257.632838,
+      "wall": 1794204487.918416,
+      "direction": "rx",
+      "can_id": 0,
+      "payload": "05 00 33 0a 01 00 00 00"
+    },
+    {
+      "seq": 68,
+      "at": 7257.635035,
+      "wall": 1794204487.920612,
+      "direction": "tx",
+      "can_id": 2047,
+      "payload": "05 00 33 15 00 00 00 00"
+    },
+    {
+      "seq": 69,
+      "at": 7257.636136,
+      "wall": 1794204487.921715,
+      "direction": "rx",
+      "can_id": 0,
+      "payload": "05 00 33 15 00 00 48 41"
+    },
+    {
+      "seq": 70,
+      "at": 7257.63838,
+      "wall": 1794204487.923957,
+      "direction": "tx",
+      "can_id": 2047,
+      "payload": "05 00 33 16 00 00 00 00"
+    },
+    {
+      "seq": 71,
+      "at": 7257.639468,
+      "wall": 1794204487.925046,
+      "direction": "rx",
+      "can_id": 0,
+      "payload": "05 00 33 16 00 00 20 41"
+    },
+    {
+      "seq": 72,
+      "at": 7257.64167,
+      "wall": 1794204487.927247,
+      "direction": "tx",
+      "can_id": 2047,
+      "payload": "05 00 33 17 00 00 00 00"
+    },
+    {
+      "seq": 73,
+      "at": 7257.642771,
+      "wall": 1794204487.92835,
+      "direction": "rx",
+      "can_id": 0,
+      "payload": "05 00 33 17 00 00 e0 41"
+    },
+    {
+      "seq": 74,
+      "at": 7257.668038,
+      "wall": 1794204487.953618,
+      "direction": "close",
+      "path": "/dev/ttyACM0"
+    }
+  ],
+  "trace_dropped": 0
+}

@@ -1,0 +1,282 @@
+{
+  "checks": [
+    {
+      "name": "页面标题正确",
+      "passed": true,
+      "detail": "四轴 ROS 统一控制台"
+    },
+    {
+      "name": "状态显示真实反馈在线",
+      "passed": true,
+      "detail": "反馈：在线"
+    },
+    {
+      "name": "控制阶段显示未使能",
+      "passed": true,
+      "detail": "阶段：未使能"
+    },
+    {
+      "name": "心跳租约显示正常",
+      "passed": true,
+      "detail": "心跳：正常"
+    },
+    {
+      "name": "四轴行数正确",
+      "passed": true,
+      "detail": 4
+    },
+    {
+      "name": "界面实际角度与服务器一致",
+      "passed": true,
+      "detail": {
+        "ui": [
+          "14.994",
+          "25.004",
+          "-10.010",
+          "5.005"
+        ],
+        "api": [
+          "14.994",
+          "25.004",
+          "-10.010",
+          "5.005"
+        ]
+      }
+    },
+    {
+      "name": "无目标时目标列显示占位",
+      "passed": true,
+      "detail": [
+        "—",
+        "—",
+        "—",
+        "—"
+      ]
+    },
+    {
+      "name": "页面峰值速度上限与规划器一致",
+      "passed": true,
+      "detail": {
+        "ui": "0.5",
+        "api": "0.5"
+      }
+    },
+    {
+      "name": "重力 shadow 显示四轴估算行",
+      "passed": true,
+      "detail": 4
+    },
+    {
+      "name": "重力 shadow 标明未前馈",
+      "passed": true,
+      "detail": "模式shadow（只显示）前馈已应用否后端analytic-urdf模型 URDFfe7edfda1616质量档案ESTIMATE_ONLY_NOT_FOR_HARDWARE（ff3c2f144739）总质量6.342 kg重力方向（基础系）0, 9.80665, 0 m/s²J3 固定偏置3.1416 rad主机力矩门槛已关闭 / 已关闭 / 已关闭 / 已关闭kp / kd160 / 5驱动前"
+    },
+    {
+      "name": "重力 shadow 说明未写入命令",
+      "passed": true,
+      "detail": "模式 shadow；驱动 α=0.00，假设补偿预测 α_pred=1.00（仅模型预测，未写入命令）。控制器参考未知：P 项与总余量显示为“未知”，不以零误差假设填充。 控制器参考未知：P 项与总余量显示为未知，不以零误差假设填充 未收到驱动活动前馈：已应用余量不可计算 质量档案为暂定模型（ESTIMATE_ONLY_NOT_FOR_HARDWARE），不得当作已标定 已应用固定关节偏置 {'s"
+    },
+    {
+      "name": "重力卡片显示驱动侧前馈状态",
+      "passed": true,
+      "detail": "模式shadow（只显示）前馈已应用否后端analytic-urdf模型 URDFfe7edfda1616质量档案ESTIMATE_ONLY_NOT_FOR_HARDWARE（ff3c2f144739）总质量6.342 kg重力方向（基础系）0, 9.80665, 0 m/s²J3 固定偏置3.1416 rad主机力矩门槛已关闭 / 已关闭 / 已关闭 / 已关闭kp / kd160 / 5驱动前馈活动否驱动前馈 α / 斜坡0.00 / 1.00 s驱动已写入值 N·m0."
+    },
+    {
+      "name": "停止入口可见且可用",
+      "passed": true,
+      "detail": {
+        "w": 168,
+        "h": 53,
+        "left": 1252,
+        "top": 12,
+        "display": "block",
+        "visibility": "visible",
+        "disabled": false
+      }
+    },
+    {
+      "name": "轮询不覆盖操作员输入",
+      "passed": true,
+      "detail": "1.000"
+    },
+    {
+      "name": "编辑后提示需要重新预览",
+      "passed": true
+    },
+    {
+      "name": "预览显示服务器返回的绝对目标",
+      "passed": true,
+      "detail": [
+        [
+          "1",
+          "2.00",
+          "2.00",
+          "3.00",
+          "15.994",
+          "25.004",
+          "-10.010",
+          "5.005"
+        ]
+      ]
+    },
+    {
+      "name": "预览目标为软件绝对角度",
+      "passed": true,
+      "detail": "15.994"
+    },
+    {
+      "name": "预览显示票根与预算",
+      "passed": true,
+      "detail": "票根c5c11c6fa92d…校验状态有效剩余有效期60.0 s源坐标模式相对本次起点执行坐标模式冻结为软件绝对角度预览起点14.99 / 25.00 / -10.01 / 5.00 °计划总时长3.00 s时间预算上限169.0 s（含保持与 8 秒余量）终点回到起点否起点漂移0.00 °"
+    },
+    {
+      "name": "浏览器预览未使能",
+      "passed": true,
+      "detail": {
+        "stage": 0,
+        "command_id": 0
+      }
+    },
+    {
+      "name": "执行按钮在确认前不可用",
+      "passed": true
+    },
+    {
+      "name": "确认勾选后执行按钮可用",
+      "passed": true
+    },
+    {
+      "name": "浏览器执行完成且退出码 0",
+      "passed": true,
+      "detail": {
+        "exit": 0,
+        "phase": "finished"
+      }
+    },
+    {
+      "name": "浏览器执行逐点精度通过",
+      "passed": true,
+      "detail": [
+        {
+          "arrival_s": 2.0,
+          "end_s": 3.0,
+          "target_deg": [
+            15.994,
+            25.004,
+            -10.01,
+            5.005
+          ],
+          "samples": 30,
+          "sampled_span_s": 0.2901067610073369,
+          "max_error_deg": [
+            0.016437751549289815,
+            0.02185693885446026,
+            0.0,
+            0.0
+          ],
+          "passed": true,
+          "max_velocity_rad_s": null
+        }
+      ]
+    },
+    {
+      "name": "浏览器执行确认新失能",
+      "passed": true
+    },
+    {
+      "name": "操作结果阶段显示为完成",
+      "passed": true,
+      "detail": "操作 IDee2075be00504dfb类型路点计划执行阶段完成退出码0开始13:00:13结束13:00:20停止原因—心跳租约过期否源计划 SHA2564b564d89528146f8…冻结计划 SHA2563719d58807565939…"
+    },
+    {
+      "name": "逐点判据表显示通过",
+      "passed": true,
+      "detail": [
+        [
+          "1",
+          "2.00",
+          "3.00",
+          "30",
+          "0.290",
+          "0.016",
+          "0.022",
+          "0.000",
+          "0.000",
+          "通过"
+        ]
+      ]
+    },
+    {
+      "name": "停止确认在结果中显示",
+      "passed": true,
+      "detail": "逐点精度判据全部通过动作成功 ≠ 精度通过—客户端新失能确认已确认面板停止状态未请求面板失能观察是"
+    },
+    {
+      "name": "客户端原始输出可见",
+      "passed": true
+    },
+    {
+      "name": "停止后横幅提示门禁锁定",
+      "passed": true,
+      "detail": "停止已受理：预览/执行/保持锁定，需手动复位并观测到新的四轴一致未使能。"
+    },
+    {
+      "name": "停止后预览按钮禁用",
+      "passed": true
+    },
+    {
+      "name": "复位后门禁解锁并恢复预览",
+      "passed": true
+    },
+    {
+      "name": "面板事件日志可读",
+      "passed": true,
+      "detail": {
+        "count": 14,
+        "text": "13:00:22停止门禁解除：已观测手动复位后的新鲜四轴一致 DISARMED13:00:22服务 reset_disabled：接受（Software reset requested; re-enable is a separate manual action）13:00:22已调用 /slaihand/reset_"
+      }
+    },
+    {
+      "name": "ROS/服务明细可读",
+      "passed": true
+    },
+    {
+      "name": "窄屏停止入口仍可见",
+      "passed": true,
+      "detail": {
+        "w": 380,
+        "h": 53,
+        "top": 110,
+        "right": 400,
+        "viewport": 420
+      }
+    },
+    {
+      "name": "窄屏无整页横向溢出",
+      "passed": true,
+      "detail": {
+        "scrollWidth": 420
+      }
+    },
+    {
+      "name": "窄屏提示表格可滑动",
+      "passed": true
+    },
+    {
+      "name": "页面无未捕获异常",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "页面无脚本错误日志",
+      "passed": true,
+      "detail": []
+    }
+  ],
+  "failures": [],
+  "url": "http://127.0.0.1:18888/?token=<redacted>",
+  "desktop": "D:\\CodexData\\Projects\\机械臂\\slaihand_ros2_ws\\verification\\hardware\\control_panel_20261104\\evidence\\panel_desktop.png",
+  "full": "D:\\CodexData\\Projects\\机械臂\\slaihand_ros2_ws\\verification\\hardware\\control_panel_20261104\\evidence\\panel_full.png",
+  "narrow": "D:\\CodexData\\Projects\\机械臂\\slaihand_ros2_ws\\verification\\hardware\\control_panel_20261104\\evidence\\panel_narrow.png",
+  "status": "PASS"
+}

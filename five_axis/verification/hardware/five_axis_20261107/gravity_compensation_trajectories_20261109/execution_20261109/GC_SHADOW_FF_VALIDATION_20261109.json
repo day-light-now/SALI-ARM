@@ -1,0 +1,455 @@
+{
+  "schema": "slaihand_gc_shadow_ff_validation/1",
+  "deployable": false,
+  "ff_applied": false,
+  "note": "candidate evaluated offline; recorded effort is a torque estimate, not current",
+  "sessions": {
+    "GC01": {
+      "windows": [
+        {
+          "index": 0,
+          "q_deg": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "skipped": "outside recorded angle bounds; no extrapolation"
+        },
+        {
+          "index": 1,
+          "q_deg": [
+            9.921466307013942,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "skipped": "outside recorded angle bounds; no extrapolation"
+        },
+        {
+          "index": 2,
+          "q_deg": [
+            19.921471591063938,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "skipped": "outside recorded angle bounds; no extrapolation"
+        },
+        {
+          "index": 3,
+          "q_deg": [
+            0.0,
+            9.937352312336285,
+            0.0,
+            0.0
+          ],
+          "predicted_model_nm": [
+            0.16702540083313733,
+            2.5473874199111077,
+            0.08736067301856323,
+            0.34168696099477674
+          ],
+          "actual_effort_estimate_nm": {
+            "slaihand_joint1": -1.025641025641022,
+            "slaihand_joint2": 1.7030997676158905,
+            "slaihand_joint3": 0.27692307692307594,
+            "slaihand_joint4": 0.14505494505494454
+          },
+          "residual_nm": {
+            "slaihand_joint1": -1.1926664264741593,
+            "slaihand_joint2": -0.8442876522952172,
+            "slaihand_joint3": 0.1895624039045127,
+            "slaihand_joint4": -0.1966320159398322
+          }
+        },
+        {
+          "index": 4,
+          "q_deg": [
+            0.0,
+            19.92147291752742,
+            0.0,
+            0.0
+          ],
+          "predicted_model_nm": [
+            0.16702540085081963,
+            5.324597360417361,
+            0.17318364819429133,
+            1.017782725838863
+          ],
+          "actual_effort_estimate_nm": {
+            "slaihand_joint1": -1.025641025641022,
+            "slaihand_joint2": 5.84662649178779,
+            "slaihand_joint3": 0.27692307692307594,
+            "slaihand_joint4": 0.1433534207727751
+          },
+          "residual_nm": {
+            "slaihand_joint1": -1.1926664264918416,
+            "slaihand_joint2": 0.5220291313704291,
+            "slaihand_joint3": 0.10373942872878461,
+            "slaihand_joint4": -0.8744293050660878
+          }
+        }
+      ],
+      "skipped_outside_bounds": 3
+    },
+    "GC02": {
+      "windows": [
+        {
+          "index": 0,
+          "q_deg": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "skipped": "outside recorded angle bounds; no extrapolation"
+        },
+        {
+          "index": 1,
+          "q_deg": [
+            0.0,
+            0.0,
+            9.955050098164577,
+            0.0
+          ],
+          "skipped": "outside recorded angle bounds; no extrapolation"
+        },
+        {
+          "index": 2,
+          "q_deg": [
+            0.0,
+            0.0,
+            19.921369028494453,
+            0.0
+          ],
+          "skipped": "outside recorded angle bounds; no extrapolation"
+        },
+        {
+          "index": 3,
+          "q_deg": [
+            0.0,
+            0.0,
+            0.0,
+            9.92262410394774
+          ],
+          "skipped": "outside recorded angle bounds; no extrapolation"
+        },
+        {
+          "index": 4,
+          "q_deg": [
+            0.0,
+            0.0,
+            0.0,
+            19.91849048094993
+          ],
+          "skipped": "outside recorded angle bounds; no extrapolation"
+        }
+      ],
+      "skipped_outside_bounds": 5
+    },
+    "GC03": {
+      "windows": [
+        {
+          "index": 0,
+          "q_deg": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "skipped": "outside recorded angle bounds; no extrapolation"
+        },
+        {
+          "index": 1,
+          "q_deg": [
+            9.970454689730156,
+            9.970454689730156,
+            9.970454689730156,
+            9.970454689730156
+          ],
+          "predicted_model_nm": [
+            2.857705881720882,
+            3.2627212077104435,
+            -0.012926880907674243,
+            0.8758687276194688
+          ],
+          "actual_effort_estimate_nm": {
+            "slaihand_joint1": 1.1265771265771225,
+            "slaihand_joint2": 1.7875457875457812,
+            "slaihand_joint3": -1.0092307692307694,
+            "slaihand_joint4": 1.1534065934065965
+          },
+          "residual_nm": {
+            "slaihand_joint1": -1.7311287551437593,
+            "slaihand_joint2": -1.4751754201646623,
+            "slaihand_joint3": -0.9963038883230951,
+            "slaihand_joint4": 0.2775378657871277
+          }
+        },
+        {
+          "index": 2,
+          "q_deg": [
+            19.918031006158166,
+            19.918031006158166,
+            19.918031006158166,
+            19.918031006158166
+          ],
+          "predicted_model_nm": [
+            4.836427427306759,
+            6.264754379117662,
+            -0.3725178368098788,
+            1.6052025890329489
+          ],
+          "actual_effort_estimate_nm": {
+            "slaihand_joint1": 7.2836792836792865,
+            "slaihand_joint2": 5.8933658933659006,
+            "slaihand_joint3": 0.08967032967032935,
+            "slaihand_joint4": 4.644395604395602
+          },
+          "residual_nm": {
+            "slaihand_joint1": 2.447251856372527,
+            "slaihand_joint2": -0.3713884857517611,
+            "slaihand_joint3": 0.46218816648020816,
+            "slaihand_joint4": 3.0391930153626534
+          }
+        },
+        {
+          "index": 3,
+          "q_deg": [
+            19.97395008307054,
+            10.026049916929457,
+            29.973950083070545,
+            10.052099833858916
+          ],
+          "predicted_model_nm": [
+            5.355125372792173,
+            3.2413311658475124,
+            -0.17337759695284832,
+            0.21063430560580654
+          ],
+          "actual_effort_estimate_nm": {
+            "slaihand_joint1": 7.422111938240972,
+            "slaihand_joint2": 3.2502264760329163,
+            "slaihand_joint3": 0.6614675646933688,
+            "slaihand_joint4": 4.025381070542361
+          },
+          "residual_nm": {
+            "slaihand_joint1": 2.066986565448799,
+            "slaihand_joint2": 0.008895310185403904,
+            "slaihand_joint3": 0.8348451616462171,
+            "slaihand_joint4": 3.814746764936554
+          }
+        },
+        {
+          "index": 4,
+          "q_deg": [
+            10.08197601088543,
+            20.0,
+            20.08197601088543,
+            29.918023989114566
+          ],
+          "predicted_model_nm": [
+            2.0695819595881266,
+            7.064354022824079,
+            -0.35448535765836275,
+            2.455863210460742
+          ],
+          "actual_effort_estimate_nm": {
+            "slaihand_joint1": 3.6988196988196855,
+            "slaihand_joint2": 6.792022792022796,
+            "slaihand_joint3": 0.10901098901098863,
+            "slaihand_joint4": 4.974945054945055
+          },
+          "residual_nm": {
+            "slaihand_joint1": 1.629237739231559,
+            "slaihand_joint2": -0.2723312308012833,
+            "slaihand_joint3": 0.46349634666935136,
+            "slaihand_joint4": 2.5190818444843126
+          }
+        },
+        {
+          "index": 5,
+          "q_deg": [
+            19.97193822988116,
+            19.97193822988116,
+            29.943876459762325,
+            19.97193822988116
+          ],
+          "predicted_model_nm": [
+            4.647805443146997,
+            6.278942384223022,
+            -0.4425095334135635,
+            1.3131441801464334
+          ],
+          "actual_effort_estimate_nm": {
+            "slaihand_joint1": 7.492063492063494,
+            "slaihand_joint2": 6.1147741147741215,
+            "slaihand_joint3": 0.6048351648351626,
+            "slaihand_joint4": 3.539340659340661
+          },
+          "residual_nm": {
+            "slaihand_joint1": 2.8442580489164966,
+            "slaihand_joint2": -0.16416826944890062,
+            "slaihand_joint3": 1.0473446982487262,
+            "slaihand_joint4": 2.2261964791942273
+          }
+        }
+      ],
+      "skipped_outside_bounds": 1
+    },
+    "GC04": {
+      "windows": [
+        {
+          "index": 0,
+          "q_deg": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "skipped": "outside recorded angle bounds; no extrapolation"
+        },
+        {
+          "index": 1,
+          "q_deg": [
+            4.973198778969563,
+            9.946397557939125,
+            9.946397557939125,
+            9.946397557939125
+          ],
+          "predicted_model_nm": [
+            1.4756004858252714,
+            3.2917968683749765,
+            0.03083213589372133,
+            0.9431374045546869
+          ],
+          "actual_effort_estimate_nm": {
+            "slaihand_joint1": 0.9474969474969441,
+            "slaihand_joint2": 1.693121693121687,
+            "slaihand_joint3": -1.0189010989011005,
+            "slaihand_joint4": 0.99956043956044
+          },
+          "residual_nm": {
+            "slaihand_joint1": -0.5281035383283272,
+            "slaihand_joint2": -1.5986751752532895,
+            "slaihand_joint3": -1.0497332347948218,
+            "slaihand_joint4": 0.056423035005753186
+          }
+        },
+        {
+          "index": 2,
+          "q_deg": [
+            9.988728647624171,
+            19.977457295248342,
+            19.977457295248342,
+            19.977457295248342
+          ],
+          "predicted_model_nm": [
+            2.339954160353897,
+            6.580791422107878,
+            -0.1723143546905066,
+            1.9248446112924638
+          ],
+          "actual_effort_estimate_nm": {
+            "slaihand_joint1": 3.347171347171335,
+            "slaihand_joint2": 4.014652014652017,
+            "slaihand_joint3": -0.1652747252747247,
+            "slaihand_joint4": 2.517802197802196
+          },
+          "residual_nm": {
+            "slaihand_joint1": 1.0072171868174382,
+            "slaihand_joint2": -2.5661394074558608,
+            "slaihand_joint3": 0.007039629415781901,
+            "slaihand_joint4": 0.5929575865097323
+          }
+        },
+        {
+          "index": 3,
+          "q_deg": [
+            14.990177908363824,
+            29.98035581672765,
+            29.98035581672765,
+            29.98035581672765
+          ],
+          "predicted_model_nm": [
+            2.609448085702832,
+            9.217111810841747,
+            -0.6602513773599572,
+            2.428891817252647
+          ],
+          "actual_effort_estimate_nm": {
+            "slaihand_joint1": 3.6945133719327137,
+            "slaihand_joint2": 7.982984757178306,
+            "slaihand_joint3": -0.527897908543068,
+            "slaihand_joint4": 4.32995391705069
+          },
+          "residual_nm": {
+            "slaihand_joint1": 1.0850652862298817,
+            "slaihand_joint2": -1.2341270536634408,
+            "slaihand_joint3": 0.13235346881688925,
+            "slaihand_joint4": 1.9010620997980432
+          }
+        },
+        {
+          "index": 4,
+          "q_deg": [
+            19.96053545624513,
+            39.92107091249026,
+            39.92107091249026,
+            39.92107091249026
+          ],
+          "predicted_model_nm": [
+            2.2689961098280538,
+            11.002405303474669,
+            -1.385594956988254,
+            2.4180550126800564
+          ],
+          "actual_effort_estimate_nm": {
+            "slaihand_joint1": 7.365079365079367,
+            "slaihand_joint2": 11.676027676027664,
+            "slaihand_joint3": 0.5090109890109872,
+            "slaihand_joint4": 7.091868131868135
+          },
+          "residual_nm": {
+            "slaihand_joint1": 5.096083255251314,
+            "slaihand_joint2": 0.6736223725529946,
+            "slaihand_joint3": 1.894605945999241,
+            "slaihand_joint4": 4.673813119188079
+          }
+        }
+      ],
+      "skipped_outside_bounds": 1
+    }
+  },
+  "residual_stats_nm": {
+    "slaihand_joint1": {
+      "mean": 1.0483213447118116,
+      "std": 1.9817224995057245,
+      "rmse": 2.2419192016719953,
+      "max_abs": 5.096083255251314,
+      "count": 11
+    },
+    "slaihand_joint2": {
+      "mean": -0.6656132618841444,
+      "std": 0.9363770573784423,
+      "rmse": 1.1488442052692616,
+      "max_abs": 2.5661394074558608,
+      "count": 11
+    },
+    "slaihand_joint3": {
+      "mean": 0.28083073879925413,
+      "std": 0.8035814687983646,
+      "rmse": 0.8512397317152623,
+      "max_abs": 1.894605945999241,
+      "count": 11
+    },
+    "slaihand_joint4": {
+      "mean": 1.6390864081145968,
+      "std": 1.7117702386005027,
+      "rmse": 2.3699708021459744,
+      "max_abs": 4.673813119188079,
+      "count": 11
+    }
+  }
+}

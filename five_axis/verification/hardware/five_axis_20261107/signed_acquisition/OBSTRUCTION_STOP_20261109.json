@@ -1,0 +1,25 @@
+{
+  "schema": "slaihand_obstruction_stop_evidence/1",
+  "observed_at": "2026-11-09T09:35:44+08:00",
+  "operator_report": "不要往后面有遮挡",
+  "plan": "SLOW_J1_J4_40.json",
+  "client_result": "slow_j1j4_40_client_result_20261109_093544.json",
+  "completed_partial": {
+    "J1_plus_40_signed_mean_deg": -3.524,
+    "J1_plus_40_max_abs_deg": 3.586,
+    "return_to_near_zero_signed_mean_deg": 0.795,
+    "J4_plus_40_max_abs_deg": 1.115
+  },
+  "event": "The J1 +40 and return-to-neutral holds completed; the later J1 -40 (backward) segment aborted on path tolerance. Operator then reported an obstruction behind the arm.",
+  "action_taken": [
+    "All motion stopped; driver terminated; no retry.",
+    "No recovery motion attempted.",
+    "No backward/negative-direction motion is permitted until the operator clears the obstruction and reauthorizes."
+  ],
+  "motion_authorized_after_this": false,
+  "not_a_collision_conclusion": true,
+  "notes": [
+    "The stop reason in the completed client result is path tolerance; the obstruction warning came after the motion.",
+    "This record is a safety hold, not a completed 40-degree test."
+  ]
+}

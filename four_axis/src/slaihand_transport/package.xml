@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<package format="3">
+  <name>slaihand_transport</name><version>0.1.0</version>
+  <description>Existing CANUSB serial framing and four-axis read-only transport.</description>
+  <maintainer email="user@example.com">SLAIHand project</maintainer>
+  <license>Apache-2.0</license>
+  <buildtool_depend>ament_cmake</buildtool_depend>
+  <export><build_type>ament_cmake</build_type></export>
+</package>

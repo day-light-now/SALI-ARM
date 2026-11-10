@@ -1,0 +1,20 @@
+{
+  "date": "2026-11-02",
+  "status": "SOURCE_AUDIT_SNAPSHOT_NOT_BUILD_VALIDATED_RELEASE",
+  "repositories": {
+    "openarm": "a0c8efb0a9792e34814c18fc805298982d1a9f33",
+    "openarm_can": "f3ca25bbda1e239f4cc81f4563fbc75538fef874",
+    "openarm_ros2": "8f23aeabb372c256f7807b9a74d48e035fc68386",
+    "openarm_description": "10ca9bf2f49ef93a2f0f83f97ed2c0fb42dd9a90",
+    "openarm_teleop": "eb2d49338bf70ace95282ea724903849397b7811",
+    "openarm_driver": "5c73d835b31875057695f1b8688e0bf9c0bf87b0",
+    "openarm_control": "f587a5d0ec7ea4e1c05f2b7d93ee19eb783a796b",
+    "dora-openarm": "1663ee50509142c8cabdc3019d797874a2907e97",
+    "dora-openarm-data-collection": "e895c2e12488033f30907dafed0ca332e97974c2",
+    "dora-openarm-kinematics": "e40dd559d07e3defdc438f459b636a87ddd39684",
+    "dora-openarm-ros2": "8eb366369d33f9d420b3d10c3af021ca781c308a"
+  },
+  "hardware_operations_performed": false,
+  "current_local_can_recorded_revision": "f340d4b808fb177e1f297af54eb55fd51c6c7c10",
+  "integration_version_selection": "pending pinned minimum-stack build and API compatibility checks"
+}

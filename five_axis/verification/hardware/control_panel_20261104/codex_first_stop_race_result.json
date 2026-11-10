@@ -1,0 +1,7 @@
+{
+  "stop_status": 202,
+  "hold_status": 202,
+  "spawn_count": 1,
+  "ros_callbacks_after_stop": 0,
+  "hardware_actions_performed": false
+}

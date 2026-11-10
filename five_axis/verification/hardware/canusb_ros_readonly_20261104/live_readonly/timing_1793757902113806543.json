@@ -1,0 +1,61 @@
+{
+  "audit_file": "/home/xuyu/.ros/slaihand/canusb_readonly/canusb_vgTAJ3.jsonl",
+  "bytes_examined": 5566865,
+  "prefix_sha256": "a6d4258a3720a8223bdab8200a50b1411b76a5724c12ea9c4678c8fa3f387452",
+  "read_tx": 16280,
+  "non_read_tx": 0,
+  "j5_tx": 0,
+  "axes": {
+    "1": {
+      "samples": 4059,
+      "observed_hz": 15.71382965888721,
+      "span_s": 258.243858314,
+      "median_gap_ms": 60.04152250002903,
+      "p95_gap_ms": 80.00322100002677,
+      "max_gap_ms": 100.05902900002184,
+      "gaps_over_250ms": 0,
+      "observed_states": [
+        0
+      ]
+    },
+    "2": {
+      "samples": 4059,
+      "observed_hz": 15.714383361431437,
+      "span_s": 258.23475898900006,
+      "median_gap_ms": 60.04792350000798,
+      "p95_gap_ms": 79.99790799999573,
+      "max_gap_ms": 139.96799400001692,
+      "gaps_over_250ms": 0,
+      "observed_states": [
+        0
+      ]
+    },
+    "3": {
+      "samples": 4059,
+      "observed_hz": 15.714994593714938,
+      "span_s": 258.22471498799996,
+      "median_gap_ms": 60.0410720000184,
+      "p95_gap_ms": 80.0074660000405,
+      "max_gap_ms": 100.06551999993007,
+      "gaps_over_250ms": 0,
+      "observed_states": [
+        0
+      ]
+    },
+    "4": {
+      "samples": 4059,
+      "observed_hz": 15.715666787835403,
+      "span_s": 258.213670141,
+      "median_gap_ms": 60.04472399999372,
+      "p95_gap_ms": 80.00600699995175,
+      "max_gap_ms": 90.07586899997477,
+      "gaps_over_250ms": 0,
+      "observed_states": [
+        0
+      ]
+    }
+  },
+  "can_frame_loss_proven": false,
+  "note": "Host receipt intervals only; no CAN sequence counter. ROS subscriber lost-message causality not established.",
+  "motion_accepted": false
+}

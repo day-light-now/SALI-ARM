@@ -1,0 +1,6 @@
+{
+  "deployable": false,
+  "selected_for_deployment": null,
+  "source_result_sha256": "97a50f81bab9926069ed70499ecf17d5523be0f1a91bc82be60b214eaab2a2d1",
+  "reason": "Unmeasured spatial geometry; residuals and direction-law sensitivity require independent physical validation."
+}

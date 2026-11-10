@@ -1,0 +1,93 @@
+{
+  "schema": "slaihand_five_dof_analysis_sources/1",
+  "source_commit": "5cebc3f",
+  "scope": "local offline analysis only",
+  "admission": {
+    "artifact": "acquisition_20261109/artifacts/artifact_l.json",
+    "artifact_sha256": "22faa38808192d96436234e231aae1cbd9f974f2057ee03caf2a998492842965",
+    "evidence": "acquisition_20261109/artifacts/evidence_l_verify_existing.json",
+    "evidence_sha256": "fee30124eb102effac1dc871dc2d20a036e93228dde8f31ab916c7f0aa5a67a9"
+  },
+  "sessions": [
+    {
+      "name": "A",
+      "plan": "acquisition_20261109/plans/IDENT_A_J1J2.json",
+      "state": "acquisition_20261109/raw/ident_a_20261109.jsonl.gz",
+      "state_sha256": "a14312cbfd2ff2221ed1b9ab1d9cf34da8d65d22722be2924e0d1d833f0a7be5",
+      "client": "acquisition_20261109/clients/ident_a_client_20261109_121229.json",
+      "status": "partial: 9/10 waypoint windows sampled; final waypoint stopped/global-stop; final return not absolute zero",
+      "use": "cautious/filter by client observations"
+    },
+    {
+      "name": "A2",
+      "plan": "acquisition_20261109/plans/IDENT_A2_SHORT.json",
+      "state": "acquisition_20261109/raw/ident_a2_20261109.jsonl.gz",
+      "state_sha256": "0f46e8dad29a900c0937f9876e36d5276f29b5d8f6622bb447e18978224cd020",
+      "client": "acquisition_20261109/clients/ident_a2_client_20261109_121525.json",
+      "status": "complete 6/6 sampled; final relative zero (returns to session start, not absolute zero)",
+      "use": "use with client windows"
+    },
+    {
+      "name": "B2",
+      "plan": "acquisition_20261109/plans/IDENT_B_J3J4.json",
+      "state": "acquisition_20261109/raw/ident_b2_20261109.jsonl.gz",
+      "state_sha256": "3184f30526e193476ba96c903d85f684a3fe4dec2d7a3b06633aec1662d91320",
+      "client": "acquisition_20261109/clients/ident_b2_client_20261109_121946.json",
+      "status": "complete 7/7 sampled; final relative zero (returns to session start, not absolute zero)",
+      "use": "use with client windows"
+    },
+    {
+      "name": "C",
+      "plan": "acquisition_20261109/plans/IDENT_C_MIXED_ZERO.json",
+      "state": "acquisition_20261109/raw/ident_c_20261109.jsonl.gz",
+      "state_sha256": "2ac1899ba5d9ae53236a87656af932a9fdc98e2cee7e0c6f64cdf93d0bf18cf7",
+      "client": "acquisition_20261109/clients/ident_c_client_20261109_122216.json",
+      "status": "complete 8/8 sampled; final waypoint is absolute (0,0,0,0,0) and passed",
+      "use": "preferred complete session with absolute zero return"
+    },
+    {
+      "name": "GC01",
+      "state": "gravity_compensation_trajectories_20261109/execution_20261109/raw/gc01_success_20261109.jsonl.gz",
+      "state_sha256": "b7cb820ecce7e3d2401f18d5d428a211a0328ae014ba263cb3a11fa635c617bb",
+      "client": "gravity_compensation_trajectories_20261109/execution_20261109/clients/gc01f/20261109_133627_2d97c20e.json",
+      "plan": "five_dof_identification_20261109/GC01_executed_plan.json",
+      "status": "completed run; check each active static window independently"
+    },
+    {
+      "name": "GC02",
+      "state": "gravity_compensation_trajectories_20261109/execution_20261109/raw/gc02_20261109.jsonl.gz",
+      "state_sha256": "5997be2027f30ead7584fcbc06f267c36235942874191eb4e497626e7569a597",
+      "client": "gravity_compensation_trajectories_20261109/execution_20261109/clients/gc02/20261109_133915_2361e5fa.json",
+      "plan": "five_dof_identification_20261109/GC02_executed_plan.json",
+      "status": "completed run; check each active static window independently"
+    },
+    {
+      "name": "GC03",
+      "state": "gravity_compensation_trajectories_20261109/execution_20261109/raw/gc03_20261109.jsonl.gz",
+      "state_sha256": "e5f40c5689e3cd2c06bb6222a11bbfc0aa15c4ef0c48feec09387925689f45b8",
+      "client": "gravity_compensation_trajectories_20261109/execution_20261109/clients/gc03/20261109_134157_adcb6df9.json",
+      "plan": "five_dof_identification_20261109/GC03_executed_plan.json",
+      "status": "completed run; check each active static window independently"
+    },
+    {
+      "name": "GC04",
+      "state": "gravity_compensation_trajectories_20261109/execution_20261109/raw/gc04_20261109.jsonl.gz",
+      "state_sha256": "53ee531159280ea17c17903bd6cea82730351cb0bd5a2ebc13e54088dcbcef8b",
+      "client": "gravity_compensation_trajectories_20261109/execution_20261109/clients/gc04/20261109_134444_3322dcce.json",
+      "plan": "five_dof_identification_20261109/GC04_executed_plan.json",
+      "status": "completed run; check each active static window independently"
+    },
+    {
+      "name": "J5",
+      "state": "acquisition_20261109/raw/j5_excitation_20261109.jsonl.gz",
+      "state_sha256": "38f89e0718165b623e2694bec0fa13f0b18a3b7f94e5f0ef658969034303811c",
+      "client": "acquisition_20261109/clients/j5_excitation/20261109_141027_321d3798.json",
+      "plan": "five_dof_identification_20261109/J5_executed_plan.json",
+      "status": "completed run; check each active static window independently"
+    }
+  ],
+  "mass_box_kg": 3.5,
+  "motor_mass_added_again": false,
+  "box_placement": "downstream of rotating J5 output; motor housing remains on link4",
+  "j5_spatial_axis_measured": false
+}

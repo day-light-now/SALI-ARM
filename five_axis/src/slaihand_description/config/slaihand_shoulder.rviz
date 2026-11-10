@@ -1,0 +1,45 @@
+Panels:
+  - Class: rviz_common/Displays
+    Name: Displays
+Visualization Manager:
+  Class: ""
+  Displays:
+    - Class: rviz_default_plugins/Grid
+      Name: World horizontal reference (not a physical floor)
+      Enabled: true
+      Cell Size: 0.1
+      Plane Cell Count: 20
+    - Class: rviz_default_plugins/Axes
+      Name: Shoulder base axes (Y points down)
+      Enabled: true
+      Reference Frame: base_link
+      Length: 0.15
+      Radius: 0.005
+    - Class: rviz_default_plugins/RobotModel
+      Name: SLAIHand shoulder-mounted
+      Enabled: true
+      Description Source: Topic
+      Description Topic:
+        Value: /robot_description
+        Durability Policy: Transient Local
+        Reliability Policy: Reliable
+        History Policy: Keep Last
+        Depth: 1
+      Visual Enabled: true
+      Collision Enabled: false
+  Global Options:
+    Fixed Frame: shoulder_world
+    Background Color: 40; 40; 40
+  Views:
+    Current:
+      Class: rviz_default_plugins/Orbit
+      Distance: 1.4
+      Pitch: 0.35
+      Yaw: 0.75
+      Focal Point:
+        X: 0
+        Y: 0.15
+        Z: 0
+Window Geometry:
+  Width: 1200
+  Height: 800

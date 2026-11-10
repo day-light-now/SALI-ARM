@@ -1,0 +1,299 @@
+{
+  "schema": "slaihand_signed_static/4",
+  "window_s": 0.3,
+  "window_rule": "client target list + whole-window reference span + feedback speed",
+  "window_ref_span_limit_rad": 0.0015,
+  "kp_source": "fixed",
+  "kp_axis": [
+    160.0,
+    160.0,
+    160.0,
+    160.0,
+    160.0
+  ],
+  "joints": [
+    "slaihand_joint1",
+    "slaihand_joint2",
+    "slaihand_joint3",
+    "slaihand_joint4",
+    "slaihand_joint5"
+  ],
+  "segments": [
+    {
+      "index": 0,
+      "start_t": 13.715758,
+      "end_t": 14.015517,
+      "reference_deg": [
+        -1.3946036118124971,
+        0.9617053095962513,
+        2.8414020510798337,
+        -4.742955731417876,
+        -4.152818382347449
+      ],
+      "relative_deg": [
+        0.11352516914526059,
+        -0.02185693885446026,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "window_reference_span_deg": 0.049117773635277244,
+      "window_valid": true,
+      "axes": {
+        "slaihand_joint1": {
+          "signed_error_deg": {
+            "mean": -0.08897071084481786,
+            "median": -0.08678217532222181,
+            "std": 0.015729990842676764,
+            "max_abs": 0.13538210799972086,
+            "count": 31
+          },
+          "kp_used": {
+            "mean": 160.0,
+            "median": 160.0,
+            "std": 0.0,
+            "max_abs": 160.0,
+            "count": 31
+          },
+          "pd_request_estimate_nm": {
+            "mean": 0.24845309473310356,
+            "median": 0.24234155062651863,
+            "std": 0.043926421042122694,
+            "max_abs": 0.3780581652617093,
+            "count": 31
+          }
+        },
+        "slaihand_joint2": {
+          "signed_error_deg": {
+            "mean": 0.002115187631076799,
+            "median": 0.0,
+            "std": 0.006462004952295841,
+            "max_abs": 0.02185693885446026,
+            "count": 31
+          },
+          "kp_used": {
+            "mean": 160.0,
+            "median": 160.0,
+            "std": 0.0,
+            "max_abs": 160.0,
+            "count": 31
+          },
+          "pd_request_estimate_nm": {
+            "mean": -0.0059067181535598845,
+            "median": -0.0,
+            "std": 0.018045322031638642,
+            "max_abs": 0.06103608758678547,
+            "count": 31
+          }
+        },
+        "slaihand_joint3": {
+          "signed_error_deg": {
+            "mean": 0.0,
+            "median": 0.0,
+            "std": 0.0,
+            "max_abs": 0.0,
+            "count": 31
+          },
+          "kp_used": {
+            "mean": 160.0,
+            "median": 160.0,
+            "std": 0.0,
+            "max_abs": 160.0,
+            "count": 31
+          },
+          "pd_request_estimate_nm": {
+            "mean": 0.0,
+            "median": -0.0,
+            "std": 0.0,
+            "max_abs": 0.0,
+            "count": 31
+          }
+        },
+        "slaihand_joint4": {
+          "signed_error_deg": {
+            "mean": 0.009165813067999464,
+            "median": 0.0,
+            "std": 0.010785383005770696,
+            "max_abs": 0.02185693885446026,
+            "count": 31
+          },
+          "kp_used": {
+            "mean": 160.0,
+            "median": 160.0,
+            "std": 0.0,
+            "max_abs": 160.0,
+            "count": 31
+          },
+          "pd_request_estimate_nm": {
+            "mean": -0.025595778665426165,
+            "median": -0.0,
+            "std": 0.03011847112629459,
+            "max_abs": 0.06103608758678547,
+            "count": 31
+          }
+        },
+        "slaihand_joint5": {
+          "signed_error_deg": {
+            "mean": 0.0,
+            "median": 0.0,
+            "std": 0.0,
+            "max_abs": 0.0,
+            "count": 31
+          },
+          "kp_used": {
+            "mean": 160.0,
+            "median": 160.0,
+            "std": 0.0,
+            "max_abs": 160.0,
+            "count": 31
+          },
+          "pd_request_estimate_nm": {
+            "mean": 0.0,
+            "median": -0.0,
+            "std": 0.0,
+            "max_abs": 0.0,
+            "count": 31
+          }
+        }
+      }
+    },
+    {
+      "index": 1,
+      "start_t": 37.075394,
+      "end_t": 37.365193,
+      "reference_deg": [
+        8.491871219042242,
+        0.9617053095962513,
+        2.8414020510798337,
+        -4.742955731417876,
+        -4.152818382347449
+      ],
+      "relative_deg": [
+        10.0,
+        -0.02185693885446026,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "window_reference_span_deg": 0.0,
+      "window_valid": true,
+      "axes": {
+        "slaihand_joint1": {
+          "signed_error_deg": {
+            "mean": -1.276895703184911,
+            "median": -1.279081397070357,
+            "std": 0.006557081656338082,
+            "max_abs": 1.279081397070357,
+            "count": 30
+          },
+          "kp_used": {
+            "mean": 160.0,
+            "median": 160.0,
+            "std": 0.0,
+            "max_abs": 160.0,
+            "count": 30
+          },
+          "pd_request_estimate_nm": {
+            "mean": 3.5657654760231905,
+            "median": 3.571869084781869,
+            "std": 0.01831082627603564,
+            "max_abs": 3.571869084781869,
+            "count": 30
+          }
+        },
+        "slaihand_joint2": {
+          "signed_error_deg": {
+            "mean": 0.0007285646284820086,
+            "median": 0.0,
+            "std": 0.003923440597024338,
+            "max_abs": 0.02185693885446026,
+            "count": 30
+          },
+          "kp_used": {
+            "mean": 160.0,
+            "median": 160.0,
+            "std": 0.0,
+            "max_abs": 160.0,
+            "count": 30
+          },
+          "pd_request_estimate_nm": {
+            "mean": -0.002034536252892849,
+            "median": -0.0,
+            "std": 0.010956313027917875,
+            "max_abs": 0.06103608758678547,
+            "count": 30
+          }
+        },
+        "slaihand_joint3": {
+          "signed_error_deg": {
+            "mean": 0.0,
+            "median": 0.0,
+            "std": 0.0,
+            "max_abs": 0.0,
+            "count": 30
+          },
+          "kp_used": {
+            "mean": 160.0,
+            "median": 160.0,
+            "std": 0.0,
+            "max_abs": 160.0,
+            "count": 30
+          },
+          "pd_request_estimate_nm": {
+            "mean": 0.0,
+            "median": -0.0,
+            "std": 0.0,
+            "max_abs": 0.0,
+            "count": 30
+          }
+        },
+        "slaihand_joint4": {
+          "signed_error_deg": {
+            "mean": -0.0036428231424100433,
+            "median": 0.0,
+            "std": 0.008145600176438254,
+            "max_abs": 0.02185693885446026,
+            "count": 30
+          },
+          "kp_used": {
+            "mean": 160.0,
+            "median": 160.0,
+            "std": 0.0,
+            "max_abs": 160.0,
+            "count": 30
+          },
+          "pd_request_estimate_nm": {
+            "mean": 0.010172681264464245,
+            "median": -0.0,
+            "std": 0.022746806820780566,
+            "max_abs": 0.06103608758678547,
+            "count": 30
+          }
+        },
+        "slaihand_joint5": {
+          "signed_error_deg": {
+            "mean": 0.0,
+            "median": 0.0,
+            "std": 0.0,
+            "max_abs": 0.0,
+            "count": 30
+          },
+          "kp_used": {
+            "mean": 160.0,
+            "median": 160.0,
+            "std": 0.0,
+            "max_abs": 160.0,
+            "count": 30
+          },
+          "pd_request_estimate_nm": {
+            "mean": 0.0,
+            "median": -0.0,
+            "std": 0.0,
+            "max_abs": 0.0,
+            "count": 30
+          }
+        }
+      }
+    }
+  ]
+}

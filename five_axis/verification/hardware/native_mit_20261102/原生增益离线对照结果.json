@@ -1,0 +1,185 @@
+{
+  "note": "synthetic parameters, not identified hardware; stricter 0.2 guard used for comparison",
+  "cases": [
+    {
+      "kp": 32,
+      "kd": 2,
+      "inertia": 0.02,
+      "static_friction": 1.2,
+      "kinetic_friction": 0.2,
+      "peak_speed": 0.31575101647193154,
+      "stop": "synthetic_0.2_speed_abort",
+      "angle_deg": 0.11689967117362354
+    },
+    {
+      "kp": 32,
+      "kd": 2,
+      "inertia": 0.02,
+      "static_friction": 1.2,
+      "kinetic_friction": 0.6,
+      "peak_speed": 0.23546300228629394,
+      "stop": "synthetic_0.2_speed_abort",
+      "angle_deg": 0.19771767402835733
+    },
+    {
+      "kp": 32,
+      "kd": 2,
+      "inertia": 0.02,
+      "static_friction": 1.2,
+      "kinetic_friction": 1.0,
+      "peak_speed": 0.08247371860224036,
+      "stop": null,
+      "angle_deg": 8.238409728345289
+    },
+    {
+      "kp": 32,
+      "kd": 2,
+      "inertia": 0.05,
+      "static_friction": 1.2,
+      "kinetic_friction": 0.2,
+      "peak_speed": 0.2666886463761436,
+      "stop": "synthetic_0.2_speed_abort",
+      "angle_deg": 0.18548372673523764
+    },
+    {
+      "kp": 32,
+      "kd": 2,
+      "inertia": 0.05,
+      "static_friction": 1.2,
+      "kinetic_friction": 0.6,
+      "peak_speed": 0.20568875099140788,
+      "stop": "synthetic_0.2_speed_abort",
+      "angle_deg": 0.33129229467166216
+    },
+    {
+      "kp": 32,
+      "kd": 2,
+      "inertia": 0.05,
+      "static_friction": 1.2,
+      "kinetic_friction": 1.0,
+      "peak_speed": 0.07247633934173581,
+      "stop": null,
+      "angle_deg": 8.238902287029362
+    },
+    {
+      "kp": 32,
+      "kd": 2,
+      "inertia": 0.15,
+      "static_friction": 1.2,
+      "kinetic_friction": 0.2,
+      "peak_speed": 0.2251242797679853,
+      "stop": "synthetic_0.2_speed_abort",
+      "angle_deg": 0.38167109656250336
+    },
+    {
+      "kp": 32,
+      "kd": 2,
+      "inertia": 0.15,
+      "static_friction": 1.2,
+      "kinetic_friction": 0.6,
+      "peak_speed": 0.16409478482420303,
+      "stop": null,
+      "angle_deg": 8.593199923715387
+    },
+    {
+      "kp": 32,
+      "kd": 2,
+      "inertia": 0.15,
+      "static_friction": 1.2,
+      "kinetic_friction": 1.0,
+      "peak_speed": 0.05934212374113734,
+      "stop": null,
+      "angle_deg": 8.242229705150582
+    },
+    {
+      "kp": 160,
+      "kd": 5,
+      "inertia": 0.02,
+      "static_friction": 1.2,
+      "kinetic_friction": 0.2,
+      "peak_speed": 0.16845459987016817,
+      "stop": null,
+      "angle_deg": 9.875661071245842
+    },
+    {
+      "kp": 160,
+      "kd": 5,
+      "inertia": 0.02,
+      "static_friction": 1.2,
+      "kinetic_friction": 0.6,
+      "peak_speed": 0.1028738396154143,
+      "stop": null,
+      "angle_deg": 9.73237788522687
+    },
+    {
+      "kp": 160,
+      "kd": 5,
+      "inertia": 0.02,
+      "static_friction": 1.2,
+      "kinetic_friction": 1.0,
+      "peak_speed": 0.040085718600982985,
+      "stop": null,
+      "angle_deg": 9.67652152670872
+    },
+    {
+      "kp": 160,
+      "kd": 5,
+      "inertia": 0.05,
+      "static_friction": 1.2,
+      "kinetic_friction": 0.2,
+      "peak_speed": 0.145326670387465,
+      "stop": null,
+      "angle_deg": 9.78835756210374
+    },
+    {
+      "kp": 160,
+      "kd": 5,
+      "inertia": 0.05,
+      "static_friction": 1.2,
+      "kinetic_friction": 0.6,
+      "peak_speed": 0.08874980316836,
+      "stop": null,
+      "angle_deg": 9.645074376084768
+    },
+    {
+      "kp": 160,
+      "kd": 5,
+      "inertia": 0.05,
+      "static_friction": 1.2,
+      "kinetic_friction": 1.0,
+      "peak_speed": 0.03453310058413888,
+      "stop": null,
+      "angle_deg": 9.676717247811036
+    },
+    {
+      "kp": 160,
+      "kd": 5,
+      "inertia": 0.15,
+      "static_friction": 1.2,
+      "kinetic_friction": 0.2,
+      "peak_speed": 0.1189747581602988,
+      "stop": null,
+      "angle_deg": 9.791347061253877
+    },
+    {
+      "kp": 160,
+      "kd": 5,
+      "inertia": 0.15,
+      "static_friction": 1.2,
+      "kinetic_friction": 0.6,
+      "peak_speed": 0.0721213144918341,
+      "stop": null,
+      "angle_deg": 9.6480638752349
+    },
+    {
+      "kp": 160,
+      "kd": 5,
+      "inertia": 0.15,
+      "static_friction": 1.2,
+      "kinetic_friction": 1.0,
+      "peak_speed": 0.026035468610414517,
+      "stop": null,
+      "angle_deg": 9.687752421548229
+    }
+  ]
+}

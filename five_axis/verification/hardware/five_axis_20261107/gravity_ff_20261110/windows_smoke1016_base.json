@@ -1,0 +1,114 @@
+{
+  "tag": "smoke1016_base",
+  "plan": "/mnt/d/CodexData/Projects/机械臂/slaihand_five_axis_ws_gain/verification/hardware/five_axis_20261107/gravity_ff_20261110/plans/smoke1016_base_20261110.json",
+  "client_file": "/mnt/d/CodexData/Projects/机械臂/slaihand_five_axis_ws_gain/verification/hardware/five_axis_20261107/gravity_ff_20261110/clients/smoke1016_base/20261110_105726_7165e78a.json",
+  "desired_deg": [
+    [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    [
+      5.0,
+      5.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    [
+      0.0,
+      0.0,
+      5.0,
+      5.0,
+      0.0
+    ],
+    [
+      5.0,
+      0.0,
+      0.0,
+      5.0,
+      0.0
+    ],
+    [
+      0.0,
+      5.0,
+      5.0,
+      0.0,
+      0.0
+    ],
+    [
+      5.0,
+      5.0,
+      5.0,
+      5.0,
+      0.0
+    ],
+    [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ]
+  ],
+  "windows": [
+    {
+      "index": 0,
+      "desired_deg": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "target_deg": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "mean_fb_deg": [
+        0.088,
+        0.153,
+        0.0,
+        0.4372,
+        -0.1093
+      ],
+      "sag_deg": [
+        0.088,
+        0.153,
+        0.0,
+        0.4372,
+        -0.1093
+      ],
+      "samples": 201
+    },
+    {
+      "index": 1,
+      "excluded": "no exact-target dwell"
+    },
+    {
+      "index": 2,
+      "excluded": "no exact-target dwell"
+    },
+    {
+      "index": 3,
+      "excluded": "no exact-target dwell"
+    },
+    {
+      "index": 4,
+      "excluded": "no exact-target dwell"
+    },
+    {
+      "index": 5,
+      "excluded": "no exact-target dwell"
+    },
+    {
+      "index": 6,
+      "excluded": "no plateau"
+    }
+  ]
+}

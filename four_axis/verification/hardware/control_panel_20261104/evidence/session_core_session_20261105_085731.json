@@ -1,0 +1,899 @@
+{
+  "closed_at": 1793840251.5407832,
+  "stop": {
+    "state": "not_requested",
+    "requested_at": null,
+    "requested_wall": null,
+    "reason": null,
+    "generation": 0,
+    "confirmed_at": null,
+    "confirmed_wall": null,
+    "stage_label": "未请求"
+  },
+  "status": {
+    "ok": true,
+    "server": {
+      "version": "control_panel/1.0",
+      "now": 1793840251.5408654,
+      "closing": true,
+      "ros_domain_id": "176",
+      "archive_dir": "/tmp/panel-verify-20261105_085641/core/archive",
+      "ros_thread_alive": false,
+      "session_budget_seconds": 178.0,
+      "reserve_seconds": 8.0,
+      "heartbeat_timeout_s": 3.0,
+      "preview_ttl_s": 5.0,
+      "reference_speed_rad_s": 0.5,
+      "pose_drift_tolerance_deg": 0.5,
+      "feedback_fresh_s": 0.5,
+      "confirmations_required": [
+        "supported",
+        "clearance_and_local_power_cut",
+        "native_output_not_hardware_clamp"
+      ],
+      "max_waypoints": 12
+    },
+    "ros": {
+      "connected": true,
+      "dynamic_age_s": 0.01,
+      "joint_age_s": 0.0,
+      "controller_age_s": 0.31,
+      "stage": 0,
+      "stage_label": "未使能",
+      "stage_fresh": true,
+      "consistent": true,
+      "hold_ready": false,
+      "disabled_observed": false,
+      "speed_scaling_factor": 1.0,
+      "audit_ok": true,
+      "command_owner": false,
+      "command_id": 3,
+      "feedback_valid_all": true,
+      "limits_deg": [
+        [
+          -80.0,
+          200.0
+        ],
+        [
+          -10.0,
+          190.0
+        ],
+        [
+          -90.0,
+          90.0
+        ],
+        [
+          -90.0,
+          50.0
+        ]
+      ],
+      "limits_source": "/home/xuyu/slaihand_control_panel_ws_20261104/install/slaihand_description/share/slaihand_description/urdf/slaihand_four_axis.urdf",
+      "limits_error": null,
+      "client_script": "/home/xuyu/slaihand_control_panel_ws_20261104/install/slaihand_bringup/lib/slaihand_bringup/commission_supported_trial.py",
+      "client_sha256": "ff449ed8a7441be4da33a5d9b5181853a1d80173502c8500396f1e6dceec2160",
+      "client_error": null
+    },
+    "axes": [
+      {
+        "name": "slaihand_joint1",
+        "label": "J1",
+        "actual_deg": 15.584,
+        "target_deg": 14.994,
+        "error_deg": -0.59,
+        "target_source": "上次计划终点",
+        "velocity_deg_s": -0.35,
+        "effort_nm": -0.049,
+        "driver_temperature_c": 30.0,
+        "motor_temperature_c": 25.0,
+        "feedback_age_s": 0.0,
+        "feedback_valid": true,
+        "motor_state": 0,
+        "control_mode": 1,
+        "timeout_count": 2000,
+        "configuration_conflict": 0,
+        "limits_deg": [
+          -80.0,
+          200.0
+        ]
+      },
+      {
+        "name": "slaihand_joint2",
+        "label": "J2",
+        "actual_deg": 25.529,
+        "target_deg": 24.961,
+        "error_deg": -0.568,
+        "target_source": "上次计划终点",
+        "velocity_deg_s": -0.35,
+        "effort_nm": -0.049,
+        "driver_temperature_c": 30.0,
+        "motor_temperature_c": 25.0,
+        "feedback_age_s": 0.0,
+        "feedback_valid": true,
+        "motor_state": 0,
+        "control_mode": 1,
+        "timeout_count": 2000,
+        "configuration_conflict": 0,
+        "limits_deg": [
+          -10.0,
+          190.0
+        ]
+      },
+      {
+        "name": "slaihand_joint3",
+        "label": "J3",
+        "actual_deg": -9.42,
+        "target_deg": -10.01,
+        "error_deg": -0.59,
+        "target_source": "上次计划终点",
+        "velocity_deg_s": -0.63,
+        "effort_nm": -0.013,
+        "driver_temperature_c": 30.0,
+        "motor_temperature_c": 25.0,
+        "feedback_age_s": 0.0,
+        "feedback_valid": true,
+        "motor_state": 0,
+        "control_mode": 1,
+        "timeout_count": 2000,
+        "configuration_conflict": 0,
+        "limits_deg": [
+          -90.0,
+          90.0
+        ]
+      },
+      {
+        "name": "slaihand_joint4",
+        "label": "J4",
+        "actual_deg": 4.415,
+        "target_deg": 5.005,
+        "error_deg": 0.59,
+        "target_source": "上次计划终点",
+        "velocity_deg_s": 0.63,
+        "effort_nm": 0.013,
+        "driver_temperature_c": 30.0,
+        "motor_temperature_c": 25.0,
+        "feedback_age_s": 0.0,
+        "feedback_valid": true,
+        "motor_state": 0,
+        "control_mode": 1,
+        "timeout_count": 2000,
+        "configuration_conflict": 0,
+        "limits_deg": [
+          -90.0,
+          50.0
+        ]
+      }
+    ],
+    "gravity_shadow": {
+      "available": true,
+      "mode": "shadow",
+      "ff_applied": false,
+      "alpha": 0.0,
+      "beta": 0.0,
+      "rows": [
+        {
+          "joint": "slaihand_joint1",
+          "q_deg": 15.584,
+          "tau_model_nm": 1.5072,
+          "tau_protocol_nm": 1.5072,
+          "pd_estimate_nm": 0.0305,
+          "tau_ff_requested_nm": 0.0,
+          "envelope_nm": 0.0305,
+          "guard_nm": 8.0,
+          "headroom_nm": 7.9695,
+          "headroom_deg_at_kp": 2.854
+        },
+        {
+          "joint": "slaihand_joint2",
+          "q_deg": 25.529,
+          "tau_model_nm": 2.079,
+          "tau_protocol_nm": 2.079,
+          "pd_estimate_nm": 0.0305,
+          "tau_ff_requested_nm": 0.0,
+          "envelope_nm": 0.0305,
+          "guard_nm": 10.0,
+          "headroom_nm": 9.9695,
+          "headroom_deg_at_kp": 3.57
+        },
+        {
+          "joint": "slaihand_joint3",
+          "q_deg": -9.42,
+          "tau_model_nm": -0.0361,
+          "tau_protocol_nm": -0.0361,
+          "pd_estimate_nm": 0.0549,
+          "tau_ff_requested_nm": -0.0,
+          "envelope_nm": 0.0549,
+          "guard_nm": 2.0,
+          "headroom_nm": 1.9451,
+          "headroom_deg_at_kp": 0.697
+        },
+        {
+          "joint": "slaihand_joint4",
+          "q_deg": 4.415,
+          "tau_model_nm": 0.2089,
+          "tau_protocol_nm": -0.2089,
+          "pd_estimate_nm": -0.0549,
+          "tau_ff_requested_nm": 0.0,
+          "envelope_nm": 0.0549,
+          "guard_nm": 2.0,
+          "headroom_nm": 1.9451,
+          "headroom_deg_at_kp": 0.697
+        }
+      ],
+      "warnings": [
+        "质量档案为暂定模型（ESTIMATE_ONLY_NOT_FOR_HARDWARE），不得当作已标定",
+        "已应用固定关节偏置 {'slaihand_joint3': 3.141592653589793}（需实机多姿态核验，且只应用一次）"
+      ],
+      "potential_energy_j": -4.4927,
+      "reference_stale": false,
+      "metadata": {
+        "backend": "analytic-urdf",
+        "format": "four_axis_gravity/1",
+        "urdf": "/home/xuyu/slaihand_control_panel_ws_20261104/install/slaihand_description/share/slaihand_description/urdf/slaihand_four_axis.urdf",
+        "urdf_sha256": "fe7edfda16165e8532303ec55d6c1ab733ad32fc6d023115f825aae62637e497",
+        "mass_profile": "/home/xuyu/slaihand_control_panel_ws_20261104/install/slaihand_bringup/share/slaihand_bringup/config/gravity_provisional.json",
+        "mass_profile_sha256": "ff3c2f14473978c8760df7e5e833cf727335f5d997964a7a7c37f449ae1d35bf",
+        "mass_profile_status": "ESTIMATE_ONLY_NOT_FOR_HARDWARE",
+        "total_mass_kg": 6.342442,
+        "gravity_base_m_s2": [
+          0.0,
+          9.80665,
+          0.0
+        ],
+        "gravity_source": "explicit_config",
+        "fixed_joint_offsets_rad": {
+          "slaihand_joint3": 3.141592654
+        },
+        "joint_names": [
+          "slaihand_joint1",
+          "slaihand_joint2",
+          "slaihand_joint3",
+          "slaihand_joint4"
+        ],
+        "limits_rad": [
+          [
+            -1.396263402,
+            3.490658504
+          ],
+          [
+            -0.174532925,
+            3.316125579
+          ],
+          [
+            -1.570796327,
+            1.570796327
+          ],
+          [
+            -1.570796327,
+            0.872664626
+          ]
+        ],
+        "units": {
+          "mass": "kg",
+          "position": "m",
+          "torque": "N*m",
+          "angle": "rad"
+        },
+        "coordinate": {
+          "mapping": "/home/xuyu/slaihand_control_panel_ws_20261104/install/slaihand_bringup/share/slaihand_bringup/config/hardware_mapping.yaml",
+          "mapping_sha256": "300d81eed77ded2c3235be3c2a69d5354a9df5cd74be85884dad05760a46356d",
+          "signs": {
+            "slaihand_joint1": 1,
+            "slaihand_joint2": 1,
+            "slaihand_joint3": 1,
+            "slaihand_joint4": -1
+          },
+          "zeros_rad": {
+            "slaihand_joint1": 1.4574273289082171,
+            "slaihand_joint2": -1.795033188372626,
+            "slaihand_joint3": -2.5423437857633324,
+            "slaihand_joint4": -0.40951400015259054
+          }
+        },
+        "kp": 160.0,
+        "kd": 5.0,
+        "guards_nm": [
+          8.0,
+          10.0,
+          2.0,
+          2.0
+        ],
+        "alpha": 0.0,
+        "beta": 0.0,
+        "mode": "shadow",
+        "ff_applied": false,
+        "policy_sha256": "0aea4ff1c484515787495288040b587fd10eff93024da78970b4bd058d0fa242"
+      },
+      "config": {
+        "gravity_base_m_s2": [
+          0.0,
+          9.80665,
+          0.0
+        ],
+        "j3_offset_rad": 3.141592653589793
+      },
+      "driver": {
+        "connected": true,
+        "age_s": 0.75,
+        "alpha": 0.0,
+        "ramp": 1.0,
+        "requested": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "applied": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "stage": 6
+      }
+    },
+    "operation": {
+      "id": "d982805fb81f43df",
+      "kind": "execute",
+      "phase": "failed",
+      "created_at": 1793840234.9978194,
+      "started_at": 1793840234.9982498,
+      "finished_at": 1793840251.39095,
+      "pid": 267531,
+      "exit_code": 1,
+      "stop_reason": null,
+      "lease_expired": false,
+      "cancel_requested": false,
+      "source_sha256": "345e72dcafcc03013723cf9b2a827f3bfc98a9aedd2283a28d6bccbd85da4872",
+      "plan_sha256": "fe8e2b0d2dec7ff1c70bb123c52ccf41833b0088b68477b63e94dc0ce6ea7888",
+      "ticket": "d93a96ffc9e028e7104424731ea95141",
+      "final_target_deg": [
+        14.993860054159736,
+        24.960624171793715,
+        -10.010477995342798,
+        5.005238997671399
+      ],
+      "result_available": true,
+      "result_error": null,
+      "result": {
+        "request_id": "3a0d1578ab324af0bbf140f037d2d0e6",
+        "mode": "waypoints",
+        "reason": "轨迹未通过：Aborted due to goal_time_tolerance exceeding by 2.005278 seconds",
+        "command_id": 3,
+        "trajectory_error_code": -5,
+        "trajectory_error_string": "Aborted due to goal_time_tolerance exceeding by 2.005278 seconds",
+        "concurrent_control_error": "控制端已全局停止或UNKNOWN；检查失能反馈，状态未知时保持支撑并现场切电",
+        "point_to_point": null,
+        "stop_error": null,
+        "backend_arm_receipt": "Arm request accepted only; four-axis fresh preflight, enable and ramp are not yet confirmed; audit_file=/tmp/panel-verify-20261105_085641/core/audit/canusb_motion_t8D8Ag.jsonl",
+        "standard_jtc_action_succeeded": false,
+        "action_passed": false,
+        "waypoints_observed": false,
+        "waypoint_results": [
+          {
+            "arrival_s": 4.0,
+            "end_s": 5.0,
+            "target_deg": [
+              16.994,
+              25.961,
+              -11.01,
+              7.005
+            ],
+            "samples": 30,
+            "sampled_span_s": 0.29020140900684055,
+            "max_error_deg": [
+              0.4042632739907305,
+              0.39884408668545507,
+              0.40986265092957286,
+              0.4044434636244008
+            ],
+            "passed": true,
+            "max_velocity_rad_s": null
+          },
+          {
+            "arrival_s": 9.0,
+            "end_s": 10.0,
+            "target_deg": [
+              14.994,
+              24.961,
+              -10.01,
+              5.005
+            ],
+            "samples": 30,
+            "sampled_span_s": 0.2901902320008958,
+            "max_error_deg": [
+              0.5901373490704269,
+              0.5682804102159666,
+              0.5901373490704269,
+              0.5901373490704269
+            ],
+            "passed": false,
+            "max_velocity_rad_s": null
+          }
+        ],
+        "accuracy_passed": false,
+        "stop_observations_confirmed": true,
+        "observed_delta_range_deg": null,
+        "final_delta_from_start_deg": null,
+        "actual_excursion_deg": null,
+        "return_error_deg": null,
+        "requested_excursion_observed": null,
+        "initial_deg": [
+          14.994,
+          24.961,
+          -10.01,
+          5.005
+        ],
+        "plan_sha256": "75c744171ffed450e491b5cbb05c31cc979521d2912b0dfe91fab4c0e6fec691",
+        "operator_acknowledgements": {
+          "supported": true,
+          "clearance_and_local_power_cut": true,
+          "native_output_not_hardware_clamp": true
+        },
+        "trial_parameters": {
+          "hold_seconds": 1.0,
+          "round_trip": false,
+          "delta_deg": 1.0,
+          "leg_seconds": 4.0
+        },
+        "overall_ok": false
+      },
+      "stdout_tail": [
+        "[WARN] [1793840235.354850451] [rcl]: ROS_LOCALHOST_ONLY is deprecated but still honored if it is enabled. Use ROS_AUTOMATIC_DISCOVERY_RANGE and ROS_STATIC_PEERS instead.",
+        "[WARN] [1793840235.354889490] [rcl]: 'localhost_only' is enabled, 'automatic_discovery_range' and 'static_peers' will be ignored.",
+        "当前角度°：[14.994, 24.961, -10.01, 5.005]",
+        "完整URDF范围°：[[-80.0, 200.0], [-10.0, 190.0], [-90.0, 90.0], [-90.0, 50.0]]",
+        "路点预览（软件绝对角度°）：[{\"at_s\": 0.0, \"degrees\": [14.994, 24.961, -10.01, 5.005]}, {\"at_s\": 4.0, \"degrees\": [16.994, 25.961, -11.01, 7.005]}, {\"at_s\": 5.0, \"degrees\": [16.994, 25.961, -11.01, 7.005]}, {\"at_s\": 9.0, \"degrees\": [14.994, 24.961, -10.01, 5.005]}, {\"at_s\": 10.0, \"degrees\": [14.994, 24.961, -10.01, 5.005]}]",
+        "Arm request accepted only; four-axis fresh preflight, enable and ramp are not yet confirmed; audit_file=/tmp/panel-verify-20261105_085641/core/audit/canusb_motion_t8D8Ag.jsonl",
+        "四轴使能、增益斜坡及稳定状态已观测；不是位置精度验收。",
+        "各路点反馈验收：[{\"arrival_s\": 4.0, \"end_s\": 5.0, \"target_rad\": [0.2965988105682293, 0.4530983676706264, -0.1921690932371167, 0.12226448539847329], \"samples\": 30, \"sampled_span_s\": 0.29020140900684055, \"max_error_deg\": [0.4042632739907305, 0.39884408668545507, 0.40986265092957286, 0.4044434636244008], \"passed\": true}, {\"arrival_s\": 9.0, \"end_s\": 10.0, \"target_rad\": [0.2616922255283427, 0.43564507515068307, -0.1747158007171734, 0.0873579003585867], \"samples\": 30, \"sampled_span_s\": 0.2901902320008958, \"ma",
+        "试验结束/中止：轨迹未通过：Aborted due to goal_time_tolerance exceeding by 2.005278 seconds",
+        "已观测四轴新反馈失能；不是物理切力矩证明。",
+        "结果：/tmp/panel-verify-20261105_085641/core/archive/operations/d982805fb81f43df/client/20261105_085731_3a0d1578.json"
+      ],
+      "directory": "/tmp/panel-verify-20261105_085641/core/archive/operations/d982805fb81f43df",
+      "running": false,
+      "argv": [
+        "/usr/bin/python3",
+        "/home/xuyu/slaihand_control_panel_ws_20261104/install/slaihand_bringup/lib/slaihand_bringup/commission_supported_trial.py",
+        "--execute",
+        "--ack-supported",
+        "--ack-clearance",
+        "--ack-native-output",
+        "--plan",
+        "/tmp/panel-verify-20261105_085641/core/archive/operations/d982805fb81f43df/plan.json",
+        "--hold-seconds",
+        "1.0",
+        "--output-directory",
+        "/tmp/panel-verify-20261105_085641/core/archive/operations/d982805fb81f43df/client"
+      ]
+    },
+    "preview": {
+      "id": "d93a96ffc9e028e7104424731ea95141",
+      "source_sha256": "345e72dcafcc03013723cf9b2a827f3bfc98a9aedd2283a28d6bccbd85da4872",
+      "execution_mode": "trajectory",
+      "frozen_sha256": "fe8e2b0d2dec7ff1c70bb123c52ccf41833b0088b68477b63e94dc0ce6ea7888",
+      "mode": "absolute_deg",
+      "frozen": {
+        "coordinates": "absolute_deg",
+        "waypoints": [
+          {
+            "degrees": [
+              16.993860054159736,
+              25.960624171793718,
+              -11.010477995342798,
+              7.005238997671398
+            ],
+            "move_s": 4.0,
+            "dwell_s": 1.0
+          },
+          {
+            "degrees": [
+              14.993860054159736,
+              24.960624171793715,
+              -10.010477995342798,
+              5.005238997671399
+            ],
+            "move_s": 4.0,
+            "dwell_s": 1.0
+          }
+        ]
+      },
+      "preview": {
+        "mode": "absolute_deg",
+        "execution_mode": "trajectory",
+        "source_mode": "relative_start_deg",
+        "start_deg": [
+          14.994,
+          24.961,
+          -10.01,
+          5.005
+        ],
+        "limits_deg": [
+          [
+            -80.0,
+            200.0
+          ],
+          [
+            -10.0,
+            190.0
+          ],
+          [
+            -90.0,
+            90.0
+          ],
+          [
+            -90.0,
+            50.0
+          ]
+        ],
+        "limits_source": "/home/xuyu/slaihand_control_panel_ws_20261104/install/slaihand_description/share/slaihand_description/urdf/slaihand_four_axis.urdf",
+        "frozen": {
+          "coordinates": "absolute_deg",
+          "waypoints": [
+            {
+              "degrees": [
+                16.993860054159736,
+                25.960624171793718,
+                -11.010477995342798,
+                7.005238997671398
+              ],
+              "move_s": 4.0,
+              "dwell_s": 1.0
+            },
+            {
+              "degrees": [
+                14.993860054159736,
+                24.960624171793715,
+                -10.010477995342798,
+                5.005238997671399
+              ],
+              "move_s": 4.0,
+              "dwell_s": 1.0
+            }
+          ]
+        },
+        "frozen_sha256": "fe8e2b0d2dec7ff1c70bb123c52ccf41833b0088b68477b63e94dc0ce6ea7888",
+        "source_sha256": "345e72dcafcc03013723cf9b2a827f3bfc98a9aedd2283a28d6bccbd85da4872",
+        "source": {
+          "coordinates": "relative_start_deg",
+          "waypoints": [
+            {
+              "degrees": [
+                2.0,
+                1.0,
+                -1.0,
+                2.0
+              ],
+              "move_s": 4.0,
+              "dwell_s": 1.0
+            },
+            {
+              "degrees": [
+                0.0,
+                0.0,
+                0.0,
+                0.0
+              ],
+              "move_s": 4.0,
+              "dwell_s": 1.0
+            }
+          ]
+        },
+        "waypoints": [
+          {
+            "index": 1,
+            "arrival_s": 4.0,
+            "end_s": 5.0,
+            "move_s": 4.0,
+            "dwell_s": 1.0,
+            "target_deg": [
+              16.994,
+              25.961,
+              -11.01,
+              7.005
+            ]
+          },
+          {
+            "index": 2,
+            "arrival_s": 9.0,
+            "end_s": 10.0,
+            "move_s": 4.0,
+            "dwell_s": 1.0,
+            "target_deg": [
+              14.994,
+              24.961,
+              -10.01,
+              5.005
+            ]
+          }
+        ],
+        "trajectory": [
+          {
+            "at_s": 0.0,
+            "degrees": [
+              14.994,
+              24.961,
+              -10.01,
+              5.005
+            ]
+          },
+          {
+            "at_s": 4.0,
+            "degrees": [
+              16.994,
+              25.961,
+              -11.01,
+              7.005
+            ]
+          },
+          {
+            "at_s": 5.0,
+            "degrees": [
+              16.994,
+              25.961,
+              -11.01,
+              7.005
+            ]
+          },
+          {
+            "at_s": 9.0,
+            "degrees": [
+              14.994,
+              24.961,
+              -10.01,
+              5.005
+            ]
+          },
+          {
+            "at_s": 10.0,
+            "degrees": [
+              14.994,
+              24.961,
+              -10.01,
+              5.005
+            ]
+          }
+        ],
+        "total_s": 10.0,
+        "budget": {
+          "plan_seconds": 10.0,
+          "hold_seconds": 1.0,
+          "reserve_seconds": 8.0,
+          "session_budget_seconds": 178.0,
+          "plan_limit_seconds": 169.0,
+          "ok": true,
+          "retiming_allowance_s": 0,
+          "nominal_plan_seconds": 10.0
+        },
+        "returns_to_start": true,
+        "warnings": [
+          "relative_start_deg 每个点都相对本次起点（预览起点），不逐点累加；执行时按实际起点重新校验。"
+        ]
+      },
+      "start_rad": [
+        0.2616922255283427,
+        0.43564507515068307,
+        -0.1747158007171734,
+        0.0873579003585867
+      ],
+      "start_deg": [
+        14.994,
+        24.961,
+        -10.01,
+        5.005
+      ],
+      "created_at": 1793840234.9961507,
+      "expires_at": 1793840239.9961507,
+      "remaining_s": 0.0,
+      "expired": true,
+      "used": true,
+      "invalid_reason": null,
+      "live": false,
+      "validity": {
+        "valid": false,
+        "reasons": [
+          "预览已过期",
+          "预览票根已使用"
+        ],
+        "drift_deg": null
+      }
+    },
+    "stop": {
+      "state": "not_requested",
+      "reason": null,
+      "requested_at": null,
+      "confirmed_at": null,
+      "disabled_observed": false,
+      "label": "未请求"
+    },
+    "stop_gate": {
+      "locked": false,
+      "reason": null,
+      "locked_at": null,
+      "generation": 0,
+      "reset_requested_at": null,
+      "unlocked_at": null,
+      "requires": "手动复位后、因果上更新的四轴一致 DISARMED 观测"
+    },
+    "lease": {
+      "last_heartbeat_age_s": 0.78,
+      "timeout_s": 3.0,
+      "fresh": true,
+      "enforced_while_running": true
+    },
+    "services": {
+      "stop_all": {},
+      "reset_disabled": {
+        "at": 1793840251.511438,
+        "ok": true,
+        "message": "Software reset requested; re-enable is a separate manual action"
+      },
+      "switch_controller": {}
+    },
+    "events": [
+      {
+        "at": 1793840203.4046001,
+        "level": "info",
+        "message": "面板启动；只读观察，运动仅经受保护客户端子进程"
+      },
+      {
+        "at": 1793840203.4046066,
+        "level": "info",
+        "message": "重力 shadow 已加载（只显示、不改命令）：质量档案 ESTIMATE_ONLY_NOT_FOR_HARDWARE，模型 fe7edfda1616"
+      },
+      {
+        "at": 1793840203.4671254,
+        "level": "info",
+        "message": "预览已生成：1 点、5.0 秒，票根 d3fe3541…（未使能）"
+      },
+      {
+        "at": 1793840203.4680185,
+        "level": "info",
+        "message": "预览已生成：2 点、10.0 秒，票根 38cbecf3…（未使能）"
+      },
+      {
+        "at": 1793840203.4689116,
+        "level": "info",
+        "message": "计划已保存：e2e（1 点）"
+      },
+      {
+        "at": 1793840203.4715142,
+        "level": "info",
+        "message": "预览已生成：1 点、3.0 秒，票根 078efc38…（未使能）"
+      },
+      {
+        "at": 1793840203.4762433,
+        "level": "info",
+        "message": "预览已生成：1 点、5.0 秒，票根 0ddeac0c…（未使能）"
+      },
+      {
+        "at": 1793840203.481067,
+        "level": "info",
+        "message": "预览已生成：2 点、10.0 秒，票根 7eb74179…（未使能）"
+      },
+      {
+        "at": 1793840210.1088123,
+        "level": "info",
+        "message": "预览已生成：2 点、10.0 秒，票根 9ca9db4b…（未使能）"
+      },
+      {
+        "at": 1793840210.1103933,
+        "level": "info",
+        "message": "执行受理：票根 9ca9db4b… 源计划 345e72dc…"
+      },
+      {
+        "at": 1793840210.1113088,
+        "level": "info",
+        "message": "已启动执行客户端 pid=267238（固定 argv，无 shell）"
+      },
+      {
+        "at": 1793840226.205423,
+        "level": "info",
+        "message": "客户端结束 code=0 reason=finite_trial_complete 精度=True 停止确认=True"
+      },
+      {
+        "at": 1793840226.3791943,
+        "level": "info",
+        "message": "已排队软件复位请求；复位不会自动重新使能"
+      },
+      {
+        "at": 1793840226.385376,
+        "level": "info",
+        "message": "已调用 /slaihand/reset_disabled"
+      },
+      {
+        "at": 1793840226.385733,
+        "level": "info",
+        "message": "服务 reset_disabled：接受（Software reset requested; re-enable is a separate manual action）"
+      },
+      {
+        "at": 1793840226.4081774,
+        "level": "info",
+        "message": "有限保持受理：5 秒"
+      },
+      {
+        "at": 1793840226.4088662,
+        "level": "info",
+        "message": "已启动有限保持客户端 pid=267426（固定 argv，无 shell）"
+      },
+      {
+        "at": 1793840234.8354785,
+        "level": "info",
+        "message": "客户端结束 code=0 reason=finite_trial_complete 精度=None 停止确认=True"
+      },
+      {
+        "at": 1793840234.966278,
+        "level": "info",
+        "message": "已排队软件复位请求；复位不会自动重新使能"
+      },
+      {
+        "at": 1793840234.9753175,
+        "level": "info",
+        "message": "已调用 /slaihand/reset_disabled"
+      },
+      {
+        "at": 1793840234.9758232,
+        "level": "info",
+        "message": "服务 reset_disabled：接受（Software reset requested; re-enable is a separate manual action）"
+      },
+      {
+        "at": 1793840234.9961777,
+        "level": "info",
+        "message": "预览已生成：2 点、10.0 秒，票根 d93a96ff…（未使能）"
+      },
+      {
+        "at": 1793840234.997584,
+        "level": "info",
+        "message": "执行受理：票根 d93a96ff… 源计划 345e72dc…"
+      },
+      {
+        "at": 1793840234.998365,
+        "level": "info",
+        "message": "已启动执行客户端 pid=267531（固定 argv，无 shell）"
+      },
+      {
+        "at": 1793840251.3911767,
+        "level": "warn",
+        "message": "客户端结束 code=1 reason=轨迹未通过：Aborted due to goal_time_tolerance exceeding by 2.005278 seconds 精度=False 停止确认=True"
+      },
+      {
+        "at": 1793840251.5028458,
+        "level": "info",
+        "message": "已排队软件复位请求；复位不会自动重新使能"
+      },
+      {
+        "at": 1793840251.5109775,
+        "level": "info",
+        "message": "已调用 /slaihand/reset_disabled"
+      },
+      {
+        "at": 1793840251.5114408,
+        "level": "info",
+        "message": "服务 reset_disabled：接受（Software reset requested; re-enable is a separate manual action）"
+      }
+    ],
+    "stop_generation": 0,
+    "capabilities": {
+      "preview": {
+        "ok": false,
+        "message": "面板正在退出"
+      },
+      "execute": {
+        "ok": false,
+        "message": "面板正在退出"
+      },
+      "hold": {
+        "ok": false,
+        "message": "面板正在退出"
+      },
+      "reset": {
+        "ok": false,
+        "message": "需要先观测到已失能（当前：未使能）"
+      },
+      "stop": {
+        "ok": true,
+        "message": "始终可用；请求全轴停止，不是物理急停"
+      }
+    }
+  }
+}

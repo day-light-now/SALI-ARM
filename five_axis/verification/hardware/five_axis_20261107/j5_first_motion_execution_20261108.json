@@ -1,0 +1,66 @@
+{
+  "schema": "slaihand_j5_first_motion_execution/1",
+  "executed_on": "2026-11-08",
+  "domain_id": 183,
+  "device": "/dev/ttyACM0",
+  "timeout_setup": {
+    "before": 0,
+    "after": 2000,
+    "readback_matched": true,
+    "all_motor_state_zero_at_setup": true,
+    "evidence_file": "verification/hardware/five_axis_20261107/evidence/j5_timeout_setup_evidence.json",
+    "evidence_file_sha256": "9df76ea41a5d3a4ff84820fda6b76d1907c4a0a59b93b3f6130442188c8a4e1a",
+    "parameter_saved_to_flash": false
+  },
+  "admission": {
+    "j5_qualified": true,
+    "load_id": "j5_3p5kg_provisional",
+    "mass_profile_sha256": "c11700276dd8c044b5b118a7b5dc3dce26937c37e8a9802aa695583931ed3fe2",
+    "artifact_file": "verification/hardware/five_axis_20261107/j5_motion_calibration_artifact.json",
+    "artifact_payload_sha256": "c80754c296e8807f0cc95e31b87926bb445af2c1849943afdf2702c1dabe3562",
+    "artifact_file_sha256": "520b639fec4f92e4811b566752ec41601618198ceb8eae33f33064805923451c",
+    "trial_artifact_payload_sha256_used": "1b1d890f21f3998f99a3507cbc146f9c13dfa09c4418f8b4040a5c4680266017",
+    "artifact_regenerated_after_trial_metadata_update": true,
+    "gravity_ff_alpha": 0,
+    "gravity_float_enabled": false,
+    "formal_gravity_allowed": false
+  },
+  "plan": {
+    "file": "verification/hardware/five_axis_20261107/j5_first_motion_10deg.json",
+    "sha256": "224aafe818d9f9b52f06060a0df19d781bdd6a8d754f874d409cc10b0513c1cd",
+    "j5_relative_deg": [0.0, 10.0, 0.0],
+    "j1_j4_relative_deg": 0.0,
+    "move_s_per_leg": 2.0,
+    "standard_arm_enables": "J1-J5, not J5-only"
+  },
+  "result": {
+    "file": "verification/hardware/five_axis_20261107/j5_first_motion_20261108_142736.json",
+    "file_sha256": "c71c5447a528127272131e6a1b7adc5adfdf45898dc7b258408f7c219b6cee77",
+    "reason": "finite_trial_complete",
+    "trajectory_error_code": 0,
+    "trajectory_error_string": "Goal successfully reached!",
+    "standard_jtc_action_succeeded": true,
+    "all_three_waypoints_passed": true,
+    "j5_initial_rad": -0.09765774013885675,
+    "j5_final_rad": -0.09765774013885675,
+    "j5_final_delta_deg": 0.0,
+    "max_waypoint_error_deg": [0.0, 0.0, 0.02185693885446026, 0.02185693885446026, 0.3059971439624436]
+  },
+  "post_stop": {
+    "motor_state_all_zero": true,
+    "feedback_valid_all": true,
+    "timeout_count_all": 2000,
+    "control_state_all": 8,
+    "stop_result": "confirmed_disarmed",
+    "physical_torque_off_verified": false,
+    "driver_current_clamp_verified": false
+  },
+  "notes": [
+    "This was a real J5 +10 degree then return trial, not simulation.",
+    "Standard arm_supported_current_pose enabled all five axes J1-J5; there is no J5-only arm.",
+    "No gravity feedforward, no float, no gravity fitting.",
+    "No motor zero write, no flash save, no ID write, no deployment.",
+    "TIMEOUT 2000 is a RAM parameter and may revert after power cycle.",
+    "This is not a formal calibration or position-accuracy acceptance."
+  ]
+}

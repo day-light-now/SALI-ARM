@@ -1,0 +1,11 @@
+{
+  "schema": "slaihand_gc13_release_decision/1",
+  "decision": "NOT_RELEASED",
+  "GC13_collected": false,
+  "model_locked": false,
+  "thresholds_locked": false,
+  "physical_J5_geometry_verified": false,
+  "GC12_exit_root_cause_determined": false,
+  "gravity_ff_alpha": 0.0,
+  "handoff_sha256": "4bd2cdfa1a96ea935421d555415178a1f171137db9da35e80f33ba68ec654c75"
+}

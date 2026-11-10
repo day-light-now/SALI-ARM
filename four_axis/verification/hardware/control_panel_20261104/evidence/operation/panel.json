@@ -1,0 +1,159 @@
+{
+  "id": "c83551003f504802",
+  "kind": "execute",
+  "phase": "finished",
+  "created_at": 1793866798.8129427,
+  "started_at": 1793866798.813461,
+  "finished_at": 1793866813.365665,
+  "pid": 347914,
+  "exit_code": 0,
+  "stop_reason": null,
+  "lease_expired": false,
+  "cancel_requested": false,
+  "source_sha256": "345e72dcafcc03013723cf9b2a827f3bfc98a9aedd2283a28d6bccbd85da4872",
+  "plan_sha256": "277a5ceb8bee494d77095a65ff19fe3e5bbfe68365df15b0ff6ba850eed4dc2d",
+  "ticket": "6b107dc189f94c0d1388f195598e04d6",
+  "final_target_deg": [
+    14.993860054159736,
+    25.004338049502635,
+    -10.010477995342798,
+    5.005238997671399
+  ],
+  "result_available": true,
+  "result_error": null,
+  "result": {
+    "request_id": "467d9fd0f0ac48c3b21044d5680727f9",
+    "mode": "waypoints",
+    "reason": "finite_trial_complete",
+    "command_id": 1,
+    "trajectory_error_code": 0,
+    "trajectory_error_string": "Goal successfully reached!",
+    "concurrent_control_error": null,
+    "point_to_point": null,
+    "calibration": null,
+    "calibration_error": null,
+    "stop_error": null,
+    "backend_arm_receipt": "Arm request accepted only; four-axis fresh preflight, enable and ramp are not yet confirmed; audit_file=/tmp/panel-verify-20261105_161948/core/audit/canusb_motion_ALh0H0.jsonl",
+    "standard_jtc_action_succeeded": true,
+    "action_passed": true,
+    "waypoints_observed": true,
+    "waypoint_results": [
+      {
+        "arrival_s": 4.0,
+        "end_s": 5.0,
+        "target_deg": [
+          16.994,
+          26.004,
+          -11.01,
+          7.005
+        ],
+        "samples": 30,
+        "sampled_span_s": 0.29014515300514176,
+        "max_error_deg": [
+          0.011018564244014418,
+          0.016437751549292997,
+          0.0054191873051720315,
+          0.010838374610344063
+        ],
+        "passed": true,
+        "max_velocity_rad_s": null
+      },
+      {
+        "arrival_s": 9.0,
+        "end_s": 10.0,
+        "target_deg": [
+          14.994,
+          25.004,
+          -10.01,
+          5.005
+        ],
+        "samples": 30,
+        "sampled_span_s": 0.29014291100611445,
+        "max_error_deg": [
+          0.0,
+          0.02185693885446026,
+          0.0,
+          0.0
+        ],
+        "passed": true,
+        "max_velocity_rad_s": null
+      }
+    ],
+    "accuracy_passed": true,
+    "stop_observations_confirmed": true,
+    "observed_delta_range_deg": [
+      [
+        0.0,
+        1.9889814357559852
+      ],
+      [
+        -0.02185693885446026,
+        0.9835622484507116
+      ],
+      [
+        -1.0054191873051719,
+        0.0
+      ],
+      [
+        0.0,
+        2.0108383746103438
+      ]
+    ],
+    "final_delta_from_start_deg": [
+      0.0,
+      -0.02185693885446026,
+      0.0,
+      0.0
+    ],
+    "actual_excursion_deg": null,
+    "return_error_deg": null,
+    "requested_excursion_observed": null,
+    "initial_deg": [
+      14.994,
+      25.004,
+      -10.01,
+      5.005
+    ],
+    "plan_sha256": "0db4137ea85056f086f6087c55bf003ecdc7798f48e050b83c11827fe13757d9",
+    "operator_acknowledgements": {
+      "supported": true,
+      "clearance_and_local_power_cut": true,
+      "native_output_not_hardware_clamp": true
+    },
+    "trial_parameters": {
+      "hold_seconds": 1.0,
+      "round_trip": false,
+      "delta_deg": 1.0,
+      "leg_seconds": 4.0
+    },
+    "overall_ok": true
+  },
+  "stdout_tail": [
+    "[WARN] [1793866799.176819129] [rcl]: ROS_LOCALHOST_ONLY is deprecated but still honored if it is enabled. Use ROS_AUTOMATIC_DISCOVERY_RANGE and ROS_STATIC_PEERS instead.",
+    "[WARN] [1793866799.176840710] [rcl]: 'localhost_only' is enabled, 'automatic_discovery_range' and 'static_peers' will be ignored.",
+    "当前角度°：[14.994, 25.004, -10.01, 5.005]",
+    "完整URDF范围°：[[-80.0, 200.0], [-10.0, 190.0], [-90.0, 90.0], [-50.0, 90.0]]",
+    "路点预览（软件绝对角度°）：[{\"at_s\": 0.0, \"degrees\": [14.994, 25.004, -10.01, 5.005]}, {\"at_s\": 4.0, \"degrees\": [16.994, 26.004, -11.01, 7.005]}, {\"at_s\": 5.0, \"degrees\": [16.994, 26.004, -11.01, 7.005]}, {\"at_s\": 9.0, \"degrees\": [14.994, 25.004, -10.01, 5.005]}, {\"at_s\": 10.0, \"degrees\": [14.994, 25.004, -10.01, 5.005]}]",
+    "Arm request accepted only; four-axis fresh preflight, enable and ramp are not yet confirmed; audit_file=/tmp/panel-verify-20261105_161948/core/audit/canusb_motion_ALh0H0.jsonl",
+    "四轴使能、增益斜坡及稳定状态已观测；不是位置精度验收。",
+    "各路点反馈验收：[{\"arrival_s\": 4.0, \"end_s\": 5.0, \"target_rad\": [0.2965988105682293, 0.45386131876546126, -0.1921690932371167, 0.12226448539847329], \"samples\": 30, \"sampled_span_s\": 0.29014515300514176, \"max_error_deg\": [0.011018564244014418, 0.016437751549292997, 0.0054191873051720315, 0.010838374610344063], \"passed\": true}, {\"arrival_s\": 9.0, \"end_s\": 10.0, \"target_rad\": [0.2616922255283427, 0.4364080262455179, -0.1747158007171734, 0.0873579003585867], \"samples\": 30, \"sampled_span_s\": 0.29014291100611",
+    "已观测四轴新反馈失能；不是物理切力矩证明。",
+    "结果：/tmp/panel-verify-20261105_161948/core/archive/operations/c83551003f504802/client/20261105_162013_467d9fd0.json"
+  ],
+  "directory": "/tmp/panel-verify-20261105_161948/core/archive/operations/c83551003f504802",
+  "running": false,
+  "argv": [
+    "/usr/bin/python3",
+    "/home/xuyu/slaihand_control_panel_ws_speed1_20261105/install/slaihand_bringup/lib/slaihand_bringup/commission_supported_trial.py",
+    "--execute",
+    "--ack-supported",
+    "--ack-clearance",
+    "--ack-native-output",
+    "--plan",
+    "/tmp/panel-verify-20261105_161948/core/archive/operations/c83551003f504802/plan.json",
+    "--hold-seconds",
+    "1.0",
+    "--output-directory",
+    "/tmp/panel-verify-20261105_161948/core/archive/operations/c83551003f504802/client"
+  ]
+}

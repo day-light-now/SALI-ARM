@@ -1,0 +1,11 @@
+{
+  "passed": true,
+  "message": "预览被拒绝：CALIBRATION_PREFLIGHT：重力采样资格不满足：ALPHA_NONZERO: 重力采样要求 alpha=0，当前观察 alpha=0.1000；MODEL_UNQUALIFIED: 旧四轴组 load_id=no_end_load、无 J5 几何/3.5kg 新负载档案；需新 load_id、新质量档案和 J5 几何后再采样\n观察值：{\n  \"alpha\": 0.1,\n  \"driver_connected\": true,\n  \"group\": \"S01\",\n  \"identity_fresh\": true,\n  \"identity_reason\": null,\n  \"load_id\": \"no_end_load\",\n  \"mass_profile_sha256\": \"ff3c2f14473978c8760df7e5e833cf727335f5d997964a7a7c37f449ae1d35bf\",\n  \"group_qualified\": false,\n  \"legacy_group\": true\n}",
+  "group": "S01",
+  "expected": [
+    "ALPHA_NONZERO",
+    "MODEL_UNQUALIFIED"
+  ],
+  "fixture_port": 18888,
+  "physical_port_opened": false
+}

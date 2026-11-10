@@ -1,0 +1,15 @@
+{
+  "pid": 7624,
+  "audit": "/home/xuyu/.ros/slaihand/canusb_motion/canusb_motion_NEfvY3.jsonl",
+  "audit_bytes": 1114,
+  "usb_wait_threads": [
+    {
+      "tid": 7662,
+      "state": "D",
+      "wait": "usb_kill_urb"
+    }
+  ],
+  "status": "STARTUP_USB_KERNEL_STALL",
+  "hardware_actions_performed": false,
+  "syscall_stack_readable": false
+}

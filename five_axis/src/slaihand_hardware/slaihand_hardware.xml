@@ -1,0 +1,17 @@
+<library path="slaihand_hardware">
+  <class name="slaihand_hardware/OpenArmJointFake"
+         type="slaihand_hardware::OpenArmJointFake"
+         base_class_type="hardware_interface::SystemInterface">
+    <description>Configurable four/five-axis OpenArm codec adaptation, offline only.</description>
+  </class>
+  <class name="slaihand_hardware/CanUsbReadOnly"
+         type="slaihand_hardware::CanUsbReadOnly"
+         base_class_type="hardware_interface::SystemInterface">
+    <description>Actual serial feedback, J1-J4 read requests only; no command interfaces.</description>
+  </class>
+  <class name="slaihand_hardware/CanUsbSystem"
+         type="slaihand_hardware::CanUsbSystem"
+         base_class_type="hardware_interface::SystemInterface">
+    <description>Four-axis CANUSB native MIT. Starts disarmed; explicit operator arm, current-pose takeover and global stop.</description>
+  </class>
+</library>

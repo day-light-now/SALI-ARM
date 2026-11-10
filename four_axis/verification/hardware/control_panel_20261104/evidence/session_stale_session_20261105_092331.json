@@ -1,0 +1,439 @@
+{
+  "closed_at": 1793841811.9780037,
+  "stop": {
+    "state": "not_requested",
+    "requested_at": null,
+    "requested_wall": null,
+    "reason": null,
+    "generation": 0,
+    "confirmed_at": null,
+    "confirmed_wall": null,
+    "stage_label": "未请求"
+  },
+  "status": {
+    "ok": true,
+    "server": {
+      "version": "control_panel/1.0",
+      "now": 1793841811.978103,
+      "closing": true,
+      "ros_domain_id": "176",
+      "archive_dir": "/tmp/panel-verify-20261105_092216/stale/archive",
+      "ros_thread_alive": false,
+      "session_budget_seconds": 178.0,
+      "reserve_seconds": 8.0,
+      "heartbeat_timeout_s": 3.0,
+      "preview_ttl_s": 5.0,
+      "reference_speed_rad_s": 0.5,
+      "pose_drift_tolerance_deg": 0.5,
+      "feedback_fresh_s": 0.5,
+      "confirmations_required": [
+        "supported",
+        "clearance_and_local_power_cut",
+        "native_output_not_hardware_clamp"
+      ],
+      "max_waypoints": 12
+    },
+    "ros": {
+      "connected": true,
+      "dynamic_age_s": 0.01,
+      "joint_age_s": 0.01,
+      "controller_age_s": null,
+      "stage": 0,
+      "stage_label": "未使能",
+      "stage_fresh": true,
+      "consistent": true,
+      "hold_ready": false,
+      "disabled_observed": false,
+      "speed_scaling_factor": null,
+      "audit_ok": true,
+      "command_owner": false,
+      "command_id": 0,
+      "feedback_valid_all": true,
+      "limits_deg": [
+        [
+          -80.0,
+          200.0
+        ],
+        [
+          -10.0,
+          190.0
+        ],
+        [
+          -90.0,
+          90.0
+        ],
+        [
+          -90.0,
+          50.0
+        ]
+      ],
+      "limits_source": "/home/xuyu/slaihand_control_panel_ws_20261104/install/slaihand_description/share/slaihand_description/urdf/slaihand_four_axis.urdf",
+      "limits_error": null,
+      "client_script": "/home/xuyu/slaihand_control_panel_ws_20261104/install/slaihand_bringup/lib/slaihand_bringup/commission_supported_trial.py",
+      "client_sha256": "ff449ed8a7441be4da33a5d9b5181853a1d80173502c8500396f1e6dceec2160",
+      "client_error": null
+    },
+    "axes": [
+      {
+        "name": "slaihand_joint1",
+        "label": "J1",
+        "actual_deg": 14.994,
+        "target_deg": null,
+        "error_deg": null,
+        "target_source": null,
+        "velocity_deg_s": -0.35,
+        "effort_nm": -0.049,
+        "driver_temperature_c": 30.0,
+        "motor_temperature_c": 25.0,
+        "feedback_age_s": 0.0,
+        "feedback_valid": true,
+        "motor_state": 0,
+        "control_mode": 1,
+        "timeout_count": 2000,
+        "configuration_conflict": 0,
+        "limits_deg": [
+          -80.0,
+          200.0
+        ]
+      },
+      {
+        "name": "slaihand_joint2",
+        "label": "J2",
+        "actual_deg": 25.004,
+        "target_deg": null,
+        "error_deg": null,
+        "target_source": null,
+        "velocity_deg_s": -0.35,
+        "effort_nm": -0.049,
+        "driver_temperature_c": 30.0,
+        "motor_temperature_c": 25.0,
+        "feedback_age_s": 0.0,
+        "feedback_valid": true,
+        "motor_state": 0,
+        "control_mode": 1,
+        "timeout_count": 2000,
+        "configuration_conflict": 0,
+        "limits_deg": [
+          -10.0,
+          190.0
+        ]
+      },
+      {
+        "name": "slaihand_joint3",
+        "label": "J3",
+        "actual_deg": -10.01,
+        "target_deg": null,
+        "error_deg": null,
+        "target_source": null,
+        "velocity_deg_s": -0.63,
+        "effort_nm": -0.013,
+        "driver_temperature_c": 30.0,
+        "motor_temperature_c": 25.0,
+        "feedback_age_s": 0.0,
+        "feedback_valid": true,
+        "motor_state": 0,
+        "control_mode": 1,
+        "timeout_count": 2000,
+        "configuration_conflict": 0,
+        "limits_deg": [
+          -90.0,
+          90.0
+        ]
+      },
+      {
+        "name": "slaihand_joint4",
+        "label": "J4",
+        "actual_deg": 5.005,
+        "target_deg": null,
+        "error_deg": null,
+        "target_source": null,
+        "velocity_deg_s": 0.63,
+        "effort_nm": 0.013,
+        "driver_temperature_c": 30.0,
+        "motor_temperature_c": 25.0,
+        "feedback_age_s": 0.0,
+        "feedback_valid": true,
+        "motor_state": 0,
+        "control_mode": 1,
+        "timeout_count": 2000,
+        "configuration_conflict": 0,
+        "limits_deg": [
+          -90.0,
+          50.0
+        ]
+      }
+    ],
+    "gravity_shadow": {
+      "available": true,
+      "mode": "shadow",
+      "ff_applied": false,
+      "alpha": 0.0,
+      "beta": 0.0,
+      "shadow_alpha": 1.0,
+      "reference_known": false,
+      "rows": [
+        {
+          "joint": "slaihand_joint1",
+          "q_deg": 14.994,
+          "tau_model_nm": 1.4665,
+          "tau_protocol_nm": 1.4665,
+          "d_term_nm": 0.0305,
+          "predicted_ff_nm": 1.4665,
+          "guard_nm": 8.0,
+          "p_term_nm": null,
+          "applied_ff_nm": null,
+          "applied_envelope_nm": null,
+          "applied_headroom_nm": null,
+          "applied_headroom_deg_at_kp": null,
+          "predicted_envelope_nm": null,
+          "predicted_headroom_nm": null,
+          "predicted_headroom_deg_at_kp": null
+        },
+        {
+          "joint": "slaihand_joint2",
+          "q_deg": 25.004,
+          "tau_model_nm": 2.0494,
+          "tau_protocol_nm": 2.0494,
+          "d_term_nm": 0.0305,
+          "predicted_ff_nm": 2.0494,
+          "guard_nm": 10.0,
+          "p_term_nm": null,
+          "applied_ff_nm": null,
+          "applied_envelope_nm": null,
+          "applied_headroom_nm": null,
+          "applied_headroom_deg_at_kp": null,
+          "predicted_envelope_nm": null,
+          "predicted_headroom_nm": null,
+          "predicted_headroom_deg_at_kp": null
+        },
+        {
+          "joint": "slaihand_joint3",
+          "q_deg": -10.01,
+          "tau_model_nm": -0.0359,
+          "tau_protocol_nm": -0.0359,
+          "d_term_nm": 0.0549,
+          "predicted_ff_nm": -0.0359,
+          "guard_nm": 2.0,
+          "p_term_nm": null,
+          "applied_ff_nm": null,
+          "applied_envelope_nm": null,
+          "applied_headroom_nm": null,
+          "applied_headroom_deg_at_kp": null,
+          "predicted_envelope_nm": null,
+          "predicted_headroom_nm": null,
+          "predicted_headroom_deg_at_kp": null
+        },
+        {
+          "joint": "slaihand_joint4",
+          "q_deg": 5.005,
+          "tau_model_nm": 0.2099,
+          "tau_protocol_nm": -0.2099,
+          "d_term_nm": -0.0549,
+          "predicted_ff_nm": -0.2099,
+          "guard_nm": 2.0,
+          "p_term_nm": null,
+          "applied_ff_nm": null,
+          "applied_envelope_nm": null,
+          "applied_headroom_nm": null,
+          "applied_headroom_deg_at_kp": null,
+          "predicted_envelope_nm": null,
+          "predicted_headroom_nm": null,
+          "predicted_headroom_deg_at_kp": null
+        }
+      ],
+      "warnings": [
+        "控制器参考未知：P 项与总余量显示为未知，不以零误差假设填充",
+        "未收到驱动活动前馈：已应用余量不可计算",
+        "质量档案为暂定模型（ESTIMATE_ONLY_NOT_FOR_HARDWARE），不得当作已标定",
+        "已应用固定关节偏置 {'slaihand_joint3': 3.141592653589793}（需实机多姿态核验，且只应用一次）"
+      ],
+      "potential_energy_j": -4.5243,
+      "reference_stale": true,
+      "metadata": {
+        "backend": "analytic-urdf",
+        "format": "four_axis_gravity/1",
+        "urdf": "/home/xuyu/slaihand_control_panel_ws_20261104/install/slaihand_description/share/slaihand_description/urdf/slaihand_four_axis.urdf",
+        "urdf_sha256": "fe7edfda16165e8532303ec55d6c1ab733ad32fc6d023115f825aae62637e497",
+        "mass_profile": "/home/xuyu/slaihand_control_panel_ws_20261104/install/slaihand_bringup/share/slaihand_bringup/config/gravity_provisional.json",
+        "mass_profile_sha256": "ff3c2f14473978c8760df7e5e833cf727335f5d997964a7a7c37f449ae1d35bf",
+        "mass_profile_status": "ESTIMATE_ONLY_NOT_FOR_HARDWARE",
+        "total_mass_kg": 6.342442,
+        "gravity_base_m_s2": [
+          0.0,
+          9.80665,
+          0.0
+        ],
+        "gravity_source": "explicit_config",
+        "fixed_joint_offsets_rad": {
+          "slaihand_joint3": 3.141592654
+        },
+        "joint_names": [
+          "slaihand_joint1",
+          "slaihand_joint2",
+          "slaihand_joint3",
+          "slaihand_joint4"
+        ],
+        "limits_rad": [
+          [
+            -1.396263402,
+            3.490658504
+          ],
+          [
+            -0.174532925,
+            3.316125579
+          ],
+          [
+            -1.570796327,
+            1.570796327
+          ],
+          [
+            -1.570796327,
+            0.872664626
+          ]
+        ],
+        "units": {
+          "mass": "kg",
+          "position": "m",
+          "torque": "N*m",
+          "angle": "rad"
+        },
+        "coordinate": {
+          "mapping": "/home/xuyu/slaihand_control_panel_ws_20261104/install/slaihand_bringup/share/slaihand_bringup/config/hardware_mapping.yaml",
+          "mapping_sha256": "300d81eed77ded2c3235be3c2a69d5354a9df5cd74be85884dad05760a46356d",
+          "signs": {
+            "slaihand_joint1": 1,
+            "slaihand_joint2": 1,
+            "slaihand_joint3": 1,
+            "slaihand_joint4": -1
+          },
+          "zeros_rad": {
+            "slaihand_joint1": 1.4574273289082171,
+            "slaihand_joint2": -1.795033188372626,
+            "slaihand_joint3": -2.5423437857633324,
+            "slaihand_joint4": -0.40951400015259054
+          }
+        },
+        "kp": 160.0,
+        "kd": 5.0,
+        "guards_nm": [
+          8.0,
+          10.0,
+          2.0,
+          2.0
+        ],
+        "alpha": 0.0,
+        "shadow_alpha": 1.0,
+        "beta": 0.0,
+        "mode": "shadow",
+        "ff_applied": false,
+        "policy_sha256": "0aea4ff1c484515787495288040b587fd10eff93024da78970b4bd058d0fa242"
+      },
+      "config": {
+        "gravity_base_m_s2": [
+          0.0,
+          9.80665,
+          0.0
+        ],
+        "j3_offset_rad": 3.141592653589793
+      },
+      "driver": {
+        "connected": true,
+        "age_s": 0.0,
+        "alpha": 0.0,
+        "ramp": 1.0,
+        "active": false,
+        "stage": 0,
+        "command_id": 0,
+        "requested": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "encoded": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "applied": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "last_written": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      }
+    },
+    "operation": null,
+    "preview": null,
+    "stop": {
+      "state": "not_requested",
+      "reason": null,
+      "requested_at": null,
+      "confirmed_at": null,
+      "disabled_observed": false,
+      "label": "未请求"
+    },
+    "stop_gate": {
+      "locked": false,
+      "reason": null,
+      "locked_at": null,
+      "generation": 0,
+      "reset_requested_at": null,
+      "unlocked_at": null,
+      "requires": "手动复位后、因果上更新的四轴一致 DISARMED 观测"
+    },
+    "lease": {
+      "last_heartbeat_age_s": 0.21,
+      "timeout_s": 3.0,
+      "fresh": true,
+      "enforced_while_running": true
+    },
+    "services": {
+      "stop_all": {},
+      "reset_disabled": {},
+      "switch_controller": {}
+    },
+    "events": [
+      {
+        "at": 1793841809.529208,
+        "level": "info",
+        "message": "面板启动；只读观察，运动仅经受保护客户端子进程"
+      },
+      {
+        "at": 1793841809.529217,
+        "level": "info",
+        "message": "重力 shadow 已加载（只显示、不改命令）：质量档案 ESTIMATE_ONLY_NOT_FOR_HARDWARE，模型 fe7edfda1616"
+      }
+    ],
+    "stop_generation": 0,
+    "capabilities": {
+      "preview": {
+        "ok": false,
+        "message": "面板正在退出"
+      },
+      "execute": {
+        "ok": false,
+        "message": "面板正在退出"
+      },
+      "hold": {
+        "ok": false,
+        "message": "面板正在退出"
+      },
+      "reset": {
+        "ok": false,
+        "message": "需要先观测到已失能（当前：未使能）"
+      },
+      "stop": {
+        "ok": true,
+        "message": "始终可用；请求全轴停止，不是物理急停"
+      }
+    }
+  }
+}

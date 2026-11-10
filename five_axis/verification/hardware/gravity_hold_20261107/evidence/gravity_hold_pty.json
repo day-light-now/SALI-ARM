@@ -1,0 +1,24 @@
+{
+  "passed": true,
+  "mode": "gravity_float_lock_resume",
+  "operation_id": "063c95b45b2c4859",
+  "command_id": 1,
+  "locked_target_deg": [
+    14.994,
+    25.004,
+    -10.01,
+    5.005
+  ],
+  "locked_hold_gain": 0.0401,
+  "alpha_locked": 1,
+  "resume_alpha": 1,
+  "resume_kp": 0.0,
+  "audit_mit_packets": 1840,
+  "max_kp": 159.95115995115995,
+  "max_kd": 5.0,
+  "ramped_kp_packets": 544,
+  "stop_confirmed": true,
+  "late_lock_rejected": true,
+  "session_seconds": 20.0,
+  "physical_port_opened": false
+}

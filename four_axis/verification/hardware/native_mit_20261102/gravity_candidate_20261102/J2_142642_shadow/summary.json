@@ -1,0 +1,52 @@
+{
+  "status": "PROVISIONAL_OFFLINE_ONLY",
+  "hardware_authorized": false,
+  "actual_serial_writes": 0,
+  "source_result": "tmp\\native_mit\\20261102_142642_d063371e.json",
+  "source_audit": "tmp\\native_mit\\20261102_142642_d063371e.jsonl",
+  "source_readonly": "D:\\CodexData\\Projects\\机械臂\\slaihand_ros2_ws\\tmp\\four_axis_readonly\\20261102_142637_289300.jsonl",
+  "bounds": {
+    "fraction": 0.5,
+    "cap_nm": 2.0,
+    "slew_nm_s": 1.0,
+    "ramp_s": 1.0,
+    "max_gap_s": 0.1
+  },
+  "model": {
+    "status": "ESTIMATE_ONLY_NOT_FOR_HARDWARE",
+    "gravity_base_m_s2": [
+      0,
+      9.80665,
+      0
+    ],
+    "fixed_joint_offsets_rad": {
+      "slaihand_joint3": 3.141592653589793
+    },
+    "hardware_authorized": false,
+    "assumptions": [
+      "Shoulder mounting: J1 horizontal; base +Y points down per user CAD diagram.",
+      "Vendor assembled motor mass uniformly scales its CAD pieces; COM shape and rotor/stator split are estimates.",
+      "Motor pieces remain in current CAD link grouping; rotor/stator dynamic allocation is not verified.",
+      "Unassigned structural materials keep CAD default density; ABS is treated as solid.",
+      "Zero-volume motor reference part omitted; its contribution is absorbed by total motor mass scaling.",
+      "J4340 mass is included on link4, no J5 motion. No cable or extra payload included.",
+      "Mass factor sensitivity is not a statistical confidence interval."
+    ],
+    "sha256": {
+      "src\\slaihand_description\\urdf\\slaihand_four_axis.urdf": "47c2827cba6b386131b9263d7c980000ae02b7aadecb16b376693efb0bd66c72",
+      "verification\\gravity_preparation\\provisional_gravity.json": "b03bd1fdf51ddf5bf3e9004c5d0c8c1218797f1fcbf085806792618e3e6d145f",
+      "verification\\impedance_demo\\model.py": "18b1d00ca8629250b2475387f7430aa2575acbc1ab25367e711e3d257121e087"
+    }
+  },
+  "sample_count": 1819,
+  "incomplete_samples_skipped": 0,
+  "raw_gravity_j2_range_nm": [
+    -0.01929410841580606,
+    0.7764801325787445
+  ],
+  "peak_candidate_ff_nm": 0.38824006628937224,
+  "encoded_ff_quantum_nm": 0.09768009768009768,
+  "peak_candidate_estimate_nm": 2.5995914345651037,
+  "would_exceed_guard_count": 0,
+  "note": "Counterfactual fields at recorded states; not closed-loop simulation, not a prediction of tracking or load capacity"
+}

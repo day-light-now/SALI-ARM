@@ -1,0 +1,75 @@
+<?xml version="1.0"?>
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro" name="slaihand_four_axis">
+  <!-- Same geometry and complete position limits. No inward or anchor-relative
+       position window. Configure/activate only starts telemetry, not motors.
+       Explicit operator arm service is the only entry to four-axis enabling. -->
+  <xacro:arg name="port" default=""/>
+  <xacro:arg name="mapping_file" default="$(find slaihand_bringup)/config/hardware_mapping.yaml"/>
+  <xacro:arg name="policy_file" default="$(find slaihand_bringup)/config/canusb_motion_policy.yaml"/>
+  <xacro:arg name="log_directory" default="/tmp/slaihand_canusb_motion"/>
+  <xacro:arg name="mapping_sha256" default=""/>
+  <xacro:arg name="model_sha256" default=""/>
+  <xacro:arg name="policy_sha256" default=""/>
+  <!-- Compact four-axis gravity model generated from the canonical URDF plus the
+       mass profile by the launch. Empty keeps feedforward inactive. -->
+  <xacro:arg name="gravity_model" default=""/>
+  <xacro:arg name="gravity_ff_alpha" default="0.0"/>
+  <xacro:arg name="mass_profile_sha256" default=""/>
+  <xacro:arg name="load_id" default=""/>
+  <xacro:include filename="$(find slaihand_description)/urdf/slaihand_four_axis.urdf"/>
+  <xacro:property name="calibration" value="${xacro.load_yaml('$(arg mapping_file)')['joints']}"/>
+  <xacro:property name="policy" value="${xacro.load_yaml('$(arg policy_file)')}"/>
+  <ros2_control name="SLAICanUsbSystem" type="system">
+    <hardware>
+      <plugin>slaihand_hardware/CanUsbSystem</plugin>
+      <param name="port">$(arg port)</param>
+      <param name="protocol">slai_canusb_tx30_rx16_v1</param>
+      <param name="log_directory">$(arg log_directory)</param>
+      <param name="service_prefix">/slaihand</param>
+      <param name="mapping_sha256">$(arg mapping_sha256)</param>
+      <param name="model_sha256">$(arg model_sha256)</param>
+      <param name="policy_sha256">$(arg policy_sha256)</param>
+      <param name="policy_profile">${policy['profile']}</param>
+      <xacro:macro name="policy_value" params="key"><param name="${key}">${policy[key]}</param></xacro:macro>
+      <xacro:policy_value key="kp"/><xacro:policy_value key="kd"/>
+      <xacro:policy_value key="reference_speed_rad_s"/><xacro:policy_value key="feedback_speed_rad_s"/>
+      <xacro:policy_value key="following_error_deg"/><xacro:policy_value key="temperature_c"/>
+      <xacro:policy_value key="gain_ramp_s"/><xacro:policy_value key="enable_stagger_s"/>
+      <xacro:policy_value key="feedback_max_age_s"/><xacro:policy_value key="cycle_max_gap_s"/>
+      <xacro:policy_value key="session_timeout_s"/>
+      <xacro:policy_value key="gravity_ff_ramp_s"/>
+      <!-- alpha may be overridden per launch for offline tests; default from policy. -->
+      <param name="gravity_ff_alpha">$(arg gravity_ff_alpha)</param>
+      <param name="gravity_model">$(arg gravity_model)</param>
+      <param name="gravity_float_enabled">${1 if policy.get('gravity_float_enabled', False) else 0}</param>
+      <!-- Runtime identity metadata for the read-only calibration tool. -->
+      <param name="mass_profile_sha256">$(arg mass_profile_sha256)</param>
+      <param name="load_id">$(arg load_id)</param>
+      <param name="gravity_base_x">${policy['gravity_base_x']}</param>
+      <param name="gravity_base_y">${policy['gravity_base_y']}</param>
+      <param name="gravity_base_z">${policy['gravity_base_z']}</param>
+      <param name="gravity_j3_offset_rad">${policy['gravity_j3_offset_rad']}</param>
+    </hardware>
+    <xacro:macro name="native_joint" params="name index">
+      <joint name="${name}">
+        <param name="can_id">${calibration[name]['can_id']}</param>
+        <param name="hardware_sign">${calibration[name]['hardware_sign']}</param>
+        <param name="zero_offset_rad">${calibration[name]['zero_offset_rad']}</param>
+        <param name="position_branch_mode">${calibration[name].get('position_branch_mode', 'fixed')}</param>
+        <param name="estimate_guard_nm">${policy['estimate_guard_nm'][index]}</param>
+        <command_interface name="position"/>
+        <state_interface name="position"/><state_interface name="velocity"/><state_interface name="effort"/>
+        <state_interface name="driver_temperature"/><state_interface name="motor_temperature"/><state_interface name="motor_state"/>
+        <state_interface name="feedback_age"/><state_interface name="feedback_valid"/><state_interface name="control_mode"/>
+        <state_interface name="timeout_count"/><state_interface name="configuration_conflict"/>
+        <state_interface name="control_state"/><state_interface name="hold_ready"/><state_interface name="audit_ok"/>
+        <state_interface name="disabled_observed"/><state_interface name="command_owner"/>
+        <state_interface name="command_id"/>
+      </joint>
+    </xacro:macro>
+    <xacro:native_joint name="slaihand_joint1" index="${0}"/>
+    <xacro:native_joint name="slaihand_joint2" index="${1}"/>
+    <xacro:native_joint name="slaihand_joint3" index="${2}"/>
+    <xacro:native_joint name="slaihand_joint4" index="${3}"/>
+  </ros2_control>
+</robot>

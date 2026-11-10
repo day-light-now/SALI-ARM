@@ -1,0 +1,12 @@
+{
+  "passed": true,
+  "loaded_waypoints": 12,
+  "duration_s": 90,
+  "reference_speed_rad_s": 1,
+  "j4_limits_deg": [
+    -50,
+    90
+  ],
+  "preview_passed": true,
+  "motion_requested": false
+}

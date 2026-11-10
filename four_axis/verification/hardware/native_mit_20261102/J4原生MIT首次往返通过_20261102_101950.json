@@ -1,0 +1,26 @@
+{
+  "result": "tmp\\native_mit\\20261102_101950_6583abf4.json",
+  "audit_sha256": "579711b6c94626f957ef065aa88c448b9574a6996ea4a4bb3300b124e94af3b5",
+  "result_sha256": "80904f9d7908592e0735d309da79ba6a8e221b446af3a84e7d386dd0e9c6dfdb",
+  "raw_log": "D:\\CodexData\\Projects\\机械臂\\slaihand_ros2_ws\\tmp\\four_axis_readonly\\20261102_101946_136600.jsonl",
+  "raw_log_note": "shared read-only log may continue appending; audited timestamps bounded to trial",
+  "serial_written_counts": {
+    "J4:mit": 3427,
+    "J4:enable": 1,
+    "J1:disable": 1,
+    "J2:disable": 1,
+    "J3:disable": 1,
+    "J4:disable": 1
+  },
+  "mit_gain_max": {
+    "kp": 159.95115995115995,
+    "kd": 5.0
+  },
+  "scoped_raw_tx": 11088,
+  "actual_positive_excursion_deg": 9.857479423361577,
+  "final_error_from_start_deg": 0.3059971439624436,
+  "max_observed_error_deg": 0.5936777022876383,
+  "peak_observed_speed_rad_s": 0.2527472527472554,
+  "peak_observed_estimate_nm": 1.7441746168686265,
+  "acceptance": "single supported J4 native MIT roundtrip meets current trial criteria; no full-arm or load acceptance"
+}

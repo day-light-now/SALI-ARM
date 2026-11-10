@@ -1,0 +1,16 @@
+{
+  "status": "vendor_total_mass_verified_split_and_COM_unverified",
+  "source_pdf": "C:/Users/ASUS/Desktop/OpenArm五轴电气接线资料包_20260921/02_达妙电机规格/达妙2026年产品选型手册.pdf",
+  "verified_date": "2026-10-08",
+  "motors": {
+    "DM-J10010L-2EC": {"mass_kg": 1.375, "source_page": 24, "quantity": 2},
+    "DM-J8009P-2EC": {"mass_kg": 0.921, "source_page": 22, "quantity": 2},
+    "DM-J4340-2EC": {"mass_kg": 0.362, "source_page": 14, "quantity": 1}
+  },
+  "notes": [
+    "Total assembled motor mass is not stator mass or rotor mass.",
+    "No motor COM or inertia provided by these parameter tables.",
+    "No scaling of motor CAD mass has been applied to formal URDF.",
+    "J5 is disabled as a joint, but the CAD J4340 present on link4 contributes physical mass if actually installed."
+  ]
+}

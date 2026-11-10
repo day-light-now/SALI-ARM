@@ -1,0 +1,285 @@
+{
+  "schema": "slaihand_gravity_followup_candidates/1",
+  "source_commit": "e48f2c6",
+  "hardware_executed": false,
+  "panel_imported": false,
+  "collision_checked": false,
+  "compensation_enabled": false,
+  "identity": {
+    "urdf_sha256": "b58042be2191e8aa2223ff867d101e1d072f579936759f2d09c7f075ce16721f",
+    "historical_j5_calibration_sha256": "22faa38808192d96436234e231aae1cbd9f974f2057ee03caf2a998492842965"
+  },
+  "entry_feedback_max_abs_deg": 2.0,
+  "plans": [
+    {
+      "name": "GC09_J1_PAIRED_REPEAT_ZERO",
+      "file": "GC09_J1_PAIRED_REPEAT_ZERO.json",
+      "sha256": "e850f47b39e4f20ea2ac72240b1292dbad3b81c4b82a9958d187f1495c0317af",
+      "role": "priority_1_upstream_direction_identification",
+      "waypoint_count": 9,
+      "paired_windows": [
+        {
+          "waypoint_indices_zero_based": [
+            1,
+            3
+          ],
+          "axis_one_based": 1,
+          "target_deg": 10.0,
+          "approach_signs": [
+            1,
+            -1
+          ]
+        },
+        {
+          "waypoint_indices_zero_based": [
+            5,
+            7
+          ],
+          "axis_one_based": 1,
+          "target_deg": 10.0,
+          "approach_signs": [
+            1,
+            -1
+          ]
+        }
+      ],
+      "duration_s": 120.0,
+      "session_reserve_s": 60.0,
+      "max_reference_peak_rad_s": 0.0409061543436171,
+      "final_absolute_deg": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "compiled_final_rad": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "name": "GC10_J4_PAIRED_REPEAT_ZERO",
+      "file": "GC10_J4_PAIRED_REPEAT_ZERO.json",
+      "sha256": "c41989b3dc945679db8c4f4bdbd84f6804e90a8bb0c3d0873f2d6662a8daff36",
+      "role": "priority_1_upstream_direction_identification",
+      "waypoint_count": 9,
+      "paired_windows": [
+        {
+          "waypoint_indices_zero_based": [
+            1,
+            3
+          ],
+          "axis_one_based": 4,
+          "target_deg": 10.0,
+          "approach_signs": [
+            1,
+            -1
+          ]
+        },
+        {
+          "waypoint_indices_zero_based": [
+            5,
+            7
+          ],
+          "axis_one_based": 4,
+          "target_deg": 10.0,
+          "approach_signs": [
+            1,
+            -1
+          ]
+        }
+      ],
+      "duration_s": 120.0,
+      "session_reserve_s": 60.0,
+      "max_reference_peak_rad_s": 0.0409061543436171,
+      "final_absolute_deg": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "compiled_final_rad": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "name": "GC11_J2_PAIRED_REPEAT_ZERO",
+      "file": "GC11_J2_PAIRED_REPEAT_ZERO.json",
+      "sha256": "ed49709840cf4031bbc0a9bfd1c26dec2aa50b4e53bf2aff5e4e269962131e30",
+      "role": "priority_2_upstream_direction_identification",
+      "waypoint_count": 9,
+      "paired_windows": [
+        {
+          "waypoint_indices_zero_based": [
+            1,
+            3
+          ],
+          "axis_one_based": 2,
+          "target_deg": 10.0,
+          "approach_signs": [
+            1,
+            -1
+          ]
+        },
+        {
+          "waypoint_indices_zero_based": [
+            5,
+            7
+          ],
+          "axis_one_based": 2,
+          "target_deg": 10.0,
+          "approach_signs": [
+            1,
+            -1
+          ]
+        }
+      ],
+      "duration_s": 120.0,
+      "session_reserve_s": 60.0,
+      "max_reference_peak_rad_s": 0.0409061543436171,
+      "final_absolute_deg": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "compiled_final_rad": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "name": "GC12_J3_PAIRED_REPEAT_ZERO",
+      "file": "GC12_J3_PAIRED_REPEAT_ZERO.json",
+      "sha256": "5a65f357a1fc4435163defe106d0de76d921d5fe8ded6b9a90eac3b4d77bc2f7",
+      "role": "priority_2_upstream_direction_identification",
+      "waypoint_count": 9,
+      "paired_windows": [
+        {
+          "waypoint_indices_zero_based": [
+            1,
+            3
+          ],
+          "axis_one_based": 3,
+          "target_deg": 10.0,
+          "approach_signs": [
+            1,
+            -1
+          ]
+        },
+        {
+          "waypoint_indices_zero_based": [
+            5,
+            7
+          ],
+          "axis_one_based": 3,
+          "target_deg": 10.0,
+          "approach_signs": [
+            1,
+            -1
+          ]
+        }
+      ],
+      "duration_s": 120.0,
+      "session_reserve_s": 60.0,
+      "max_reference_peak_rad_s": 0.0409061543436171,
+      "final_absolute_deg": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "compiled_final_rad": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "name": "GC13_NEW_MIXED_J5_HOLDOUT_ZERO",
+      "file": "GC13_NEW_MIXED_J5_HOLDOUT_ZERO.json",
+      "sha256": "be72b4c1a613e2baa0820b7dcdfc4aa2f92461de6ea95cb45d01cecb7073a7bd",
+      "role": "future_final_holdout_do_not_train_on",
+      "waypoint_count": 11,
+      "paired_windows": [
+        {
+          "waypoint_indices_zero_based": [
+            2,
+            4
+          ],
+          "axis_one_based": 5,
+          "target_deg": 10.0,
+          "approach_signs": [
+            1,
+            -1
+          ]
+        },
+        {
+          "waypoint_indices_zero_based": [
+            6,
+            8
+          ],
+          "axis_one_based": 5,
+          "target_deg": -10.0,
+          "approach_signs": [
+            -1,
+            1
+          ]
+        },
+        {
+          "waypoint_indices_zero_based": [
+            5,
+            9
+          ],
+          "axis_one_based": 5,
+          "target_deg": 0.0,
+          "approach_signs": [
+            -1,
+            1
+          ]
+        }
+      ],
+      "duration_s": 146.0,
+      "session_reserve_s": 34.0,
+      "max_reference_peak_rad_s": 0.06135923151542564,
+      "final_absolute_deg": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "compiled_final_rad": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    }
+  ],
+  "purpose": "test upstream direction confounding and repeatability before a spatial COM claim",
+  "preserved_requirements": [
+    "TIMEOUT readback 2000; verify-existing zero-write mode allowed",
+    "fresh disabled admission",
+    "4deg/STOP/limits/freshness unchanged",
+    "absolute zero final reference; on fault STOP wins, no forced return"
+  ],
+  "sequence": "GC09/10 first; inspect results before GC11/12; lock geometry/model before acquiring GC13"
+}

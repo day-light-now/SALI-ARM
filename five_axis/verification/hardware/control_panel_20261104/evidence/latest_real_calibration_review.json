@@ -1,0 +1,84 @@
+{
+  "schema": "slaihand_calibration_analysis/2",
+  "counts": {
+    "total": 12,
+    "invalid": 0,
+    "excluded": 0,
+    "usable": 12,
+    "qualified": 12,
+    "independent_holdout": 0
+  },
+  "status": "INSUFFICIENT",
+  "reasons": [
+    "J1 力矩符号一致率 0.50 过低，方向/映射存疑",
+    "留出验证失败：测试 RMSE 0.823 N·m 明显偏大"
+  ],
+  "exclusions": [],
+  "invalid": [],
+  "identity": {
+    "urdf_sha256": "fe7edfda16165e8532303ec55d6c1ab733ad32fc6d023115f825aae62637e497",
+    "mass_profile_sha256": "ff3c2f14473978c8760df7e5e833cf727335f5d997964a7a7c37f449ae1d35bf",
+    "mapping_sha256": "00b0c77f131adb3142617c2c1f1ce2612e4d956f15adf6eac53a8138ae2787b6",
+    "policy_sha256": "fbb008c0ab72e0f597bf0874c1a9e6a3e3fae2683c84f05d19bc8c8ae03bc183",
+    "mass_profile_status": "ESTIMATE_ONLY_NOT_FOR_HARDWARE",
+    "gravity_base_m_s2": [
+      0.0,
+      9.80665,
+      0.0
+    ],
+    "j3_offset_rad": 3.141592653589793,
+    "load_id": "no_end_load"
+  },
+  "diagnostics": {
+    "diagnostic_only": true,
+    "scale": 1.0956,
+    "residual_rmse_nm": 0.8128,
+    "per_axis": [
+      {
+        "joint": 1,
+        "residual_mean_nm": -0.4611,
+        "residual_std_nm": 1.0585,
+        "model_significant_samples": 12,
+        "measured_sign_agreement": 0.5,
+        "guard_nm": 0.0
+      },
+      {
+        "joint": 2,
+        "residual_mean_nm": -0.1882,
+        "residual_std_nm": 0.9235,
+        "model_significant_samples": 12,
+        "measured_sign_agreement": 0.833,
+        "guard_nm": 0.0
+      },
+      {
+        "joint": 3,
+        "residual_mean_nm": 0.1701,
+        "residual_std_nm": 0.2106,
+        "model_significant_samples": 0,
+        "measured_sign_agreement": null,
+        "guard_nm": 0.0
+      },
+      {
+        "joint": 4,
+        "residual_mean_nm": -0.2059,
+        "residual_std_nm": 0.5757,
+        "model_significant_samples": 10,
+        "measured_sign_agreement": 0.8,
+        "guard_nm": 0.0
+      }
+    ],
+    "note": "诊断值包含未通过资格门禁的样本，不作为标定结论"
+  },
+  "fit": null,
+  "holdout": null,
+  "identifiability": {
+    "scope": "本工具主动只拟合一个全局重力尺度，不做单连杆质量/质心辨识",
+    "not_a_theorem": "足够姿态激励下静态数据可辨识某些重力参数；本工具的限制是范围选择",
+    "needs": "可比质量/质心数据或跨负载、更多姿态的独立测量才能进一步辨识"
+  },
+  "warnings": [],
+  "source_raw_file": "/home/xuyu/.ros/slaihand/control_panel/operations/432de3afc93e4761/client/calibration/raw/20261105_135636_web_static_196225253.jsonl",
+  "source_raw_sha256": "4335aa30ff99ddb2ff772422a9128a94d05b879b6dc3b819fa29fa4105055760",
+  "source_client_result": "/home/xuyu/.ros/slaihand/control_panel/operations/432de3afc93e4761/client/20261105_135918_287ca809.json",
+  "independent_G07_received": false
+}

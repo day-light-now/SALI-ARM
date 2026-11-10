@@ -1,0 +1,18 @@
+{
+  "_note": "CONTRACT FIXTURE, NOT REAL HARDWARE EVIDENCE. Legacy scalar-only runtime identity: kp/kd exist but no kp_axis/kd_axis. The panel must show the scalar as a compatibility fallback only and must not claim it is the per-axis encoded value.",
+  "schema": "slaihand_runtime_identity/1",
+  "boot_id": "fixture-boot-scalar",
+  "started_at": 1000.0,
+  "mapping_sha256": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+  "model_sha256": "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb",
+  "policy_sha256": "cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc",
+  "mass_profile_sha256": "dddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd",
+  "policy_profile": "fixture_five_axis_native_mit",
+  "load_id": "fixture_load_contract_only",
+  "kp": 160.0,
+  "kd": 5.0,
+  "following_error_deg": 4.0,
+  "active_axes": 5,
+  "first_fault": null,
+  "request_estimate_state": "UNAVAILABLE"
+}

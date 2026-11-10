@@ -1,0 +1,120 @@
+{
+  "axes": [
+    {
+      "position": 0.010681315327687457,
+      "velocity": -0.006105006105006083,
+      "driver_temperature": 31.0,
+      "command_id": 0.0,
+      "feedback_valid": 1.0,
+      "command_owner": 0.0,
+      "effort": -0.04884004884004867,
+      "motor_temperature": 27.0,
+      "disabled_observed": 0.0,
+      "timeout_count": 2000.0,
+      "audit_ok": 1.0,
+      "hold_ready": 0.0,
+      "motor_state": 0.0,
+      "control_state": 0.0,
+      "configuration_conflict": 0.0,
+      "control_mode": 1.0,
+      "feedback_age": 2.111699723172933e-05
+    },
+    {
+      "position": 0.003814755474174092,
+      "velocity": -0.006105006105006083,
+      "driver_temperature": 29.0,
+      "command_id": 0.0,
+      "feedback_valid": 1.0,
+      "command_owner": 0.0,
+      "effort": -0.04884004884004867,
+      "motor_temperature": 26.0,
+      "disabled_observed": 0.0,
+      "timeout_count": 2000.0,
+      "audit_ok": 1.0,
+      "hold_ready": 0.0,
+      "motor_state": 0.0,
+      "control_state": 0.0,
+      "configuration_conflict": 0.0,
+      "control_mode": 1.0,
+      "feedback_age": 2.111699723172933e-05
+    },
+    {
+      "position": -0.01411459525444414,
+      "velocity": -0.010989010989014503,
+      "driver_temperature": 28.0,
+      "command_id": 0.0,
+      "feedback_valid": 1.0,
+      "command_owner": 0.0,
+      "effort": -0.01318681318681314,
+      "motor_temperature": 26.0,
+      "disabled_observed": 0.0,
+      "timeout_count": 2000.0,
+      "audit_ok": 1.0,
+      "hold_ready": 0.0,
+      "motor_state": 0.0,
+      "control_state": 0.0,
+      "configuration_conflict": 0.0,
+      "control_mode": 1.0,
+      "feedback_age": 2.111699723172933e-05
+    },
+    {
+      "position": 0.14457923247119808,
+      "velocity": 0.010989010989014503,
+      "driver_temperature": 28.0,
+      "command_id": 0.0,
+      "feedback_valid": 1.0,
+      "command_owner": 0.0,
+      "effort": 0.01318681318681314,
+      "motor_temperature": 27.0,
+      "disabled_observed": 0.0,
+      "timeout_count": 2000.0,
+      "audit_ok": 1.0,
+      "hold_ready": 0.0,
+      "motor_state": 0.0,
+      "control_state": 0.0,
+      "configuration_conflict": 0.0,
+      "control_mode": 1.0,
+      "feedback_age": 2.111699723172933e-05
+    }
+  ],
+  "identity": {
+    "schema": "slaihand_runtime_identity/1",
+    "mapping_sha256": "00b0c77f131adb3142617c2c1f1ce2612e4d956f15adf6eac53a8138ae2787b6",
+    "model_sha256": "fe7edfda16165e8532303ec55d6c1ab733ad32fc6d023115f825aae62637e497",
+    "policy_sha256": "fbb008c0ab72e0f597bf0874c1a9e6a3e3fae2683c84f05d19bc8c8ae03bc183",
+    "mass_profile_sha256": "ff3c2f14473978c8760df7e5e833cf727335f5d997964a7a7c37f449ae1d35bf",
+    "policy_profile": "supported_four_axis_native_mit_b1",
+    "load_id": "no_end_load",
+    "gravity_base_m_s2": [
+      0,
+      9.80665,
+      0
+    ],
+    "j3_offset_rad": 3.141592653589793,
+    "kp": 160,
+    "kd": 5,
+    "gravity_ff_alpha": 0,
+    "gravity_ff_ramp_s": 1,
+    "boot_id": "88467162622-291282",
+    "started_at": 88467.162619559,
+    "position_branch_ready": true,
+    "position_branch_modes": [
+      "fixed",
+      "fixed",
+      "startup_unique_urdf",
+      "fixed"
+    ],
+    "model_turns": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "effective_zero_rad": [
+      1.4574273289082171,
+      -1.795033188372626,
+      -2.5423437857633324,
+      -0.40951400015259054
+    ]
+  }
+}

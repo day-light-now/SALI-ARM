@@ -1,0 +1,980 @@
+{
+  "schema": "slaihand_offline_scheme_matrix/2",
+  "scope": "offline evidence only; no ROS/hardware/driver/panel actions",
+  "data_definition": "max_error_deg is max(abs(actual-target)) over final ~0.3 s; unsigned",
+  "signed_static_data_available": false,
+  "workspace_generalization": false,
+  "ranking_performed": false,
+  "freshness_policy": "default 1800 s for any future admission; no 86400 override",
+  "commissioning_or_acceptance": false,
+  "schemes": [
+    {
+      "scheme": "constant_160_5",
+      "category": "MEASURED",
+      "status": "MEASURED_BASELINE",
+      "existing_command_path": true,
+      "commissioned": false,
+      "acceptance_passed": false,
+      "signed_static_data": false,
+      "dynamic_data": false,
+      "simulated": false,
+      "summary": {
+        "max_error_magnitude_deg": {
+          "J1": 3.5645,
+          "J2": 3.8049,
+          "J3": 0.3183,
+          "J4": 2.8432,
+          "J5": 0.3663
+        },
+        "signed_direction_available": false
+      },
+      "rows": {
+        "J1": [
+          {
+            "angle_deg": 5.0,
+            "measured_error_magnitude_deg": 0.869,
+            "source": "BASELINE_0_40_160_5.json",
+            "measurement_definition": "max(abs(actual-target)) in final ~0.3 s",
+            "signed_direction": null
+          },
+          {
+            "angle_deg": 10.0,
+            "measured_error_magnitude_deg": 1.6725,
+            "source": "BASELINE_0_40_160_5.json",
+            "measurement_definition": "max(abs(actual-target)) in final ~0.3 s",
+            "signed_direction": null
+          },
+          {
+            "angle_deg": 20.0,
+            "measured_error_magnitude_deg": 2.8204,
+            "source": "BASELINE_0_40_160_5.json",
+            "measurement_definition": "max(abs(actual-target)) in final ~0.3 s",
+            "signed_direction": null
+          },
+          {
+            "angle_deg": 30.0,
+            "measured_error_magnitude_deg": 3.5531,
+            "source": "BASELINE_0_40_160_5.json",
+            "measurement_definition": "max(abs(actual-target)) in final ~0.3 s",
+            "signed_direction": null
+          },
+          {
+            "angle_deg": 35.0,
+            "measured_error_magnitude_deg": 3.5479,
+            "source": "BASELINE_0_40_160_5.json",
+            "measurement_definition": "max(abs(actual-target)) in final ~0.3 s",
+            "signed_direction": null
+          },
+          {
+            "angle_deg": 40.0,
+            "measured_error_magnitude_deg": 3.5645,
+            "source": "BASELINE_0_40_160_5.json",
+            "measurement_definition": "max(abs(actual-target)) in final ~0.3 s",
+            "signed_direction": null
+          }
+        ],
+        "J2": [
+          {
+            "angle_deg": 5.0,
+            "measured_error_magnitude_deg": 1.0876,
+            "source": "BASELINE_0_40_160_5.json",
+            "measurement_definition": "max(abs(actual-target)) in final ~0.3 s",
+            "signed_direction": null
+          },
+          {
+            "angle_deg": 10.0,
+            "measured_error_magnitude_deg": 1.3665,
+            "source": "BASELINE_0_40_160_5.json",
+            "measurement_definition": "max(abs(actual-target)) in final ~0.3 s",
+            "signed_direction": null
+          },
+          {
+            "angle_deg": 20.0,
+            "measured_error_magnitude_deg": 2.2303,
+            "source": "BASELINE_0_40_160_5.json",
+            "measurement_definition": "max(abs(actual-target)) in final ~0.3 s",
+            "signed_direction": null
+          },
+          {
+            "angle_deg": 30.0,
+            "measured_error_magnitude_deg": 3.0723,
+            "source": "BASELINE_0_40_160_5.json",
+            "measurement_definition": "max(abs(actual-target)) in final ~0.3 s",
+            "signed_direction": null
+          },
+          {
+            "angle_deg": 35.0,
+            "measured_error_magnitude_deg": 3.3949,
+            "source": "BASELINE_0_40_160_5.json",
+            "measurement_definition": "max(abs(actual-target)) in final ~0.3 s",
+            "signed_direction": null
+          },
+          {
+            "angle_deg": 40.0,
+            "measured_error_magnitude_deg": 3.8049,
+            "source": "BASELINE_0_40_160_5.json",
+            "measurement_definition": "max(abs(actual-target)) in final ~0.3 s",
+            "signed_direction": null
+          }
+        ],
+        "J3": [
+          {
+            "angle_deg": 5.0,
+            "measured_error_magnitude_deg": 0.2352,
+            "source": "BASELINE_0_40_160_5.json",
+            "measurement_definition": "max(abs(actual-target)) in final ~0.3 s",
+            "signed_direction": null
+          },
+          {
+            "angle_deg": 10.0,
+            "measured_error_magnitude_deg": 0.3174,
+            "source": "BASELINE_0_40_160_5.json",
+            "measurement_definition": "max(abs(actual-target)) in final ~0.3 s",
+            "signed_direction": null
+          },
+          {
+            "angle_deg": 20.0,
+            "measured_error_magnitude_deg": 0.1539,
+            "source": "BASELINE_0_40_160_5.json",
+            "measurement_definition": "max(abs(actual-target)) in final ~0.3 s",
+            "signed_direction": null
+          },
+          {
+            "angle_deg": 30.0,
+            "measured_error_magnitude_deg": 0.3183,
+            "source": "BASELINE_0_40_160_5.json",
+            "measurement_definition": "max(abs(actual-target)) in final ~0.3 s",
+            "signed_direction": null
+          },
+          {
+            "angle_deg": 35.0,
+            "measured_error_magnitude_deg": 0.0804,
+            "source": "BASELINE_0_40_160_5.json",
+            "measurement_definition": "max(abs(actual-target)) in final ~0.3 s",
+            "signed_direction": null
+          },
+          {
+            "angle_deg": 40.0,
+            "measured_error_magnitude_deg": 0.0201,
+            "source": "BASELINE_0_40_160_5.json",
+            "measurement_definition": "max(abs(actual-target)) in final ~0.3 s",
+            "signed_direction": null
+          }
+        ],
+        "J4": [
+          {
+            "angle_deg": 5.0,
+            "measured_error_magnitude_deg": 0.5193,
+            "source": "BASELINE_0_40_160_5.json",
+            "measurement_definition": "max(abs(actual-target)) in final ~0.3 s",
+            "signed_direction": null
+          },
+          {
+            "angle_deg": 10.0,
+            "measured_error_magnitude_deg": 1.0605,
+            "source": "BASELINE_0_40_160_5.json",
+            "measurement_definition": "max(abs(actual-target)) in final ~0.3 s",
+            "signed_direction": null
+          },
+          {
+            "angle_deg": 20.0,
+            "measured_error_magnitude_deg": 1.7495,
+            "source": "BASELINE_0_40_160_5.json",
+            "measurement_definition": "max(abs(actual-target)) in final ~0.3 s",
+            "signed_direction": null
+          },
+          {
+            "angle_deg": 30.0,
+            "measured_error_magnitude_deg": 2.3291,
+            "source": "BASELINE_0_40_160_5.json",
+            "measurement_definition": "max(abs(actual-target)) in final ~0.3 s",
+            "signed_direction": null
+          },
+          {
+            "angle_deg": 35.0,
+            "measured_error_magnitude_deg": 2.608,
+            "source": "BASELINE_0_40_160_5.json",
+            "measurement_definition": "max(abs(actual-target)) in final ~0.3 s",
+            "signed_direction": null
+          },
+          {
+            "angle_deg": 40.0,
+            "measured_error_magnitude_deg": 2.8432,
+            "source": "BASELINE_0_40_160_5.json",
+            "measurement_definition": "max(abs(actual-target)) in final ~0.3 s",
+            "signed_direction": null
+          }
+        ],
+        "J5": [
+          {
+            "angle_deg": 5.0,
+            "measured_error_magnitude_deg": 0.3663,
+            "source": "BASELINE_0_40_160_5.json",
+            "measurement_definition": "max(abs(actual-target)) in final ~0.3 s",
+            "signed_direction": null
+          },
+          {
+            "angle_deg": 10.0,
+            "measured_error_magnitude_deg": 0.1425,
+            "source": "BASELINE_0_40_160_5.json",
+            "measurement_definition": "max(abs(actual-target)) in final ~0.3 s",
+            "signed_direction": null
+          },
+          {
+            "angle_deg": 20.0,
+            "measured_error_magnitude_deg": 0.0883,
+            "source": "BASELINE_0_40_160_5.json",
+            "measurement_definition": "max(abs(actual-target)) in final ~0.3 s",
+            "signed_direction": null
+          },
+          {
+            "angle_deg": 30.0,
+            "measured_error_magnitude_deg": 0.1216,
+            "source": "BASELINE_0_40_160_5.json",
+            "measurement_definition": "max(abs(actual-target)) in final ~0.3 s",
+            "signed_direction": null
+          },
+          {
+            "angle_deg": 35.0,
+            "measured_error_magnitude_deg": 0.0289,
+            "source": "BASELINE_0_40_160_5.json",
+            "measurement_definition": "max(abs(actual-target)) in final ~0.3 s",
+            "signed_direction": null
+          },
+          {
+            "angle_deg": 40.0,
+            "measured_error_magnitude_deg": 0.1111,
+            "source": "BASELINE_0_40_160_5.json",
+            "measurement_definition": "max(abs(actual-target)) in final ~0.3 s",
+            "signed_direction": null
+          }
+        ]
+      },
+      "blocked_reasons": [],
+      "notes": "Real 160/5 baseline; unsigned dwell-end peak. Existing scalar MIT path only; no accuracy or margin acceptance."
+    },
+    {
+      "scheme": "constant_per_axis_high",
+      "category": "MEASURED_COMPARISON",
+      "status": "MEASURED_HIGH_GAIN",
+      "existing_command_path": true,
+      "commissioned": false,
+      "acceptance_passed": false,
+      "signed_static_data": false,
+      "dynamic_data": false,
+      "simulated": false,
+      "summary": {
+        "gains": {
+          "J1": 280.0,
+          "J2": 240.0,
+          "J3": 160.0,
+          "J4": 200.0,
+          "J5": 160.0
+        },
+        "max_error_magnitude_deg": {
+          "J1": {
+            "baseline": 3.5645,
+            "high_measured": 2.0126,
+            "high_predicted": 2.0368
+          },
+          "J2": {
+            "baseline": 3.8049,
+            "high_measured": 2.2749,
+            "high_predicted": 2.5366
+          },
+          "J3": {
+            "baseline": 0.3183,
+            "high_measured": 0.3183,
+            "high_predicted": 0.3183
+          },
+          "J4": {
+            "baseline": 2.8432,
+            "high_measured": 2.149,
+            "high_predicted": 2.2746
+          },
+          "J5": {
+            "baseline": 0.3663,
+            "high_measured": 0.3663,
+            "high_predicted": 0.3663
+          }
+        },
+        "measured_improvement_pct_range": {
+          "J1": [
+            20.12,
+            44.36
+          ],
+          "J2": [
+            28.79,
+            40.21
+          ],
+          "J3": [
+            0.0,
+            0.0
+          ],
+          "J4": [
+            9.99,
+            26.14
+          ],
+          "J5": [
+            -24.75,
+            75.64
+          ]
+        },
+        "ranking_performed": false
+      },
+      "rows": {
+        "J1": [
+          {
+            "angle_deg": 5.0,
+            "measured_baseline_error_magnitude_deg": 0.869,
+            "measured_high_gain_error_magnitude_deg": 0.6942,
+            "predicted_high_gain_magnitude_deg": 0.4966,
+            "measured_improvement_pct": 20.12,
+            "prediction_error_deg": -0.1976,
+            "signed_direction_available": false
+          },
+          {
+            "angle_deg": 10.0,
+            "measured_baseline_error_magnitude_deg": 1.6725,
+            "measured_high_gain_error_magnitude_deg": 0.9731,
+            "predicted_high_gain_magnitude_deg": 0.9557,
+            "measured_improvement_pct": 41.82,
+            "prediction_error_deg": -0.0174,
+            "signed_direction_available": false
+          },
+          {
+            "angle_deg": 20.0,
+            "measured_baseline_error_magnitude_deg": 2.8204,
+            "measured_high_gain_error_magnitude_deg": 1.7057,
+            "predicted_high_gain_magnitude_deg": 1.6117,
+            "measured_improvement_pct": 39.52,
+            "prediction_error_deg": -0.0941,
+            "signed_direction_available": false
+          },
+          {
+            "angle_deg": 30.0,
+            "measured_baseline_error_magnitude_deg": 3.5531,
+            "measured_high_gain_error_magnitude_deg": 1.9794,
+            "predicted_high_gain_magnitude_deg": 2.0303,
+            "measured_improvement_pct": 44.29,
+            "prediction_error_deg": 0.0509,
+            "signed_direction_available": false
+          },
+          {
+            "angle_deg": 35.0,
+            "measured_baseline_error_magnitude_deg": 3.5479,
+            "measured_high_gain_error_magnitude_deg": 1.9742,
+            "predicted_high_gain_magnitude_deg": 2.0274,
+            "measured_improvement_pct": 44.36,
+            "prediction_error_deg": 0.0532,
+            "signed_direction_available": false
+          },
+          {
+            "angle_deg": 40.0,
+            "measured_baseline_error_magnitude_deg": 3.5645,
+            "measured_high_gain_error_magnitude_deg": 2.0126,
+            "predicted_high_gain_magnitude_deg": 2.0368,
+            "measured_improvement_pct": 43.54,
+            "prediction_error_deg": 0.0242,
+            "signed_direction_available": false
+          }
+        ],
+        "J2": [
+          {
+            "angle_deg": 5.0,
+            "measured_baseline_error_magnitude_deg": 1.0876,
+            "measured_high_gain_error_magnitude_deg": 0.6723,
+            "predicted_high_gain_magnitude_deg": 0.7251,
+            "measured_improvement_pct": 38.18,
+            "prediction_error_deg": 0.0527,
+            "signed_direction_available": false
+          },
+          {
+            "angle_deg": 10.0,
+            "measured_baseline_error_magnitude_deg": 1.3665,
+            "measured_high_gain_error_magnitude_deg": 0.9731,
+            "predicted_high_gain_magnitude_deg": 0.911,
+            "measured_improvement_pct": 28.79,
+            "prediction_error_deg": -0.0621,
+            "signed_direction_available": false
+          },
+          {
+            "angle_deg": 20.0,
+            "measured_baseline_error_magnitude_deg": 2.2303,
+            "measured_high_gain_error_magnitude_deg": 1.5527,
+            "predicted_high_gain_magnitude_deg": 1.4869,
+            "measured_improvement_pct": 30.38,
+            "prediction_error_deg": -0.0659,
+            "signed_direction_available": false
+          },
+          {
+            "angle_deg": 30.0,
+            "measured_baseline_error_magnitude_deg": 3.0723,
+            "measured_high_gain_error_magnitude_deg": 2.0887,
+            "predicted_high_gain_magnitude_deg": 2.0482,
+            "measured_improvement_pct": 32.01,
+            "prediction_error_deg": -0.0405,
+            "signed_direction_available": false
+          },
+          {
+            "angle_deg": 35.0,
+            "measured_baseline_error_magnitude_deg": 3.3949,
+            "measured_high_gain_error_magnitude_deg": 2.2583,
+            "predicted_high_gain_magnitude_deg": 2.2632,
+            "measured_improvement_pct": 33.48,
+            "prediction_error_deg": 0.0049,
+            "signed_direction_available": false
+          },
+          {
+            "angle_deg": 40.0,
+            "measured_baseline_error_magnitude_deg": 3.8049,
+            "measured_high_gain_error_magnitude_deg": 2.2749,
+            "predicted_high_gain_magnitude_deg": 2.5366,
+            "measured_improvement_pct": 40.21,
+            "prediction_error_deg": 0.2617,
+            "signed_direction_available": false
+          }
+        ],
+        "J3": [
+          {
+            "angle_deg": 5.0,
+            "measured_baseline_error_magnitude_deg": 0.2352,
+            "measured_high_gain_error_magnitude_deg": 0.2352,
+            "predicted_high_gain_magnitude_deg": 0.2352,
+            "measured_improvement_pct": 0.0,
+            "prediction_error_deg": 0.0,
+            "signed_direction_available": false
+          },
+          {
+            "angle_deg": 10.0,
+            "measured_baseline_error_magnitude_deg": 0.3174,
+            "measured_high_gain_error_magnitude_deg": 0.3174,
+            "predicted_high_gain_magnitude_deg": 0.3174,
+            "measured_improvement_pct": 0.0,
+            "prediction_error_deg": 0.0,
+            "signed_direction_available": false
+          },
+          {
+            "angle_deg": 20.0,
+            "measured_baseline_error_magnitude_deg": 0.1539,
+            "measured_high_gain_error_magnitude_deg": 0.1539,
+            "predicted_high_gain_magnitude_deg": 0.1539,
+            "measured_improvement_pct": 0.0,
+            "prediction_error_deg": 0.0,
+            "signed_direction_available": false
+          },
+          {
+            "angle_deg": 30.0,
+            "measured_baseline_error_magnitude_deg": 0.3183,
+            "measured_high_gain_error_magnitude_deg": 0.3183,
+            "predicted_high_gain_magnitude_deg": 0.3183,
+            "measured_improvement_pct": 0.0,
+            "prediction_error_deg": 0.0,
+            "signed_direction_available": false
+          },
+          {
+            "angle_deg": 35.0,
+            "measured_baseline_error_magnitude_deg": 0.0804,
+            "measured_high_gain_error_magnitude_deg": 0.0804,
+            "predicted_high_gain_magnitude_deg": 0.0804,
+            "measured_improvement_pct": 0.0,
+            "prediction_error_deg": 0.0,
+            "signed_direction_available": false
+          },
+          {
+            "angle_deg": 40.0,
+            "measured_baseline_error_magnitude_deg": 0.0201,
+            "measured_high_gain_error_magnitude_deg": 0.0201,
+            "predicted_high_gain_magnitude_deg": 0.0201,
+            "measured_improvement_pct": 0.0,
+            "prediction_error_deg": 0.0,
+            "signed_direction_available": false
+          }
+        ],
+        "J4": [
+          {
+            "angle_deg": 5.0,
+            "measured_baseline_error_magnitude_deg": 0.5193,
+            "measured_high_gain_error_magnitude_deg": 0.3882,
+            "predicted_high_gain_magnitude_deg": 0.4155,
+            "measured_improvement_pct": 25.25,
+            "prediction_error_deg": 0.0273,
+            "signed_direction_available": false
+          },
+          {
+            "angle_deg": 10.0,
+            "measured_baseline_error_magnitude_deg": 1.0605,
+            "measured_high_gain_error_magnitude_deg": 0.9075,
+            "predicted_high_gain_magnitude_deg": 0.8484,
+            "measured_improvement_pct": 14.43,
+            "prediction_error_deg": -0.0591,
+            "signed_direction_available": false
+          },
+          {
+            "angle_deg": 20.0,
+            "measured_baseline_error_magnitude_deg": 1.7495,
+            "measured_high_gain_error_magnitude_deg": 1.5746,
+            "predicted_high_gain_magnitude_deg": 1.3996,
+            "measured_improvement_pct": 9.99,
+            "prediction_error_deg": -0.175,
+            "signed_direction_available": false
+          },
+          {
+            "angle_deg": 30.0,
+            "measured_baseline_error_magnitude_deg": 2.3291,
+            "measured_high_gain_error_magnitude_deg": 2.045,
+            "predicted_high_gain_magnitude_deg": 1.8633,
+            "measured_improvement_pct": 12.2,
+            "prediction_error_deg": -0.1817,
+            "signed_direction_available": false
+          },
+          {
+            "angle_deg": 35.0,
+            "measured_baseline_error_magnitude_deg": 2.608,
+            "measured_high_gain_error_magnitude_deg": 2.149,
+            "predicted_high_gain_magnitude_deg": 2.0864,
+            "measured_improvement_pct": 17.6,
+            "prediction_error_deg": -0.0626,
+            "signed_direction_available": false
+          },
+          {
+            "angle_deg": 40.0,
+            "measured_baseline_error_magnitude_deg": 2.8432,
+            "measured_high_gain_error_magnitude_deg": 2.1001,
+            "predicted_high_gain_magnitude_deg": 2.2746,
+            "measured_improvement_pct": 26.14,
+            "prediction_error_deg": 0.1745,
+            "signed_direction_available": false
+          }
+        ],
+        "J5": [
+          {
+            "angle_deg": 5.0,
+            "measured_baseline_error_magnitude_deg": 0.3663,
+            "measured_high_gain_error_magnitude_deg": 0.3663,
+            "predicted_high_gain_magnitude_deg": 0.3663,
+            "measured_improvement_pct": 0.0,
+            "prediction_error_deg": 0.0,
+            "signed_direction_available": false
+          },
+          {
+            "angle_deg": 10.0,
+            "measured_baseline_error_magnitude_deg": 0.1425,
+            "measured_high_gain_error_magnitude_deg": 0.1425,
+            "predicted_high_gain_magnitude_deg": 0.1425,
+            "measured_improvement_pct": 0.0,
+            "prediction_error_deg": 0.0,
+            "signed_direction_available": false
+          },
+          {
+            "angle_deg": 20.0,
+            "measured_baseline_error_magnitude_deg": 0.0883,
+            "measured_high_gain_error_magnitude_deg": 0.1102,
+            "predicted_high_gain_magnitude_deg": 0.0883,
+            "measured_improvement_pct": -24.75,
+            "prediction_error_deg": -0.0219,
+            "signed_direction_available": false
+          },
+          {
+            "angle_deg": 30.0,
+            "measured_baseline_error_magnitude_deg": 0.1216,
+            "measured_high_gain_error_magnitude_deg": 0.0997,
+            "predicted_high_gain_magnitude_deg": 0.1216,
+            "measured_improvement_pct": 17.98,
+            "prediction_error_deg": 0.0219,
+            "signed_direction_available": false
+          },
+          {
+            "angle_deg": 35.0,
+            "measured_baseline_error_magnitude_deg": 0.0289,
+            "measured_high_gain_error_magnitude_deg": 0.007,
+            "predicted_high_gain_magnitude_deg": 0.0289,
+            "measured_improvement_pct": 75.64,
+            "prediction_error_deg": 0.0219,
+            "signed_direction_available": false
+          },
+          {
+            "angle_deg": 40.0,
+            "measured_baseline_error_magnitude_deg": 0.1111,
+            "measured_high_gain_error_magnitude_deg": 0.1329,
+            "predicted_high_gain_magnitude_deg": 0.1111,
+            "measured_improvement_pct": -19.68,
+            "prediction_error_deg": -0.0219,
+            "signed_direction_available": false
+          }
+        ]
+      },
+      "blocked_reasons": [],
+      "notes": "Measured baseline and measured high-gain files are compared at matching relative targets. Prediction is unsigned 1/Kp scaling, not a physical model. The two runs had different absolute start poses; only relative targets and the same 0.5-degree magnitude criterion are comparable. Existing command path only; no commissioning/acceptance claim."
+    },
+    {
+      "scheme": "angle_schedule_kp",
+      "category": "STATIC_PREDICTION",
+      "status": "UNSIGNED_MAGNITUDE_CONDITIONAL",
+      "existing_command_path": false,
+      "commissioned": false,
+      "acceptance_passed": false,
+      "signed_static_data": false,
+      "dynamic_data": false,
+      "simulated": true,
+      "summary": {
+        "schedule": {
+          "low": 280.0,
+          "high": 500.0,
+          "full_angle_deg": 30.0
+        },
+        "max_predicted_magnitude_deg": {
+          "J1": 1.1406,
+          "J2": 1.2176,
+          "J3": 0.3183,
+          "J4": 0.9098,
+          "J5": 0.3663
+        },
+        "not_a_dynamic_stability_result": true
+      },
+      "rows": {
+        "J1": [
+          {
+            "angle_deg": 5.0,
+            "schedule_kp": 316.667,
+            "predicted_magnitude_deg": 0.4391,
+            "signed_direction_available": false
+          },
+          {
+            "angle_deg": 10.0,
+            "schedule_kp": 353.333,
+            "predicted_magnitude_deg": 0.7574,
+            "signed_direction_available": false
+          },
+          {
+            "angle_deg": 20.0,
+            "schedule_kp": 426.667,
+            "predicted_magnitude_deg": 1.0577,
+            "signed_direction_available": false
+          },
+          {
+            "angle_deg": 30.0,
+            "schedule_kp": 500.0,
+            "predicted_magnitude_deg": 1.137,
+            "signed_direction_available": false
+          },
+          {
+            "angle_deg": 35.0,
+            "schedule_kp": 500.0,
+            "predicted_magnitude_deg": 1.1353,
+            "signed_direction_available": false
+          },
+          {
+            "angle_deg": 40.0,
+            "schedule_kp": 500.0,
+            "predicted_magnitude_deg": 1.1406,
+            "signed_direction_available": false
+          }
+        ],
+        "J2": [
+          {
+            "angle_deg": 5.0,
+            "schedule_kp": 316.667,
+            "predicted_magnitude_deg": 0.5495,
+            "signed_direction_available": false
+          },
+          {
+            "angle_deg": 10.0,
+            "schedule_kp": 353.333,
+            "predicted_magnitude_deg": 0.6188,
+            "signed_direction_available": false
+          },
+          {
+            "angle_deg": 20.0,
+            "schedule_kp": 426.667,
+            "predicted_magnitude_deg": 0.8364,
+            "signed_direction_available": false
+          },
+          {
+            "angle_deg": 30.0,
+            "schedule_kp": 500.0,
+            "predicted_magnitude_deg": 0.9831,
+            "signed_direction_available": false
+          },
+          {
+            "angle_deg": 35.0,
+            "schedule_kp": 500.0,
+            "predicted_magnitude_deg": 1.0864,
+            "signed_direction_available": false
+          },
+          {
+            "angle_deg": 40.0,
+            "schedule_kp": 500.0,
+            "predicted_magnitude_deg": 1.2176,
+            "signed_direction_available": false
+          }
+        ],
+        "J3": [
+          {
+            "angle_deg": 5.0,
+            "schedule_kp": 160.0,
+            "predicted_magnitude_deg": 0.2352,
+            "signed_direction_available": false
+          },
+          {
+            "angle_deg": 10.0,
+            "schedule_kp": 160.0,
+            "predicted_magnitude_deg": 0.3174,
+            "signed_direction_available": false
+          },
+          {
+            "angle_deg": 20.0,
+            "schedule_kp": 160.0,
+            "predicted_magnitude_deg": 0.1539,
+            "signed_direction_available": false
+          },
+          {
+            "angle_deg": 30.0,
+            "schedule_kp": 160.0,
+            "predicted_magnitude_deg": 0.3183,
+            "signed_direction_available": false
+          },
+          {
+            "angle_deg": 35.0,
+            "schedule_kp": 160.0,
+            "predicted_magnitude_deg": 0.0804,
+            "signed_direction_available": false
+          },
+          {
+            "angle_deg": 40.0,
+            "schedule_kp": 160.0,
+            "predicted_magnitude_deg": 0.0201,
+            "signed_direction_available": false
+          }
+        ],
+        "J4": [
+          {
+            "angle_deg": 5.0,
+            "schedule_kp": 316.667,
+            "predicted_magnitude_deg": 0.2624,
+            "signed_direction_available": false
+          },
+          {
+            "angle_deg": 10.0,
+            "schedule_kp": 353.333,
+            "predicted_magnitude_deg": 0.4802,
+            "signed_direction_available": false
+          },
+          {
+            "angle_deg": 20.0,
+            "schedule_kp": 426.667,
+            "predicted_magnitude_deg": 0.656,
+            "signed_direction_available": false
+          },
+          {
+            "angle_deg": 30.0,
+            "schedule_kp": 500.0,
+            "predicted_magnitude_deg": 0.7453,
+            "signed_direction_available": false
+          },
+          {
+            "angle_deg": 35.0,
+            "schedule_kp": 500.0,
+            "predicted_magnitude_deg": 0.8346,
+            "signed_direction_available": false
+          },
+          {
+            "angle_deg": 40.0,
+            "schedule_kp": 500.0,
+            "predicted_magnitude_deg": 0.9098,
+            "signed_direction_available": false
+          }
+        ],
+        "J5": [
+          {
+            "angle_deg": 5.0,
+            "schedule_kp": 160.0,
+            "predicted_magnitude_deg": 0.3663,
+            "signed_direction_available": false
+          },
+          {
+            "angle_deg": 10.0,
+            "schedule_kp": 160.0,
+            "predicted_magnitude_deg": 0.1425,
+            "signed_direction_available": false
+          },
+          {
+            "angle_deg": 20.0,
+            "schedule_kp": 160.0,
+            "predicted_magnitude_deg": 0.0883,
+            "signed_direction_available": false
+          },
+          {
+            "angle_deg": 30.0,
+            "schedule_kp": 160.0,
+            "predicted_magnitude_deg": 0.1216,
+            "signed_direction_available": false
+          },
+          {
+            "angle_deg": 35.0,
+            "schedule_kp": 160.0,
+            "predicted_magnitude_deg": 0.0289,
+            "signed_direction_available": false
+          },
+          {
+            "angle_deg": 40.0,
+            "schedule_kp": 160.0,
+            "predicted_magnitude_deg": 0.1111,
+            "signed_direction_available": false
+          }
+        ]
+      },
+      "blocked_reasons": [],
+      "notes": "Conditional static magnitude prediction only. It does not show that Kp=500 is mechanically safe or stable; no angle-scheduled C++ implementation exists. Not hardware-ready."
+    },
+    {
+      "scheme": "gravity_feedforward",
+      "category": "BLOCKED",
+      "status": "BLOCKED_SIGNED_STATIC_DATA_MISSING",
+      "existing_command_path": false,
+      "commissioned": false,
+      "acceptance_passed": false,
+      "signed_static_data": false,
+      "dynamic_data": false,
+      "simulated": false,
+      "summary": {
+        "metrics": null,
+        "unsigned_path_magnitude_fit_only": true,
+        "unsigned_path_fit_degree2": {
+          "J1": [
+            -0.215291,
+            0.56519,
+            -0.007783
+          ],
+          "J2": [
+            1.804297,
+            0.220473,
+            1.7e-05
+          ],
+          "J3": [
+            0.556736,
+            0.029891,
+            -0.001031
+          ],
+          "J4": [
+            0.259479,
+            0.272732,
+            -0.002051
+          ],
+          "J5": [
+            1.231668,
+            -0.075941,
+            0.001327
+          ]
+        },
+        "unsigned_path_loo_max_torque_error_nm": {
+          "J1": 0.2898,
+          "J2": 0.5034,
+          "J3": 0.637,
+          "J4": 0.4707,
+          "J5": 0.5334
+        },
+        "deployable_feedforward": false
+      },
+      "rows": {
+        "J1": [],
+        "J2": [],
+        "J3": [],
+        "J4": [],
+        "J5": []
+      },
+      "blocked_reasons": [
+        "signed_static_time_series_missing",
+        "multi_pose_identification_missing",
+        "current_bus_torque_measurement_missing"
+      ],
+      "notes": "BLOCKED: the original files only contain unsigned max(abs) errors. A signed torque feedforward with joint coordinates, sign, zero, gear ratio, and Nm convention cannot be produced from them. The unsigned one-path fit is explanatory only. No performance metric is provided."
+    },
+    {
+      "scheme": "integral_trim",
+      "category": "IDEALIZED",
+      "status": "NOT_EVALUATED",
+      "existing_command_path": false,
+      "commissioned": false,
+      "acceptance_passed": false,
+      "signed_static_data": false,
+      "dynamic_data": false,
+      "simulated": true,
+      "summary": {
+        "metrics": null,
+        "ideal_model_only": true
+      },
+      "rows": {
+        "J1": [],
+        "J2": [],
+        "J3": [],
+        "J4": [],
+        "J5": []
+      },
+      "blocked_reasons": [
+        "anti_windup_design_missing",
+        "current_limits_missing"
+      ],
+      "notes": "An ideal static integral model can drive a constant error to zero, but anti-windup, saturation, leakage, fault reset and actuator limits are not implemented or tested. Not ranked and not hardware-ready."
+    },
+    {
+      "scheme": "disturbance_observer",
+      "category": "BLOCKED",
+      "status": "NOT_EVALUATED",
+      "existing_command_path": false,
+      "commissioned": false,
+      "acceptance_passed": false,
+      "signed_static_data": false,
+      "dynamic_data": false,
+      "simulated": false,
+      "summary": {
+        "metrics": null,
+        "ideal_zero_not_evidence": true
+      },
+      "rows": {
+        "J1": [],
+        "J2": [],
+        "J3": [],
+        "J4": [],
+        "J5": []
+      },
+      "blocked_reasons": [
+        "current_bus_torque_data_missing",
+        "observer_bandwidth_noise_study_missing"
+      ],
+      "notes": "No current, bus, torque or signed velocity data exists; a hard-coded zero residual must not be ranked as performance. Not hardware-ready."
+    },
+    {
+      "scheme": "model_based_gravity",
+      "category": "BLOCKED",
+      "status": "NOT_EVALUATED",
+      "existing_command_path": false,
+      "commissioned": false,
+      "acceptance_passed": false,
+      "signed_static_data": false,
+      "dynamic_data": false,
+      "simulated": false,
+      "summary": {
+        "metrics": null,
+        "missing": [
+          "J5/flange geometry",
+          "new-load mass/COM",
+          "verified five-axis inertial model",
+          "current/voltage limits"
+        ]
+      },
+      "rows": {
+        "J1": [],
+        "J2": [],
+        "J3": [],
+        "J4": [],
+        "J5": []
+      },
+      "blocked_reasons": [
+        "load_geometry_missing",
+        "multi_pose_inertial_identification_missing"
+      ],
+      "notes": "No valid current-assembly gravity vector exists. The old four-axis no_end_load model must not be reused. Not hardware-ready."
+    }
+  ]
+}

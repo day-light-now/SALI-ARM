@@ -1,0 +1,29 @@
+{
+  "passed": true,
+  "returncode": 1,
+  "elapsed_s": 2.2,
+  "result_file": "/tmp/prearm-result-fpxqajie/client/20261107_122425_b0bb2249.json",
+  "phase": "pre_arm",
+  "phase_result": "\u672a\u8bf7\u6c42\u4f7f\u80fd",
+  "stop_result": "\u672a\u8bf7\u6c42\u505c\u6b62",
+  "prearm_reasons": [
+    "ALPHA_NONZERO: \u91cd\u529b\u91c7\u6837\u8981\u6c42 alpha=0\uff0c\u5f53\u524d alpha=0.1000"
+  ],
+  "prearm_observations": {
+    "sample_available": true,
+    "alpha": 0.1,
+    "ff_age_s": 0.0,
+    "ff_stage": 0,
+    "stage": 0,
+    "motor_state": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "runtime_verified": true,
+    "runtime_reason": null
+  },
+  "domain": "176",
+  "physical_port_opened": false
+}

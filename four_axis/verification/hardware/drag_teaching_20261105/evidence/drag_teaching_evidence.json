@@ -1,0 +1,101 @@
+{
+  "generated_at": "2026-11-06T09:55:56+0800",
+  "round": "codex-review-2",
+  "branch": "feature/drag-teaching",
+  "baseline": "snapshot/2026-11-06-control-panel (493cd2d)",
+  "candidate_workspace": "/home/xuyu/slaihand_control_panel_ws_dragteaching_20261106",
+  "scope": "software only; isolated domain 176 + fresh PTY fake stack/browser; no real serial, domain 0, drivers, panel processes or desktop entries touched",
+  "full_runner": {
+    "log_line": "PASS",
+    "offline": [
+      "PASS",
+      "21"
+    ],
+    "offline_checks": "21",
+    "panel_tests": "4",
+    "panel_result": "OK",
+    "e2e_checks": "48"
+  },
+  "baseline_panel_e2e": {
+    "status": "PASS",
+    "checks": "121"
+  },
+  "browser": {
+    "result": "PASS",
+    "checks": 16,
+    "failures": []
+  },
+  "codex_repro": {
+    "backward_time": {
+      "complete": false,
+      "counter": 1,
+      "reasons": [
+        "窗口关闭原因：接收单调时钟未前进或倒退（0.590000 → 0.580000）"
+      ]
+    },
+    "invalid_terminal_frame": {
+      "complete": false,
+      "normal_end": false,
+      "reason": "控制阶段不是保持（9）；四轴反馈无效；四轴未全部使能；自由拖动模式未生效；增益/前馈渐入未完成；反馈年龄超过 0.06 s",
+      "reasons": [
+        "窗口关闭原因：控制阶段不是保持（9）；四轴反馈无效；四轴未全部使能；自由拖动模式未生效；增益/前馈渐入未完成；反馈年龄超过 0.06 s"
+      ]
+    },
+    "identity_changed_after_preview": {
+      "launch_reached": false,
+      "response": {
+        "raised": "PanelError",
+        "code": "IDENTITY_CHANGED",
+        "message": "预览后驱动运行身份已变化（配置/连接指纹不一致），请重新预览"
+      }
+    },
+    "stop_before_first_frame": {
+      "last": {
+        "recording_id": "030c9047d0a39dd0",
+        "complete": false,
+        "reasons": [
+          "未进入自由拖动有效窗口：无有效帧",
+          "有效样本 0 少于 10 帧",
+          "有效记录时长 0.00 s 少于 0.5 s",
+          "记录被中断：停止原因：drag stop",
+          "缺少驱动运行身份"
+        ],
+        "quality": {
+          "frames": 0,
+          "raw_frames": 0,
+          "duplicate_frames": 0,
+          "time_backwards": 0,
+          "waiting_frames": 0,
+          "duration_s": 0.0,
+          "sample_rate_hz": null,
+          "min_gap_s": null,
+          "max_gap_s": 0.0,
+          "mean_gap_s": null,
+          "max_age_s": 0.0,
+          "window_close_reason": null,
+          "window_normal_end": null,
+          "interrupted": "停止原因：drag stop"
+        },
+        "boot_id": null,
+        "command_id": null,
+        "load_id": null,
+        "phase": "incomplete",
+        "saved": false,
+        "teaching": null
+      },
+      "error": null,
+      "raw_files": 1
+    },
+    "same_source_frame_repeated": {
+      "frames": 1,
+      "duration": 0.0,
+      "duplicates": 59
+    }
+  },
+  "notes": [
+    "Codex 反例原脚本在 P1 修复处抛出 PanelError(409, IDENTITY_CHANGED) 并停止；_launch 未被调用。",
+    "回放客户端在 arm/使能前核对冻结运行身份；E2E 增加该项检查。",
+    "测试候选的 gravity_float_enabled 由测试脚本显式打开；仓库默认 policy 仍关闭自由拖动、alpha=0。",
+    "实机未使能、未运动；以上全部为隔离域模拟链路。"
+  ]
+}

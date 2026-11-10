@@ -1,0 +1,156 @@
+{
+  "check": "readonly_recovery",
+  "motion_requested": false,
+  "samples": [
+    {
+      "stage": 0,
+      "consistent": true,
+      "feedback_valid_all": true,
+      "dynamic_age_s": 0.002
+    },
+    {
+      "stage": 0,
+      "consistent": true,
+      "feedback_valid_all": true,
+      "dynamic_age_s": 0.005
+    },
+    {
+      "stage": 0,
+      "consistent": true,
+      "feedback_valid_all": true,
+      "dynamic_age_s": 0.006
+    },
+    {
+      "stage": 0,
+      "consistent": true,
+      "feedback_valid_all": true,
+      "dynamic_age_s": 0.007
+    },
+    {
+      "stage": 0,
+      "consistent": true,
+      "feedback_valid_all": true,
+      "dynamic_age_s": 0.008
+    },
+    {
+      "stage": 0,
+      "consistent": true,
+      "feedback_valid_all": true,
+      "dynamic_age_s": 0.009
+    },
+    {
+      "stage": 0,
+      "consistent": true,
+      "feedback_valid_all": true,
+      "dynamic_age_s": 0.001
+    },
+    {
+      "stage": 0,
+      "consistent": true,
+      "feedback_valid_all": true,
+      "dynamic_age_s": 0.003
+    },
+    {
+      "stage": 0,
+      "consistent": true,
+      "feedback_valid_all": true,
+      "dynamic_age_s": 0.003
+    },
+    {
+      "stage": 0,
+      "consistent": true,
+      "feedback_valid_all": true,
+      "dynamic_age_s": 0.005
+    }
+  ],
+  "last_axes": [
+    {
+      "name": "slaihand_joint1",
+      "label": "J1",
+      "actual_deg": 0.328,
+      "target_deg": null,
+      "error_deg": null,
+      "target_source": null,
+      "velocity_deg_s": -0.35,
+      "effort_nm": -0.049,
+      "driver_temperature_c": 29.0,
+      "motor_temperature_c": 27.0,
+      "feedback_age_s": 0.0,
+      "feedback_valid": true,
+      "motor_state": 0,
+      "control_mode": 1,
+      "timeout_count": 2000,
+      "configuration_conflict": 0,
+      "limits_deg": [
+        -80.0,
+        200.0
+      ]
+    },
+    {
+      "name": "slaihand_joint2",
+      "label": "J2",
+      "actual_deg": 0.175,
+      "target_deg": null,
+      "error_deg": null,
+      "target_source": null,
+      "velocity_deg_s": -1.05,
+      "effort_nm": -0.049,
+      "driver_temperature_c": 28.0,
+      "motor_temperature_c": 26.0,
+      "feedback_age_s": 0.0,
+      "feedback_valid": true,
+      "motor_state": 0,
+      "control_mode": 1,
+      "timeout_count": 2000,
+      "configuration_conflict": 0,
+      "limits_deg": [
+        -10.0,
+        190.0
+      ]
+    },
+    {
+      "name": "slaihand_joint3",
+      "label": "J3",
+      "actual_deg": 0.0,
+      "target_deg": null,
+      "error_deg": null,
+      "target_source": null,
+      "velocity_deg_s": -0.63,
+      "effort_nm": -0.013,
+      "driver_temperature_c": 27.0,
+      "motor_temperature_c": 26.0,
+      "feedback_age_s": 0.0,
+      "feedback_valid": true,
+      "motor_state": 0,
+      "control_mode": 1,
+      "timeout_count": 2000,
+      "configuration_conflict": 0,
+      "limits_deg": [
+        -90.0,
+        90.0
+      ]
+    },
+    {
+      "name": "slaihand_joint4",
+      "label": "J4",
+      "actual_deg": 0.131,
+      "target_deg": null,
+      "error_deg": null,
+      "target_source": null,
+      "velocity_deg_s": -0.63,
+      "effort_nm": 0.013,
+      "driver_temperature_c": 27.0,
+      "motor_temperature_c": 27.0,
+      "feedback_age_s": 0.0,
+      "feedback_valid": true,
+      "motor_state": 0,
+      "control_mode": 1,
+      "timeout_count": 2000,
+      "configuration_conflict": 0,
+      "limits_deg": [
+        -90.0,
+        50.0
+      ]
+    }
+  ]
+}

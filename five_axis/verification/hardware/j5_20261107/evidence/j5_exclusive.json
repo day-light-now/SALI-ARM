@@ -1,0 +1,17 @@
+{
+  "passed": true,
+  "physical_port_opened": false,
+  "canonical_path": "/dev/pts/8",
+  "checks": [
+    "second_reader_refused",
+    "alias_reader_refused",
+    "native_owner_refused_after_reader",
+    "reader_refused_when_native_owner_first",
+    "no_leaked_bytes_while_locked"
+  ],
+  "exclusive": [
+    "flock LOCK_EX|LOCK_NB",
+    "TIOCEXCL",
+    "realpath alias"
+  ]
+}

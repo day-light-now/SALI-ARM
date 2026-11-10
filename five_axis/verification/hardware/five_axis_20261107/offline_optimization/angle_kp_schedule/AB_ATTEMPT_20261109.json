@@ -1,0 +1,38 @@
+{
+  "schema": "slaihand_ab_attempt/1",
+  "observed_at": "2026-11-09T10:16:39+08:00",
+  "goal": "same-start A/B, constant160 vs angle schedule, 15 s forward move",
+  "A_constant": {
+    "client_result": "AB_A_constant_client_20261109_101436.json",
+    "initial_j1_deg": -1.508,
+    "forward_target_delta_deg": 10,
+    "j1_max_abs_error_deg": 1.279,
+    "client_reason": "Aborted due to goal_time_tolerance exceeding by 2.007 s",
+    "completed_with_sampled_hold": true
+  },
+  "return_to_start": {
+    "client_result": "AB_return_client_20261109_101543.json",
+    "j1_final_error_deg": 0.393,
+    "passed": true,
+    "note": "returned close to but not exactly the A start"
+  },
+  "B_schedule": {
+    "client_result": "AB_B_schedule_client_20261109_101639.json",
+    "initial_j1_deg": -1.093,
+    "start_offset_vs_A_deg": 0.415,
+    "sampled_holds": 0,
+    "client_reason": "控制端已全局停止或UNKNOWN",
+    "driver_reason": "SERIAL_OR_AUDIT_WRITE_FAILURE",
+    "driver_detail": "write time ~21.2 ms, 21.6 ms loop overrun",
+    "no_performance_result": true
+  },
+  "outcome": "A_only; B aborted; A/B not completed",
+  "retry": false,
+  "driver_stopped": true,
+  "notes": [
+    "No backward motion was performed beyond the operator-approved return to the A start.",
+    "The return left a 0.415 degree J1 start offset, so even a future B would need this corrected.",
+    "B stopped on a serial/audit write failure before any sampled hold.",
+    "No comparison or schedule benefit can be claimed."
+  ]
+}

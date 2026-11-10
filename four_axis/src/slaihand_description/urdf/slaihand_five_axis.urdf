@@ -1,0 +1,43 @@
+<?xml version="1.0"?>
+<!--
+  DESIGN LEDGER
+  Robot: slaihand_five_axis. Consumer: ROS 2 / RViz / fake ros2_control.
+  Units are metres and radians. Meshes are CAD tessellations exported in the
+  owning link frame. The transforms come from the current SolidWorks assembly
+  `slaihand_four_axis.SLDASM` (2026-10-06), not the obsolete SW2URDF export.
+  J1..J4 axes and limits are reviewed simulation assumptions. Physical CAN
+  direction, CAN ID, and encoder zero offset remain unknown; this file does
+  not authorize real-motor control. No collision or inertial data is included:
+  it must be computed from the current CAD before dynamics work.
+  J1-J4 positive motion follows the right-hand rule about local -Z.
+  J5 is a user-requested FRAME-ONLY PLACEHOLDER, not CAD-derived geometry.
+  Assumption: J5 origin is identity relative to link4; this is NOT its mounting position.
+  Assumption: virtual J5 rotates right-handed about local +Z and starts at 0 rad.
+  Assumption: J5 is continuous solely to avoid inventing physical lower/upper limits.
+  J5 effort=1 and velocity=0.5 are fake-control values, not motor specifications.
+  link5_virtual intentionally has no mesh, collision, mass, or inertia.
+-->
+<robot name="slaihand_five_axis">
+  <material name="base_gray"><color rgba="0.55 0.55 0.58 1"/></material>
+  <material name="j1_orange"><color rgba="0.92 0.46 0.10 1"/></material>
+  <material name="j2_yellow"><color rgba="0.93 0.76 0.10 1"/></material>
+  <material name="j3_green"><color rgba="0.16 0.66 0.28 1"/></material>
+  <material name="j4_blue"><color rgba="0.12 0.60 0.82 1"/></material>
+  <link name="base_link"><visual><geometry><mesh filename="package://slaihand_description/meshes/base_link.obj"/></geometry><material name="base_gray"/></visual></link>
+  <link name="link1"><visual><geometry><mesh filename="package://slaihand_description/meshes/link1.obj"/></geometry><material name="j1_orange"/></visual></link>
+  <joint name="slaihand_joint1" type="revolute"><parent link="base_link"/><child link="link1"/><origin xyz="0 0 0" rpy="0 0 0"/><axis xyz="0 0 -1"/><limit lower="-1.3963" upper="3.4907" effort="1" velocity="0.5"/></joint>
+  <link name="link2"><visual><geometry><mesh filename="package://slaihand_description/meshes/link2.obj"/></geometry><material name="j2_yellow"/></visual></link>
+  <joint name="slaihand_joint2" type="revolute"><parent link="link1"/><child link="link2"/><origin xyz="0.039 0.0068669849 0.1351999710" rpy="1.5707963268 0 1.5707963268"/><axis xyz="0 0 -1"/><limit lower="-0.17453" upper="3.3161" effort="1" velocity="0.5"/></joint>
+  <link name="link3"><visual><geometry><mesh filename="package://slaihand_description/meshes/link3.obj"/></geometry><material name="j3_green"/></visual></link>
+  <joint name="slaihand_joint3" type="revolute"><parent link="link2"/><child link="link3"/><origin xyz="-0.0552386907 0.0575252260 -0.0362748811" rpy="3.1402365184 -1.5707963268 0"/><axis xyz="0 0 -1"/><limit lower="-1.5707963" upper="1.5708" effort="1" velocity="0.5"/></joint>
+  <link name="link4"><visual><geometry><mesh filename="package://slaihand_description/meshes/link4.obj"/></geometry><material name="j4_blue"/></visual></link>
+  <joint name="slaihand_joint4" type="revolute"><parent link="link3"/><child link="link4"/><origin xyz="0.0016621857 0.0864889672 0.2745532528" rpy="-1.5707963268 0.0013561352 -1.5707963268"/><axis xyz="0 0 -1"/><limit lower="-1.5707963" upper="0.87266" effort="1" velocity="0.5"/></joint>
+  <link name="link5_virtual"/>
+  <joint name="slaihand_joint5" type="continuous">
+    <parent link="link4"/>
+    <child link="link5_virtual"/>
+    <origin xyz="0 0 0" rpy="0 0 0"/>
+    <axis xyz="0 0 1"/>
+    <limit effort="1" velocity="0.5"/>
+  </joint>
+</robot>

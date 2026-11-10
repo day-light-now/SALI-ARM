@@ -1,0 +1,139 @@
+{
+  "schema": 1,
+  "date_local": "2026-11-01",
+  "status": "ENGINEERING_PROPOSAL_NOT_ACCEPTED",
+  "motion_permitted": false,
+  "parameter_writes_authorized_by_this_file": false,
+  "hardware_enable_authorized_by_this_file": false,
+  "sources": "parameter_sources.json",
+  "scope": "J1-J4; J5 excluded; host PD torque command, drive kp=kd=0; no gravity FF",
+  "policy": {
+    "target": "fresh_current_position_not_software_zero",
+    "ramp_s": 1.0,
+    "first_hold_total_duration_s": 2.0,
+    "local_departure_bound_deg": 2.0,
+    "future_micro_step_deg": 1.0,
+    "micro_step_duration_s": 2.0,
+    "trajectory_speed_rad_s": 0.02,
+    "host_period_s": 0.01,
+    "max_host_gap_s": 0.04,
+    "max_feedback_age_s": 0.06,
+    "temperature_abort_c": 50.0,
+    "no_auto_torque_increase": true,
+    "no_auto_resume": true,
+    "stop": "supported_arm_global_disable_attempt_and_new_feedback_verification",
+    "limits_reference": "freeze fresh takeover anchor; not a new global zero; not approval of +/-20deg",
+    "feedback_speed_abort_rad_s": 0.1,
+    "feedback_speed_threshold_note": "2026-11-01 13:43 stationary position with VEL12=0x7FE observed; independent diagnostic abort threshold, command speed remains 0.02rad/s. Not a motion acceptance."
+  },
+  "first_candidate_axis": {
+    "joint": 4,
+    "reason": "fresh MIT watchdog D evidence, distal axis, provisional gravity estimate small; no claim that another axis is inherently unsafe"
+  },
+  "axes": {
+    "1": {
+      "model": "DM-J10010L-2EC",
+      "vendor_rated_torque_nm": 40,
+      "vendor_peak_torque_nm": 120,
+      "vendor_rated_phase_current_a": 23.5,
+      "vendor_peak_phase_current_a": 95,
+      "protocol_tmax_nm": 200,
+      "protocol_torque_quantum_nm": 0.09768009768009768,
+      "candidate_request_torque_cap_nm": 0.5,
+      "encoded_request_extrema_nm": [
+        -0.439560439560438,
+        0.439560439560438
+      ],
+      "candidate_host_kp_nm_per_rad": 4.0,
+      "candidate_host_kd_nm_s_per_rad": 0.5,
+      "drive_kp": 0.0,
+      "drive_kd": 0.0,
+      "tau_ff_gravity_nm": 0.0,
+      "independent_drive_current_limit_a": null,
+      "ampere_conversion_validated": false,
+      "mit_motion_envelope_accepted": false,
+      "proposed_values_are_vendor_recommendations": false,
+      "evidence": "historical mode4 bidirectional 2deg/.02rad_s/1.4961A only"
+    },
+    "2": {
+      "model": "DM-J10010L-2EC",
+      "vendor_rated_torque_nm": 40,
+      "vendor_peak_torque_nm": 120,
+      "vendor_rated_phase_current_a": 23.5,
+      "vendor_peak_phase_current_a": 95,
+      "protocol_tmax_nm": 200,
+      "protocol_torque_quantum_nm": 0.09768009768009768,
+      "candidate_request_torque_cap_nm": 0.5,
+      "encoded_request_extrema_nm": [
+        -0.439560439560438,
+        0.439560439560438
+      ],
+      "candidate_host_kp_nm_per_rad": 4.0,
+      "candidate_host_kd_nm_s_per_rad": 0.5,
+      "drive_kp": 0.0,
+      "drive_kd": 0.0,
+      "tau_ff_gravity_nm": 0.0,
+      "independent_drive_current_limit_a": null,
+      "ampere_conversion_validated": false,
+      "mit_motion_envelope_accepted": false,
+      "proposed_values_are_vendor_recommendations": false,
+      "evidence": "historical mode4 bidirectional 2deg/.02rad_s/1.4961A only"
+    },
+    "3": {
+      "model": "DM-J8009P-2EC",
+      "vendor_rated_torque_nm": 20,
+      "vendor_peak_torque_nm": 40,
+      "vendor_rated_phase_current_a": 18.6,
+      "vendor_peak_phase_current_a": 40,
+      "protocol_tmax_nm": 54,
+      "protocol_torque_quantum_nm": 0.026373626373626374,
+      "candidate_request_torque_cap_nm": 0.3,
+      "encoded_request_extrema_nm": [
+        -0.27692307692307594,
+        0.27692307692307594
+      ],
+      "candidate_host_kp_nm_per_rad": 4.0,
+      "candidate_host_kd_nm_s_per_rad": 0.5,
+      "drive_kp": 0.0,
+      "drive_kd": 0.0,
+      "tau_ff_gravity_nm": 0.0,
+      "independent_drive_current_limit_a": null,
+      "ampere_conversion_validated": false,
+      "mit_motion_envelope_accepted": false,
+      "proposed_values_are_vendor_recommendations": false,
+      "evidence": "2026-10-30 near-zero MIT D observation; no accepted motion envelope"
+    },
+    "4": {
+      "model": "DM-J8009P-2EC",
+      "vendor_rated_torque_nm": 20,
+      "vendor_peak_torque_nm": 40,
+      "vendor_rated_phase_current_a": 18.6,
+      "vendor_peak_phase_current_a": 40,
+      "protocol_tmax_nm": 54,
+      "protocol_torque_quantum_nm": 0.026373626373626374,
+      "candidate_request_torque_cap_nm": 0.3,
+      "encoded_request_extrema_nm": [
+        -0.27692307692307594,
+        0.27692307692307594
+      ],
+      "candidate_host_kp_nm_per_rad": 4.0,
+      "candidate_host_kd_nm_s_per_rad": 0.5,
+      "drive_kp": 0.0,
+      "drive_kd": 0.0,
+      "tau_ff_gravity_nm": 0.0,
+      "independent_drive_current_limit_a": null,
+      "ampere_conversion_validated": false,
+      "mit_motion_envelope_accepted": false,
+      "proposed_values_are_vendor_recommendations": false,
+      "evidence": "2026-11-01 near-zero MIT D repeated; no accepted hold/motion envelope"
+    }
+  },
+  "outstanding": [
+    "Physical local clearance under current support and payload",
+    "Per-axis MIT output/hold and stop acceptance; no mode4-to-MIT inheritance",
+    "Physical watchdog torque-off/latency not measured; J4 D observation alone does not complete this",
+    "J1 full mechanical limits deferred; J2 identity persistence record pending",
+    "Firmware current/torque conversion and independent current cap not verified",
+    "J4 first bounded candidate must be reviewed before UI enable; full-arm acceptance remains blocked"
+  ]
+}

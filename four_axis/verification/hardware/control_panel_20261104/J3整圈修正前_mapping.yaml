@@ -1,0 +1,107 @@
+# Hardware record only. This file is deliberately not consumed by the fake
+# hardware launch. Fill nulls after safe single-axis tests; never guess them.
+# Offline codec profiles are library profiles only; 2EC firmware ranges must be
+# verified before a real CAN driver can use them.
+joints:
+  slaihand_joint1:
+    physical_joint: J1
+    motor_model: DM-J10010L-2EC
+    # Confirmed by DMTool and independent read-only USB2CAN queries, 2026-10-10.
+    can_id: 1
+    master_id: 0
+    can_bitrate: 1000000
+    firmware_version: "6.7.1.7"
+    # User adopted the 2026-10-10 manual reference as software zero on 2026-10-11.
+    # Pose alignment accuracy is unmeasured; this is not a precision calibration.
+    reference_pose_encoder_rad: 1.421950
+    encoder_positive_direction: "toward_human_front"
+    calibration_status: "manual_software_zero_adopted_bidirectional_jog_verified_limits_deferred_j1_positive_sign_corrected_20261102"
+    # 2026-10-10: bounded +2deg encoder trial measured +1.989deg; final disabled.
+    limited_forward_jog_verified: true
+    limited_reverse_jog_verified: true
+    commissioning_current_limit_a: 1.4961
+    commissioning_velocity_limit_rad_s: 0.02
+    commissioning_travel_deg: 2.0
+    # 2026-11-02 user chose physical positive = encoder increasing (option B).
+    # The 2026-11-01 zero is unchanged; only the J1 model sign was flipped.
+    # Convention: q_model = hardware_sign * (encoder_rad - zero_offset_rad).
+    hardware_sign: 1
+    zero_offset_rad: 1.4574273289082171
+    zero_alignment_accuracy: "unmeasured_manual_pose"
+    # User reported a J1 limit issue on 2026-10-11 and deferred limit testing.
+    mechanical_limit_status: "issue_reported_testing_deferred"
+    software_zero_record: "verification/hardware/software_zero_20261101_102245/record.json"
+    j1_positive_sign_correction_record: "outputs/标定记录_20261102/修正_J1方向_20261102.json"
+    j1_positive_sign_correction_date: "2026-11-02"
+  slaihand_joint2:
+    physical_joint: J2
+    motor_model: DM-J10010L-2EC
+    # Written and read back 2026-10-11; power-cycle persistence pending.
+    can_id: 2
+    master_id: 0
+    can_bitrate: 1000000
+    can_id_persistence_verified: false
+    encoder_positive_direction: "toward_human_outside"
+    reference_pose_candidate_encoder_rad: -1.758575439453125
+    # User confirmed model +15deg is toward human outside, 2026-10-11.
+    # Manual photographic reference; alignment accuracy is unmeasured.
+    hardware_sign: 1
+    zero_offset_rad: -1.795033188372626
+    zero_alignment_accuracy: "unmeasured_manual_pose"
+    calibration_status: "manual_software_zero_adopted_bidirectional_jog_verified_limits_pending"
+    limited_outward_jog_verified: true
+    limited_inward_jog_verified: true
+    commissioning_current_limit_a: 1.4961
+    commissioning_velocity_limit_rad_s: 0.02
+    commissioning_travel_deg: 2.0
+    software_zero_record: "verification/hardware/software_zero_20261101_102245/record.json"
+  slaihand_joint3:
+    physical_joint: J3
+    motor_model: DM-J8009P-2EC
+    # ID write, readback, save acknowledgement and user-confirmed power cycle, 2026-10-30.
+    can_id: 3
+    can_id_persistence_verified: true
+    calibration_status: "manual_software_zero_and_direction_recorded_timeout_observed_motion_limits_pending"
+    # User-supplied readbacks and bounded near-zero-output enable trial, 2026-10-30.
+    commissioning_control_mode: 1
+    firmware_version_raw_ascii: "6417"
+    commissioning_timeout_count: 2000
+    commissioning_timeout_nominal_ms: 100
+    commissioning_timeout_fault_observed: true
+    commissioning_timeout_latency_measured: false
+    commissioning_timeout_flash_saved: false
+    commissioning_oc_fraction_readback: 0.800000011920929
+    commissioning_mit_pmax_rad: 12.5
+    commissioning_mit_vmax_rad_s: 45.0
+    commissioning_mit_tmax_nm: 54.0
+    # q_model = hardware_sign * (encoder_rad - zero_offset_rad).
+    # User manually placed model zero, then moved toward model positive; no motor-side zero write.
+    hardware_sign: 1
+    zero_offset_rad: -2.5423437857633324
+    zero_alignment_accuracy: "unmeasured_manual_pose_quantized_can_feedback"
+    software_zero_record: "verification/hardware/software_zero_20261101_102245/record.json"
+  slaihand_joint4:
+    physical_joint: J4
+    motor_model: DM-J8009P-2EC
+    # ID write, readback, save acknowledgement and user-confirmed power cycle, 2026-10-30.
+    can_id: 4
+    can_id_persistence_verified: true
+    calibration_status: "manual_software_zero_and_direction_recorded_motion_limits_pending"
+    # q_model = hardware_sign * (encoder_rad - zero_offset_rad).
+    # User moved model-positive; encoder decreased. No motor-side zero write.
+    hardware_sign: -1
+    zero_offset_rad: -0.40951400015259054
+    zero_alignment_accuracy: "unmeasured_manual_pose_quantized_can_feedback"
+    position_mapping_pmax_rad: 12.5
+    software_zero_record: "verification/hardware/software_zero_20261101_102245/record.json"
+  slaihand_joint5:
+    physical_joint: J5
+    motor_model: DM-J4340-2EC
+    virtual_placeholder: true
+    # ID write, readback, save acknowledgement and user-confirmed power cycle, 2026-10-30.
+    # Physical motor identification does not activate J5 in the formal four-axis simulation.
+    can_id: 5
+    can_id_persistence_verified: true
+    calibration_status: "can_id_saved_power_cycle_verified_direction_zero_limits_pending"
+    hardware_sign: null
+    zero_offset_rad: null

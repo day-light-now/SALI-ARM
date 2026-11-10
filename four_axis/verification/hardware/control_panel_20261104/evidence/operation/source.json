@@ -1,0 +1,25 @@
+{
+  "coordinates": "relative_start_deg",
+  "waypoints": [
+    {
+      "degrees": [
+        2.0,
+        1.0,
+        -1.0,
+        2.0
+      ],
+      "move_s": 4.0,
+      "dwell_s": 1.0
+    },
+    {
+      "degrees": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "move_s": 4.0,
+      "dwell_s": 1.0
+    }
+  ]
+}

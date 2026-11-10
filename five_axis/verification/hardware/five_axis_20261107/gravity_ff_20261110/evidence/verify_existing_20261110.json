@@ -1,0 +1,8418 @@
+{
+  "schema": "slaihand_j5_timeout_setup/1",
+  "ok": false,
+  "exit_code": 1,
+  "error": "PREFLIGHT_FAILED: missing=[] conflicts=[] mismatch={'timeout': {'observed': 0, 'expected': 2000}} stale=[] nonzero=[]",
+  "device": "/dev/ttyACM0",
+  "port_argument": "/dev/ttyACM0",
+  "baud": 921600,
+  "exclusive": {
+    "flock": "LOCK_EX|LOCK_NB",
+    "tiocm": "TIOCEXCL",
+    "locked": true,
+    "released": true
+  },
+  "observed_at": "2026-11-10T01:51:53.426+00:00",
+  "started_at": "2026-11-10T01:51:50.384+00:00",
+  "completed_at": "2026-11-10T01:51:53.426+00:00",
+  "session_id": "a166dd00ddde45139722ab695fea3c05",
+  "host_boot_id": "ae7a07f6-7ffb-48dc-bdf8-e5e0ed3eeb15",
+  "tool": {
+    "name": "j5_timeout_setup.py",
+    "sha256": "380b6619732c8df61edfac9e518f2ede2c73554513b717a99070c443bb286ce7"
+  },
+  "timeout_before": 0,
+  "timeout_after": null,
+  "j5_id": 5,
+  "master_id": null,
+  "control_mode": null,
+  "profile": null,
+  "motor_state_all_zero": true,
+  "all_motor_state_zero": true,
+  "axes": [
+    {
+      "axis": "J1",
+      "can_id": 1,
+      "motor_state": 0,
+      "feedback_age": 0.0556,
+      "valid": true,
+      "feedback_payload": "01 8e b1 7f f7 ff 1a 16"
+    },
+    {
+      "axis": "J2",
+      "can_id": 2,
+      "motor_state": 0,
+      "feedback_age": 0.0524,
+      "valid": true,
+      "feedback_payload": "02 6d 4b 80 07 ff 19 15"
+    },
+    {
+      "axis": "J3",
+      "can_id": 3,
+      "motor_state": 0,
+      "feedback_age": 0.0491,
+      "valid": true,
+      "feedback_payload": "03 65 f7 7f f7 ff 18 16"
+    },
+    {
+      "axis": "J4",
+      "can_id": 4,
+      "motor_state": 0,
+      "feedback_age": 0.0458,
+      "valid": true,
+      "feedback_payload": "04 7b c8 7f f7 ff 18 17"
+    },
+    {
+      "axis": "J5",
+      "can_id": 5,
+      "motor_state": 0,
+      "feedback_age": 0.0589,
+      "valid": true,
+      "feedback_payload": "05 99 f2 7f f8 02 19 17"
+    }
+  ],
+  "readback": {
+    "rid": 9,
+    "expected": 2000,
+    "observed": null,
+    "attempts": 0,
+    "matched": false
+  },
+  "readback_hex": null,
+  "write_outcome": null,
+  "write_frame_hex": null,
+  "write_data_hex": "05 00 55 09 d0 07 00 00",
+  "write_attempts": 0,
+  "parameter_writes": 0,
+  "read_only_requests": 516,
+  "motor_zero_written": false,
+  "flash_written": false,
+  "enabled": false,
+  "mit_sent": false,
+  "audit_path": "/mnt/d/CodexData/Projects/机械臂/slaihand_five_axis_ws_gain/verification/hardware/five_axis_20261107/gravity_ff_20261110/evidence/verify_existing_20261110.json",
+  "preflight": {
+    "completed": false,
+    "fresh_limit_s": 0.25,
+    "all_feedback_fresh": true,
+    "conflicts": [],
+    "missing_registers": [],
+    "mismatched_registers": {
+      "timeout": {
+        "observed": 0,
+        "expected": 2000
+      }
+    },
+    "stale_axes": [],
+    "nonzero_axes": [],
+    "j5_ready": true,
+    "registers": {
+      "master_id": 0,
+      "can_id": 5,
+      "timeout": 0,
+      "control_mode": 1,
+      "pmax_rad": 12.5,
+      "vmax_rad_s": 10.0,
+      "tmax_nm": 28.0
+    },
+    "register_payloads": {
+      "7": "05 00 33 07 00 00 00 00",
+      "8": "05 00 33 08 05 00 00 00",
+      "9": "05 00 33 09 00 00 00 00",
+      "10": "05 00 33 0a 01 00 00 00",
+      "21": "05 00 33 15 00 00 48 41",
+      "22": "05 00 33 16 00 00 20 41",
+      "23": "05 00 33 17 00 00 e0 41"
+    },
+    "register_read_counts": {
+      "7": 43,
+      "8": 43,
+      "9": 43,
+      "10": 43,
+      "21": 43,
+      "22": 43,
+      "23": 43
+    }
+  },
+  "postflight": {
+    "completed": false,
+    "profile": null,
+    "axes": []
+  },
+  "warnings": [],
+  "trace": [
+    {
+      "seq": 1,
+      "at": 77390.578661,
+      "wall": 1794275510.408185,
+      "direction": "open",
+      "path": "/dev/ttyACM0",
+      "baud": 921600,
+      "flock": "LOCK_EX|LOCK_NB",
+      "tiocm": "TIOCEXCL"
+    },
+    {
+      "seq": 2,
+      "at": 77390.578732,
+      "wall": 1794275510.40825,
+      "direction": "tx",
+      "can_id": 2047,
+      "payload": "05 00 cc 00 00 00 00 00"
+    },
+    {
+      "seq": 3,
+      "at": 77390.580028,
+      "wall": 1794275510.409549,
+      "direction": "rx",
+      "can_id": 0,
+      "payload": "05 99 f2 80 08 01 19 17"
+    },
+    {
+      "seq": 4,
+      "at": 77390.582194,
+      "wall": 1794275510.411713,
+      "direction": "tx",
+      "can_id": 2047,
+      "payload": "01 00 cc 00 00 00 00 00"
+    },
+    {
+      "seq": 5,
+      "at": 77390.583282,
+      "wall": 1794275510.412802,
+      "direction": "rx",
+      "can_id": 0,
+      "payload": "01 8e b1 7f e7 ff 1a 16"
+    },
+    {
+      "seq": 6,
+      "at": 77390.585446,
+      "wall": 1794275510.414965,
+      "direction": "tx",
+      "can_id": 2047,
+      "payload": "02 00 cc 00 00 00 00 00"
+    },
+    {
+      "seq": 7,
+      "at": 77390.586523,
+      "wall": 1794275510.416043,
+      "direction": "rx",
+      "can_id": 0,
+      "payload": "02 6d 4b 7f f7 fe 19 15"
+    },
+    {
+      "seq": 8,
+      "at": 77390.588705,
+      "wall": 1794275510.418223,
+      "direction": "tx",
+      "can_id": 2047,
+      "payload": "03 00 cc 00 00 00 00 00"
+    },
+    {
+      "seq": 9,
+      "at": 77390.589781,
+      "wall": 1794275510.419301,
+      "direction": "rx",
+      "can_id": 0,
+      "payload": "03 65 f7 7f f7 ff 18 16"
+    },
+    {
+      "seq": 10,
+      "at": 77390.59214,
+      "wall": 1794275510.421659,
+      "direction": "tx",
+      "can_id": 2047,
+      "payload": "04 00 cc 00 00 00 00 00"
+    },
+    {
+      "seq": 11,
+      "at": 77390.593401,
+      "wall": 1794275510.422922,
+      "direction": "rx",
+      "can_id": 0,
+      "payload": "04 7b c8 7f f7 ff 18 17"
+    },
+    {
+      "seq": 12,
+      "at": 77390.59564,
+      "wall": 1794275510.425159,
+      "direction": "tx",
+      "can_id": 2047,
+      "payload": "05 00 33 07 00 00 00 00"
+    },
+    {
+      "seq": 13,
+      "at": 77390.59784,
+      "wall": 1794275510.42736,
+      "direction": "rx",
+      "can_id": 0,
+      "payload": "05 00 33 07 00 00 00 00"
+    },
+    {
+      "seq": 14,
+      "at": 77390.598943,
+      "wall": 1794275510.428462,
+      "direction": "tx",
+      "can_id": 2047,
+      "payload": "05 00 33 08 00 00 00 00"
+    },
+    {
+      "seq": 15,
+      "at": 77390.600065,
+      "wall": 1794275510.429585,
+      "direction": "rx",
+      "can_id": 0,
+      "payload": "05 00 33 08 05 00 00 00"
+    },
+    {
+      "seq": 16,
+      "at": 77390.602221,
+      "wall": 1794275510.43174,
+      "direction": "tx",
+      "can_id": 2047,
+      "payload": "05 00 33 09 00 00 00 00"
+    },
+    {
+      "seq": 17,
+      "at": 77390.603315,
+      "wall": 1794275510.432835,
+      "direction": "rx",
+      "can_id": 0,
+      "payload": "05 00 33 09 00 00 00 00"
+    },
+    {
+      "seq": 18,
+      "at": 77390.605525,
+      "wall": 1794275510.435044,
+      "direction": "tx",
+      "can_id": 2047,
+      "payload": "05 00 33 0a 00 00 00 00"
+    },
+    {
+      "seq": 19,
+      "at": 77390.606599,
+      "wall": 1794275510.436118,
+      "direction": "rx",
+      "can_id": 0,
+      "payload": "05 00 33 0a 01 00 00 00"
+    },
+    {
+      "seq": 20,
+      "at": 77390.608759,
+      "wall": 1794275510.438277,
+      "direction": "tx",
+      "can_id": 2047,
+      "payload": "05 00 33 15 00 00 00 00"
+    },
+    {
+      "seq": 21,
+      "at": 77390.609833,
+      "wall": 1794275510.439353,
+      "direction": "rx",
+      "can_id": 0,
+      "payload": "05 00 33 15 00 00 48 41"
+    },
+    {
+      "seq": 22,
+      "at": 77390.612426,
+      "wall": 1794275510.441945,
+      "direction": "tx",
+      "can_id": 2047,
+      "payload": "05 00 33 16 00 00 00 00"
+    },
+    {
+      "seq": 23,
+      "at": 77390.6135,
+      "wall": 1794275510.44302,
+      "direction": "rx",
+      "can_id": 0,
+      "payload": "05 00 33 16 00 00 20 41"
+    },
+    {
+      "seq": 24,
+      "at": 77390.615647,
+      "wall": 1794275510.445165,
+      "direction": "tx",
+      "can_id": 2047,
+      "payload": "05 00 33 17 00 00 00 00"
+    },
+    {
+      "seq": 25,
+      "at": 77390.616735,
+      "wall": 1794275510.446255,
+      "direction": "rx",
+      "can_id": 0,
+      "payload": "05 00 33 17 00 00 e0 41"
+    },
+    {
+      "seq": 26,
+      "at": 77390.649735,
+      "wall": 1794275510.479254,
+      "direction": "tx",
+      "can_id": 2047,
+      "payload": "05 00 cc 00 00 00 00 00"
+    },
+    {
+      "seq": 27,
+      "at": 77390.650857,
+      "wall": 1794275510.480377,
+      "direction": "rx",
+      "can_id": 0,
+      "payload": "05 99 f2 7f f8 02 19 17"
+    },
+    {
+      "seq": 28,
+      "at": 77390.653071,
+      "wall": 1794275510.48259,
+      "direction": "tx",
+      "can_id": 2047,
+      "payload": "01 00 cc 00 00 00 00 00"
+    },
+    {
+      "seq": 29,
+      "at": 77390.654187,
+      "wall": 1794275510.483708,
+      "direction": "rx",
+      "can_id": 0,
+      "payload": "01 8e b1 7f f7 ff 1a 16"
+    },
+    {
+      "seq": 30,
+      "at": 77390.656403,
+      "wall": 1794275510.485922,
+      "direction": "tx",
+      "can_id": 2047,
+      "payload": "02 00 cc 00 00 00 00 00"
+    },
+    {
+      "seq": 31,
+      "at": 77390.659686,
+      "wall": 1794275510.489206,
+      "direction": "tx",
+      "can_id": 2047,
+      "payload": "03 00 cc 00 00 00 00 00"
+    },
+    {
+      "seq": 32,
+      "at": 77390.661853,
+      "wall": 1794275510.491374,
+      "direction": "rx",
+      "can_id": 0,
+      "payload": "02 6d 4b 7f e7 ff 19 15"
+    },
+    {
+      "seq": 33,
+      "at": 77390.663036,
+      "wall": 1794275510.492555,
+      "direction": "tx",
+      "can_id": 2047,
+      "payload": "04 00 cc 00 00 00 00 00"
+    },
+    {
+      "seq": 34,
+      "at": 77390.665205,
+      "wall": 1794275510.494725,
+      "direction": "rx",
+      "can_id": 0,
+      "payload": "03 65 f7 7f f8 00 18 16"
+    },
+    {
+      "seq": 35,
+      "at": 77390.665214,
+      "wall": 1794275510.494732,
+      "direction": "rx",
+      "can_id": 0,
+      "payload": "04 7b c8 7f f7 ff 18 17"
+    },
+    {
+      "seq": 36,
+      "at": 77390.666306,
+      "wall": 1794275510.495825,
+      "direction": "tx",
+      "can_id": 2047,
+      "payload": "05 00 33 07 00 00 00 00"
+    },
+    {
+      "seq": 37,
+      "at": 77390.667388,
+      "wall": 1794275510.496907,
+      "direction": "rx",
+      "can_id": 0,
+      "payload": "05 00 33 07 00 00 00 00"
+    },
+    {
+      "seq": 38,
+      "at": 77390.66956,
+      "wall": 1794275510.499079,
+      "direction": "tx",
+      "can_id": 2047,
+      "payload": "05 00 33 08 00 00 00 00"
+    },
+    {
+      "seq": 39,
+      "at": 77390.670644,
+      "wall": 1794275510.500165,
+      "direction": "rx",
+      "can_id": 0,
+      "payload": "05 00 33 08 05 00 00 00"
+    },
+    {
+      "seq": 40,
+      "at": 77390.672832,
+      "wall": 1794275510.502351,
+      "direction": "tx",
+      "can_id": 2047,
+      "payload": "05 00 33 09 00 00 00 00"
+    },
+    {
+      "seq": 41,
+      "at": 77390.676077,
+      "wall": 1794275510.505596,
+      "direction": "tx",
+      "can_id": 2047,
+      "payload": "05 00 33 0a 00 00 00 00"
+    },
+    {
+      "seq": 42,
+      "at": 77390.679329,
+      "wall": 1794275510.508848,
+      "direction": "tx",
+      "can_id": 2047,
+      "payload": "05 00 33 15 00 00 00 00"
+    },
+    {
+      "seq": 43,
+      "at": 77390.682663,
+      "wall": 1794275510.512182,
+      "direction": "tx",
+      "can_id": 2047,
+      "payload": "05 00 33 16 00 00 00 00"
+    },
+    {
+      "seq": 44,
+      "at": 77390.685873,
+      "wall": 1794275510.515393,
+      "direction": "rx",
+      "can_id": 0,
+      "payload": "05 00 33 09 00 00 00 00"
+    },
+    {
+      "seq": 45,
+      "at": 77390.685885,
+      "wall": 1794275510.515404,
+      "direction": "rx",
+      "can_id": 0,
+      "payload": "05 00 33 0a 01 00 00 00"
+    },
+    {
+      "seq": 46,
+      "at": 77390.685888,
+      "wall": 1794275510.515407,
+      "direction": "rx",
+      "can_id": 0,
+      "payload": "05 00 33 15 00 00 48 41"
+    },
+    {
+      "seq": 47,
+      "at": 77390.685893,
+      "wall": 1794275510.515411,
+      "direction": "rx",
+      "can_id": 0,
+      "payload": "05 00 33 16 00 00 20 41"
+    },
+    {
+      "seq": 48,
+      "at": 77390.685915,
+      "wall": 1794275510.515434,
+      "direction": "tx",
+      "can_id": 2047,
+      "payload": "05 00 33 17 00 00 00 00"
+    },
+    {
+      "seq": 49,
+      "at": 77390.686999,
+      "wall": 1794275510.516519,
+      "direction": "rx",
+      "can_id": 0,
+      "payload": "05 00 33 17 00 00 e0 41"
+    },
+    {
+      "seq": 50,
+      "at": 77390.719705,
+      "wall": 1794275510.549224,
+      "direction": "tx",
+      "can_id": 2047,
+      "payload": "05 00 cc 00 00 00 00 00"
+    },
+    {
+      "seq": 51,
+      "at": 77390.720853,
+      "wall": 1794275510.550374,
+      "direction": "rx",
+      "can_id": 0,
+      "payload": "05 99 f2 7f f8 02 19 17"
+    },
+    {
+      "seq": 52,
+      "at": 77390.723063,
+      "wall": 1794275510.552582,
+      "direction": "tx",
+      "can_id": 2047,
+      "payload": "01 00 cc 00 00 00 00 00"
+    },
+    {
+      "seq": 53,
+      "at": 77390.724171,
+      "wall": 1794275510.553691,
+      "direction": "rx",
+      "can_id": 0,
+      "payload": "01 8e b1 7f e8 00 1a 16"
+    },
+    {
+      "seq": 54,
+      "at": 77390.726423,
+      "wall": 1794275510.555942,
+      "direction": "tx",
+      "can_id": 2047,
+      "payload": "02 00 cc 00 00 00 00 00"
+    },
+    {
+      "seq": 55,
+      "at": 77390.727505,
+      "wall": 1794275510.557024,
+      "direction": "rx",
+      "can_id": 0,
+      "payload": "02 6d 4b 7f e7 ff 19 15"
+    },
+    {
+      "seq": 56,
+      "at": 77390.729656,
+      "wall": 1794275510.559175,
+      "direction": "tx",
+      "can_id": 2047,
+      "payload": "03 00 cc 00 00 00 00 00"
+    },
+    {
+      "seq": 57,
+      "at": 77390.730734,
+      "wall": 1794275510.560254,
+      "direction": "rx",
+      "can_id": 0,
+      "payload": "03 65 f7 7f e7 ff 18 16"
+    },
+    {
+      "seq": 58,
+      "at": 77390.733003,
+      "wall": 1794275510.562522,
+      "direction": "tx",
+      "can_id": 2047,
+      "payload": "04 00 cc 00 00 00 00 00"
+    },
+    {
+      "seq": 59,
+      "at": 77390.734087,
+      "wall": 1794275510.563607,
+      "direction": "rx",
+      "can_id": 0,
+      "payload": "04 7b c8 7f f7 fe 18 17"
+    },
+    {
+      "seq": 60,
+      "at": 77390.736264,
+      "wall": 1794275510.565782,
+      "direction": "tx",
+      "can_id": 2047,
+      "payload": "05 00 33 07 00 00 00 00"
+    },
+    {
+      "seq": 61,
+      "at": 77390.737344,
+      "wall": 1794275510.566864,
+      "direction": "rx",
+      "can_id": 0,
+      "payload": "05 00 33 07 00 00 00 00"
+    },
+    {
+      "seq": 62,
+      "at": 77390.739496,
+      "wall": 1794275510.569015,
+      "direction": "tx",
+      "can_id": 2047,
+      "payload": "05 00 33 08 00 00 00 00"
+    },
+    {
+      "seq": 63,
+      "at": 77390.740597,
+      "wall": 1794275510.570116,
+      "direction": "rx",
+      "can_id": 0,
+      "payload": "05 00 33 08 05 00 00 00"
+    },
+    {
+      "seq": 64,
+      "at": 77390.742742,
+      "wall": 1794275510.572261,
+      "direction": "tx",
+      "can_id": 2047,
+      "payload": "05 00 33 09 00 00 00 00"
+    },
+    {
+      "seq": 65,
+      "at": 77390.743818,
+      "wall": 1794275510.573338,
+      "direction": "rx",
+      "can_id": 0,
+      "payload": "05 00 33 09 00 00 00 00"
+    },
+    {
+      "seq": 66,
+      "at": 77390.746054,
+      "wall": 1794275510.575573,
+      "direction": "tx",
+      "can_id": 2047,
+      "payload": "05 00 33 0a 00 00 00 00"
+    },
+    {
+      "seq": 67,
+      "at": 77390.747193,
+      "wall": 1794275510.576713,
+      "direction": "rx",
+      "can_id": 0,
+      "payload": "05 00 33 0a 01 00 00 00"
+    },
+    {
+      "seq": 68,
+      "at": 77390.749382,
+      "wall": 1794275510.578901,
+      "direction": "tx",
+      "can_id": 2047,
+      "payload": "05 00 33 15 00 00 00 00"
+    },
+    {
+      "seq": 69,
+      "at": 77390.75153,
+      "wall": 1794275510.581051,
+      "direction": "rx",
+      "can_id": 0,
+      "payload": "05 00 33 15 00 00 48 41"
+    },
+    {
+      "seq": 70,
+      "at": 77390.75265,
+      "wall": 1794275510.582169,
+      "direction": "tx",
+      "can_id": 2047,
+      "payload": "05 00 33 16 00 00 00 00"
+    },
+    {
+      "seq": 71,
+      "at": 77390.754887,
+      "wall": 1794275510.584408,
+      "direction": "rx",
+      "can_id": 0,
+      "payload": "05 00 33 16 00 00 20 41"
+    },
+    {
+      "seq": 72,
+      "at": 77390.756024,
+      "wall": 1794275510.585543,
+      "direction": "tx",
+      "can_id": 2047,
+      "payload": "05 00 33 17 00 00 00 00"
+    },
+    {
+      "seq": 73,
+      "at": 77390.758185,
+      "wall": 1794275510.587706,
+      "direction": "rx",
+      "can_id": 0,
+      "payload": "05 00 33 17 00 00 e0 41"
+    },
+    {
+      "seq": 74,
+      "at": 77390.78981,
+      "wall": 1794275510.619329,
+      "direction": "tx",
+      "can_id": 2047,
+      "payload": "05 00 cc 00 00 00 00 00"
+    },
+    {
+      "seq": 75,
+      "at": 77390.790917,
+      "wall": 1794275510.620438,
+      "direction": "rx",
+      "can_id": 0,
+      "payload": "05 99 f2 7f f8 02 19 17"
+    },
+    {
+      "seq": 76,
+      "at": 77390.79317,
+      "wall": 1794275510.622689,
+      "direction": "tx",
+      "can_id": 2047,
+      "payload": "01 00 cc 00 00 00 00 00"
+    },
+    {
+      "seq": 77,
+      "at": 77390.794252,
+      "wall": 1794275510.623772,
+      "direction": "rx",
+      "can_id": 0,
+      "payload": "01 8e b1 7f e7 ff 1a 16"
+    },
+    {
+      "seq": 78,
+      "at": 77390.796428,
+      "wall": 1794275510.625947,
+      "direction": "tx",
+      "can_id": 2047,
+      "payload": "02 00 cc 00 00 00 00 00"
+    },
+    {
+      "seq": 79,
+      "at": 77390.7975,
+      "wall": 1794275510.627019,
+      "direction": "rx",
+      "can_id": 0,
+      "payload": "02 6d 4b 7f f7 fe 19 15"
+    },
+    {
+      "seq": 80,
+      "at": 77390.799684,
+      "wall": 1794275510.629202,
+      "direction": "tx",
+      "can_id": 2047,
+      "payload": "03 00 cc 00 00 00 00 00"
+    },
+    {
+      "seq": 81,
+      "at": 77390.800768,
+      "wall": 1794275510.630287,
+      "direction": "rx",
+      "can_id": 0,
+      "payload": "03 65 f7 7f f7 ff 18 16"
+    },
+    {
+      "seq": 82,
+      "at": 77390.803013,
+      "wall": 1794275510.632532,
+      "direction": "tx",
+      "can_id": 2047,
+      "payload": "04 00 cc 00 00 00 00 00"
+    },
+    {
+      "seq": 83,
+      "at": 77390.804114,
+      "wall": 1794275510.633634,
+      "direction": "rx",
+      "can_id": 0,
+      "payload": "04 7b c8 7f f7 fe 18 17"
+    },
+    {
+      "seq": 84,
+      "at": 77390.806251,
+      "wall": 1794275510.63577,
+      "direction": "tx",
+      "can_id": 2047,
+      "payload": "05 00 33 07 00 00 00 00"
+    },
+    {
+      "seq": 85,
+      "at": 77390.80739,
+      "wall": 1794275510.636909,
+      "direction": "rx",
+      "can_id": 0,
+      "payload": "05 00 33 07 00 00 00 00"
+    },
+    {
+      "seq": 86,
+      "at": 77390.809584,
+      "wall": 1794275510.639103,
+      "direction": "tx",
+      "can_id": 2047,
+      "payload": "05 00 33 08 00 00 00 00"
+    },
+    {
+      "seq": 87,
+      "at": 77390.810693,
+      "wall": 1794275510.640213,
+      "direction": "rx",
+      "can_id": 0,
+      "payload": "05 00 33 08 05 00 00 00"
+    },
+    {
+      "seq": 88,
+      "at": 77390.812846,
+      "wall": 1794275510.642365,
+      "direction": "tx",
+      "can_id": 2047,
+      "payload": "05 00 33 09 00 00 00 00"
+    },
+    {
+      "seq": 89,
+      "at": 77390.813923,
+      "wall": 1794275510.643442,
+      "direction": "rx",
+      "can_id": 0,
+      "payload": "05 00 33 09 00 00 00 00"
+    },
+    {
+      "seq": 90,
+      "at": 77390.816102,
+      "wall": 1794275510.645621,
+      "direction": "tx",
+      "can_id": 2047,
+      "payload": "05 00 33 0a 00 00 00 00"
+    },
+    {
+      "seq": 91,
+      "at": 77390.817248,
+      "wall": 1794275510.646768,
+      "direction": "rx",
+      "can_id": 0,
+      "payload": "05 00 33 0a 01 00 00 00"
+    },
+    {
+      "seq": 92,
+      "at": 77390.819457,
+      "wall": 1794275510.648976,
+      "direction": "tx",
+      "can_id": 2047,
+      "payload": "05 00 33 15 00 00 00 00"
+    },
+    {
+      "seq": 93,
+      "at": 77390.820599,
+      "wall": 1794275510.650119,
+      "direction": "rx",
+      "can_id": 0,
+      "payload": "05 00 33 15 00 00 48 41"
+    },
+    {
+      "seq": 94,
+      "at": 77390.822821,
+      "wall": 1794275510.65234,
+      "direction": "tx",
+      "can_id": 2047,
+      "payload": "05 00 33 16 00 00 00 00"
+    },
+    {
+      "seq": 95,
+      "at": 77390.824091,
+      "wall": 1794275510.653611,
+      "direction": "rx",
+      "can_id": 0,
+      "payload": "05 00 33 16 00 00 20 41"
+    },
+    {
+      "seq": 96,
+      "at": 77390.826435,
+      "wall": 1794275510.655954,
+      "direction": "tx",
+      "can_id": 2047,
+      "payload": "05 00 33 17 00 00 00 00"
+    },
+    {
+      "seq": 97,
+      "at": 77390.827544,
+      "wall": 1794275510.657064,
+      "direction": "rx",
+      "can_id": 0,
+      "payload": "05 00 33 17 00 00 e0 41"
+    },
+    {
+      "seq": 98,
+      "at": 77390.860675,
+      "wall": 1794275510.690194,
+      "direction": "tx",
+      "can_id": 2047,
+      "payload": "05 00 cc 00 00 00 00 00"
+    },
+    {
+      "seq": 99,
+      "at": 77390.864067,
+      "wall": 1794275510.693585,
+      "direction": "tx",
+      "can_id": 2047,
+      "payload": "01 00 cc 00 00 00 00 00"
+    },
+    {
+      "seq": 100,
+      "at": 77390.867246,
+      "wall": 1794275510.696765,
+      "direction": "tx",
+      "can_id": 2047,
+      "payload": "02 00 cc 00 00 00 00 00"
+    },
+    {
+      "seq": 101,
+      "at": 77390.868355,
+      "wall": 1794275510.697874,
+      "direction": "rx",
+      "can_id": 0,
+      "payload": "05 99 f2 7f f8 02 19 17"
+    },
+    {
+      "seq": 102,
+      "at": 77390.868376,
+      "wall": 1794275510.697894,
+      "direction": "rx",
+      "can_id": 0,
+      "payload": "01 8e b1 80 18 00 1a 16"
+    },
+    {
+      "seq": 103,
+      "at": 77390.868378,
+      "wall": 1794275510.697896,
+      "direction": "rx",
+      "can_id": 0,
+      "payload": "02 6d 4b 7f e7 fe 19 15"
+    },
+    {
+      "seq": 104,
+      "at": 77390.870571,
+      "wall": 1794275510.70009,
+      "direction": "tx",
+      "can_id": 2047,
+      "payload": "03 00 cc 00 00 00 00 00"
+    },
+    {
+      "seq": 105,
+      "at": 77390.871642,
+      "wall": 1794275510.701161,
+      "direction": "rx",
+      "can_id": 0,
+      "payload": "03 65 f7 7f f8 00 18 16"
+    },
+    {
+      "seq": 106,
+      "at": 77390.873881,
+      "wall": 1794275510.703399,
+      "direction": "tx",
+      "can_id": 2047,
+      "payload": "04 00 cc 00 00 00 00 00"
+    },
+    {
+      "seq": 107,
+      "at": 77390.87494,
+      "wall": 1794275510.704459,
+      "direction": "rx",
+      "can_id": 0,
+      "payload": "04 7b c8 7f f7 fe 18 17"
+    },
+    {
+      "seq": 108,
+      "at": 77390.877255,
+      "wall": 1794275510.706773,
+      "direction": "tx",
+      "can_id": 2047,
+      "payload": "05 00 33 07 00 00 00 00"
+    },
+    {
+      "seq": 109,
+      "at": 77390.878313,
+      "wall": 1794275510.707832,
+      "direction": "rx",
+      "can_id": 0,
+      "payload": "05 00 33 07 00 00 00 00"
+    },
+    {
+      "seq": 110,
+      "at": 77390.880534,
+      "wall": 1794275510.710052,
+      "direction": "tx",
+      "can_id": 2047,
+      "payload": "05 00 33 08 00 00 00 00"
+    },
+    {
+      "seq": 111,
+      "at": 77390.881629,
+      "wall": 1794275510.711148,
+      "direction": "rx",
+      "can_id": 0,
+      "payload": "05 00 33 08 05 00 00 00"
+    },
+    {
+      "seq": 112,
+      "at": 77390.883823,
+      "wall": 1794275510.713341,
+      "direction": "tx",
+      "can_id": 2047,
+      "payload": "05 00 33 09 00 00 00 00"
+    },
+    {
+      "seq": 113,
+      "at": 77390.884921,
+      "wall": 1794275510.714441,
+      "direction": "rx",
+      "can_id": 0,
+      "payload": "05 00 33 09 00 00 00 00"
+    },
+    {
+      "seq": 114,
+      "at": 77390.88714,
+      "wall": 1794275510.71666,
+      "direction": "tx",
+      "can_id": 2047,
+      "payload": "05 00 33 0a 00 00 00 00"
+    },
+    {
+      "seq": 115,
+      "at": 77390.888245,
+      "wall": 1794275510.717765,
+      "direction": "rx",
+      "can_id": 0,
+      "payload": "05 00 33 0a 01 00 00 00"
+    },
+    {
+      "seq": 116,
+      "at": 77390.890475,
+      "wall": 1794275510.719994,
+      "direction": "tx",
+      "can_id": 2047,
+      "payload": "05 00 33 15 00 00 00 00"
+    },
+    {
+      "seq": 117,
+      "at": 77390.891551,
+      "wall": 1794275510.721071,
+      "direction": "rx",
+      "can_id": 0,
+      "payload": "05 00 33 15 00 00 48 41"
+    },
+    {
+      "seq": 118,
+      "at": 77390.893752,
+      "wall": 1794275510.723271,
+      "direction": "tx",
+      "can_id": 2047,
+      "payload": "05 00 33 16 00 00 00 00"
+    },
+    {
+      "seq": 119,
+      "at": 77390.894829,
+      "wall": 1794275510.724349,
+      "direction": "rx",
+      "can_id": 0,
+      "payload": "05 00 33 16 00 00 20 41"
+    },
+    {
+      "seq": 120,
+      "at": 77390.897117,
+      "wall": 1794275510.726636,
+      "direction": "tx",
+      "can_id": 2047,
+      "payload": "05 00 33 17 00 00 00 00"
+    },
+    {
+      "seq": 121,
+      "at": 77390.898215,
+      "wall": 1794275510.727736,
+      "direction": "rx",
+      "can_id": 0,
+      "payload": "05 00 33 17 00 00 e0 41"
+    },
+    {
+      "seq": 122,
+      "at": 77390.93152,
+      "wall": 1794275510.76104,
+      "direction": "tx",
+      "can_id": 2047,
+      "payload": "05 00 cc 00 00 00 00 00"
+    },
+    {
+      "seq": 123,
+      "at": 77390.933833,
+      "wall": 1794275510.763354,
+      "direction": "rx",
+      "can_id": 0,
+      "payload": "05 99 f2 7f f8 02 19 17"
+    },
+    {
+      "seq": 124,
+      "at": 77390.934989,
+      "wall": 1794275510.764508,
+      "direction": "tx",
+      "can_id": 2047,
+      "payload": "01 00 cc 00 00 00 00 00"
+    },
+    {
+      "seq": 125,
+      "at": 77390.936063,
+      "wall": 1794275510.765584,
+      "direction": "rx",
+      "can_id": 0,
+      "payload": "01 8e b1 7f f7 ff 1a 16"
+    },
+    {
+      "seq": 126,
+      "at": 77390.93827,
+      "wall": 1794275510.767789,
+      "direction": "tx",
+      "can_id": 2047,
+      "payload": "02 00 cc 00 00 00 00 00"
+    },
+    {
+      "seq": 127,
+      "at": 77390.939377,
+      "wall": 1794275510.768898,
+      "direction": "rx",
+      "can_id": 0,
+      "payload": "02 6d 4b 7f f7 fe 19 15"
+    },
+    {
+      "seq": 128,
+      "at": 77390.941636,
+      "wall": 1794275510.771155,
+      "direction": "tx",
+      "can_id": 2047,
+      "payload": "03 00 cc 00 00 00 00 00"
+    },
+    {
+      "seq": 129,
+      "at": 77390.942733,
+      "wall": 1794275510.772252,
+      "direction": "rx",
+      "can_id": 0,
+      "payload": "03 65 f7 7f f7 ff 18 16"
+    },
+    {
+      "seq": 130,
+      "at": 77390.944959,
+      "wall": 1794275510.774478,
+      "direction": "tx",
+      "can_id": 2047,
+      "payload": "04 00 cc 00 00 00 00 00"
+    },
+    {
+      "seq": 131,
+      "at": 77390.946137,
+      "wall": 1794275510.775657,
+      "direction": "rx",
+      "can_id": 0,
+      "payload": "04 7b c8 7f f7 ff 18 17"
+    },
+    {
+      "seq": 132,
+      "at": 77390.948437,
+      "wall": 1794275510.777956,
+      "direction": "tx",
+      "can_id": 2047,
+      "payload": "05 00 33 07 00 00 00 00"
+    },
+    {
+      "seq": 133,
+      "at": 77390.949555,
+      "wall": 1794275510.779076,
+      "direction": "rx",
+      "can_id": 0,
+      "payload": "05 00 33 07 00 00 00 00"
+    },
+    {
+      "seq": 134,
+      "at": 77390.951862,
+      "wall": 1794275510.781381,
+      "direction": "tx",
+      "can_id": 2047,
+      "payload": "05 00 33 08 00 00 00 00"
+    },
+    {
+      "seq": 135,
+      "at": 77390.952969,
+      "wall": 1794275510.782489,
+      "direction": "rx",
+      "can_id": 0,
+      "payload": "05 00 33 08 05 00 00 00"
+    },
+    {
+      "seq": 136,
+      "at": 77390.955118,
+      "wall": 1794275510.784637,
+      "direction": "tx",
+      "can_id": 2047,
+      "payload": "05 00 33 09 00 00 00 00"
+    },
+    {
+      "seq": 137,
+      "at": 77390.956244,
+      "wall": 1794275510.785764,
+      "direction": "rx",
+      "can_id": 0,
+      "payload": "05 00 33 09 00 00 00 00"
+    },
+    {
+      "seq": 138,
+      "at": 77390.958464,
+      "wall": 1794275510.787983,
+      "direction": "tx",
+      "can_id": 2047,
+      "payload": "05 00 33 0a 00 00 00 00"
+    },
+    {
+      "seq": 139,
+      "at": 77390.959584,
+      "wall": 1794275510.789105,
+      "direction": "rx",
+      "can_id": 0,
+      "payload": "05 00 33 0a 01 00 00 00"
+    },
+    {
+      "seq": 140,
+      "at": 77390.961793,
+      "wall": 1794275510.791312,
+      "direction": "tx",
+      "can_id": 2047,
+      "payload": "05 00 33 15 00 00 00 00"
+    },
+    {
+      "seq": 141,
+      "at": 77390.963966,
+      "wall": 1794275510.793487,
+      "direction": "rx",
+      "can_id": 0,
+      "payload": "05 00 33 15 00 00 48 41"
+    },
+    {
+      "seq": 142,
+      "at": 77390.965126,
+      "wall": 1794275510.794645,
+      "direction": "tx",
+      "can_id": 2047,
+      "payload": "05 00 33 16 00 00 00 00"
+    },
+    {
+      "seq": 143,
+      "at": 77390.966227,
+      "wall": 1794275510.795748,
+      "direction": "rx",
+      "can_id": 0,
+      "payload": "05 00 33 16 00 00 20 41"
+    },
+    {
+      "seq": 144,
+      "at": 77390.968583,
+      "wall": 1794275510.798101,
+      "direction": "tx",
+      "can_id": 2047,
+      "payload": "05 00 33 17 00 00 00 00"
+    },
+    {
+      "seq": 145,
+      "at": 77390.969674,
+      "wall": 1794275510.799194,
+      "direction": "rx",
+      "can_id": 0,
+      "payload": "05 00 33 17 00 00 e0 41"
+    },
+    {
+      "seq": 146,
+      "at": 77391.002561,
+      "wall": 1794275510.832081,
+      "direction": "tx",
+      "can_id": 2047,
+      "payload": "05 00 cc 00 00 00 00 00"
+    },
+    {
+      "seq": 147,
+      "at": 77391.003682,
+      "wall": 1794275510.833203,
+      "direction": "rx",
+      "can_id": 0,
+      "payload": "05 99 f2 7f f8 01 19 17"
+    },
+    {
+      "seq": 148,
+      "at": 77391.006049,
+      "wall": 1794275510.835568,
+      "direction": "tx",
+      "can_id": 2047,
+      "payload": "01 00 cc 00 00 00 00 00"
+    },
+    {
+      "seq": 149,
+      "at": 77391.007398,
+      "wall": 1794275510.836919,
+      "direction": "rx",
+      "can_id": 0,
+      "payload": "01 8e b1 7f e7 ff 1a 16"
+    },
+    {
+      "seq": 150,
+      "at": 77391.009807,
+      "wall": 1794275510.839327,
+      "direction": "tx",
+      "can_id": 2047,
+      "payload": "02 00 cc 00 00 00 00 00"
+    },
+    {
+      "seq": 151,
+      "at": 77391.010938,
+      "wall": 1794275510.840458,
+      "direction": "rx",
+      "can_id": 0,
+      "payload": "02 6d 4b 7f f7 fe 19 15"
+    },
+    {
+      "seq": 152,
+      "at": 77391.013147,
+      "wall": 1794275510.842666,
+      "direction": "tx",
+      "can_id": 2047,
+      "payload": "03 00 cc 00 00 00 00 00"
+    },
+    {
+      "seq": 153,
+      "at": 77391.014298,
+      "wall": 1794275510.843819,
+      "direction": "rx",
+      "can_id": 0,
+      "payload": "03 65 f7 80 07 ff 18 16"
+    },
+    {
+      "seq": 154,
+      "at": 77391.016681,
+      "wall": 1794275510.8462,
+      "direction": "tx",
+      "can_id": 2047,
+      "payload": "04 00 cc 00 00 00 00 00"
+    },
+    {
+      "seq": 155,
+      "at": 77391.017759,
+      "wall": 1794275510.847279,
+      "direction": "rx",
+      "can_id": 0,
+      "payload": "04 7b c8 7f f7 ff 18 17"
+    },
+    {
+      "seq": 156,
+      "at": 77391.01993,
+      "wall": 1794275510.849449,
+      "direction": "tx",
+      "can_id": 2047,
+      "payload": "05 00 33 07 00 00 00 00"
+    },
+    {
+      "seq": 157,
+      "at": 77391.02104,
+      "wall": 1794275510.85056,
+      "direction": "rx",
+      "can_id": 0,
+      "payload": "05 00 33 07 00 00 00 00"
+    },
+    {
+      "seq": 158,
+      "at": 77391.023218,
+      "wall": 1794275510.852737,
+      "direction": "tx",
+      "can_id": 2047,
+      "payload": "05 00 33 08 00 00 00 00"
+    },
+    {
+      "seq": 159,
+      "at": 77391.024336,
+      "wall": 1794275510.853856,
+      "direction": "rx",
+      "can_id": 0,
+      "payload": "05 00 33 08 05 00 00 00"
+    },
+    {
+      "seq": 160,
+      "at": 77391.026482,
+      "wall": 1794275510.856001,
+      "direction": "tx",
+      "can_id": 2047,
+      "payload": "05 00 33 09 00 00 00 00"
+    },
+    {
+      "seq": 161,
+      "at": 77391.027553,
+      "wall": 1794275510.857073,
+      "direction": "rx",
+      "can_id": 0,
+      "payload": "05 00 33 09 00 00 00 00"
+    },
+    {
+      "seq": 162,
+      "at": 77391.029779,
+      "wall": 1794275510.859298,
+      "direction": "tx",
+      "can_id": 2047,
+      "payload": "05 00 33 0a 00 00 00 00"
+    },
+    {
+      "seq": 163,
+      "at": 77391.030845,
+      "wall": 1794275510.860364,
+      "direction": "rx",
+      "can_id": 0,
+      "payload": "05 00 33 0a 01 00 00 00"
+    },
+    {
+      "seq": 164,
+      "at": 77391.033128,
+      "wall": 1794275510.862647,
+      "direction": "tx",
+      "can_id": 2047,
+      "payload": "05 00 33 15 00 00 00 00"
+    },
+    {
+      "seq": 165,
+      "at": 77391.034316,
+      "wall": 1794275510.863836,
+      "direction": "rx",
+      "can_id": 0,
+      "payload": "05 00 33 15 00 00 48 41"
+    },
+    {
+      "seq": 166,
+      "at": 77391.03674,
+      "wall": 1794275510.866259,
+      "direction": "tx",
+      "can_id": 2047,
+      "payload": "05 00 33 16 00 00 00 00"
+    },
+    {
+      "seq": 167,
+      "at": 77391.037808,
+      "wall": 1794275510.867327,
+      "direction": "rx",
+      "can_id": 0,
+      "payload": "05 00 33 16 00 00 20 41"
+    },
+    {
+      "seq": 168,
+      "at": 77391.039987,
+      "wall": 1794275510.869506,
+      "direction": "tx",
+      "can_id": 2047,
+      "payload": "05 00 33 17 00 00 00 00"
+    },
+    {
+      "seq": 169,
+      "at": 77391.041117,
+      "wall": 1794275510.870636,
+      "direction": "rx",
+      "can_id": 0,
+      "payload": "05 00 33 17 00 00 e0 41"
+    },
+    {
+      "seq": 170,
+      "at": 77391.074212,
+      "wall": 1794275510.903731,
+      "direction": "tx",
+      "can_id": 2047,
+      "payload": "05 00 cc 00 00 00 00 00"
+    },
+    {
+      "seq": 171,
+      "at": 77391.075324,
+      "wall": 1794275510.904844,
+      "direction": "rx",
+      "can_id": 0,
+      "payload": "05 99 f2 7f f8 02 19 17"
+    },
+    {
+      "seq": 172,
+      "at": 77391.077692,
+      "wall": 1794275510.907211,
+      "direction": "tx",
+      "can_id": 2047,
+      "payload": "01 00 cc 00 00 00 00 00"
+    },
+    {
+      "seq": 173,
+      "at": 77391.078851,
+      "wall": 1794275510.908371,
+      "direction": "rx",
+      "can_id": 0,
+      "payload": "01 8e b1 7f f8 00 1a 16"
+    },
+    {
+      "seq": 174,
+      "at": 77391.081447,
+      "wall": 1794275510.910966,
+      "direction": "tx",
+      "can_id": 2047,
+      "payload": "02 00 cc 00 00 00 00 00"
+    },
+    {
+      "seq": 175,
+      "at": 77391.082527,
+      "wall": 1794275510.912047,
+      "direction": "rx",
+      "can_id": 0,
+      "payload": "02 6d 4b 80 07 fe 19 15"
+    },
+    {
+      "seq": 176,
+      "at": 77391.084668,
+      "wall": 1794275510.914187,
+      "direction": "tx",
+      "can_id": 2047,
+      "payload": "03 00 cc 00 00 00 00 00"
+    },
+    {
+      "seq": 177,
+      "at": 77391.085789,
+      "wall": 1794275510.915308,
+      "direction": "rx",
+      "can_id": 0,
+      "payload": "03 65 f7 7f f8 00 18 16"
+    },
+    {
+      "seq": 178,
+      "at": 77391.087958,
+      "wall": 1794275510.917477,
+      "direction": "tx",
+      "can_id": 2047,
+      "payload": "04 00 cc 00 00 00 00 00"
+    },
+    {
+      "seq": 179,
+      "at": 77391.089028,
+      "wall": 1794275510.918548,
+      "direction": "rx",
+      "can_id": 0,
+      "payload": "04 7b c8 7f f7 ff 18 17"
+    },
+    {
+      "seq": 180,
+      "at": 77391.091252,
+      "wall": 1794275510.920771,
+      "direction": "tx",
+      "can_id": 2047,
+      "payload": "05 00 33 07 00 00 00 00"
+    },
+    {
+      "seq": 181,
+      "at": 77391.092341,
+      "wall": 1794275510.92186,
+      "direction": "rx",
+      "can_id": 0,
+      "payload": "05 00 33 07 00 00 00 00"
+    },
+    {
+      "seq": 182,
+      "at": 77391.094448,
+      "wall": 1794275510.923967,
+      "direction": "tx",
+      "can_id": 2047,
+      "payload": "05 00 33 08 00 00 00 00"
+    },
+    {
+      "seq": 183,
+      "at": 77391.095577,
+      "wall": 1794275510.925097,
+      "direction": "rx",
+      "can_id": 0,
+      "payload": "05 00 33 08 05 00 00 00"
+    },
+    {
+      "seq": 184,
+      "at": 77391.097763,
+      "wall": 1794275510.927281,
+      "direction": "tx",
+      "can_id": 2047,
+      "payload": "05 00 33 09 00 00 00 00"
+    },
+    {
+      "seq": 185,
+      "at": 77391.098833,
+      "wall": 1794275510.928353,
+      "direction": "rx",
+      "can_id": 0,
+      "payload": "05 00 33 09 00 00 00 00"
+    },
+    {
+      "seq": 186,
+      "at": 77391.101044,
+      "wall": 1794275510.930563,
+      "direction": "tx",
+      "can_id": 2047,
+      "payload": "05 00 33 0a 00 00 00 00"
+    },
+    {
+      "seq": 187,
+      "at": 77391.102114,
+      "wall": 1794275510.931633,
+      "direction": "rx",
+      "can_id": 0,
+      "payload": "05 00 33 0a 01 00 00 00"
+    },
+    {
+      "seq": 188,
+      "at": 77391.104265,
+      "wall": 1794275510.933784,
+      "direction": "tx",
+      "can_id": 2047,
+      "payload": "05 00 33 15 00 00 00 00"
+    },
+    {
+      "seq": 189,
+      "at": 77391.105437,
+      "wall": 1794275510.934957,
+      "direction": "rx",
+      "can_id": 0,
+      "payload": "05 00 33 15 00 00 48 41"
+    },
+    {
+      "seq": 190,
+      "at": 77391.107668,
+      "wall": 1794275510.937186,
+      "direction": "tx",
+      "can_id": 2047,
+      "payload": "05 00 33 16 00 00 00 00"
+    },
+    {
+      "seq": 191,
+      "at": 77391.108865,
+      "wall": 1794275510.938385,
+      "direction": "rx",
+      "can_id": 0,
+      "payload": "05 00 33 16 00 00 20 41"
+    },
+    {
+      "seq": 192,
+      "at": 77391.111032,
+      "wall": 1794275510.940551,
+      "direction": "tx",
+      "can_id": 2047,
+      "payload": "05 00 33 17 00 00 00 00"
+    },
+    {
+      "seq": 193,
+      "at": 77391.113288,
+      "wall": 1794275510.942807,
+      "direction": "rx",
+      "can_id": 0,
+      "payload": "05 00 33 17 00 00 e0 41"
+    },
+    {
+      "seq": 194,
+      "at": 77391.1454,
+      "wall": 1794275510.974919,
+      "direction": "tx",
+      "can_id": 2047,
+      "payload": "05 00 cc 00 00 00 00 00"
+    },
+    {
+      "seq": 195,
+      "at": 77391.146481,
+      "wall": 1794275510.976001,
+      "direction": "rx",
+      "can_id": 0,
+      "payload": "05 99 f2 7f f8 01 19 17"
+    },
+    {
+      "seq": 196,
+      "at": 77391.148775,
+      "wall": 1794275510.978293,
+      "direction": "tx",
+      "can_id": 2047,
+      "payload": "01 00 cc 00 00 00 00 00"
+    },
+    {
+      "seq": 197,
+      "at": 77391.149867,
+      "wall": 1794275510.979387,
+      "direction": "rx",
+      "can_id": 0,
+      "payload": "01 8e b1 7f f7 ff 1a 16"
+    },
+    {
+      "seq": 198,
+      "at": 77391.151999,
+      "wall": 1794275510.981539,
+      "direction": "tx",
+      "can_id": 2047,
+      "payload": "02 00 cc 00 00 00 00 00"
+    },
+    {
+      "seq": 199,
+      "at": 77391.153094,
+      "wall": 1794275510.982614,
+      "direction": "rx",
+      "can_id": 0,
+      "payload": "02 6d 4b 80 07 ff 19 15"
+    },
+    {
+      "seq": 200,
+      "at": 77391.155305,
+      "wall": 1794275510.984823,
+      "direction": "tx",
+      "can_id": 2047,
+      "payload": "03 00 cc 00 00 00 00 00"
+    },
+    {
+      "seq": 201,
+      "at": 77391.156398,
+      "wall": 1794275510.985917,
+      "direction": "rx",
+      "can_id": 0,
+      "payload": "03 65 f7 7f f7 ff 18 16"
+    },
+    {
+      "seq": 202,
+      "at": 77391.158585,
+      "wall": 1794275510.988103,
+      "direction": "tx",
+      "can_id": 2047,
+      "payload": "04 00 cc 00 00 00 00 00"
+    },
+    {
+      "seq": 203,
+      "at": 77391.159657,
+      "wall": 1794275510.989177,
+      "direction": "rx",
+      "can_id": 0,
+      "payload": "04 7b c8 7f f7 ff 18 17"
+    },
+    {
+      "seq": 204,
+      "at": 77391.161791,
+      "wall": 1794275510.99131,
+      "direction": "tx",
+      "can_id": 2047,
+      "payload": "05 00 33 07 00 00 00 00"
+    },
+    {
+      "seq": 205,
+      "at": 77391.162894,
+      "wall": 1794275510.992414,
+      "direction": "rx",
+      "can_id": 0,
+      "payload": "05 00 33 07 00 00 00 00"
+    },
+    {
+      "seq": 206,
+      "at": 77391.165142,
+      "wall": 1794275510.994661,
+      "direction": "tx",
+      "can_id": 2047,
+      "payload": "05 00 33 08 00 00 00 00"
+    },
+    {
+      "seq": 207,
+      "at": 77391.166218,
+      "wall": 1794275510.995737,
+      "direction": "rx",
+      "can_id": 0,
+      "payload": "05 00 33 08 05 00 00 00"
+    },
+    {
+      "seq": 208,
+      "at": 77391.168494,
+      "wall": 1794275510.998013,
+      "direction": "tx",
+      "can_id": 2047,
+      "payload": "05 00 33 09 00 00 00 00"
+    },
+    {
+      "seq": 209,
+      "at": 77391.169598,
+      "wall": 1794275510.999118,
+      "direction": "rx",
+      "can_id": 0,
+      "payload": "05 00 33 09 00 00 00 00"
+    },
+    {
+      "seq": 210,
+      "at": 77391.171978,
+      "wall": 1794275511.001497,
+      "direction": "tx",
+      "can_id": 2047,
+      "payload": "05 00 33 0a 00 00 00 00"
+    },
+    {
+      "seq": 211,
+      "at": 77391.173066,
+      "wall": 1794275511.002586,
+      "direction": "rx",
+      "can_id": 0,
+      "payload": "05 00 33 0a 01 00 00 00"
+    },
+    {
+      "seq": 212,
+      "at": 77391.175243,
+      "wall": 1794275511.004762,
+      "direction": "tx",
+      "can_id": 2047,
+      "payload": "05 00 33 15 00 00 00 00"
+    },
+    {
+      "seq": 213,
+      "at": 77391.177408,
+      "wall": 1794275511.006929,
+      "direction": "rx",
+      "can_id": 0,
+      "payload": "05 00 33 15 00 00 48 41"
+    },
+    {
+      "seq": 214,
+      "at": 77391.178504,
+      "wall": 1794275511.008023,
+      "direction": "tx",
+      "can_id": 2047,
+      "payload": "05 00 33 16 00 00 00 00"
+    },
+    {
+      "seq": 215,
+      "at": 77391.179611,
+      "wall": 1794275511.009131,
+      "direction": "rx",
+      "can_id": 0,
+      "payload": "05 00 33 16 00 00 20 41"
+    },
+    {
+      "seq": 216,
+      "at": 77391.181778,
+      "wall": 1794275511.011297,
+      "direction": "tx",
+      "can_id": 2047,
+      "payload": "05 00 33 17 00 00 00 00"
+    },
+    {
+      "seq": 217,
+      "at": 77391.182852,
+      "wall": 1794275511.012372,
+      "direction": "rx",
+      "can_id": 0,
+      "payload": "05 00 33 17 00 00 e0 41"
+    },
+    {
+      "seq": 218,
+      "at": 77391.2156,
+      "wall": 1794275511.045119,
+      "direction": "tx",
+      "can_id": 2047,
+      "payload": "05 00 cc 00 00 00 00 00"
+    },
+    {
+      "seq": 219,
+      "at": 77391.216709,
+      "wall": 1794275511.046228,
+      "direction": "rx",
+      "can_id": 0,
+      "payload": "05 99 f2 7f f8 01 19 17"
+    },
+    {
+      "seq": 220,
+      "at": 77391.218998,
+      "wall": 1794275511.048517,
+      "direction": "tx",
+      "can_id": 2047,
+      "payload": "01 00 cc 00 00 00 00 00"
+    },
+    {
+      "seq": 221,
+      "at": 77391.220041,
+      "wall": 1794275511.049561,
+      "direction": "rx",
+      "can_id": 0,
+      "payload": "01 8e b1 80 08 00 1a 16"
+    },
+    {
+      "seq": 222,
+      "at": 77391.222239,
+      "wall": 1794275511.051758,
+      "direction": "tx",
+      "can_id": 2047,
+      "payload": "02 00 cc 00 00 00 00 00"
+    },
+    {
+      "seq": 223,
+      "at": 77391.223314,
+      "wall": 1794275511.052834,
+      "direction": "rx",
+      "can_id": 0,
+      "payload": "02 6d 4b 7f e7 fe 19 15"
+    },
+    {
+      "seq": 224,
+      "at": 77391.225526,
+      "wall": 1794275511.055044,
+      "direction": "tx",
+      "can_id": 2047,
+      "payload": "03 00 cc 00 00 00 00 00"
+    },
+    {
+      "seq": 225,
+      "at": 77391.226642,
+      "wall": 1794275511.056162,
+      "direction": "rx",
+      "can_id": 0,
+      "payload": "03 65 f7 7f f7 ff 18 16"
+    },
+    {
+      "seq": 226,
+      "at": 77391.228918,
+      "wall": 1794275511.058437,
+      "direction": "tx",
+      "can_id": 2047,
+      "payload": "04 00 cc 00 00 00 00 00"
+    },
+    {
+      "seq": 227,
+      "at": 77391.229982,
+      "wall": 1794275511.059501,
+      "direction": "rx",
+      "can_id": 0,
+      "payload": "04 7b c8 7f f7 ff 18 17"
+    },
+    {
+      "seq": 228,
+      "at": 77391.232185,
+      "wall": 1794275511.061703,
+      "direction": "tx",
+      "can_id": 2047,
+      "payload": "05 00 33 07 00 00 00 00"
+    },
+    {
+      "seq": 229,
+      "at": 77391.233243,
+      "wall": 1794275511.062762,
+      "direction": "rx",
+      "can_id": 0,
+      "payload": "05 00 33 07 00 00 00 00"
+    },
+    {
+      "seq": 230,
+      "at": 77391.235389,
+      "wall": 1794275511.064908,
+      "direction": "tx",
+      "can_id": 2047,
+      "payload": "05 00 33 08 00 00 00 00"
+    },
+    {
+      "seq": 231,
+      "at": 77391.236509,
+      "wall": 1794275511.066029,
+      "direction": "rx",
+      "can_id": 0,
+      "payload": "05 00 33 08 05 00 00 00"
+    },
+    {
+      "seq": 232,
+      "at": 77391.238672,
+      "wall": 1794275511.06819,
+      "direction": "tx",
+      "can_id": 2047,
+      "payload": "05 00 33 09 00 00 00 00"
+    },
+    {
+      "seq": 233,
+      "at": 77391.239786,
+      "wall": 1794275511.069305,
+      "direction": "rx",
+      "can_id": 0,
+      "payload": "05 00 33 09 00 00 00 00"
+    },
+    {
+      "seq": 234,
+      "at": 77391.24199,
+      "wall": 1794275511.071509,
+      "direction": "tx",
+      "can_id": 2047,
+      "payload": "05 00 33 0a 00 00 00 00"
+    },
+    {
+      "seq": 235,
+      "at": 77391.243059,
+      "wall": 1794275511.072579,
+      "direction": "rx",
+      "can_id": 0,
+      "payload": "05 00 33 0a 01 00 00 00"
+    },
+    {
+      "seq": 236,
+      "at": 77391.245249,
+      "wall": 1794275511.074767,
+      "direction": "tx",
+      "can_id": 2047,
+      "payload": "05 00 33 15 00 00 00 00"
+    },
+    {
+      "seq": 237,
+      "at": 77391.246314,
+      "wall": 1794275511.075833,
+      "direction": "rx",
+      "can_id": 0,
+      "payload": "05 00 33 15 00 00 48 41"
+    },
+    {
+      "seq": 238,
+      "at": 77391.248547,
+      "wall": 1794275511.078065,
+      "direction": "tx",
+      "can_id": 2047,
+      "payload": "05 00 33 16 00 00 00 00"
+    },
+    {
+      "seq": 239,
+      "at": 77391.249622,
+      "wall": 1794275511.079142,
+      "direction": "rx",
+      "can_id": 0,
+      "payload": "05 00 33 16 00 00 20 41"
+    },
+    {
+      "seq": 240,
+      "at": 77391.2518,
+      "wall": 1794275511.081319,
+      "direction": "tx",
+      "can_id": 2047,
+      "payload": "05 00 33 17 00 00 00 00"
+    },
+    {
+      "seq": 241,
+      "at": 77391.252878,
+      "wall": 1794275511.082398,
+      "direction": "rx",
+      "can_id": 0,
+      "payload": "05 00 33 17 00 00 e0 41"
+    },
+    {
+      "seq": 242,
+      "at": 77391.285877,
+      "wall": 1794275511.115396,
+      "direction": "tx",
+      "can_id": 2047,
+      "payload": "05 00 cc 00 00 00 00 00"
+    },
+    {
+      "seq": 243,
+      "at": 77391.286972,
+      "wall": 1794275511.116493,
+      "direction": "rx",
+      "can_id": 0,
+      "payload": "05 99 f2 7f f8 02 19 17"
+    },
+    {
+      "seq": 244,
+      "at": 77391.289191,
+      "wall": 1794275511.11871,
+      "direction": "tx",
+      "can_id": 2047,
+      "payload": "01 00 cc 00 00 00 00 00"
+    },
+    {
+      "seq": 245,
+      "at": 77391.290264,
+      "wall": 1794275511.119784,
+      "direction": "rx",
+      "can_id": 0,
+      "payload": "01 8e b1 7f f7 ff 1a 16"
+    },
+    {
+      "seq": 246,
+      "at": 77391.292412,
+      "wall": 1794275511.121931,
+      "direction": "tx",
+      "can_id": 2047,
+      "payload": "02 00 cc 00 00 00 00 00"
+    },
+    {
+      "seq": 247,
+      "at": 77391.293482,
+      "wall": 1794275511.123001,
+      "direction": "rx",
+      "can_id": 0,
+      "payload": "02 6d 4b 7f f7 fe 19 15"
+    },
+    {
+      "seq": 248,
+      "at": 77391.295752,
+      "wall": 1794275511.125271,
+      "direction": "tx",
+      "can_id": 2047,
+      "payload": "03 00 cc 00 00 00 00 00"
+    },
+    {
+      "seq": 249,
+      "at": 77391.296863,
+      "wall": 1794275511.126383,
+      "direction": "rx",
+      "can_id": 0,
+      "payload": "03 65 f7 7f f7 ff 18 16"
+    },
+    {
+      "seq": 250,
+      "at": 77391.299108,
+      "wall": 1794275511.128627,
+      "direction": "tx",
+      "can_id": 2047,
+      "payload": "04 00 cc 00 00 00 00 00"
+    },
+    {
+      "seq": 251,
+      "at": 77391.300215,
+      "wall": 1794275511.129735,
+      "direction": "rx",
+      "can_id": 0,
+      "payload": "04 7b c8 80 07 fe 18 17"
+    },
+    {
+      "seq": 252,
+      "at": 77391.302348,
+      "wall": 1794275511.131867,
+      "direction": "tx",
+      "can_id": 2047,
+      "payload": "05 00 33 07 00 00 00 00"
+    },
+    {
+      "seq": 253,
+      "at": 77391.303495,
+      "wall": 1794275511.133016,
+      "direction": "rx",
+      "can_id": 0,
+      "payload": "05 00 33 07 00 00 00 00"
+    },
+    {
+      "seq": 254,
+      "at": 77391.305957,
+      "wall": 1794275511.135476,
+      "direction": "tx",
+      "can_id": 2047,
+      "payload": "05 00 33 08 00 00 00 00"
+    },
+    {
+      "seq": 255,
+      "at": 77391.307037,
+      "wall": 1794275511.136556,
+      "direction": "rx",
+      "can_id": 0,
+      "payload": "05 00 33 08 05 00 00 00"
+    },
+    {
+      "seq": 256,
+      "at": 77391.309205,
+      "wall": 1794275511.138724,
+      "direction": "tx",
+      "can_id": 2047,
+      "payload": "05 00 33 09 00 00 00 00"
+    },
+    {
+      "seq": 257,
+      "at": 77391.310282,
+      "wall": 1794275511.139802,
+      "direction": "rx",
+      "can_id": 0,
+      "payload": "05 00 33 09 00 00 00 00"
+    },
+    {
+      "seq": 258,
+      "at": 77391.312482,
+      "wall": 1794275511.142001,
+      "direction": "tx",
+      "can_id": 2047,
+      "payload": "05 00 33 0a 00 00 00 00"
+    },
+    {
+      "seq": 259,
+      "at": 77391.313584,
+      "wall": 1794275511.143103,
+      "direction": "rx",
+      "can_id": 0,
+      "payload": "05 00 33 0a 01 00 00 00"
+    },
+    {
+      "seq": 260,
+      "at": 77391.315978,
+      "wall": 1794275511.145497,
+      "direction": "tx",
+      "can_id": 2047,
+      "payload": "05 00 33 15 00 00 00 00"
+    },
+    {
+      "seq": 261,
+      "at": 77391.317095,
+      "wall": 1794275511.146615,
+      "direction": "rx",
+      "can_id": 0,
+      "payload": "05 00 33 15 00 00 48 41"
+    },
+    {
+      "seq": 262,
+      "at": 77391.319469,
+      "wall": 1794275511.148987,
+      "direction": "tx",
+      "can_id": 2047,
+      "payload": "05 00 33 16 00 00 00 00"
+    },
+    {
+      "seq": 263,
+      "at": 77391.320841,
+      "wall": 1794275511.150361,
+      "direction": "rx",
+      "can_id": 0,
+      "payload": "05 00 33 16 00 00 20 41"
+    },
+    {
+      "seq": 264,
+      "at": 77391.323107,
+      "wall": 1794275511.152625,
+      "direction": "tx",
+      "can_id": 2047,
+      "payload": "05 00 33 17 00 00 00 00"
+    },
+    {
+      "seq": 265,
+      "at": 77391.324198,
+      "wall": 1794275511.153718,
+      "direction": "rx",
+      "can_id": 0,
+      "payload": "05 00 33 17 00 00 e0 41"
+    },
+    {
+      "seq": 266,
+      "at": 77391.357505,
+      "wall": 1794275511.187024,
+      "direction": "tx",
+      "can_id": 2047,
+      "payload": "05 00 cc 00 00 00 00 00"
+    },
+    {
+      "seq": 267,
+      "at": 77391.358605,
+      "wall": 1794275511.188125,
+      "direction": "rx",
+      "can_id": 0,
+      "payload": "05 99 f2 7f f8 02 19 17"
+    },
+    {
+      "seq": 268,
+      "at": 77391.360908,
+      "wall": 1794275511.190427,
+      "direction": "tx",
+      "can_id": 2047,
+      "payload": "01 00 cc 00 00 00 00 00"
+    },
+    {
+      "seq": 269,
+      "at": 77391.362008,
+      "wall": 1794275511.191528,
+      "direction": "rx",
+      "can_id": 0,
+      "payload": "01 8e b1 80 07 ff 1a 16"
+    },
+    {
+      "seq": 270,
+      "at": 77391.364189,
+      "wall": 1794275511.193708,
+      "direction": "tx",
+      "can_id": 2047,
+      "payload": "02 00 cc 00 00 00 00 00"
+    },
+    {
+      "seq": 271,
+      "at": 77391.365379,
+      "wall": 1794275511.194901,
+      "direction": "rx",
+      "can_id": 0,
+      "payload": "02 6d 4b 7f f7 fe 19 15"
+    },
+    {
+      "seq": 272,
+      "at": 77391.367493,
+      "wall": 1794275511.197012,
+      "direction": "tx",
+      "can_id": 2047,
+      "payload": "03 00 cc 00 00 00 00 00"
+    },
+    {
+      "seq": 273,
+      "at": 77391.368569,
+      "wall": 1794275511.198088,
+      "direction": "rx",
+      "can_id": 0,
+      "payload": "03 65 f7 7f f7 ff 18 16"
+    },
+    {
+      "seq": 274,
+      "at": 77391.371023,
+      "wall": 1794275511.200542,
+      "direction": "tx",
+      "can_id": 2047,
+      "payload": "04 00 cc 00 00 00 00 00"
+    },
+    {
+      "seq": 275,
+      "at": 77391.374228,
+      "wall": 1794275511.203746,
+      "direction": "tx",
+      "can_id": 2047,
+      "payload": "05 00 33 07 00 00 00 00"
+    },
+    {
+      "seq": 276,
+      "at": 77391.375325,
+      "wall": 1794275511.204844,
+      "direction": "rx",
+      "can_id": 0,
+      "payload": "04 7b c8 7f f7 ff 18 17"
+    },
+    {
+      "seq": 277,
+      "at": 77391.376423,
+      "wall": 1794275511.205943,
+      "direction": "rx",
+      "can_id": 0,
+      "payload": "05 00 33 07 00 00 00 00"
+    },
+    {
+      "seq": 278,
+      "at": 77391.377525,
+      "wall": 1794275511.207044,
+      "direction": "tx",
+      "can_id": 2047,
+      "payload": "05 00 33 08 00 00 00 00"
+    },
+    {
+      "seq": 279,
+      "at": 77391.378599,
+      "wall": 1794275511.208128,
+      "direction": "rx",
+      "can_id": 0,
+      "payload": "05 00 33 08 05 00 00 00"
+    },
+    {
+      "seq": 280,
+      "at": 77391.380733,
+      "wall": 1794275511.210252,
+      "direction": "tx",
+      "can_id": 2047,
+      "payload": "05 00 33 09 00 00 00 00"
+    },
+    {
+      "seq": 281,
+      "at": 77391.381803,
+      "wall": 1794275511.211322,
+      "direction": "rx",
+      "can_id": 0,
+      "payload": "05 00 33 09 00 00 00 00"
+    },
+    {
+      "seq": 282,
+      "at": 77391.384076,
+      "wall": 1794275511.213595,
+      "direction": "tx",
+      "can_id": 2047,
+      "payload": "05 00 33 0a 00 00 00 00"
+    },
+    {
+      "seq": 283,
+      "at": 77391.385154,
+      "wall": 1794275511.214674,
+      "direction": "rx",
+      "can_id": 0,
+      "payload": "05 00 33 0a 01 00 00 00"
+    },
+    {
+      "seq": 284,
+      "at": 77391.387355,
+      "wall": 1794275511.216874,
+      "direction": "tx",
+      "can_id": 2047,
+      "payload": "05 00 33 15 00 00 00 00"
+    },
+    {
+      "seq": 285,
+      "at": 77391.388448,
+      "wall": 1794275511.217967,
+      "direction": "rx",
+      "can_id": 0,
+      "payload": "05 00 33 15 00 00 48 41"
+    },
+    {
+      "seq": 286,
+      "at": 77391.390582,
+      "wall": 1794275511.220101,
+      "direction": "tx",
+      "can_id": 2047,
+      "payload": "05 00 33 16 00 00 00 00"
+    },
+    {
+      "seq": 287,
+      "at": 77391.39169,
+      "wall": 1794275511.22121,
+      "direction": "rx",
+      "can_id": 0,
+      "payload": "05 00 33 16 00 00 20 41"
+    },
+    {
+      "seq": 288,
+      "at": 77391.393889,
+      "wall": 1794275511.223408,
+      "direction": "tx",
+      "can_id": 2047,
+      "payload": "05 00 33 17 00 00 00 00"
+    },
+    {
+      "seq": 289,
+      "at": 77391.394997,
+      "wall": 1794275511.224516,
+      "direction": "rx",
+      "can_id": 0,
+      "payload": "05 00 33 17 00 00 e0 41"
+    },
+    {
+      "seq": 290,
+      "at": 77391.427868,
+      "wall": 1794275511.257387,
+      "direction": "tx",
+      "can_id": 2047,
+      "payload": "05 00 cc 00 00 00 00 00"
+    },
+    {
+      "seq": 291,
+      "at": 77391.428956,
+      "wall": 1794275511.258476,
+      "direction": "rx",
+      "can_id": 0,
+      "payload": "05 99 f2 7f f8 02 19 17"
+    },
+    {
+      "seq": 292,
+      "at": 77391.43111,
+      "wall": 1794275511.260629,
+      "direction": "tx",
+      "can_id": 2047,
+      "payload": "01 00 cc 00 00 00 00 00"
+    },
+    {
+      "seq": 293,
+      "at": 77391.432222,
+      "wall": 1794275511.261741,
+      "direction": "rx",
+      "can_id": 0,
+      "payload": "01 8e b1 7f e7 ff 1a 16"
+    },
+    {
+      "seq": 294,
+      "at": 77391.434377,
+      "wall": 1794275511.263895,
+      "direction": "tx",
+      "can_id": 2047,
+      "payload": "02 00 cc 00 00 00 00 00"
+    },
+    {
+      "seq": 295,
+      "at": 77391.43545,
+      "wall": 1794275511.26497,
+      "direction": "rx",
+      "can_id": 0,
+      "payload": "02 6d 4b 7f f7 ff 19 15"
+    },
+    {
+      "seq": 296,
+      "at": 77391.437637,
+      "wall": 1794275511.267156,
+      "direction": "tx",
+      "can_id": 2047,
+      "payload": "03 00 cc 00 00 00 00 00"
+    },
+    {
+      "seq": 297,
+      "at": 77391.438716,
+      "wall": 1794275511.268236,
+      "direction": "rx",
+      "can_id": 0,
+      "payload": "03 65 f7 7f f7 ff 18 16"
+    },
+    {
+      "seq": 298,
+      "at": 77391.440838,
+      "wall": 1794275511.270357,
+      "direction": "tx",
+      "can_id": 2047,
+      "payload": "04 00 cc 00 00 00 00 00"
+    },
+    {
+      "seq": 299,
+      "at": 77391.441914,
+      "wall": 1794275511.271434,
+      "direction": "rx",
+      "can_id": 0,
+      "payload": "04 7b c8 7f f7 fe 18 17"
+    },
+    {
+      "seq": 300,
+      "at": 77391.444067,
+      "wall": 1794275511.273586,
+      "direction": "tx",
+      "can_id": 2047,
+      "payload": "05 00 33 07 00 00 00 00"
+    },
+    {
+      "seq": 301,
+      "at": 77391.445145,
+      "wall": 1794275511.274664,
+      "direction": "rx",
+      "can_id": 0,
+      "payload": "05 00 33 07 00 00 00 00"
+    },
+    {
+      "seq": 302,
+      "at": 77391.447625,
+      "wall": 1794275511.277143,
+      "direction": "tx",
+      "can_id": 2047,
+      "payload": "05 00 33 08 00 00 00 00"
+    },
+    {
+      "seq": 303,
+      "at": 77391.448712,
+      "wall": 1794275511.278232,
+      "direction": "rx",
+      "can_id": 0,
+      "payload": "05 00 33 08 05 00 00 00"
+    },
+    {
+      "seq": 304,
+      "at": 77391.450858,
+      "wall": 1794275511.280377,
+      "direction": "tx",
+      "can_id": 2047,
+      "payload": "05 00 33 09 00 00 00 00"
+    },
+    {
+      "seq": 305,
+      "at": 77391.451956,
+      "wall": 1794275511.281476,
+      "direction": "rx",
+      "can_id": 0,
+      "payload": "05 00 33 09 00 00 00 00"
+    },
+    {
+      "seq": 306,
+      "at": 77391.454104,
+      "wall": 1794275511.283623,
+      "direction": "tx",
+      "can_id": 2047,
+      "payload": "05 00 33 0a 00 00 00 00"
+    },
+    {
+      "seq": 307,
+      "at": 77391.455174,
+      "wall": 1794275511.284693,
+      "direction": "rx",
+      "can_id": 0,
+      "payload": "05 00 33 0a 01 00 00 00"
+    },
+    {
+      "seq": 308,
+      "at": 77391.457315,
+      "wall": 1794275511.286834,
+      "direction": "tx",
+      "can_id": 2047,
+      "payload": "05 00 33 15 00 00 00 00"
+    },
+    {
+      "seq": 309,
+      "at": 77391.458382,
+      "wall": 1794275511.287901,
+      "direction": "rx",
+      "can_id": 0,
+      "payload": "05 00 33 15 00 00 48 41"
+    },
+    {
+      "seq": 310,
+      "at": 77391.460515,
+      "wall": 1794275511.290033,
+      "direction": "tx",
+      "can_id": 2047,
+      "payload": "05 00 33 16 00 00 00 00"
+    },
+    {
+      "seq": 311,
+      "at": 77391.4616,
+      "wall": 1794275511.29112,
+      "direction": "rx",
+      "can_id": 0,
+      "payload": "05 00 33 16 00 00 20 41"
+    },
+    {
+      "seq": 312,
+      "at": 77391.463734,
+      "wall": 1794275511.293253,
+      "direction": "tx",
+      "can_id": 2047,
+      "payload": "05 00 33 17 00 00 00 00"
+    },
+    {
+      "seq": 313,
+      "at": 77391.464858,
+      "wall": 1794275511.294377,
+      "direction": "rx",
+      "can_id": 0,
+      "payload": "05 00 33 17 00 00 e0 41"
+    },
+    {
+      "seq": 314,
+      "at": 77391.497298,
+      "wall": 1794275511.326817,
+      "direction": "tx",
+      "can_id": 2047,
+      "payload": "05 00 cc 00 00 00 00 00"
+    },
+    {
+      "seq": 315,
+      "at": 77391.498374,
+      "wall": 1794275511.327894,
+      "direction": "rx",
+      "can_id": 0,
+      "payload": "05 99 f2 7f f8 02 19 17"
+    },
+    {
+      "seq": 316,
+      "at": 77391.500509,
+      "wall": 1794275511.330027,
+      "direction": "tx",
+      "can_id": 2047,
+      "payload": "01 00 cc 00 00 00 00 00"
+    },
+    {
+      "seq": 317,
+      "at": 77391.501587,
+      "wall": 1794275511.331106,
+      "direction": "rx",
+      "can_id": 0,
+      "payload": "01 8e b1 7f f8 00 1a 16"
+    },
+    {
+      "seq": 318,
+      "at": 77391.503707,
+      "wall": 1794275511.333226,
+      "direction": "tx",
+      "can_id": 2047,
+      "payload": "02 00 cc 00 00 00 00 00"
+    },
+    {
+      "seq": 319,
+      "at": 77391.504793,
+      "wall": 1794275511.334312,
+      "direction": "rx",
+      "can_id": 0,
+      "payload": "02 6d 4b 7f f7 fe 19 15"
+    },
+    {
+      "seq": 320,
+      "at": 77391.506908,
+      "wall": 1794275511.336426,
+      "direction": "tx",
+      "can_id": 2047,
+      "payload": "03 00 cc 00 00 00 00 00"
+    },
+    {
+      "seq": 321,
+      "at": 77391.509078,
+      "wall": 1794275511.338598,
+      "direction": "rx",
+      "can_id": 0,
+      "payload": "03 65 f7 7f f7 ff 18 16"
+    },
+    {
+      "seq": 322,
+      "at": 77391.510193,
+      "wall": 1794275511.339711,
+      "direction": "tx",
+      "can_id": 2047,
+      "payload": "04 00 cc 00 00 00 00 00"
+    },
+    {
+      "seq": 323,
+      "at": 77391.511277,
+      "wall": 1794275511.340796,
+      "direction": "rx",
+      "can_id": 0,
+      "payload": "04 7b c8 7f f7 ff 18 17"
+    },
+    {
+      "seq": 324,
+      "at": 77391.513439,
+      "wall": 1794275511.342957,
+      "direction": "tx",
+      "can_id": 2047,
+      "payload": "05 00 33 07 00 00 00 00"
+    },
+    {
+      "seq": 325,
+      "at": 77391.514511,
+      "wall": 1794275511.344031,
+      "direction": "rx",
+      "can_id": 0,
+      "payload": "05 00 33 07 00 00 00 00"
+    },
+    {
+      "seq": 326,
+      "at": 77391.516676,
+      "wall": 1794275511.346195,
+      "direction": "tx",
+      "can_id": 2047,
+      "payload": "05 00 33 08 00 00 00 00"
+    },
+    {
+      "seq": 327,
+      "at": 77391.517742,
+      "wall": 1794275511.347261,
+      "direction": "rx",
+      "can_id": 0,
+      "payload": "05 00 33 08 05 00 00 00"
+    },
+    {
+      "seq": 328,
+      "at": 77391.519847,
+      "wall": 1794275511.349365,
+      "direction": "tx",
+      "can_id": 2047,
+      "payload": "05 00 33 09 00 00 00 00"
+    },
+    {
+      "seq": 329,
+      "at": 77391.520931,
+      "wall": 1794275511.350451,
+      "direction": "rx",
+      "can_id": 0,
+      "payload": "05 00 33 09 00 00 00 00"
+    },
+    {
+      "seq": 330,
+      "at": 77391.523091,
+      "wall": 1794275511.35261,
+      "direction": "tx",
+      "can_id": 2047,
+      "payload": "05 00 33 0a 00 00 00 00"
+    },
+    {
+      "seq": 331,
+      "at": 77391.525236,
+      "wall": 1794275511.354756,
+      "direction": "rx",
+      "can_id": 0,
+      "payload": "05 00 33 0a 01 00 00 00"
+    },
+    {
+      "seq": 332,
+      "at": 77391.526321,
+      "wall": 1794275511.35584,
+      "direction": "tx",
+      "can_id": 2047,
+      "payload": "05 00 33 15 00 00 00 00"
+    },
+    {
+      "seq": 333,
+      "at": 77391.527388,
+      "wall": 1794275511.356908,
+      "direction": "rx",
+      "can_id": 0,
+      "payload": "05 00 33 15 00 00 48 41"
+    },
+    {
+      "seq": 334,
+      "at": 77391.529528,
+      "wall": 1794275511.359047,
+      "direction": "tx",
+      "can_id": 2047,
+      "payload": "05 00 33 16 00 00 00 00"
+    },
+    {
+      "seq": 335,
+      "at": 77391.530593,
+      "wall": 1794275511.360112,
+      "direction": "rx",
+      "can_id": 0,
+      "payload": "05 00 33 16 00 00 20 41"
+    },
+    {
+      "seq": 336,
+      "at": 77391.53272,
+      "wall": 1794275511.362239,
+      "direction": "tx",
+      "can_id": 2047,
+      "payload": "05 00 33 17 00 00 00 00"
+    },
+    {
+      "seq": 337,
+      "at": 77391.533799,
+      "wall": 1794275511.363319,
+      "direction": "rx",
+      "can_id": 0,
+      "payload": "05 00 33 17 00 00 e0 41"
+    },
+    {
+      "seq": 338,
+      "at": 77391.567057,
+      "wall": 1794275511.396576,
+      "direction": "tx",
+      "can_id": 2047,
+      "payload": "05 00 cc 00 00 00 00 00"
+    },
+    {
+      "seq": 339,
+      "at": 77391.569255,
+      "wall": 1794275511.398776,
+      "direction": "rx",
+      "can_id": 0,
+      "payload": "05 99 f2 7f f8 01 19 17"
+    },
+    {
+      "seq": 340,
+      "at": 77391.570373,
+      "wall": 1794275511.399891,
+      "direction": "tx",
+      "can_id": 2047,
+      "payload": "01 00 cc 00 00 00 00 00"
+    },
+    {
+      "seq": 341,
+      "at": 77391.571444,
+      "wall": 1794275511.400964,
+      "direction": "rx",
+      "can_id": 0,
+      "payload": "01 8e b1 7f f7 ff 1a 16"
+    },
+    {
+      "seq": 342,
+      "at": 77391.573656,
+      "wall": 1794275511.403175,
+      "direction": "tx",
+      "can_id": 2047,
+      "payload": "02 00 cc 00 00 00 00 00"
+    },
+    {
+      "seq": 343,
+      "at": 77391.574769,
+      "wall": 1794275511.404289,
+      "direction": "rx",
+      "can_id": 0,
+      "payload": "02 6d 4b 7f f7 ff 19 15"
+    },
+    {
+      "seq": 344,
+      "at": 77391.576893,
+      "wall": 1794275511.406411,
+      "direction": "tx",
+      "can_id": 2047,
+      "payload": "03 00 cc 00 00 00 00 00"
+    },
+    {
+      "seq": 345,
+      "at": 77391.578002,
+      "wall": 1794275511.407521,
+      "direction": "rx",
+      "can_id": 0,
+      "payload": "03 65 f7 7f f7 ff 18 16"
+    },
+    {
+      "seq": 346,
+      "at": 77391.580149,
+      "wall": 1794275511.409668,
+      "direction": "tx",
+      "can_id": 2047,
+      "payload": "04 00 cc 00 00 00 00 00"
+    },
+    {
+      "seq": 347,
+      "at": 77391.581248,
+      "wall": 1794275511.410768,
+      "direction": "rx",
+      "can_id": 0,
+      "payload": "04 7b c8 7f f7 ff 18 17"
+    },
+    {
+      "seq": 348,
+      "at": 77391.583395,
+      "wall": 1794275511.412914,
+      "direction": "tx",
+      "can_id": 2047,
+      "payload": "05 00 33 07 00 00 00 00"
+    },
+    {
+      "seq": 349,
+      "at": 77391.584484,
+      "wall": 1794275511.414003,
+      "direction": "rx",
+      "can_id": 0,
+      "payload": "05 00 33 07 00 00 00 00"
+    },
+    {
+      "seq": 350,
+      "at": 77391.586635,
+      "wall": 1794275511.416154,
+      "direction": "tx",
+      "can_id": 2047,
+      "payload": "05 00 33 08 00 00 00 00"
+    },
+    {
+      "seq": 351,
+      "at": 77391.587706,
+      "wall": 1794275511.417225,
+      "direction": "rx",
+      "can_id": 0,
+      "payload": "05 00 33 08 05 00 00 00"
+    },
+    {
+      "seq": 352,
+      "at": 77391.58993,
+      "wall": 1794275511.419449,
+      "direction": "tx",
+      "can_id": 2047,
+      "payload": "05 00 33 09 00 00 00 00"
+    },
+    {
+      "seq": 353,
+      "at": 77391.590999,
+      "wall": 1794275511.420518,
+      "direction": "rx",
+      "can_id": 0,
+      "payload": "05 00 33 09 00 00 00 00"
+    },
+    {
+      "seq": 354,
+      "at": 77391.593207,
+      "wall": 1794275511.422726,
+      "direction": "tx",
+      "can_id": 2047,
+      "payload": "05 00 33 0a 00 00 00 00"
+    },
+    {
+      "seq": 355,
+      "at": 77391.594305,
+      "wall": 1794275511.423825,
+      "direction": "rx",
+      "can_id": 0,
+      "payload": "05 00 33 0a 01 00 00 00"
+    },
+    {
+      "seq": 356,
+      "at": 77391.596488,
+      "wall": 1794275511.426007,
+      "direction": "tx",
+      "can_id": 2047,
+      "payload": "05 00 33 15 00 00 00 00"
+    },
+    {
+      "seq": 357,
+      "at": 77391.597598,
+      "wall": 1794275511.427117,
+      "direction": "rx",
+      "can_id": 0,
+      "payload": "05 00 33 15 00 00 48 41"
+    },
+    {
+      "seq": 358,
+      "at": 77391.599809,
+      "wall": 1794275511.429327,
+      "direction": "tx",
+      "can_id": 2047,
+      "payload": "05 00 33 16 00 00 00 00"
+    },
+    {
+      "seq": 359,
+      "at": 77391.600896,
+      "wall": 1794275511.430416,
+      "direction": "rx",
+      "can_id": 0,
+      "payload": "05 00 33 16 00 00 20 41"
+    },
+    {
+      "seq": 360,
+      "at": 77391.60304,
+      "wall": 1794275511.432558,
+      "direction": "tx",
+      "can_id": 2047,
+      "payload": "05 00 33 17 00 00 00 00"
+    },
+    {
+      "seq": 361,
+      "at": 77391.604137,
+      "wall": 1794275511.433657,
+      "direction": "rx",
+      "can_id": 0,
+      "payload": "05 00 33 17 00 00 e0 41"
+    },
+    {
+      "seq": 362,
+      "at": 77391.636933,
+      "wall": 1794275511.466452,
+      "direction": "tx",
+      "can_id": 2047,
+      "payload": "05 00 cc 00 00 00 00 00"
+    },
+    {
+      "seq": 363,
+      "at": 77391.638068,
+      "wall": 1794275511.467589,
+      "direction": "rx",
+      "can_id": 0,
+      "payload": "05 99 f2 7f f8 02 19 17"
+    },
+    {
+      "seq": 364,
+      "at": 77391.640302,
+      "wall": 1794275511.46982,
+      "direction": "tx",
+      "can_id": 2047,
+      "payload": "01 00 cc 00 00 00 00 00"
+    },
+    {
+      "seq": 365,
+      "at": 77391.641409,
+      "wall": 1794275511.47093,
+      "direction": "rx",
+      "can_id": 0,
+      "payload": "01 8e b1 7f e7 ff 1a 16"
+    },
+    {
+      "seq": 366,
+      "at": 77391.643565,
+      "wall": 1794275511.473084,
+      "direction": "tx",
+      "can_id": 2047,
+      "payload": "02 00 cc 00 00 00 00 00"
+    },
+    {
+      "seq": 367,
+      "at": 77391.644689,
+      "wall": 1794275511.47421,
+      "direction": "rx",
+      "can_id": 0,
+      "payload": "02 6d 4b 7f e7 ff 19 15"
+    },
+    {
+      "seq": 368,
+      "at": 77391.64688,
+      "wall": 1794275511.476399,
+      "direction": "tx",
+      "can_id": 2047,
+      "payload": "03 00 cc 00 00 00 00 00"
+    },
+    {
+      "seq": 369,
+      "at": 77391.648029,
+      "wall": 1794275511.47755,
+      "direction": "rx",
+      "can_id": 0,
+      "payload": "03 65 f7 7f f7 ff 18 16"
+    },
+    {
+      "seq": 370,
+      "at": 77391.650338,
+      "wall": 1794275511.479856,
+      "direction": "tx",
+      "can_id": 2047,
+      "payload": "04 00 cc 00 00 00 00 00"
+    },
+    {
+      "seq": 371,
+      "at": 77391.651476,
+      "wall": 1794275511.480996,
+      "direction": "rx",
+      "can_id": 0,
+      "payload": "04 7b c8 7f f7 fe 18 17"
+    },
+    {
+      "seq": 372,
+      "at": 77391.653682,
+      "wall": 1794275511.4832,
+      "direction": "tx",
+      "can_id": 2047,
+      "payload": "05 00 33 07 00 00 00 00"
+    },
+    {
+      "seq": 373,
+      "at": 77391.654755,
+      "wall": 1794275511.484274,
+      "direction": "rx",
+      "can_id": 0,
+      "payload": "05 00 33 07 00 00 00 00"
+    },
+    {
+      "seq": 374,
+      "at": 77391.656953,
+      "wall": 1794275511.486471,
+      "direction": "tx",
+      "can_id": 2047,
+      "payload": "05 00 33 08 00 00 00 00"
+    },
+    {
+      "seq": 375,
+      "at": 77391.658076,
+      "wall": 1794275511.487595,
+      "direction": "rx",
+      "can_id": 0,
+      "payload": "05 00 33 08 05 00 00 00"
+    },
+    {
+      "seq": 376,
+      "at": 77391.660269,
+      "wall": 1794275511.489787,
+      "direction": "tx",
+      "can_id": 2047,
+      "payload": "05 00 33 09 00 00 00 00"
+    },
+    {
+      "seq": 377,
+      "at": 77391.66359,
+      "wall": 1794275511.493109,
+      "direction": "rx",
+      "can_id": 0,
+      "payload": "05 00 33 09 00 00 00 00"
+    },
+    {
+      "seq": 378,
+      "at": 77391.663617,
+      "wall": 1794275511.493135,
+      "direction": "tx",
+      "can_id": 2047,
+      "payload": "05 00 33 0a 00 00 00 00"
+    },
+    {
+      "seq": 379,
+      "at": 77391.664706,
+      "wall": 1794275511.494226,
+      "direction": "rx",
+      "can_id": 0,
+      "payload": "05 00 33 0a 01 00 00 00"
+    },
+    {
+      "seq": 380,
+      "at": 77391.666866,
+      "wall": 1794275511.496385,
+      "direction": "tx",
+      "can_id": 2047,
+      "payload": "05 00 33 15 00 00 00 00"
+    },
+    {
+      "seq": 381,
+      "at": 77391.66794,
+      "wall": 1794275511.49746,
+      "direction": "rx",
+      "can_id": 0,
+      "payload": "05 00 33 15 00 00 48 41"
+    },
+    {
+      "seq": 382,
+      "at": 77391.670104,
+      "wall": 1794275511.499622,
+      "direction": "tx",
+      "can_id": 2047,
+      "payload": "05 00 33 16 00 00 00 00"
+    },
+    {
+      "seq": 383,
+      "at": 77391.671206,
+      "wall": 1794275511.500726,
+      "direction": "rx",
+      "can_id": 0,
+      "payload": "05 00 33 16 00 00 20 41"
+    },
+    {
+      "seq": 384,
+      "at": 77391.673401,
+      "wall": 1794275511.502919,
+      "direction": "tx",
+      "can_id": 2047,
+      "payload": "05 00 33 17 00 00 00 00"
+    },
+    {
+      "seq": 385,
+      "at": 77391.674475,
+      "wall": 1794275511.503995,
+      "direction": "rx",
+      "can_id": 0,
+      "payload": "05 00 33 17 00 00 e0 41"
+    },
+    {
+      "seq": 386,
+      "at": 77391.707192,
+      "wall": 1794275511.536711,
+      "direction": "tx",
+      "can_id": 2047,
+      "payload": "05 00 cc 00 00 00 00 00"
+    },
+    {
+      "seq": 387,
+      "at": 77391.708318,
+      "wall": 1794275511.537838,
+      "direction": "rx",
+      "can_id": 0,
+      "payload": "05 99 f2 7f f8 03 19 17"
+    },
+    {
+      "seq": 388,
+      "at": 77391.710516,
+      "wall": 1794275511.540034,
+      "direction": "tx",
+      "can_id": 2047,
+      "payload": "01 00 cc 00 00 00 00 00"
+    },
+    {
+      "seq": 389,
+      "at": 77391.711595,
+      "wall": 1794275511.541115,
+      "direction": "rx",
+      "can_id": 0,
+      "payload": "01 8e b1 7f e8 00 1a 16"
+    },
+    {
+      "seq": 390,
+      "at": 77391.713816,
+      "wall": 1794275511.543335,
+      "direction": "tx",
+      "can_id": 2047,
+      "payload": "02 00 cc 00 00 00 00 00"
+    },
+    {
+      "seq": 391,
+      "at": 77391.714927,
+      "wall": 1794275511.544447,
+      "direction": "rx",
+      "can_id": 0,
+      "payload": "02 6d 4b 7f f7 ff 19 15"
+    },
+    {
+      "seq": 392,
+      "at": 77391.717134,
+      "wall": 1794275511.546652,
+      "direction": "tx",
+      "can_id": 2047,
+      "payload": "03 00 cc 00 00 00 00 00"
+    },
+    {
+      "seq": 393,
+      "at": 77391.718238,
+      "wall": 1794275511.547758,
+      "direction": "rx",
+      "can_id": 0,
+      "payload": "03 65 f7 7f f7 ff 18 16"
+    },
+    {
+      "seq": 394,
+      "at": 77391.720411,
+      "wall": 1794275511.54993,
+      "direction": "tx",
+      "can_id": 2047,
+      "payload": "04 00 cc 00 00 00 00 00"
+    },
+    {
+      "seq": 395,
+      "at": 77391.721558,
+      "wall": 1794275511.551077,
+      "direction": "rx",
+      "can_id": 0,
+      "payload": "04 7b c8 7f f7 fe 18 17"
+    },
+    {
+      "seq": 396,
+      "at": 77391.723702,
+      "wall": 1794275511.553221,
+      "direction": "tx",
+      "can_id": 2047,
+      "payload": "05 00 33 07 00 00 00 00"
+    },
+    {
+      "seq": 397,
+      "at": 77391.724777,
+      "wall": 1794275511.554297,
+      "direction": "rx",
+      "can_id": 0,
+      "payload": "05 00 33 07 00 00 00 00"
+    },
+    {
+      "seq": 398,
+      "at": 77391.726924,
+      "wall": 1794275511.556443,
+      "direction": "tx",
+      "can_id": 2047,
+      "payload": "05 00 33 08 00 00 00 00"
+    },
+    {
+      "seq": 399,
+      "at": 77391.728026,
+      "wall": 1794275511.557546,
+      "direction": "rx",
+      "can_id": 0,
+      "payload": "05 00 33 08 05 00 00 00"
+    },
+    {
+      "seq": 400,
+      "at": 77391.730186,
+      "wall": 1794275511.559705,
+      "direction": "tx",
+      "can_id": 2047,
+      "payload": "05 00 33 09 00 00 00 00"
+    },
+    {
+      "seq": 401,
+      "at": 77391.731293,
+      "wall": 1794275511.560813,
+      "direction": "rx",
+      "can_id": 0,
+      "payload": "05 00 33 09 00 00 00 00"
+    },
+    {
+      "seq": 402,
+      "at": 77391.733442,
+      "wall": 1794275511.562961,
+      "direction": "tx",
+      "can_id": 2047,
+      "payload": "05 00 33 0a 00 00 00 00"
+    },
+    {
+      "seq": 403,
+      "at": 77391.734519,
+      "wall": 1794275511.56477,
+      "direction": "rx",
+      "can_id": 0,
+      "payload": "05 00 33 0a 01 00 00 00"
+    },
+    {
+      "seq": 404,
+      "at": 77391.737452,
+      "wall": 1794275511.56697,
+      "direction": "tx",
+      "can_id": 2047,
+      "payload": "05 00 33 15 00 00 00 00"
+    },
+    {
+      "seq": 405,
+      "at": 77391.738534,
+      "wall": 1794275511.568054,
+      "direction": "rx",
+      "can_id": 0,
+      "payload": "05 00 33 15 00 00 48 41"
+    },
+    {
+      "seq": 406,
+      "at": 77391.740684,
+      "wall": 1794275511.570203,
+      "direction": "tx",
+      "can_id": 2047,
+      "payload": "05 00 33 16 00 00 00 00"
+    },
+    {
+      "seq": 407,
+      "at": 77391.741794,
+      "wall": 1794275511.571314,
+      "direction": "rx",
+      "can_id": 0,
+      "payload": "05 00 33 16 00 00 20 41"
+    },
+    {
+      "seq": 408,
+      "at": 77391.744038,
+      "wall": 1794275511.573557,
+      "direction": "tx",
+      "can_id": 2047,
+      "payload": "05 00 33 17 00 00 00 00"
+    },
+    {
+      "seq": 409,
+      "at": 77391.745109,
+      "wall": 1794275511.574628,
+      "direction": "rx",
+      "can_id": 0,
+      "payload": "05 00 33 17 00 00 e0 41"
+    },
+    {
+      "seq": 410,
+      "at": 77391.778207,
+      "wall": 1794275511.607726,
+      "direction": "tx",
+      "can_id": 2047,
+      "payload": "05 00 cc 00 00 00 00 00"
+    },
+    {
+      "seq": 411,
+      "at": 77391.779324,
+      "wall": 1794275511.608844,
+      "direction": "rx",
+      "can_id": 0,
+      "payload": "05 99 f2 7f f8 02 19 17"
+    },
+    {
+      "seq": 412,
+      "at": 77391.781587,
+      "wall": 1794275511.611105,
+      "direction": "tx",
+      "can_id": 2047,
+      "payload": "01 00 cc 00 00 00 00 00"
+    },
+    {
+      "seq": 413,
+      "at": 77391.782657,
+      "wall": 1794275511.612176,
+      "direction": "rx",
+      "can_id": 0,
+      "payload": "01 8e b1 7f f8 00 1a 16"
+    },
+    {
+      "seq": 414,
+      "at": 77391.784781,
+      "wall": 1794275511.6143,
+      "direction": "tx",
+      "can_id": 2047,
+      "payload": "02 00 cc 00 00 00 00 00"
+    },
+    {
+      "seq": 415,
+      "at": 77391.785854,
+      "wall": 1794275511.615374,
+      "direction": "rx",
+      "can_id": 0,
+      "payload": "02 6d 4b 80 07 ff 19 15"
+    },
+    {
+      "seq": 416,
+      "at": 77391.788086,
+      "wall": 1794275511.617605,
+      "direction": "tx",
+      "can_id": 2047,
+      "payload": "03 00 cc 00 00 00 00 00"
+    },
+    {
+      "seq": 417,
+      "at": 77391.789204,
+      "wall": 1794275511.618724,
+      "direction": "rx",
+      "can_id": 0,
+      "payload": "03 65 f7 7f f7 ff 18 16"
+    },
+    {
+      "seq": 418,
+      "at": 77391.791326,
+      "wall": 1794275511.620845,
+      "direction": "tx",
+      "can_id": 2047,
+      "payload": "04 00 cc 00 00 00 00 00"
+    },
+    {
+      "seq": 419,
+      "at": 77391.792446,
+      "wall": 1794275511.621965,
+      "direction": "rx",
+      "can_id": 0,
+      "payload": "04 7b c8 7f f7 ff 18 17"
+    },
+    {
+      "seq": 420,
+      "at": 77391.794631,
+      "wall": 1794275511.62415,
+      "direction": "tx",
+      "can_id": 2047,
+      "payload": "05 00 33 07 00 00 00 00"
+    },
+    {
+      "seq": 421,
+      "at": 77391.795709,
+      "wall": 1794275511.625229,
+      "direction": "rx",
+      "can_id": 0,
+      "payload": "05 00 33 07 00 00 00 00"
+    },
+    {
+      "seq": 422,
+      "at": 77391.797843,
+      "wall": 1794275511.627362,
+      "direction": "tx",
+      "can_id": 2047,
+      "payload": "05 00 33 08 00 00 00 00"
+    },
+    {
+      "seq": 423,
+      "at": 77391.798931,
+      "wall": 1794275511.628451,
+      "direction": "rx",
+      "can_id": 0,
+      "payload": "05 00 33 08 05 00 00 00"
+    },
+    {
+      "seq": 424,
+      "at": 77391.80112,
+      "wall": 1794275511.630639,
+      "direction": "tx",
+      "can_id": 2047,
+      "payload": "05 00 33 09 00 00 00 00"
+    },
+    {
+      "seq": 425,
+      "at": 77391.802191,
+      "wall": 1794275511.631711,
+      "direction": "rx",
+      "can_id": 0,
+      "payload": "05 00 33 09 00 00 00 00"
+    },
+    {
+      "seq": 426,
+      "at": 77391.804344,
+      "wall": 1794275511.633863,
+      "direction": "tx",
+      "can_id": 2047,
+      "payload": "05 00 33 0a 00 00 00 00"
+    },
+    {
+      "seq": 427,
+      "at": 77391.805414,
+      "wall": 1794275511.634934,
+      "direction": "rx",
+      "can_id": 0,
+      "payload": "05 00 33 0a 01 00 00 00"
+    },
+    {
+      "seq": 428,
+      "at": 77391.807526,
+      "wall": 1794275511.637045,
+      "direction": "tx",
+      "can_id": 2047,
+      "payload": "05 00 33 15 00 00 00 00"
+    },
+    {
+      "seq": 429,
+      "at": 77391.808603,
+      "wall": 1794275511.638123,
+      "direction": "rx",
+      "can_id": 0,
+      "payload": "05 00 33 15 00 00 48 41"
+    },
+    {
+      "seq": 430,
+      "at": 77391.810738,
+      "wall": 1794275511.640257,
+      "direction": "tx",
+      "can_id": 2047,
+      "payload": "05 00 33 16 00 00 00 00"
+    },
+    {
+      "seq": 431,
+      "at": 77391.811824,
+      "wall": 1794275511.641344,
+      "direction": "rx",
+      "can_id": 0,
+      "payload": "05 00 33 16 00 00 20 41"
+    },
+    {
+      "seq": 432,
+      "at": 77391.813981,
+      "wall": 1794275511.6435,
+      "direction": "tx",
+      "can_id": 2047,
+      "payload": "05 00 33 17 00 00 00 00"
+    },
+    {
+      "seq": 433,
+      "at": 77391.815053,
+      "wall": 1794275511.644572,
+      "direction": "rx",
+      "can_id": 0,
+      "payload": "05 00 33 17 00 00 e0 41"
+    },
+    {
+      "seq": 434,
+      "at": 77391.847821,
+      "wall": 1794275511.67734,
+      "direction": "tx",
+      "can_id": 2047,
+      "payload": "05 00 cc 00 00 00 00 00"
+    },
+    {
+      "seq": 435,
+      "at": 77391.848922,
+      "wall": 1794275511.678442,
+      "direction": "rx",
+      "can_id": 0,
+      "payload": "05 99 f2 7f f8 02 19 17"
+    },
+    {
+      "seq": 436,
+      "at": 77391.851201,
+      "wall": 1794275511.68072,
+      "direction": "tx",
+      "can_id": 2047,
+      "payload": "01 00 cc 00 00 00 00 00"
+    },
+    {
+      "seq": 437,
+      "at": 77391.8523,
+      "wall": 1794275511.68182,
+      "direction": "rx",
+      "can_id": 0,
+      "payload": "01 8e b1 7f f7 ff 1a 16"
+    },
+    {
+      "seq": 438,
+      "at": 77391.854411,
+      "wall": 1794275511.68393,
+      "direction": "tx",
+      "can_id": 2047,
+      "payload": "02 00 cc 00 00 00 00 00"
+    },
+    {
+      "seq": 439,
+      "at": 77391.855476,
+      "wall": 1794275511.685007,
+      "direction": "rx",
+      "can_id": 0,
+      "payload": "02 6d 4b 7f f7 ff 19 15"
+    },
+    {
+      "seq": 440,
+      "at": 77391.857634,
+      "wall": 1794275511.687153,
+      "direction": "tx",
+      "can_id": 2047,
+      "payload": "03 00 cc 00 00 00 00 00"
+    },
+    {
+      "seq": 441,
+      "at": 77391.858709,
+      "wall": 1794275511.688229,
+      "direction": "rx",
+      "can_id": 0,
+      "payload": "03 65 f7 7f f7 ff 18 16"
+    },
+    {
+      "seq": 442,
+      "at": 77391.860858,
+      "wall": 1794275511.690377,
+      "direction": "tx",
+      "can_id": 2047,
+      "payload": "04 00 cc 00 00 00 00 00"
+    },
+    {
+      "seq": 443,
+      "at": 77391.861969,
+      "wall": 1794275511.691489,
+      "direction": "rx",
+      "can_id": 0,
+      "payload": "04 7b c8 7f f7 ff 18 17"
+    },
+    {
+      "seq": 444,
+      "at": 77391.864175,
+      "wall": 1794275511.693694,
+      "direction": "tx",
+      "can_id": 2047,
+      "payload": "05 00 33 07 00 00 00 00"
+    },
+    {
+      "seq": 445,
+      "at": 77391.865251,
+      "wall": 1794275511.69477,
+      "direction": "rx",
+      "can_id": 0,
+      "payload": "05 00 33 07 00 00 00 00"
+    },
+    {
+      "seq": 446,
+      "at": 77391.867376,
+      "wall": 1794275511.696895,
+      "direction": "tx",
+      "can_id": 2047,
+      "payload": "05 00 33 08 00 00 00 00"
+    },
+    {
+      "seq": 447,
+      "at": 77391.868462,
+      "wall": 1794275511.697982,
+      "direction": "rx",
+      "can_id": 0,
+      "payload": "05 00 33 08 05 00 00 00"
+    },
+    {
+      "seq": 448,
+      "at": 77391.87059,
+      "wall": 1794275511.700109,
+      "direction": "tx",
+      "can_id": 2047,
+      "payload": "05 00 33 09 00 00 00 00"
+    },
+    {
+      "seq": 449,
+      "at": 77391.87378,
+      "wall": 1794275511.703299,
+      "direction": "rx",
+      "can_id": 0,
+      "payload": "05 00 33 09 00 00 00 00"
+    },
+    {
+      "seq": 450,
+      "at": 77391.873811,
+      "wall": 1794275511.70333,
+      "direction": "tx",
+      "can_id": 2047,
+      "payload": "05 00 33 0a 00 00 00 00"
+    },
+    {
+      "seq": 451,
+      "at": 77391.874885,
+      "wall": 1794275511.704405,
+      "direction": "rx",
+      "can_id": 0,
+      "payload": "05 00 33 0a 01 00 00 00"
+    },
+    {
+      "seq": 452,
+      "at": 77391.877013,
+      "wall": 1794275511.706532,
+      "direction": "tx",
+      "can_id": 2047,
+      "payload": "05 00 33 15 00 00 00 00"
+    },
+    {
+      "seq": 453,
+      "at": 77391.878093,
+      "wall": 1794275511.707612,
+      "direction": "rx",
+      "can_id": 0,
+      "payload": "05 00 33 15 00 00 48 41"
+    },
+    {
+      "seq": 454,
+      "at": 77391.880234,
+      "wall": 1794275511.709753,
+      "direction": "tx",
+      "can_id": 2047,
+      "payload": "05 00 33 16 00 00 00 00"
+    },
+    {
+      "seq": 455,
+      "at": 77391.881296,
+      "wall": 1794275511.710816,
+      "direction": "rx",
+      "can_id": 0,
+      "payload": "05 00 33 16 00 00 20 41"
+    },
+    {
+      "seq": 456,
+      "at": 77391.88348,
+      "wall": 1794275511.712998,
+      "direction": "tx",
+      "can_id": 2047,
+      "payload": "05 00 33 17 00 00 00 00"
+    },
+    {
+      "seq": 457,
+      "at": 77391.8846,
+      "wall": 1794275511.714119,
+      "direction": "rx",
+      "can_id": 0,
+      "payload": "05 00 33 17 00 00 e0 41"
+    },
+    {
+      "seq": 458,
+      "at": 77391.917389,
+      "wall": 1794275511.746908,
+      "direction": "tx",
+      "can_id": 2047,
+      "payload": "05 00 cc 00 00 00 00 00"
+    },
+    {
+      "seq": 459,
+      "at": 77391.919562,
+      "wall": 1794275511.749082,
+      "direction": "rx",
+      "can_id": 0,
+      "payload": "05 99 f2 7f f8 02 19 17"
+    },
+    {
+      "seq": 460,
+      "at": 77391.920656,
+      "wall": 1794275511.750174,
+      "direction": "tx",
+      "can_id": 2047,
+      "payload": "01 00 cc 00 00 00 00 00"
+    },
+    {
+      "seq": 461,
+      "at": 77391.921725,
+      "wall": 1794275511.751244,
+      "direction": "rx",
+      "can_id": 0,
+      "payload": "01 8e b1 80 08 00 1a 16"
+    },
+    {
+      "seq": 462,
+      "at": 77391.92394,
+      "wall": 1794275511.753458,
+      "direction": "tx",
+      "can_id": 2047,
+      "payload": "02 00 cc 00 00 00 00 00"
+    },
+    {
+      "seq": 463,
+      "at": 77391.925152,
+      "wall": 1794275511.754672,
+      "direction": "rx",
+      "can_id": 0,
+      "payload": "02 6d 4b 7f f7 fe 19 15"
+    },
+    {
+      "seq": 464,
+      "at": 77391.927269,
+      "wall": 1794275511.756787,
+      "direction": "tx",
+      "can_id": 2047,
+      "payload": "03 00 cc 00 00 00 00 00"
+    },
+    {
+      "seq": 465,
+      "at": 77391.928358,
+      "wall": 1794275511.757878,
+      "direction": "rx",
+      "can_id": 0,
+      "payload": "03 65 f7 7f f7 ff 18 16"
+    },
+    {
+      "seq": 466,
+      "at": 77391.930509,
+      "wall": 1794275511.760027,
+      "direction": "tx",
+      "can_id": 2047,
+      "payload": "04 00 cc 00 00 00 00 00"
+    },
+    {
+      "seq": 467,
+      "at": 77391.931643,
+      "wall": 1794275511.761163,
+      "direction": "rx",
+      "can_id": 0,
+      "payload": "04 7b c8 7f f7 ff 18 17"
+    },
+    {
+      "seq": 468,
+      "at": 77391.933826,
+      "wall": 1794275511.763345,
+      "direction": "tx",
+      "can_id": 2047,
+      "payload": "05 00 33 07 00 00 00 00"
+    },
+    {
+      "seq": 469,
+      "at": 77391.934903,
+      "wall": 1794275511.764423,
+      "direction": "rx",
+      "can_id": 0,
+      "payload": "05 00 33 07 00 00 00 00"
+    },
+    {
+      "seq": 470,
+      "at": 77391.937047,
+      "wall": 1794275511.766566,
+      "direction": "tx",
+      "can_id": 2047,
+      "payload": "05 00 33 08 00 00 00 00"
+    },
+    {
+      "seq": 471,
+      "at": 77391.938152,
+      "wall": 1794275511.767672,
+      "direction": "rx",
+      "can_id": 0,
+      "payload": "05 00 33 08 05 00 00 00"
+    },
+    {
+      "seq": 472,
+      "at": 77391.940347,
+      "wall": 1794275511.769866,
+      "direction": "tx",
+      "can_id": 2047,
+      "payload": "05 00 33 09 00 00 00 00"
+    },
+    {
+      "seq": 473,
+      "at": 77391.941445,
+      "wall": 1794275511.770965,
+      "direction": "rx",
+      "can_id": 0,
+      "payload": "05 00 33 09 00 00 00 00"
+    },
+    {
+      "seq": 474,
+      "at": 77391.943623,
+      "wall": 1794275511.773141,
+      "direction": "tx",
+      "can_id": 2047,
+      "payload": "05 00 33 0a 00 00 00 00"
+    },
+    {
+      "seq": 475,
+      "at": 77391.944703,
+      "wall": 1794275511.774222,
+      "direction": "rx",
+      "can_id": 0,
+      "payload": "05 00 33 0a 01 00 00 00"
+    },
+    {
+      "seq": 476,
+      "at": 77391.946876,
+      "wall": 1794275511.776394,
+      "direction": "tx",
+      "can_id": 2047,
+      "payload": "05 00 33 15 00 00 00 00"
+    },
+    {
+      "seq": 477,
+      "at": 77391.947993,
+      "wall": 1794275511.777513,
+      "direction": "rx",
+      "can_id": 0,
+      "payload": "05 00 33 15 00 00 48 41"
+    },
+    {
+      "seq": 478,
+      "at": 77391.950251,
+      "wall": 1794275511.77977,
+      "direction": "tx",
+      "can_id": 2047,
+      "payload": "05 00 33 16 00 00 00 00"
+    },
+    {
+      "seq": 479,
+      "at": 77391.951364,
+      "wall": 1794275511.780884,
+      "direction": "rx",
+      "can_id": 0,
+      "payload": "05 00 33 16 00 00 20 41"
+    },
+    {
+      "seq": 480,
+      "at": 77391.953571,
+      "wall": 1794275511.78309,
+      "direction": "tx",
+      "can_id": 2047,
+      "payload": "05 00 33 17 00 00 00 00"
+    },
+    {
+      "seq": 481,
+      "at": 77391.954639,
+      "wall": 1794275511.784158,
+      "direction": "rx",
+      "can_id": 0,
+      "payload": "05 00 33 17 00 00 e0 41"
+    },
+    {
+      "seq": 482,
+      "at": 77391.98725,
+      "wall": 1794275511.816769,
+      "direction": "tx",
+      "can_id": 2047,
+      "payload": "05 00 cc 00 00 00 00 00"
+    },
+    {
+      "seq": 483,
+      "at": 77391.988405,
+      "wall": 1794275511.817925,
+      "direction": "rx",
+      "can_id": 0,
+      "payload": "05 99 f2 7f f8 02 19 17"
+    },
+    {
+      "seq": 484,
+      "at": 77391.990577,
+      "wall": 1794275511.820096,
+      "direction": "tx",
+      "can_id": 2047,
+      "payload": "01 00 cc 00 00 00 00 00"
+    },
+    {
+      "seq": 485,
+      "at": 77391.991649,
+      "wall": 1794275511.821169,
+      "direction": "rx",
+      "can_id": 0,
+      "payload": "01 8e b1 7f f8 00 1a 16"
+    },
+    {
+      "seq": 486,
+      "at": 77391.993806,
+      "wall": 1794275511.823325,
+      "direction": "tx",
+      "can_id": 2047,
+      "payload": "02 00 cc 00 00 00 00 00"
+    },
+    {
+      "seq": 487,
+      "at": 77391.994919,
+      "wall": 1794275511.824439,
+      "direction": "rx",
+      "can_id": 0,
+      "payload": "02 6d 4b 7f e7 ff 19 15"
+    },
+    {
+      "seq": 488,
+      "at": 77391.997146,
+      "wall": 1794275511.826664,
+      "direction": "tx",
+      "can_id": 2047,
+      "payload": "03 00 cc 00 00 00 00 00"
+    },
+    {
+      "seq": 489,
+      "at": 77391.998255,
+      "wall": 1794275511.827775,
+      "direction": "rx",
+      "can_id": 0,
+      "payload": "03 65 f7 7f f7 ff 18 16"
+    },
+    {
+      "seq": 490,
+      "at": 77392.000443,
+      "wall": 1794275511.829962,
+      "direction": "tx",
+      "can_id": 2047,
+      "payload": "04 00 cc 00 00 00 00 00"
+    },
+    {
+      "seq": 491,
+      "at": 77392.001553,
+      "wall": 1794275511.831073,
+      "direction": "rx",
+      "can_id": 0,
+      "payload": "04 7b c8 80 07 ff 18 17"
+    },
+    {
+      "seq": 492,
+      "at": 77392.003728,
+      "wall": 1794275511.833247,
+      "direction": "tx",
+      "can_id": 2047,
+      "payload": "05 00 33 07 00 00 00 00"
+    },
+    {
+      "seq": 493,
+      "at": 77392.004803,
+      "wall": 1794275511.834322,
+      "direction": "rx",
+      "can_id": 0,
+      "payload": "05 00 33 07 00 00 00 00"
+    },
+    {
+      "seq": 494,
+      "at": 77392.007022,
+      "wall": 1794275511.836541,
+      "direction": "tx",
+      "can_id": 2047,
+      "payload": "05 00 33 08 00 00 00 00"
+    },
+    {
+      "seq": 495,
+      "at": 77392.008085,
+      "wall": 1794275511.837605,
+      "direction": "rx",
+      "can_id": 0,
+      "payload": "05 00 33 08 05 00 00 00"
+    },
+    {
+      "seq": 496,
+      "at": 77392.010688,
+      "wall": 1794275511.840207,
+      "direction": "tx",
+      "can_id": 2047,
+      "payload": "05 00 33 09 00 00 00 00"
+    },
+    {
+      "seq": 497,
+      "at": 77392.011816,
+      "wall": 1794275511.841336,
+      "direction": "rx",
+      "can_id": 0,
+      "payload": "05 00 33 09 00 00 00 00"
+    },
+    {
+      "seq": 498,
+      "at": 77392.01396,
+      "wall": 1794275511.843478,
+      "direction": "tx",
+      "can_id": 2047,
+      "payload": "05 00 33 0a 00 00 00 00"
+    },
+    {
+      "seq": 499,
+      "at": 77392.015029,
+      "wall": 1794275511.844548,
+      "direction": "rx",
+      "can_id": 0,
+      "payload": "05 00 33 0a 01 00 00 00"
+    },
+    {
+      "seq": 500,
+      "at": 77392.017172,
+      "wall": 1794275511.84669,
+      "direction": "tx",
+      "can_id": 2047,
+      "payload": "05 00 33 15 00 00 00 00"
+    },
+    {
+      "seq": 501,
+      "at": 77392.018256,
+      "wall": 1794275511.847775,
+      "direction": "rx",
+      "can_id": 0,
+      "payload": "05 00 33 15 00 00 48 41"
+    },
+    {
+      "seq": 502,
+      "at": 77392.020489,
+      "wall": 1794275511.850007,
+      "direction": "tx",
+      "can_id": 2047,
+      "payload": "05 00 33 16 00 00 00 00"
+    },
+    {
+      "seq": 503,
+      "at": 77392.021561,
+      "wall": 1794275511.851081,
+      "direction": "rx",
+      "can_id": 0,
+      "payload": "05 00 33 16 00 00 20 41"
+    },
+    {
+      "seq": 504,
+      "at": 77392.023731,
+      "wall": 1794275511.85325,
+      "direction": "tx",
+      "can_id": 2047,
+      "payload": "05 00 33 17 00 00 00 00"
+    },
+    {
+      "seq": 505,
+      "at": 77392.024956,
+      "wall": 1794275511.854476,
+      "direction": "rx",
+      "can_id": 0,
+      "payload": "05 00 33 17 00 00 e0 41"
+    },
+    {
+      "seq": 506,
+      "at": 77392.057865,
+      "wall": 1794275511.887385,
+      "direction": "tx",
+      "can_id": 2047,
+      "payload": "05 00 cc 00 00 00 00 00"
+    },
+    {
+      "seq": 507,
+      "at": 77392.058975,
+      "wall": 1794275511.888495,
+      "direction": "rx",
+      "can_id": 0,
+      "payload": "05 99 f2 7f f8 02 19 17"
+    },
+    {
+      "seq": 508,
+      "at": 77392.061129,
+      "wall": 1794275511.890648,
+      "direction": "tx",
+      "can_id": 2047,
+      "payload": "01 00 cc 00 00 00 00 00"
+    },
+    {
+      "seq": 509,
+      "at": 77392.062205,
+      "wall": 1794275511.891725,
+      "direction": "rx",
+      "can_id": 0,
+      "payload": "01 8e b1 7f f7 ff 1a 16"
+    },
+    {
+      "seq": 510,
+      "at": 77392.064385,
+      "wall": 1794275511.893904,
+      "direction": "tx",
+      "can_id": 2047,
+      "payload": "02 00 cc 00 00 00 00 00"
+    },
+    {
+      "seq": 511,
+      "at": 77392.065461,
+      "wall": 1794275511.89498,
+      "direction": "rx",
+      "can_id": 0,
+      "payload": "02 6d 4b 7f f7 ff 19 15"
+    },
+    {
+      "seq": 512,
+      "at": 77392.067609,
+      "wall": 1794275511.897127,
+      "direction": "tx",
+      "can_id": 2047,
+      "payload": "03 00 cc 00 00 00 00 00"
+    },
+    {
+      "seq": 513,
+      "at": 77392.068693,
+      "wall": 1794275511.898213,
+      "direction": "rx",
+      "can_id": 0,
+      "payload": "03 65 f7 7f f7 ff 18 16"
+    },
+    {
+      "seq": 514,
+      "at": 77392.070861,
+      "wall": 1794275511.90038,
+      "direction": "tx",
+      "can_id": 2047,
+      "payload": "04 00 cc 00 00 00 00 00"
+    },
+    {
+      "seq": 515,
+      "at": 77392.071965,
+      "wall": 1794275511.901485,
+      "direction": "rx",
+      "can_id": 0,
+      "payload": "04 7b c8 7f f7 ff 18 17"
+    },
+    {
+      "seq": 516,
+      "at": 77392.074142,
+      "wall": 1794275511.903661,
+      "direction": "tx",
+      "can_id": 2047,
+      "payload": "05 00 33 07 00 00 00 00"
+    },
+    {
+      "seq": 517,
+      "at": 77392.075217,
+      "wall": 1794275511.904737,
+      "direction": "rx",
+      "can_id": 0,
+      "payload": "05 00 33 07 00 00 00 00"
+    },
+    {
+      "seq": 518,
+      "at": 77392.077379,
+      "wall": 1794275511.906897,
+      "direction": "tx",
+      "can_id": 2047,
+      "payload": "05 00 33 08 00 00 00 00"
+    },
+    {
+      "seq": 519,
+      "at": 77392.078451,
+      "wall": 1794275511.907971,
+      "direction": "rx",
+      "can_id": 0,
+      "payload": "05 00 33 08 05 00 00 00"
+    },
+    {
+      "seq": 520,
+      "at": 77392.080614,
+      "wall": 1794275511.910133,
+      "direction": "tx",
+      "can_id": 2047,
+      "payload": "05 00 33 09 00 00 00 00"
+    },
+    {
+      "seq": 521,
+      "at": 77392.081728,
+      "wall": 1794275511.911248,
+      "direction": "rx",
+      "can_id": 0,
+      "payload": "05 00 33 09 00 00 00 00"
+    },
+    {
+      "seq": 522,
+      "at": 77392.083868,
+      "wall": 1794275511.913387,
+      "direction": "tx",
+      "can_id": 2047,
+      "payload": "05 00 33 0a 00 00 00 00"
+    },
+    {
+      "seq": 523,
+      "at": 77392.084981,
+      "wall": 1794275511.914501,
+      "direction": "rx",
+      "can_id": 0,
+      "payload": "05 00 33 0a 01 00 00 00"
+    },
+    {
+      "seq": 524,
+      "at": 77392.087145,
+      "wall": 1794275511.916664,
+      "direction": "tx",
+      "can_id": 2047,
+      "payload": "05 00 33 15 00 00 00 00"
+    },
+    {
+      "seq": 525,
+      "at": 77392.090356,
+      "wall": 1794275511.919876,
+      "direction": "rx",
+      "can_id": 0,
+      "payload": "05 00 33 15 00 00 48 41"
+    },
+    {
+      "seq": 526,
+      "at": 77392.090387,
+      "wall": 1794275511.919905,
+      "direction": "tx",
+      "can_id": 2047,
+      "payload": "05 00 33 16 00 00 00 00"
+    },
+    {
+      "seq": 527,
+      "at": 77392.091479,
+      "wall": 1794275511.920999,
+      "direction": "rx",
+      "can_id": 0,
+      "payload": "05 00 33 16 00 00 20 41"
+    },
+    {
+      "seq": 528,
+      "at": 77392.093667,
+      "wall": 1794275511.923186,
+      "direction": "tx",
+      "can_id": 2047,
+      "payload": "05 00 33 17 00 00 00 00"
+    },
+    {
+      "seq": 529,
+      "at": 77392.094772,
+      "wall": 1794275511.924292,
+      "direction": "rx",
+      "can_id": 0,
+      "payload": "05 00 33 17 00 00 e0 41"
+    },
+    {
+      "seq": 530,
+      "at": 77392.127666,
+      "wall": 1794275511.957185,
+      "direction": "tx",
+      "can_id": 2047,
+      "payload": "05 00 cc 00 00 00 00 00"
+    },
+    {
+      "seq": 531,
+      "at": 77392.128761,
+      "wall": 1794275511.958281,
+      "direction": "rx",
+      "can_id": 0,
+      "payload": "05 99 f2 7f f8 02 19 17"
+    },
+    {
+      "seq": 532,
+      "at": 77392.130955,
+      "wall": 1794275511.960474,
+      "direction": "tx",
+      "can_id": 2047,
+      "payload": "01 00 cc 00 00 00 00 00"
+    },
+    {
+      "seq": 533,
+      "at": 77392.132069,
+      "wall": 1794275511.961589,
+      "direction": "rx",
+      "can_id": 0,
+      "payload": "01 8e b1 7f f7 ff 1a 16"
+    },
+    {
+      "seq": 534,
+      "at": 77392.134231,
+      "wall": 1794275511.96375,
+      "direction": "tx",
+      "can_id": 2047,
+      "payload": "02 00 cc 00 00 00 00 00"
+    },
+    {
+      "seq": 535,
+      "at": 77392.135337,
+      "wall": 1794275511.964856,
+      "direction": "rx",
+      "can_id": 0,
+      "payload": "02 6d 4b 80 07 ff 19 15"
+    },
+    {
+      "seq": 536,
+      "at": 77392.137479,
+      "wall": 1794275511.966997,
+      "direction": "tx",
+      "can_id": 2047,
+      "payload": "03 00 cc 00 00 00 00 00"
+    },
+    {
+      "seq": 537,
+      "at": 77392.138543,
+      "wall": 1794275511.968062,
+      "direction": "rx",
+      "can_id": 0,
+      "payload": "03 65 f7 7f f7 ff 18 16"
+    },
+    {
+      "seq": 538,
+      "at": 77392.140704,
+      "wall": 1794275511.970222,
+      "direction": "tx",
+      "can_id": 2047,
+      "payload": "04 00 cc 00 00 00 00 00"
+    },
+    {
+      "seq": 539,
+      "at": 77392.141805,
+      "wall": 1794275511.971324,
+      "direction": "rx",
+      "can_id": 0,
+      "payload": "04 7b c8 7f f7 ff 18 17"
+    },
+    {
+      "seq": 540,
+      "at": 77392.143998,
+      "wall": 1794275511.973536,
+      "direction": "tx",
+      "can_id": 2047,
+      "payload": "05 00 33 07 00 00 00 00"
+    },
+    {
+      "seq": 541,
+      "at": 77392.145135,
+      "wall": 1794275511.974654,
+      "direction": "rx",
+      "can_id": 0,
+      "payload": "05 00 33 07 00 00 00 00"
+    },
+    {
+      "seq": 542,
+      "at": 77392.147269,
+      "wall": 1794275511.976787,
+      "direction": "tx",
+      "can_id": 2047,
+      "payload": "05 00 33 08 00 00 00 00"
+    },
+    {
+      "seq": 543,
+      "at": 77392.148356,
+      "wall": 1794275511.977875,
+      "direction": "rx",
+      "can_id": 0,
+      "payload": "05 00 33 08 05 00 00 00"
+    },
+    {
+      "seq": 544,
+      "at": 77392.1505,
+      "wall": 1794275511.980018,
+      "direction": "tx",
+      "can_id": 2047,
+      "payload": "05 00 33 09 00 00 00 00"
+    },
+    {
+      "seq": 545,
+      "at": 77392.151576,
+      "wall": 1794275511.981095,
+      "direction": "rx",
+      "can_id": 0,
+      "payload": "05 00 33 09 00 00 00 00"
+    },
+    {
+      "seq": 546,
+      "at": 77392.153785,
+      "wall": 1794275511.983303,
+      "direction": "tx",
+      "can_id": 2047,
+      "payload": "05 00 33 0a 00 00 00 00"
+    },
+    {
+      "seq": 547,
+      "at": 77392.154857,
+      "wall": 1794275511.984376,
+      "direction": "rx",
+      "can_id": 0,
+      "payload": "05 00 33 0a 01 00 00 00"
+    },
+    {
+      "seq": 548,
+      "at": 77392.157044,
+      "wall": 1794275511.986563,
+      "direction": "tx",
+      "can_id": 2047,
+      "payload": "05 00 33 15 00 00 00 00"
+    },
+    {
+      "seq": 549,
+      "at": 77392.158108,
+      "wall": 1794275511.987627,
+      "direction": "rx",
+      "can_id": 0,
+      "payload": "05 00 33 15 00 00 48 41"
+    },
+    {
+      "seq": 550,
+      "at": 77392.160232,
+      "wall": 1794275511.989751,
+      "direction": "tx",
+      "can_id": 2047,
+      "payload": "05 00 33 16 00 00 00 00"
+    },
+    {
+      "seq": 551,
+      "at": 77392.161308,
+      "wall": 1794275511.990828,
+      "direction": "rx",
+      "can_id": 0,
+      "payload": "05 00 33 16 00 00 20 41"
+    },
+    {
+      "seq": 552,
+      "at": 77392.163451,
+      "wall": 1794275511.99297,
+      "direction": "tx",
+      "can_id": 2047,
+      "payload": "05 00 33 17 00 00 00 00"
+    },
+    {
+      "seq": 553,
+      "at": 77392.165618,
+      "wall": 1794275511.995138,
+      "direction": "rx",
+      "can_id": 0,
+      "payload": "05 00 33 17 00 00 e0 41"
+    },
+    {
+      "seq": 554,
+      "at": 77392.197648,
+      "wall": 1794275512.027167,
+      "direction": "tx",
+      "can_id": 2047,
+      "payload": "05 00 cc 00 00 00 00 00"
+    },
+    {
+      "seq": 555,
+      "at": 77392.200986,
+      "wall": 1794275512.030506,
+      "direction": "tx",
+      "can_id": 2047,
+      "payload": "01 00 cc 00 00 00 00 00"
+    },
+    {
+      "seq": 556,
+      "at": 77392.204219,
+      "wall": 1794275512.033738,
+      "direction": "tx",
+      "can_id": 2047,
+      "payload": "02 00 cc 00 00 00 00 00"
+    },
+    {
+      "seq": 557,
+      "at": 77392.205321,
+      "wall": 1794275512.03484,
+      "direction": "rx",
+      "can_id": 0,
+      "payload": "05 99 f2 7f f8 01 19 17"
+    },
+    {
+      "seq": 558,
+      "at": 77392.206455,
+      "wall": 1794275512.035975,
+      "direction": "rx",
+      "can_id": 0,
+      "payload": "01 8e b1 7f f7 ff 1a 16"
+    },
+    {
+      "seq": 559,
+      "at": 77392.206462,
+      "wall": 1794275512.03598,
+      "direction": "rx",
+      "can_id": 0,
+      "payload": "02 6d 4b 7f f7 fe 19 15"
+    },
+    {
+      "seq": 560,
+      "at": 77392.207559,
+      "wall": 1794275512.037078,
+      "direction": "tx",
+      "can_id": 2047,
+      "payload": "03 00 cc 00 00 00 00 00"
+    },
+    {
+      "seq": 561,
+      "at": 77392.208689,
+      "wall": 1794275512.038208,
+      "direction": "rx",
+      "can_id": 0,
+      "payload": "03 65 f7 7f f7 ff 18 16"
+    },
+    {
+      "seq": 562,
+      "at": 77392.210791,
+      "wall": 1794275512.040309,
+      "direction": "tx",
+      "can_id": 2047,
+      "payload": "04 00 cc 00 00 00 00 00"
+    },
+    {
+      "seq": 563,
+      "at": 77392.211891,
+      "wall": 1794275512.04141,
+      "direction": "rx",
+      "can_id": 0,
+      "payload": "04 7b c8 7f f7 ff 18 17"
+    },
+    {
+      "seq": 564,
+      "at": 77392.214068,
+      "wall": 1794275512.043586,
+      "direction": "tx",
+      "can_id": 2047,
+      "payload": "05 00 33 07 00 00 00 00"
+    },
+    {
+      "seq": 565,
+      "at": 77392.215166,
+      "wall": 1794275512.044686,
+      "direction": "rx",
+      "can_id": 0,
+      "payload": "05 00 33 07 00 00 00 00"
+    },
+    {
+      "seq": 566,
+      "at": 77392.217473,
+      "wall": 1794275512.046992,
+      "direction": "tx",
+      "can_id": 2047,
+      "payload": "05 00 33 08 00 00 00 00"
+    },
+    {
+      "seq": 567,
+      "at": 77392.218545,
+      "wall": 1794275512.048065,
+      "direction": "rx",
+      "can_id": 0,
+      "payload": "05 00 33 08 05 00 00 00"
+    },
+    {
+      "seq": 568,
+      "at": 77392.220681,
+      "wall": 1794275512.0502,
+      "direction": "tx",
+      "can_id": 2047,
+      "payload": "05 00 33 09 00 00 00 00"
+    },
+    {
+      "seq": 569,
+      "at": 77392.221773,
+      "wall": 1794275512.051293,
+      "direction": "rx",
+      "can_id": 0,
+      "payload": "05 00 33 09 00 00 00 00"
+    },
+    {
+      "seq": 570,
+      "at": 77392.224026,
+      "wall": 1794275512.053545,
+      "direction": "tx",
+      "can_id": 2047,
+      "payload": "05 00 33 0a 00 00 00 00"
+    },
+    {
+      "seq": 571,
+      "at": 77392.22733,
+      "wall": 1794275512.056849,
+      "direction": "tx",
+      "can_id": 2047,
+      "payload": "05 00 33 15 00 00 00 00"
+    },
+    {
+      "seq": 572,
+      "at": 77392.230661,
+      "wall": 1794275512.06018,
+      "direction": "tx",
+      "can_id": 2047,
+      "payload": "05 00 33 16 00 00 00 00"
+    },
+    {
+      "seq": 573,
+      "at": 77392.233928,
+      "wall": 1794275512.063446,
+      "direction": "tx",
+      "can_id": 2047,
+      "payload": "05 00 33 17 00 00 00 00"
+    },
+    {
+      "seq": 574,
+      "at": 77392.235009,
+      "wall": 1794275512.064529,
+      "direction": "rx",
+      "can_id": 0,
+      "payload": "05 00 33 0a 01 00 00 00"
+    },
+    {
+      "seq": 575,
+      "at": 77392.23502,
+      "wall": 1794275512.064539,
+      "direction": "rx",
+      "can_id": 0,
+      "payload": "05 00 33 15 00 00 48 41"
+    },
+    {
+      "seq": 576,
+      "at": 77392.235023,
+      "wall": 1794275512.064542,
+      "direction": "rx",
+      "can_id": 0,
+      "payload": "05 00 33 16 00 00 20 41"
+    },
+    {
+      "seq": 577,
+      "at": 77392.236101,
+      "wall": 1794275512.065621,
+      "direction": "rx",
+      "can_id": 0,
+      "payload": "05 00 33 17 00 00 e0 41"
+    },
+    {
+      "seq": 578,
+      "at": 77392.267686,
+      "wall": 1794275512.097204,
+      "direction": "tx",
+      "can_id": 2047,
+      "payload": "05 00 cc 00 00 00 00 00"
+    },
+    {
+      "seq": 579,
+      "at": 77392.2688,
+      "wall": 1794275512.09832,
+      "direction": "rx",
+      "can_id": 0,
+      "payload": "05 99 f2 7f f8 02 19 17"
+    },
+    {
+      "seq": 580,
+      "at": 77392.270945,
+      "wall": 1794275512.100463,
+      "direction": "tx",
+      "can_id": 2047,
+      "payload": "01 00 cc 00 00 00 00 00"
+    },
+    {
+      "seq": 581,
+      "at": 77392.272072,
+      "wall": 1794275512.101593,
+      "direction": "rx",
+      "can_id": 0,
+      "payload": "01 8e b1 7f f7 ff 1a 16"
+    },
+    {
+      "seq": 582,
+      "at": 77392.274182,
+      "wall": 1794275512.1037,
+      "direction": "tx",
+      "can_id": 2047,
+      "payload": "02 00 cc 00 00 00 00 00"
+    },
+    {
+      "seq": 583,
+      "at": 77392.275269,
+      "wall": 1794275512.104789,
+      "direction": "rx",
+      "can_id": 0,
+      "payload": "02 6d 4b 7f f7 ff 19 15"
+    },
+    {
+      "seq": 584,
+      "at": 77392.277422,
+      "wall": 1794275512.106941,
+      "direction": "tx",
+      "can_id": 2047,
+      "payload": "03 00 cc 00 00 00 00 00"
+    },
+    {
+      "seq": 585,
+      "at": 77392.278486,
+      "wall": 1794275512.108006,
+      "direction": "rx",
+      "can_id": 0,
+      "payload": "03 65 f7 7f f7 ff 18 16"
+    },
+    {
+      "seq": 586,
+      "at": 77392.280645,
+      "wall": 1794275512.110163,
+      "direction": "tx",
+      "can_id": 2047,
+      "payload": "04 00 cc 00 00 00 00 00"
+    },
+    {
+      "seq": 587,
+      "at": 77392.281724,
+      "wall": 1794275512.111243,
+      "direction": "rx",
+      "can_id": 0,
+      "payload": "04 7b c8 80 07 fe 18 17"
+    },
+    {
+      "seq": 588,
+      "at": 77392.283902,
+      "wall": 1794275512.113421,
+      "direction": "tx",
+      "can_id": 2047,
+      "payload": "05 00 33 07 00 00 00 00"
+    },
+    {
+      "seq": 589,
+      "at": 77392.285016,
+      "wall": 1794275512.114536,
+      "direction": "rx",
+      "can_id": 0,
+      "payload": "05 00 33 07 00 00 00 00"
+    },
+    {
+      "seq": 590,
+      "at": 77392.287141,
+      "wall": 1794275512.11666,
+      "direction": "tx",
+      "can_id": 2047,
+      "payload": "05 00 33 08 00 00 00 00"
+    },
+    {
+      "seq": 591,
+      "at": 77392.288238,
+      "wall": 1794275512.117758,
+      "direction": "rx",
+      "can_id": 0,
+      "payload": "05 00 33 08 05 00 00 00"
+    },
+    {
+      "seq": 592,
+      "at": 77392.290341,
+      "wall": 1794275512.11986,
+      "direction": "tx",
+      "can_id": 2047,
+      "payload": "05 00 33 09 00 00 00 00"
+    },
+    {
+      "seq": 593,
+      "at": 77392.291405,
+      "wall": 1794275512.120924,
+      "direction": "rx",
+      "can_id": 0,
+      "payload": "05 00 33 09 00 00 00 00"
+    },
+    {
+      "seq": 594,
+      "at": 77392.293531,
+      "wall": 1794275512.123049,
+      "direction": "tx",
+      "can_id": 2047,
+      "payload": "05 00 33 0a 00 00 00 00"
+    },
+    {
+      "seq": 595,
+      "at": 77392.294599,
+      "wall": 1794275512.124119,
+      "direction": "rx",
+      "can_id": 0,
+      "payload": "05 00 33 0a 01 00 00 00"
+    },
+    {
+      "seq": 596,
+      "at": 77392.296751,
+      "wall": 1794275512.126269,
+      "direction": "tx",
+      "can_id": 2047,
+      "payload": "05 00 33 15 00 00 00 00"
+    },
+    {
+      "seq": 597,
+      "at": 77392.297817,
+      "wall": 1794275512.127337,
+      "direction": "rx",
+      "can_id": 0,
+      "payload": "05 00 33 15 00 00 48 41"
+    },
+    {
+      "seq": 598,
+      "at": 77392.299967,
+      "wall": 1794275512.129486,
+      "direction": "tx",
+      "can_id": 2047,
+      "payload": "05 00 33 16 00 00 00 00"
+    },
+    {
+      "seq": 599,
+      "at": 77392.302108,
+      "wall": 1794275512.131628,
+      "direction": "rx",
+      "can_id": 0,
+      "payload": "05 00 33 16 00 00 20 41"
+    },
+    {
+      "seq": 600,
+      "at": 77392.303185,
+      "wall": 1794275512.132703,
+      "direction": "tx",
+      "can_id": 2047,
+      "payload": "05 00 33 17 00 00 00 00"
+    },
+    {
+      "seq": 601,
+      "at": 77392.30427,
+      "wall": 1794275512.13379,
+      "direction": "rx",
+      "can_id": 0,
+      "payload": "05 00 33 17 00 00 e0 41"
+    },
+    {
+      "seq": 602,
+      "at": 77392.337598,
+      "wall": 1794275512.167118,
+      "direction": "tx",
+      "can_id": 2047,
+      "payload": "05 00 cc 00 00 00 00 00"
+    },
+    {
+      "seq": 603,
+      "at": 77392.33876,
+      "wall": 1794275512.16828,
+      "direction": "rx",
+      "can_id": 0,
+      "payload": "05 99 f2 7f f8 02 19 17"
+    },
+    {
+      "seq": 604,
+      "at": 77392.340901,
+      "wall": 1794275512.170419,
+      "direction": "tx",
+      "can_id": 2047,
+      "payload": "01 00 cc 00 00 00 00 00"
+    },
+    {
+      "seq": 605,
+      "at": 77392.341972,
+      "wall": 1794275512.171492,
+      "direction": "rx",
+      "can_id": 0,
+      "payload": "01 8e b1 7f e7 ff 1a 16"
+    },
+    {
+      "seq": 606,
+      "at": 77392.344165,
+      "wall": 1794275512.173683,
+      "direction": "tx",
+      "can_id": 2047,
+      "payload": "02 00 cc 00 00 00 00 00"
+    },
+    {
+      "seq": 607,
+      "at": 77392.345275,
+      "wall": 1794275512.174795,
+      "direction": "rx",
+      "can_id": 0,
+      "payload": "02 6d 4b 7f f7 fe 19 15"
+    },
+    {
+      "seq": 608,
+      "at": 77392.347437,
+      "wall": 1794275512.176956,
+      "direction": "tx",
+      "can_id": 2047,
+      "payload": "03 00 cc 00 00 00 00 00"
+    },
+    {
+      "seq": 609,
+      "at": 77392.348605,
+      "wall": 1794275512.178124,
+      "direction": "rx",
+      "can_id": 0,
+      "payload": "03 65 f7 7f e7 ff 18 16"
+    },
+    {
+      "seq": 610,
+      "at": 77392.350776,
+      "wall": 1794275512.180295,
+      "direction": "tx",
+      "can_id": 2047,
+      "payload": "04 00 cc 00 00 00 00 00"
+    },
+    {
+      "seq": 611,
+      "at": 77392.351865,
+      "wall": 1794275512.181384,
+      "direction": "rx",
+      "can_id": 0,
+      "payload": "04 7b c8 7f f7 ff 18 17"
+    },
+    {
+      "seq": 612,
+      "at": 77392.354056,
+      "wall": 1794275512.183575,
+      "direction": "tx",
+      "can_id": 2047,
+      "payload": "05 00 33 07 00 00 00 00"
+    },
+    {
+      "seq": 613,
+      "at": 77392.355159,
+      "wall": 1794275512.184678,
+      "direction": "rx",
+      "can_id": 0,
+      "payload": "05 00 33 07 00 00 00 00"
+    },
+    {
+      "seq": 614,
+      "at": 77392.357316,
+      "wall": 1794275512.186834,
+      "direction": "tx",
+      "can_id": 2047,
+      "payload": "05 00 33 08 00 00 00 00"
+    },
+    {
+      "seq": 615,
+      "at": 77392.35838,
+      "wall": 1794275512.1879,
+      "direction": "rx",
+      "can_id": 0,
+      "payload": "05 00 33 08 05 00 00 00"
+    },
+    {
+      "seq": 616,
+      "at": 77392.360576,
+      "wall": 1794275512.190095,
+      "direction": "tx",
+      "can_id": 2047,
+      "payload": "05 00 33 09 00 00 00 00"
+    },
+    {
+      "seq": 617,
+      "at": 77392.361732,
+      "wall": 1794275512.191251,
+      "direction": "rx",
+      "can_id": 0,
+      "payload": "05 00 33 09 00 00 00 00"
+    },
+    {
+      "seq": 618,
+      "at": 77392.36385,
+      "wall": 1794275512.193369,
+      "direction": "tx",
+      "can_id": 2047,
+      "payload": "05 00 33 0a 00 00 00 00"
+    },
+    {
+      "seq": 619,
+      "at": 77392.364971,
+      "wall": 1794275512.19449,
+      "direction": "rx",
+      "can_id": 0,
+      "payload": "05 00 33 0a 01 00 00 00"
+    },
+    {
+      "seq": 620,
+      "at": 77392.367156,
+      "wall": 1794275512.196674,
+      "direction": "tx",
+      "can_id": 2047,
+      "payload": "05 00 33 15 00 00 00 00"
+    },
+    {
+      "seq": 621,
+      "at": 77392.368248,
+      "wall": 1794275512.197768,
+      "direction": "rx",
+      "can_id": 0,
+      "payload": "05 00 33 15 00 00 48 41"
+    },
+    {
+      "seq": 622,
+      "at": 77392.370447,
+      "wall": 1794275512.199966,
+      "direction": "tx",
+      "can_id": 2047,
+      "payload": "05 00 33 16 00 00 00 00"
+    },
+    {
+      "seq": 623,
+      "at": 77392.371557,
+      "wall": 1794275512.201077,
+      "direction": "rx",
+      "can_id": 0,
+      "payload": "05 00 33 16 00 00 20 41"
+    },
+    {
+      "seq": 624,
+      "at": 77392.373787,
+      "wall": 1794275512.203306,
+      "direction": "tx",
+      "can_id": 2047,
+      "payload": "05 00 33 17 00 00 00 00"
+    },
+    {
+      "seq": 625,
+      "at": 77392.374857,
+      "wall": 1794275512.204377,
+      "direction": "rx",
+      "can_id": 0,
+      "payload": "05 00 33 17 00 00 e0 41"
+    },
+    {
+      "seq": 626,
+      "at": 77392.407489,
+      "wall": 1794275512.237008,
+      "direction": "tx",
+      "can_id": 2047,
+      "payload": "05 00 cc 00 00 00 00 00"
+    },
+    {
+      "seq": 627,
+      "at": 77392.408584,
+      "wall": 1794275512.238104,
+      "direction": "rx",
+      "can_id": 0,
+      "payload": "05 99 f2 7f f8 01 19 17"
+    },
+    {
+      "seq": 628,
+      "at": 77392.410729,
+      "wall": 1794275512.240248,
+      "direction": "tx",
+      "can_id": 2047,
+      "payload": "01 00 cc 00 00 00 00 00"
+    },
+    {
+      "seq": 629,
+      "at": 77392.411807,
+      "wall": 1794275512.241327,
+      "direction": "rx",
+      "can_id": 0,
+      "payload": "01 8e b1 7f f7 ff 1a 16"
+    },
+    {
+      "seq": 630,
+      "at": 77392.414111,
+      "wall": 1794275512.24363,
+      "direction": "tx",
+      "can_id": 2047,
+      "payload": "02 00 cc 00 00 00 00 00"
+    },
+    {
+      "seq": 631,
+      "at": 77392.415236,
+      "wall": 1794275512.244756,
+      "direction": "rx",
+      "can_id": 0,
+      "payload": "02 6d 4b 7f e7 fe 19 15"
+    },
+    {
+      "seq": 632,
+      "at": 77392.417474,
+      "wall": 1794275512.246992,
+      "direction": "tx",
+      "can_id": 2047,
+      "payload": "03 00 cc 00 00 00 00 00"
+    },
+    {
+      "seq": 633,
+      "at": 77392.418583,
+      "wall": 1794275512.248102,
+      "direction": "rx",
+      "can_id": 0,
+      "payload": "03 65 f7 7f f7 ff 18 16"
+    },
+    {
+      "seq": 634,
+      "at": 77392.420723,
+      "wall": 1794275512.250242,
+      "direction": "tx",
+      "can_id": 2047,
+      "payload": "04 00 cc 00 00 00 00 00"
+    },
+    {
+      "seq": 635,
+      "at": 77392.421797,
+      "wall": 1794275512.251317,
+      "direction": "rx",
+      "can_id": 0,
+      "payload": "04 7b c8 7f e7 ff 18 17"
+    },
+    {
+      "seq": 636,
+      "at": 77392.423934,
+      "wall": 1794275512.253453,
+      "direction": "tx",
+      "can_id": 2047,
+      "payload": "05 00 33 07 00 00 00 00"
+    },
+    {
+      "seq": 637,
+      "at": 77392.425,
+      "wall": 1794275512.254519,
+      "direction": "rx",
+      "can_id": 0,
+      "payload": "05 00 33 07 00 00 00 00"
+    },
+    {
+      "seq": 638,
+      "at": 77392.42724,
+      "wall": 1794275512.256759,
+      "direction": "tx",
+      "can_id": 2047,
+      "payload": "05 00 33 08 00 00 00 00"
+    },
+    {
+      "seq": 639,
+      "at": 77392.428383,
+      "wall": 1794275512.257902,
+      "direction": "rx",
+      "can_id": 0,
+      "payload": "05 00 33 08 05 00 00 00"
+    },
+    {
+      "seq": 640,
+      "at": 77392.430482,
+      "wall": 1794275512.260001,
+      "direction": "tx",
+      "can_id": 2047,
+      "payload": "05 00 33 09 00 00 00 00"
+    },
+    {
+      "seq": 641,
+      "at": 77392.431678,
+      "wall": 1794275512.261198,
+      "direction": "rx",
+      "can_id": 0,
+      "payload": "05 00 33 09 00 00 00 00"
+    },
+    {
+      "seq": 642,
+      "at": 77392.433926,
+      "wall": 1794275512.263445,
+      "direction": "tx",
+      "can_id": 2047,
+      "payload": "05 00 33 0a 00 00 00 00"
+    },
+    {
+      "seq": 643,
+      "at": 77392.434984,
+      "wall": 1794275512.264503,
+      "direction": "rx",
+      "can_id": 0,
+      "payload": "05 00 33 0a 01 00 00 00"
+    },
+    {
+      "seq": 644,
+      "at": 77392.437154,
+      "wall": 1794275512.266672,
+      "direction": "tx",
+      "can_id": 2047,
+      "payload": "05 00 33 15 00 00 00 00"
+    },
+    {
+      "seq": 645,
+      "at": 77392.438255,
+      "wall": 1794275512.267775,
+      "direction": "rx",
+      "can_id": 0,
+      "payload": "05 00 33 15 00 00 48 41"
+    },
+    {
+      "seq": 646,
+      "at": 77392.440542,
+      "wall": 1794275512.270061,
+      "direction": "tx",
+      "can_id": 2047,
+      "payload": "05 00 33 16 00 00 00 00"
+    },
+    {
+      "seq": 647,
+      "at": 77392.441607,
+      "wall": 1794275512.271127,
+      "direction": "rx",
+      "can_id": 0,
+      "payload": "05 00 33 16 00 00 20 41"
+    },
+    {
+      "seq": 648,
+      "at": 77392.443826,
+      "wall": 1794275512.273345,
+      "direction": "tx",
+      "can_id": 2047,
+      "payload": "05 00 33 17 00 00 00 00"
+    },
+    {
+      "seq": 649,
+      "at": 77392.444911,
+      "wall": 1794275512.274431,
+      "direction": "rx",
+      "can_id": 0,
+      "payload": "05 00 33 17 00 00 e0 41"
+    },
+    {
+      "seq": 650,
+      "at": 77392.477778,
+      "wall": 1794275512.307297,
+      "direction": "tx",
+      "can_id": 2047,
+      "payload": "05 00 cc 00 00 00 00 00"
+    },
+    {
+      "seq": 651,
+      "at": 77392.480148,
+      "wall": 1794275512.309668,
+      "direction": "rx",
+      "can_id": 0,
+      "payload": "05 99 f2 7f f8 01 19 17"
+    },
+    {
+      "seq": 652,
+      "at": 77392.481293,
+      "wall": 1794275512.310812,
+      "direction": "tx",
+      "can_id": 2047,
+      "payload": "01 00 cc 00 00 00 00 00"
+    },
+    {
+      "seq": 653,
+      "at": 77392.483604,
+      "wall": 1794275512.313124,
+      "direction": "rx",
+      "can_id": 0,
+      "payload": "01 8e b1 80 07 ff 1a 16"
+    },
+    {
+      "seq": 654,
+      "at": 77392.484705,
+      "wall": 1794275512.314224,
+      "direction": "tx",
+      "can_id": 2047,
+      "payload": "02 00 cc 00 00 00 00 00"
+    },
+    {
+      "seq": 655,
+      "at": 77392.485814,
+      "wall": 1794275512.315334,
+      "direction": "rx",
+      "can_id": 0,
+      "payload": "02 6d 4b 7f e7 fe 19 15"
+    },
+    {
+      "seq": 656,
+      "at": 77392.487922,
+      "wall": 1794275512.31744,
+      "direction": "tx",
+      "can_id": 2047,
+      "payload": "03 00 cc 00 00 00 00 00"
+    },
+    {
+      "seq": 657,
+      "at": 77392.489142,
+      "wall": 1794275512.318662,
+      "direction": "rx",
+      "can_id": 0,
+      "payload": "03 65 f7 7f f7 ff 18 16"
+    },
+    {
+      "seq": 658,
+      "at": 77392.491449,
+      "wall": 1794275512.320968,
+      "direction": "tx",
+      "can_id": 2047,
+      "payload": "04 00 cc 00 00 00 00 00"
+    },
+    {
+      "seq": 659,
+      "at": 77392.492634,
+      "wall": 1794275512.322154,
+      "direction": "rx",
+      "can_id": 0,
+      "payload": "04 7b c8 7f f7 ff 18 17"
+    },
+    {
+      "seq": 660,
+      "at": 77392.494737,
+      "wall": 1794275512.324255,
+      "direction": "tx",
+      "can_id": 2047,
+      "payload": "05 00 33 07 00 00 00 00"
+    },
+    {
+      "seq": 661,
+      "at": 77392.495882,
+      "wall": 1794275512.325402,
+      "direction": "rx",
+      "can_id": 0,
+      "payload": "05 00 33 07 00 00 00 00"
+    },
+    {
+      "seq": 662,
+      "at": 77392.498184,
+      "wall": 1794275512.327702,
+      "direction": "tx",
+      "can_id": 2047,
+      "payload": "05 00 33 08 00 00 00 00"
+    },
+    {
+      "seq": 663,
+      "at": 77392.499282,
+      "wall": 1794275512.328802,
+      "direction": "rx",
+      "can_id": 0,
+      "payload": "05 00 33 08 05 00 00 00"
+    },
+    {
+      "seq": 664,
+      "at": 77392.501498,
+      "wall": 1794275512.331017,
+      "direction": "tx",
+      "can_id": 2047,
+      "payload": "05 00 33 09 00 00 00 00"
+    },
+    {
+      "seq": 665,
+      "at": 77392.5026,
+      "wall": 1794275512.332119,
+      "direction": "rx",
+      "can_id": 0,
+      "payload": "05 00 33 09 00 00 00 00"
+    },
+    {
+      "seq": 666,
+      "at": 77392.504776,
+      "wall": 1794275512.334294,
+      "direction": "tx",
+      "can_id": 2047,
+      "payload": "05 00 33 0a 00 00 00 00"
+    },
+    {
+      "seq": 667,
+      "at": 77392.505896,
+      "wall": 1794275512.335416,
+      "direction": "rx",
+      "can_id": 0,
+      "payload": "05 00 33 0a 01 00 00 00"
+    },
+    {
+      "seq": 668,
+      "at": 77392.508061,
+      "wall": 1794275512.337579,
+      "direction": "tx",
+      "can_id": 2047,
+      "payload": "05 00 33 15 00 00 00 00"
+    },
+    {
+      "seq": 669,
+      "at": 77392.509134,
+      "wall": 1794275512.338654,
+      "direction": "rx",
+      "can_id": 0,
+      "payload": "05 00 33 15 00 00 48 41"
+    },
+    {
+      "seq": 670,
+      "at": 77392.511437,
+      "wall": 1794275512.340955,
+      "direction": "tx",
+      "can_id": 2047,
+      "payload": "05 00 33 16 00 00 00 00"
+    },
+    {
+      "seq": 671,
+      "at": 77392.513637,
+      "wall": 1794275512.343157,
+      "direction": "rx",
+      "can_id": 0,
+      "payload": "05 00 33 16 00 00 20 41"
+    },
+    {
+      "seq": 672,
+      "at": 77392.514768,
+      "wall": 1794275512.344286,
+      "direction": "tx",
+      "can_id": 2047,
+      "payload": "05 00 33 17 00 00 00 00"
+    },
+    {
+      "seq": 673,
+      "at": 77392.515932,
+      "wall": 1794275512.345451,
+      "direction": "rx",
+      "can_id": 0,
+      "payload": "05 00 33 17 00 00 e0 41"
+    },
+    {
+      "seq": 674,
+      "at": 77392.549028,
+      "wall": 1794275512.378547,
+      "direction": "tx",
+      "can_id": 2047,
+      "payload": "05 00 cc 00 00 00 00 00"
+    },
+    {
+      "seq": 675,
+      "at": 77392.552413,
+      "wall": 1794275512.381932,
+      "direction": "tx",
+      "can_id": 2047,
+      "payload": "01 00 cc 00 00 00 00 00"
+    },
+    {
+      "seq": 676,
+      "at": 77392.555764,
+      "wall": 1794275512.385283,
+      "direction": "tx",
+      "can_id": 2047,
+      "payload": "02 00 cc 00 00 00 00 00"
+    },
+    {
+      "seq": 677,
+      "at": 77392.5558,
+      "wall": 1794275512.385319,
+      "direction": "rx",
+      "can_id": 0,
+      "payload": "05 99 f2 80 08 02 19 17"
+    },
+    {
+      "seq": 678,
+      "at": 77392.555868,
+      "wall": 1794275512.385387,
+      "direction": "rx",
+      "can_id": 0,
+      "payload": "01 8e b1 7f f7 ff 1a 16"
+    },
+    {
+      "seq": 679,
+      "at": 77392.556983,
+      "wall": 1794275512.386504,
+      "direction": "rx",
+      "can_id": 0,
+      "payload": "02 6d 4b 80 07 ff 19 15"
+    },
+    {
+      "seq": 680,
+      "at": 77392.559218,
+      "wall": 1794275512.388737,
+      "direction": "tx",
+      "can_id": 2047,
+      "payload": "03 00 cc 00 00 00 00 00"
+    },
+    {
+      "seq": 681,
+      "at": 77392.560343,
+      "wall": 1794275512.389863,
+      "direction": "rx",
+      "can_id": 0,
+      "payload": "03 65 f7 7f f7 ff 18 16"
+    },
+    {
+      "seq": 682,
+      "at": 77392.562549,
+      "wall": 1794275512.392068,
+      "direction": "tx",
+      "can_id": 2047,
+      "payload": "04 00 cc 00 00 00 00 00"
+    },
+    {
+      "seq": 683,
+      "at": 77392.563639,
+      "wall": 1794275512.393159,
+      "direction": "rx",
+      "can_id": 0,
+      "payload": "04 7b c8 7f f7 fe 18 17"
+    },
+    {
+      "seq": 684,
+      "at": 77392.565883,
+      "wall": 1794275512.395401,
+      "direction": "tx",
+      "can_id": 2047,
+      "payload": "05 00 33 07 00 00 00 00"
+    },
+    {
+      "seq": 685,
+      "at": 77392.566995,
+      "wall": 1794275512.396515,
+      "direction": "rx",
+      "can_id": 0,
+      "payload": "05 00 33 07 00 00 00 00"
+    },
+    {
+      "seq": 686,
+      "at": 77392.569252,
+      "wall": 1794275512.398771,
+      "direction": "tx",
+      "can_id": 2047,
+      "payload": "05 00 33 08 00 00 00 00"
+    },
+    {
+      "seq": 687,
+      "at": 77392.57034,
+      "wall": 1794275512.39986,
+      "direction": "rx",
+      "can_id": 0,
+      "payload": "05 00 33 08 05 00 00 00"
+    },
+    {
+      "seq": 688,
+      "at": 77392.572601,
+      "wall": 1794275512.40212,
+      "direction": "tx",
+      "can_id": 2047,
+      "payload": "05 00 33 09 00 00 00 00"
+    },
+    {
+      "seq": 689,
+      "at": 77392.573692,
+      "wall": 1794275512.403212,
+      "direction": "rx",
+      "can_id": 0,
+      "payload": "05 00 33 09 00 00 00 00"
+    },
+    {
+      "seq": 690,
+      "at": 77392.575867,
+      "wall": 1794275512.405386,
+      "direction": "tx",
+      "can_id": 2047,
+      "payload": "05 00 33 0a 00 00 00 00"
+    },
+    {
+      "seq": 691,
+      "at": 77392.577043,
+      "wall": 1794275512.406563,
+      "direction": "rx",
+      "can_id": 0,
+      "payload": "05 00 33 0a 01 00 00 00"
+    },
+    {
+      "seq": 692,
+      "at": 77392.579159,
+      "wall": 1794275512.408678,
+      "direction": "tx",
+      "can_id": 2047,
+      "payload": "05 00 33 15 00 00 00 00"
+    },
+    {
+      "seq": 693,
+      "at": 77392.580267,
+      "wall": 1794275512.409786,
+      "direction": "rx",
+      "can_id": 0,
+      "payload": "05 00 33 15 00 00 48 41"
+    },
+    {
+      "seq": 694,
+      "at": 77392.582453,
+      "wall": 1794275512.411972,
+      "direction": "tx",
+      "can_id": 2047,
+      "payload": "05 00 33 16 00 00 00 00"
+    },
+    {
+      "seq": 695,
+      "at": 77392.58358,
+      "wall": 1794275512.413099,
+      "direction": "rx",
+      "can_id": 0,
+      "payload": "05 00 33 16 00 00 20 41"
+    },
+    {
+      "seq": 696,
+      "at": 77392.585828,
+      "wall": 1794275512.415346,
+      "direction": "tx",
+      "can_id": 2047,
+      "payload": "05 00 33 17 00 00 00 00"
+    },
+    {
+      "seq": 697,
+      "at": 77392.588128,
+      "wall": 1794275512.417647,
+      "direction": "rx",
+      "can_id": 0,
+      "payload": "05 00 33 17 00 00 e0 41"
+    },
+    {
+      "seq": 698,
+      "at": 77392.619886,
+      "wall": 1794275512.449405,
+      "direction": "tx",
+      "can_id": 2047,
+      "payload": "05 00 cc 00 00 00 00 00"
+    },
+    {
+      "seq": 699,
+      "at": 77392.620981,
+      "wall": 1794275512.4505,
+      "direction": "rx",
+      "can_id": 0,
+      "payload": "05 99 f2 7f f8 01 19 17"
+    },
+    {
+      "seq": 700,
+      "at": 77392.623206,
+      "wall": 1794275512.452725,
+      "direction": "tx",
+      "can_id": 2047,
+      "payload": "01 00 cc 00 00 00 00 00"
+    },
+    {
+      "seq": 701,
+      "at": 77392.624303,
+      "wall": 1794275512.453823,
+      "direction": "rx",
+      "can_id": 0,
+      "payload": "01 8e b1 7f f7 ff 1a 16"
+    },
+    {
+      "seq": 702,
+      "at": 77392.626498,
+      "wall": 1794275512.456017,
+      "direction": "tx",
+      "can_id": 2047,
+      "payload": "02 00 cc 00 00 00 00 00"
+    },
+    {
+      "seq": 703,
+      "at": 77392.627567,
+      "wall": 1794275512.457087,
+      "direction": "rx",
+      "can_id": 0,
+      "payload": "02 6d 4b 7f e7 ff 19 15"
+    },
+    {
+      "seq": 704,
+      "at": 77392.629751,
+      "wall": 1794275512.45927,
+      "direction": "tx",
+      "can_id": 2047,
+      "payload": "03 00 cc 00 00 00 00 00"
+    },
+    {
+      "seq": 705,
+      "at": 77392.630839,
+      "wall": 1794275512.460359,
+      "direction": "rx",
+      "can_id": 0,
+      "payload": "03 65 f7 7f f7 ff 18 16"
+    },
+    {
+      "seq": 706,
+      "at": 77392.633035,
+      "wall": 1794275512.462554,
+      "direction": "tx",
+      "can_id": 2047,
+      "payload": "04 00 cc 00 00 00 00 00"
+    },
+    {
+      "seq": 707,
+      "at": 77392.634193,
+      "wall": 1794275512.463712,
+      "direction": "rx",
+      "can_id": 0,
+      "payload": "04 7b c8 7f f7 ff 18 17"
+    },
+    {
+      "seq": 708,
+      "at": 77392.636336,
+      "wall": 1794275512.465855,
+      "direction": "tx",
+      "can_id": 2047,
+      "payload": "05 00 33 07 00 00 00 00"
+    },
+    {
+      "seq": 709,
+      "at": 77392.637403,
+      "wall": 1794275512.466923,
+      "direction": "rx",
+      "can_id": 0,
+      "payload": "05 00 33 07 00 00 00 00"
+    },
+    {
+      "seq": 710,
+      "at": 77392.639559,
+      "wall": 1794275512.469078,
+      "direction": "tx",
+      "can_id": 2047,
+      "payload": "05 00 33 08 00 00 00 00"
+    },
+    {
+      "seq": 711,
+      "at": 77392.640712,
+      "wall": 1794275512.470234,
+      "direction": "rx",
+      "can_id": 0,
+      "payload": "05 00 33 08 05 00 00 00"
+    },
+    {
+      "seq": 712,
+      "at": 77392.643006,
+      "wall": 1794275512.472525,
+      "direction": "tx",
+      "can_id": 2047,
+      "payload": "05 00 33 09 00 00 00 00"
+    },
+    {
+      "seq": 713,
+      "at": 77392.644103,
+      "wall": 1794275512.473624,
+      "direction": "rx",
+      "can_id": 0,
+      "payload": "05 00 33 09 00 00 00 00"
+    },
+    {
+      "seq": 714,
+      "at": 77392.646373,
+      "wall": 1794275512.475892,
+      "direction": "tx",
+      "can_id": 2047,
+      "payload": "05 00 33 0a 00 00 00 00"
+    },
+    {
+      "seq": 715,
+      "at": 77392.647479,
+      "wall": 1794275512.477,
+      "direction": "rx",
+      "can_id": 0,
+      "payload": "05 00 33 0a 01 00 00 00"
+    },
+    {
+      "seq": 716,
+      "at": 77392.649818,
+      "wall": 1794275512.479337,
+      "direction": "tx",
+      "can_id": 2047,
+      "payload": "05 00 33 15 00 00 00 00"
+    },
+    {
+      "seq": 717,
+      "at": 77392.650952,
+      "wall": 1794275512.480472,
+      "direction": "rx",
+      "can_id": 0,
+      "payload": "05 00 33 15 00 00 48 41"
+    },
+    {
+      "seq": 718,
+      "at": 77392.653231,
+      "wall": 1794275512.48275,
+      "direction": "tx",
+      "can_id": 2047,
+      "payload": "05 00 33 16 00 00 00 00"
+    },
+    {
+      "seq": 719,
+      "at": 77392.654341,
+      "wall": 1794275512.483861,
+      "direction": "rx",
+      "can_id": 0,
+      "payload": "05 00 33 16 00 00 20 41"
+    },
+    {
+      "seq": 720,
+      "at": 77392.656706,
+      "wall": 1794275512.486225,
+      "direction": "tx",
+      "can_id": 2047,
+      "payload": "05 00 33 17 00 00 00 00"
+    },
+    {
+      "seq": 721,
+      "at": 77392.657819,
+      "wall": 1794275512.487339,
+      "direction": "rx",
+      "can_id": 0,
+      "payload": "05 00 33 17 00 00 e0 41"
+    },
+    {
+      "seq": 722,
+      "at": 77392.69087,
+      "wall": 1794275512.520389,
+      "direction": "tx",
+      "can_id": 2047,
+      "payload": "05 00 cc 00 00 00 00 00"
+    },
+    {
+      "seq": 723,
+      "at": 77392.692019,
+      "wall": 1794275512.521539,
+      "direction": "rx",
+      "can_id": 0,
+      "payload": "05 99 f2 7f f8 02 19 17"
+    },
+    {
+      "seq": 724,
+      "at": 77392.694535,
+      "wall": 1794275512.524054,
+      "direction": "tx",
+      "can_id": 2047,
+      "payload": "01 00 cc 00 00 00 00 00"
+    },
+    {
+      "seq": 725,
+      "at": 77392.696732,
+      "wall": 1794275512.526253,
+      "direction": "rx",
+      "can_id": 0,
+      "payload": "01 8e b1 7f f8 00 1a 16"
+    },
+    {
+      "seq": 726,
+      "at": 77392.697875,
+      "wall": 1794275512.527394,
+      "direction": "tx",
+      "can_id": 2047,
+      "payload": "02 00 cc 00 00 00 00 00"
+    },
+    {
+      "seq": 727,
+      "at": 77392.701199,
+      "wall": 1794275512.53072,
+      "direction": "rx",
+      "can_id": 0,
+      "payload": "02 6d 4b 80 07 fe 19 15"
+    },
+    {
+      "seq": 728,
+      "at": 77392.701234,
+      "wall": 1794275512.530752,
+      "direction": "tx",
+      "can_id": 2047,
+      "payload": "03 00 cc 00 00 00 00 00"
+    },
+    {
+      "seq": 729,
+      "at": 77392.704492,
+      "wall": 1794275512.534014,
+      "direction": "rx",
+      "can_id": 0,
+      "payload": "03 65 f7 7f f7 ff 18 16"
+    },
+    {
+      "seq": 730,
+      "at": 77392.70453,
+      "wall": 1794275512.534049,
+      "direction": "tx",
+      "can_id": 2047,
+      "payload": "04 00 cc 00 00 00 00 00"
+    },
+    {
+      "seq": 731,
+      "at": 77392.70562,
+      "wall": 1794275512.535141,
+      "direction": "rx",
+      "can_id": 0,
+      "payload": "04 7b c8 7f e7 fe 18 17"
+    },
+    {
+      "seq": 732,
+      "at": 77392.707858,
+      "wall": 1794275512.537377,
+      "direction": "tx",
+      "can_id": 2047,
+      "payload": "05 00 33 07 00 00 00 00"
+    },
+    {
+      "seq": 733,
+      "at": 77392.710043,
+      "wall": 1794275512.539565,
+      "direction": "rx",
+      "can_id": 0,
+      "payload": "05 00 33 07 00 00 00 00"
+    },
+    {
+      "seq": 734,
+      "at": 77392.711151,
+      "wall": 1794275512.54067,
+      "direction": "tx",
+      "can_id": 2047,
+      "payload": "05 00 33 08 00 00 00 00"
+    },
+    {
+      "seq": 735,
+      "at": 77392.714463,
+      "wall": 1794275512.543982,
+      "direction": "tx",
+      "can_id": 2047,
+      "payload": "05 00 33 09 00 00 00 00"
+    },
+    {
+      "seq": 736,
+      "at": 77392.715585,
+      "wall": 1794275512.545106,
+      "direction": "rx",
+      "can_id": 0,
+      "payload": "05 00 33 08 05 00 00 00"
+    },
+    {
+      "seq": 737,
+      "at": 77392.715598,
+      "wall": 1794275512.545117,
+      "direction": "rx",
+      "can_id": 0,
+      "payload": "05 00 33 09 00 00 00 00"
+    },
+    {
+      "seq": 738,
+      "at": 77392.71777,
+      "wall": 1794275512.547289,
+      "direction": "tx",
+      "can_id": 2047,
+      "payload": "05 00 33 0a 00 00 00 00"
+    },
+    {
+      "seq": 739,
+      "at": 77392.719981,
+      "wall": 1794275512.549501,
+      "direction": "rx",
+      "can_id": 0,
+      "payload": "05 00 33 0a 01 00 00 00"
+    },
+    {
+      "seq": 740,
+      "at": 77392.721107,
+      "wall": 1794275512.550626,
+      "direction": "tx",
+      "can_id": 2047,
+      "payload": "05 00 33 15 00 00 00 00"
+    },
+    {
+      "seq": 741,
+      "at": 77392.722182,
+      "wall": 1794275512.551702,
+      "direction": "rx",
+      "can_id": 0,
+      "payload": "05 00 33 15 00 00 48 41"
+    },
+    {
+      "seq": 742,
+      "at": 77392.72436,
+      "wall": 1794275512.553879,
+      "direction": "tx",
+      "can_id": 2047,
+      "payload": "05 00 33 16 00 00 00 00"
+    },
+    {
+      "seq": 743,
+      "at": 77392.726503,
+      "wall": 1794275512.556023,
+      "direction": "rx",
+      "can_id": 0,
+      "payload": "05 00 33 16 00 00 20 41"
+    },
+    {
+      "seq": 744,
+      "at": 77392.727607,
+      "wall": 1794275512.557126,
+      "direction": "tx",
+      "can_id": 2047,
+      "payload": "05 00 33 17 00 00 00 00"
+    },
+    {
+      "seq": 745,
+      "at": 77392.728761,
+      "wall": 1794275512.558281,
+      "direction": "rx",
+      "can_id": 0,
+      "payload": "05 00 33 17 00 00 e0 41"
+    },
+    {
+      "seq": 746,
+      "at": 77392.761442,
+      "wall": 1794275512.590961,
+      "direction": "tx",
+      "can_id": 2047,
+      "payload": "05 00 cc 00 00 00 00 00"
+    },
+    {
+      "seq": 747,
+      "at": 77392.762533,
+      "wall": 1794275512.592053,
+      "direction": "rx",
+      "can_id": 0,
+      "payload": "05 99 f2 7f f8 03 19 17"
+    },
+    {
+      "seq": 748,
+      "at": 77392.76471,
+      "wall": 1794275512.594229,
+      "direction": "tx",
+      "can_id": 2047,
+      "payload": "01 00 cc 00 00 00 00 00"
+    },
+    {
+      "seq": 749,
+      "at": 77392.765797,
+      "wall": 1794275512.595317,
+      "direction": "rx",
+      "can_id": 0,
+      "payload": "01 8e b1 7f f8 00 1a 16"
+    },
+    {
+      "seq": 750,
+      "at": 77392.767949,
+      "wall": 1794275512.597468,
+      "direction": "tx",
+      "can_id": 2047,
+      "payload": "02 00 cc 00 00 00 00 00"
+    },
+    {
+      "seq": 751,
+      "at": 77392.769232,
+      "wall": 1794275512.598752,
+      "direction": "rx",
+      "can_id": 0,
+      "payload": "02 6d 4b 7f f7 fe 19 15"
+    },
+    {
+      "seq": 752,
+      "at": 77392.771436,
+      "wall": 1794275512.600955,
+      "direction": "tx",
+      "can_id": 2047,
+      "payload": "03 00 cc 00 00 00 00 00"
+    },
+    {
+      "seq": 753,
+      "at": 77392.772543,
+      "wall": 1794275512.602063,
+      "direction": "rx",
+      "can_id": 0,
+      "payload": "03 65 f7 7f f7 ff 18 16"
+    },
+    {
+      "seq": 754,
+      "at": 77392.774692,
+      "wall": 1794275512.604211,
+      "direction": "tx",
+      "can_id": 2047,
+      "payload": "04 00 cc 00 00 00 00 00"
+    },
+    {
+      "seq": 755,
+      "at": 77392.775763,
+      "wall": 1794275512.605282,
+      "direction": "rx",
+      "can_id": 0,
+      "payload": "04 7b c8 7f f7 ff 18 17"
+    },
+    {
+      "seq": 756,
+      "at": 77392.778072,
+      "wall": 1794275512.607591,
+      "direction": "tx",
+      "can_id": 2047,
+      "payload": "05 00 33 07 00 00 00 00"
+    },
+    {
+      "seq": 757,
+      "at": 77392.779166,
+      "wall": 1794275512.608685,
+      "direction": "rx",
+      "can_id": 0,
+      "payload": "05 00 33 07 00 00 00 00"
+    },
+    {
+      "seq": 758,
+      "at": 77392.781339,
+      "wall": 1794275512.610857,
+      "direction": "tx",
+      "can_id": 2047,
+      "payload": "05 00 33 08 00 00 00 00"
+    },
+    {
+      "seq": 759,
+      "at": 77392.782425,
+      "wall": 1794275512.611945,
+      "direction": "rx",
+      "can_id": 0,
+      "payload": "05 00 33 08 05 00 00 00"
+    },
+    {
+      "seq": 760,
+      "at": 77392.784595,
+      "wall": 1794275512.614114,
+      "direction": "tx",
+      "can_id": 2047,
+      "payload": "05 00 33 09 00 00 00 00"
+    },
+    {
+      "seq": 761,
+      "at": 77392.786753,
+      "wall": 1794275512.616273,
+      "direction": "rx",
+      "can_id": 0,
+      "payload": "05 00 33 09 00 00 00 00"
+    },
+    {
+      "seq": 762,
+      "at": 77392.787841,
+      "wall": 1794275512.617359,
+      "direction": "tx",
+      "can_id": 2047,
+      "payload": "05 00 33 0a 00 00 00 00"
+    },
+    {
+      "seq": 763,
+      "at": 77392.788928,
+      "wall": 1794275512.618448,
+      "direction": "rx",
+      "can_id": 0,
+      "payload": "05 00 33 0a 01 00 00 00"
+    },
+    {
+      "seq": 764,
+      "at": 77392.791086,
+      "wall": 1794275512.620605,
+      "direction": "tx",
+      "can_id": 2047,
+      "payload": "05 00 33 15 00 00 00 00"
+    },
+    {
+      "seq": 765,
+      "at": 77392.792184,
+      "wall": 1794275512.621704,
+      "direction": "rx",
+      "can_id": 0,
+      "payload": "05 00 33 15 00 00 48 41"
+    },
+    {
+      "seq": 766,
+      "at": 77392.794331,
+      "wall": 1794275512.62385,
+      "direction": "tx",
+      "can_id": 2047,
+      "payload": "05 00 33 16 00 00 00 00"
+    },
+    {
+      "seq": 767,
+      "at": 77392.795428,
+      "wall": 1794275512.624948,
+      "direction": "rx",
+      "can_id": 0,
+      "payload": "05 00 33 16 00 00 20 41"
+    },
+    {
+      "seq": 768,
+      "at": 77392.797578,
+      "wall": 1794275512.627097,
+      "direction": "tx",
+      "can_id": 2047,
+      "payload": "05 00 33 17 00 00 00 00"
+    },
+    {
+      "seq": 769,
+      "at": 77392.798688,
+      "wall": 1794275512.628208,
+      "direction": "rx",
+      "can_id": 0,
+      "payload": "05 00 33 17 00 00 e0 41"
+    },
+    {
+      "seq": 770,
+      "at": 77392.831273,
+      "wall": 1794275512.660793,
+      "direction": "tx",
+      "can_id": 2047,
+      "payload": "05 00 cc 00 00 00 00 00"
+    },
+    {
+      "seq": 771,
+      "at": 77392.833486,
+      "wall": 1794275512.66301,
+      "direction": "rx",
+      "can_id": 0,
+      "payload": "05 99 f2 7f f8 02 19 17"
+    },
+    {
+      "seq": 772,
+      "at": 77392.834614,
+      "wall": 1794275512.664133,
+      "direction": "tx",
+      "can_id": 2047,
+      "payload": "01 00 cc 00 00 00 00 00"
+    },
+    {
+      "seq": 773,
+      "at": 77392.836788,
+      "wall": 1794275512.666309,
+      "direction": "rx",
+      "can_id": 0,
+      "payload": "01 8e b1 7f f8 00 1a 16"
+    },
+    {
+      "seq": 774,
+      "at": 77392.837891,
+      "wall": 1794275512.667409,
+      "direction": "tx",
+      "can_id": 2047,
+      "payload": "02 00 cc 00 00 00 00 00"
+    },
+    {
+      "seq": 775,
+      "at": 77392.838981,
+      "wall": 1794275512.6685,
+      "direction": "rx",
+      "can_id": 0,
+      "payload": "02 6d 4b 80 07 ff 19 15"
+    },
+    {
+      "seq": 776,
+      "at": 77392.841126,
+      "wall": 1794275512.670645,
+      "direction": "tx",
+      "can_id": 2047,
+      "payload": "03 00 cc 00 00 00 00 00"
+    },
+    {
+      "seq": 777,
+      "at": 77392.842199,
+      "wall": 1794275512.671719,
+      "direction": "rx",
+      "can_id": 0,
+      "payload": "03 65 f7 7f f7 ff 18 16"
+    },
+    {
+      "seq": 778,
+      "at": 77392.844405,
+      "wall": 1794275512.673923,
+      "direction": "tx",
+      "can_id": 2047,
+      "payload": "04 00 cc 00 00 00 00 00"
+    },
+    {
+      "seq": 779,
+      "at": 77392.845483,
+      "wall": 1794275512.675003,
+      "direction": "rx",
+      "can_id": 0,
+      "payload": "04 7b c8 7f e7 ff 18 17"
+    },
+    {
+      "seq": 780,
+      "at": 77392.847633,
+      "wall": 1794275512.677151,
+      "direction": "tx",
+      "can_id": 2047,
+      "payload": "05 00 33 07 00 00 00 00"
+    },
+    {
+      "seq": 781,
+      "at": 77392.848725,
+      "wall": 1794275512.678245,
+      "direction": "rx",
+      "can_id": 0,
+      "payload": "05 00 33 07 00 00 00 00"
+    },
+    {
+      "seq": 782,
+      "at": 77392.850877,
+      "wall": 1794275512.680396,
+      "direction": "tx",
+      "can_id": 2047,
+      "payload": "05 00 33 08 00 00 00 00"
+    },
+    {
+      "seq": 783,
+      "at": 77392.851963,
+      "wall": 1794275512.681483,
+      "direction": "rx",
+      "can_id": 0,
+      "payload": "05 00 33 08 05 00 00 00"
+    },
+    {
+      "seq": 784,
+      "at": 77392.85417,
+      "wall": 1794275512.683689,
+      "direction": "tx",
+      "can_id": 2047,
+      "payload": "05 00 33 09 00 00 00 00"
+    },
+    {
+      "seq": 785,
+      "at": 77392.85525,
+      "wall": 1794275512.68477,
+      "direction": "rx",
+      "can_id": 0,
+      "payload": "05 00 33 09 00 00 00 00"
+    },
+    {
+      "seq": 786,
+      "at": 77392.857417,
+      "wall": 1794275512.686936,
+      "direction": "tx",
+      "can_id": 2047,
+      "payload": "05 00 33 0a 00 00 00 00"
+    },
+    {
+      "seq": 787,
+      "at": 77392.858496,
+      "wall": 1794275512.688015,
+      "direction": "rx",
+      "can_id": 0,
+      "payload": "05 00 33 0a 01 00 00 00"
+    },
+    {
+      "seq": 788,
+      "at": 77392.860657,
+      "wall": 1794275512.690176,
+      "direction": "tx",
+      "can_id": 2047,
+      "payload": "05 00 33 15 00 00 00 00"
+    },
+    {
+      "seq": 789,
+      "at": 77392.861739,
+      "wall": 1794275512.691259,
+      "direction": "rx",
+      "can_id": 0,
+      "payload": "05 00 33 15 00 00 48 41"
+    },
+    {
+      "seq": 790,
+      "at": 77392.863945,
+      "wall": 1794275512.693464,
+      "direction": "tx",
+      "can_id": 2047,
+      "payload": "05 00 33 16 00 00 00 00"
+    },
+    {
+      "seq": 791,
+      "at": 77392.865025,
+      "wall": 1794275512.694546,
+      "direction": "rx",
+      "can_id": 0,
+      "payload": "05 00 33 16 00 00 20 41"
+    },
+    {
+      "seq": 792,
+      "at": 77392.867193,
+      "wall": 1794275512.696712,
+      "direction": "tx",
+      "can_id": 2047,
+      "payload": "05 00 33 17 00 00 00 00"
+    },
+    {
+      "seq": 793,
+      "at": 77392.869399,
+      "wall": 1794275512.698919,
+      "direction": "rx",
+      "can_id": 0,
+      "payload": "05 00 33 17 00 00 e0 41"
+    },
+    {
+      "seq": 794,
+      "at": 77392.90113,
+      "wall": 1794275512.730649,
+      "direction": "tx",
+      "can_id": 2047,
+      "payload": "05 00 cc 00 00 00 00 00"
+    },
+    {
+      "seq": 795,
+      "at": 77392.902235,
+      "wall": 1794275512.731755,
+      "direction": "rx",
+      "can_id": 0,
+      "payload": "05 99 f2 7f f8 02 19 17"
+    },
+    {
+      "seq": 796,
+      "at": 77392.904426,
+      "wall": 1794275512.733945,
+      "direction": "tx",
+      "can_id": 2047,
+      "payload": "01 00 cc 00 00 00 00 00"
+    },
+    {
+      "seq": 797,
+      "at": 77392.905507,
+      "wall": 1794275512.735026,
+      "direction": "rx",
+      "can_id": 0,
+      "payload": "01 8e b1 7f f8 00 1a 16"
+    },
+    {
+      "seq": 798,
+      "at": 77392.907747,
+      "wall": 1794275512.737266,
+      "direction": "tx",
+      "can_id": 2047,
+      "payload": "02 00 cc 00 00 00 00 00"
+    },
+    {
+      "seq": 799,
+      "at": 77392.908833,
+      "wall": 1794275512.738353,
+      "direction": "rx",
+      "can_id": 0,
+      "payload": "02 6d 4b 7f e7 ff 19 15"
+    },
+    {
+      "seq": 800,
+      "at": 77392.910983,
+      "wall": 1794275512.740501,
+      "direction": "tx",
+      "can_id": 2047,
+      "payload": "03 00 cc 00 00 00 00 00"
+    },
+    {
+      "seq": 801,
+      "at": 77392.912052,
+      "wall": 1794275512.741572,
+      "direction": "rx",
+      "can_id": 0,
+      "payload": "03 65 f7 7f f7 ff 18 16"
+    },
+    {
+      "seq": 802,
+      "at": 77392.914192,
+      "wall": 1794275512.743711,
+      "direction": "tx",
+      "can_id": 2047,
+      "payload": "04 00 cc 00 00 00 00 00"
+    },
+    {
+      "seq": 803,
+      "at": 77392.915265,
+      "wall": 1794275512.744784,
+      "direction": "rx",
+      "can_id": 0,
+      "payload": "04 7b c8 7f f7 ff 18 17"
+    },
+    {
+      "seq": 804,
+      "at": 77392.917431,
+      "wall": 1794275512.746949,
+      "direction": "tx",
+      "can_id": 2047,
+      "payload": "05 00 33 07 00 00 00 00"
+    },
+    {
+      "seq": 805,
+      "at": 77392.920642,
+      "wall": 1794275512.750161,
+      "direction": "tx",
+      "can_id": 2047,
+      "payload": "05 00 33 08 00 00 00 00"
+    },
+    {
+      "seq": 806,
+      "at": 77392.921719,
+      "wall": 1794275512.751238,
+      "direction": "rx",
+      "can_id": 0,
+      "payload": "05 00 33 07 00 00 00 00"
+    },
+    {
+      "seq": 807,
+      "at": 77392.921728,
+      "wall": 1794275512.751246,
+      "direction": "rx",
+      "can_id": 0,
+      "payload": "05 00 33 08 05 00 00 00"
+    },
+    {
+      "seq": 808,
+      "at": 77392.92389,
+      "wall": 1794275512.753409,
+      "direction": "tx",
+      "can_id": 2047,
+      "payload": "05 00 33 09 00 00 00 00"
+    },
+    {
+      "seq": 809,
+      "at": 77392.924976,
+      "wall": 1794275512.754495,
+      "direction": "rx",
+      "can_id": 0,
+      "payload": "05 00 33 09 00 00 00 00"
+    },
+    {
+      "seq": 810,
+      "at": 77392.927189,
+      "wall": 1794275512.756708,
+      "direction": "tx",
+      "can_id": 2047,
+      "payload": "05 00 33 0a 00 00 00 00"
+    },
+    {
+      "seq": 811,
+      "at": 77392.928281,
+      "wall": 1794275512.757801,
+      "direction": "rx",
+      "can_id": 0,
+      "payload": "05 00 33 0a 01 00 00 00"
+    },
+    {
+      "seq": 812,
+      "at": 77392.930422,
+      "wall": 1794275512.759941,
+      "direction": "tx",
+      "can_id": 2047,
+      "payload": "05 00 33 15 00 00 00 00"
+    },
+    {
+      "seq": 813,
+      "at": 77392.931494,
+      "wall": 1794275512.761013,
+      "direction": "rx",
+      "can_id": 0,
+      "payload": "05 00 33 15 00 00 48 41"
+    },
+    {
+      "seq": 814,
+      "at": 77392.933776,
+      "wall": 1794275512.763295,
+      "direction": "tx",
+      "can_id": 2047,
+      "payload": "05 00 33 16 00 00 00 00"
+    },
+    {
+      "seq": 815,
+      "at": 77392.934859,
+      "wall": 1794275512.764379,
+      "direction": "rx",
+      "can_id": 0,
+      "payload": "05 00 33 16 00 00 20 41"
+    },
+    {
+      "seq": 816,
+      "at": 77392.937009,
+      "wall": 1794275512.766528,
+      "direction": "tx",
+      "can_id": 2047,
+      "payload": "05 00 33 17 00 00 00 00"
+    },
+    {
+      "seq": 817,
+      "at": 77392.93808,
+      "wall": 1794275512.7676,
+      "direction": "rx",
+      "can_id": 0,
+      "payload": "05 00 33 17 00 00 e0 41"
+    },
+    {
+      "seq": 818,
+      "at": 77392.970666,
+      "wall": 1794275512.800186,
+      "direction": "tx",
+      "can_id": 2047,
+      "payload": "05 00 cc 00 00 00 00 00"
+    },
+    {
+      "seq": 819,
+      "at": 77392.971795,
+      "wall": 1794275512.801316,
+      "direction": "rx",
+      "can_id": 0,
+      "payload": "05 99 f2 7f f8 02 19 17"
+    },
+    {
+      "seq": 820,
+      "at": 77392.974043,
+      "wall": 1794275512.803562,
+      "direction": "tx",
+      "can_id": 2047,
+      "payload": "01 00 cc 00 00 00 00 00"
+    },
+    {
+      "seq": 821,
+      "at": 77392.975246,
+      "wall": 1794275512.804767,
+      "direction": "rx",
+      "can_id": 0,
+      "payload": "01 8e b1 7f f7 ff 1a 16"
+    },
+    {
+      "seq": 822,
+      "at": 77392.977439,
+      "wall": 1794275512.806958,
+      "direction": "tx",
+      "can_id": 2047,
+      "payload": "02 00 cc 00 00 00 00 00"
+    },
+    {
+      "seq": 823,
+      "at": 77392.978524,
+      "wall": 1794275512.808044,
+      "direction": "rx",
+      "can_id": 0,
+      "payload": "02 6d 4b 7f f7 fe 19 15"
+    },
+    {
+      "seq": 824,
+      "at": 77392.980674,
+      "wall": 1794275512.810193,
+      "direction": "tx",
+      "can_id": 2047,
+      "payload": "03 00 cc 00 00 00 00 00"
+    },
+    {
+      "seq": 825,
+      "at": 77392.981769,
+      "wall": 1794275512.811289,
+      "direction": "rx",
+      "can_id": 0,
+      "payload": "03 65 f7 7f f7 ff 18 16"
+    },
+    {
+      "seq": 826,
+      "at": 77392.984309,
+      "wall": 1794275512.813828,
+      "direction": "tx",
+      "can_id": 2047,
+      "payload": "04 00 cc 00 00 00 00 00"
+    },
+    {
+      "seq": 827,
+      "at": 77392.985392,
+      "wall": 1794275512.814912,
+      "direction": "rx",
+      "can_id": 0,
+      "payload": "04 7b c8 7f f7 fe 18 17"
+    },
+    {
+      "seq": 828,
+      "at": 77392.987551,
+      "wall": 1794275512.81707,
+      "direction": "tx",
+      "can_id": 2047,
+      "payload": "05 00 33 07 00 00 00 00"
+    },
+    {
+      "seq": 829,
+      "at": 77392.988645,
+      "wall": 1794275512.818165,
+      "direction": "rx",
+      "can_id": 0,
+      "payload": "05 00 33 07 00 00 00 00"
+    },
+    {
+      "seq": 830,
+      "at": 77392.990834,
+      "wall": 1794275512.820353,
+      "direction": "tx",
+      "can_id": 2047,
+      "payload": "05 00 33 08 00 00 00 00"
+    },
+    {
+      "seq": 831,
+      "at": 77392.991972,
+      "wall": 1794275512.821492,
+      "direction": "rx",
+      "can_id": 0,
+      "payload": "05 00 33 08 05 00 00 00"
+    },
+    {
+      "seq": 832,
+      "at": 77392.994197,
+      "wall": 1794275512.823715,
+      "direction": "tx",
+      "can_id": 2047,
+      "payload": "05 00 33 09 00 00 00 00"
+    },
+    {
+      "seq": 833,
+      "at": 77392.995279,
+      "wall": 1794275512.824798,
+      "direction": "rx",
+      "can_id": 0,
+      "payload": "05 00 33 09 00 00 00 00"
+    },
+    {
+      "seq": 834,
+      "at": 77392.997501,
+      "wall": 1794275512.82702,
+      "direction": "tx",
+      "can_id": 2047,
+      "payload": "05 00 33 0a 00 00 00 00"
+    },
+    {
+      "seq": 835,
+      "at": 77392.998597,
+      "wall": 1794275512.828117,
+      "direction": "rx",
+      "can_id": 0,
+      "payload": "05 00 33 0a 01 00 00 00"
+    },
+    {
+      "seq": 836,
+      "at": 77393.000781,
+      "wall": 1794275512.8303,
+      "direction": "tx",
+      "can_id": 2047,
+      "payload": "05 00 33 15 00 00 00 00"
+    },
+    {
+      "seq": 837,
+      "at": 77393.001877,
+      "wall": 1794275512.831397,
+      "direction": "rx",
+      "can_id": 0,
+      "payload": "05 00 33 15 00 00 48 41"
+    },
+    {
+      "seq": 838,
+      "at": 77393.004066,
+      "wall": 1794275512.833584,
+      "direction": "tx",
+      "can_id": 2047,
+      "payload": "05 00 33 16 00 00 00 00"
+    },
+    {
+      "seq": 839,
+      "at": 77393.005147,
+      "wall": 1794275512.834666,
+      "direction": "rx",
+      "can_id": 0,
+      "payload": "05 00 33 16 00 00 20 41"
+    },
+    {
+      "seq": 840,
+      "at": 77393.007318,
+      "wall": 1794275512.836836,
+      "direction": "tx",
+      "can_id": 2047,
+      "payload": "05 00 33 17 00 00 00 00"
+    },
+    {
+      "seq": 841,
+      "at": 77393.008524,
+      "wall": 1794275512.838044,
+      "direction": "rx",
+      "can_id": 0,
+      "payload": "05 00 33 17 00 00 e0 41"
+    },
+    {
+      "seq": 842,
+      "at": 77393.041447,
+      "wall": 1794275512.870966,
+      "direction": "tx",
+      "can_id": 2047,
+      "payload": "05 00 cc 00 00 00 00 00"
+    },
+    {
+      "seq": 843,
+      "at": 77393.043752,
+      "wall": 1794275512.873272,
+      "direction": "rx",
+      "can_id": 0,
+      "payload": "05 99 f2 7f f8 02 19 17"
+    },
+    {
+      "seq": 844,
+      "at": 77393.044866,
+      "wall": 1794275512.874385,
+      "direction": "tx",
+      "can_id": 2047,
+      "payload": "01 00 cc 00 00 00 00 00"
+    },
+    {
+      "seq": 845,
+      "at": 77393.047027,
+      "wall": 1794275512.876547,
+      "direction": "rx",
+      "can_id": 0,
+      "payload": "01 8e b1 7f f7 ff 1a 16"
+    },
+    {
+      "seq": 846,
+      "at": 77393.048183,
+      "wall": 1794275512.877702,
+      "direction": "tx",
+      "can_id": 2047,
+      "payload": "02 00 cc 00 00 00 00 00"
+    },
+    {
+      "seq": 847,
+      "at": 77393.049429,
+      "wall": 1794275512.878948,
+      "direction": "rx",
+      "can_id": 0,
+      "payload": "02 6d 4b 7f f7 ff 19 15"
+    },
+    {
+      "seq": 848,
+      "at": 77393.051796,
+      "wall": 1794275512.881315,
+      "direction": "tx",
+      "can_id": 2047,
+      "payload": "03 00 cc 00 00 00 00 00"
+    },
+    {
+      "seq": 849,
+      "at": 77393.052872,
+      "wall": 1794275512.882392,
+      "direction": "rx",
+      "can_id": 0,
+      "payload": "03 65 f7 7f f7 ff 18 16"
+    },
+    {
+      "seq": 850,
+      "at": 77393.055122,
+      "wall": 1794275512.884641,
+      "direction": "tx",
+      "can_id": 2047,
+      "payload": "04 00 cc 00 00 00 00 00"
+    },
+    {
+      "seq": 851,
+      "at": 77393.056214,
+      "wall": 1794275512.885734,
+      "direction": "rx",
+      "can_id": 0,
+      "payload": "04 7b c8 7f f7 fe 18 17"
+    },
+    {
+      "seq": 852,
+      "at": 77393.05842,
+      "wall": 1794275512.887938,
+      "direction": "tx",
+      "can_id": 2047,
+      "payload": "05 00 33 07 00 00 00 00"
+    },
+    {
+      "seq": 853,
+      "at": 77393.059489,
+      "wall": 1794275512.889008,
+      "direction": "rx",
+      "can_id": 0,
+      "payload": "05 00 33 07 00 00 00 00"
+    },
+    {
+      "seq": 854,
+      "at": 77393.061644,
+      "wall": 1794275512.891163,
+      "direction": "tx",
+      "can_id": 2047,
+      "payload": "05 00 33 08 00 00 00 00"
+    },
+    {
+      "seq": 855,
+      "at": 77393.062747,
+      "wall": 1794275512.892267,
+      "direction": "rx",
+      "can_id": 0,
+      "payload": "05 00 33 08 05 00 00 00"
+    },
+    {
+      "seq": 856,
+      "at": 77393.064915,
+      "wall": 1794275512.894434,
+      "direction": "tx",
+      "can_id": 2047,
+      "payload": "05 00 33 09 00 00 00 00"
+    },
+    {
+      "seq": 857,
+      "at": 77393.066054,
+      "wall": 1794275512.895573,
+      "direction": "rx",
+      "can_id": 0,
+      "payload": "05 00 33 09 00 00 00 00"
+    },
+    {
+      "seq": 858,
+      "at": 77393.068214,
+      "wall": 1794275512.897732,
+      "direction": "tx",
+      "can_id": 2047,
+      "payload": "05 00 33 0a 00 00 00 00"
+    },
+    {
+      "seq": 859,
+      "at": 77393.069281,
+      "wall": 1794275512.898801,
+      "direction": "rx",
+      "can_id": 0,
+      "payload": "05 00 33 0a 01 00 00 00"
+    },
+    {
+      "seq": 860,
+      "at": 77393.071491,
+      "wall": 1794275512.90101,
+      "direction": "tx",
+      "can_id": 2047,
+      "payload": "05 00 33 15 00 00 00 00"
+    },
+    {
+      "seq": 861,
+      "at": 77393.072666,
+      "wall": 1794275512.902186,
+      "direction": "rx",
+      "can_id": 0,
+      "payload": "05 00 33 15 00 00 48 41"
+    },
+    {
+      "seq": 862,
+      "at": 77393.0749,
+      "wall": 1794275512.904418,
+      "direction": "tx",
+      "can_id": 2047,
+      "payload": "05 00 33 16 00 00 00 00"
+    },
+    {
+      "seq": 863,
+      "at": 77393.077043,
+      "wall": 1794275512.906563,
+      "direction": "rx",
+      "can_id": 0,
+      "payload": "05 00 33 16 00 00 20 41"
+    },
+    {
+      "seq": 864,
+      "at": 77393.078141,
+      "wall": 1794275512.90766,
+      "direction": "tx",
+      "can_id": 2047,
+      "payload": "05 00 33 17 00 00 00 00"
+    },
+    {
+      "seq": 865,
+      "at": 77393.079303,
+      "wall": 1794275512.908822,
+      "direction": "rx",
+      "can_id": 0,
+      "payload": "05 00 33 17 00 00 e0 41"
+    },
+    {
+      "seq": 866,
+      "at": 77393.112427,
+      "wall": 1794275512.941947,
+      "direction": "tx",
+      "can_id": 2047,
+      "payload": "05 00 cc 00 00 00 00 00"
+    },
+    {
+      "seq": 867,
+      "at": 77393.113543,
+      "wall": 1794275512.943065,
+      "direction": "rx",
+      "can_id": 0,
+      "payload": "05 99 f2 7f f8 02 19 17"
+    },
+    {
+      "seq": 868,
+      "at": 77393.115798,
+      "wall": 1794275512.945317,
+      "direction": "tx",
+      "can_id": 2047,
+      "payload": "01 00 cc 00 00 00 00 00"
+    },
+    {
+      "seq": 869,
+      "at": 77393.116972,
+      "wall": 1794275512.946493,
+      "direction": "rx",
+      "can_id": 0,
+      "payload": "01 8e b1 7f f7 ff 1a 16"
+    },
+    {
+      "seq": 870,
+      "at": 77393.119191,
+      "wall": 1794275512.948709,
+      "direction": "tx",
+      "can_id": 2047,
+      "payload": "02 00 cc 00 00 00 00 00"
+    },
+    {
+      "seq": 871,
+      "at": 77393.120339,
+      "wall": 1794275512.94986,
+      "direction": "rx",
+      "can_id": 0,
+      "payload": "02 6d 4b 7f e7 fe 19 15"
+    },
+    {
+      "seq": 872,
+      "at": 77393.122575,
+      "wall": 1794275512.952094,
+      "direction": "tx",
+      "can_id": 2047,
+      "payload": "03 00 cc 00 00 00 00 00"
+    },
+    {
+      "seq": 873,
+      "at": 77393.123697,
+      "wall": 1794275512.953217,
+      "direction": "rx",
+      "can_id": 0,
+      "payload": "03 65 f7 7f f7 ff 18 16"
+    },
+    {
+      "seq": 874,
+      "at": 77393.125993,
+      "wall": 1794275512.955512,
+      "direction": "tx",
+      "can_id": 2047,
+      "payload": "04 00 cc 00 00 00 00 00"
+    },
+    {
+      "seq": 875,
+      "at": 77393.1271,
+      "wall": 1794275512.95662,
+      "direction": "rx",
+      "can_id": 0,
+      "payload": "04 7b c8 80 07 ff 18 17"
+    },
+    {
+      "seq": 876,
+      "at": 77393.129327,
+      "wall": 1794275512.958846,
+      "direction": "tx",
+      "can_id": 2047,
+      "payload": "05 00 33 07 00 00 00 00"
+    },
+    {
+      "seq": 877,
+      "at": 77393.132594,
+      "wall": 1794275512.962113,
+      "direction": "tx",
+      "can_id": 2047,
+      "payload": "05 00 33 08 00 00 00 00"
+    },
+    {
+      "seq": 878,
+      "at": 77393.135756,
+      "wall": 1794275512.965275,
+      "direction": "rx",
+      "can_id": 0,
+      "payload": "05 00 33 07 00 00 00 00"
+    },
+    {
+      "seq": 879,
+      "at": 77393.135767,
+      "wall": 1794275512.965285,
+      "direction": "rx",
+      "can_id": 0,
+      "payload": "05 00 33 08 05 00 00 00"
+    },
+    {
+      "seq": 880,
+      "at": 77393.135792,
+      "wall": 1794275512.965311,
+      "direction": "tx",
+      "can_id": 2047,
+      "payload": "05 00 33 09 00 00 00 00"
+    },
+    {
+      "seq": 881,
+      "at": 77393.136878,
+      "wall": 1794275512.966398,
+      "direction": "rx",
+      "can_id": 0,
+      "payload": "05 00 33 09 00 00 00 00"
+    },
+    {
+      "seq": 882,
+      "at": 77393.13916,
+      "wall": 1794275512.968679,
+      "direction": "tx",
+      "can_id": 2047,
+      "payload": "05 00 33 0a 00 00 00 00"
+    },
+    {
+      "seq": 883,
+      "at": 77393.140258,
+      "wall": 1794275512.969777,
+      "direction": "rx",
+      "can_id": 0,
+      "payload": "05 00 33 0a 01 00 00 00"
+    },
+    {
+      "seq": 884,
+      "at": 77393.142495,
+      "wall": 1794275512.972013,
+      "direction": "tx",
+      "can_id": 2047,
+      "payload": "05 00 33 15 00 00 00 00"
+    },
+    {
+      "seq": 885,
+      "at": 77393.143568,
+      "wall": 1794275512.973088,
+      "direction": "rx",
+      "can_id": 0,
+      "payload": "05 00 33 15 00 00 48 41"
+    },
+    {
+      "seq": 886,
+      "at": 77393.145845,
+      "wall": 1794275512.975363,
+      "direction": "tx",
+      "can_id": 2047,
+      "payload": "05 00 33 16 00 00 00 00"
+    },
+    {
+      "seq": 887,
+      "at": 77393.146964,
+      "wall": 1794275512.976484,
+      "direction": "rx",
+      "can_id": 0,
+      "payload": "05 00 33 16 00 00 20 41"
+    },
+    {
+      "seq": 888,
+      "at": 77393.149167,
+      "wall": 1794275512.978685,
+      "direction": "tx",
+      "can_id": 2047,
+      "payload": "05 00 33 17 00 00 00 00"
+    },
+    {
+      "seq": 889,
+      "at": 77393.150235,
+      "wall": 1794275512.979755,
+      "direction": "rx",
+      "can_id": 0,
+      "payload": "05 00 33 17 00 00 e0 41"
+    },
+    {
+      "seq": 890,
+      "at": 77393.183009,
+      "wall": 1794275513.012528,
+      "direction": "tx",
+      "can_id": 2047,
+      "payload": "05 00 cc 00 00 00 00 00"
+    },
+    {
+      "seq": 891,
+      "at": 77393.184128,
+      "wall": 1794275513.013648,
+      "direction": "rx",
+      "can_id": 0,
+      "payload": "05 99 f2 80 08 02 19 17"
+    },
+    {
+      "seq": 892,
+      "at": 77393.186331,
+      "wall": 1794275513.01585,
+      "direction": "tx",
+      "can_id": 2047,
+      "payload": "01 00 cc 00 00 00 00 00"
+    },
+    {
+      "seq": 893,
+      "at": 77393.187405,
+      "wall": 1794275513.016924,
+      "direction": "rx",
+      "can_id": 0,
+      "payload": "01 8e b1 7f f8 00 1a 16"
+    },
+    {
+      "seq": 894,
+      "at": 77393.189677,
+      "wall": 1794275513.019196,
+      "direction": "tx",
+      "can_id": 2047,
+      "payload": "02 00 cc 00 00 00 00 00"
+    },
+    {
+      "seq": 895,
+      "at": 77393.190754,
+      "wall": 1794275513.020273,
+      "direction": "rx",
+      "can_id": 0,
+      "payload": "02 6d 4b 80 07 fe 19 15"
+    },
+    {
+      "seq": 896,
+      "at": 77393.192937,
+      "wall": 1794275513.022455,
+      "direction": "tx",
+      "can_id": 2047,
+      "payload": "03 00 cc 00 00 00 00 00"
+    },
+    {
+      "seq": 897,
+      "at": 77393.194042,
+      "wall": 1794275513.023562,
+      "direction": "rx",
+      "can_id": 0,
+      "payload": "03 65 f7 80 08 00 18 16"
+    },
+    {
+      "seq": 898,
+      "at": 77393.196229,
+      "wall": 1794275513.025748,
+      "direction": "tx",
+      "can_id": 2047,
+      "payload": "04 00 cc 00 00 00 00 00"
+    },
+    {
+      "seq": 899,
+      "at": 77393.197326,
+      "wall": 1794275513.026846,
+      "direction": "rx",
+      "can_id": 0,
+      "payload": "04 7b c9 7f f7 fe 18 17"
+    },
+    {
+      "seq": 900,
+      "at": 77393.199571,
+      "wall": 1794275513.02909,
+      "direction": "tx",
+      "can_id": 2047,
+      "payload": "05 00 33 07 00 00 00 00"
+    },
+    {
+      "seq": 901,
+      "at": 77393.20068,
+      "wall": 1794275513.0302,
+      "direction": "rx",
+      "can_id": 0,
+      "payload": "05 00 33 07 00 00 00 00"
+    },
+    {
+      "seq": 902,
+      "at": 77393.202943,
+      "wall": 1794275513.032462,
+      "direction": "tx",
+      "can_id": 2047,
+      "payload": "05 00 33 08 00 00 00 00"
+    },
+    {
+      "seq": 903,
+      "at": 77393.205165,
+      "wall": 1794275513.034686,
+      "direction": "rx",
+      "can_id": 0,
+      "payload": "05 00 33 08 05 00 00 00"
+    },
+    {
+      "seq": 904,
+      "at": 77393.206271,
+      "wall": 1794275513.03579,
+      "direction": "tx",
+      "can_id": 2047,
+      "payload": "05 00 33 09 00 00 00 00"
+    },
+    {
+      "seq": 905,
+      "at": 77393.208443,
+      "wall": 1794275513.037963,
+      "direction": "rx",
+      "can_id": 0,
+      "payload": "05 00 33 09 00 00 00 00"
+    },
+    {
+      "seq": 906,
+      "at": 77393.209529,
+      "wall": 1794275513.039048,
+      "direction": "tx",
+      "can_id": 2047,
+      "payload": "05 00 33 0a 00 00 00 00"
+    },
+    {
+      "seq": 907,
+      "at": 77393.210603,
+      "wall": 1794275513.040123,
+      "direction": "rx",
+      "can_id": 0,
+      "payload": "05 00 33 0a 01 00 00 00"
+    },
+    {
+      "seq": 908,
+      "at": 77393.212785,
+      "wall": 1794275513.042304,
+      "direction": "tx",
+      "can_id": 2047,
+      "payload": "05 00 33 15 00 00 00 00"
+    },
+    {
+      "seq": 909,
+      "at": 77393.21495,
+      "wall": 1794275513.044471,
+      "direction": "rx",
+      "can_id": 0,
+      "payload": "05 00 33 15 00 00 48 41"
+    },
+    {
+      "seq": 910,
+      "at": 77393.216118,
+      "wall": 1794275513.045637,
+      "direction": "tx",
+      "can_id": 2047,
+      "payload": "05 00 33 16 00 00 00 00"
+    },
+    {
+      "seq": 911,
+      "at": 77393.217211,
+      "wall": 1794275513.046731,
+      "direction": "rx",
+      "can_id": 0,
+      "payload": "05 00 33 16 00 00 20 41"
+    },
+    {
+      "seq": 912,
+      "at": 77393.219497,
+      "wall": 1794275513.049016,
+      "direction": "tx",
+      "can_id": 2047,
+      "payload": "05 00 33 17 00 00 00 00"
+    },
+    {
+      "seq": 913,
+      "at": 77393.220611,
+      "wall": 1794275513.050131,
+      "direction": "rx",
+      "can_id": 0,
+      "payload": "05 00 33 17 00 00 e0 41"
+    },
+    {
+      "seq": 914,
+      "at": 77393.253334,
+      "wall": 1794275513.082853,
+      "direction": "tx",
+      "can_id": 2047,
+      "payload": "05 00 cc 00 00 00 00 00"
+    },
+    {
+      "seq": 915,
+      "at": 77393.254427,
+      "wall": 1794275513.083948,
+      "direction": "rx",
+      "can_id": 0,
+      "payload": "05 99 f2 80 08 03 19 17"
+    },
+    {
+      "seq": 916,
+      "at": 77393.256608,
+      "wall": 1794275513.086127,
+      "direction": "tx",
+      "can_id": 2047,
+      "payload": "01 00 cc 00 00 00 00 00"
+    },
+    {
+      "seq": 917,
+      "at": 77393.257735,
+      "wall": 1794275513.087257,
+      "direction": "rx",
+      "can_id": 0,
+      "payload": "01 8e b1 80 07 ff 1a 16"
+    },
+    {
+      "seq": 918,
+      "at": 77393.259945,
+      "wall": 1794275513.089464,
+      "direction": "tx",
+      "can_id": 2047,
+      "payload": "02 00 cc 00 00 00 00 00"
+    },
+    {
+      "seq": 919,
+      "at": 77393.262151,
+      "wall": 1794275513.091671,
+      "direction": "rx",
+      "can_id": 0,
+      "payload": "02 6d 4b 7f f7 ff 19 15"
+    },
+    {
+      "seq": 920,
+      "at": 77393.263235,
+      "wall": 1794275513.092754,
+      "direction": "tx",
+      "can_id": 2047,
+      "payload": "03 00 cc 00 00 00 00 00"
+    },
+    {
+      "seq": 921,
+      "at": 77393.26434,
+      "wall": 1794275513.093859,
+      "direction": "rx",
+      "can_id": 0,
+      "payload": "03 65 f7 7f f7 ff 18 16"
+    },
+    {
+      "seq": 922,
+      "at": 77393.26651,
+      "wall": 1794275513.096029,
+      "direction": "tx",
+      "can_id": 2047,
+      "payload": "04 00 cc 00 00 00 00 00"
+    },
+    {
+      "seq": 923,
+      "at": 77393.267603,
+      "wall": 1794275513.097123,
+      "direction": "rx",
+      "can_id": 0,
+      "payload": "04 7b c8 7f f7 ff 18 17"
+    },
+    {
+      "seq": 924,
+      "at": 77393.269821,
+      "wall": 1794275513.09934,
+      "direction": "tx",
+      "can_id": 2047,
+      "payload": "05 00 33 07 00 00 00 00"
+    },
+    {
+      "seq": 925,
+      "at": 77393.270907,
+      "wall": 1794275513.100427,
+      "direction": "rx",
+      "can_id": 0,
+      "payload": "05 00 33 07 00 00 00 00"
+    },
+    {
+      "seq": 926,
+      "at": 77393.27307,
+      "wall": 1794275513.102589,
+      "direction": "tx",
+      "can_id": 2047,
+      "payload": "05 00 33 08 00 00 00 00"
+    },
+    {
+      "seq": 927,
+      "at": 77393.274156,
+      "wall": 1794275513.103676,
+      "direction": "rx",
+      "can_id": 0,
+      "payload": "05 00 33 08 05 00 00 00"
+    },
+    {
+      "seq": 928,
+      "at": 77393.276322,
+      "wall": 1794275513.105841,
+      "direction": "tx",
+      "can_id": 2047,
+      "payload": "05 00 33 09 00 00 00 00"
+    },
+    {
+      "seq": 929,
+      "at": 77393.277452,
+      "wall": 1794275513.106972,
+      "direction": "rx",
+      "can_id": 0,
+      "payload": "05 00 33 09 00 00 00 00"
+    },
+    {
+      "seq": 930,
+      "at": 77393.279662,
+      "wall": 1794275513.109181,
+      "direction": "tx",
+      "can_id": 2047,
+      "payload": "05 00 33 0a 00 00 00 00"
+    },
+    {
+      "seq": 931,
+      "at": 77393.280753,
+      "wall": 1794275513.110273,
+      "direction": "rx",
+      "can_id": 0,
+      "payload": "05 00 33 0a 01 00 00 00"
+    },
+    {
+      "seq": 932,
+      "at": 77393.282901,
+      "wall": 1794275513.11242,
+      "direction": "tx",
+      "can_id": 2047,
+      "payload": "05 00 33 15 00 00 00 00"
+    },
+    {
+      "seq": 933,
+      "at": 77393.283977,
+      "wall": 1794275513.113497,
+      "direction": "rx",
+      "can_id": 0,
+      "payload": "05 00 33 15 00 00 48 41"
+    },
+    {
+      "seq": 934,
+      "at": 77393.286179,
+      "wall": 1794275513.115698,
+      "direction": "tx",
+      "can_id": 2047,
+      "payload": "05 00 33 16 00 00 00 00"
+    },
+    {
+      "seq": 935,
+      "at": 77393.28725,
+      "wall": 1794275513.11677,
+      "direction": "rx",
+      "can_id": 0,
+      "payload": "05 00 33 16 00 00 20 41"
+    },
+    {
+      "seq": 936,
+      "at": 77393.289452,
+      "wall": 1794275513.118971,
+      "direction": "tx",
+      "can_id": 2047,
+      "payload": "05 00 33 17 00 00 00 00"
+    },
+    {
+      "seq": 937,
+      "at": 77393.291645,
+      "wall": 1794275513.121166,
+      "direction": "rx",
+      "can_id": 0,
+      "payload": "05 00 33 17 00 00 e0 41"
+    },
+    {
+      "seq": 938,
+      "at": 77393.323426,
+      "wall": 1794275513.152946,
+      "direction": "tx",
+      "can_id": 2047,
+      "payload": "05 00 cc 00 00 00 00 00"
+    },
+    {
+      "seq": 939,
+      "at": 77393.325626,
+      "wall": 1794275513.155147,
+      "direction": "rx",
+      "can_id": 0,
+      "payload": "05 99 f2 80 08 02 19 17"
+    },
+    {
+      "seq": 940,
+      "at": 77393.326728,
+      "wall": 1794275513.156247,
+      "direction": "tx",
+      "can_id": 2047,
+      "payload": "01 00 cc 00 00 00 00 00"
+    },
+    {
+      "seq": 941,
+      "at": 77393.32781,
+      "wall": 1794275513.15733,
+      "direction": "rx",
+      "can_id": 0,
+      "payload": "01 8e b1 80 18 00 1a 16"
+    },
+    {
+      "seq": 942,
+      "at": 77393.329962,
+      "wall": 1794275513.159481,
+      "direction": "tx",
+      "can_id": 2047,
+      "payload": "02 00 cc 00 00 00 00 00"
+    },
+    {
+      "seq": 943,
+      "at": 77393.331044,
+      "wall": 1794275513.160563,
+      "direction": "rx",
+      "can_id": 0,
+      "payload": "02 6d 4b 80 07 fe 19 15"
+    },
+    {
+      "seq": 944,
+      "at": 77393.333257,
+      "wall": 1794275513.162775,
+      "direction": "tx",
+      "can_id": 2047,
+      "payload": "03 00 cc 00 00 00 00 00"
+    },
+    {
+      "seq": 945,
+      "at": 77393.334339,
+      "wall": 1794275513.163858,
+      "direction": "rx",
+      "can_id": 0,
+      "payload": "03 65 f7 7f f7 ff 18 16"
+    },
+    {
+      "seq": 946,
+      "at": 77393.336496,
+      "wall": 1794275513.166015,
+      "direction": "tx",
+      "can_id": 2047,
+      "payload": "04 00 cc 00 00 00 00 00"
+    },
+    {
+      "seq": 947,
+      "at": 77393.337568,
+      "wall": 1794275513.167088,
+      "direction": "rx",
+      "can_id": 0,
+      "payload": "04 7b c8 7f f7 fe 18 17"
+    },
+    {
+      "seq": 948,
+      "at": 77393.339699,
+      "wall": 1794275513.169218,
+      "direction": "tx",
+      "can_id": 2047,
+      "payload": "05 00 33 07 00 00 00 00"
+    },
+    {
+      "seq": 949,
+      "at": 77393.340829,
+      "wall": 1794275513.170349,
+      "direction": "rx",
+      "can_id": 0,
+      "payload": "05 00 33 07 00 00 00 00"
+    },
+    {
+      "seq": 950,
+      "at": 77393.342967,
+      "wall": 1794275513.172486,
+      "direction": "tx",
+      "can_id": 2047,
+      "payload": "05 00 33 08 00 00 00 00"
+    },
+    {
+      "seq": 951,
+      "at": 77393.344039,
+      "wall": 1794275513.173558,
+      "direction": "rx",
+      "can_id": 0,
+      "payload": "05 00 33 08 05 00 00 00"
+    },
+    {
+      "seq": 952,
+      "at": 77393.346185,
+      "wall": 1794275513.175704,
+      "direction": "tx",
+      "can_id": 2047,
+      "payload": "05 00 33 09 00 00 00 00"
+    },
+    {
+      "seq": 953,
+      "at": 77393.3473,
+      "wall": 1794275513.17682,
+      "direction": "rx",
+      "can_id": 0,
+      "payload": "05 00 33 09 00 00 00 00"
+    },
+    {
+      "seq": 954,
+      "at": 77393.349464,
+      "wall": 1794275513.178982,
+      "direction": "tx",
+      "can_id": 2047,
+      "payload": "05 00 33 0a 00 00 00 00"
+    },
+    {
+      "seq": 955,
+      "at": 77393.351606,
+      "wall": 1794275513.181126,
+      "direction": "rx",
+      "can_id": 0,
+      "payload": "05 00 33 0a 01 00 00 00"
+    },
+    {
+      "seq": 956,
+      "at": 77393.352715,
+      "wall": 1794275513.182233,
+      "direction": "tx",
+      "can_id": 2047,
+      "payload": "05 00 33 15 00 00 00 00"
+    },
+    {
+      "seq": 957,
+      "at": 77393.353798,
+      "wall": 1794275513.183318,
+      "direction": "rx",
+      "can_id": 0,
+      "payload": "05 00 33 15 00 00 48 41"
+    },
+    {
+      "seq": 958,
+      "at": 77393.35597,
+      "wall": 1794275513.185489,
+      "direction": "tx",
+      "can_id": 2047,
+      "payload": "05 00 33 16 00 00 00 00"
+    },
+    {
+      "seq": 959,
+      "at": 77393.35706,
+      "wall": 1794275513.18658,
+      "direction": "rx",
+      "can_id": 0,
+      "payload": "05 00 33 16 00 00 20 41"
+    },
+    {
+      "seq": 960,
+      "at": 77393.35922,
+      "wall": 1794275513.188738,
+      "direction": "tx",
+      "can_id": 2047,
+      "payload": "05 00 33 17 00 00 00 00"
+    },
+    {
+      "seq": 961,
+      "at": 77393.360379,
+      "wall": 1794275513.189899,
+      "direction": "rx",
+      "can_id": 0,
+      "payload": "05 00 33 17 00 00 e0 41"
+    },
+    {
+      "seq": 962,
+      "at": 77393.392925,
+      "wall": 1794275513.222444,
+      "direction": "tx",
+      "can_id": 2047,
+      "payload": "05 00 cc 00 00 00 00 00"
+    },
+    {
+      "seq": 963,
+      "at": 77393.394042,
+      "wall": 1794275513.223562,
+      "direction": "rx",
+      "can_id": 0,
+      "payload": "05 99 f2 80 08 02 19 17"
+    },
+    {
+      "seq": 964,
+      "at": 77393.396237,
+      "wall": 1794275513.225756,
+      "direction": "tx",
+      "can_id": 2047,
+      "payload": "01 00 cc 00 00 00 00 00"
+    },
+    {
+      "seq": 965,
+      "at": 77393.397363,
+      "wall": 1794275513.226882,
+      "direction": "rx",
+      "can_id": 0,
+      "payload": "01 8e b1 7f e7 ff 1a 16"
+    },
+    {
+      "seq": 966,
+      "at": 77393.399507,
+      "wall": 1794275513.229026,
+      "direction": "tx",
+      "can_id": 2047,
+      "payload": "02 00 cc 00 00 00 00 00"
+    },
+    {
+      "seq": 967,
+      "at": 77393.400597,
+      "wall": 1794275513.230116,
+      "direction": "rx",
+      "can_id": 0,
+      "payload": "02 6d 4b 7f e7 fe 19 15"
+    },
+    {
+      "seq": 968,
+      "at": 77393.402746,
+      "wall": 1794275513.232265,
+      "direction": "tx",
+      "can_id": 2047,
+      "payload": "03 00 cc 00 00 00 00 00"
+    },
+    {
+      "seq": 969,
+      "at": 77393.403818,
+      "wall": 1794275513.233337,
+      "direction": "rx",
+      "can_id": 0,
+      "payload": "03 65 f7 7f f7 ff 18 16"
+    },
+    {
+      "seq": 970,
+      "at": 77393.405966,
+      "wall": 1794275513.235484,
+      "direction": "tx",
+      "can_id": 2047,
+      "payload": "04 00 cc 00 00 00 00 00"
+    },
+    {
+      "seq": 971,
+      "at": 77393.407037,
+      "wall": 1794275513.236556,
+      "direction": "rx",
+      "can_id": 0,
+      "payload": "04 7b c8 7f f7 ff 18 17"
+    },
+    {
+      "seq": 972,
+      "at": 77393.409192,
+      "wall": 1794275513.238711,
+      "direction": "tx",
+      "can_id": 2047,
+      "payload": "05 00 33 07 00 00 00 00"
+    },
+    {
+      "seq": 973,
+      "at": 77393.410267,
+      "wall": 1794275513.239787,
+      "direction": "rx",
+      "can_id": 0,
+      "payload": "05 00 33 07 00 00 00 00"
+    },
+    {
+      "seq": 974,
+      "at": 77393.41244,
+      "wall": 1794275513.241958,
+      "direction": "tx",
+      "can_id": 2047,
+      "payload": "05 00 33 08 00 00 00 00"
+    },
+    {
+      "seq": 975,
+      "at": 77393.41352,
+      "wall": 1794275513.24304,
+      "direction": "rx",
+      "can_id": 0,
+      "payload": "05 00 33 08 05 00 00 00"
+    },
+    {
+      "seq": 976,
+      "at": 77393.415665,
+      "wall": 1794275513.245183,
+      "direction": "tx",
+      "can_id": 2047,
+      "payload": "05 00 33 09 00 00 00 00"
+    },
+    {
+      "seq": 977,
+      "at": 77393.416749,
+      "wall": 1794275513.246286,
+      "direction": "rx",
+      "can_id": 0,
+      "payload": "05 00 33 09 00 00 00 00"
+    },
+    {
+      "seq": 978,
+      "at": 77393.418948,
+      "wall": 1794275513.248466,
+      "direction": "tx",
+      "can_id": 2047,
+      "payload": "05 00 33 0a 00 00 00 00"
+    },
+    {
+      "seq": 979,
+      "at": 77393.420068,
+      "wall": 1794275513.249588,
+      "direction": "rx",
+      "can_id": 0,
+      "payload": "05 00 33 0a 01 00 00 00"
+    },
+    {
+      "seq": 980,
+      "at": 77393.422241,
+      "wall": 1794275513.25176,
+      "direction": "tx",
+      "can_id": 2047,
+      "payload": "05 00 33 15 00 00 00 00"
+    },
+    {
+      "seq": 981,
+      "at": 77393.423323,
+      "wall": 1794275513.252842,
+      "direction": "rx",
+      "can_id": 0,
+      "payload": "05 00 33 15 00 00 48 41"
+    },
+    {
+      "seq": 982,
+      "at": 77393.425497,
+      "wall": 1794275513.255015,
+      "direction": "tx",
+      "can_id": 2047,
+      "payload": "05 00 33 16 00 00 00 00"
+    },
+    {
+      "seq": 983,
+      "at": 77393.426676,
+      "wall": 1794275513.256196,
+      "direction": "rx",
+      "can_id": 0,
+      "payload": "05 00 33 16 00 00 20 41"
+    },
+    {
+      "seq": 984,
+      "at": 77393.428867,
+      "wall": 1794275513.258386,
+      "direction": "tx",
+      "can_id": 2047,
+      "payload": "05 00 33 17 00 00 00 00"
+    },
+    {
+      "seq": 985,
+      "at": 77393.431041,
+      "wall": 1794275513.260561,
+      "direction": "rx",
+      "can_id": 0,
+      "payload": "05 00 33 17 00 00 e0 41"
+    },
+    {
+      "seq": 986,
+      "at": 77393.462691,
+      "wall": 1794275513.292211,
+      "direction": "tx",
+      "can_id": 2047,
+      "payload": "05 00 cc 00 00 00 00 00"
+    },
+    {
+      "seq": 987,
+      "at": 77393.466028,
+      "wall": 1794275513.295547,
+      "direction": "tx",
+      "can_id": 2047,
+      "payload": "01 00 cc 00 00 00 00 00"
+    },
+    {
+      "seq": 988,
+      "at": 77393.469285,
+      "wall": 1794275513.298804,
+      "direction": "tx",
+      "can_id": 2047,
+      "payload": "02 00 cc 00 00 00 00 00"
+    },
+    {
+      "seq": 989,
+      "at": 77393.472518,
+      "wall": 1794275513.302037,
+      "direction": "tx",
+      "can_id": 2047,
+      "payload": "03 00 cc 00 00 00 00 00"
+    },
+    {
+      "seq": 990,
+      "at": 77393.475803,
+      "wall": 1794275513.305321,
+      "direction": "tx",
+      "can_id": 2047,
+      "payload": "04 00 cc 00 00 00 00 00"
+    },
+    {
+      "seq": 991,
+      "at": 77393.479051,
+      "wall": 1794275513.30857,
+      "direction": "tx",
+      "can_id": 2047,
+      "payload": "05 00 33 07 00 00 00 00"
+    },
+    {
+      "seq": 992,
+      "at": 77393.482318,
+      "wall": 1794275513.311837,
+      "direction": "tx",
+      "can_id": 2047,
+      "payload": "05 00 33 08 00 00 00 00"
+    },
+    {
+      "seq": 993,
+      "at": 77393.48562,
+      "wall": 1794275513.315139,
+      "direction": "tx",
+      "can_id": 2047,
+      "payload": "05 00 33 09 00 00 00 00"
+    },
+    {
+      "seq": 994,
+      "at": 77393.486733,
+      "wall": 1794275513.316253,
+      "direction": "rx",
+      "can_id": 0,
+      "payload": "05 99 f2 7f f8 02 19 17"
+    },
+    {
+      "seq": 995,
+      "at": 77393.48676,
+      "wall": 1794275513.316278,
+      "direction": "rx",
+      "can_id": 0,
+      "payload": "01 8e b1 7f f7 ff 1a 16"
+    },
+    {
+      "seq": 996,
+      "at": 77393.487859,
+      "wall": 1794275513.317379,
+      "direction": "rx",
+      "can_id": 0,
+      "payload": "02 6d 4b 7f f7 fe 19 15"
+    },
+    {
+      "seq": 997,
+      "at": 77393.487869,
+      "wall": 1794275513.317387,
+      "direction": "rx",
+      "can_id": 0,
+      "payload": "03 65 f7 7f f7 ff 18 16"
+    },
+    {
+      "seq": 998,
+      "at": 77393.487871,
+      "wall": 1794275513.31739,
+      "direction": "rx",
+      "can_id": 0,
+      "payload": "04 7b c8 7f f7 ff 18 17"
+    },
+    {
+      "seq": 999,
+      "at": 77393.488972,
+      "wall": 1794275513.318492,
+      "direction": "rx",
+      "can_id": 0,
+      "payload": "05 00 33 07 00 00 00 00"
+    },
+    {
+      "seq": 1000,
+      "at": 77393.488984,
+      "wall": 1794275513.318503,
+      "direction": "rx",
+      "can_id": 0,
+      "payload": "05 00 33 08 05 00 00 00"
+    },
+    {
+      "seq": 1001,
+      "at": 77393.488987,
+      "wall": 1794275513.318506,
+      "direction": "rx",
+      "can_id": 0,
+      "payload": "05 00 33 09 00 00 00 00"
+    },
+    {
+      "seq": 1002,
+      "at": 77393.489017,
+      "wall": 1794275513.318535,
+      "direction": "tx",
+      "can_id": 2047,
+      "payload": "05 00 33 0a 00 00 00 00"
+    },
+    {
+      "seq": 1003,
+      "at": 77393.492296,
+      "wall": 1794275513.321815,
+      "direction": "tx",
+      "can_id": 2047,
+      "payload": "05 00 33 15 00 00 00 00"
+    },
+    {
+      "seq": 1004,
+      "at": 77393.495515,
+      "wall": 1794275513.325037,
+      "direction": "rx",
+      "can_id": 0,
+      "payload": "05 00 33 0a 01 00 00 00"
+    },
+    {
+      "seq": 1005,
+      "at": 77393.495531,
+      "wall": 1794275513.325049,
+      "direction": "rx",
+      "can_id": 0,
+      "payload": "05 00 33 15 00 00 48 41"
+    },
+    {
+      "seq": 1006,
+      "at": 77393.495559,
+      "wall": 1794275513.325077,
+      "direction": "tx",
+      "can_id": 2047,
+      "payload": "05 00 33 16 00 00 00 00"
+    },
+    {
+      "seq": 1007,
+      "at": 77393.496659,
+      "wall": 1794275513.326179,
+      "direction": "rx",
+      "can_id": 0,
+      "payload": "05 00 33 16 00 00 20 41"
+    },
+    {
+      "seq": 1008,
+      "at": 77393.498859,
+      "wall": 1794275513.328377,
+      "direction": "tx",
+      "can_id": 2047,
+      "payload": "05 00 33 17 00 00 00 00"
+    },
+    {
+      "seq": 1009,
+      "at": 77393.500069,
+      "wall": 1794275513.32959,
+      "direction": "rx",
+      "can_id": 0,
+      "payload": "05 00 33 17 00 00 e0 41"
+    },
+    {
+      "seq": 1010,
+      "at": 77393.533004,
+      "wall": 1794275513.362523,
+      "direction": "tx",
+      "can_id": 2047,
+      "payload": "05 00 cc 00 00 00 00 00"
+    },
+    {
+      "seq": 1011,
+      "at": 77393.534102,
+      "wall": 1794275513.363621,
+      "direction": "rx",
+      "can_id": 0,
+      "payload": "05 99 f2 7f f8 02 19 17"
+    },
+    {
+      "seq": 1012,
+      "at": 77393.536285,
+      "wall": 1794275513.365803,
+      "direction": "tx",
+      "can_id": 2047,
+      "payload": "01 00 cc 00 00 00 00 00"
+    },
+    {
+      "seq": 1013,
+      "at": 77393.537365,
+      "wall": 1794275513.366885,
+      "direction": "rx",
+      "can_id": 0,
+      "payload": "01 8e b1 7f f7 ff 1a 16"
+    },
+    {
+      "seq": 1014,
+      "at": 77393.539561,
+      "wall": 1794275513.36908,
+      "direction": "tx",
+      "can_id": 2047,
+      "payload": "02 00 cc 00 00 00 00 00"
+    },
+    {
+      "seq": 1015,
+      "at": 77393.540637,
+      "wall": 1794275513.370156,
+      "direction": "rx",
+      "can_id": 0,
+      "payload": "02 6d 4b 80 07 ff 19 15"
+    },
+    {
+      "seq": 1016,
+      "at": 77393.54279,
+      "wall": 1794275513.372308,
+      "direction": "tx",
+      "can_id": 2047,
+      "payload": "03 00 cc 00 00 00 00 00"
+    },
+    {
+      "seq": 1017,
+      "at": 77393.543887,
+      "wall": 1794275513.373406,
+      "direction": "rx",
+      "can_id": 0,
+      "payload": "03 65 f7 7f f7 ff 18 16"
+    },
+    {
+      "seq": 1018,
+      "at": 77393.546114,
+      "wall": 1794275513.375633,
+      "direction": "tx",
+      "can_id": 2047,
+      "payload": "04 00 cc 00 00 00 00 00"
+    },
+    {
+      "seq": 1019,
+      "at": 77393.547196,
+      "wall": 1794275513.376715,
+      "direction": "rx",
+      "can_id": 0,
+      "payload": "04 7b c8 7f f7 ff 18 17"
+    },
+    {
+      "seq": 1020,
+      "at": 77393.549391,
+      "wall": 1794275513.37891,
+      "direction": "tx",
+      "can_id": 2047,
+      "payload": "05 00 33 07 00 00 00 00"
+    },
+    {
+      "seq": 1021,
+      "at": 77393.552626,
+      "wall": 1794275513.382147,
+      "direction": "rx",
+      "can_id": 0,
+      "payload": "05 00 33 07 00 00 00 00"
+    },
+    {
+      "seq": 1022,
+      "at": 77393.552665,
+      "wall": 1794275513.382184,
+      "direction": "tx",
+      "can_id": 2047,
+      "payload": "05 00 33 08 00 00 00 00"
+    },
+    {
+      "seq": 1023,
+      "at": 77393.553769,
+      "wall": 1794275513.383289,
+      "direction": "rx",
+      "can_id": 0,
+      "payload": "05 00 33 08 05 00 00 00"
+    },
+    {
+      "seq": 1024,
+      "at": 77393.55595,
+      "wall": 1794275513.385469,
+      "direction": "tx",
+      "can_id": 2047,
+      "payload": "05 00 33 09 00 00 00 00"
+    },
+    {
+      "seq": 1025,
+      "at": 77393.55713,
+      "wall": 1794275513.386649,
+      "direction": "rx",
+      "can_id": 0,
+      "payload": "05 00 33 09 00 00 00 00"
+    },
+    {
+      "seq": 1026,
+      "at": 77393.559302,
+      "wall": 1794275513.38882,
+      "direction": "tx",
+      "can_id": 2047,
+      "payload": "05 00 33 0a 00 00 00 00"
+    },
+    {
+      "seq": 1027,
+      "at": 77393.560464,
+      "wall": 1794275513.389983,
+      "direction": "rx",
+      "can_id": 0,
+      "payload": "05 00 33 0a 01 00 00 00"
+    },
+    {
+      "seq": 1028,
+      "at": 77393.562628,
+      "wall": 1794275513.392147,
+      "direction": "tx",
+      "can_id": 2047,
+      "payload": "05 00 33 15 00 00 00 00"
+    },
+    {
+      "seq": 1029,
+      "at": 77393.563726,
+      "wall": 1794275513.393246,
+      "direction": "rx",
+      "can_id": 0,
+      "payload": "05 00 33 15 00 00 48 41"
+    },
+    {
+      "seq": 1030,
+      "at": 77393.566029,
+      "wall": 1794275513.395547,
+      "direction": "tx",
+      "can_id": 2047,
+      "payload": "05 00 33 16 00 00 00 00"
+    },
+    {
+      "seq": 1031,
+      "at": 77393.56709,
+      "wall": 1794275513.396609,
+      "direction": "rx",
+      "can_id": 0,
+      "payload": "05 00 33 16 00 00 20 41"
+    },
+    {
+      "seq": 1032,
+      "at": 77393.569278,
+      "wall": 1794275513.398797,
+      "direction": "tx",
+      "can_id": 2047,
+      "payload": "05 00 33 17 00 00 00 00"
+    },
+    {
+      "seq": 1033,
+      "at": 77393.570344,
+      "wall": 1794275513.399863,
+      "direction": "rx",
+      "can_id": 0,
+      "payload": "05 00 33 17 00 00 e0 41"
+    },
+    {
+      "seq": 1034,
+      "at": 77393.596813,
+      "wall": 1794275513.426335,
+      "direction": "close",
+      "path": "/dev/ttyACM0"
+    }
+  ],
+  "trace_dropped": 0
+}

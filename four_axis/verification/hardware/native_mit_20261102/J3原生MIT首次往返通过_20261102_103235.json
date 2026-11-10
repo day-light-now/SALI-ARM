@@ -1,0 +1,323 @@
+{
+  "backend": "drive_mit",
+  "joint": 3,
+  "enabled_axes_permitted": [
+    3
+  ],
+  "request_id": "b9ce717fa2a94ba58aa62148bb64a95e",
+  "mode": "roundtrip10",
+  "connection_id": "b9c52888a9e647e9a6cd359750db134b",
+  "official_commit": "f340d4b808fb177e1f297af54eb55fd51c6c7c10",
+  "readonly_log": "D:\\CodexData\\Projects\\机械臂\\slaihand_ros2_ws\\tmp\\four_axis_readonly\\20261102_103232_658400.jsonl",
+  "drive_kp_requested": 160.0,
+  "drive_kd_requested": 5.0,
+  "tau_ff_requested_nm": 0.0,
+  "feedback_speed_abort_rad_s": 1.0,
+  "reference_speed_limit_rad_s": 0.02,
+  "host_total_torque_clamp": false,
+  "observed_state_estimate_guard_nm": 2.0,
+  "driver_current_clamp_verified": false,
+  "j5_queried": false,
+  "parameter_writes": 0,
+  "takeover_stability_verified": true,
+  "hardware_motion_accepted": false,
+  "native_hold_criterion_met": false,
+  "round_trip_criterion_met": true,
+  "fresh_stop_confirmation": true,
+  "reason": "native_round_trip_complete",
+  "hold_state_observed": true,
+  "outward_reached": true,
+  "return_reached": true,
+  "stage": "complete",
+  "final_controller_state": "DISABLED",
+  "final_error_from_start_deg": 0.0,
+  "post_stop_visible_frames": [
+    {
+      "at_s": 0.0049968999992415775,
+      "state": 0,
+      "position_code": 26539,
+      "angle_deg": 9.529625340544673,
+      "velocity_rad_s": -0.010989010989014503,
+      "model_velocity_rad_s": -0.010989010989014503,
+      "torque_feedback_nm": -0.09230769230769198,
+      "source": "passive"
+    },
+    {
+      "at_s": 0.008208699999158853,
+      "state": 0,
+      "position_code": 26539,
+      "angle_deg": 9.529625340544673,
+      "velocity_rad_s": -0.010989010989014503,
+      "model_velocity_rad_s": -0.010989010989014503,
+      "torque_feedback_nm": -0.03956043956043942,
+      "source": "cc_poll"
+    },
+    {
+      "at_s": 0.01947299999937968,
+      "state": 0,
+      "position_code": 26539,
+      "angle_deg": 9.529625340544673,
+      "velocity_rad_s": -0.010989010989014503,
+      "model_velocity_rad_s": -0.010989010989014503,
+      "torque_feedback_nm": -0.01318681318681314,
+      "source": "cc_poll"
+    },
+    {
+      "at_s": 0.03136969999923167,
+      "state": 0,
+      "position_code": 26539,
+      "angle_deg": 9.529625340544673,
+      "velocity_rad_s": 0.010989010989014503,
+      "model_velocity_rad_s": 0.010989010989014503,
+      "torque_feedback_nm": -0.01318681318681314,
+      "source": "cc_poll"
+    },
+    {
+      "at_s": 0.04255879999982426,
+      "state": 0,
+      "position_code": 26539,
+      "angle_deg": 9.529625340544673,
+      "velocity_rad_s": -0.010989010989014503,
+      "model_velocity_rad_s": -0.010989010989014503,
+      "torque_feedback_nm": -0.01318681318681314,
+      "source": "cc_poll"
+    },
+    {
+      "at_s": 0.05376799999976356,
+      "state": 0,
+      "position_code": 26539,
+      "angle_deg": 9.529625340544673,
+      "velocity_rad_s": -0.010989010989014503,
+      "model_velocity_rad_s": -0.010989010989014503,
+      "torque_feedback_nm": -0.01318681318681314,
+      "source": "cc_poll"
+    },
+    {
+      "at_s": 0.06495369999993272,
+      "state": 0,
+      "position_code": 26539,
+      "angle_deg": 9.529625340544673,
+      "velocity_rad_s": -0.010989010989014503,
+      "model_velocity_rad_s": -0.010989010989014503,
+      "torque_feedback_nm": 0.01318681318681314,
+      "source": "cc_poll"
+    },
+    {
+      "at_s": 0.07638219999989815,
+      "state": 0,
+      "position_code": 26539,
+      "angle_deg": 9.529625340544673,
+      "velocity_rad_s": -0.010989010989014503,
+      "model_velocity_rad_s": -0.010989010989014503,
+      "torque_feedback_nm": -0.01318681318681314,
+      "source": "cc_poll"
+    },
+    {
+      "at_s": 0.0880565999996179,
+      "state": 0,
+      "position_code": 26539,
+      "angle_deg": 9.529625340544673,
+      "velocity_rad_s": -0.010989010989014503,
+      "model_velocity_rad_s": -0.010989010989014503,
+      "torque_feedback_nm": -0.01318681318681314,
+      "source": "cc_poll"
+    },
+    {
+      "at_s": 0.09949579999920388,
+      "state": 0,
+      "position_code": 26539,
+      "angle_deg": 9.529625340544673,
+      "velocity_rad_s": -0.010989010989014503,
+      "model_velocity_rad_s": -0.010989010989014503,
+      "torque_feedback_nm": -0.01318681318681314,
+      "source": "cc_poll"
+    },
+    {
+      "at_s": 0.1111321999997017,
+      "state": 0,
+      "position_code": 26538,
+      "angle_deg": 9.507768401690212,
+      "velocity_rad_s": -0.010989010989014503,
+      "model_velocity_rad_s": -0.010989010989014503,
+      "torque_feedback_nm": -0.01318681318681314,
+      "source": "cc_poll"
+    },
+    {
+      "at_s": 0.12265690000003815,
+      "state": 0,
+      "position_code": 26538,
+      "angle_deg": 9.507768401690212,
+      "velocity_rad_s": -0.010989010989014503,
+      "model_velocity_rad_s": -0.010989010989014503,
+      "torque_feedback_nm": -0.01318681318681314,
+      "source": "cc_poll"
+    },
+    {
+      "at_s": 0.13385729999936302,
+      "state": 0,
+      "position_code": 26539,
+      "angle_deg": 9.529625340544673,
+      "velocity_rad_s": -0.010989010989014503,
+      "model_velocity_rad_s": -0.010989010989014503,
+      "torque_feedback_nm": -0.01318681318681314,
+      "source": "cc_poll"
+    },
+    {
+      "at_s": 0.14510079999945447,
+      "state": 0,
+      "position_code": 26539,
+      "angle_deg": 9.529625340544673,
+      "velocity_rad_s": -0.010989010989014503,
+      "model_velocity_rad_s": -0.010989010989014503,
+      "torque_feedback_nm": -0.01318681318681314,
+      "source": "cc_poll"
+    },
+    {
+      "at_s": 0.1565418000000136,
+      "state": 0,
+      "position_code": 26539,
+      "angle_deg": 9.529625340544673,
+      "velocity_rad_s": -0.010989010989014503,
+      "model_velocity_rad_s": -0.010989010989014503,
+      "torque_feedback_nm": -0.01318681318681314,
+      "source": "cc_poll"
+    },
+    {
+      "at_s": 0.16772219999984372,
+      "state": 0,
+      "position_code": 26539,
+      "angle_deg": 9.529625340544673,
+      "velocity_rad_s": -0.010989010989014503,
+      "model_velocity_rad_s": -0.010989010989014503,
+      "torque_feedback_nm": -0.01318681318681314,
+      "source": "cc_poll"
+    },
+    {
+      "at_s": 0.17939769999975397,
+      "state": 0,
+      "position_code": 26539,
+      "angle_deg": 9.529625340544673,
+      "velocity_rad_s": -0.010989010989014503,
+      "model_velocity_rad_s": -0.010989010989014503,
+      "torque_feedback_nm": -0.01318681318681314,
+      "source": "cc_poll"
+    },
+    {
+      "at_s": 0.19091719999960333,
+      "state": 0,
+      "position_code": 26539,
+      "angle_deg": 9.529625340544673,
+      "velocity_rad_s": -0.010989010989014503,
+      "model_velocity_rad_s": -0.010989010989014503,
+      "torque_feedback_nm": -0.01318681318681314,
+      "source": "cc_poll"
+    },
+    {
+      "at_s": 0.2023719999997411,
+      "state": 0,
+      "position_code": 26539,
+      "angle_deg": 9.529625340544673,
+      "velocity_rad_s": -0.010989010989014503,
+      "model_velocity_rad_s": -0.010989010989014503,
+      "torque_feedback_nm": -0.01318681318681314,
+      "source": "cc_poll"
+    },
+    {
+      "at_s": 0.2136421999994127,
+      "state": 0,
+      "position_code": 26538,
+      "angle_deg": 9.507768401690212,
+      "velocity_rad_s": -0.010989010989014503,
+      "model_velocity_rad_s": -0.010989010989014503,
+      "torque_feedback_nm": -0.01318681318681314,
+      "source": "cc_poll"
+    },
+    {
+      "at_s": 0.2250293999995847,
+      "state": 0,
+      "position_code": 26539,
+      "angle_deg": 9.529625340544673,
+      "velocity_rad_s": -0.010989010989014503,
+      "model_velocity_rad_s": -0.010989010989014503,
+      "torque_feedback_nm": -0.01318681318681314,
+      "source": "cc_poll"
+    },
+    {
+      "at_s": 0.23685289999957604,
+      "state": 0,
+      "position_code": 26538,
+      "angle_deg": 9.507768401690212,
+      "velocity_rad_s": -0.010989010989014503,
+      "model_velocity_rad_s": -0.010989010989014503,
+      "torque_feedback_nm": -0.01318681318681314,
+      "source": "cc_poll"
+    },
+    {
+      "at_s": 0.24815559999933612,
+      "state": 0,
+      "position_code": 26539,
+      "angle_deg": 9.529625340544673,
+      "velocity_rad_s": -0.010989010989014503,
+      "model_velocity_rad_s": -0.010989010989014503,
+      "torque_feedback_nm": -0.01318681318681314,
+      "source": "cc_poll"
+    },
+    {
+      "at_s": 0.2597145999998247,
+      "state": 0,
+      "position_code": 26538,
+      "angle_deg": 9.507768401690212,
+      "velocity_rad_s": -0.010989010989014503,
+      "model_velocity_rad_s": -0.010989010989014503,
+      "torque_feedback_nm": -0.01318681318681314,
+      "source": "cc_poll"
+    },
+    {
+      "at_s": 0.27151709999998275,
+      "state": 0,
+      "position_code": 26539,
+      "angle_deg": 9.529625340544673,
+      "velocity_rad_s": -0.010989010989014503,
+      "model_velocity_rad_s": -0.010989010989014503,
+      "torque_feedback_nm": -0.01318681318681314,
+      "source": "cc_poll"
+    },
+    {
+      "at_s": 0.28320480000002135,
+      "state": 0,
+      "position_code": 26539,
+      "angle_deg": 9.529625340544673,
+      "velocity_rad_s": -0.0329670329670364,
+      "model_velocity_rad_s": -0.0329670329670364,
+      "torque_feedback_nm": -0.01318681318681314,
+      "source": "cc_poll"
+    },
+    {
+      "at_s": 0.2945641999995132,
+      "state": 0,
+      "position_code": 26539,
+      "angle_deg": 9.529625340544673,
+      "velocity_rad_s": -0.010989010989014503,
+      "model_velocity_rad_s": -0.010989010989014503,
+      "torque_feedback_nm": 0.01318681318681314,
+      "source": "cc_poll"
+    },
+    {
+      "at_s": 0.3061809999999241,
+      "state": 0,
+      "position_code": 26539,
+      "angle_deg": 9.529625340544673,
+      "velocity_rad_s": -0.010989010989014503,
+      "model_velocity_rad_s": -0.010989010989014503,
+      "torque_feedback_nm": -0.01318681318681314,
+      "source": "cc_poll"
+    }
+  ],
+  "post_stop_first_frame_guaranteed": false,
+  "post_stop_observation_sufficient": true,
+  "actual_positive_excursion_deg": 9.682623912525996,
+  "sample_count": 3430,
+  "max_observed_error_deg": 0.5040902389949791,
+  "peak_observed_speed_rad_s": 0.2307692307692335,
+  "peak_observed_estimate_nm": 1.3902146817688081
+}

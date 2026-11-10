@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro" name="slaihand_five_axis">
+  <!-- J5 is frame-only and virtual; see the canonical geometry design ledger.
+       OpenArm adapter runs offline MIT encoding only. No SocketCAN is opened. -->
+  <xacro:arg name="backend" default="openarm"/>
+  <!-- The active four-axis model owns every J1-J4 frame and limit.
+       slaihand_five_axis.urdf is a legacy snapshot, not a launch input. -->
+  <xacro:include filename="$(find slaihand_description)/urdf/slaihand_four_axis.urdf"/>
+  <link name="link5_virtual"/>
+  <joint name="slaihand_joint5" type="continuous">
+    <parent link="link4"/><child link="link5_virtual"/>
+    <origin xyz="0 0 0" rpy="0 0 0"/><axis xyz="0 0 1"/>
+    <limit effort="1" velocity="0.5"/>
+  </joint>
+  <xacro:include filename="$(find slaihand_description)/urdf/offline_joint.xacro"/>
+  <ros2_control name="SLAIHandFiveAxisFakeSystem" type="system">
+    <hardware>
+      <xacro:if value="${'$(arg backend)' == 'openarm'}">
+        <plugin>slaihand_hardware/OpenArmJointFake</plugin>
+        <param name="transport">fake</param>
+      </xacro:if>
+      <xacro:if value="${'$(arg backend)' == 'generic'}">
+        <plugin>mock_components/GenericSystem</plugin>
+      </xacro:if>
+    </hardware>
+    <xacro:offline_joint name="slaihand_joint1" profile="DM10010L"/>
+    <xacro:offline_joint name="slaihand_joint2" profile="DM10010L"/>
+    <xacro:offline_joint name="slaihand_joint3" profile="DM8009"/>
+    <xacro:offline_joint name="slaihand_joint4" profile="DM8009"/>
+    <xacro:offline_joint name="slaihand_joint5" profile="DM4340" virtual="true"/>
+  </ros2_control>
+</robot>

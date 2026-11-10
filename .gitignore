@@ -1,0 +1,18 @@
+# build / runtime artifacts
+build/
+install/
+log/
+tmp/
+__pycache__/
+*.pyc
+
+# raw data and crash dumps are intentionally not stored
+*.jsonl
+*.jsonl.gz
+*.gz
+*.dmp
+*.bag
+
+# local editor / OS noise
+.DS_Store
+Thumbs.db

@@ -1,0 +1,309 @@
+{
+  "schema": 1,
+  "captured_unix_s": 1793499758.0528228,
+  "source": "existing_readonly_worker",
+  "sample": {
+    "rows": {
+      "1": {
+        "payload": "01 8e ec 80 07 ff 1b 18",
+        "motor_id": 1,
+        "state_code": 0,
+        "position_rad": 1.4574273289082171,
+        "position_deg": 83.50443489346571,
+        "velocity_rad_s": 0.006105006105006083,
+        "torque_feedback_nm": -0.04884004884004867,
+        "driver_temp_c": 27,
+        "motor_temp_c": 24,
+        "mapping_limits": {
+          "pmax": 12.5,
+          "vmax": 25.0,
+          "tmax": 200.0
+        },
+        "model_deg": -1.3988440866854566,
+        "regs": {
+          "7": 0,
+          "8": 1,
+          "9": 0,
+          "10": 2,
+          "21": 12.5,
+          "22": 25.0,
+          "23": 200.0
+        },
+        "age": 0.03878729999996722,
+        "received_at": 2656.7144224
+      },
+      "2": {
+        "payload": "02 6d 9e 7f e7 ff 19 17",
+        "motor_id": 2,
+        "state_code": 0,
+        "position_rad": -1.795033188372626,
+        "position_deg": -102.84782577966315,
+        "velocity_rad_s": -0.01831501831501825,
+        "torque_feedback_nm": -0.04884004884004867,
+        "driver_temp_c": 25,
+        "motor_temp_c": 23,
+        "mapping_limits": {
+          "pmax": 12.5,
+          "vmax": 25.0,
+          "tmax": 200.0
+        },
+        "model_deg": 0.4589957159436654,
+        "regs": {
+          "7": 0,
+          "8": 2,
+          "9": 0,
+          "10": 1,
+          "21": 12.5,
+          "22": 25.0,
+          "23": 200.0
+        },
+        "age": 0.19071959999973842,
+        "received_at": 2656.5624901
+      },
+      "3": {
+        "payload": "03 65 f7 80 07 ff 19 17",
+        "motor_id": 3,
+        "state_code": 0,
+        "position_rad": -2.5423437857633324,
+        "position_deg": -145.6655689955509,
+        "velocity_rad_s": 0.010989010989014503,
+        "torque_feedback_nm": -0.01318681318681314,
+        "driver_temp_c": 25,
+        "motor_temp_c": 23,
+        "mapping_limits": {
+          "pmax": 12.5,
+          "vmax": 45.0,
+          "tmax": 54.0
+        },
+        "model_deg": -91.58057380018879,
+        "regs": {
+          "7": 0,
+          "8": 3,
+          "9": 0,
+          "10": 1,
+          "21": 12.5,
+          "22": 45.0,
+          "23": 54.0
+        },
+        "age": 0.14013819999991028,
+        "received_at": 2656.6130715
+      },
+      "4": {
+        "payload": "04 7b ce 7f f7 ff 18 18",
+        "motor_id": 4,
+        "state_code": 0,
+        "position_rad": -0.40951400015259054,
+        "position_deg": -23.463423860263187,
+        "velocity_rad_s": -0.010989010989014503,
+        "torque_feedback_nm": -0.01318681318681314,
+        "driver_temp_c": 24,
+        "motor_temp_c": 24,
+        "mapping_limits": {
+          "pmax": 12.5,
+          "vmax": 45.0,
+          "tmax": 54.0
+        },
+        "model_deg": -5.573519407887366,
+        "regs": {
+          "7": 0,
+          "8": 4,
+          "9": 0,
+          "10": 1,
+          "21": 12.5,
+          "22": 45.0,
+          "23": 54.0
+        },
+        "age": 0.08890279999968698,
+        "received_at": 2656.6643069
+      }
+    },
+    "tx": 1529,
+    "rx": 1529,
+    "notice": "",
+    "at": 2656.7532097,
+    "session_id": "793d1ba730e642449d465b607fb78d12",
+    "readonly_log": "D:\\CodexData\\Projects\\机械臂\\slaihand_ros2_ws\\tmp\\four_axis_readonly\\20261101_102120_952100.jsonl",
+    "source": "live_usb2can_readonly",
+    "clock": "perf_counter",
+    "query_interval_s": 0.05
+  },
+  "local_software_mapping": {
+    "1": {
+      "can_id": 1.0,
+      "hardware_sign": -1.0,
+      "zero_offset_rad": 1.433012893873503
+    },
+    "2": {
+      "can_id": 2.0,
+      "hardware_sign": 1.0,
+      "zero_offset_rad": -1.8030441748683916
+    },
+    "3": {
+      "can_id": 3.0,
+      "hardware_sign": 1.0,
+      "zero_offset_rad": -0.9439612420843826
+    },
+    "4": {
+      "can_id": 4.0,
+      "hardware_sign": -1.0,
+      "zero_offset_rad": -0.5067902647440299
+    }
+  },
+  "model_limits_only_deg": [
+    [
+      -80.0,
+      200.0
+    ],
+    [
+      -10.0,
+      190.0
+    ],
+    [
+      -90.0,
+      90.0
+    ],
+    [
+      -90.0,
+      50.0
+    ]
+  ],
+  "hardware_writes": 0,
+  "actuation_tx": 0,
+  "fresh_four_axes": true,
+  "motion_permitted": false,
+  "validated_shadow_snapshot": {
+    "session_id": "793d1ba730e642449d465b607fb78d12",
+    "observed_at": 2656.7731881,
+    "rows": [
+      {
+        "profile": {
+          "joint": 1,
+          "mode": 2,
+          "master_id": 0,
+          "timeout": 0,
+          "pmax": 12.5,
+          "vmax": 25.0,
+          "tmax": 200.0,
+          "sign": -1,
+          "zero": 1.433012893873503
+        },
+        "position": 1.4574273289082171,
+        "velocity": 0.006105006105006083,
+        "state": 0,
+        "received_at": 2656.7144224,
+        "driver_temp": 27,
+        "motor_temp": 24,
+        "raw_payload": "01 8e ec 80 07 ff 1b 18"
+      },
+      {
+        "profile": {
+          "joint": 2,
+          "mode": 1,
+          "master_id": 0,
+          "timeout": 0,
+          "pmax": 12.5,
+          "vmax": 25.0,
+          "tmax": 200.0,
+          "sign": 1,
+          "zero": -1.8030441748683916
+        },
+        "position": -1.795033188372626,
+        "velocity": -0.01831501831501825,
+        "state": 0,
+        "received_at": 2656.5624901,
+        "driver_temp": 25,
+        "motor_temp": 23,
+        "raw_payload": "02 6d 9e 7f e7 ff 19 17"
+      },
+      {
+        "profile": {
+          "joint": 3,
+          "mode": 1,
+          "master_id": 0,
+          "timeout": 0,
+          "pmax": 12.5,
+          "vmax": 45.0,
+          "tmax": 54.0,
+          "sign": 1,
+          "zero": -0.9439612420843826
+        },
+        "position": -2.5423437857633324,
+        "velocity": 0.010989010989014503,
+        "state": 0,
+        "received_at": 2656.6130715,
+        "driver_temp": 25,
+        "motor_temp": 23,
+        "raw_payload": "03 65 f7 80 07 ff 19 17"
+      },
+      {
+        "profile": {
+          "joint": 4,
+          "mode": 1,
+          "master_id": 0,
+          "timeout": 0,
+          "pmax": 12.5,
+          "vmax": 45.0,
+          "tmax": 54.0,
+          "sign": -1,
+          "zero": -0.5067902647440299
+        },
+        "position": -0.40951400015259054,
+        "velocity": -0.010989010989014503,
+        "state": 0,
+        "received_at": 2656.6643069,
+        "driver_temp": 24,
+        "motor_temp": 24,
+        "raw_payload": "04 7b ce 7f f7 ff 18 18"
+      }
+    ],
+    "mapping_sha256": "a87c9fcb45033b85258cfa89fc2315f5cb739bccb5a86472a1a019f29b7be007",
+    "readonly_log": "D:\\CodexData\\Projects\\机械臂\\slaihand_ros2_ws\\tmp\\four_axis_readonly\\20261101_102120_952100.jsonl",
+    "clock": "perf_counter",
+    "schema": 1,
+    "source": "existing_readonly_worker",
+    "actuation_tx": 0,
+    "model_limits_only_deg": [
+      [
+        -80.0,
+        200.0
+      ],
+      [
+        -10.0,
+        190.0
+      ],
+      [
+        -90.0,
+        90.0
+      ],
+      [
+        -90.0,
+        50.0
+      ]
+    ],
+    "physical_envelopes": {
+      "J1": "historical mode4 only: 2deg/.02rad_s/1.4961A; limit issue unresolved",
+      "J2": "historical mode4 only: 2deg/.02rad_s/1.4961A; ID persistence pending",
+      "J3": "not accepted",
+      "J4": "not accepted"
+    },
+    "limitations": "No unique hardware serial identity read; no mechanical safe-range measurement"
+  },
+  "motion_readiness": {
+    "motion_permitted": false,
+    "blocks": [
+      "ACTUATION_ADAPTER_NOT_IMPLEMENTED",
+      "PASSIVE_CATCH_NOT_ACCEPTED",
+      "FAULT_STOP_AND_WATCHDOG_ACTION_NOT_ACCEPTED",
+      "CONTROL_BUS_CYCLE_NOT_MEASURED",
+      "PHYSICAL_ENVELOPES_NOT_ACCEPTED",
+      "J1_MECHANICAL_LIMIT_UNRESOLVED",
+      "J2_ID_POWER_CYCLE_RECORD_PENDING",
+      "STAGGERED_TAKEOVER_NOT_ACCEPTED",
+      "J1_WATCHDOG_DISABLED",
+      "J1_PV_EFFORT_LIMIT_NOT_ACCEPTED",
+      "J2_WATCHDOG_DISABLED",
+      "J3_WATCHDOG_DISABLED",
+      "J4_WATCHDOG_DISABLED"
+    ]
+  }
+}

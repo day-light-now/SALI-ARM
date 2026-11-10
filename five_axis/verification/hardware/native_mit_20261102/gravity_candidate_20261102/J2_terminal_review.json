@@ -1,0 +1,17 @@
+{
+  "last_measured_pose_deg": [
+    -2.644689601389691,
+    6.5133677786292585,
+    1.8796967414835821,
+    37.13493911372808
+  ],
+  "last_inactive_deviation_from_anchor_deg": {
+    "J1": -0.02185693885446026,
+    "J3": 0.0,
+    "J4": 0.0
+  },
+  "last_shadow_raw_gravity_nm": 0.7764665070600285,
+  "last_baseline_request_motor_nm": 1.4765963587204094,
+  "last_candidate_ff_nm": 0.38823325353001426,
+  "last_counterfactual_request_motor_nm": 1.8673167494407987
+}

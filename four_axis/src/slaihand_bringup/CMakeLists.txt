@@ -1,0 +1,8 @@
+cmake_minimum_required(VERSION 3.8)
+project(slaihand_bringup)
+find_package(ament_cmake REQUIRED)
+install(DIRECTORY config launch web DESTINATION share/${PROJECT_NAME})
+install(PROGRAMS scripts/send_small_test.py scripts/offline_panel.py scripts/panel_bridge.py scripts/commission_supported_trial.py scripts/control_panel.py DESTINATION lib/${PROJECT_NAME})
+install(FILES scripts/joint_waypoint_plan.py scripts/point_to_point.py scripts/control_panel_model.py scripts/control_panel_http.py scripts/control_panel_gravity.py scripts/control_panel_connection.py DESTINATION lib/${PROJECT_NAME})
+install(FILES scripts/calibration_core.py scripts/calibration_capture.py scripts/calibration_session.py scripts/drag_teaching.py scripts/supported_capture.py DESTINATION lib/${PROJECT_NAME})
+ament_package()

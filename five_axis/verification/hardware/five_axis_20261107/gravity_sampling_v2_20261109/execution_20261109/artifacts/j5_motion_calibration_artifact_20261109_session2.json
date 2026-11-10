@@ -1,0 +1,64 @@
+{
+  "schema": "slaihand_j5_motion_calibration/1",
+  "payload": {
+    "qualification": "j5_motion",
+    "joint": "slaihand_joint5",
+    "generated_at": 1794206942.7685366,
+    "boot_id": "ae7a07f6-7ffb-48dc-bdf8-e5e0ed3eeb15",
+    "session_id": "cac1ca5bfc034141a7852d0cddc96263",
+    "device": "/dev/ttyACM0",
+    "port_argument": "/dev/serial/by-id/usb-HDSC_CDC_Device_00000000050C-if00",
+    "load_id": "j5_3p5kg_provisional",
+    "hashes": {
+      "mapping_sha256": "64e1ce88682a951f21eefa4c19daa70fcda9bdf6bfddab1f1abc7a57281c1721",
+      "model_sha256": "258d0434c635f039aa1aa15000df9ccde82974543c715cffcd91c82b95ad024e",
+      "policy_sha256": "edd7b5b75f1d797203e266650882bbcd707c589bb65702724e1f9cc9fb345700",
+      "load_declaration_sha256": "c11700276dd8c044b5b118a7b5dc3dce26937c37e8a9802aa695583931ed3fe2",
+      "timeout_evidence_sha256": "a42e7b797f9bb78571621a23bb6db53b7be955748fe971636d20c208a96290a0"
+    },
+    "j5": {
+      "can_id": 5,
+      "master_id": 0,
+      "hardware_sign": 1,
+      "zero_offset_rad": 2.5389105058365757,
+      "limits_rad": [
+        -1.5707963267948966,
+        1.5707963267948966
+      ],
+      "control_mode": 1,
+      "profile": {
+        "pmax_rad": 12.5,
+        "vmax_rad_s": 10.0,
+        "tmax_nm": 28.0
+      }
+    },
+    "timeout": {
+      "timeout_before": 0,
+      "timeout_after": 2000,
+      "readback": 2000,
+      "readback_matched": true,
+      "all_motor_state_zero": true,
+      "write_outcome": "complete",
+      "observed_at": "2026-11-09T06:48:57.136+00:00"
+    },
+    "load": {
+      "schema": "slaihand_load_declaration/1",
+      "mass_kg": 3.5,
+      "mass_source": "user_estimate_only_not_measured",
+      "geometry_status": "unknown",
+      "com_status": "unknown",
+      "mount_status": "unknown",
+      "gravity_status": "PROVISIONAL",
+      "formal_gravity_allowed": false,
+      "gravity_fit_allowed": false,
+      "gravity_ff_alpha": 0.0,
+      "float_enabled": false
+    },
+    "policy": {
+      "profile": "candidate_five_axis_native_mit_j5_gated",
+      "gravity_ff_alpha": 0.0,
+      "gravity_float_enabled": false
+    }
+  },
+  "sha256": "5a54a707ff5863122d983974e380d99a3ff8a7b56b583e17d083862cab46b5ae"
+}

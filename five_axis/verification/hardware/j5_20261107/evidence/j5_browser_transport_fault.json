@@ -1,0 +1,14 @@
+{
+  "passed": true,
+  "physical_port_opened": false,
+  "fault_shown": true,
+  "stale_angle_hidden": true,
+  "reconnect_button": true,
+  "failed_reconnect_shown_error": true,
+  "reconnected": true,
+  "rezero_required": true,
+  "screenshots": [
+    "j5_transport_fault.png",
+    "j5_transport_reconnected.png"
+  ]
+}

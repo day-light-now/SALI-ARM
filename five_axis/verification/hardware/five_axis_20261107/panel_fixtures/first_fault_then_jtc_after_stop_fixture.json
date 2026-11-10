@@ -1,0 +1,64 @@
+{
+  "_note": "FIXTURE for the true physical ordering described in CODEX_WIDE_FOLLOWING_ANALYSIS_20261108.md: J2 crosses the driver 4-degree FOLLOWING_ERROR first, all axes are disabled, and only afterwards the JTC reports J1 beyond its 10-degree path tolerance. Later OPERATOR_GLOBAL_STOP / JTC events must never replace the frozen driver first cause. Derived from the audit reconstruction, not a live capture.",
+  "driver_first_fault": {
+    "schema": "slaihand_first_fault/1",
+    "layer": "DRIVER",
+    "axis": 2,
+    "joint": "slaihand_joint2",
+    "code": "FOLLOWING_ERROR",
+    "detected_at": 15324.007779907,
+    "error_deg": 4.0047,
+    "limit_deg": 4.0,
+    "target_deg": 40.1998,
+    "actual_deg": 36.1951,
+    "feedback_age_s": 0.012,
+    "feedback_valid": true,
+    "encoded_kp": [
+      159.9512,
+      159.9512,
+      159.9512,
+      159.9512,
+      159.9512
+    ],
+    "encoded_kd": [
+      5.0,
+      5.0,
+      5.0,
+      5.0,
+      5.0
+    ],
+    "encoded_tau_ff_nm": [
+      -0.04884,
+      -0.04884,
+      -0.01319,
+      -0.01319,
+      -0.00684
+    ],
+    "request_estimate_nm": [
+      6.724,
+      11.117,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "request_estimate_at": 15324.0075,
+    "request_estimate_state": "LAST_ACTIVE",
+    "command_id": 14,
+    "cycle_id": 253166,
+    "boot_id": "fixture-boot-ordering",
+    "last_complete_write_at": 15324.0075,
+    "frozen": true
+  },
+  "after_stop": {
+    "operator_stop_reason": "OPERATOR_GLOBAL_STOP",
+    "stage": 8,
+    "stage_reason": "FOLLOWING_ERROR",
+    "jtc_error_code": 5,
+    "jtc_error_string": "slaihand_joint1: 10.57 deg exceeds trajectory tolerance 10.0 deg",
+    "jtc_reported_axis": 1,
+    "jtc_reported_error_deg": 10.57,
+    "jtc_tolerance_deg": 10.0,
+    "request_estimate_state": "LAST_ACTIVE_STALE",
+    "note": "JTC J1 10.57 deg appears after the driver stopped the five axes; it is a later consequence, not the power-on first cause."
+  }
+}

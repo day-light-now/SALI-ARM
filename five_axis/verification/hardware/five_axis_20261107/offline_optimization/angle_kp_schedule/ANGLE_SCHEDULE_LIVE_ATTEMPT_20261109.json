@@ -1,0 +1,32 @@
+{
+  "schema": "slaihand_angle_schedule_live_attempt/1",
+  "observed_at": "2026-11-09T10:02:41+08:00",
+  "plan": "FORWARD_J1_10.json",
+  "policy": "experimental branch, kp_schedule active, kp_max=280, slew=80 Kp/s",
+  "identity_verified": {
+    "kp_schedule_source": "angle_schedule",
+    "kp_max": 280,
+    "kp_effective_initial": [160, 160, 160, 160, 160],
+    "kp_schedule": [
+      [[0, 160], [20, 220], [40, 280]],
+      [[0, 160], [20, 240], [40, 280]],
+      [[0, 160]],
+      [[0, 160], [20, 200], [40, 220]],
+      [[0, 160]]
+    ]
+  },
+  "driver_reason": "CONTROL_CYCLE_GAP",
+  "detail": "controller_manager overrun: read time ~40.1 ms, update 0.146 ms, write 0.362 ms; missed 5 cycles; control output disabled",
+  "client_reason": "控制端已全局停止或UNKNOWN",
+  "waypoint_samples": 0,
+  "outcome": "stopped_before_any_sampled_hold",
+  "retry": false,
+  "driver_stopped": true,
+  "notes": [
+    "The schedule was loaded and visible in runtime identity before arming.",
+    "The arm started moving toward the goal but the first serial read overran the 10 ms cycle; the existing safety path stopped output.",
+    "No schedule performance conclusion is possible.",
+    "This is a timing/USB-serial symptom, not a schedule validation or a joint following error.",
+    "Do not retry until the cycle-gap/USB-IP latency cause is addressed."
+  ]
+}

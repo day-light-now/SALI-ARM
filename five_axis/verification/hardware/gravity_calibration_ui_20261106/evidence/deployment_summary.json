@@ -1,0 +1,102 @@
+{
+  "schema": "slaihand_gravity_calibration_ui_deployment/1",
+  "date": "2026-11-06",
+  "branch": "feature/gravity-calibration-ui-20261106",
+  "main_branch": "codex/control-panel-20261105",
+  "main_branch_from": "c7c819d",
+  "main_branch_to": "1463090",
+  "merge_type": "fast-forward",
+  "deploy_workspace": "/home/xuyu/slaihand_control_panel_ws_gravitycal_deploy_20261106",
+  "build_source": "D:/CodexData/Projects/机械臂/slaihand_ros2_ws/src",
+  "hardware_lib_sha256": "5d19166d9a0708e24cd07b82b282746c2012c5a07e6c81a9d05bec5ee16f9a61",
+  "policy": {
+    "kp": 160.0, "kd": 5.0, "reference_speed_rad_s": 1.0, "session_timeout_s": 180.0,
+    "gravity_ff_alpha": 0.1, "gravity_ff_ramp_s": 2.0,
+    "gravity_profile": "gravity_identified_candidate.json",
+    "gravity_float_enabled": true
+  },
+  "config_parity_with_previous_deployment": true,
+  "deploy_ctest": {"passed": 5, "total": 5},
+  "old_panel": {
+    "workspace": "/home/xuyu/slaihand_control_panel_ws_float_controls_20261106",
+    "pid": 382355, "port": 42663, "ros_domain_id": "0",
+    "state_before_stop": {"operation_phase": "failed", "ros_connected": false, "stage": 9,
+                          "connection": "failed", "connection_message": "USB转发失败，请检查Windows适配器状态"}
+  },
+  "new_panel": {
+    "workspace": "/home/xuyu/slaihand_control_panel_ws_gravitycal_deploy_20261106",
+    "pid": 396517, "port": 42663, "ros_domain_id": "0",
+    "log": "/tmp/gravitycal_deploy_panel.log",
+    "archive_dir": "/home/xuyu/.ros/slaihand/control_panel"
+  },
+  "panel_verification": {
+    "status_http": 200,
+    "client_script_from_new_workspace": true,
+    "limits_source_from_new_workspace": true,
+    "supported_capture_status_present": true,
+    "capture_preview_http_no_driver": 409,
+    "capture_preview_code_no_driver": "FEEDBACK_STALE",
+    "capture_start_endpoint_present": true,
+    "capture_ack_endpoint_present": true,
+    "index_contains_capture_card": true,
+    "panel_js_contains_capture_flow": true,
+    "calibration_groups_include_large_angle": true,
+    "windows_url_http": 200
+  },
+  "desktop_url_updated": "C:/Users/ASUS/Desktop/机械臂网页上位机.url",
+  "usb": {
+    "usbipd_busid": "15-2",
+    "vid_pid": "2e88:4603",
+    "state_before": "Shared (not attached)",
+    "attached_to_wsl": true,
+    "serial_path": "/dev/serial/by-id/usb-HDSC_CDC_Device_00000000050C-if00"
+  },
+  "driver": {
+    "started": true,
+    "launch_pid": 396726,
+    "ros2_control_node_pid": 396731,
+    "log": "/tmp/gravitycal_deploy_driver.log",
+    "audit_dir": "/tmp/gravitycal_deploy_audit",
+    "loaded_library": "/home/xuyu/slaihand_control_panel_ws_gravitycal_deploy_20261106/install/slaihand_hardware/lib/libslaihand_hardware.so",
+    "hardware_activated": true,
+    "stage_after_start": 0,
+    "stage_fresh": true,
+    "feedback_valid_all": true,
+    "hold_ready": false,
+    "command_id": 0,
+    "motor_state": [0, 0, 0, 0]
+  },
+  "real_preview_verification": {
+    "http": 200,
+    "start_deg": [-0.044, -1.443, 0.787, 13.005],
+    "alpha": 0.1,
+    "baseline_satisfied": false,
+    "boot_id": "151957178169-396731",
+    "identity_sha256": "b16b736f20cbcf26b5f8f54c71a703fbfc7aba9b9b4adfd8d1960012e892a1db",
+    "gains": {"kp": 160.0, "kd": 5.0, "reference_speed_rad_s": 1.0},
+    "timing": {"hold_ready_timeout_s": 10.0, "ack_timeout_s": 60.0,
+               "capture_seconds": 2.0, "capture_samples": 10, "session_estimate_s": 76.0},
+    "preview_valid": true,
+    "drift_deg": 0.022,
+    "operation_created": false,
+    "stage_after": 0,
+    "motor_state_after": [0, 0, 0, 0]
+  },
+  "hardware_actions": {
+    "serial_opened": true,
+    "enabled": false,
+    "motion": false,
+    "parameter_written": false
+  },
+  "deployed_driver_changes": {
+    "float_readiness_fix": "d903fce",
+    "float_speed_gate_relaxation": "801d3d0",
+    "speed_gate_note": "safety relaxation; revert 801d3d0 and its C++ counterexample (rebuild deploy workspace) if not accepted before enabling free-drag"
+  },
+  "next_steps": [
+    "open the updated desktop URL and confirm fresh DISARMED on the page",
+    "alpha=0.1 static capture is diagnostic only; alpha=0 switch is a separate deployment decision",
+    "decide whether to keep 801d3d0 speed-gate relaxation before enabling free-drag",
+    "hardware motion/enable/free-drag acceptance remains to be done by the operator"
+  ]
+}

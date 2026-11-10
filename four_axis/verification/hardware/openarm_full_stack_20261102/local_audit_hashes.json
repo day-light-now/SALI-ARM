@@ -1,0 +1,10 @@
+{
+  "src/slaihand_hardware/src/openarm_joint_fake.cpp": "5e2cef1dddfcbbea4b4ec805b65fe5de52accbb4e546367552e73089bf490bde",
+  "src/slaihand_hardware/include/slaihand_hardware/openarm_joint_fake.hpp": "db9c1f6c9bf992bf06ae6e800aef1704c7c8af587dc1ab65f66c7c3c536f03fa",
+  "src/slaihand_bringup/config/slaihand_controllers.yaml": "33633af94ba432bbc733b295ed33be611622cbfaf576ca8d07f6c0b2aa905b23",
+  "src/slaihand_bringup/config/hardware_mapping.yaml": "300d81eed77ded2c3235be3c2a69d5354a9df5cd74be85884dad05760a46356d",
+  "src/slaihand_bringup/launch/slaihand_fake.launch.py": "800ff0a468d5da4276e03308ee860c2ed6f91418cabfc9c54f58045f2f5abbcc",
+  "slai_console/native_mit_console.py": "7898f28abd95c00853d83933d1b5b9df42993b22d9d41425442e1cda75ad866d",
+  "slai_console/native_actuation.py": "1804a79858f69e50e516258be403a456bf51c2151883420f9bf2b68a5df75782",
+  "verification/hardware/load_calibration/measured_limits_20261102.json": "2e4316981b9ea72129514047e33445d360eacd2149725a99ceda68f0d49f7180"
+}

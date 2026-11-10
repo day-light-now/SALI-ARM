@@ -1,0 +1,363 @@
+{
+  "operation_id": "5e166c677b9446ba",
+  "client_file_sha256": "1fc0c355e4d310307be3b124af97c5653f2666742978e17efa7d7aac0386aee5",
+  "submitted_source": {
+    "schema": "slaihand_joint_plan/2",
+    "coordinates": "relative_start_deg",
+    "waypoints": [
+      {
+        "degrees": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "move_s": 8.0,
+        "dwell_s": 6.0
+      },
+      {
+        "degrees": [
+          10.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "move_s": 8.0,
+        "dwell_s": 6.0
+      },
+      {
+        "degrees": [
+          20.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "move_s": 8.0,
+        "dwell_s": 6.0
+      },
+      {
+        "degrees": [
+          10.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "move_s": 8.0,
+        "dwell_s": 6.0
+      },
+      {
+        "degrees": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "move_s": 8.0,
+        "dwell_s": 6.0
+      },
+      {
+        "degrees": [
+          0.0,
+          10.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "move_s": 8.0,
+        "dwell_s": 6.0
+      },
+      {
+        "degrees": [
+          0.0,
+          20.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "move_s": 8.0,
+        "dwell_s": 6.0
+      },
+      {
+        "degrees": [
+          0.0,
+          10.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "move_s": 8.0,
+        "dwell_s": 6.0
+      },
+      {
+        "degrees": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "move_s": 8.0,
+        "dwell_s": 8.0
+      }
+    ]
+  },
+  "client_final_target_deg": [
+    -0.06557081656338078,
+    1.9889814357558835,
+    -2.207550824300486,
+    -2.0545522523192643,
+    1.1584177592863936
+  ],
+  "all_waypoint_samples_zero": true,
+  "stop_observations_confirmed": true,
+  "stages": [
+    {
+      "steady_s": 3059.177696608,
+      "cycle_id": 34839,
+      "control_state": 1,
+      "reason": "ARM_ACCEPTED_NOT_ENABLED",
+      "first_fault": null
+    },
+    {
+      "steady_s": 3059.587689048,
+      "cycle_id": 34880,
+      "control_state": 2,
+      "reason": "ARM_ACCEPTED_NOT_ENABLED",
+      "first_fault": null
+    },
+    {
+      "steady_s": 3059.587943272,
+      "cycle_id": 34880,
+      "control_state": 3,
+      "reason": "ARM_ACCEPTED_NOT_ENABLED",
+      "first_fault": null
+    },
+    {
+      "steady_s": 3059.747829547,
+      "cycle_id": 34896,
+      "control_state": 4,
+      "reason": "ARM_ACCEPTED_NOT_ENABLED",
+      "first_fault": null
+    },
+    {
+      "steady_s": 3060.757774315,
+      "cycle_id": 34997,
+      "control_state": 5,
+      "reason": "RAMP_COMPLETE_NOT_POSITION_ACCURACY_ACCEPTANCE",
+      "first_fault": null
+    },
+    {
+      "steady_s": 3062.288101739,
+      "cycle_id": 35150,
+      "control_state": 6,
+      "reason": "RAMP_COMPLETE_NOT_POSITION_ACCURACY_ACCEPTANCE",
+      "first_fault": null
+    },
+    {
+      "steady_s": 3064.504176484,
+      "cycle_id": 35370,
+      "control_state": 7,
+      "reason": "SERIAL_OR_AUDIT_WRITE_FAILURE",
+      "first_fault": null
+    },
+    {
+      "steady_s": 3064.527696555,
+      "cycle_id": 35373,
+      "control_state": 8,
+      "reason": "SERIAL_OR_AUDIT_WRITE_FAILURE",
+      "first_fault": null
+    },
+    {
+      "steady_s": 3064.847733088,
+      "cycle_id": 35405,
+      "control_state": 7,
+      "reason": "OPERATOR_GLOBAL_STOP",
+      "first_fault": null
+    },
+    {
+      "steady_s": 3064.867659825,
+      "cycle_id": 35407,
+      "control_state": 8,
+      "reason": "OPERATOR_GLOBAL_STOP",
+      "first_fault": null
+    }
+  ],
+  "failure_cycle_write_evidence": [
+    {
+      "kind": "TX_SUBMITTED",
+      "steady_s": 3064.487701058,
+      "cycle_id": 35370,
+      "control_state": 6,
+      "role": 0,
+      "can_id": 2047,
+      "payload": "01 00 cc 00 00 00 00 00"
+    },
+    {
+      "kind": "TX_WRITTEN",
+      "steady_s": 3064.487729246,
+      "cycle_id": 35370,
+      "control_state": 6,
+      "role": 0,
+      "can_id": 2047,
+      "payload": "01 00 cc 00 00 00 00 00"
+    },
+    {
+      "kind": "TX_SUBMITTED",
+      "steady_s": 3064.487808887,
+      "cycle_id": 35370,
+      "control_state": 6,
+      "role": 1,
+      "can_id": 1,
+      "payload": "8e e9 7f f5 1e ff f7 ff"
+    },
+    {
+      "kind": "TX_WRITTEN",
+      "steady_s": 3064.487819789,
+      "cycle_id": 35370,
+      "control_state": 6,
+      "role": 1,
+      "can_id": 1,
+      "payload": "8e e9 7f f5 1e ff f7 ff"
+    },
+    {
+      "kind": "TX_SUBMITTED",
+      "steady_s": 3064.487820463,
+      "cycle_id": 35370,
+      "control_state": 6,
+      "role": 1,
+      "can_id": 2,
+      "payload": "6d f9 7f f5 5f ff f7 ff"
+    },
+    {
+      "kind": "TX_WRITTEN",
+      "steady_s": 3064.487822936,
+      "cycle_id": 35370,
+      "control_state": 6,
+      "role": 1,
+      "can_id": 2,
+      "payload": "6d f9 7f f5 5f ff f7 ff"
+    },
+    {
+      "kind": "TX_SUBMITTED",
+      "steady_s": 3064.487823192,
+      "cycle_id": 35370,
+      "control_state": 6,
+      "role": 1,
+      "can_id": 3,
+      "payload": "65 91 7f f5 1e ff f7 ff"
+    },
+    {
+      "kind": "TX_WRITTEN",
+      "steady_s": 3064.48782419,
+      "cycle_id": 35370,
+      "control_state": 6,
+      "role": 1,
+      "can_id": 3,
+      "payload": "65 91 7f f5 1e ff f7 ff"
+    },
+    {
+      "kind": "TX_SUBMITTED",
+      "steady_s": 3064.487824406,
+      "cycle_id": 35370,
+      "control_state": 6,
+      "role": 1,
+      "can_id": 4,
+      "payload": "7c 2c 7f f5 1e ff f7 ff"
+    },
+    {
+      "kind": "TX_SUBMITTED",
+      "steady_s": 3064.493225271,
+      "cycle_id": 35370,
+      "control_state": 7,
+      "role": 3,
+      "can_id": 1,
+      "payload": "ff ff ff ff ff ff ff fd"
+    },
+    {
+      "kind": "TX_SUBMITTED",
+      "steady_s": 3064.498638139,
+      "cycle_id": 35370,
+      "control_state": 7,
+      "role": 3,
+      "can_id": 2,
+      "payload": "ff ff ff ff ff ff ff fd"
+    },
+    {
+      "kind": "TX_WRITTEN",
+      "steady_s": 3064.504145802,
+      "cycle_id": 35370,
+      "control_state": 7,
+      "role": 3,
+      "can_id": 2,
+      "payload": "ff ff ff ff ff ff ff fd"
+    },
+    {
+      "kind": "TX_SUBMITTED",
+      "steady_s": 3064.504159308,
+      "cycle_id": 35370,
+      "control_state": 7,
+      "role": 3,
+      "can_id": 3,
+      "payload": "ff ff ff ff ff ff ff fd"
+    },
+    {
+      "kind": "TX_WRITTEN",
+      "steady_s": 3064.504171577,
+      "cycle_id": 35370,
+      "control_state": 7,
+      "role": 3,
+      "can_id": 3,
+      "payload": "ff ff ff ff ff ff ff fd"
+    },
+    {
+      "kind": "TX_SUBMITTED",
+      "steady_s": 3064.504172303,
+      "cycle_id": 35370,
+      "control_state": 7,
+      "role": 3,
+      "can_id": 4,
+      "payload": "ff ff ff ff ff ff ff fd"
+    },
+    {
+      "kind": "TX_WRITTEN",
+      "steady_s": 3064.504173598,
+      "cycle_id": 35370,
+      "control_state": 7,
+      "role": 3,
+      "can_id": 4,
+      "payload": "ff ff ff ff ff ff ff fd"
+    },
+    {
+      "kind": "TX_SUBMITTED",
+      "steady_s": 3064.504173826,
+      "cycle_id": 35370,
+      "control_state": 7,
+      "role": 3,
+      "can_id": 5,
+      "payload": "ff ff ff ff ff ff ff fd"
+    },
+    {
+      "kind": "TX_WRITTEN",
+      "steady_s": 3064.504174619,
+      "cycle_id": 35370,
+      "control_state": 7,
+      "role": 3,
+      "can_id": 5,
+      "payload": "ff ff ff ff ff ff ff fd"
+    },
+    {
+      "kind": "STAGE",
+      "steady_s": 3064.504176484,
+      "cycle_id": 35370,
+      "control_state": 7,
+      "reason": "SERIAL_OR_AUDIT_WRITE_FAILURE"
+    }
+  ],
+  "hardware_retried": false,
+  "fix_scope": "UI zero-end coordinate guard and missing-sample labels only; USB/serial timing fault not repaired"
+}

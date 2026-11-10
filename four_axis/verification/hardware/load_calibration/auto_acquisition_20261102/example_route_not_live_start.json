@@ -1,0 +1,538 @@
+{
+  "plan": {
+    "joint": 1,
+    "initial_pose_rad": [
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "mechanical_limits_deg": [
+      -80.0,
+      200.0
+    ],
+    "scan_limits_deg": [
+      -70.0,
+      70.0
+    ],
+    "mapping_sha256": "300d81eed77ded2c3235be3c2a69d5354a9df5cd74be85884dad05760a46356d",
+    "physical_limit_evidence": "user-confirmed current-console endpoints 2026-11-02",
+    "points": [
+      {
+        "index": 0,
+        "target_pose_rad": [
+          -0.17453292519943295,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "duration_s": 17.18058482431918,
+        "approach": "negative",
+        "collect": false
+      },
+      {
+        "index": 1,
+        "target_pose_rad": [
+          -0.3490658503988659,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "duration_s": 16.36246173744684,
+        "approach": "negative",
+        "collect": false
+      },
+      {
+        "index": 2,
+        "target_pose_rad": [
+          -0.5235987755982988,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "duration_s": 16.36246173744684,
+        "approach": "negative",
+        "collect": false
+      },
+      {
+        "index": 3,
+        "target_pose_rad": [
+          -0.6981317007977318,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "duration_s": 16.36246173744684,
+        "approach": "negative",
+        "collect": false
+      },
+      {
+        "index": 4,
+        "target_pose_rad": [
+          -0.8726646259971648,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "duration_s": 16.36246173744684,
+        "approach": "negative",
+        "collect": false
+      },
+      {
+        "index": 5,
+        "target_pose_rad": [
+          -1.0471975511965976,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "duration_s": 16.36246173744684,
+        "approach": "negative",
+        "collect": false
+      },
+      {
+        "index": 6,
+        "target_pose_rad": [
+          -1.213003830136059,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "duration_s": 15.544338650574499,
+        "approach": "negative",
+        "collect": true
+      },
+      {
+        "index": 7,
+        "target_pose_rad": [
+          -1.038470904936626,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "duration_s": 16.36246173744684,
+        "approach": "positive",
+        "collect": true
+      },
+      {
+        "index": 8,
+        "target_pose_rad": [
+          -0.8639379797371931,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "duration_s": 16.36246173744684,
+        "approach": "positive",
+        "collect": true
+      },
+      {
+        "index": 9,
+        "target_pose_rad": [
+          -0.6894050545377601,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "duration_s": 16.36246173744684,
+        "approach": "positive",
+        "collect": true
+      },
+      {
+        "index": 10,
+        "target_pose_rad": [
+          -0.5148721293383273,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "duration_s": 16.36246173744684,
+        "approach": "positive",
+        "collect": true
+      },
+      {
+        "index": 11,
+        "target_pose_rad": [
+          -0.34033920413889424,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "duration_s": 16.36246173744684,
+        "approach": "positive",
+        "collect": true
+      },
+      {
+        "index": 12,
+        "target_pose_rad": [
+          -0.16580627893946132,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "duration_s": 16.36246173744684,
+        "approach": "positive",
+        "collect": true
+      },
+      {
+        "index": 13,
+        "target_pose_rad": [
+          0.008726646259971648,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "duration_s": 16.36246173744684,
+        "approach": "positive",
+        "collect": true
+      },
+      {
+        "index": 14,
+        "target_pose_rad": [
+          0.1832595714594046,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "duration_s": 16.36246173744684,
+        "approach": "positive",
+        "collect": true
+      },
+      {
+        "index": 15,
+        "target_pose_rad": [
+          0.35779249665883756,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "duration_s": 16.36246173744684,
+        "approach": "positive",
+        "collect": true
+      },
+      {
+        "index": 16,
+        "target_pose_rad": [
+          0.5323254218582705,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "duration_s": 16.36246173744684,
+        "approach": "positive",
+        "collect": true
+      },
+      {
+        "index": 17,
+        "target_pose_rad": [
+          0.7068583470577035,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "duration_s": 16.36246173744684,
+        "approach": "positive",
+        "collect": true
+      },
+      {
+        "index": 18,
+        "target_pose_rad": [
+          0.8813912722571364,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "duration_s": 16.36246173744684,
+        "approach": "positive",
+        "collect": true
+      },
+      {
+        "index": 19,
+        "target_pose_rad": [
+          1.0559241974565694,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "duration_s": 16.36246173744684,
+        "approach": "positive",
+        "collect": true
+      },
+      {
+        "index": 20,
+        "target_pose_rad": [
+          1.213003830136059,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "duration_s": 14.726215563702155,
+        "approach": "positive",
+        "collect": true
+      },
+      {
+        "index": 21,
+        "target_pose_rad": [
+          1.0559241974565694,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "duration_s": 14.726215563702155,
+        "approach": "negative",
+        "collect": true
+      },
+      {
+        "index": 22,
+        "target_pose_rad": [
+          0.8813912722571364,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "duration_s": 16.36246173744684,
+        "approach": "negative",
+        "collect": true
+      },
+      {
+        "index": 23,
+        "target_pose_rad": [
+          0.7068583470577035,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "duration_s": 16.36246173744684,
+        "approach": "negative",
+        "collect": true
+      },
+      {
+        "index": 24,
+        "target_pose_rad": [
+          0.5323254218582705,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "duration_s": 16.36246173744684,
+        "approach": "negative",
+        "collect": true
+      },
+      {
+        "index": 25,
+        "target_pose_rad": [
+          0.35779249665883756,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "duration_s": 16.36246173744684,
+        "approach": "negative",
+        "collect": true
+      },
+      {
+        "index": 26,
+        "target_pose_rad": [
+          0.1832595714594046,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "duration_s": 16.36246173744684,
+        "approach": "negative",
+        "collect": true
+      },
+      {
+        "index": 27,
+        "target_pose_rad": [
+          0.008726646259971648,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "duration_s": 16.36246173744684,
+        "approach": "negative",
+        "collect": true
+      },
+      {
+        "index": 28,
+        "target_pose_rad": [
+          -0.16580627893946132,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "duration_s": 16.36246173744684,
+        "approach": "negative",
+        "collect": true
+      },
+      {
+        "index": 29,
+        "target_pose_rad": [
+          -0.34033920413889424,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "duration_s": 16.36246173744684,
+        "approach": "negative",
+        "collect": true
+      },
+      {
+        "index": 30,
+        "target_pose_rad": [
+          -0.5148721293383273,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "duration_s": 16.36246173744684,
+        "approach": "negative",
+        "collect": true
+      },
+      {
+        "index": 31,
+        "target_pose_rad": [
+          -0.6894050545377601,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "duration_s": 16.36246173744684,
+        "approach": "negative",
+        "collect": true
+      },
+      {
+        "index": 32,
+        "target_pose_rad": [
+          -0.8639379797371931,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "duration_s": 16.36246173744684,
+        "approach": "negative",
+        "collect": true
+      },
+      {
+        "index": 33,
+        "target_pose_rad": [
+          -1.038470904936626,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "duration_s": 16.36246173744684,
+        "approach": "negative",
+        "collect": true
+      },
+      {
+        "index": 34,
+        "target_pose_rad": [
+          -1.213003830136059,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "duration_s": 16.36246173744684,
+        "approach": "negative",
+        "collect": true
+      },
+      {
+        "index": 35,
+        "target_pose_rad": [
+          -1.038470904936626,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "duration_s": 16.36246173744684,
+        "approach": "positive",
+        "collect": false
+      },
+      {
+        "index": 36,
+        "target_pose_rad": [
+          -0.8639379797371931,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "duration_s": 16.36246173744684,
+        "approach": "positive",
+        "collect": false
+      },
+      {
+        "index": 37,
+        "target_pose_rad": [
+          -0.6894050545377601,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "duration_s": 16.36246173744684,
+        "approach": "positive",
+        "collect": false
+      },
+      {
+        "index": 38,
+        "target_pose_rad": [
+          -0.5148721293383273,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "duration_s": 16.36246173744684,
+        "approach": "positive",
+        "collect": false
+      },
+      {
+        "index": 39,
+        "target_pose_rad": [
+          -0.34033920413889424,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "duration_s": 16.36246173744684,
+        "approach": "positive",
+        "collect": false
+      },
+      {
+        "index": 40,
+        "target_pose_rad": [
+          -0.16580627893946132,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "duration_s": 16.36246173744684,
+        "approach": "positive",
+        "collect": false
+      },
+      {
+        "index": 41,
+        "target_pose_rad": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "duration_s": 15.544338650574499,
+        "approach": "positive",
+        "collect": false
+      }
+    ],
+    "reference_speed_rad_s": 0.02,
+    "settle_budget_s": 30.0,
+    "total_budget_s": 1582.1327775384066,
+    "measured_limit_override": false,
+    "status": "PLAN_ONLY_NOT_HARDWARE_VALIDATED",
+    "hardware_motion_authorized": false,
+    "simulated_mass_used": false,
+    "automatic_resume": false,
+    "all_arm_calibration_complete": false
+  },
+  "plan_sha256": "a5787f6d442e3eb035f7cb1e09c8010533172347eb5a566c0c2a36e19b0b4ce9",
+  "note": "Example initial pose zero, NOT the actual hardware start; use live read-only preview before execution"
+}

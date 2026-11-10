@@ -1,0 +1,52 @@
+<?xml version="1.0"?>
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro" name="slaihand_four_axis">
+  <!-- State-only adapter for the user's existing COM9/921600 CANUSB link.
+       Geometry/limits come from the canonical four-axis URDF. Sign/zero/IDs
+       come from canonical hardware_mapping.yaml, not another calibration copy.
+       Configuring opens the specified Linux serial port and sends read queries.
+       There are no command interfaces, enable commands, or parameter writes. -->
+  <xacro:arg name="port" default=""/>
+  <xacro:arg name="log_directory" default="/tmp/slaihand_canusb_readonly"/>
+  <xacro:arg name="mapping_sha256" default=""/>
+  <xacro:arg name="model_sha256" default=""/>
+  <xacro:arg name="mapping_file" default="$(find slaihand_bringup)/config/hardware_mapping.yaml"/>
+  <xacro:include filename="$(find slaihand_description)/urdf/slaihand_four_axis.urdf"/>
+  <xacro:property name="calibration" value="${xacro.load_yaml('$(arg mapping_file)')['joints']}"/>
+  <ros2_control name="SLAICanUsbReadOnly" type="system">
+    <hardware>
+      <plugin>slaihand_hardware/CanUsbReadOnly</plugin>
+      <param name="port">$(arg port)</param>
+      <param name="protocol">slai_canusb_tx30_rx16_v1</param>
+      <param name="log_directory">$(arg log_directory)</param>
+      <xacro:if value="${'$(arg mapping_sha256)' != ''}">
+        <param name="mapping_sha256">$(arg mapping_sha256)</param>
+      </xacro:if>
+      <xacro:if value="${'$(arg model_sha256)' != ''}">
+        <param name="model_sha256">$(arg model_sha256)</param>
+      </xacro:if>
+    </hardware>
+    <xacro:macro name="feedback_joint" params="name">
+      <joint name="${name}">
+        <param name="can_id">${calibration[name]['can_id']}</param>
+        <param name="hardware_sign">${calibration[name]['hardware_sign']}</param>
+        <param name="zero_offset_rad">${calibration[name]['zero_offset_rad']}</param>
+        <state_interface name="position"/>
+        <state_interface name="velocity"/>
+        <!-- Drive feedback estimate, not a calibrated axis torque sensor. -->
+        <state_interface name="effort"/>
+        <state_interface name="driver_temperature"/>
+        <state_interface name="motor_temperature"/>
+        <state_interface name="motor_state"/>
+        <state_interface name="feedback_age"/>
+        <state_interface name="feedback_valid"/>
+        <state_interface name="control_mode"/>
+        <state_interface name="timeout_count"/>
+        <state_interface name="configuration_conflict"/>
+      </joint>
+    </xacro:macro>
+    <xacro:feedback_joint name="slaihand_joint1"/>
+    <xacro:feedback_joint name="slaihand_joint2"/>
+    <xacro:feedback_joint name="slaihand_joint3"/>
+    <xacro:feedback_joint name="slaihand_joint4"/>
+  </ros2_control>
+</robot>

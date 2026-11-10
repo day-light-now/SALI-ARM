@@ -1,0 +1,9 @@
+{
+  "passed": true,
+  "fixture_port": 18888,
+  "alpha": 0.1,
+  "ramp_s": 2.0,
+  "ui_hold_executed": true,
+  "active_observed": true,
+  "stop_confirmed": true
+}

@@ -1,0 +1,334 @@
+{
+  "schema": "slaihand_j5_bidirectional_sampling_library/2",
+  "source_head": "0ddfb08",
+  "coordinates": "absolute_deg",
+  "plans": [
+    {
+      "name": "GC05_J5_ZERO_PAIRED_ZERO",
+      "display_name": "GC05 新采集 J5双向配对 基座零姿态 · 绝对零终点",
+      "file": "GC05_J5_ZERO_PAIRED_ZERO.json",
+      "sha256": "76505ceed8ca4c7adf8e8fb8b458a85e89b7c50f8bd6a0446b08eeed99317142",
+      "base_J1_J4_absolute_deg": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "J5_sequence_deg": [
+        0.0,
+        10.0,
+        20.0,
+        10.0,
+        0.0,
+        -10.0,
+        -20.0,
+        -10.0,
+        0.0
+      ],
+      "role": "training",
+      "waypoint_count": 9,
+      "paired_windows": [
+        {
+          "target_j5_deg": 10.0,
+          "waypoint_indices_zero_based": [
+            1,
+            3
+          ],
+          "approach_signs": [
+            1,
+            -1
+          ]
+        },
+        {
+          "target_j5_deg": -10.0,
+          "waypoint_indices_zero_based": [
+            5,
+            7
+          ],
+          "approach_signs": [
+            -1,
+            1
+          ]
+        },
+        {
+          "target_j5_deg": 0.0,
+          "waypoint_indices_zero_based": [
+            4,
+            8
+          ],
+          "approach_signs": [
+            -1,
+            1
+          ]
+        }
+      ],
+      "total_s": 120.0,
+      "session_reserve_s": 60.0,
+      "reference_peak_rad_s": 0.0409061543436171,
+      "final_absolute_deg": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "final_dwell_s": 8.0,
+      "compiled_final_rad": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "name": "GC06_J5_J2_20_PAIRED_ZERO",
+      "display_name": "GC06 新采集 J5双向配对 J2=20度 · 绝对零终点",
+      "file": "GC06_J5_J2_20_PAIRED_ZERO.json",
+      "sha256": "c15bdc450c86c1c917589567382cc7317cc1d3228ddf5d426d96f9bd2eeea7b0",
+      "base_J1_J4_absolute_deg": [
+        0.0,
+        20.0,
+        0.0,
+        0.0
+      ],
+      "J5_sequence_deg": [
+        0.0,
+        10.0,
+        20.0,
+        10.0,
+        0.0,
+        -10.0,
+        -20.0,
+        -10.0,
+        0.0
+      ],
+      "role": "training",
+      "waypoint_count": 11,
+      "paired_windows": [
+        {
+          "target_j5_deg": 10.0,
+          "waypoint_indices_zero_based": [
+            2,
+            4
+          ],
+          "approach_signs": [
+            1,
+            -1
+          ]
+        },
+        {
+          "target_j5_deg": -10.0,
+          "waypoint_indices_zero_based": [
+            6,
+            8
+          ],
+          "approach_signs": [
+            -1,
+            1
+          ]
+        },
+        {
+          "target_j5_deg": 0.0,
+          "waypoint_indices_zero_based": [
+            5,
+            9
+          ],
+          "approach_signs": [
+            -1,
+            1
+          ]
+        }
+      ],
+      "total_s": 146.0,
+      "session_reserve_s": 34.0,
+      "reference_peak_rad_s": 0.0818123086872342,
+      "final_absolute_deg": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "final_dwell_s": 8.0,
+      "compiled_final_rad": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "name": "GC07_J5_J3_J4_20_PAIRED_ZERO",
+      "display_name": "GC07 新采集 J5双向配对 J3/J4=20度 · 绝对零终点",
+      "file": "GC07_J5_J3_J4_20_PAIRED_ZERO.json",
+      "sha256": "5936da639535716ad428fcdf7c4478ca668142563628ab1971d62b9f3450e759",
+      "base_J1_J4_absolute_deg": [
+        0.0,
+        0.0,
+        20.0,
+        20.0
+      ],
+      "J5_sequence_deg": [
+        0.0,
+        10.0,
+        20.0,
+        10.0,
+        0.0,
+        -10.0,
+        -20.0,
+        -10.0,
+        0.0
+      ],
+      "role": "training",
+      "waypoint_count": 11,
+      "paired_windows": [
+        {
+          "target_j5_deg": 10.0,
+          "waypoint_indices_zero_based": [
+            2,
+            4
+          ],
+          "approach_signs": [
+            1,
+            -1
+          ]
+        },
+        {
+          "target_j5_deg": -10.0,
+          "waypoint_indices_zero_based": [
+            6,
+            8
+          ],
+          "approach_signs": [
+            -1,
+            1
+          ]
+        },
+        {
+          "target_j5_deg": 0.0,
+          "waypoint_indices_zero_based": [
+            5,
+            9
+          ],
+          "approach_signs": [
+            -1,
+            1
+          ]
+        }
+      ],
+      "total_s": 146.0,
+      "session_reserve_s": 34.0,
+      "reference_peak_rad_s": 0.0818123086872342,
+      "final_absolute_deg": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "final_dwell_s": 8.0,
+      "compiled_final_rad": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "name": "GC08_J5_MIXED_HOLDOUT_ZERO",
+      "display_name": "GC08 新采集 J5混合姿态独立验证 · 绝对零终点",
+      "file": "GC08_J5_MIXED_HOLDOUT_ZERO.json",
+      "sha256": "c56eb3cf3da5b4e763d74d659b958d4a3d68f7bc5c1df766cae16056d57d4b39",
+      "base_J1_J4_absolute_deg": [
+        10.0,
+        10.0,
+        10.0,
+        10.0
+      ],
+      "J5_sequence_deg": [
+        0.0,
+        10.0,
+        20.0,
+        10.0,
+        0.0,
+        -10.0,
+        -20.0,
+        -10.0,
+        0.0
+      ],
+      "role": "independent_holdout_do_not_train_on",
+      "waypoint_count": 11,
+      "paired_windows": [
+        {
+          "target_j5_deg": 10.0,
+          "waypoint_indices_zero_based": [
+            2,
+            4
+          ],
+          "approach_signs": [
+            1,
+            -1
+          ]
+        },
+        {
+          "target_j5_deg": -10.0,
+          "waypoint_indices_zero_based": [
+            6,
+            8
+          ],
+          "approach_signs": [
+            -1,
+            1
+          ]
+        },
+        {
+          "target_j5_deg": 0.0,
+          "waypoint_indices_zero_based": [
+            5,
+            9
+          ],
+          "approach_signs": [
+            -1,
+            1
+          ]
+        }
+      ],
+      "total_s": 146.0,
+      "session_reserve_s": 34.0,
+      "reference_peak_rad_s": 0.0409061543436171,
+      "final_absolute_deg": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "final_dwell_s": 8.0,
+      "compiled_final_rad": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    }
+  ],
+  "identity": {
+    "urdf_sha256": "b58042be2191e8aa2223ff867d101e1d072f579936759f2d09c7f075ce16721f",
+    "historical_j5_calibration_sha256": "22faa38808192d96436234e231aae1cbd9f974f2057ee03caf2a998492842965"
+  },
+  "entry_feedback_max_abs_deg": 2.0,
+  "purpose": "separate J5 approach dependence and validate changing upstream gravity orientation",
+  "box_mass_kg": 3.5,
+  "mass_excludes_J5_motor": true,
+  "mode": "ordinary five-axis trajectory with recorded raw state; not formal calibrated gravity mode",
+  "compensation_enabled": false,
+  "hardware_executed": false,
+  "collision_checked": false,
+  "admission": "TIMEOUT must read back 2000; fresh verify-existing evidence allowed with zero writes; no mandatory power cycle",
+  "fault_behavior": "STOP/UNKNOWN retains priority, no forced return after a fault",
+  "physical_identification_limit": "paired paths cannot replace a measured J5 axis/pivot or guarantee unique COM"
+}

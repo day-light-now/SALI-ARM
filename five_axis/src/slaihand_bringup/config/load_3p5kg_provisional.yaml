@@ -1,0 +1,49 @@
+# PROVISIONAL five-axis load declaration for the J5 + ~3.5 kg candidate assembly.
+#
+# This is a *declaration and an estimate*, not a measurement.  The 3.5 kg value is
+# the operator's estimate supplied in chat on 2026-11-08; no geometry, flange
+# mount, centre of mass, inertia or torque was measured for this assembly.
+#
+# It deliberately does NOT reuse the old four-axis ``no_end_load`` profile: that
+# profile had no J5 and no new 3.5 kg load and is rejected as stale by the panel
+# and by the workload admission code.
+#
+# Consequences bound to this file:
+#   * position-only identity source for the five-axis candidate launch
+#     (load_id + mass_profile_sha256 of this file's actual bytes);
+#   * gravity_status is PROVISIONAL, formal gravity is not allowed, gravity
+#     feedforward must stay disabled (alpha 0, float off), and gravity fitting
+#     from this declaration is refused until mass/COM/geometry are measured.
+#
+# Do not add measured-looking numbers here unless a real measurement record
+# exists.  This file is read by scripts/load_declaration.py and must keep the
+# `slaihand_load_declaration/1` schema.
+schema: slaihand_load_declaration/1
+load_id: j5_3p5kg_provisional
+joint: slaihand_joint5
+position_only: true
+provisional: true
+# Explicit guard: the stale four-axis profile id that must never be reused for
+# the new five-axis + 3.5 kg assembly.
+do_not_reuse_load_id: no_end_load
+declared_on: "2026-11-08"
+declared_by: "operator (user estimate in chat; no measurement performed)"
+mass_kg: 3.5
+mass_source: "user_estimate_only_not_measured"
+mass_uncertainty_kg: null
+geometry_status: unknown
+geometry_source: null
+com_status: unknown
+com_source: null
+mount_status: unknown
+mount_source: null
+gravity_status: PROVISIONAL
+formal_gravity_allowed: false
+gravity_fit_allowed: false
+gravity_ff_alpha: 0.0
+float_enabled: false
+measurements: []
+notes: >-
+  Candidate five-axis load only.  Position/feedback identity is allowed so the
+  driver and panel can prove which declared load is running.  Gravity fitting
+  and feedforward are refused while geometry/COM/mount are unknown.

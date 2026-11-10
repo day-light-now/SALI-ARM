@@ -1,0 +1,12 @@
+{
+  "status": "PASS",
+  "software_only": true,
+  "physical_port_opened": false,
+  "topics": [
+    "/slaihand/joint_states",
+    "/slaihand/dynamic_joint_states"
+  ],
+  "axes": 4,
+  "readonly_queries_seen": 36,
+  "motion_or_parameter_tx": 0
+}

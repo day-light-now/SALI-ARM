@@ -1,0 +1,20 @@
+{
+  "schema": 1,
+  "date_local": "2026-10-31",
+  "timezone": "Asia/Shanghai",
+  "passive_support": {
+    "status": "user_confirmed",
+    "question": "所有电机失能时，现有机械支撑能接住每段机械臂和末端，还是仅固定底座/靠手托？不需要现在断电试验。",
+    "user_reply": "是的",
+    "recorded_interpretation": "全臂各段及末端在全部电机失能后由机械支撑接住",
+    "evidence_type": "user_statement_not_power_cut_test",
+    "scope": "当前支撑、姿态及末端负载；支撑或负载改变后需重新确认",
+    "grants_motor_enable": false
+  },
+  "parameter_write_permission": {
+    "scope": "仅J3 TIMEOUT=2000临时RAM设置，不保存Flash，不改其他参数",
+    "status": "previously_authorized_not_executed",
+    "current_plan": "先完成影子及保护准入，不执行该设置",
+    "all_axes_write_authorized": false
+  }
+}

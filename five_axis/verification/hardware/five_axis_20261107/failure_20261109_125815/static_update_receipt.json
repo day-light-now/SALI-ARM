@@ -1,0 +1,10 @@
+{
+  "scope": "panel.js static asset only",
+  "target": "\\\\wsl.localhost\\Ubuntu-24.04\\home\\xuyu\\.cache\\dsh_sched\\install\\slaihand_bringup\\share\\slaihand_bringup\\web\\control_panel\\panel.js",
+  "before_sha256": "9e42c8a0273171a59b70a5be017f9f8b5f183b48cdb9d04a0a6b8a9bb0847e2c",
+  "after_sha256": "f7d4bdbdf17254ad404d2afa126d0ed364574636c1794862d811a2c4563a0d0b",
+  "served_matches_source": true,
+  "driver_restarted": false,
+  "panel_restarted": false,
+  "hardware_motion_requested": false
+}

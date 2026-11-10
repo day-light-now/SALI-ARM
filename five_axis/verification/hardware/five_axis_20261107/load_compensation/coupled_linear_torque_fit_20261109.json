@@ -1,0 +1,78 @@
+{
+  "schema": "slaihand_coupled_linear_torque_fit/1",
+  "input": "multi_pose_20/40 torque estimates",
+  "target": "DAMIAO effort estimate, not measured current",
+  "validity": "path-local exploratory; no multi-pose holdout beyond LOO",
+  "axes": {
+    "slaihand_joint1": {
+      "coefficients_intercept_and_rad": [
+        1.077752639533176,
+        14.735406347208539,
+        -2.473106701894634,
+        -2.775862861678935,
+        2.2961982308234097,
+        0.49369907718555245
+      ],
+      "sample_count": 14,
+      "leave_one_out_max_error_nm": 3.886026221598348,
+      "leave_one_out_mean_error_nm": 1.2020884152768707,
+      "deployable": false
+    },
+    "slaihand_joint2": {
+      "coefficients_intercept_and_rad": [
+        0.6435253698925829,
+        -0.8239292886533486,
+        15.944969267849514,
+        -2.549178019510491,
+        1.021149470038979,
+        0.5108308594333844
+      ],
+      "sample_count": 14,
+      "leave_one_out_max_error_nm": 3.3592044250582536,
+      "leave_one_out_mean_error_nm": 1.1650256138780186,
+      "deployable": false
+    },
+    "slaihand_joint3": {
+      "coefficients_intercept_and_rad": [
+        3.738327223216887e-05,
+        -0.4474476286599707,
+        -0.19840353868097724,
+        0.66682270941633,
+        -1.4219326874031541,
+        -0.65328059945531
+      ],
+      "sample_count": 14,
+      "leave_one_out_max_error_nm": 1.7897012679278121,
+      "leave_one_out_mean_error_nm": 0.46136161216426,
+      "deployable": false
+    },
+    "slaihand_joint4": {
+      "coefficients_intercept_and_rad": [
+        -0.13829046674666115,
+        3.1255903360322708,
+        2.181968316825252,
+        0.9971825654053531,
+        6.229887465193674,
+        -1.6858310547111668
+      ],
+      "sample_count": 14,
+      "leave_one_out_max_error_nm": 3.5514223053420793,
+      "leave_one_out_mean_error_nm": 1.0264861046008333,
+      "deployable": false
+    },
+    "slaihand_joint5": {
+      "coefficients_intercept_and_rad": [
+        -0.028656374560331647,
+        -0.21241017488402136,
+        -0.1845720505633916,
+        -0.2650973357737261,
+        0.08431479354309548,
+        0.9226494447210404
+      ],
+      "sample_count": 14,
+      "leave_one_out_max_error_nm": 1.0269274241921202,
+      "leave_one_out_mean_error_nm": 0.28187527796639844,
+      "deployable": false
+    }
+  }
+}

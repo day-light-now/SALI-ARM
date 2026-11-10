@@ -1,0 +1,18 @@
+{
+  "passed": true,
+  "mode": "gravity_float",
+  "kp": 0,
+  "kd": 5,
+  "alpha": 1,
+  "ramp_s": 3,
+  "drag_deg": 6,
+  "zero_stiffness_written_packets": 3268,
+  "decoded_full_ramp_tau_nm": [
+    1.4163614163614113,
+    2.0024420024419953,
+    0.11868131868131826,
+    -0.0659340659340657
+  ],
+  "stop_confirmed": true,
+  "physical_port_opened": false
+}

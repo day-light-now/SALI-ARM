@@ -1,0 +1,38 @@
+{
+  "catalog_2026": {
+    "path": "D:\\CodexData\\Projects\\机械臂\\outputs\\OpenArm五轴电气接线资料包_20260921\\02_达妙电机规格\\达妙2026年产品选型手册.pdf",
+    "sha256": "ce97dc63f30d7391147afcd8bcf09cfd9de3fccdcd2996e53e93eb6b822025e3"
+  },
+  "j10010l_manual": {
+    "path": "D:\\CodexData\\Projects\\机械臂\\slaihand_ros2_ws\\tmp\\J10010L_manual.pdf",
+    "sha256": "b367bbb2797336bf71c74c05f1c3ce29653ee614ee8e202773228bd5150403b5"
+  },
+  "legacy_non_p_8009_manual": {
+    "path": "D:\\CodexData\\Projects\\机械臂\\tmp\\openarm_official_current\\website\\static\\file\\hardware\\specification\\motor\\dm8009.pdf",
+    "sha256": "8930372de5d228f5f3b821eb594094f99b585f5f1a38caa4b9591be9a866834e"
+  },
+  "mapping": {
+    "path": "D:\\CodexData\\Projects\\机械臂\\slaihand_ros2_ws\\src\\slaihand_bringup\\config\\hardware_mapping.yaml",
+    "sha256": "6c2ee47ba780235786b12a9c9d0b5f220b8e11a6ab5dff302d67ffa2375cbe7b"
+  },
+  "j1_history": {
+    "path": "D:\\CodexData\\Projects\\机械臂\\slaihand_ros2_ws\\verification\\hardware\\J1_识别记录_20261010.md",
+    "sha256": "e6946c251a3122bd81bdd83690081cc621680ddfa6efc242d4facc46f8510651"
+  },
+  "j2_history": {
+    "path": "D:\\CodexData\\Projects\\机械臂\\slaihand_ros2_ws\\verification\\hardware\\J2_识别记录_20261011.md",
+    "sha256": "c248381d54d130677a54b86045228971e3115bd9745c81044a210251cfb4b535"
+  },
+  "j3_history": {
+    "path": "D:\\CodexData\\Projects\\机械臂\\slaihand_ros2_ws\\verification\\hardware\\J3_识别记录_20261030.md",
+    "sha256": "cd56cce3b81f347adf57906aba24b92914d2d000548523ca523c15ffaa776d42"
+  },
+  "j4_history": {
+    "path": "D:\\CodexData\\Projects\\机械臂\\slaihand_ros2_ws\\verification\\hardware\\J4_识别记录_20261030.md",
+    "sha256": "0e3e5844279b438d674c3feaca235b8b0a0edb27d732658527bf3c92c76868fe"
+  },
+  "j4_watchdog_repeat": {
+    "path": "D:\\CodexData\\Projects\\机械臂\\slaihand_ros2_ws\\tmp\\watchdog_check\\20261101_131809_aee5b0.json",
+    "sha256": "e53989231a5970eefba23b27472c83be1968f1e8322f7ed5cb9a0442af1cf0ac"
+  }
+}

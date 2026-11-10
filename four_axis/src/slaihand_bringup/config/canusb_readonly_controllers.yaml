@@ -1,0 +1,12 @@
+/**/controller_manager:
+  ros__parameters:
+    update_rate: 100  # Scheduling target, not measured four-axis feedback rate.
+    joint_state_broadcaster:
+      type: joint_state_broadcaster/JointStateBroadcaster
+
+/**/joint_state_broadcaster:
+  ros__parameters:
+    joints: [slaihand_joint1, slaihand_joint2, slaihand_joint3, slaihand_joint4]
+    # Omit interfaces: use the broadcaster's typed default for all available
+    # states. Explicit YAML [] has no parameter type in this Jazzy build.
+    # Diagnostic fields are in dynamic_joint_states. No trajectory controller.
