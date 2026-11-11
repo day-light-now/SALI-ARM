@@ -61,11 +61,15 @@ def hardware_run(manifest, stop_driver):
     for entry in manifest['entries']:
         name = entry['name']
         print('=== run %s (%s), recorder=%ss ===' % (name, entry['role'], entry['recorder_s']))
-        reset = call([sys.executable, str(HERE / 'panel_reset.py')])
-        if reset.returncode != 0:
-            print('ABORT: panel reset failed for %s; do a manual reset first' % name)
-            return 1
-        time.sleep(1.0)
+        stage = call([sys.executable, str(HERE / 'panel_stage.py')])
+        if stage.returncode == 0 and stage.stdout.strip() == '0':
+            print('already DISARMED (stage=0); skipping software reset')
+        else:
+            reset = call([sys.executable, str(HERE / 'panel_reset.py')])
+            if reset.returncode != 0:
+                print('ABORT: panel reset failed for %s; do a manual reset first' % name)
+                return 1
+            time.sleep(1.0)
         executed = call(['bash', str(HERE / 'run_plan.sh'), entry['plan'], name,
                          str(entry['recorder_s'])], stream=True)
         if executed.returncode != 0:

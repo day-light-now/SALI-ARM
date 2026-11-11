@@ -2,12 +2,13 @@
 from __future__ import annotations
 
 import json
+import os
 import sys
 import time
 import urllib.request
 
-BASE = 'http://127.0.0.1:42664'
-TOKEN = 'RevgJa5FqG3P7xbk3OQVSxGlJ1BxfApo'
+BASE = os.environ.get('PANEL_BASE', 'http://127.0.0.1:42664')
+TOKEN = os.environ.get('PANEL_TOKEN', 'RevgJa5FqG3P7xbk3OQVSxGlJ1BxfApo')
 
 
 def request(method, path, body=None):

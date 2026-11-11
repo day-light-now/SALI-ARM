@@ -169,6 +169,13 @@ document.
   are rejected on purpose. Position feedforward only; FF alpha 0, GC13 frozen,
   hardware validation after box reinstall pending. Details:
   `gravity_ff_20261110/README_模型补偿_20261110.md`.
+- Real hardware run 2026-11-11 (after restoring J4/J5 feedback and one
+  controlled J5 TIMEOUT 0->2000 write): H1 baseline RMS 0.670 deg -> model
+  compensation 0.282 deg (-58%), hybrid one measured correction 0.0996 deg;
+  H2/H4 same-pose spread 0.787/0.677 deg fail their thresholds because of J1
+  direction-dependent stiction (J1 spread 0.677 deg, J2 0.274, others ~0).
+  Position feedforward works; torque FF/free-drag stay closed. Driver stopped,
+  all motor_state 0 at the end. Evidence: `gravity_ff_20261110/RESULTS_20261111.md`.
 
 ## Key evidence locations
 
