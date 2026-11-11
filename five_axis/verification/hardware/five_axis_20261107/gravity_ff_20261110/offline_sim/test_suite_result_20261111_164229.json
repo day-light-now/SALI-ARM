@@ -1,0 +1,295 @@
+{
+  "schema": "slaihand_test_suite_result/2",
+  "residual_definition": "mean_fb_deg - original_desired_deg",
+  "created": "2026-11-11T16:42:29",
+  "thresholds": {
+    "following_error_deg": 4.0,
+    "H1_baseline_sag_rms_deg_min": 0.3,
+    "H1_comp_residual_rms_deg_max": 0.6,
+    "H2_repeat_spread_deg_max": 0.25,
+    "H4_stiction_spread_deg_max": 0.4,
+    "abort_on_any_following_error": true
+  },
+  "entries": {
+    "H1_holdout": {
+      "present": true,
+      "stats": {
+        "rms_deg": [
+          0.4937,
+          1.1281,
+          0.181,
+          0.3731,
+          0.2375
+        ],
+        "max_deg": [
+          0.7111,
+          1.6752,
+          0.3616,
+          0.5987,
+          0.3547
+        ],
+        "overall_rms_deg": 0.5907,
+        "overall_max_deg": 1.6752,
+        "samples": 8
+      },
+      "sag_stats": {
+        "rms_deg": [
+          0.4431,
+          1.0091,
+          0.1641,
+          0.3366,
+          0.2264
+        ],
+        "max_deg": [
+          0.7111,
+          1.6752,
+          0.3616,
+          0.5987,
+          0.3547
+        ],
+        "overall_rms_deg": 0.5303,
+        "overall_max_deg": 1.6752,
+        "samples": 10
+      }
+    },
+    "H1_holdout_comp": {
+      "present": true,
+      "stats": {
+        "rms_deg": [
+          0.1348,
+          0.1239,
+          0.1222,
+          0.1346,
+          0.126
+        ],
+        "max_deg": [
+          0.1774,
+          0.1785,
+          0.1793,
+          0.1798,
+          0.18
+        ],
+        "overall_rms_deg": 0.1284,
+        "overall_max_deg": 0.18,
+        "samples": 8
+      },
+      "sag_stats": {
+        "rms_deg": [
+          0.4238,
+          1.0301,
+          0.1708,
+          0.3737,
+          0.2132
+        ],
+        "max_deg": [
+          0.8147,
+          1.5942,
+          0.2922,
+          0.6623,
+          0.315
+        ],
+        "overall_rms_deg": 0.5394,
+        "overall_max_deg": 1.5942,
+        "samples": 10
+      }
+    },
+    "H2_repeat": {
+      "present": true,
+      "stats": {
+        "rms_deg": [
+          0.4306,
+          0.1042,
+          0.2683,
+          0.6097,
+          0.16
+        ],
+        "max_deg": [
+          0.6352,
+          0.1388,
+          0.3049,
+          0.624,
+          0.2116
+        ],
+        "overall_rms_deg": 0.3648,
+        "overall_max_deg": 0.6352,
+        "samples": 4
+      },
+      "sag_stats": {
+        "rms_deg": [
+          0.3556,
+          0.1028,
+          0.2209,
+          0.5012,
+          0.1519
+        ],
+        "max_deg": [
+          0.6352,
+          0.1388,
+          0.3049,
+          0.624,
+          0.2116
+        ],
+        "overall_rms_deg": 0.3033,
+        "overall_max_deg": 0.6352,
+        "samples": 6
+      }
+    },
+    "H3_j5": {
+      "present": true,
+      "stats": {
+        "rms_deg": [
+          0.1813,
+          0.6756,
+          0.0322,
+          0.0526,
+          0.2505
+        ],
+        "max_deg": [
+          0.27,
+          0.7951,
+          0.0444,
+          0.0782,
+          0.2578
+        ],
+        "overall_rms_deg": 0.3334,
+        "overall_max_deg": 0.7951,
+        "samples": 3
+      },
+      "sag_stats": {
+        "rms_deg": [
+          0.1476,
+          0.526,
+          0.0439,
+          0.0663,
+          0.2139
+        ],
+        "max_deg": [
+          0.27,
+          0.7951,
+          0.0591,
+          0.0987,
+          0.2578
+        ],
+        "overall_rms_deg": 0.2648,
+        "overall_max_deg": 0.7951,
+        "samples": 5
+      }
+    },
+    "H3_j5_comp": {
+      "present": true,
+      "stats": {
+        "rms_deg": [
+          0.1517,
+          0.1248,
+          0.0995,
+          0.1485,
+          0.1327
+        ],
+        "max_deg": [
+          0.1774,
+          0.1785,
+          0.1473,
+          0.1713,
+          0.18
+        ],
+        "overall_rms_deg": 0.1328,
+        "overall_max_deg": 0.18,
+        "samples": 3
+      },
+      "sag_stats": {
+        "rms_deg": [
+          0.0937,
+          0.4739,
+          0.1225,
+          0.0952,
+          0.2676
+        ],
+        "max_deg": [
+          0.1927,
+          0.6761,
+          0.1793,
+          0.1579,
+          0.3777
+        ],
+        "overall_rms_deg": 0.2565,
+        "overall_max_deg": 0.6761,
+        "samples": 5
+      }
+    },
+    "H4_stiction": {
+      "present": true,
+      "stats": {
+        "rms_deg": [
+          0.6241,
+          1.748,
+          0.1071,
+          0.5038,
+          0.1463
+        ],
+        "max_deg": [
+          0.7505,
+          1.9188,
+          0.1757,
+          0.5425,
+          0.1889
+        ],
+        "overall_rms_deg": 0.8639,
+        "overall_max_deg": 1.9188,
+        "samples": 6
+      },
+      "sag_stats": {
+        "rms_deg": [
+          0.5435,
+          1.5143,
+          0.0961,
+          0.4409,
+          0.1454
+        ],
+        "max_deg": [
+          0.7505,
+          1.9188,
+          0.1757,
+          0.5425,
+          0.1889
+        ],
+        "overall_rms_deg": 0.7501,
+        "overall_max_deg": 1.9188,
+        "samples": 8
+      }
+    }
+  },
+  "H1_comparison": {
+    "baseline_rms_deg": 0.5907,
+    "compensated_rms_deg": 0.1284,
+    "improvement_percent": 78.3
+  },
+  "H2_spread_deg": 0.2773,
+  "H4_stiction_spread_deg": 0.3163,
+  "checks": [
+    {
+      "name": "H1 baseline sag RMS >= threshold",
+      "value": 0.5907,
+      "threshold": 0.3,
+      "ok": true
+    },
+    {
+      "name": "H1 compensated residual RMS <= threshold",
+      "value": 0.1284,
+      "threshold": 0.6,
+      "ok": true
+    },
+    {
+      "name": "H2 same-pose spread <= threshold",
+      "value": 0.2773,
+      "threshold": 0.25,
+      "ok": false
+    },
+    {
+      "name": "H4 stiction same-pose spread <= threshold",
+      "value": 0.3163,
+      "threshold": 0.4,
+      "ok": true
+    }
+  ],
+  "all_checks_ok": false
+}

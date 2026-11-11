@@ -20,6 +20,7 @@ import numpy as np
 HERE = Path(__file__).resolve().parent
 ROOT = HERE.parents[3]
 MODEL = HERE / 'sag_model_20261110.json'
+HYSTERESIS_MODEL = HERE / 'hysteresis_model_20261111.json'
 URDF = ROOT / 'src/slaihand_description/urdf/slaihand_five_axis.urdf'
 TRAIN_TAGS = ('T1a', 'T1b')
 NAMES = ['slaihand_joint%d' % i for i in range(1, 6)]
@@ -79,12 +80,34 @@ def training_domain():
             'train_sag_max_deg': float(np.max(np.abs(sag)))}
 
 
-def compute(desired_deg, model=None):
+def approach_signs(desired_deg):
+    """Sign of the planned motion into each waypoint (per joint)."""
+    desired = np.asarray(desired_deg, dtype=float)
+    signs = np.zeros_like(desired)
+    signs[1:] = np.sign(np.diff(desired, axis=0))
+    return signs
+
+
+def hysteresis_correction(desired_deg, model=None):
+    """Command correction -delta*sign to cancel the measured direction bias."""
+    model = model or read(HYSTERESIS_MODEL)
+    delta = np.asarray(model['delta_deg'], dtype=float)
+    signs = approach_signs(desired_deg)
+    correction = delta[None, :] * signs
+    return correction, model, signs
+
+
+def compute(desired_deg, model=None, hysteresis=False):
     model = model or read(MODEL)['model']
     desired = np.asarray(desired_deg, dtype=float)
     F = features(desired)
     predicted = np.stack([F @ np.array(model[str(j)]['coef']) for j in range(5)], axis=1)
     compensated = desired - predicted
+    hcorr = np.zeros_like(desired)
+    hmodel = None
+    if hysteresis:
+        hcorr, hmodel, _ = hysteresis_correction(desired_deg)
+        compensated = compensated - hcorr
     # Keep absolute-zero endpoints (acquisition plan safety invariant).
     compensated[0] = desired[0]
     compensated[-1] = desired[-1]
@@ -102,19 +125,22 @@ def compute(desired_deg, model=None):
             float(np.max(np.abs(predicted))), sag_limit))
     return {'desired': desired, 'predicted': predicted,
             'compensated': compensated, 'domain': domain,
-            'sag_limit_deg': sag_limit, 'problems': problems}
+            'sag_limit_deg': sag_limit, 'problems': problems,
+            'hysteresis_correction': hcorr, 'hysteresis_model': hmodel}
 
 
 def main():
-    if len(sys.argv) < 2:
-        print('USAGE: compensate_plan.py <plan.json> [output_name]')
+    argv = [arg for arg in sys.argv[1:] if arg != '--hysteresis']
+    use_hysteresis = '--hysteresis' in sys.argv[1:]
+    if not argv:
+        print('USAGE: compensate_plan.py <plan.json> [output_name] [--hysteresis]')
         return 2
-    plan_path = Path(sys.argv[1])
-    out_name = sys.argv[2] if len(sys.argv) > 2 else plan_path.stem + '_comp'
+    plan_path = Path(argv[0])
+    out_name = argv[1] if len(argv) > 1 else plan_path.stem + '_comp'
     plan = read(plan_path)
     waypoints = plan['waypoints']
     desired = np.array([w['degrees'] for w in waypoints], dtype=float)
-    result = compute(desired)
+    result = compute(desired, hysteresis=use_hysteresis)
     if result['problems']:
         print('REJECTED: plan is outside the validated static-sag domain')
         for problem in result['problems'][:8]:
@@ -154,6 +180,11 @@ def main():
               'desired_deg': np.round(result['desired'], 4).tolist(),
               'predicted_sag_deg': np.round(result['predicted'], 4).tolist(),
               'compensated_deg': np.round(compensated, 4).tolist(),
+              'hysteresis_enabled': bool(use_hysteresis),
+              'hysteresis_delta_deg': (None if result['hysteresis_model'] is None else
+                                        result['hysteresis_model']['delta_deg']),
+              'hysteresis_correction_deg': np.round(
+                  result['hysteresis_correction'], 4).tolist(),
               'limits_checked': True}
     (HERE / ('comp_plan_%s_20261110.json' % out_name)).write_text(
         json.dumps(report, ensure_ascii=False, indent=2) + '\n', encoding='utf-8')

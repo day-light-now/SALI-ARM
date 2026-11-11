@@ -1,0 +1,33 @@
+{
+  "schema": "slaihand_j1_hysteresis_plans/1",
+  "entries": [
+    {
+      "name": "J1H_m8",
+      "plan": "/mnt/d/CodexData/Projects/机械臂/slaihand_five_axis_ws_gain/verification/hardware/five_axis_20261107/gravity_ff_20261110/plans/J1H_m8_20261111.json",
+      "target_deg": -8.0,
+      "waypoints": 6,
+      "ok": true,
+      "message": "PLAN_OK: 6 waypoints",
+      "recorder_s": 92
+    },
+    {
+      "name": "J1H_0",
+      "plan": "/mnt/d/CodexData/Projects/机械臂/slaihand_five_axis_ws_gain/verification/hardware/five_axis_20261107/gravity_ff_20261110/plans/J1H_0_20261111.json",
+      "target_deg": 0.0,
+      "waypoints": 6,
+      "ok": true,
+      "message": "PLAN_OK: 6 waypoints",
+      "recorder_s": 92
+    },
+    {
+      "name": "J1H_p8",
+      "plan": "/mnt/d/CodexData/Projects/机械臂/slaihand_five_axis_ws_gain/verification/hardware/five_axis_20261107/gravity_ff_20261110/plans/J1H_p8_20261111.json",
+      "target_deg": 8.0,
+      "waypoints": 6,
+      "ok": true,
+      "message": "PLAN_OK: 6 waypoints",
+      "recorder_s": 92
+    }
+  ],
+  "all_valid": true
+}

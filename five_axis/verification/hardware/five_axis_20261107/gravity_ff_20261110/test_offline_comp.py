@@ -58,6 +58,21 @@ class ConverterTests(unittest.TestCase):
                                      entry['plan']], capture_output=True, text=True)
             self.assertEqual(result.returncode, 0, entry['name'])
 
+    def test_hysteresis_offsets_follow_approach_sign(self):
+        plan = load_plan('H2_repeat_20261110.json')
+        desired = [w['degrees'] for w in plan['waypoints']]
+        base = cp.compute(desired)['compensated']
+        hyst = cp.compute(desired, hysteresis=True)['compensated']
+        correction = base - hyst
+        signs = cp.approach_signs(desired)
+        delta = read(HERE / 'hysteresis_model_20261111.json')['delta_deg']
+        for index in range(1, len(desired) - 1):
+            for joint in range(5):
+                self.assertAlmostEqual(float(correction[index][joint]),
+                                       delta[joint] * signs[index][joint], places=6)
+        self.assertLessEqual(max(abs(float(v)) for v in hyst[0]), 1e-9)
+        self.assertLessEqual(max(abs(float(v)) for v in hyst[-1]), 1e-9)
+
 
 if __name__ == '__main__':
     unittest.main()

@@ -10,6 +10,7 @@ import json
 import shutil
 import subprocess
 import sys
+import time
 from pathlib import Path
 
 import numpy as np
@@ -79,6 +80,22 @@ def run(script, *args):
 def main():
     manifest = read(MANIFEST)
     created = []
+    SIM_DIR.mkdir(parents=True, exist_ok=True)
+    backup_dir = SIM_DIR / ('backup_%s' % time.strftime('%Y%m%d_%H%M%S'))
+    saved = []
+
+    def protect(path):
+        if path.is_file():
+            backup_dir.mkdir(parents=True, exist_ok=True)
+            target = backup_dir / path.name
+            shutil.move(str(path), str(target))
+            saved.append((target, path))
+
+    for entry in manifest['entries']:
+        protect(HERE / ('windows_%s.json' % entry['name']))
+    for pattern in ('stiction_H4_20261110.json', 'test_suite_result_*.json'):
+        for path in HERE.glob(pattern):
+            protect(path)
     try:
         for entry in manifest['entries']:
             created.append(synthetic_windows(entry))
@@ -108,6 +125,11 @@ def main():
             for path in HERE.glob(pattern):
                 if path.is_file():
                     shutil.move(str(path), str(SIM_DIR / path.name))
+        # Restore any real hardware files that were set aside before the simulation.
+        for source, destination in saved:
+            shutil.move(str(source), str(destination))
+        if backup_dir.is_dir() and not any(backup_dir.iterdir()):
+            backup_dir.rmdir()
 
 
 if __name__ == '__main__':

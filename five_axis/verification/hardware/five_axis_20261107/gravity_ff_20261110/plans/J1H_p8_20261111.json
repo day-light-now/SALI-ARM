@@ -1,0 +1,72 @@
+{
+  "schema": "slaihand_joint_plan/2",
+  "coordinates": "absolute_deg",
+  "waypoints": [
+    {
+      "degrees": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "move_s": 6.0,
+      "dwell_s": 6.0
+    },
+    {
+      "degrees": [
+        10.0,
+        5.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "move_s": 6.0,
+      "dwell_s": 6.0
+    },
+    {
+      "degrees": [
+        8.0,
+        5.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "move_s": 6.0,
+      "dwell_s": 6.0
+    },
+    {
+      "degrees": [
+        6.0,
+        5.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "move_s": 6.0,
+      "dwell_s": 6.0
+    },
+    {
+      "degrees": [
+        8.0,
+        5.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "move_s": 6.0,
+      "dwell_s": 6.0
+    },
+    {
+      "degrees": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "move_s": 6.0,
+      "dwell_s": 6.0
+    }
+  ]
+}

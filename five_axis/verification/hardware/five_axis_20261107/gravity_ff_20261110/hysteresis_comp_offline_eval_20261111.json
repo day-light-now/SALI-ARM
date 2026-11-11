@@ -1,0 +1,103 @@
+{
+  "schema": "slaihand_hysteresis_comp_offline_eval/1",
+  "model": "hysteresis_model_20261111.json",
+  "note": "in-sample; new J1 hysteresis plans are prepared for hardware validation",
+  "results": [
+    {
+      "name": "H2_repeat",
+      "same_pose_only": true,
+      "before_spread_deg": [
+        0.7868,
+        0.3802,
+        0.0122,
+        0.0002,
+        0.0
+      ],
+      "after_spread_deg": [
+        0.0566,
+        0.0542,
+        0.0122,
+        0.0002,
+        0.0
+      ],
+      "before_rms_deg": [
+        0.6385,
+        0.3275,
+        0.3006,
+        0.5386,
+        0.2462
+      ],
+      "after_rms_deg": [
+        0.5037,
+        0.2681,
+        0.3006,
+        0.5386,
+        0.2462
+      ]
+    },
+    {
+      "name": "H4_stiction",
+      "same_pose_only": true,
+      "before_spread_deg": [
+        0.6765,
+        0.2743,
+        0.0022,
+        0.0002,
+        0.0
+      ],
+      "after_spread_deg": [
+        0.0594,
+        0.0566,
+        0.0022,
+        0.0002,
+        0.0
+      ],
+      "before_rms_deg": [
+        0.8801,
+        1.2958,
+        0.2496,
+        0.6368,
+        0.2027
+      ],
+      "after_rms_deg": [
+        0.6996,
+        1.344,
+        0.2496,
+        0.6368,
+        0.2027
+      ]
+    },
+    {
+      "name": "H1_holdout",
+      "same_pose_only": false,
+      "before_spread_deg": [
+        1.9459,
+        1.9531,
+        0.5326,
+        1.0968,
+        0.8089
+      ],
+      "after_spread_deg": [
+        1.4715,
+        1.6271,
+        0.5326,
+        1.0968,
+        0.8089
+      ],
+      "before_rms_deg": [
+        0.69,
+        1.0601,
+        0.1821,
+        0.3985,
+        0.3087
+      ],
+      "after_rms_deg": [
+        0.4514,
+        0.9759,
+        0.1821,
+        0.3985,
+        0.3087
+      ]
+    }
+  ]
+}

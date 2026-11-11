@@ -174,8 +174,12 @@ document.
   compensation 0.282 deg (-58%), hybrid one measured correction 0.0996 deg;
   H2/H4 same-pose spread 0.787/0.677 deg fail their thresholds because of J1
   direction-dependent stiction (J1 spread 0.677 deg, J2 0.274, others ~0).
-  Position feedforward works; torque FF/free-drag stay closed. Driver stopped,
-  all motor_state 0 at the end. Evidence: `gravity_ff_20261110/RESULTS_20261111.md`.
+  Direction-dependent stick-slip was modelled offline: H2/H4 same-pose pairs
+  give `hysteresis_model_20261111.json` delta_deg
+  [-0.365, -0.163, 0, 0, 0]; `compensate_plan.py --hysteresis` applies
+  `-delta*sign` (default off until hardware validation). J1 plans
+  `J1H_m8/0/p8` are prepared. Driver stopped, all motor_state 0 at the end.
+  Evidence: `gravity_ff_20261110/RESULTS_20261111.md`.
 
 ## Key evidence locations
 

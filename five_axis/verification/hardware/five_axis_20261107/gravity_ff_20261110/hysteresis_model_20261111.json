@@ -1,0 +1,49 @@
+{
+  "schema": "slaihand_direction_hysteresis_model/1",
+  "description": "constant per-joint direction offset fitted from H2/H4 same-pose repeat runs; command correction = -delta*sign.",
+  "delta_deg": [
+    -0.365112,
+    -0.163013,
+    0.0,
+    0.0,
+    0.0
+  ],
+  "delta_from_H2_deg": [
+    -0.3934,
+    -0.1901,
+    0.0,
+    0.0,
+    0.0
+  ],
+  "delta_from_H4_deg": [
+    -0.336825,
+    -0.135925,
+    0.0,
+    0.0,
+    0.0
+  ],
+  "H2_detail": [
+    {
+      "joint": 1,
+      "plus": -0.8963000000000001,
+      "minus": -0.10950000000000015
+    },
+    {
+      "joint": 2,
+      "plus": -0.4568000000000001,
+      "minus": -0.0766
+    }
+  ],
+  "H4_detail": [
+    {
+      "joint": 1,
+      "plus": -1.04535,
+      "minus": -0.37170000000000014
+    },
+    {
+      "joint": 2,
+      "plus": -1.4707000000000008,
+      "minus": -1.1988500000000002
+    }
+  ]
+}
