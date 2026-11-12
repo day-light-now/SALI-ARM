@@ -1,0 +1,86 @@
+{
+  "schema": "slaihand_hysteresis_retest/1",
+  "note": "residual vs original desired; spread across same-pose visits",
+  "results": [
+    {
+      "label": "H2",
+      "before_indices": [
+        2,
+        4
+      ],
+      "after_indices": [
+        2,
+        4
+      ],
+      "before_rms_deg": [
+        0.6385,
+        0.3275,
+        0.3006,
+        0.5386,
+        0.2462
+      ],
+      "after_rms_deg": [
+        0.0489,
+        0.323,
+        0.1472,
+        0.0957,
+        0.1385
+      ],
+      "before_spread_deg": [
+        0.7868,
+        0.3802,
+        0.0122,
+        0.0002,
+        0.0
+      ],
+      "after_spread_deg": [
+        0.0446,
+        0.2621,
+        0.0,
+        0.0005,
+        0.0007
+      ]
+    },
+    {
+      "label": "H4",
+      "before_indices": [
+        2,
+        4,
+        6
+      ],
+      "after_indices": [
+        2,
+        4,
+        6
+      ],
+      "before_rms_deg": [
+        0.8801,
+        1.2958,
+        0.2496,
+        0.6368,
+        0.2027
+      ],
+      "after_rms_deg": [
+        0.0255,
+        0.3524,
+        0.1664,
+        0.0074,
+        0.4212
+      ],
+      "before_spread_deg": [
+        0.6765,
+        0.2743,
+        0.0022,
+        0.0002,
+        0.0
+      ],
+      "after_spread_deg": [
+        0.0436,
+        0.1164,
+        0.1505,
+        0.015,
+        0.0
+      ]
+    }
+  ]
+}

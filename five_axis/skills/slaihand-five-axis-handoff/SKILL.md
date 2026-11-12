@@ -178,8 +178,12 @@ document.
   give `hysteresis_model_20261111.json` delta_deg
   [-0.365, -0.163, 0, 0, 0]; `compensate_plan.py --hysteresis` applies
   `-delta*sign` (default off until hardware validation). J1 plans
-  `J1H_m8/0/p8` are prepared. Driver stopped, all motor_state 0 at the end.
-  Evidence: `gravity_ff_20261110/RESULTS_20261111.md`.
+  `J1H_m8/0/p8` are prepared. Hardware validation 2026-11-12: J1 delta -0.34
+  deg at +/-8 and -0.13 at 0; H2 J1 spread 0.787->0.045 (J2 0.380->0.262),
+  H4 J1 0.677->0.044 (max 0.150, passes). J1 hysteresis validated; J2 residual
+  still needs J2-specific data before enabling `--hysteresis` by default.
+  Driver stopped, all motor_state 0 at the end.
+  Evidence: `gravity_ff_20261110/RESULTS_20261112.md`.
 
 ## Key evidence locations
 
